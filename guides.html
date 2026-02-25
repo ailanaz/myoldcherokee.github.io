@@ -1,195 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Guides Guides for Older Cherokees | MyOldCherokee.com</title>
-  <meta name="description" content="Guides guides for older Cherokee owners. Covers no-start, overheating, death wobble, electrical drain, rough idle, and 4WD issues. Provided for reference only." />
-  <link rel="canonical" href="https://www.myoldcherokee.com/guides.html" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guides | MyOldCherokee</title>
+  <meta name="description" content="DIY and troubleshooting guides for older Cherokee models." />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="favicon.png" type="image/png" />
 </head>
 <body>
 
-<div class="topbar">
-  <div class="container topbar-inner">
-    <span>Independent buy and sell directory and resource for older Cherokee models.</span>
-    <div class="topbar-links">
-      <a href="submit.html">Post a Listing</a>
-      <a href="submit.html">Submit a Business</a>
-      <a href="contact.html">Contact</a>
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <div class="utility-left">Independent buy and sell directory and resource for older Cherokee models.</div>
+      <div class="utility-right">
+        <a href="submit-listing.html">Submit a Listing</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
   </div>
-</div>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <a href="index.html" class="brand">
-      <img src="logo.png" alt="MyOldCherokee.com" />
-      <span class="brand-name">MyOldCherokee.com</span>
-    </a>
-    <nav class="site-nav">
-      <a href="index.html">Buy &amp; Sell</a>
-      <a href="directory.html">Repair Shops</a>
-      <a href="junkyards.html">Junk / Salvage Yards</a>
-      <a href="guides.html" class="active">Guides</a>
-      <a href="community.html">Community</a>
-      <a href="about.html">About</a>
-    </nav>
-  </div>
-</header>
+  <header class="main-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="MyOldCherokee homepage">
+        <img class="brand-logo" src="myoldcherokee_logo.png" alt="MyOldCherokee logo" onerror="this.style.display='none';" />
+        <span class="brand-name">MyOldCherokee</span>
+      </a>
 
-<section class="section">
-  <div class="container">
-    <div class="section-head left">
-      <div class="section-label">Guides</div>
-      <h2>Guides for Older Cherokee Owners</h2>
-      <p>Owner-focused Guides resources for older Cherokee models, organized to help you diagnose issues and understand common repairs.</p>
+      <nav class="tabs" aria-label="Primary navigation">
+        <a href="buy-sell.html">Buy &amp; Sell</a>
+        <a href="repair-shops.html">Repair Shops</a>
+        <a href="junk-salvage.html">Junk/Salvage Yards</a>
+        <a href="guides.html" class="active">Guides</a>
+        <a href="community.html">Community</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="container">
+    <div class="page-head">
+      <h1>Guides</h1>
+      <p>DIY and troubleshooting guides for common older Cherokee issues.</p>
     </div>
 
-    <div style="background:var(--amber-lite);border:1.5px solid var(--amber);border-radius:10px;padding:1rem 1.25rem;margin-bottom:2rem;font-size:0.85rem;color:var(--text-mid);line-height:1.65;font-family:'Source Serif 4',serif;">
-      <strong style="color:var(--text);font-family:'DM Sans',sans-serif;">Informational purposes only.</strong> Guides and troubleshooting content are provided for general informational purposes only and may not apply to every vehicle, model year, or condition. MyOldCherokee.com does not guarantee accuracy, completeness, or outcomes. Use proper safety precautions and consult a qualified professional when needed.
-    </div>
-
-    <div class="grid g2">
-
-      <div class="guide-card">
-        <div style="display:flex;gap:.5rem;flex-wrap:wrap;">
-          <span class="guide-tag tag-red">No Start</span>
-          <span class="guide-tag tag-red">No Crank</span>
+    <div class="search-module" aria-label="Guides search">
+      <div class="search-row">
+        <div class="field"><input type="search" placeholder="Search Guides, symptoms, parts, year..." /></div>
+        <div class="field">
+          <select>
+            <option value="">Category (optional)</option>
+            <option>No start</option>
+            <option>Overheating</option>
+            <option>Rough idle</option>
+            <option>Electrical</option>
+            <option>Suspension</option>
+          </select>
         </div>
-        <h3>No-Start Triage for Older Cherokee Models</h3>
-        <p>Start with battery voltage, grounds, crank-or-no-crank behavior, and fuel pump prime checks before replacing any parts. Covers older Cherokees.</p>
-        <div class="guide-meta">
-          <span class="diff diff-int">Beginner – Intermediate</span>
-          <button class="btn btn-outline btn-sm">Open Guide →</button>
+        <button class="btn primary" type="button">Search</button>
+      </div>
+      <p class="help">Guides and troubleshooting content are provided for general informational purposes only and may not apply to every vehicle, model year, or condition. MyOldCherokee.com does not guarantee accuracy, completeness, or outcomes. Use proper safety precautions and consult a qualified professional when needed.</p>
+    </div>
+
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2>Starter guide cards</h2>
+          <p>Replace these with your real Guides library.</p>
         </div>
       </div>
 
-      <div class="guide-card">
-        <div style="display:flex;gap:.5rem;flex-wrap:wrap;">
-          <span class="guide-tag tag-amber">Overheating</span>
-          <span class="guide-tag tag-amber">Coolant Loss</span>
-        </div>
-        <h3>Overheating Checklist for Older Cherokees</h3>
-        <p>Organized checks for coolant level, fan operation, thermostat behavior, radiator flow, and cooling system pressure testing.</p>
-        <div class="guide-meta">
-          <span class="diff diff-beg">Beginner</span>
-          <button class="btn btn-outline btn-sm">Open Guide →</button>
-        </div>
+      <div class="grid">
+        <div class="card"><div class="ico">G</div><div><div class="card-title">No start triage</div><div class="card-sub">Basic checks, common causes, next steps.</div></div></div>
+        <div class="card"><div class="ico">G</div><div><div class="card-title">Overheating checklist</div><div class="card-sub">Cooling system checks and common fixes.</div></div></div>
+        <div class="card"><div class="ico">G</div><div><div class="card-title">Electrical drain basics</div><div class="card-sub">How to isolate a parasitic draw.</div></div></div>
       </div>
+    </section>
+  </main>
 
-      <div class="guide-card">
-        <div style="display:flex;gap:.5rem;flex-wrap:wrap;">
-          <span class="guide-tag tag-blue">Dead Battery</span>
-          <span class="guide-tag tag-blue">Electrical Drain</span>
-        </div>
-        <h3>Parasitic Electrical Drain: How to Find It</h3>
-        <p>How to isolate a parasitic draw using a multimeter and identify the most common drain culprits on older Cherokee electrical systems.</p>
-        <div class="guide-meta">
-          <span class="diff diff-int">Intermediate</span>
-          <button class="btn btn-outline btn-sm">Open Guide →</button>
-        </div>
-      </div>
 
-      <div class="guide-card">
-        <div style="display:flex;gap:.5rem;flex-wrap:wrap;">
-          <span class="guide-tag tag-green">Wobble</span>
-          <span class="guide-tag tag-green">Steering Shake</span>
-        </div>
-        <h3>Death Wobble &amp; Steering Shake Diagnosis</h3>
-        <p>A practical inspection flow for steering and suspension components before paying for alignment or part replacement.</p>
-        <div class="guide-meta">
-          <span class="diff diff-int">Intermediate</span>
-          <button class="btn btn-outline btn-sm">Open Guide →</button>
-        </div>
-      </div>
-
-      <div class="guide-card">
-        <div style="display:flex;gap:.5rem;flex-wrap:wrap;">
-          <span class="guide-tag tag-amber">Rough Idle</span>
-          <span class="guide-tag tag-amber">Stalling</span>
-        </div>
-        <h3>Rough Idle &amp; Stalling on the Cherokee 4.0</h3>
-        <p>IAC valve, TPS, vacuum leaks, and O2 sensor checks for the classic rough idle that plagues the 4.0L inline-six.</p>
-        <div class="guide-meta">
-          <span class="diff diff-int">Intermediate</span>
-          <button class="btn btn-outline btn-sm">Open Guide →</button>
-        </div>
-      </div>
-
-      <div class="guide-card">
-        <div style="display:flex;gap:.5rem;flex-wrap:wrap;">
-          <span class="guide-tag tag-red">4WD</span>
-          <span class="guide-tag tag-red">Transfer Case</span>
-        </div>
-        <h3>4WD Not Engaging: Transfer Case Triage</h3>
-        <p>Vacuum line checks, linkage inspection, and transfer case motor testing for Cherokee 4WD engagement problems.</p>
-        <div class="guide-meta">
-          <span class="diff diff-adv">Advanced</span>
-          <button class="btn btn-outline btn-sm">Open Guide →</button>
-        </div>
-      </div>
-
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-small">Independent directory and resource for older Cherokee owners. Listings and information are provided for reference only. MyOldCherokee.com does not verify or guarantee third-party listings, businesses, products, or services. Users are responsible for their own due diligence. Not affiliated with or endorsed by Jeep® or Stellantis®. Brand and model names are used for identification only. All trademarks are the property of their respective owners.</p>
     </div>
-  </div>
-</section>
+  </footer>
 
-<section class="cta-banner">
-  <div class="container cta-inner">
-    <div class="cta-text">
-      <h2>Still Need Help? Find a Shop.</h2>
-      <p>Browse repair shop listings near you in the directory. Listings are provided for reference only.</p>
-    </div>
-    <div class="cta-actions">
-      <a href="directory.html" class="btn btn-red btn-lg">Repair Shop Listings</a>
-      <a href="community.html" class="btn btn-ghost btn-lg">Ask the Community</a>
-    </div>
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand-block">
-        <div style="font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff;">MyOldCherokee.com</div>
-        <p>An independent buy and sell directory for older Cherokee models, with repair shops, junk/salvage yard listings, Guides, and community resources.</p>
-        <p class="footer-disclaimer">Independent directory and resource for older Cherokee owners. Listings and information are provided for reference only. MyOldCherokee.com does not verify or guarantee third-party listings, businesses, products, or services. Users are responsible for their own due diligence. Not affiliated with or endorsed by Jeep® or Stellantis®. Brand and model names are used for identification only. All trademarks are the property of their respective owners.</p>
-      </div>
-      <div class="footer-col"><h4>Buy &amp; Sell</h4><ul>
-        <li><a href="index.html">Vehicles for Sale</a></li>
-        <li><a href="index.html">Parts for Sale</a></li>
-        <li><a href="index.html">Project Cherokees</a></li>
-        <li><a href="index.html">Wanted Listings</a></li>
-        <li><a href="submit.html">Post a Listing</a></li>
-      </ul></div>
-      <div class="footer-col"><h4>Resources</h4><ul>
-        <li><a href="directory.html">Repair Shops</a></li>
-        <li><a href="junkyards.html">Junk / Salvage Yards</a></li>
-        <li><a href="guides.html">Guides</a></li>
-        <li><a href="community.html">Community</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="duediligence.html">Due Diligence</a></li>
-      </ul></div>
-      <div class="footer-col"><h4>Coverage</h4><ul>
-        <li><a href="#">United States (live)</a></li>
-        <li><a href="#">Canada (coming soon)</a></li>
-        <li><a href="#">Australia (planned)</a></li>
-        <li><a href="#">International (future)</a></li>
-      </ul></div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; <span id="yr"></span> MyOldCherokee.com. All rights reserved. | <a class="footer-disclaimer-link" href="#">Privacy Policy</a> | <a class="footer-disclaimer-link" href="#">Terms of Use</a> | <a class="footer-disclaimer-link" href="duediligence.html">Due Diligence</a></p>
-      <p>www.myoldcherokee.com</p>
-    </div>
-  </div>
-</footer>
-
-<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
 </html>
