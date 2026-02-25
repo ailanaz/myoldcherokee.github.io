@@ -1,24 +1,11 @@
-MyOldCherokee.com unified site (GitHub Pages)
+MyOldCherokee.com sitemap pack
 
-Pages:
-- index.html
-- buy-sell.html
-- repair-shops.html
-- junk-salvage.html
-- guides.html
-- community.html
-- about.html
-- submit-listing.html
-- contact.html
-- styles.css
+Upload these files to your repo root:
+- sitemap.xml
+- robots.txt
 
-Add these assets to the repo root:
-- hero-cherokee.jpg
-- myoldcherokee_logo.png (optional)
-
-GitHub Pages:
-Settings > Pages > Deploy from a branch
-Branch: main
-Folder: /(root)
-
-Forms are static. Connect later to a form service or backend.
+Optional redirect stubs (recommended if the old URLs were indexed):
+- directory.html -> buy-sell.html
+- junkyards.html -> junk-salvage.html
+- submit.html -> submit-listing.html
+- faq.html -> about.html
