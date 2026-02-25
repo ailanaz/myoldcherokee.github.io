@@ -1,907 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <title>MyOldCherokee.com | The #1 Directory for Older Jeep Cherokee Owners</title>
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
- <style>
- :root {
- --white: #ffffff;
- --off: #f7f5f2;
- --cream: #f0ebe3;
- --stone: #e4ddd3;
- --warm-mid: #c9bfb2;
- --text: #1e1a17;
- --text-mid: #4a433c;
- --text-lite:#7a6f65;
- --line: #ddd6cc;
- --red: #6b1228;
- --red-dark: #4e0d1d;
- --red-lite: #f7eef1;
- --amber: #c87020;
- --amber-lite:#fdf3e7;
- --green: #2a6648;
- --green-lite:#e8f2ec;
- --radius: 10px;
- --shadow-sm: 0 1px 4px rgba(0,0,0,0.08);
- --shadow: 0 4px 20px rgba(0,0,0,0.10);
- --shadow-lg: 0 12px 48px rgba(0,0,0,0.14);
- }
- *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
- html { scroll-behavior: smooth; }
- body { font-family: 'DM Sans', sans-serif; background: var(--white); color: var(--text); line-height: 1.6; }
- h1, h2, h3, h4, .brand-name, .eyebrow, .stat-num { font-family: 'Oswald', sans-serif; }
- a { color: inherit; text-decoration: none; }
- img { max-width: 100%; display: block; }
- .container { width: min(1160px, calc(100% - 2.5rem)); margin: 0 auto; }
-
- /* TOP BAR */
- .topbar { background: var(--red); color: #fff; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.03em; padding: 0.45rem 0; }
- .topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
- .topbar a { color: #fff; text-decoration: underline; text-underline-offset: 2px; }
- .topbar-links { display: flex; gap: 1.25rem; }
- .topbar-links a { text-decoration: none; opacity: 0.88; }
- .topbar-links a:hover { opacity: 1; }
-
- /* HEADER */
- .site-header { background: var(--white); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow-sm); }
- .header-inner { display: flex; align-items: center; justify-content: space-between; height: 76px; gap: 2rem; }
- .brand { display: flex; align-items: center; gap: 0.65rem; flex-shrink: 0; }
- .brand-badge { width: 44px; height: 44px; background: var(--red); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; }
- .brand-badge-line { width: 24px; height: 3px; background: #fff; border-radius: 2px; }
- .brand-badge-line:nth-child(2) { width: 18px; }
- .brand-badge-line:nth-child(3) { width: 21px; }
- .brand-text { line-height: 1; }
- .brand-name { font-size: 1.35rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--red); }
- .brand-sub { font-size: 0.7rem; color: var(--text-lite); letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; }
- .site-nav { display: flex; align-items: center; gap: 0.1rem; }
- .site-nav a { font-size: 0.88rem; font-weight: 600; color: var(--text-mid); padding: 0.5rem 0.9rem; border-radius: 6px; letter-spacing: 0.02em; transition: color 0.15s, background 0.15s; }
- .site-nav a:hover, .site-nav a.active { color: var(--red); background: var(--red-lite); }
-
- /* BUTTONS */
- .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; padding: 0 1.25rem; height: 44px; border-radius: var(--radius); border: none; font-family: 'DM Sans', sans-serif; font-size: 0.92rem; font-weight: 600; cursor: pointer; transition: filter 0.15s, transform 0.1s, box-shadow 0.15s; white-space: nowrap; }
- .btn:hover { filter: brightness(0.93); transform: translateY(-1px); box-shadow: var(--shadow); }
- .btn:active { transform: translateY(0); }
- .btn-red { background: var(--red); color: #fff; }
- .btn-amber { background: var(--amber); color: #fff; }
- .btn-outline { background: transparent; color: var(--red); border: 2px solid var(--red); }
- .btn-outline:hover { background: var(--red-lite); }
- .btn-white { background: #fff; color: var(--red); }
- .btn-white:hover { background: var(--off); filter: none; }
- .btn-ghost { background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.35); }
- .btn-ghost:hover { background: rgba(255,255,255,0.25); filter: none; }
- .btn-lg { height: 52px; padding: 0 1.75rem; font-size: 1rem; }
- .btn-sm { height: 36px; padding: 0 0.9rem; font-size: 0.83rem; }
-
- /* PAGES */
- .page { display: none; }
- .page.active { display: block; }
-
- /* HERO */
- .hero { position: relative; min-height: 620px; display: flex; align-items: center; overflow: hidden; background: #1c1510; }
- .hero-photo { position: absolute; inset: 0; background: linear-gradient(to right, rgba(20,15,10,0.82) 0%, rgba(20,15,10,0.55) 50%, rgba(20,15,10,0.25) 100%), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 620'%3E%3Crect width='1440' height='620' fill='%231c1510'/%3E%3Crect x='0' y='0' width='1440' height='340' fill='%232d4a6e'/%3E%3Cpolygon points='600,340 720,180 840,340' fill='%233d5a72'/%3E%3Cpolygon points='700,340 850,140 1000,340' fill='%234a6980'/%3E%3Cpolygon points='900,340 1050,200 1200,340' fill='%23395568'/%3E%3Crect x='0' y='330' width='1440' height='290' fill='%232d1f0f'/%3E%3Cellipse cx='720' cy='330' rx='800' ry='60' fill='%23331e0a'/%3E%3Cellipse cx='720' cy='440' rx='160' ry='30' fill='%235a3a1a'/%3E%3Crect x='600' y='410' width='240' height='80' rx='12' fill='%234a3010'/%3E%3Crect x='560' y='360' width='340' height='130' rx='8' fill='%23c0391b'/%3E%3Crect x='575' y='345' width='220' height='80' rx='6' fill='%23c84020'/%3E%3Crect x='590' y='355' width='80' height='55' rx='4' fill='%23a8d4e8' opacity='0.7'/%3E%3Crect x='685' y='355' width='90' height='55' rx='4' fill='%23a8d4e8' opacity='0.7'/%3E%3Ccircle cx='626' cy='490' r='40' fill='%23111'/%3E%3Ccircle cx='626' cy='490' r='26' fill='%23888'/%3E%3Ccircle cx='626' cy='490' r='12' fill='%23555'/%3E%3Ccircle cx='838' cy='490' r='40' fill='%23111'/%3E%3Ccircle cx='838' cy='490' r='26' fill='%23888'/%3E%3Ccircle cx='838' cy='490' r='12' fill='%23555'/%3E%3Crect x='558' y='390' width='18' height='60' rx='3' fill='%23888'/%3E%3Crect x='564' y='393' width='8' height='8' rx='1' fill='%23444'/%3E%3Crect x='564' y='407' width='8' height='8' rx='1' fill='%23444'/%3E%3Crect x='564' y='421' width='8' height='8' rx='1' fill='%23444'/%3E%3Crect x='564' y='435' width='8' height='8' rx='1' fill='%23444'/%3E%3Crect x='557' y='375' width='30' height='18' rx='3' fill='%23ffe88a' opacity='0.9'/%3E%3Cellipse cx='900' cy='460' rx='120' ry='25' fill='%238b6a40' opacity='0.35'/%3E%3Crect x='1100' y='260' width='18' height='80' fill='%23382010'/%3E%3Ccircle cx='1109' cy='245' r='38' fill='%23284a1e'/%3E%3Crect x='1200' y='280' width='14' height='60' fill='%23382010'/%3E%3Ccircle cx='1207' cy='268' r='28' fill='%23204018'/%3E%3Crect x='1320' y='250' width='20' height='90' fill='%23382010'/%3E%3Ccircle cx='1330' cy='236' r='42' fill='%23305a24'/%3E%3C/svg%3E"); background-size: cover; background-position: center; }
- .hero-content { position: relative; z-index: 2; padding: 5rem 0 4.5rem; max-width: 650px; }
- .eyebrow { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--red); color: #fff; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.3rem 0.75rem; border-radius: 4px; margin-bottom: 1rem; }
- .hero h1 { font-size: clamp(2.6rem, 5vw, 4rem); font-weight: 700; line-height: 1.05; letter-spacing: 0.01em; text-transform: uppercase; color: #fff; margin-bottom: 1rem; text-shadow: 0 2px 16px rgba(0,0,0,0.4); }
- .hero h1 span { color: #fbbf24; }
- .hero-sub { font-family: 'Source Serif 4', serif; font-size: 1.12rem; color: rgba(255,255,255,0.82); max-width: 54ch; line-height: 1.65; margin-bottom: 2rem; font-style: italic; }
- .hero-search-box { background: #fff; border-radius: 12px; padding: 1rem; display: flex; gap: 0.6rem; margin-bottom: 1.5rem; box-shadow: var(--shadow-lg); max-width: 600px; }
- .hero-search-box input { flex: 1; border: 1.5px solid var(--line); border-radius: 8px; height: 46px; padding: 0 1rem; font-family: 'DM Sans', sans-serif; font-size: 0.95rem; color: var(--text); outline: none; transition: border-color 0.2s; }
- .hero-search-box input:focus { border-color: var(--red); }
- .hero-search-box input::placeholder { color: var(--text-lite); }
- .hero-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 1.75rem; }
- .hero-trust { display: flex; gap: 1.5rem; flex-wrap: wrap; }
- .trust-pill { display: flex; align-items: center; gap: 0.4rem; color: rgba(255,255,255,0.8); font-size: 0.84rem; font-weight: 500; }
- .trust-pill .check { width: 18px; height: 18px; background: var(--green); border-radius: 50%; display: grid; place-items: center; font-size: 0.65rem; color: #fff; flex-shrink: 0; }
-
- /* STATS */
- .stats-strip { background: var(--red); padding: 1.5rem 0; }
- .stats-inner { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
- .stat { text-align: center; color: #fff; padding: 0.5rem; border-right: 1px solid rgba(255,255,255,0.2); }
- .stat:last-child { border-right: none; }
- .stat-num { font-size: 2rem; font-weight: 700; letter-spacing: -0.01em; line-height: 1; margin-bottom: 0.2rem; }
- .stat-label { font-size: 0.78rem; font-weight: 500; opacity: 0.85; letter-spacing: 0.04em; text-transform: uppercase; }
-
- /* SECTIONS */
- .section { padding: 4.5rem 0; }
- .section-cream { background: var(--cream); }
- .section-off { background: var(--off); }
- .section-head { margin-bottom: 2.5rem; text-align: center; }
- .section-label { display: inline-block; font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--red); margin-bottom: 0.6rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--red); }
- .section-head h2 { font-size: clamp(1.75rem, 3vw, 2.6rem); font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; color: var(--text); margin-bottom: 0.6rem; }
- .section-head p { font-family: 'Source Serif 4', serif; color: var(--text-mid); font-size: 1rem; max-width: 56ch; margin: 0 auto; }
- .section-head.left { text-align: left; }
- .section-head.split { text-align: left; display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; }
-
- /* GRIDS */
- .grid { display: grid; gap: 1.25rem; }
- .g4 { grid-template-columns: repeat(4, 1fr); }
- .g3 { grid-template-columns: repeat(3, 1fr); }
- .g2 { grid-template-columns: repeat(2, 1fr); }
-
- /* CAT CARDS */
- .cat-card { background: var(--white); border: 1.5px solid var(--line); border-radius: 12px; padding: 1.75rem 1.25rem; text-align: center; cursor: pointer; transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s; }
- .cat-card:hover { border-color: var(--red); transform: translateY(-4px); box-shadow: var(--shadow-lg); }
- .cat-icon { width: 64px; height: 64px; border-radius: 12px; background: var(--red-lite); display: grid; place-items: center; font-size: 1.8rem; margin: 0 auto 1rem; transition: background 0.2s; }
- .cat-card:hover .cat-icon { background: var(--red); }
- .cat-card h3 { font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.4rem; color: var(--text); }
- .cat-card p { font-size: 0.85rem; color: var(--text-lite); line-height: 1.5; }
-
- /* ISSUE PILLS */
- .issue-strip { background: var(--text); padding: 1.25rem 0; }
- .issue-inner { display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center; }
- .issue-label { font-family: 'Oswald', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-right: 0.5rem; }
- .issue-pill { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); color: rgba(255,255,255,0.88); padding: 0.35rem 0.85rem; border-radius: 999px; font-size: 0.84rem; font-weight: 500; cursor: pointer; transition: background 0.15s, border-color 0.15s, color 0.15s; }
- .issue-pill:hover { background: var(--red); border-color: var(--red); color: #fff; }
-
- /* LISTING CARDS */
- .listing-card { background: var(--white); border: 1.5px solid var(--line); border-radius: 12px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
- .listing-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--red); }
- .listing-thumb { aspect-ratio: 16/9; background: linear-gradient(135deg, var(--stone) 0%, var(--cream) 100%); position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
- .listing-state { position: absolute; top: 0.75rem; right: 0.75rem; background: rgba(30,26,23,0.75); backdrop-filter: blur(4px); color: #fff; font-family: 'Oswald', sans-serif; font-size: 0.8rem; font-weight: 600; padding: 0.2rem 0.55rem; border-radius: 4px; letter-spacing: 0.06em; }
- .listing-body { padding: 1.25rem; }
- .listing-cats { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.6rem; }
- .lcat { font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 4px; background: var(--amber-lite); color: var(--amber); border: 1px solid #f0d4a8; }
- .listing-name { font-size: 1.05rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 0.35rem; color: var(--text); }
- .listing-loc { display: flex; align-items: center; gap: 0.3rem; color: var(--text-lite); font-size: 0.85rem; margin-bottom: 0.65rem; }
- .listing-summary { font-size: 0.88rem; color: var(--text-mid); line-height: 1.55; margin-bottom: 1rem; font-family: 'Source Serif 4', serif; }
- .listing-actions { display: flex; gap: 0.5rem; }
-
- /* GUIDE CARDS */
- .guide-card { background: var(--white); border: 1.5px solid var(--line); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; transition: box-shadow 0.2s, border-color 0.2s; }
- .guide-card:hover { box-shadow: var(--shadow); border-color: var(--amber); }
- .guide-tag { display: inline-flex; align-items: center; gap: 0.35rem; font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; padding: 0.25rem 0.65rem; border-radius: 4px; }
- .tag-red { background: var(--red-lite); color: var(--red); }
- .tag-amber { background: var(--amber-lite); color: var(--amber); }
- .tag-green { background: var(--green-lite); color: var(--green); }
- .tag-blue { background: #e8f0fe; color: #2c5cc5; }
- .guide-card h3 { font-size: 1.08rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; color: var(--text); }
- .guide-card p { font-family: 'Source Serif 4', serif; font-size: 0.9rem; color: var(--text-mid); line-height: 1.6; flex: 1; }
- .guide-meta { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
- .diff { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em; padding: 0.2rem 0.55rem; border-radius: 4px; font-family: 'Oswald', sans-serif; text-transform: uppercase; }
- .diff-beg { background: var(--green-lite); color: var(--green); }
- .diff-int { background: var(--amber-lite); color: var(--amber); }
- .diff-adv { background: #f5eef1; color: #6b1228; }
-
- /* HOW IT WORKS */
- .step-card { background: var(--white); border: 1.5px solid var(--line); border-radius: 12px; padding: 2rem 1.5rem; text-align: center; position: relative; }
- .step-num-circle { width: 52px; height: 52px; background: var(--red); border-radius: 50%; display: grid; place-items: center; font-family: 'Oswald', sans-serif; font-size: 1.3rem; font-weight: 700; color: #fff; margin: 0 auto 1.1rem; }
- .step-card h3 { font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
- .step-card p { font-family: 'Source Serif 4', serif; font-size: 0.9rem; color: var(--text-mid); line-height: 1.6; }
- .step-card::after { content: '→'; position: absolute; right: -1.2rem; top: 50%; transform: translateY(-50%); font-size: 1.4rem; color: var(--warm-mid); z-index: 2; }
- .step-card:last-child::after { display: none; }
-
- /* CTA BANNER */
- .cta-banner { background: var(--text); padding: 3.5rem 0; position: relative; overflow: hidden; }
- .cta-banner::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M0 60L60 0M-10 10L10-10M50 70L70 50' stroke='rgba(255,255,255,0.03)' stroke-width='1'/%3E%3C/svg%3E"); }
- .cta-inner { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
- .cta-text h2 { font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; color: #fff; margin-bottom: 0.4rem; }
- .cta-text p { font-family: 'Source Serif 4', serif; color: rgba(255,255,255,0.65); font-size: 1rem; }
- .cta-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
-
- /* REVIEW STRIP */
- .review-strip { background: var(--off); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 2rem 0; }
- .review-inner { display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
-
- /* DIRECTORY FILTERS */
- .dir-filters { background: var(--white); border: 1.5px solid var(--line); border-radius: 12px; padding: 1.25rem; display: grid; grid-template-columns: 2fr 1fr 1fr auto auto; gap: 0.75rem; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm); align-items: center; }
- .dir-filters input, .dir-filters select { height: 44px; border-radius: 8px; border: 1.5px solid var(--line); background: var(--off); color: var(--text); padding: 0 0.9rem; font-family: 'DM Sans', sans-serif; font-size: 0.92rem; outline: none; transition: border-color 0.2s; }
- .dir-filters input:focus, .dir-filters select:focus { border-color: var(--red); background: var(--white); }
- .results-count { color: var(--text-lite); font-size: 0.88rem; font-weight: 500; margin-bottom: 1.25rem; }
-
- /* FORMS */
- .form-wrap { background: var(--white); border: 1.5px solid var(--line); border-radius: 14px; padding: 2rem; box-shadow: var(--shadow-sm); }
- .form-section-title { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--red); padding-bottom: 0.5rem; border-bottom: 2px solid var(--red); margin-bottom: 1.25rem; }
- .form-row { margin-bottom: 1rem; }
- .form-row label { display: block; font-size: 0.83rem; font-weight: 600; color: var(--text-mid); margin-bottom: 0.35rem; letter-spacing: 0.02em; }
- .form-row input, .form-row textarea, .form-row select { width: 100%; border: 1.5px solid var(--line); border-radius: 8px; background: var(--off); color: var(--text); padding: 0.7rem 0.9rem; font-family: 'DM Sans', sans-serif; font-size: 0.93rem; outline: none; transition: border-color 0.2s, background 0.2s; }
- .form-row input:focus, .form-row textarea:focus, .form-row select:focus { border-color: var(--red); background: var(--white); }
- .form-row textarea { resize: vertical; min-height: 90px; }
- .form-g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
- .form-note { font-size: 0.8rem; color: var(--text-lite); font-style: italic; margin-top: 0.75rem; }
-
- /* FAQ */
- .faq-item { border: 1.5px solid var(--line); border-radius: 10px; overflow: hidden; margin-bottom: 0.75rem; background: var(--white); transition: border-color 0.2s; }
- .faq-item:hover { border-color: var(--red); }
- .faq-item[open] { border-color: var(--red); }
- .faq-item summary { padding: 1.1rem 1.25rem; cursor: pointer; font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase; color: var(--text); list-style: none; display: flex; justify-content: space-between; align-items: center; user-select: none; }
- .faq-item summary::after { content: '+'; font-size: 1.5rem; color: var(--red); font-weight: 400; line-height: 1; transition: transform 0.2s; }
- .faq-item[open] summary::after { transform: rotate(45deg); }
- .faq-item p { padding: 0 1.25rem 1.25rem; font-family: 'Source Serif 4', serif; color: var(--text-mid); font-size: 0.95rem; line-height: 1.65; }
-
- /* FILTER PILLS */
- .filter-pill { background: var(--white); border: 1.5px solid var(--line); color: var(--text-mid); padding: 0.35rem 0.9rem; border-radius: 999px; font-family: 'DM Sans', sans-serif; font-size: 0.83rem; font-weight: 600; cursor: pointer; transition: all 0.15s; white-space: nowrap; }
- .filter-pill:hover { border-color: var(--red); color: var(--red); background: var(--red-lite); }
- .filter-pill.active-pill { background: var(--red); border-color: var(--red); color: #fff; }
-
- /* FOOTER */
- .site-footer { background: var(--text); color: rgba(255,255,255,0.8); padding: 3.5rem 0 0; }
- .footer-grid { display: grid; grid-template-columns: 2.2fr 1fr 1fr 1fr; gap: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.08); }
- .footer-brand-block p { font-family: 'Source Serif 4', serif; font-size: 0.88rem; color: rgba(255,255,255,0.55); line-height: 1.65; margin-top: 0.75rem; }
- .footer-disclaimer { font-size: 0.75rem; color: rgba(255,255,255,0.35); font-style: italic; margin-top: 0.75rem; line-height: 1.55; }
- .footer-col h4 { font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 0.9rem; }
- .footer-col ul { list-style: none; }
- .footer-col li { margin-bottom: 0.5rem; }
- .footer-col a { font-size: 0.9rem; color: rgba(255,255,255,0.65); transition: color 0.15s; }
- .footer-col a:hover { color: #fff; }
- .footer-bottom { padding: 1.25rem 0; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
- .footer-bottom p { font-size: 0.82rem; color: rgba(255,255,255,0.3); }
- .footer-disclaimer-link { color: rgba(255,255,255,0.4); text-decoration: underline; }
-
- /* ABOUT */
- .about-lead { font-family: 'Source Serif 4', serif; font-size: 1.15rem; color: var(--text-mid); line-height: 1.75; margin-bottom: 1.25rem; }
- .about-card { background: var(--off); border: 1.5px solid var(--line); border-left: 5px solid var(--red); border-radius: 0 10px 10px 0; padding: 1.25rem 1.5rem; margin-top: 1.5rem; }
- .about-card p { font-family: 'Source Serif 4', serif; font-size: 0.9rem; color: var(--text-mid); font-style: italic; line-height: 1.65; }
-
- /* ANIMATIONS */
- @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
- .page.active .hero-content > * { animation: fadeUp 0.55s ease both; }
- .page.active .hero-content > *:nth-child(1) { animation-delay: 0.04s; }
- .page.active .hero-content > *:nth-child(2) { animation-delay: 0.1s; }
- .page.active .hero-content > *:nth-child(3) { animation-delay: 0.16s; }
- .page.active .hero-content > *:nth-child(4) { animation-delay: 0.22s; }
- .page.active .hero-content > *:nth-child(5) { animation-delay: 0.28s; }
-
- /* RESPONSIVE */
- @media (max-width: 1024px) {
- .g4 { grid-template-columns: repeat(2, 1fr); }
- .g3 { grid-template-columns: repeat(2, 1fr); }
- .footer-grid { grid-template-columns: 1fr 1fr; }
- .stats-inner { grid-template-columns: repeat(2, 1fr); }
- .dir-filters { grid-template-columns: 1fr 1fr; }
- }
- @media (max-width: 700px) {
- .g4, .g3, .g2 { grid-template-columns: 1fr; }
- .hero-search-box { flex-direction: column; }
- .footer-grid { grid-template-columns: 1fr; }
- .stats-inner { grid-template-columns: repeat(2, 1fr); }
- .dir-filters { grid-template-columns: 1fr; }
- .form-g2 { grid-template-columns: 1fr; }
- .site-nav { display: none; }
- .topbar-links { gap: 0.75rem; }
- }
- </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyOldCherokee.com | The #1 Directory for Older Jeep Cherokee Owners</title>
+  <meta name="description" content="The only directory built for older Jeep Cherokee owners. Find troubleshooting guides, vetted repair shops, salvage yards, and parts resources all in one place." />
+  <link rel="canonical" href="https://www.myoldcherokee.com/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<!-- TOP BAR now includes Find a Shop, List Your Shop, Submit a Shop, Contact -->
 <div class="topbar">
- <div class="container topbar-inner">
- <span> The #1 Directory for Older Jeep Cherokee Owners.</span>
- <div class="topbar-links">
- <a href="javascript:void(0)" onclick="showPage('directory');return false;">Find a Shop</a>
- <a href="javascript:void(0)" onclick="showPage('junkyards');return false;">Junk Yards</a>
- <a href="javascript:void(0)" onclick="showPage('submit');return false;">Submit a Shop</a>
- <a href="javascript:void(0)" onclick="showPage('contact');return false;">Contact</a>
- </div>
- </div>
+  <div class="container topbar-inner">
+    <span>The #1 Directory for Older Jeep Cherokee Owners.</span>
+    <div class="topbar-links">
+      <a href="directory.html">Find a Shop</a>
+      <a href="junkyards.html">Junk Yards</a>
+      <a href="submit.html">Submit a Shop</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
 </div>
 
-<!-- HEADER no CTA buttons, nav only -->
 <header class="site-header">
- <div class="container header-inner">
- <div class="brand" onclick="showPage('home');return false;" style="cursor:pointer;">
- <div class="brand-badge">
- <div class="brand-badge-line"></div>
- <div class="brand-badge-line"></div>
- <div class="brand-badge-line"></div>
- </div>
- <div class="brand-text">
- <div class="brand-name">MyOldCherokee</div>
- <div class="brand-sub">Cherokee Owner Directory</div>
- </div>
- </div>
- <nav class="site-nav">
- <a href="javascript:void(0)" class="active" onclick="showPage('home',this);return false;">Home</a>
- <a href="javascript:void(0)" onclick="showPage('directory',this);return false;">Directory</a>
- <a href="javascript:void(0)" onclick="showPage('guides',this);return false;">Guides</a>
- <a href="javascript:void(0)" onclick="showPage('faq',this);return false;">FAQ</a>
- <a href="javascript:void(0)" onclick="showPage('community',this);return false;">Community</a>
- <a href="javascript:void(0)" onclick="showPage('about',this);return false;">About</a>
- </nav>
- </div>
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <div class="brand-badge">
+        <div class="brand-badge-line"></div>
+        <div class="brand-badge-line"></div>
+        <div class="brand-badge-line"></div>
+      </div>
+      <div class="brand-text">
+        <div class="brand-name">MyOldCherokee</div>
+        <div class="brand-sub">Cherokee Owner Directory</div>
+      </div>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="directory.html">Directory</a>
+      <a href="guides.html">Guides</a>
+      <a href="faq.html">FAQ</a>
+      <a href="community.html">Community</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
 </header>
 
-<!-- PAGE: HOME -->
-<div id="page-home" class="page active">
- <section class="hero">
- <div class="hero-photo"></div>
- <div class="container hero-content">
- <div class="eyebrow">For Older Jeep Cherokee Owners</div>
- <h1>My Old <span>Cherokee</span></h1>
- <p class="hero-sub">The only directory built for older Jeep Cherokee owners: troubleshooting guides, vetted repair shops, and parts resources all in one place.</p>
- <div class="hero-search-box">
- <input type="search" placeholder="Search by symptom, service, city, or ZIP code…" />
- <button class="btn btn-red btn-lg">Search Directory</button>
- </div>
- <div class="hero-actions">
- <button class="btn btn-ghost btn-lg" onclick="showPage('guides');return false;">🔧 Start Troubleshooting</button>
- </div>
- </div>
- </section>
+<section class="hero">
+  <div class="hero-photo"></div>
+  <div class="container hero-content">
+    <div class="eyebrow">For Older Jeep Cherokee Owners</div>
+    <h1>My Old <span>Cherokee</span></h1>
+    <p class="hero-sub">The only directory built for older Jeep Cherokee owners: troubleshooting guides, vetted repair shops, and parts resources all in one place.</p>
+    <div class="hero-search-box">
+      <input type="search" placeholder="Search by symptom, service, city, or ZIP code…" />
+      <a href="directory.html" class="btn btn-red btn-lg">Search Directory</a>
+    </div>
+    <div class="hero-actions">
+      <a href="guides.html" class="btn btn-ghost btn-lg">🔧 Start Troubleshooting</a>
+    </div>
+  </div>
+</section>
 
- <section class="section">
- <div class="container">
- <div class="section-head">
- <div class="section-label">Browse by Category</div>
- <h2>Find Exactly What You Need</h2>
- <p>From no-start diagnosis to full suspension rebuilds. We have organized everything for Cherokee owners.</p>
- </div>
- <div class="grid g4">
- <div class="cat-card" onclick="showPage('guides');return false;"><div class="cat-icon">🔧</div><h3>Troubleshooting &amp; DIY</h3><p>Symptom-based triage guides and step-by-step repairs for the most common Cherokee issues.</p></div>
- <div class="cat-card" onclick="showPage('directory');return false;"><div class="cat-icon">🏪</div><h3>Repair Shops</h3><p>Independent shops &amp; 4x4 specialists across the U.S.</p></div>
- <div class="cat-card" onclick="showPage('junkyards');return false;"><div class="cat-icon">🔩</div><h3>Junk Yards</h3><p>Find salvage yards with Cherokee parts near you. Pull-a-part, specialty yards, and more.</p></div>
- <div class="cat-card" onclick="showPage('directory');return false;"><div class="cat-icon">⚙️</div><h3>Parts &amp; Services</h3><p>Radiators, axles, machine shops, towing &amp; specialty parts.</p></div>
- </div>
- </div>
- </section>
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-label">Browse by Category</div>
+      <h2>Find Exactly What You Need</h2>
+      <p>From no-start diagnosis to full suspension rebuilds. We have organized everything for Cherokee owners.</p>
+    </div>
+    <div class="grid g4">
+      <a href="guides.html" class="cat-card"><div class="cat-icon">🔧</div><h3>Troubleshooting &amp; DIY</h3><p>Symptom-based triage guides and step-by-step repairs for the most common Cherokee issues.</p></a>
+      <a href="directory.html" class="cat-card"><div class="cat-icon">🏪</div><h3>Repair Shops</h3><p>Independent shops &amp; 4x4 specialists across the U.S.</p></a>
+      <a href="junkyards.html" class="cat-card"><div class="cat-icon">🔩</div><h3>Junk Yards</h3><p>Find salvage yards with Cherokee parts near you. Pull-a-part, specialty yards, and more.</p></a>
+      <a href="directory.html" class="cat-card"><div class="cat-icon">⚙️</div><h3>Parts &amp; Services</h3><p>Radiators, axles, machine shops, towing &amp; specialty parts.</p></a>
+    </div>
+  </div>
+</section>
 
- <div class="issue-strip">
- <div class="container">
- <div class="issue-inner">
- <span class="issue-label">Quick Search:</span>
- <span class="issue-pill">🔑 No Start</span>
- <span class="issue-pill">🌡️ Overheating</span>
- <span class="issue-pill">💨 Rough Idle</span>
- <span class="issue-pill">⚡ Electrical Drain</span>
- <span class="issue-pill">💧 Coolant Leak</span>
- <span class="issue-pill">🌀 Death Wobble</span>
- <span class="issue-pill">⚙️ Transmission</span>
- <span class="issue-pill">📡 Sensor Issues</span>
- <span class="issue-pill">🛠️ Lift Kit Help</span>
- </div>
- </div>
- </div>
-
- <section class="section section-off">
- <div class="container">
- <div class="section-head split">
- <div><div class="section-label">Featured Listings</div><h2>Top-Rated Shops Near You</h2></div>
- <button class="btn btn-outline" onclick="showPage('directory');return false;">View All Listings →</button>
- </div>
- <div style="background:var(--off);border:1.5px dashed var(--line);border-radius:12px;padding:3rem 2rem;text-align:center;">
- <div style="font-size:2.5rem;margin-bottom:1rem;">🏪</div>
- <h3 style="font-family:'Oswald',sans-serif;font-size:1.2rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:var(--text);margin-bottom:0.5rem;">Shop Listings Coming Soon</h3>
- <p style="font-family:'Source Serif 4',serif;color:var(--text-mid);font-size:0.95rem;max-width:42ch;margin:0 auto 1.5rem;">We're building out the directory. If you own or know a shop that works on older Cherokees, lets us know.</p>
- <button class="btn btn-red" onclick="showPage('submit');return false;">Submit Your Shop</button>
- </div>
- </div>
- </section>
- <div class="review-strip">
- <div class="container">
- <div class="review-inner">
- <div>
- <div class="section-label" style="text-align:left;display:inline-block;margin-bottom:0.4rem;">Community Reviews</div>
- <h3 style="font-family:'Oswald',sans-serif;font-size:1.4rem;font-weight:700;text-transform:uppercase;letter-spacing:0.02em;color:var(--text);margin-bottom:0.3rem;">Have You Used MyOldCherokee.com?</h3>
- <p style="font-family:'Source Serif 4',serif;color:var(--text-mid);font-size:0.95rem;">We're just getting started. Be among the first to leave a review and help other Cherokee owners find us.</p>
- </div>
- <div style="display:flex;gap:0.75rem;flex-wrap:wrap;flex-shrink:0;">
- <a href="https://www.google.com/maps" target="_blank" class="btn btn-outline">⭐ Review on Google</a>
- <a href="https://www.facebook.com" target="_blank" class="btn btn-outline">Review on Facebook</a>
- </div>
- </div>
- </div>
- </div>
-
- <section class="cta-banner">
- <div class="container cta-inner">
- <div class="cta-text">
- <h2>Own a Shop That Works on Older Cherokees?</h2>
- <p>Get your shop in front of thousands of Cherokee owners searching for help right now.</p>
- </div>
- <div class="cta-actions">
- <button class="btn btn-red btn-lg" onclick="showPage('submit');return false;">List Your Shop</button>
- <button class="btn btn-ghost btn-lg" onclick="showPage('about');return false;">Learn More</button>
- </div>
- </div>
- </section>
+<div class="issue-strip">
+  <div class="container">
+    <div class="issue-inner">
+      <span class="issue-label">Quick Search:</span>
+      <a href="guides.html" class="issue-pill">🔑 No Start</a>
+      <a href="guides.html" class="issue-pill">🌡️ Overheating</a>
+      <a href="guides.html" class="issue-pill">💨 Rough Idle</a>
+      <a href="guides.html" class="issue-pill">⚡ Electrical Drain</a>
+      <a href="guides.html" class="issue-pill">💧 Coolant Leak</a>
+      <a href="guides.html" class="issue-pill">🌀 Death Wobble</a>
+      <a href="guides.html" class="issue-pill">⚙️ Transmission</a>
+      <a href="guides.html" class="issue-pill">📡 Sensor Issues</a>
+      <a href="guides.html" class="issue-pill">🛠️ Lift Kit Help</a>
+    </div>
+  </div>
 </div>
 
-<!-- PAGE: DIRECTORY -->
-<div id="page-directory" class="page">
+<section class="section section-off">
+  <div class="container">
+    <div class="section-head split">
+      <div><div class="section-label">Featured Listings</div><h2>Top-Rated Shops Near You</h2></div>
+      <a href="directory.html" class="btn btn-outline">View All Listings →</a>
+    </div>
+    <div style="background:var(--off);border:1.5px dashed var(--line);border-radius:12px;padding:3rem 2rem;text-align:center;">
+      <div style="font-size:2.5rem;margin-bottom:1rem;">🏪</div>
+      <h3 style="font-family:'Oswald',sans-serif;font-size:1.2rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:var(--text);margin-bottom:0.5rem;">Shop Listings Coming Soon</h3>
+      <p style="font-family:'Source Serif 4',serif;color:var(--text-mid);font-size:0.95rem;max-width:42ch;margin:0 auto 1.5rem;">We're building out the directory. If you own or know a shop that works on older Cherokees, let us know.</p>
+      <a href="submit.html" class="btn btn-red">Submit Your Shop</a>
+    </div>
+  </div>
+</section>
 
- <!-- PAGE HERO -->
- <div style="background:var(--red);padding:3rem 0 2.5rem;">
- <div class="container">
- <div class="section-label" style="color:rgba(255,255,255,0.6);border-bottom-color:rgba(255,255,255,0.3);margin-bottom:0.75rem;">Featured Listings</div>
- <h2 style="font-family:'Oswald',sans-serif;font-size:clamp(1.8rem,3vw,2.8rem);font-weight:700;text-transform:uppercase;letter-spacing:0.02em;color:#fff;margin-bottom:0.5rem;">Cherokee Specialists Near You</h2>
- <p style="font-family:'Source Serif 4',serif;color:rgba(255,255,255,0.75);font-size:1rem;max-width:56ch;margin-bottom:1.75rem;">Shops that know older Cherokees not just the ones who'll take your keys and leave you hoping for the best.</p>
- <div style="background:#fff;border-radius:10px;padding:0.75rem;display:flex;gap:0.6rem;max-width:580px;box-shadow:0 8px 32px rgba(0,0,0,0.2);">
- <input type="search" placeholder="Search by city, state, or service…" style="flex:1;border:1.5px solid var(--line);border-radius:7px;height:42px;padding:0 0.9rem;font-family:'DM Sans',sans-serif;font-size:0.93rem;color:var(--text);outline:none;" />
- <button class="btn btn-red" style="height:42px;">Search</button>
- </div>
- </div>
- </div>
-
- <!-- CATEGORY FILTER PILLS -->
- <div style="background:var(--off);border-bottom:1px solid var(--line);padding:1rem 0;">
- <div class="container">
- <div style="display:flex;gap:0.5rem;flex-wrap:wrap;align-items:center;">
- <span style="font-family:'Oswald',sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-lite);margin-right:0.25rem;">Filter:</span>
- <button class="filter-pill active-pill" onclick="setFilter(this)">All</button>
- <button class="filter-pill" onclick="setFilter(this)">Repair Shops</button>
- <button class="filter-pill" onclick="setFilter(this)">Electrical</button>
- <button class="filter-pill" onclick="setFilter(this)">Cooling &amp; Radiator</button>
- <button class="filter-pill" onclick="setFilter(this)">Suspension &amp; Alignment</button>
- <button class="filter-pill" onclick="setFilter(this)">4x4 &amp; Off-Road</button>
- <button class="filter-pill" onclick="setFilter(this)">Driveline &amp; Axle</button>
- <button class="filter-pill" onclick="setFilter(this)">Diagnostics</button>
- <button class="filter-pill" onclick="setFilter(this)">Parts &amp; Machine Shop</button>
- <button class="filter-pill" onclick="setFilter(this)">Towing &amp; Recovery</button>
- </div>
- </div>
- </div>
-
- <section class="section">
- <div class="container">
-
- <!-- FEATURED BANNER -->
- <div style="background:linear-gradient(135deg,var(--red-dark) 0%,var(--red) 100%);border-radius:14px;padding:2rem 2.5rem;margin-bottom:3rem;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;">
- <div>
- <div style="font-family:'Oswald',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:0.4rem;">Get Listed First</div>
- <h3 style="font-family:'Oswald',sans-serif;font-size:1.5rem;font-weight:700;text-transform:uppercase;letter-spacing:0.02em;color:#fff;margin-bottom:0.3rem;">Own a Shop That Works on Older Cherokees?</h3>
- <p style="font-family:'Source Serif 4',serif;color:rgba(255,255,255,0.72);font-size:0.95rem;">Featured listings are reviewed and placed at the top. Be one of the first shops on the directory.</p>
- </div>
- <button class="btn btn-white" style="flex-shrink:0;" onclick="showPage('submit');return false;">Submit Your Shop →</button>
- </div>
-
- <!-- LISTINGS HEADING -->
- <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;flex-wrap:wrap;gap:0.75rem;">
- <div>
- <div class="section-label" style="display:inline-block;margin-bottom:0.3rem;">Shop Listings</div>
- <h2 style="font-family:'Oswald',sans-serif;font-size:1.5rem;font-weight:700;text-transform:uppercase;letter-spacing:0.02em;color:var(--text);">Featured Shops</h2>
- </div>
- <span style="font-size:0.85rem;color:var(--text-lite);font-weight:500;">More listings being added <a href="javascript:void(0)" onclick="showPage('submit');return false;" style="color:var(--red);text-decoration:underline;text-underline-offset:2px;">submit yours</a></span>
- </div>
-
- <!-- LISTING CARDS -->
- <div class="grid g3">
-
- <!-- Card 1 -->
- <div class="listing-card">
- <div class="listing-thumb" style="background:linear-gradient(135deg,#2d3a2e,#1a2a1c);font-size:2.5rem;">🏔️
- <span class="listing-state">Featured</span>
- </div>
- <div class="listing-body">
- <div class="listing-cats"><span class="lcat">4x4 &amp; Off-Road</span><span class="lcat">Suspension</span></div>
- <div class="listing-name">Your Shop Here</div>
- <div class="listing-loc">📍 City, State</div>
- <p class="listing-summary">This spot is reserved for the first featured shop in your area. Be the go-to Cherokee specialist in your region.</p>
- <div class="listing-actions">
- <button class="btn btn-red btn-sm" onclick="showPage('submit');return false;">Claim This Spot</button>
- </div>
- </div>
- </div>
-
- <!-- Card 2 -->
- <div class="listing-card">
- <div class="listing-thumb" style="background:linear-gradient(135deg,#2a2a3a,#1a1a2c);font-size:2.5rem;">⚡
- <span class="listing-state">Featured</span>
- </div>
- <div class="listing-body">
- <div class="listing-cats"><span class="lcat">Electrical</span><span class="lcat">Diagnostics</span></div>
- <div class="listing-name">Your Shop Here</div>
- <div class="listing-loc">📍 City, State</div>
- <p class="listing-summary">Electrical and diagnostic specialists for older Cherokees. This listing is open get your shop in front of Cherokee owners searching now.</p>
- <div class="listing-actions">
- <button class="btn btn-red btn-sm" onclick="showPage('submit');return false;">Claim This Spot</button>
- </div>
- </div>
- </div>
-
- <!-- Card 3 -->
- <div class="listing-card">
- <div class="listing-thumb" style="background:linear-gradient(135deg,#3a2a1a,#2c1a0a);font-size:2.5rem;">🌡️
- <span class="listing-state">Featured</span>
- </div>
- <div class="listing-body">
- <div class="listing-cats"><span class="lcat">Cooling</span><span class="lcat">Radiator</span></div>
- <div class="listing-name">Your Shop Here</div>
- <div class="listing-loc">📍 City, State</div>
- <p class="listing-summary">Cooling system specialists. If you handle the overheating issues that plague older Cherokees, this spot is for you.</p>
- <div class="listing-actions">
- <button class="btn btn-red btn-sm" onclick="showPage('submit');return false;">Claim This Spot</button>
- </div>
- </div>
- </div>
-
- </div>
-
- <!-- COMING SOON STRIP -->
- <div style="margin-top:2.5rem;background:var(--off);border:1.5px dashed var(--warm-mid);border-radius:12px;padding:2.5rem 2rem;text-align:center;">
- <div style="font-size:2rem;margin-bottom:0.75rem;">🗺️</div>
- <h3 style="font-family:'Oswald',sans-serif;font-size:1.1rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:var(--text);margin-bottom:0.4rem;">More Listings Coming Across the U.S.</h3>
- <p style="font-family:'Source Serif 4',serif;color:var(--text-mid);font-size:0.92rem;max-width:50ch;margin:0 auto 1.25rem;">Know a shop that's good with older Cherokees? Help the community and nominate them or if you're the shop, get listed.</p>
- <div style="display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;">
- <button class="btn btn-red" onclick="showPage('submit');return false;">Submit a Shop</button>
- <button class="btn btn-outline" onclick="showPage('contact');return false;">Nominate a Shop</button>
- </div>
- </div>
-
- </div>
- </section>
-</div>
-
-<!-- PAGE: DIY GUIDES -->
-<div id="page-guides" class="page">
- <section class="section">
- <div class="container">
- <div class="section-head left">
- <div class="section-label">DIY &amp; Troubleshooting</div>
- <h2>Fix It Yourself First</h2>
- <p>Structured triage guides for the most common older Cherokee problems before you spend money at a shop.</p>
- </div>
- <div class="grid g2">
- <div class="guide-card"><div style="display:flex;gap:.5rem;flex-wrap:wrap;"><span class="guide-tag tag-red">No Start</span><span class="guide-tag tag-red">No Crank</span></div><h3>No-Start Triage for Older Cherokee Models</h3><p>Start with battery voltage, grounds, crank-or-no-crank behavior, and fuel pump prime checks before replacing any parts. Covers older Cherokees.</p><div class="guide-meta"><span class="diff diff-int">Beginner – Intermediate</span><button class="btn btn-outline btn-sm">Open Guide →</button></div></div>
- <div class="guide-card"><div style="display:flex;gap:.5rem;flex-wrap:wrap;"><span class="guide-tag tag-amber">Overheating</span><span class="guide-tag tag-amber">Coolant Loss</span></div><h3>Overheating Checklist for Older Cherokees</h3><p>Organized checks for coolant level, fan operation, thermostat behavior, radiator flow, and cooling system pressure testing.</p><div class="guide-meta"><span class="diff diff-beg">Beginner</span><button class="btn btn-outline btn-sm">Open Guide →</button></div></div>
- <div class="guide-card"><div style="display:flex;gap:.5rem;flex-wrap:wrap;"><span class="guide-tag tag-blue">Dead Battery</span><span class="guide-tag tag-blue">Electrical Drain</span></div><h3>Parasitic Electrical Drain: How to Find It</h3><p>How to isolate a parasitic draw using a multimeter and identify the most common drain culprits on older Cherokee electrical systems.</p><div class="guide-meta"><span class="diff diff-int">Intermediate</span><button class="btn btn-outline btn-sm">Open Guide →</button></div></div>
- <div class="guide-card"><div style="display:flex;gap:.5rem;flex-wrap:wrap;"><span class="guide-tag tag-green">Wobble</span><span class="guide-tag tag-green">Steering Shake</span></div><h3>Death Wobble &amp; Steering Shake Diagnosis</h3><p>A practical inspection flow for steering and suspension components before paying for alignment or part replacement.</p><div class="guide-meta"><span class="diff diff-int">Intermediate</span><button class="btn btn-outline btn-sm">Open Guide →</button></div></div>
- <div class="guide-card"><div style="display:flex;gap:.5rem;flex-wrap:wrap;"><span class="guide-tag tag-amber">Rough Idle</span><span class="guide-tag tag-amber">Stalling</span></div><h3>Rough Idle &amp; Stalling on the Cherokee 4.0</h3><p>IAC valve, TPS, vacuum leaks, and O2 sensor checks for the classic rough idle that plagues the 4.0L inline-six.</p><div class="guide-meta"><span class="diff diff-int">Intermediate</span><button class="btn btn-outline btn-sm">Open Guide →</button></div></div>
- <div class="guide-card"><div style="display:flex;gap:.5rem;flex-wrap:wrap;"><span class="guide-tag tag-red">4WD</span><span class="guide-tag tag-red">Transfer Case</span></div><h3>4WD Not Engaging: Transfer Case Triage</h3><p>Vacuum line checks, linkage inspection, and transfer case motor testing for Cherokee 4WD engagement problems.</p><div class="guide-meta"><span class="diff diff-adv">Advanced</span><button class="btn btn-outline btn-sm">Open Guide →</button></div></div>
- </div>
- </div>
- </section>
-</div>
-
-<!-- PAGE: SUBMIT SHOP -->
-<div id="page-submit" class="page">
- <section class="section">
- <div class="container" style="max-width:820px;">
- <div class="section-head left"><div class="section-label">For Shop Owners</div><h2>List Your Shop</h2><p>Get in front of Cherokee owners actively searching for help in your area. Submit your details and we'll review your listing within 48 hours.</p></div>
- <div class="form-wrap">
- <div class="form-section-title">Business Information</div>
- <div class="form-g2"><div class="form-row"><label>Business Name *</label><input type="text" placeholder="Your shop name" /></div><div class="form-row"><label>Contact Name *</label><input type="text" placeholder="Your name" /></div></div>
- <div class="form-g2"><div class="form-row"><label>Email Address *</label><input type="email" placeholder="you@yourshop.com" /></div><div class="form-row"><label>Phone Number</label><input type="tel" placeholder="(555) 000-0000" /></div></div>
- <div class="form-row"><label>Website URL</label><input type="url" placeholder="https://www.yourshop.com" /></div>
- <div class="form-section-title" style="margin-top:1.5rem;">Location</div>
- <div class="form-g2"><div class="form-row"><label>Street Address</label><input type="text" placeholder="123 Main St" /></div><div class="form-row"><label>City *</label><input type="text" placeholder="City" /></div></div>
- <div class="form-g2"><div class="form-row"><label>State *</label><input type="text" placeholder="e.g. CO" maxlength="2" /></div><div class="form-row"><label>ZIP Code</label><input type="text" placeholder="e.g. 80202" /></div></div>
- <div class="form-section-title" style="margin-top:1.5rem;">Your Services</div>
- <div class="form-row"><label>Primary Category *</label><select><option value="">Select the best fit…</option><option>General Repair Shop</option><option>4x4 / Off-Road Specialist</option><option>Electrical</option><option>Cooling / Radiator</option><option>Suspension / Alignment</option><option>Driveline / Axle</option><option>Diagnostics</option><option>Towing / Recovery</option><option>Parts / Machine Shop</option></select></div>
- <div class="form-row"><label>Services Offered</label><textarea placeholder="Describe your services, Cherokee-specific experience, and any specialties…"></textarea></div>
- <div class="form-row"><label>Cherokee Years / Models Supported</label><input type="text" placeholder="e.g. older Cherokee models" /></div>
- <div class="form-row"><label>Anything Owners Should Know</label><textarea placeholder="Appointment required? Diagnostics fee? Mobile service? Towing available?" style="min-height:70px;"></textarea></div>
- <button class="btn btn-red btn-lg" style="width:100%;margin-top:.5rem;">Submit for Review</button>
- <p class="form-note">We review all submissions within 48 hours. Not affiliated with Jeep or Stellantis.</p>
- </div>
- </div>
- </section>
-</div>
-
-<!-- PAGE: FAQ -->
-<div id="page-faq" class="page">
- <section class="section">
- <div class="container" style="max-width:820px;">
- <div class="section-head left"><div class="section-label">FAQ</div><h2>Frequently Asked Questions</h2><p>Answers to the most common questions about MyOldCherokee.com.</p></div>
- <details class="faq-item" open><summary>What is MyOldCherokee.com?</summary><p>An independent directory and help hub for owners of older Jeep Cherokees. We focus on troubleshooting guides, DIY resources, and a directory of local shops that actually understand these vehicles.</p></details>
- <details class="faq-item"><summary>Is this an official Jeep or Stellantis website?</summary><p>No. MyOldCherokee.com is a completely independent resource. We are not affiliated with, endorsed by, or connected to Jeep, Stellantis, or any manufacturer.</p></details>
- <details class="faq-item"><summary>How do I list my shop?</summary><p>Submit your shop through the Submit a Shop page and we'll review it within 48 hours. We'll reach out if we need any additional information before adding your listing to the directory.</p></details>
- <details class="faq-item"><summary>What Cherokee models are covered?</summary><p>My Old Cherokee is centered on the Jeep Cherokee XJ, especially older models still on the road (or one good weekend away from being back on the road), if you know, you know. My Old Cherokee is a focused resource for troubleshooting, DIY repairs, repair shop listings and more.</p></details>
-
- <details class="faq-item"><summary>How do I get my listing updated or removed?</summary><p>Use the Contact page and send us your shop name, the change needed, and your contact email. We'll update or remove listings promptly.</p></details>
- <details class="faq-item"><summary>Can I submit a guide or resource link?</summary><p>Yes! We love community contributions. Use the Contact page to suggest a resource, guide link, or original how-to content.</p></details>
- </div>
- </section>
-</div>
-
-<!-- PAGE: ABOUT -->
-<div id="page-about" class="page">
-  <section class="section">
-    <div class="container" style="max-width:820px;">
-      <div class="section-head left">
-        <div class="section-label">Our Story</div>
-        <h2>About MyOldCherokee.com</h2>
+<div class="review-strip">
+  <div class="container">
+    <div class="review-inner">
+      <div>
+        <div class="section-label" style="text-align:left;display:inline-block;margin-bottom:0.4rem;">Community Reviews</div>
+        <h3 style="font-family:'Oswald',sans-serif;font-size:1.4rem;font-weight:700;text-transform:uppercase;letter-spacing:0.02em;color:var(--text);margin-bottom:0.3rem;">Have You Used MyOldCherokee.com?</h3>
+        <p style="font-family:'Source Serif 4',serif;color:var(--text-mid);font-size:0.95rem;">We're just getting started. Be among the first to leave a review and help other Cherokee owners find us.</p>
       </div>
-
-      <p class="about-lead">
-        My Old Cherokee was created because the information needed to troubleshoot problems, handle DIY repairs, or even find a repair shop for older Jeep Cherokee XJs can be scattered all over the place, if you can find it at all.
-      </p>
-
-      <p>
-        This directory is meant to organize that information in one clean, searchable place so we can get our babies back on the road, off the road, or in the mud, where they belong. The goal is simple. Keep the most useful troubleshooting help, DIY resources, and Cherokee-savvy shops in one spot so the next owner can find real help in minutes, not hours.
-      </p>
-
-      <p style="margin-top: 1rem;">
-        We are starting with U.S. coverage, with plans to grow over time as the community grows. If you are an owner, a mechanic, or just someone who refuses to give up on a great vehicle, you are in the right place.
-      </p>
-
-      <div class="about-card">
-        <p>
-          Independent resource for owners. Not affiliated with or endorsed by Jeep, Stellantis, or any parts manufacturer. All trademarks belong to their respective owners. Listings are user-submitted and reviewed, but we make no guarantees about individual shop quality.
-        </p>
+      <div style="display:flex;gap:0.75rem;flex-wrap:wrap;flex-shrink:0;">
+        <a href="https://www.google.com/maps" target="_blank" class="btn btn-outline">⭐ Review on Google</a>
+        <a href="https://www.facebook.com" target="_blank" class="btn btn-outline">Review on Facebook</a>
       </div>
     </div>
-  </section>
+  </div>
 </div>
 
+<section class="cta-banner">
+  <div class="container cta-inner">
+    <div class="cta-text">
+      <h2>Own a Shop That Works on Older Cherokees?</h2>
+      <p>Get your shop in front of thousands of Cherokee owners searching for help right now.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="submit.html" class="btn btn-red btn-lg">List Your Shop</a>
+      <a href="about.html" class="btn btn-ghost btn-lg">Learn More</a>
+    </div>
+  </div>
+</section>
 
-<!-- PAGE: JUNK YARDS -->
-<div id="page-junkyards" class="page">
- <section class="section">
- <div class="container">
- <div class="section-head left">
- <div class="section-label">Junk Yards &amp; Salvage</div>
- <h2>Find Cherokee Parts at Salvage Yards</h2>
- <p>Pull-a-part yards, specialty Cherokee salvage, and wreckers that stock older older Cherokees parts. Know one we're missing? Submit it below.</p>
- </div>
-
- <div class="dir-filters">
- <input type="search" placeholder="🔍 Search by yard name, city, state, or part needed…" />
- <select>
- <option value="">All Types</option>
- <option>Pull-A-Part / Self-Service</option>
- <option>Full-Service Salvage</option>
- <option>Cherokee Specialty</option>
- <option>4x4 / Off-Road Wrecker</option>
- <option>Online Parts Yard</option>
- </select>
- <select>
- <option value="">All States</option>
- <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option>
- <option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option>
- <option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option>
- <option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option>
- <option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option>
- <option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option>
- <option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option>
- <option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option>
- <option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option>
- <option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option>
- <option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option>
- <option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option>
- <option>Wisconsin</option><option>Wyoming</option>
- </select>
- <button class="btn btn-red">Search</button>
- <button class="btn btn-outline">Reset</button>
- </div>
-
- <div style="background:var(--off);border:1.5px dashed var(--line);border-radius:12px;padding:4rem 2rem;text-align:center;margin-bottom:3rem;">
- <div style="font-size:3rem;margin-bottom:1rem;">🔩</div>
- <h3 style="font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:var(--text);margin-bottom:0.5rem;">Salvage Listings Coming Soon</h3>
- <p style="font-family:'Source Serif 4',serif;color:var(--text-mid);font-size:0.97rem;max-width:48ch;margin:0 auto 1.5rem;">We're building out the junkyard directory across the U.S. Know a yard that regularly stocks Cherokee parts? Help the community and get it listed.</p>
- <button class="btn btn-red btn-lg" onclick="document.getElementById('jy-submit').scrollIntoView({behavior:'smooth'});return false;">Submit a Yard</button>
- </div>
-
- <div class="section-head left" style="margin-bottom:1.5rem;">
- <div class="section-label">Tips for Junkyard Hunting</div>
- <h2>Before You Go</h2>
- </div>
- <div class="grid g3" style="margin-bottom:3rem;">
- <div class="guide-card">
- <div style="display:flex;gap:.5rem;"><span class="guide-tag tag-amber">Know Your VIN</span></div>
- <h3>Confirm Cherokee vs Cherokee Parts</h3>
- <p>Cherokee share some parts but not many. Know your exact year and model before you go certain engines, axles, and body clips are not interchangeable.</p>
- </div>
- <div class="guide-card">
- <div style="display:flex;gap:.5rem;"><span class="guide-tag tag-green">Bring Tools</span></div>
- <h3>Self-Service Yard Prep</h3>
- <p>Pull-a-part yards require your own tools. Bring basic sockets, wrenches, penetrating oil, and a flashlight. Call ahead to confirm they have Cherokee inventory before the trip.</p>
- </div>
- <div class="guide-card">
- <div style="display:flex;gap:.5rem;"><span class="guide-tag tag-blue">Search Online First</span></div>
- <h3>Use Car-Part.com</h3>
- <p>Car-Part.com aggregates inventory from salvage yards nationwide. Search your part number before visiting to confirm availability and compare yard prices across your region.</p>
- </div>
- </div>
-
- <div id="jy-submit" class="form-wrap" style="max-width:820px;margin:0 auto;">
- <div class="form-section-title">Submit a Junkyard or Salvage Yard</div>
- <p style="font-family:'Source Serif 4',serif;font-size:0.9rem;color:var(--text-mid);margin-bottom:1.5rem;line-height:1.6;">Know a yard that regularly has Cherokees, Cherokee and compatible parts in stock? Submit it and we'll add it to the directory.</p>
- <div class="form-g2">
- <div class="form-row"><label>Yard / Business Name *</label><input type="text" placeholder="e.g. Tri-State Auto Salvage" /></div>
- <div class="form-row"><label>Contact Name (optional)</label><input type="text" placeholder="Your name or the yard's contact" /></div>
- </div>
- <div class="form-g2">
- <div class="form-row"><label>City *</label><input type="text" placeholder="City" /></div>
- <div class="form-row"><label>State *</label><input type="text" placeholder="e.g. CO" maxlength="2" /></div>
- </div>
- <div class="form-g2">
- <div class="form-row"><label>Phone</label><input type="tel" placeholder="(555) 000-0000" /></div>
- <div class="form-row"><label>Website or Facebook URL</label><input type="url" placeholder="https://" /></div>
- </div>
- <div class="form-row"><label>Type of Yard *</label>
- <select>
- <option value="">Select…</option>
- <option>Pull-A-Part / Self-Service</option>
- <option>Full-Service Salvage</option>
- <option>Cherokee / Jeep Specialty</option>
- <option>4x4 / Off-Road Wrecker</option>
- <option>Online Parts Yard</option>
- </select>
- </div>
- <div class="form-row"><label>Notes (optional)</label><textarea placeholder="Does this yard regularly stock Cherokees? Any tips for finding Cherokee inventory? Anything owners should know before visiting?" style="min-height:80px;"></textarea></div>
- <div class="form-row"><label>Your Email (not published)</label><input type="email" placeholder="you@example.com" /></div>
- <button class="btn btn-red btn-lg" style="width:100%;margin-top:0.25rem;">Submit for Review</button>
- <p class="form-note">Reviewed before listing. We'll reach out if we need more info.</p>
- </div>
-
- </div>
- </section>
-</div>
-
-<!-- PAGE: COMMUNITY -->
-<div id="page-community" class="page">
- <section class="section">
- <div class="container" style="max-width:860px;">
- <div class="section-head left">
- <div class="section-label">Community</div>
- <h2>Share Your Cherokee Knowledge</h2>
- <p>Got a tip, a fix, a photo, or a story? Submit it here. All submissions are reviewed before going live this is a curated community, not a free-for-all.</p>
- </div>
-
- <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:2rem;">
- <button class="btn btn-red btn-sm" onclick="showSubmitTab('tip',this)" id="ctab-tip">💡 Tip or Fix</button>
- <button class="btn btn-outline btn-sm" onclick="showSubmitTab('photo',this)" id="ctab-photo">📷 Photo</button>
- <button class="btn btn-outline btn-sm" onclick="showSubmitTab('story',this)" id="ctab-story">📝 Story or Experience</button>
- <button class="btn btn-outline btn-sm" onclick="showSubmitTab('question',this)" id="ctab-question">❓ Question for the Community</button>
- </div>
-
- <!-- TIP TAB -->
- <div id="ctab-content-tip" class="community-tab-content">
- <div class="form-wrap">
- <div class="form-section-title">Submit a Tip or Fix</div>
- <p style="font-family:'Source Serif 4',serif;font-size:0.9rem;color:var(--text-mid);margin-bottom:1.25rem;line-height:1.6;">Found a fix that worked on your Cherokee? A shortcut, a workaround, a part that's better than OEM? Share it with the community.</p>
- <div class="form-g2">
- <div class="form-row"><label>Your Name (or handle)</label><input type="text" placeholder="e.g. TrailDust_Cherokee" /></div>
- <div class="form-row"><label>Your Cherokee Year &amp; Model</label><input type="text" placeholder="e.g. 1998 Cherokee Sport" /></div>
- </div>
- <div class="form-row"><label>Tip Title *</label><input type="text" placeholder="e.g. Easy fix for the classic Cherokee death wobble at 55mph" /></div>
- <div class="form-row"><label>Category</label>
- <select>
- <option value="">Select a category…</option>
- <option>No Start / Cranking</option>
- <option>Overheating / Cooling</option>
- <option>Electrical / Gremlins</option>
- <option>Suspension / Steering</option>
- <option>Engine / Idle</option>
- <option>4WD / Transfer Case</option>
- <option>Driveline / Axle</option>
- <option>Body / Interior</option>
- <option>Parts Recommendation</option>
- <option>General Maintenance</option>
- <option>Other</option>
- </select>
- </div>
- <div class="form-row"><label>The Tip / Fix *</label><textarea rows="6" placeholder="Describe the issue and your fix in as much detail as you'd like. What symptoms did you see? What did you try? What worked?"></textarea></div>
- <div class="form-row"><label>Photo (optional)</label><input type="file" accept="image/*" style="background:var(--off);padding:0.5rem 0.9rem;cursor:pointer;" /></div>
- <div class="form-row"><label>Email (not published for follow-up only)</label><input type="email" placeholder="you@example.com" /></div>
- <button class="btn btn-red btn-lg" style="width:100%;margin-top:0.25rem;">Submit for Review</button>
- <p class="form-note">All submissions are reviewed before publishing. We may lightly edit for clarity. Your email will never be shared.</p>
- </div>
- </div>
-
- <!-- PHOTO TAB -->
- <div id="ctab-content-photo" class="community-tab-content" style="display:none;">
- <div class="form-wrap">
- <div class="form-section-title">Submit a Photo</div>
- <p style="font-family:'Source Serif 4',serif;font-size:0.9rem;color:var(--text-mid);margin-bottom:1.25rem;line-height:1.6;">Trail shots, builds, before-and-afters, engine bays, whatever you're proud of. Keep it Cherokee.</p>
- <div class="form-g2">
- <div class="form-row"><label>Your Name (or handle)</label><input type="text" placeholder="e.g. MudBound_1997" /></div>
- <div class="form-row"><label>Your Cherokee Year &amp; Model</label><input type="text" placeholder="e.g. 1994 Cherokee Country" /></div>
- </div>
- <div class="form-row"><label>Photo *</label><input type="file" accept="image/*" style="background:var(--off);padding:0.5rem 0.9rem;cursor:pointer;" /></div>
- <div class="form-row"><label>Caption</label><input type="text" placeholder="A short description of what we're looking at" /></div>
- <div class="form-row"><label>Location (optional)</label><input type="text" placeholder="e.g. Moab, UT or Hill Country, TX" /></div>
- <div class="form-row"><label>Email (not published)</label><input type="email" placeholder="you@example.com" /></div>
- <button class="btn btn-red btn-lg" style="width:100%;margin-top:0.25rem;">Submit for Review</button>
- <p class="form-note">By submitting you confirm you own or have rights to the photo. Reviewed before publishing.</p>
- </div>
- </div>
-
- <!-- STORY TAB -->
- <div id="ctab-content-story" class="community-tab-content" style="display:none;">
- <div class="form-wrap">
- <div class="form-section-title">Share a Story or Experience</div>
- <p style="font-family:'Source Serif 4',serif;font-size:0.9rem;color:var(--text-mid);margin-bottom:1.25rem;line-height:1.6;">How you got your Cherokee, a trip it survived, a shop that saved you, or the one that got away. Long or short we want to hear it.</p>
- <div class="form-g2">
- <div class="form-row"><label>Your Name (or handle)</label><input type="text" placeholder="e.g. BackRoad_Bill" /></div>
- <div class="form-row"><label>Your Cherokee Year &amp; Model</label><input type="text" placeholder="e.g. 2001 Cherokee Classic" /></div>
- </div>
- <div class="form-row"><label>Story Title *</label><input type="text" placeholder="e.g. How a $400 Cherokee became my favorite vehicle ever" /></div>
- <div class="form-row"><label>Your Story *</label><textarea rows="10" placeholder="Write as much or as little as you'd like."></textarea></div>
- <div class="form-row"><label>Photo (optional)</label><input type="file" accept="image/*" style="background:var(--off);padding:0.5rem 0.9rem;cursor:pointer;" /></div>
- <div class="form-row"><label>Email (not published)</label><input type="email" placeholder="you@example.com" /></div>
- <button class="btn btn-red btn-lg" style="width:100%;margin-top:0.25rem;">Submit for Review</button>
- <p class="form-note">Reviewed before publishing. We may lightly edit for length or clarity.</p>
- </div>
- </div>
-
- <!-- QUESTION TAB -->
- <div id="ctab-content-question" class="community-tab-content" style="display:none;">
- <div class="form-wrap">
- <div class="form-section-title">Ask the Community</div>
- <p style="font-family:'Source Serif 4',serif;font-size:0.9rem;color:var(--text-mid);margin-bottom:1.25rem;line-height:1.6;">Stumped by something? Post a question and other Cherokee owners may have the answer. Reviewed and posted to the community board.</p>
- <div class="form-g2">
- <div class="form-row"><label>Your Name (or handle)</label><input type="text" placeholder="e.g. NewToCherokee" /></div>
- <div class="form-row"><label>Your Cherokee Year &amp; Model</label><input type="text" placeholder="e.g. 1996 Cherokee" /></div>
- </div>
- <div class="form-row"><label>Your Question *</label><input type="text" placeholder="e.g. Best replacement thermostat for a 4.0 that keeps running hot?" /></div>
- <div class="form-row"><label>More Detail (optional)</label><textarea rows="4" placeholder="Describe what you've already tried, symptoms you're seeing, etc."></textarea></div>
- <div class="form-row"><label>Category</label>
- <select>
- <option value="">Select a category…</option>
- <option>No Start / Cranking</option>
- <option>Overheating / Cooling</option>
- <option>Electrical / Gremlins</option>
- <option>Suspension / Steering</option>
- <option>Engine / Idle</option>
- <option>4WD / Transfer Case</option>
- <option>Parts / Shopping</option>
- <option>General</option>
- </select>
- </div>
- <div class="form-row"><label>Email (not published we'll notify you when answers come in)</label><input type="email" placeholder="you@example.com" /></div>
- <button class="btn btn-red btn-lg" style="width:100%;margin-top:0.25rem;">Submit Question</button>
- <p class="form-note">Questions are reviewed before posting. This is a moderated community board keep it helpful and on-topic.</p>
- </div>
- </div>
-
- </div>
- </section>
-</div>
-
-<!-- PAGE: CONTACT -->
-<div id="page-contact" class="page">
- <section class="section">
- <div class="container" style="max-width:640px;">
- <div class="section-head left"><div class="section-label">Get in Touch</div><h2>Contact Us</h2><p>Questions, listing updates, guide suggestions, or partnership inquiries. We read everything.</p></div>
- <div class="form-wrap">
- <div class="form-row"><label>Your Name *</label><input type="text" placeholder="Full name" /></div>
- <div class="form-row"><label>Email Address *</label><input type="email" placeholder="you@example.com" /></div>
- <div class="form-row"><label>Subject</label><select><option>General Question</option><option>Listing Update / Removal</option><option>Submit a Guide / Resource</option><option>Partnership / Advertising</option><option>Bug Report</option></select></div>
- <div class="form-row"><label>Message *</label><textarea rows="5" placeholder="How can we help?"></textarea></div>
- <button class="btn btn-red btn-lg" style="width:100%;">Send Message</button>
- <p class="form-note">We typically respond within 1–2 business days.</p>
- </div>
- </div>
- </section>
-</div>
-
-<!-- FOOTER -->
 <footer class="site-footer">
- <div class="container">
- <div class="footer-grid">
- <div class="footer-brand-block">
- <div style="font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff;">MyOldCherokee.com</div>
- <p>The #1 directory for older Jeep Cherokee owners. Find DIY guides, troubleshooting help, and vetted repair shops across the United States.</p>
- <p class="footer-disclaimer">Independent resource. Not affiliated with or endorsed by Jeep® or Stellantis®. All trademarks are property of their respective owners.</p>
- </div>
- <div class="footer-col"><h4>Explore</h4><ul><li><a href="javascript:void(0)" onclick="showPage('directory');return false;">Shop Directory</a></li><li><a href="javascript:void(0)" onclick="showPage('junkyards');return false;">Junk Yards</a></li><li><a href="javascript:void(0)" onclick="showPage('guides');return false;">DIY &amp; Guides</a></li><li><a href="javascript:void(0)" onclick="showPage('community');return false;">Community</a></li><li><a href="javascript:void(0)" onclick="showPage('faq');return false;">FAQ</a></li><li><a href="javascript:void(0)" onclick="showPage('about');return false;">About</a></li><li><a href="javascript:void(0)" onclick="showPage('contact');return false;">Contact</a></li></ul></div>
- <div class="footer-col"><h4>For Shops</h4><ul><li><a href="javascript:void(0)" onclick="showPage('submit');return false;">List Your Shop</a></li><li><a href="javascript:void(0)" onclick="showPage('contact');return false;">Update a Listing</a></li><li><a href="javascript:void(0)" onclick="showPage('contact');return false;">Advertise</a></li></ul></div>
- <div class="footer-col"><h4>Coverage</h4><ul><li><a href="javascript:void(0)">United States (live)</a></li><li><a href="javascript:void(0)">Canada (coming soon)</a></li><li><a href="javascript:void(0)">Australia (planned)</a></li><li><a href="javascript:void(0)">International (future)</a></li></ul></div>
- </div>
- <div class="footer-bottom">
- <p>&copy; <span id="yr"></span> MyOldCherokee.com. All rights reserved. | <a class="footer-disclaimer-link" href="javascript:void(0)">Privacy Policy</a> | <a class="footer-disclaimer-link" href="javascript:void(0)">Terms of Use</a></p>
- <p>www.myoldcherokee.com</p>
- </div>
- </div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand-block">
+        <div style="font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff;">MyOldCherokee.com</div>
+        <p>The #1 directory for older Jeep Cherokee owners. Find DIY guides, troubleshooting help, and vetted repair shops across the United States.</p>
+        <p class="footer-disclaimer">Independent resource. Not affiliated with or endorsed by Jeep® or Stellantis®. All trademarks are property of their respective owners.</p>
+      </div>
+      <div class="footer-col"><h4>Explore</h4><ul>
+        <li><a href="directory.html">Shop Directory</a></li>
+        <li><a href="junkyards.html">Junk Yards</a></li>
+        <li><a href="guides.html">DIY &amp; Guides</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>For Shops</h4><ul>
+        <li><a href="submit.html">List Your Shop</a></li>
+        <li><a href="contact.html">Update a Listing</a></li>
+        <li><a href="contact.html">Advertise</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Coverage</h4><ul>
+        <li><a href="#">United States (live)</a></li>
+        <li><a href="#">Canada (coming soon)</a></li>
+        <li><a href="#">Australia (planned)</a></li>
+        <li><a href="#">International (future)</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="yr"></span> MyOldCherokee.com. All rights reserved. | <a class="footer-disclaimer-link" href="#">Privacy Policy</a> | <a class="footer-disclaimer-link" href="#">Terms of Use</a></p>
+      <p>www.myoldcherokee.com</p>
+    </div>
+  </div>
 </footer>
 
-<script>
- document.getElementById('yr').textContent = new Date().getFullYear();
-
- const pageMap = { home: 0, directory: 1, junkyards: 2, guides: 3, submit: 4, faq: 5, community: 6, about: 7, contact: 8 };
-
- function setFilter(btn) {
- document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active-pill'));
- btn.classList.add('active-pill');
- }
-
- function showPage(id, triggerEl) {
- document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
- const page = document.getElementById('page-' + id);
- if (page) { page.classList.add('active'); window.scrollTo({ top: 0, behavior: 'smooth' }); }
- document.querySelectorAll('.site-nav a').forEach(a => a.classList.remove('active'));
- const navLinks = document.querySelectorAll('.site-nav a');
- const idx = pageMap[id];
- if (navLinks[idx]) navLinks[idx].classList.add('active');
- return false;
- }
-
- function switchTab(id) { return showPage(id); }
-</script>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
 </html>
