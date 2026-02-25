@@ -50,6 +50,7 @@ img { max-width: 100%; display: block; }
 .site-nav { display: flex; align-items: center; gap: 0.1rem; }
 .site-nav a { font-size: 0.88rem; font-weight: 600; color: var(--text-mid); padding: 0.5rem 0.9rem; border-radius: 6px; letter-spacing: 0.02em; transition: color 0.15s, background 0.15s; }
 .site-nav a:hover, .site-nav a.active { color: var(--red); background: var(--red-lite); }
+.brand img { max-height: 44px; height: auto; width: auto; display: block; }
 
 /* BUTTONS */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; padding: 0 1.25rem; height: 44px; border-radius: var(--radius); border: none; font-family: 'DM Sans', sans-serif; font-size: 0.92rem; font-weight: 600; cursor: pointer; transition: filter 0.15s, transform 0.1s, box-shadow 0.15s; white-space: nowrap; text-decoration: none; }
