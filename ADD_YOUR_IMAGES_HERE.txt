@@ -1,1 +1,0 @@
-Place hero-cherokee.jpg and optionally myoldcherokee_logo.png in the repo root next to the HTML files.
