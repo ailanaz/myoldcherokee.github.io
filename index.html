@@ -48,8 +48,7 @@
     <p class="hero-sub">Buy, Sell &amp; Keep Your Old Cherokee on the Road, Off Roading and in the Mud where it belongs.</p>
     <div class="search-wrap">
       <div class="hero-search-box">
-        <input type="search" id="hero-search" autocomplete="off" placeholder="What are you looking for?" />
-        <a href="buy-sell.html" class="btn btn-red">Search</a>
+        <input type="search" id="hero-search" autocomplete="off" placeholder="Choose your path" readonly aria-label="Choose your path" />
       </div>
       <div class="search-dropdown" id="search-dropdown" style="display:none;">
         <div class="search-suggestion" data-href="buy-sell.html"><span class="search-suggestion-icon">🚗</span><span class="search-suggestion-text">Buy &amp; Sell</span><span class="search-suggestion-label">Listings</span></div>
@@ -61,6 +60,7 @@
         <div class="search-suggestion" data-href="contact.html"><span class="search-suggestion-icon">✉️</span><span class="search-suggestion-text">Contact</span><span class="search-suggestion-label">Contact</span></div>
       </div>
     </div>
+    <p class="hero-note">Independent directory and resource. Listings and information are provided in good faith and believed to be accurate to the best of our knowledge. Users are responsible for their own due diligence.</p>
   </div>
 </section>
 
@@ -134,7 +134,6 @@
         <a href="buy-sell.html" class="btn btn-outline btn-sm">View All Listings</a>
         <a href="submit.html" class="btn btn-red btn-sm">Submit a Listing</a>
       </div>
-
     </div>
   </div>
 </section>
@@ -220,59 +219,27 @@
     <div class="grid g4">
 
       <a href="guides.html#no-start" class="article-card">
-        <div class="article-thumb" style="background:linear-gradient(135deg,#6b1228,#3d0a17);">
-          🔑
-          <span class="article-thumb-label">No Start</span>
-        </div>
+        <div class="article-thumb"><img src="hero-cherokee.jpg" alt="Engine bay for no-start troubleshooting guide" /><span class="article-thumb-label">No Start</span></div>
         <div class="article-body">
-          <div class="article-tags">
-            <span class="guide-tag tag-red">No Start</span>
-            <span class="diff diff-int">Beginner - Intermediate</span>
-          </div>
-          <div class="article-title">No-Start Triage for Older Cherokee Models</div>
-          <p class="article-excerpt">Battery voltage, grounds, crank-or-no-crank checks, and fuel pump prime -- before replacing any parts.</p>
-          <div class="article-meta">
-            <span class="article-read-time">8 min read</span>
-            <span class="article-cta">Read Guide &#8594;</span>
-          </div>
+          <div class="article-title"><span>No-Start Basics</span></div>
+          <p class="article-excerpt">Step-by-step checklist for battery, grounds, starter, and ignition diagnostics.</p>
+          <div class="article-meta"><span class="article-cta">Read Guide →</span></div>
         </div>
       </a>
-
       <a href="guides.html#overheating" class="article-card">
-        <div class="article-thumb" style="background:linear-gradient(135deg,#c87020,#7a4210);">
-          🌡️
-          <span class="article-thumb-label">Overheating</span>
-        </div>
+        <div class="article-thumb"><img src="hero-cherokee.jpg" alt="Cooling system and radiator troubleshooting" /><span class="article-thumb-label">Overheating</span></div>
         <div class="article-body">
-          <div class="article-tags">
-            <span class="guide-tag tag-amber">Overheating</span>
-            <span class="diff diff-beg">Beginner</span>
-          </div>
-          <div class="article-title">Overheating Checklist for Older Cherokees</div>
-          <p class="article-excerpt">Organized checks for coolant level, fan operation, thermostat behavior, and cooling system pressure.</p>
-          <div class="article-meta">
-            <span class="article-read-time">6 min read</span>
-            <span class="article-cta">Read Guide &#8594;</span>
-          </div>
+          <div class="article-title"><span>Overheating Checks</span></div>
+          <p class="article-excerpt">Diagnose coolant flow, fan operation, thermostat behavior, and pressure issues.</p>
+          <div class="article-meta"><span class="article-cta">Read Guide →</span></div>
         </div>
       </a>
-
       <a href="guides.html#death-wobble" class="article-card">
-        <div class="article-thumb" style="background:linear-gradient(135deg,#2a6648,#163825);">
-          🌀
-          <span class="article-thumb-label">Suspension</span>
-        </div>
+        <div class="article-thumb"><img src="hero-cherokee.jpg" alt="Front suspension and steering components" /><span class="article-thumb-label">Suspension</span></div>
         <div class="article-body">
-          <div class="article-tags">
-            <span class="guide-tag tag-green">Wobble</span>
-            <span class="diff diff-int">Intermediate</span>
-          </div>
-          <div class="article-title">Death Wobble &amp; Steering Shake Diagnosis</div>
-          <p class="article-excerpt">A practical inspection flow for steering and suspension components before paying for alignment or parts.</p>
-          <div class="article-meta">
-            <span class="article-read-time">10 min read</span>
-            <span class="article-cta">Read Guide &#8594;</span>
-          </div>
+          <div class="article-title"><span>Death Wobble Triage</span></div>
+          <p class="article-excerpt">Inspect tie rod ends, track bar, and alignment points to isolate vibration causes.</p>
+          <div class="article-meta"><span class="article-cta">Read Guide →</span></div>
         </div>
       </a>
 
@@ -362,10 +329,6 @@
         <a href="contact.html" class="btn btn-ghost">Contact</a>
       </div>
     </div>
-    <form class="email-band-form" onsubmit="return false;">
-      <input type="email" class="email-band-input" placeholder="Enter your email address" />
-      <button type="submit" class="btn btn-red">Subscribe</button>
-    </form>
   </div>
 </section>
 
@@ -388,9 +351,15 @@
         <li><a href="duediligence.html">Due Diligence</a></li>
         <li><a href="faq.html">FAQ</a></li>
       </ul></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="submit.html">Submit a Listing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul></div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; <span id="yr"></span> MyOldCherokee.com. All rights reserved. | <a class="footer-disclaimer-link" href="#">Privacy Policy</a> | <a class="footer-disclaimer-link" href="#">Terms of Use</a> | <a class="footer-disclaimer-link" href="duediligence.html">Due Diligence</a></p>
+      <p>&copy; <span id="yr"></span> MyOldCherokee.com. All rights reserved. | <a class="footer-disclaimer-link" href="about.html">About</a> | <a class="footer-disclaimer-link" href="contact.html">Contact</a> | <a class="footer-disclaimer-link" href="duediligence.html">Due Diligence</a></p>
       <p>www.myoldcherokee.com</p>
     </div>
   </div>
@@ -408,19 +377,7 @@
     function hideDropdown() { dropdown.style.display = 'none'; }
 
     input.addEventListener('focus', showDropdown);
-
-    input.addEventListener('input', function() {
-      var q = this.value.toLowerCase().trim();
-      showDropdown();
-      var visible = 0;
-      allItems.forEach(function(item) {
-        var text = item.querySelector('.search-suggestion-text').textContent.toLowerCase();
-        var show = q === '' || text.includes(q);
-        item.style.display = show ? 'flex' : 'none';
-        if (show) visible++;
-      });
-      if (visible === 0) hideDropdown();
-    });
+    input.addEventListener('click', showDropdown);
 
     allItems.forEach(function(item) {
       item.addEventListener('mousedown', function(e) {
@@ -440,3 +397,4 @@
 </script>
 </body>
 </html>
+
