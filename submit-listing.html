@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Submit a Listing | MyOldCherokee</title>
+  <meta name="description" content="Submit vehicles, parts, projects, wanted listings, businesses, salvage yards, Guides suggestions, and community entries." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <div class="utility-left">Independent buy and sell directory and resource hub for older Cherokee models.</div>
+      <div class="utility-right">
+        <a href="submit-listing.html">Submit a Listing</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="main-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="MyOldCherokee homepage">
+        <img class="brand-logo" src="logo.jpeg" alt="MyOldCherokee logo" onerror="this.style.display='none';" />
+        <span class="brand-name">MyOldCherokee</span>
+      </a>
+
+      <nav class="tabs" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="buy-sell.html">Buy &amp; Sell</a>
+        <a href="repair-shops.html">Repair Shops</a>
+        <a href="junk-salvage.html">Junk/Salvage Yards</a>
+        <a href="guides.html">Guides</a>
+        <a href="community.html">Community</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="container">
+    <div class="page-head">
+      <h1>Submit a Listing</h1>
+      <p>Submit vehicles, parts, projects, wanted listings, businesses, salvage yards, Guides suggestions, and community entries.</p>
+    </div>
+
+    <section class="section">
+      <div class="form-wrap">
+        <form class="form" action="#" method="post">
+          
+<div class="form-row">
+  <label for="listingType">Listing type</label>
+  <select id="listingType" name="listingType" required>
+    <option value="">Select one</option>
+    <option>Vehicle for sale</option>
+    <option>Parts for sale</option>
+    <option>Project Cherokee</option>
+    <option>Wanted listing</option>
+    <option>Repair shop</option>
+    <option>Junk/Salvage yard</option>
+    <option>Tip or Guide suggestion</option>
+    <option>Community group or event</option>
+  </select>
+  <div class="help">Choose the best match. You can include details below.</div>
+</div>
+
+<div class="form-row">
+  <label for="title">Title</label>
+  <input id="title" name="title" required placeholder="Example: 1998 Cherokee, 4.0, needs work" />
+</div>
+
+<div class="form-row">
+  <label for="location">City and State</label>
+  <input id="location" name="location" placeholder="Example: Austin, TX" />
+  <div class="help">Use ZIP or State if you prefer.</div>
+</div>
+
+<div class="form-row">
+  <label for="price">Price (optional)</label>
+  <input id="price" name="price" placeholder="Example: 3500" />
+</div>
+
+<div class="form-row">
+  <label for="details">Details</label>
+  <textarea id="details" name="details" required placeholder="Include relevant details and contact method. For businesses, include services and website. For Guides, include symptoms and steps."></textarea>
+</div>
+
+<div class="form-row">
+  <label for="website">Website (optional)</label>
+  <input id="website" name="website" type="url" placeholder="https://..." />
+</div>
+
+<div class="form-row">
+  <label for="phone">Phone (optional)</label>
+  <input id="phone" name="phone" />
+</div>
+
+<div class="form-row">
+  <label for="email">Contact email</label>
+  <input id="email" name="email" type="email" required />
+</div>
+
+          
+          <div class="form-row check-row">
+            <input id="consent" name="consent" type="checkbox" required />
+            <label for="consent" style="margin:0; font-weight:750;">I confirm that I am authorized to submit this listing and that the information provided is accurate to the best of my knowledge.</label>
+          </div>
+
+          <p class="help">By submitting a listing, you confirm that you are authorized to post the information and that it is accurate to the best of your knowledge. You agree to keep your listing information current. MyOldCherokee.com may edit, reject, or remove listings at its discretion. You are solely responsible for the content you submit and for any transactions or communications arising from your listing.</p>
+
+          <div class="form-row">
+            <button class="btn primary" type="submit" style="background:var(--brand); border-color:var(--brand); color:#fff;">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-small">Independent buy & sell directory and resource for older Cherokee models. MyOldCherokee.com does not verify or guarantee third-party listings, businesses, products, or services. Users are responsible for their own due diligence. MyOldCherokee.com is not affiliated with or endorsed by Jeep® or Stellantis®. Brand and model names are used for identification and compatibility reference only. All trademarks are the property of their respective owners.</p>
+    </div>
+  </footer>
+
+<script src="app.js"></script>
+</body>
+</html>
