@@ -22,11 +22,12 @@
   <header class="main-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="MyOldCherokee homepage">
-        <img class="brand-logo" src="myoldcherokee_logo.png" alt="MyOldCherokee logo" onerror="this.style.display='none';" />
+        <img class="brand-logo" src="logo.jpeg" alt="MyOldCherokee logo" onerror="this.style.display='none';" />
         <span class="brand-name">MyOldCherokee</span>
       </a>
 
       <nav class="tabs" aria-label="Primary navigation">
+        <a href="index.html" class="active">Home</a>
         <a href="buy-sell.html">Buy &amp; Sell</a>
         <a href="repair-shops.html">Repair Shops</a>
         <a href="junk-salvage.html">Junk/Salvage Yards</a>
@@ -43,9 +44,18 @@
     <div class="container hero-inner">
       <h1 class="hero-title">MyOldCherokee</h1>
       <p class="hero-sub">Buy, sell, and keep older Cherokees on the road, off-road, and in the mud, where they belong.</p>
-      <div class="hero-actions">
-        <a class="btn primary" href="buy-sell.html">Browse Buy &amp; Sell</a>
-        <a class="btn secondary" href="submit-listing.html">Submit a Listing</a>
+
+      <div class="hero-search-wrap">
+        <form id="heroSearchForm" class="hero-search-bar" role="search" aria-label="Search">
+          <input id="heroSearch" class="hero-search-input" type="search" placeholder="What can we help you with?" autocomplete="off" />
+          <button class="hero-search-btn" type="submit" aria-label="Search">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z"></path>
+              <path d="M16.5 16.5 21 21"></path>
+            </svg>
+          </button>
+          <div id="suggestPanel" class="suggest" role="listbox" aria-label="Suggestions"></div>
+        </form>
       </div>
     </div>
   </section>
@@ -54,18 +64,71 @@
     <div class="container">
       <div class="section-head">
         <div>
-          <h2>Start here</h2>
-          <p>Use the homepage as a clean hub. Buy and Sell is the front line. Shops, salvage, Guides, and community support older Cherokee models.</p>
+          <h2>Quick links</h2>
+          <p>Browse the main sections for older Cherokee models.</p>
         </div>
       </div>
 
       <div class="grid" aria-label="Homepage links">
-        <a class="card" href="buy-sell.html"><div class="ico">C</div><div><div class="card-title">Buy &amp; Sell</div><div class="card-sub">Vehicles, parts, projects, wanted listings.</div></div></a>
-        <a class="card" href="repair-shops.html"><div class="ico">R</div><div><div class="card-title">Repair Shops</div><div class="card-sub">Directory listings for service providers.</div></div></a>
-        <a class="card" href="junk-salvage.html"><div class="ico">S</div><div><div class="card-title">Junk/Salvage Yards</div><div class="card-sub">Yards, pull-a-part locations, used sources.</div></div></a>
-        <a class="card" href="guides.html"><div class="ico">G</div><div><div class="card-title">Guides</div><div class="card-sub">DIY and troubleshooting, grouped together.</div></div></a>
-        <a class="card" href="community.html"><div class="ico">U</div><div><div class="card-title">Community</div><div class="card-sub">Groups, events, and resources.</div></div></a>
-        <a class="card" href="about.html"><div class="ico">i</div><div><div class="card-title">About</div><div class="card-sub">What this directory is and is not.</div></div></a>
+        <a class="card" href="buy-sell.html">
+          <div class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M7 16.5h10M6 16.5l-1.2-3.6A3 3 0 0 1 7.65 9h8.7a3 3 0 0 1 2.85 3.9L18 16.5"></path><circle cx="8" cy="17.5" r="1.5" fill="currentColor" stroke="none"></circle><circle cx="16" cy="17.5" r="1.5" fill="currentColor" stroke="none"></circle></svg>
+          </div>
+          <div>
+            <div class="card-title">Buy &amp; Sell</div>
+            <div class="card-sub">Vehicles, parts, projects, wanted listings.</div>
+          </div>
+        </a>
+
+        <a class="card" href="repair-shops.html">
+          <div class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M14 7l3 3-7.5 7.5H6.5V15.5L14 7Z"></path><path d="M13 8l3 3"></path></svg>
+          </div>
+          <div>
+            <div class="card-title">Repair Shops</div>
+            <div class="card-sub">Directory listings for service providers.</div>
+          </div>
+        </a>
+
+        <a class="card" href="junk-salvage.html">
+          <div class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M4 7h16M7 7V5h10v2M7 7l1 14h8l1-14"></path></svg>
+          </div>
+          <div>
+            <div class="card-title">Junk/Salvage Yards</div>
+            <div class="card-sub">Yards, pull-a-part locations, used sources.</div>
+          </div>
+        </a>
+
+        <a class="card" href="guides.html">
+          <div class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M7 4h10a2 2 0 0 1 2 2v14l-4-2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z"></path><path d="M9 8h6M9 12h6"></path></svg>
+          </div>
+          <div>
+            <div class="card-title">Guides</div>
+            <div class="card-sub">DIY and troubleshooting.</div>
+          </div>
+        </a>
+
+        <a class="card" href="community.html">
+          <div class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M16 11a3 3 0 1 0-6 0 3 3 0 0 0 6 0Z"></path><path d="M4 20c1.5-3 5-5 9-5s7.5 2 9 5"></path></svg>
+          </div>
+          <div>
+            <div class="card-title">Community</div>
+            <div class="card-sub">Groups, events, and resources.</div>
+          </div>
+        </a>
+
+        <a class="card" href="submit-listing.html">
+          <div class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></svg>
+          </div>
+          <div>
+            <div class="card-title">Submit a Listing</div>
+            <div class="card-sub">Add a listing or resource.</div>
+          </div>
+        </a>
       </div>
     </div>
   </section>
@@ -73,9 +136,10 @@
 
   <footer class="footer">
     <div class="container">
-      <p class="footer-small">Independent directory and resource for older Cherokee models. Listings and information are provided for reference only. MyOldCherokee.com does not verify or guarantee third-party listings, businesses, products, or services. Users are responsible for their own due diligence. Not affiliated with or endorsed by Jeep® or Stellantis®. Brand and model names are used for identification only. All trademarks are the property of their respective owners.</p>
+      <p class="footer-small">Independent buy & sell directory and resource for older Cherokee models. MyOldCherokee.com does not verify or guarantee third-party listings, businesses, products, or services. Users are responsible for their own due diligence. MyOldCherokee.com is not affiliated with or endorsed by Jeep® or Stellantis®. Brand and model names are used for identification and compatibility reference only. All trademarks are the property of their respective owners.</p>
     </div>
   </footer>
 
+<script src="app.js"></script>
 </body>
 </html>
