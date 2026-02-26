@@ -156,8 +156,8 @@ img { max-width: 100%; display: block; }
 .issue-pill:hover { background: var(--red); border-color: var(--red); color: #fff; }
 
 /* LISTING CARDS */
-.listing-card { background: var(--white); border: 1.5px solid var(--line); border-radius: var(--radius); overflow: hidden; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
-.listing-card { background: var(--white); border: 1.5px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
+.listing-card { background: var(--white); border: 1.5px solid #6b1228; border-radius: var(--radius); overflow: hidden; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
+.listing-card { background: var(--white); border: 1.5px solid #6b1228; border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; }
 .listing-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); border-color: var(--red); }
 .listing-thumb { aspect-ratio: 16/9; background: linear-gradient(135deg, var(--off-2) 0%, var(--line) 100%); position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 3rem; }
 .listing-state { position: absolute; top: 0.7rem; right: 0.7rem; background: rgba(20,20,26,0.75); backdrop-filter: blur(4px); color: #fff; font-family: 'Oswald', sans-serif; font-size: 0.78rem; font-weight: 600; padding: 0.2rem 0.6rem; border-radius: var(--radius-full); letter-spacing: 0.06em; }
@@ -348,7 +348,7 @@ img { max-width: 100%; display: block; }
 .biz-actions { margin-top: 0.85rem; }
 
 /* COMMUNITY POST CARDS */
-.post-card { background: var(--white); border: 1.5px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; text-decoration: none; color: inherit; }
+.post-card { background: var(--white); border: 1.5px solid #6b1228; border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; text-decoration: none; color: inherit; }
 .post-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); border-color: var(--line-mid); }
 .post-thumb { height: 120px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; flex-shrink: 0; }
 .post-body { padding: 1rem 1.25rem 1.25rem; flex: 1; display: flex; flex-direction: column; gap: 0.4rem; }
@@ -400,4 +400,5 @@ img { max-width: 100%; display: block; }
 .footer-contact-btn:hover { background: rgba(255,255,255,0.12); color:#fff; }
 
 .listing-card, .article-card, .cat-card, .guide-card, .parts-card, .tip-card, .form-wrap { border-color: var(--red) !important; }
-}
+
+.hero-title-image { width: min(760px, 100%); height: auto; display: block; margin: 0 0 0.75rem 0; position: relative; z-index: 2; }

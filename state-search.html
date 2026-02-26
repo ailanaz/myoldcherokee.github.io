@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>State Search | MyOldCherokee.com</title>
-  <meta name="description" content="Browse state pages from an interactive US map." />
+  <meta name="description" content="Browse state pages for Cherokee listings, shops, and yards near you. Select your state from the interactive US map." />
   <link rel="canonical" href="https://www.myoldcherokee.com/state-search.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,29 +12,443 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="favicon.png" type="image/png" />
   <style>
-    .map-wrap { background:#fff; border:1.5px solid var(--red); border-radius:12px; padding:1rem; }
-    .us-map svg { width:100%; height:auto; }
-    .state { fill:#efefef; stroke:#666; stroke-width:1; cursor:pointer; }
-    .state.live { fill:#f5d7dd; stroke:var(--red); }
-    .state:hover { fill:#f1bac6; }
-    .live-state-list { display:none; }
-    .map-toast { margin-top:.8rem; color:var(--text-mid); font-size:.9rem; }
-    @media (max-width: 700px){ .us-map { display:none; } .live-state-list { display:block; } }
+    .map-wrap { background: #fff; border: 1.5px solid var(--red); border-radius: 12px; padding: 1.25rem; overflow-x: auto; }
+    .map-wrap svg { display: block; max-width: 100%; height: auto; }
+    .state-cell { cursor: pointer; }
+    .state-cell rect { transition: opacity 0.15s; }
+    .state-cell:hover rect { opacity: 0.8; }
+    .state-label { font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 700; pointer-events: none; }
+    #coming-soon-banner { display: none; background: var(--amber); color: var(--text); padding: 0.75rem 1.25rem; border-radius: 8px; margin-top: 1rem; font-weight: 600; text-align: center; }
+    .live-state-list { display: none; }
+    @media (max-width: 600px) {
+      .map-container { display: none; }
+      .live-state-list { display: block; }
+    }
   </style>
 </head>
 <body>
-<div class="topbar"><div class="container topbar-inner"><span>Independent buy and sell directory and resource for older Cherokee models</span><div class="topbar-links"><a href="submit.html">Submit a Listing</a><a href="contact.html">Contact</a></div></div></div>
-<header class="site-header"><div class="container header-inner"><a href="index.html" class="brand"><img src="logo.png" alt="MyOldCherokee.com" /><span class="brand-name">MyOldCherokee.com</span></a><nav class="site-nav"><a href="buy-sell.html">Buy &amp; Sell</a><a href="directory.html">Directory</a><a href="guides.html">Guides</a><a href="community.html">Community</a><a href="about.html">About</a></nav></div></header>
-<div style="background:var(--red);padding:3rem 0 2.5rem;"><div class="container"><div class="section-label" style="color:rgba(255,255,255,0.6);margin-bottom:0.75rem;">State Search</div><h1 style="font-family:'Oswald',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;text-transform:uppercase;letter-spacing:0.02em;color:#fff;margin-bottom:0.5rem;">State Search</h1><p style="font-family:'Source Serif 4',serif;color:rgba(255,255,255,0.78);font-size:1.05rem;max-width:58ch;">Select a state on the map to open state listings. Non-live states show Coming soon.</p></div></div>
-<section class="section section-off"><div class="container"><div class="map-wrap"><div class="us-map"><svg viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="United States map"><g id="states"><path id="CA" class="state" d="M120 330 L150 300 L165 315 L160 345 L145 380 L125 395 L110 370 Z"/><path id="TX" class="state" d="M420 340 L500 340 L520 370 L550 380 L530 420 L490 415 L470 430 L445 410 L420 395 Z"/><path id="TN" class="state" d="M610 300 L705 295 L710 315 L615 320 Z"/><path id="FL" class="state" d="M740 390 L790 400 L810 430 L785 445 L760 435 L748 415 Z"/><path id="AZ" class="state" d="M260 340 L315 325 L330 365 L278 380 Z"/><path id="CO" class="state" d="M350 270 L430 270 L430 325 L350 325 Z"/><path id="NY" class="state" d="M760 220 L825 210 L840 230 L790 245 Z"/></g></svg></div>
-<div class="live-state-list"><h3 style="margin-bottom:.5rem;">Live States</h3><ul><li><a href="state/tennessee.html">Tennessee</a></li><li><a href="state/texas.html">Texas</a></li><li><a href="state/california.html">California</a></li></ul></div><p id="map-toast" class="map-toast"></p></div>
-<p style="margin-top:1rem;font-size:.85rem;">US map SVG source: <a href="https://visitedplaces.com/usa/" target="_blank" rel="noopener">VisitedPlaces.com</a>. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. Changes: modified for styling and clickable state links.</p></div></section>
-<footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand-block"><div style="font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff;">MyOldCherokee.com</div><p>An independent buy and sell directory for older Cherokee models, with repair shops, junk/salvage yard listings, DIY/troubleshooting Guides, and community resources.</p><p class="footer-disclaimer">Listings and information are provided in good faith and believed accurate to the best of our knowledge. We do not verify or guarantee third-party listings, businesses, products, or services. Users are responsible for their own due diligence. MyOldCherokee.com is not affiliated with or endorsed by Jeep® or Stellantis®. Brand and model names are used for identification and compatibility purposes only. All trademarks are the property of their respective owners.</p><a href="contact.html" class="btn btn-outline btn-sm footer-contact-btn">Contact Us</a></div><div class="footer-col"><h4>Buy &amp; Sell</h4><ul><li><a href="buy-sell.html">Vehicles for Sale</a></li><li><a href="buy-sell.html">Parts for Sale</a></li><li><a href="buy-sell.html">Project Cherokees</a></li><li><a href="buy-sell.html">Wanted Listings</a></li><li><a href="submit.html">Post a Listing</a></li></ul></div><div class="footer-col"><h4>Resources</h4><ul><li><a href="directory.html">Repair Shops</a></li><li><a href="guides.html">Guides</a></li><li><a href="community.html">Community</a></li><li><a href="faq.html">FAQ</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="duediligence.html">Due Diligence</a></li></ul></div><div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="state-search.html">State Search</a></li><li><a href="submit.html">Submit a Listing</a></li><li><a href="contact.html">Contact</a></li></ul></div></div><div class="footer-bottom"><p>&copy; <span id="yr"></span> MyOldCherokee.com. All rights reserved. | <a class="footer-disclaimer-link" href="about.html">About</a> | <a class="footer-disclaimer-link" href="contact.html">Contact</a> | <a class="footer-disclaimer-link" href="duediligence.html">Due Diligence</a></p><p>www.myoldcherokee.com</p></div></div></footer>
+
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span>#1 Independent buy and sell directory and resource hub for owners of older Cherokee models</span>
+    <div class="topbar-links">
+      <a href="submit.html">Submit a Listing</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="MyOldCherokee.com" />
+      <span class="brand-name">MyOldCherokee.com</span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="buy-sell.html">Buy &amp; Sell</a>
+      <a href="directory.html">Directory</a>
+      <a href="guides.html">Guides</a>
+      <a href="community.html">Community</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow">State Search</div>
+    <h1>Find Cherokee Resources Near You</h1>
+    <p class="hero-sub">Select your state to browse local listings, shops, and yards.</p>
+  </div>
+</section>
+
+<section class="section section-off">
+  <div class="container">
+
+    <!-- Mobile fallback: simple list -->
+    <div class="live-state-list">
+      <h3 style="margin-bottom:1rem;font-family:'Oswald',sans-serif;font-size:1.1rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;">Live State Pages</h3>
+      <ul style="list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;max-width:380px;">
+        <li><a href="state/tennessee.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Tennessee</a></li>
+        <li><a href="state/texas.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Texas</a></li>
+        <li><a href="state/florida.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Florida</a></li>
+        <li><a href="state/california.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">California</a></li>
+        <li><a href="state/arizona.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Arizona</a></li>
+        <li><a href="state/colorado.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Colorado</a></li>
+        <li><a href="state/north-carolina.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">North Carolina</a></li>
+        <li><a href="state/georgia.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Georgia</a></li>
+        <li><a href="state/virginia.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Virginia</a></li>
+        <li><a href="state/washington.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Washington</a></li>
+      </ul>
+      <p style="margin-top:1rem;font-size:0.88rem;color:var(--text-mid);">More states coming soon.</p>
+    </div>
+
+    <!-- Desktop map -->
+    <div class="map-container">
+      <div class="map-wrap">
+        <!--
+          US Tile Grid Map — cell size 74x58px, 2px gap built into positioning
+          Origin: col*76, row*60 (76=74+2, 60=58+2)
+        -->
+        <svg viewBox="0 0 912 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="United States tile grid map">
+
+          <!-- Row 0 -->
+          <!-- WA col1,row0 -->
+          <g class="state-cell" onclick="handleStateClick('WA','Washington')">
+            <rect x="76" y="0" width="74" height="58" rx="4" fill="#6b1228"/>
+            <text x="113" y="33" text-anchor="middle" class="state-label" fill="#fff">WA</text>
+          </g>
+          <!-- MT col2,row0 -->
+          <g class="state-cell" onclick="handleStateClick('MT','Montana')">
+            <rect x="152" y="0" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="189" y="33" text-anchor="middle" class="state-label" fill="#555">MT</text>
+          </g>
+          <!-- ND col3,row0 -->
+          <g class="state-cell" onclick="handleStateClick('ND','North Dakota')">
+            <rect x="228" y="0" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="265" y="33" text-anchor="middle" class="state-label" fill="#555">ND</text>
+          </g>
+          <!-- MN col4,row0 -->
+          <g class="state-cell" onclick="handleStateClick('MN','Minnesota')">
+            <rect x="304" y="0" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="341" y="33" text-anchor="middle" class="state-label" fill="#555">MN</text>
+          </g>
+          <!-- WI col5,row0 -->
+          <g class="state-cell" onclick="handleStateClick('WI','Wisconsin')">
+            <rect x="380" y="0" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="417" y="33" text-anchor="middle" class="state-label" fill="#555">WI</text>
+          </g>
+          <!-- VT col9,row0 -->
+          <g class="state-cell" onclick="handleStateClick('VT','Vermont')">
+            <rect x="684" y="0" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="721" y="33" text-anchor="middle" class="state-label" fill="#555">VT</text>
+          </g>
+          <!-- NH col10,row0 -->
+          <g class="state-cell" onclick="handleStateClick('NH','New Hampshire')">
+            <rect x="760" y="0" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="797" y="33" text-anchor="middle" class="state-label" fill="#555">NH</text>
+          </g>
+          <!-- ME col11,row0 -->
+          <g class="state-cell" onclick="handleStateClick('ME','Maine')">
+            <rect x="836" y="0" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="873" y="33" text-anchor="middle" class="state-label" fill="#555">ME</text>
+          </g>
+
+          <!-- Row 1 -->
+          <!-- OR col1,row1 -->
+          <g class="state-cell" onclick="handleStateClick('OR','Oregon')">
+            <rect x="76" y="60" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="113" y="93" text-anchor="middle" class="state-label" fill="#555">OR</text>
+          </g>
+          <!-- ID col2,row1 -->
+          <g class="state-cell" onclick="handleStateClick('ID','Idaho')">
+            <rect x="152" y="60" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="189" y="93" text-anchor="middle" class="state-label" fill="#555">ID</text>
+          </g>
+          <!-- WY col3,row1 -->
+          <g class="state-cell" onclick="handleStateClick('WY','Wyoming')">
+            <rect x="228" y="60" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="265" y="93" text-anchor="middle" class="state-label" fill="#555">WY</text>
+          </g>
+          <!-- SD col4,row1 -->
+          <g class="state-cell" onclick="handleStateClick('SD','South Dakota')">
+            <rect x="304" y="60" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="341" y="93" text-anchor="middle" class="state-label" fill="#555">SD</text>
+          </g>
+          <!-- IA col6,row1 -->
+          <g class="state-cell" onclick="handleStateClick('IA','Iowa')">
+            <rect x="456" y="60" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="493" y="93" text-anchor="middle" class="state-label" fill="#555">IA</text>
+          </g>
+          <!-- MI col5,row1 -->
+          <g class="state-cell" onclick="handleStateClick('MI','Michigan')">
+            <rect x="380" y="60" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="417" y="93" text-anchor="middle" class="state-label" fill="#555">MI</text>
+          </g>
+          <!-- IN col7,row1 -->
+          <g class="state-cell" onclick="handleStateClick('IN','Indiana')">
+            <rect x="532" y="60" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="569" y="93" text-anchor="middle" class="state-label" fill="#555">IN</text>
+          </g>
+          <!-- NY col8,row1 -->
+          <g class="state-cell" onclick="handleStateClick('NY','New York')">
+            <rect x="608" y="60" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="645" y="93" text-anchor="middle" class="state-label" fill="#555">NY</text>
+          </g>
+          <!-- MD col9,row1 -->
+          <g class="state-cell" onclick="handleStateClick('MD','Maryland')">
+            <rect x="684" y="60" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="721" y="93" text-anchor="middle" class="state-label" fill="#555">MD</text>
+          </g>
+          <!-- MA col10,row1 -->
+          <g class="state-cell" onclick="handleStateClick('MA','Massachusetts')">
+            <rect x="760" y="60" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="797" y="93" text-anchor="middle" class="state-label" fill="#555">MA</text>
+          </g>
+
+          <!-- Row 2 -->
+          <!-- CA col1,row2 -->
+          <g class="state-cell" onclick="handleStateClick('CA','California')">
+            <rect x="76" y="120" width="74" height="58" rx="4" fill="#6b1228"/>
+            <text x="113" y="153" text-anchor="middle" class="state-label" fill="#fff">CA</text>
+          </g>
+          <!-- NV col2,row2 -->
+          <g class="state-cell" onclick="handleStateClick('NV','Nevada')">
+            <rect x="152" y="120" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="189" y="153" text-anchor="middle" class="state-label" fill="#555">NV</text>
+          </g>
+          <!-- UT col3,row2 -->
+          <g class="state-cell" onclick="handleStateClick('UT','Utah')">
+            <rect x="228" y="120" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="265" y="153" text-anchor="middle" class="state-label" fill="#555">UT</text>
+          </g>
+          <!-- CO col4,row2 -->
+          <g class="state-cell" onclick="handleStateClick('CO','Colorado')">
+            <rect x="304" y="120" width="74" height="58" rx="4" fill="#6b1228"/>
+            <text x="341" y="153" text-anchor="middle" class="state-label" fill="#fff">CO</text>
+          </g>
+          <!-- NE col5,row2 -->
+          <g class="state-cell" onclick="handleStateClick('NE','Nebraska')">
+            <rect x="380" y="120" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="417" y="153" text-anchor="middle" class="state-label" fill="#555">NE</text>
+          </g>
+          <!-- IL col6,row2 -->
+          <g class="state-cell" onclick="handleStateClick('IL','Illinois')">
+            <rect x="456" y="120" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="493" y="153" text-anchor="middle" class="state-label" fill="#555">IL</text>
+          </g>
+          <!-- OH col7,row2 -->
+          <g class="state-cell" onclick="handleStateClick('OH','Ohio')">
+            <rect x="532" y="120" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="569" y="153" text-anchor="middle" class="state-label" fill="#555">OH</text>
+          </g>
+          <!-- PA col8,row2 -->
+          <g class="state-cell" onclick="handleStateClick('PA','Pennsylvania')">
+            <rect x="608" y="120" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="645" y="153" text-anchor="middle" class="state-label" fill="#555">PA</text>
+          </g>
+          <!-- NJ col9,row2 -->
+          <g class="state-cell" onclick="handleStateClick('NJ','New Jersey')">
+            <rect x="684" y="120" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="721" y="153" text-anchor="middle" class="state-label" fill="#555">NJ</text>
+          </g>
+          <!-- CT col10,row2 -->
+          <g class="state-cell" onclick="handleStateClick('CT','Connecticut')">
+            <rect x="760" y="120" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="797" y="153" text-anchor="middle" class="state-label" fill="#555">CT</text>
+          </g>
+          <!-- RI col11,row2 -->
+          <g class="state-cell" onclick="handleStateClick('RI','Rhode Island')">
+            <rect x="836" y="120" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="873" y="153" text-anchor="middle" class="state-label" fill="#555">RI</text>
+          </g>
+
+          <!-- Row 3 -->
+          <!-- AZ col2,row3 -->
+          <g class="state-cell" onclick="handleStateClick('AZ','Arizona')">
+            <rect x="152" y="180" width="74" height="58" rx="4" fill="#6b1228"/>
+            <text x="189" y="213" text-anchor="middle" class="state-label" fill="#fff">AZ</text>
+          </g>
+          <!-- NM col3,row3 -->
+          <g class="state-cell" onclick="handleStateClick('NM','New Mexico')">
+            <rect x="228" y="180" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="265" y="213" text-anchor="middle" class="state-label" fill="#555">NM</text>
+          </g>
+          <!-- KS col5,row3 -->
+          <g class="state-cell" onclick="handleStateClick('KS','Kansas')">
+            <rect x="380" y="180" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="417" y="213" text-anchor="middle" class="state-label" fill="#555">KS</text>
+          </g>
+          <!-- MO col6,row3 -->
+          <g class="state-cell" onclick="handleStateClick('MO','Missouri')">
+            <rect x="456" y="180" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="493" y="213" text-anchor="middle" class="state-label" fill="#555">MO</text>
+          </g>
+          <!-- KY col7,row3 -->
+          <g class="state-cell" onclick="handleStateClick('KY','Kentucky')">
+            <rect x="532" y="180" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="569" y="213" text-anchor="middle" class="state-label" fill="#555">KY</text>
+          </g>
+          <!-- WV col8,row3 -->
+          <g class="state-cell" onclick="handleStateClick('WV','West Virginia')">
+            <rect x="608" y="180" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="645" y="213" text-anchor="middle" class="state-label" fill="#555">WV</text>
+          </g>
+          <!-- VA col9,row3 -->
+          <g class="state-cell" onclick="handleStateClick('VA','Virginia')">
+            <rect x="684" y="180" width="74" height="58" rx="4" fill="#6b1228"/>
+            <text x="721" y="213" text-anchor="middle" class="state-label" fill="#fff">VA</text>
+          </g>
+          <!-- DE col10,row3 -->
+          <g class="state-cell" onclick="handleStateClick('DE','Delaware')">
+            <rect x="760" y="180" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="797" y="213" text-anchor="middle" class="state-label" fill="#555">DE</text>
+          </g>
+
+          <!-- Row 4 -->
+          <!-- OK col4,row4 -->
+          <g class="state-cell" onclick="handleStateClick('OK','Oklahoma')">
+            <rect x="304" y="240" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="341" y="273" text-anchor="middle" class="state-label" fill="#555">OK</text>
+          </g>
+          <!-- AR col6,row4 -->
+          <g class="state-cell" onclick="handleStateClick('AR','Arkansas')">
+            <rect x="456" y="240" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="493" y="273" text-anchor="middle" class="state-label" fill="#555">AR</text>
+          </g>
+          <!-- TN col7,row4 -->
+          <g class="state-cell" onclick="handleStateClick('TN','Tennessee')">
+            <rect x="532" y="240" width="74" height="58" rx="4" fill="#6b1228"/>
+            <text x="569" y="273" text-anchor="middle" class="state-label" fill="#fff">TN</text>
+          </g>
+          <!-- AL col8,row4 -->
+          <g class="state-cell" onclick="handleStateClick('AL','Alabama')">
+            <rect x="608" y="240" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="645" y="273" text-anchor="middle" class="state-label" fill="#555">AL</text>
+          </g>
+          <!-- NC col9,row4 -->
+          <g class="state-cell" onclick="handleStateClick('NC','North Carolina')">
+            <rect x="684" y="240" width="74" height="58" rx="4" fill="#6b1228"/>
+            <text x="721" y="273" text-anchor="middle" class="state-label" fill="#fff">NC</text>
+          </g>
+          <!-- DC col10,row4 -->
+          <g class="state-cell" onclick="handleStateClick('DC','District of Columbia')">
+            <rect x="760" y="240" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="797" y="273" text-anchor="middle" class="state-label" fill="#555">DC</text>
+          </g>
+
+          <!-- Row 5 -->
+          <!-- TX col4,row5 -->
+          <g class="state-cell" onclick="handleStateClick('TX','Texas')">
+            <rect x="304" y="300" width="74" height="58" rx="4" fill="#6b1228"/>
+            <text x="341" y="333" text-anchor="middle" class="state-label" fill="#fff">TX</text>
+          </g>
+          <!-- LA col6,row5 -->
+          <g class="state-cell" onclick="handleStateClick('LA','Louisiana')">
+            <rect x="456" y="300" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="493" y="333" text-anchor="middle" class="state-label" fill="#555">LA</text>
+          </g>
+          <!-- MS col7,row5 -->
+          <g class="state-cell" onclick="handleStateClick('MS','Mississippi')">
+            <rect x="532" y="300" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="569" y="333" text-anchor="middle" class="state-label" fill="#555">MS</text>
+          </g>
+          <!-- SC col9,row5 -->
+          <g class="state-cell" onclick="handleStateClick('SC','South Carolina')">
+            <rect x="684" y="300" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="721" y="333" text-anchor="middle" class="state-label" fill="#555">SC</text>
+          </g>
+
+          <!-- Row 6 -->
+          <!-- GA col9,row6 -->
+          <g class="state-cell" onclick="handleStateClick('GA','Georgia')">
+            <rect x="684" y="360" width="74" height="58" rx="4" fill="#6b1228"/>
+            <text x="721" y="393" text-anchor="middle" class="state-label" fill="#fff">GA</text>
+          </g>
+
+          <!-- Row 7 -->
+          <!-- AK col0,row7 -->
+          <g class="state-cell" onclick="handleStateClick('AK','Alaska')">
+            <rect x="0" y="420" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="37" y="453" text-anchor="middle" class="state-label" fill="#555">AK</text>
+          </g>
+          <!-- HI col1,row7 -->
+          <g class="state-cell" onclick="handleStateClick('HI','Hawaii')">
+            <rect x="76" y="420" width="74" height="58" rx="4" fill="#d0d3db"/>
+            <text x="113" y="453" text-anchor="middle" class="state-label" fill="#555">HI</text>
+          </g>
+          <!-- FL col9,row7 -->
+          <g class="state-cell" onclick="handleStateClick('FL','Florida')">
+            <rect x="684" y="420" width="74" height="58" rx="4" fill="#6b1228"/>
+            <text x="721" y="453" text-anchor="middle" class="state-label" fill="#fff">FL</text>
+          </g>
+
+        </svg>
+      </div>
+
+      <div id="coming-soon-banner"></div>
+
+      <p style="margin-top:1rem;font-size:0.82rem;color:var(--text-lite);">
+        US map based on tile grid layout. <a href="https://visitedplaces.com/usa/" target="_blank" rel="noopener">VisitedPlaces.com</a>. <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand-block">
+        <div style="font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff;">MyOldCherokee.com</div>
+        <p>An independent buy and sell directory for older Cherokee models, with repair shops, junk/salvage yard listings, DIY/troubleshooting Guides, and community resources.</p>
+        <p class="footer-disclaimer">Listings and information are provided in good faith and believed accurate to the best of our knowledge. We do not verify or guarantee third-party listings, businesses, products, or services. Users are responsible for their own due diligence. MyOldCherokee.com is not affiliated with or endorsed by Jeep® or Stellantis®. Brand and model names are used for identification and compatibility purposes only. All trademarks are the property of their respective owners.</p>
+        <a href="contact.html" class="btn btn-outline btn-sm footer-contact-btn">Contact Us</a>
+      </div>
+      <div class="footer-col"><h4>Buy &amp; Sell</h4><ul>
+        <li><a href="buy-sell.html">Vehicles for Sale</a></li>
+        <li><a href="buy-sell.html">Parts for Sale</a></li>
+        <li><a href="buy-sell.html">Project Cherokees</a></li>
+        <li><a href="buy-sell.html">Wanted Listings</a></li>
+        <li><a href="submit.html">Post a Listing</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Resources</h4><ul>
+        <li><a href="directory.html">Repair Shops</a></li>
+        <li><a href="guides.html">Guides</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="duediligence.html">Due Diligence</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="state-search.html">State Search</a></li>
+        <li><a href="submit.html">Submit a Listing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="yr"></span> MyOldCherokee.com. All rights reserved. | <a class="footer-disclaimer-link" href="about.html">About</a> | <a class="footer-disclaimer-link" href="contact.html">Contact</a> | <a class="footer-disclaimer-link" href="duediligence.html">Due Diligence</a></p>
+      <p>www.myoldcherokee.com</p>
+    </div>
+  </div>
+</footer>
+
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
-  const liveStates = { TN: 'state/tennessee.html', TX: 'state/texas.html', CA: 'state/california.html' };
-  const toast = document.getElementById('map-toast');
-  document.querySelectorAll('.state').forEach((el)=>{ if(liveStates[el.id]) el.classList.add('live'); el.addEventListener('click',()=>{ if(liveStates[el.id]) { window.location.href = liveStates[el.id]; } else { toast.textContent = el.id + ': Coming soon'; } }); });
+
+  var stateRoutes = {
+    'TN': 'state/tennessee.html', 'Tennessee': 'state/tennessee.html',
+    'TX': 'state/texas.html', 'Texas': 'state/texas.html',
+    'FL': 'state/florida.html', 'Florida': 'state/florida.html',
+    'CA': 'state/california.html', 'California': 'state/california.html',
+    'AZ': 'state/arizona.html', 'Arizona': 'state/arizona.html',
+    'CO': 'state/colorado.html', 'Colorado': 'state/colorado.html',
+    'NC': 'state/north-carolina.html', 'North Carolina': 'state/north-carolina.html',
+    'GA': 'state/georgia.html', 'Georgia': 'state/georgia.html',
+    'VA': 'state/virginia.html', 'Virginia': 'state/virginia.html',
+    'WA': 'state/washington.html', 'Washington': 'state/washington.html'
+  };
+
+  var liveStates = ['TN','TX','FL','CA','AZ','CO','NC','GA','VA','WA'];
+
+  function handleStateClick(abbr, name) {
+    if (stateRoutes[abbr]) {
+      window.location.href = stateRoutes[abbr];
+    } else {
+      showComingSoon(name);
+    }
+  }
+
+  function showComingSoon(name) {
+    var b = document.getElementById('coming-soon-banner');
+    b.textContent = name + ' \u2014 Coming Soon!';
+    b.style.display = 'block';
+    setTimeout(function(){ b.style.display = 'none'; }, 4000);
+  }
 </script>
 </body>
 </html>
