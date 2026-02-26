@@ -181,12 +181,37 @@ img { max-width: 100%; display: block; }
 .step-card::after { content: '->'; position: absolute; right: -1.1rem; top: 50%; transform: translateY(-50%); font-size: 1.2rem; color: var(--line-mid); z-index: 2; }
 .step-card:last-child::after { display: none; }
 
-/* CTA BANNER */
-.cta-banner { background: #15151e; padding: 3.5rem 0; }
-.cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
-.cta-text h2 { font-size: clamp(1.45rem, 2.5vw, 2rem); font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; color: #fff; margin-bottom: 0.4rem; }
-.cta-text p { font-family: 'Source Serif 4', serif; color: rgba(255,255,255,0.58); font-size: 0.97rem; }
-.cta-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+/* PAGE HERO (shared across Buy & Sell, Repair Shops, Junk/Salvage, Guides, Community) */
+.page-hero { background: var(--red); padding: 3rem 0 2.5rem; }
+.page-hero-label { font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 0.75rem; }
+.page-hero-title { font-family: 'Oswald', sans-serif; font-size: clamp(2rem,4vw,3rem); font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; color: #fff; margin-bottom: 0.5rem; }
+.page-hero-sub { font-family: 'Source Serif 4', serif; color: rgba(255,255,255,0.75); font-size: 1.05rem; max-width: 58ch; }
+
+/* FILTER BAR */
+.filter-bar { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; margin-bottom: 2rem; }
+.filter-label { font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-lite); margin-right: 0.25rem; }
+
+/* PAGE CTA BAR */
+.page-cta-bar { background: var(--off); border: 1.5px solid var(--line); border-radius: var(--radius); padding: 1.5rem 2rem; margin-top: 2.5rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.page-cta-bar-title { font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text); margin-bottom: 0.2rem; }
+.page-cta-bar-sub { font-family: 'Source Serif 4', serif; font-size: 0.9rem; color: var(--text-mid); }
+
+/* LISTING CATEGORY BADGE COLORS */
+.lcat-vehicle { background: #e8f5e9; color: #2a6648; }
+.lcat-parts { background: #e8eaf6; color: #2c3e8c; }
+.lcat-project { background: #fff3e0; color: #b36000; }
+.lcat-wanted { background: #f5f5f5; color: #444; }
+
+/* EMAIL CAPTURE BAND */
+.email-band { background: #15151e; padding: 3.5rem 0; }
+.email-band-inner { display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
+.email-band-text h2 { font-family: 'Oswald', sans-serif; font-size: clamp(1.45rem, 2.5vw, 2rem); font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: #fff; margin-bottom: 0.35rem; }
+.email-band-text p { font-family: 'Source Serif 4', serif; color: rgba(255,255,255,0.58); font-size: 0.97rem; }
+.email-band-form { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+.email-band-input { height: 46px; border-radius: var(--radius-full); border: 1.5px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.07); color: #fff; padding: 0 1.25rem; font-family: 'DM Sans', sans-serif; font-size: 0.92rem; outline: none; min-width: 260px; transition: border-color 0.2s, background 0.2s; }
+.email-band-input::placeholder { color: rgba(255,255,255,0.38); }
+.email-band-input:focus { border-color: var(--red); background: rgba(255,255,255,0.11); }
+.email-band-btns { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-top: 0.85rem; }
 
 /* DIRECTORY FILTERS */
 .dir-filters { background: var(--white); border: 1.5px solid var(--line); border-radius: var(--radius-lg); padding: 1.1rem 1.25rem; display: grid; grid-template-columns: 2fr 1fr 1fr auto auto; gap: 0.75rem; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm); align-items: center; }
@@ -226,7 +251,7 @@ img { max-width: 100%; display: block; }
 
 /* FOOTER */
 .site-footer { background: #15151e; color: rgba(255,255,255,0.75); padding: 3.5rem 0 0; }
-.footer-grid { display: grid; grid-template-columns: 2.2fr 1fr 1fr 1fr; gap: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.07); }
+.footer-grid { display: grid; grid-template-columns: 2.2fr 1fr 1fr; gap: 2.5rem; padding-bottom: 2.5rem; border-bottom: 1px solid rgba(255,255,255,0.07); }
 .footer-brand-block p { font-family: 'Source Serif 4', serif; font-size: 0.88rem; color: rgba(255,255,255,0.5); line-height: 1.65; margin-top: 0.75rem; }
 .footer-disclaimer { font-size: 0.74rem; color: rgba(255,255,255,0.3); font-style: italic; margin-top: 0.75rem; line-height: 1.55; }
 .footer-col h4 { font-family: 'Oswald', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 0.9rem; }
@@ -294,6 +319,9 @@ img { max-width: 100%; display: block; }
   .hero-search-box { border-radius: var(--radius-lg); padding: 0.75rem; flex-direction: column; align-items: stretch; }
   .hero-search-box .btn { height: 46px; border-radius: var(--radius-full); }
   .footer-grid { grid-template-columns: 1fr; }
+  .email-band-inner { flex-direction: column; }
+  .email-band-form { width: 100%; }
+  .email-band-input { min-width: 0; width: 100%; }
   .stats-inner { grid-template-columns: repeat(2, 1fr); }
   .dir-filters { grid-template-columns: 1fr; }
   .form-g2 { grid-template-columns: 1fr; }
