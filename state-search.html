@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>State Search | MyOldCherokee.com</title>
+  <meta name="description" content="Browse state pages from an interactive US map." />
+  <link rel="canonical" href="https://www.myoldcherokee.com/state-search.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <style>
+    .map-wrap { background:#fff; border:1.5px solid var(--red); border-radius:12px; padding:1rem; }
+    .us-map svg { width:100%; height:auto; }
+    .state { fill:#efefef; stroke:#666; stroke-width:1; cursor:pointer; }
+    .state.live { fill:#f5d7dd; stroke:var(--red); }
+    .state:hover { fill:#f1bac6; }
+    .live-state-list { display:none; }
+    .map-toast { margin-top:.8rem; color:var(--text-mid); font-size:.9rem; }
+    @media (max-width: 700px){ .us-map { display:none; } .live-state-list { display:block; } }
+  </style>
+</head>
+<body>
+<div class="topbar"><div class="container topbar-inner"><span>Independent buy and sell directory and resource for older Cherokee models</span><div class="topbar-links"><a href="submit.html">Submit a Listing</a><a href="contact.html">Contact</a></div></div></div>
+<header class="site-header"><div class="container header-inner"><a href="index.html" class="brand"><img src="logo.png" alt="MyOldCherokee.com" /><span class="brand-name">MyOldCherokee.com</span></a><nav class="site-nav"><a href="buy-sell.html">Buy &amp; Sell</a><a href="directory.html">Directory</a><a href="guides.html">Guides</a><a href="community.html">Community</a><a href="about.html">About</a></nav></div></header>
+<div style="background:var(--red);padding:3rem 0 2.5rem;"><div class="container"><div class="section-label" style="color:rgba(255,255,255,0.6);margin-bottom:0.75rem;">State Search</div><h1 style="font-family:'Oswald',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;text-transform:uppercase;letter-spacing:0.02em;color:#fff;margin-bottom:0.5rem;">State Search</h1><p style="font-family:'Source Serif 4',serif;color:rgba(255,255,255,0.78);font-size:1.05rem;max-width:58ch;">Select a state on the map to open state listings. Non-live states show Coming soon.</p></div></div>
+<section class="section section-off"><div class="container"><div class="map-wrap"><div class="us-map"><svg viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="United States map"><g id="states"><path id="CA" class="state" d="M120 330 L150 300 L165 315 L160 345 L145 380 L125 395 L110 370 Z"/><path id="TX" class="state" d="M420 340 L500 340 L520 370 L550 380 L530 420 L490 415 L470 430 L445 410 L420 395 Z"/><path id="TN" class="state" d="M610 300 L705 295 L710 315 L615 320 Z"/><path id="FL" class="state" d="M740 390 L790 400 L810 430 L785 445 L760 435 L748 415 Z"/><path id="AZ" class="state" d="M260 340 L315 325 L330 365 L278 380 Z"/><path id="CO" class="state" d="M350 270 L430 270 L430 325 L350 325 Z"/><path id="NY" class="state" d="M760 220 L825 210 L840 230 L790 245 Z"/></g></svg></div>
+<div class="live-state-list"><h3 style="margin-bottom:.5rem;">Live States</h3><ul><li><a href="state/tennessee.html">Tennessee</a></li><li><a href="state/texas.html">Texas</a></li><li><a href="state/california.html">California</a></li></ul></div><p id="map-toast" class="map-toast"></p></div>
+<p style="margin-top:1rem;font-size:.85rem;">US map SVG source: <a href="https://visitedplaces.com/usa/" target="_blank" rel="noopener">VisitedPlaces.com</a>. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>. Changes: modified for styling and clickable state links.</p></div></section>
+<footer class="site-footer"><div class="container"><div class="footer-grid"><div class="footer-brand-block"><div style="font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff;">MyOldCherokee.com</div><p>An independent buy and sell directory for older Cherokee models, with repair shops, junk/salvage yard listings, DIY/troubleshooting Guides, and community resources.</p><p class="footer-disclaimer">Listings and information are provided in good faith and believed accurate to the best of our knowledge. We do not verify or guarantee third-party listings, businesses, products, or services. Users are responsible for their own due diligence. MyOldCherokee.com is not affiliated with or endorsed by Jeep® or Stellantis®. Brand and model names are used for identification and compatibility purposes only. All trademarks are the property of their respective owners.</p><a href="contact.html" class="btn btn-outline btn-sm footer-contact-btn">Contact Us</a></div><div class="footer-col"><h4>Buy &amp; Sell</h4><ul><li><a href="buy-sell.html">Vehicles for Sale</a></li><li><a href="buy-sell.html">Parts for Sale</a></li><li><a href="buy-sell.html">Project Cherokees</a></li><li><a href="buy-sell.html">Wanted Listings</a></li><li><a href="submit.html">Post a Listing</a></li></ul></div><div class="footer-col"><h4>Resources</h4><ul><li><a href="directory.html">Repair Shops</a></li><li><a href="guides.html">Guides</a></li><li><a href="community.html">Community</a></li><li><a href="faq.html">FAQ</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="duediligence.html">Due Diligence</a></li></ul></div><div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="state-search.html">State Search</a></li><li><a href="submit.html">Submit a Listing</a></li><li><a href="contact.html">Contact</a></li></ul></div></div><div class="footer-bottom"><p>&copy; <span id="yr"></span> MyOldCherokee.com. All rights reserved. | <a class="footer-disclaimer-link" href="about.html">About</a> | <a class="footer-disclaimer-link" href="contact.html">Contact</a> | <a class="footer-disclaimer-link" href="duediligence.html">Due Diligence</a></p><p>www.myoldcherokee.com</p></div></div></footer>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const liveStates = { TN: 'state/tennessee.html', TX: 'state/texas.html', CA: 'state/california.html' };
+  const toast = document.getElementById('map-toast');
+  document.querySelectorAll('.state').forEach((el)=>{ if(liveStates[el.id]) el.classList.add('live'); el.addEventListener('click',()=>{ if(liveStates[el.id]) { window.location.href = liveStates[el.id]; } else { toast.textContent = el.id + ': Coming soon'; } }); });
+</script>
+</body>
+</html>
