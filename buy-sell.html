@@ -3,20 +3,281 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Buy &amp; Sell Directory for Older Cherokees | MyOldCherokee.com</title>
-  <meta name="description" content="Browse buy and sell listings for older Cherokee models including vehicles, parts, project builds, and wanted listings." />
+  <title>Buy &amp; Sell | MyOldCherokee.com</title>
+  <meta name="description" content="Buy and sell directory for older Cherokee models. Browse Cherokees for sale, parts, project builds, and wanted listings." />
   <link rel="canonical" href="https://www.myoldcherokee.com/buy-sell.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="favicon.png" type="image/png" />
+
+  <style>
+    /* Page-only styles to keep layout consistent without modifying styles.css */
+    .page-hero {
+      background: var(--off);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+      padding: 2.25rem 0;
+    }
+    .page-hero h1 {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      font-size: clamp(1.6rem, 3.6vw, 2.2rem);
+      margin: 0 0 0.35rem 0;
+      color: var(--text);
+    }
+    .page-hero p {
+      margin: 0.35rem 0 0 0;
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 860px;
+      font-size: 0.98rem;
+    }
+
+    .tool-row {
+      display: grid;
+      grid-template-columns: 1fr 220px 180px;
+      gap: 0.75rem;
+      align-items: stretch;
+      margin-top: 1.15rem;
+    }
+    .tool-row input, .tool-row select {
+      width: 100%;
+      border: 1px solid rgba(0,0,0,0.12);
+      border-radius: 10px;
+      padding: 0.75rem 0.85rem;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      background: #fff;
+      color: var(--text);
+      outline: none;
+    }
+    .tool-row input:focus, .tool-row select:focus {
+      border-color: rgba(0,0,0,0.25);
+    }
+    .tool-row .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      text-decoration: none;
+      border-radius: 10px;
+      padding: 0.78rem 1rem;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      border: 1px solid rgba(0,0,0,0.12);
+      background: #fff;
+      color: var(--text);
+      white-space: nowrap;
+    }
+    .tool-row .btn:hover { border-color: rgba(0,0,0,0.22); }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.9rem;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.65rem;
+      border-radius: 999px;
+      border: 1px solid rgba(0,0,0,0.12);
+      font-size: 0.85rem;
+      color: var(--text);
+      background: #fff;
+      cursor: pointer;
+      user-select: none;
+    }
+    .chip.active {
+      border-color: var(--red);
+      color: var(--red);
+      background: rgba(196, 60, 60, 0.06);
+      font-weight: 700;
+    }
+
+    .grid-wrap {
+      padding: 2.2rem 0;
+    }
+    .grid-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.9rem;
+      flex-wrap: wrap;
+    }
+    .grid-head h2 {
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-size: 1.1rem;
+      margin: 0;
+      color: var(--text);
+    }
+    .grid-meta {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .listing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .listing-card {
+      background: #fff;
+      border: 1px solid rgba(0,0,0,0.10);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    }
+    .listing-media {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      background: linear-gradient(135deg, rgba(0,0,0,0.06), rgba(0,0,0,0.02));
+      overflow: hidden;
+    }
+    .listing-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .badge-row {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      z-index: 2;
+    }
+    .badge {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 800;
+      font-size: 0.72rem;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.45rem;
+      border-radius: 7px;
+      background: rgba(0,0,0,0.78);
+      color: #fff;
+    }
+    .badge.featured { background: var(--red); }
+    .badge.wanted { background: rgba(0,0,0,0.78); }
+    .badge.parts { background: rgba(0,0,0,0.78); }
+
+    .listing-body {
+      padding: 0.95rem 1rem 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      flex: 1;
+    }
+    .listing-title {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      font-size: 1.02rem;
+      line-height: 1.25;
+      margin: 0;
+      color: var(--text);
+    }
+    .listing-sub {
+      color: var(--muted);
+      font-size: 0.93rem;
+      line-height: 1.55;
+      margin: 0;
+    }
+    .listing-meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 0.1rem;
+    }
+    .meta-item {
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    .meta-item strong {
+      color: var(--text);
+      font-weight: 800;
+    }
+
+    .tag-row {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      margin-top: 0.1rem;
+    }
+    .tag {
+      font-size: 0.78rem;
+      color: var(--text);
+      border: 1px solid rgba(0,0,0,0.12);
+      background: rgba(0,0,0,0.02);
+      padding: 0.2rem 0.45rem;
+      border-radius: 999px;
+    }
+
+    .listing-actions {
+      display: flex;
+      gap: 0.6rem;
+      margin-top: 0.35rem;
+      flex-wrap: wrap;
+    }
+    .btn-red {
+      background: var(--red);
+      border: 1px solid var(--red);
+      color: #fff;
+    }
+    .btn-red:hover { filter: brightness(0.98); }
+    .btn-ghost {
+      background: #fff;
+      border: 1px solid rgba(0,0,0,0.14);
+      color: var(--text);
+    }
+    .btn-ghost:hover { border-color: rgba(0,0,0,0.24); }
+
+    .empty-state {
+      background: #fff;
+      border: 1px dashed rgba(0,0,0,0.22);
+      border-radius: 14px;
+      padding: 1.3rem;
+      text-align: center;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    @media (max-width: 980px) {
+      .listing-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .tool-row { grid-template-columns: 1fr 1fr; }
+      .tool-row .btn { grid-column: 1 / -1; }
+    }
+    @media (max-width: 640px) {
+      .listing-grid { grid-template-columns: 1fr; }
+      .tool-row { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
 
 <div class="topbar">
   <div class="container topbar-inner">
-    <span>Independent buy and sell directory and resource for older Cherokee models</span>
+    <span>Independent buy and sell directory and resource for older Cherokee models.</span>
     <div class="topbar-links">
       <a href="submit.html">Submit a Listing</a>
       <a href="contact.html">Contact</a>
@@ -27,11 +288,10 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="index.html" class="brand">
-      <img src="logo.png" alt="MyOldCherokee.com logo" />
+      <img src="logo.png" alt="MyOldCherokee.com" />
       <span class="brand-name">MyOldCherokee.com</span>
     </a>
     <nav class="site-nav">
-      <a href="index.html">Home</a>
       <a href="buy-sell.html" class="active">Buy &amp; Sell</a>
       <a href="directory.html">Repair Shops</a>
       <a href="junkyards.html">Junk / Salvage Yards</a>
@@ -42,72 +302,358 @@
   </div>
 </header>
 
-<div style="background:var(--red);padding:3rem 0 2.5rem;">
+<section class="page-hero">
   <div class="container">
-    <div class="section-label" style="color:rgba(255,255,255,0.6);margin-bottom:0.75rem;">Buy &amp; Sell Directory</div>
-    <h1 style="font-family:'Oswald',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;text-transform:uppercase;letter-spacing:0.02em;color:#fff;margin-bottom:0.5rem;">Buy &amp; Sell for Older Cherokee Models</h1>
-    <p style="font-family:'Source Serif 4',serif;color:rgba(255,255,255,0.78);font-size:1.05rem;max-width:58ch;">Browse listings for vehicles, project builds, parts and accessories, and wanted posts from the Cherokee community.</p>
+    <h1>Buy &amp; Sell</h1>
+    <p>Browse listings for older Cherokee models. Filter by type, search by keyword, and open a listing card to view details and photos. To post a listing, use the Submit Listing page.</p>
+
+    <div class="tool-row">
+      <input id="q" type="text" placeholder="What are you looking for?" />
+      <select id="type">
+        <option value="all">All listing types</option>
+        <option value="sale">Cherokees for Sale</option>
+        <option value="wanted">Wanted Listings</option>
+        <option value="project">Project Cherokee</option>
+        <option value="parts">Parts and Accessories</option>
+      </select>
+      <a class="btn btn-red" href="submit.html">Submit a Listing</a>
+    </div>
+
+    <div class="chips" aria-label="Quick filters">
+      <div class="chip active" data-chip="all">All</div>
+      <div class="chip" data-chip="sale">Cherokees for Sale</div>
+      <div class="chip" data-chip="wanted">Wanted</div>
+      <div class="chip" data-chip="project">Project</div>
+      <div class="chip" data-chip="parts">Parts</div>
+      <div class="chip" data-chip="featured">Featured</div>
+    </div>
+  </div>
+</section>
+
+<section class="grid-wrap">
+  <div class="container">
+    <div class="grid-head">
+      <h2 id="results-title">Listings</h2>
+      <div class="grid-meta"><span id="count">0</span> results</div>
+    </div>
+
+    <div id="grid" class="listing-grid">
+      <!-- Example cards (replace with real data later) -->
+
+      <article class="listing-card" data-type="sale" data-featured="true" data-title="2001 Cherokee XJ Sport 4.0 4x4">
+        <div class="listing-media">
+          <div class="badge-row">
+            <span class="badge featured">Featured</span>
+            <span class="badge">For Sale</span>
+          </div>
+          <img src="https://via.placeholder.com/900x560.png?text=Cherokee+Photo" alt="Listing photo placeholder" loading="lazy">
+        </div>
+        <div class="listing-body">
+          <h3 class="listing-title">2001 Cherokee XJ Sport 4.0 4x4</h3>
+          <p class="listing-sub">Clean title. Runs strong. Recent cooling system work. Add your full description and more photos.</p>
+          <div class="listing-meta">
+            <div class="meta-item"><strong>$7,500</strong></div>
+            <div class="meta-item">Austin, TX</div>
+            <div class="meta-item">Posted: Feb 2026</div>
+          </div>
+          <div class="tag-row">
+            <span class="tag">4.0L</span>
+            <span class="tag">4x4</span>
+            <span class="tag">stock</span>
+          </div>
+          <div class="listing-actions">
+            <button class="btn btn-red" type="button" onclick="openListing('l1')">View Details</button>
+            <button class="btn btn-ghost" type="button" onclick="copyLink('l1')">Copy Link</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="listing-card" data-type="parts" data-featured="false" data-title="Dana 30 front axle complete">
+        <div class="listing-media">
+          <div class="badge-row">
+            <span class="badge parts">Parts</span>
+          </div>
+          <img src="https://via.placeholder.com/900x560.png?text=Parts+Photo" alt="Listing photo placeholder" loading="lazy">
+        </div>
+        <div class="listing-body">
+          <h3 class="listing-title">Dana 30 Front Axle Complete</h3>
+          <p class="listing-sub">Include condition, gear ratio, and what is included. Add photos for best responses.</p>
+          <div class="listing-meta">
+            <div class="meta-item"><strong>$450</strong></div>
+            <div class="meta-item">San Antonio, TX</div>
+            <div class="meta-item">Posted: Feb 2026</div>
+          </div>
+          <div class="tag-row">
+            <span class="tag">axle</span>
+            <span class="tag">4x4</span>
+            <span class="tag">pickup</span>
+          </div>
+          <div class="listing-actions">
+            <button class="btn btn-red" type="button" onclick="openListing('l2')">View Details</button>
+            <button class="btn btn-ghost" type="button" onclick="copyLink('l2')">Copy Link</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="listing-card" data-type="wanted" data-featured="false" data-title="Wanted: 1999-2001 XJ front seats">
+        <div class="listing-media">
+          <div class="badge-row">
+            <span class="badge wanted">Wanted</span>
+          </div>
+          <img src="https://via.placeholder.com/900x560.png?text=Wanted+Photo" alt="Listing photo placeholder" loading="lazy">
+        </div>
+        <div class="listing-body">
+          <h3 class="listing-title">Wanted: 1999 to 2001 XJ Front Seats</h3>
+          <p class="listing-sub">State your location, budget, and what condition is acceptable. Add photos of what you want if helpful.</p>
+          <div class="listing-meta">
+            <div class="meta-item"><strong>Budget: $300</strong></div>
+            <div class="meta-item">Phoenix, AZ</div>
+            <div class="meta-item">Posted: Feb 2026</div>
+          </div>
+          <div class="tag-row">
+            <span class="tag">interior</span>
+            <span class="tag">seats</span>
+            <span class="tag">wanted</span>
+          </div>
+          <div class="listing-actions">
+            <button class="btn btn-red" type="button" onclick="openListing('l3')">View Details</button>
+            <button class="btn btn-ghost" type="button" onclick="copyLink('l3')">Copy Link</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="listing-card" data-type="project" data-featured="false" data-title="1998 Cherokee project, needs work">
+        <div class="listing-media">
+          <div class="badge-row">
+            <span class="badge">Project</span>
+          </div>
+          <img src="https://via.placeholder.com/900x560.png?text=Project+Photo" alt="Listing photo placeholder" loading="lazy">
+        </div>
+        <div class="listing-body">
+          <h3 class="listing-title">1998 Cherokee Project, Needs Work</h3>
+          <p class="listing-sub">Good base for a build. Describe rust, drivetrain status, and what is included.</p>
+          <div class="listing-meta">
+            <div class="meta-item"><strong>$1,200</strong></div>
+            <div class="meta-item">Denver, CO</div>
+            <div class="meta-item">Posted: Feb 2026</div>
+          </div>
+          <div class="tag-row">
+            <span class="tag">project</span>
+            <span class="tag">needs tow</span>
+            <span class="tag">build</span>
+          </div>
+          <div class="listing-actions">
+            <button class="btn btn-red" type="button" onclick="openListing('l4')">View Details</button>
+            <button class="btn btn-ghost" type="button" onclick="copyLink('l4')">Copy Link</button>
+          </div>
+        </div>
+      </article>
+
+      <div id="empty" class="empty-state" style="display:none;">
+        No listings match your search. Try changing the type filter or clearing your keywords.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container cta-inner">
+    <div class="cta-text">
+      <h2>List With My Old Cherokee</h2>
+      <p>Post your Cherokee, parts, project build, or wanted listing to help the community buy and sell in one place.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="submit.html" class="btn btn-red btn-lg">Submit a Listing</a>
+      <a href="contact.html" class="btn btn-ghost btn-lg">Contact</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand-block">
+        <div style="font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff;">MyOldCherokee.com</div>
+        <p>An independent buy and sell directory for older Cherokee models, with repair shops, junk/salvage yard listings, DIY and troubleshooting guides, and community resources.</p>
+        <p class="footer-disclaimer">Listings and information are provided in good faith and believed accurate to the best of our knowledge. We do not verify or guarantee third-party listings, businesses, products, or services. Users are responsible for their own due diligence. MyOldCherokee.com is not affiliated with or endorsed by Jeep® or Stellantis®. Brand and model names are used for identification and compatibility purposes only. All trademarks are the property of their respective owners.</p>
+      </div>
+
+      <div class="footer-col"><h4>Buy &amp; Sell</h4><ul>
+        <li><a href="buy-sell.html">Browse Listings</a></li>
+        <li><a href="buy-sell.html#sale">Cherokees for Sale</a></li>
+        <li><a href="buy-sell.html#wanted">Wanted Listings</a></li>
+        <li><a href="buy-sell.html#project">Project Cherokee</a></li>
+        <li><a href="buy-sell.html#parts">Parts and Accessories</a></li>
+        <li><a href="submit.html">Submit a Listing</a></li>
+      </ul></div>
+
+      <div class="footer-col"><h4>Resources</h4><ul>
+        <li><a href="directory.html">Repair Shops</a></li>
+        <li><a href="junkyards.html">Junk / Salvage Yards</a></li>
+        <li><a href="guides.html">Guides</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+
+      <div class="footer-col"><h4>Coverage</h4><ul>
+        <li><a href="#">United States (live)</a></li>
+        <li><a href="#">Canada (coming soon)</a></li>
+        <li><a href="#">Australia (planned)</a></li>
+        <li><a href="#">International (future)</a></li>
+      </ul></div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="yr"></span> MyOldCherokee.com. All rights reserved.</p>
+      <p>www.myoldcherokee.com</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Simple modal for listing details (static demo) -->
+<div id="modal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.62); z-index:9999; padding:1.25rem;">
+  <div style="max-width:920px; margin:0 auto; background:#fff; border-radius:14px; overflow:hidden; border:1px solid rgba(0,0,0,0.16);">
+    <div style="display:flex; justify-content:space-between; align-items:center; gap:0.75rem; padding:0.9rem 1rem; border-bottom:1px solid rgba(0,0,0,0.10);">
+      <div style="font-family:'Oswald',sans-serif; font-weight:700; letter-spacing:0.03em; text-transform:uppercase;" id="modalTitle">Listing</div>
+      <button type="button" onclick="closeModal()" style="border:1px solid rgba(0,0,0,0.14); background:#fff; border-radius:10px; padding:0.5rem 0.75rem; cursor:pointer; font-weight:800;">Close</button>
+    </div>
+    <div style="display:grid; grid-template-columns: 1.2fr 1fr; gap:0; align-items:stretch;">
+      <div style="background:rgba(0,0,0,0.04);">
+        <img id="modalImg" src="https://via.placeholder.com/1200x800.png?text=Listing+Photo" alt="Listing photo" style="width:100%; height:100%; object-fit:cover; display:block;">
+      </div>
+      <div style="padding:1rem;">
+        <div style="color:var(--muted); line-height:1.7; font-size:0.95rem;" id="modalBody">
+          This is a placeholder detail view. Later, this can be its own listing page and pull real data from your database.
+        </div>
+        <div style="margin-top:1rem; display:flex; gap:0.6rem; flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-ghost" style="text-decoration:none;">Contact Seller</a>
+          <a href="submit.html" class="btn btn-red" style="text-decoration:none;">Post Your Listing</a>
+        </div>
+        <p style="margin-top:0.85rem; color:var(--muted); font-size:0.85rem; line-height:1.6;">
+          Listings are user-submitted. Users are responsible for their own due diligence.
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 
-<section class="section section-off">
-  <div class="container">
-    <div class="section-head split">
-      <div><div class="section-label">Buy &amp; Sell</div><h2>Featured Listings</h2></div>
-      <a href="submit.html" class="btn btn-red">Submit a Listing</a>
-    </div>
+<script>
+  // Footer year
+  document.getElementById('yr').textContent = new Date().getFullYear();
 
-    <div class="grid g3">
-      <div class="listing-card">
-        <div class="listing-image-wrap">
-          <div class="listing-thumb" style="background:linear-gradient(135deg,#1a2d1a,#0d1a0d);height:100%;min-height:180px;">🚗<span class="listing-state">XJ</span></div>
-        </div>
-        <div class="listing-body">
-          <div class="listing-cats"><span class="lcat">Cherokees for Sale</span></div>
-          <div class="listing-name">1998 Cherokee Classic 4x4</div>
-          <div class="listing-loc">📍 Boise, ID</div>
-          <div class="listing-price">$5,300 <span class="listing-price-note">OBO</span></div>
-          <p class="listing-summary">Clean driver with service history, mild lift, and fresh all-terrain tires.</p>
-        </div>
-      </div>
+  // Demo data for modal
+  const listingDetails = {
+    l1: {
+      title: "2001 Cherokee XJ Sport 4.0 4x4",
+      img: "https://via.placeholder.com/1200x800.png?text=Cherokee+Photo",
+      body: "Example listing. Replace with real listing data and images. Include mileage, condition, known issues, price terms, and contact method."
+    },
+    l2: {
+      title: "Dana 30 Front Axle Complete",
+      img: "https://via.placeholder.com/1200x800.png?text=Parts+Photo",
+      body: "Example parts listing. Replace with real details like gear ratio, condition, included parts, pickup or shipping, and payment options."
+    },
+    l3: {
+      title: "Wanted: 1999 to 2001 XJ Front Seats",
+      img: "https://via.placeholder.com/1200x800.png?text=Wanted+Photo",
+      body: "Example wanted listing. Replace with budget, acceptable condition, and location radius."
+    },
+    l4: {
+      title: "1998 Cherokee Project, Needs Work",
+      img: "https://via.placeholder.com/1200x800.png?text=Project+Photo",
+      body: "Example project listing. Replace with rust notes, drivetrain status, title status, and tow requirements."
+    }
+  };
 
-      <div class="listing-card">
-        <div class="listing-image-wrap">
-          <div class="listing-thumb" style="background:linear-gradient(135deg,#1a1a2d,#0d0d1a);height:100%;min-height:180px;">⚙️<span class="listing-state">Parts</span></div>
-        </div>
-        <div class="listing-body">
-          <div class="listing-cats"><span class="lcat">Parts and Accessories</span></div>
-          <div class="listing-name">4.0L Intake, Header, and Throttle Body Set</div>
-          <div class="listing-loc">📍 Tulsa, OK</div>
-          <div class="listing-price">$450 <span class="listing-price-note">local pickup</span></div>
-          <p class="listing-summary">Bundle listing with photos and compatibility notes for XJ platform buyers.</p>
-        </div>
-      </div>
+  function openListing(id) {
+    const item = listingDetails[id];
+    if (!item) return;
+    document.getElementById('modalTitle').textContent = item.title;
+    document.getElementById('modalImg').src = item.img;
+    document.getElementById('modalBody').textContent = item.body;
+    document.getElementById('modal').style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  }
 
-      <div class="listing-card-submit">
-        <div style="font-size:2.5rem;">📋</div>
-        <h3>LIST WITH MY OLD CHEROKEE</h3>
-        <p>Post a vehicle, project Cherokee, parts, accessories, or wanted listing in the directory.</p>
-        <a href="submit.html" class="btn btn-red">Submit a Listing</a>
-      </div>
-    </div>
-  </div>
-</section>
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+    document.body.style.overflow = '';
+  }
 
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <div class="section-label">Browse by Category</div>
-      <h2>Buy &amp; Sell Categories</h2>
-    </div>
-    <div class="grid g4">
-      <a href="submit.html" class="cat-card"><div class="cat-icon">🚗</div><h3>Cherokees for Sale</h3><p>Complete Cherokee listings from private sellers and enthusiasts.</p></a>
-      <a href="submit.html" class="cat-card"><div class="cat-icon">🔨</div><h3>Project Cherokee</h3><p>Build-ready projects and fixer listings for restoration plans.</p></a>
-      <a href="submit.html" class="cat-card"><div class="cat-icon">⚙️</div><h3>Parts and Accessories</h3><p>Engines, driveline parts, body parts, trim pieces, and upgrades.</p></a>
-      <a href="submit.html" class="cat-card"><div class="cat-icon">🔍</div><h3>Wanted Listings</h3><p>Post parts or vehicle requests and connect with sellers.</p></a>
-    </div>
-  </div>
-</section>
+  function copyLink(id) {
+    const url = window.location.origin + window.location.pathname + "#listing-" + id;
+    navigator.clipboard.writeText(url).then(() => alert("Link copied."), () => alert("Could not copy link."));
+  }
+
+  // Search + filter (front-end demo only)
+  const q = document.getElementById('q');
+  const type = document.getElementById('type');
+  const chips = document.querySelectorAll('.chip');
+  const cards = [...document.querySelectorAll('.listing-card')];
+  const count = document.getElementById('count');
+  const empty = document.getElementById('empty');
+  let activeChip = 'all';
+
+  function setChip(next) {
+    activeChip = next;
+    chips.forEach(c => c.classList.toggle('active', c.dataset.chip === next));
+    apply();
+  }
+
+  chips.forEach(c => c.addEventListener('click', () => setChip(c.dataset.chip)));
+
+  function apply() {
+    const keyword = (q.value || '').trim().toLowerCase();
+    const sel = type.value;
+
+    let visible = 0;
+
+    cards.forEach(card => {
+      const t = card.dataset.type;
+      const featured = card.dataset.featured === "true";
+      const title = (card.dataset.title || '').toLowerCase();
+
+      const matchKeyword = !keyword || title.includes(keyword);
+      const matchSelect = (sel === 'all') || (t === sel);
+      const matchChip =
+        (activeChip === 'all') ||
+        (activeChip === 'featured' && featured) ||
+        (activeChip === t);
+
+      const show = matchKeyword && matchSelect && matchChip;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    count.textContent = String(visible);
+    empty.style.display = visible === 0 ? '' : 'none';
+
+    const labelMap = {
+      all: "Listings",
+      sale: "Cherokees for Sale",
+      wanted: "Wanted Listings",
+      project: "Project Cherokee",
+      parts: "Parts and Accessories",
+      featured: "Featured Listings"
+    };
+    document.getElementById('results-title').textContent = labelMap[activeChip] || "Listings";
+  }
+
+  q.addEventListener('input', apply);
+  type.addEventListener('change', apply);
+
+  // Initialize
+  apply();
+
+  // Close modal when clicking outside
+  document.getElementById('modal').addEventListener('click', (e) => {
+    if (e.target.id === 'modal') closeModal();
+  });
+</script>
+
+</body>
+</html>
 
 <footer class="site-footer">
   <div class="container">
