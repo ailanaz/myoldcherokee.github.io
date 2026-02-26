@@ -1,81 +1,393 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Buy & Sell | MyOldCherokee</title>
-  <meta name="description" content="Buy and sell older Cherokee models, parts, project vehicles, and wanted listings." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buy &amp; Sell Cherokee Listings | MyOldCherokee.com</title>
+  <meta name="description" content="Browse and post Cherokee vehicles, parts, project builds, and wanted listings. The buy and sell directory for older Cherokee models." />
+  <link rel="canonical" href="https://www.myoldcherokee.com/buy-sell.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
 </head>
 <body>
 
-  <div class="utility-bar">
-    <div class="container utility-inner">
-      <div class="utility-left">Independent buy and sell directory and resource hub for older Cherokee models.</div>
-      <div class="utility-right">
-        <a href="submit-listing.html">Submit a Listing</a>
-        <a href="contact.html">Contact</a>
-      </div>
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span>#1 Independent buy and sell directory and resource hub for older Cherokee models</span>
+    <div class="topbar-links">
+      <a href="submit.html">Submit a Listing</a>
+      <a href="contact.html">Contact</a>
     </div>
   </div>
+</div>
 
-  <header class="main-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="MyOldCherokee homepage">
-        <img class="brand-logo" src="logo.jpeg" alt="MyOldCherokee logo" onerror="this.style.display='none';" />
-        <span class="brand-name">MyOldCherokee</span>
-      </a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="MyOldCherokee.com logo" />
+      <span class="brand-name">MyOldCherokee.com</span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="buy-sell.html" class="active">Buy &amp; Sell</a>
+      <a href="directory.html">Directory</a>
+      <a href="guides.html">Guides</a>
+      <a href="community.html">Community</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
 
-      <nav class="tabs" aria-label="Primary navigation">
-        <a href="index.html">Home</a>
-        <a href="buy-sell.html" class="active">Buy &amp; Sell</a>
-        <a href="repair-shops.html">Repair Shops</a>
-        <a href="junk-salvage.html">Junk/Salvage Yards</a>
-        <a href="guides.html">Guides</a>
-        <a href="community.html">Community</a>
-        <a href="about.html">About</a>
-      </nav>
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="container">
+    <div class="page-hero-label">Buy &amp; Sell Directory</div>
+    <h1 class="page-hero-title">Cherokee Listings</h1>
+    <p class="page-hero-sub">Browse vehicles, parts, project builds, and wanted listings submitted by Cherokee owners and sellers. Listings are provided in good faith and believed to be accurate to the best of our knowledge. Users are responsible for their own due diligence.</p>
+  </div>
+</div>
+
+<!-- SECTION 1: CHEROKEES -->
+<section class="section" id="vehicles">
+  <div class="container">
+
+    <div class="section-head left">
+      <div class="section-label">Section 1</div>
+      <h2>Buy &amp; Sell Cherokees</h2>
+      <p>Complete Cherokee vehicles, project builds, and wanted listings. Got a Cherokee to sell or one you're looking for? Post it here.</p>
     </div>
-  </header>
 
+    <!-- Anchors for sub-category deep links -->
+    <div id="wanted" style="position:relative;top:-80px;visibility:hidden;"></div>
+    <div id="project" style="position:relative;top:-80px;visibility:hidden;"></div>
 
-  <main class="container">
-    <div class="page-head">
-      <h1>Buy & Sell</h1>
-      <p>Buy and sell older Cherokee models, parts, project vehicles, and wanted listings.</p>
+    <!-- Filter pills -->
+    <div class="filter-bar">
+      <span class="filter-label">Filter:</span>
+      <button class="filter-pill active-pill" onclick="filterSection(this,'cherokees-grid','all')">All</button>
+      <button class="filter-pill" onclick="filterSection(this,'cherokees-grid','vehicle')">For Sale</button>
+      <button class="filter-pill" onclick="filterSection(this,'cherokees-grid','wanted')">Wanted</button>
+      <button class="filter-pill" onclick="filterSection(this,'cherokees-grid','project')">Project</button>
     </div>
 
-    <div class="search-module" aria-label="Buy & Sell search">
-      <div class="search-row">
-        <div class="field"><input type="search" placeholder="Search listings, parts, projects, wanted..." /></div>
-        <div class="field"><input type="text" placeholder="ZIP or State (optional)" /></div>
-        <button class="btn primary" type="button" style="background:var(--brand); border-color:var(--brand); color:#fff; border-radius:999px; height:54px; padding:0 18px; font-weight:950;">Search</button>
-      </div>
-      <p class="help">Vehicle and parts listings are submitted by third parties. MyOldCherokee.com does not inspect or verify vehicle condition, title status, mileage, ownership, authenticity, legality, or seller claims. Always perform your own due diligence before buying.</p>
-    </div>
+    <div class="grid g3" id="cherokees-grid">
 
-    <section class="section">
-      <div class="section-head">
-        <div>
-          <h2>Sample listings</h2>
-          <p>Replace these placeholders with real listings and filters later.</p>
+      <!-- For Sale: Vehicle 1 -->
+      <div class="listing-card" data-cat="vehicle">
+        <div class="listing-image-wrap">
+          <div class="listing-thumb" style="background:linear-gradient(135deg,#1a2d1a,#0d1a0d);">
+            🚗
+            <span class="listing-state">XJ</span>
+          </div>
+        </div>
+        <div class="listing-body">
+          <div class="listing-cats"><span class="lcat lcat-vehicle">For Sale</span></div>
+          <div class="listing-name">1999 Jeep Cherokee Sport 4x4</div>
+          <div class="listing-loc">📍 Denver, CO</div>
+          <div class="listing-price">$4,200 <span class="listing-price-note">OBO</span></div>
+          <p class="listing-summary">This is how your listing will appear. Sellers can add photos, a full description, condition notes, mileage, and contact info.</p>
+          <div class="listing-actions">
+            <a href="submit.html" class="btn btn-red btn-sm">Post Like This</a>
+          </div>
         </div>
       </div>
-      <div class="grid">
-        <div class="card"><div class="ico">1</div><div><div class="card-title">Example listing</div><div class="card-sub">City, State. Short description.</div></div></div>
-        <div class="card"><div class="ico">2</div><div><div class="card-title">Example listing</div><div class="card-sub">City, State. Short description.</div></div></div>
-        <div class="card"><div class="ico">3</div><div><div class="card-title">Example listing</div><div class="card-sub">City, State. Short description.</div></div></div>
+
+      <!-- For Sale: Vehicle 2 -->
+      <div class="listing-card" data-cat="vehicle">
+        <div class="listing-image-wrap">
+          <div class="listing-thumb" style="background:linear-gradient(135deg,#0d2d1a,#061a0d);">
+            🚗
+            <span class="listing-state">ZJ</span>
+          </div>
+        </div>
+        <div class="listing-body">
+          <div class="listing-cats"><span class="lcat lcat-vehicle">For Sale</span></div>
+          <div class="listing-name">1997 Grand Cherokee Limited 4x4</div>
+          <div class="listing-loc">📍 Atlanta, GA</div>
+          <div class="listing-price">$5,500 <span class="listing-price-note">firm</span></div>
+          <p class="listing-summary">Listings with photos get more attention. Upload up to 8 images when you submit. Photos appear right in the image area above.</p>
+          <div class="listing-actions">
+            <a href="submit.html" class="btn btn-red btn-sm">Post Like This</a>
+          </div>
+        </div>
       </div>
-    </section>
-  </main>
 
+      <!-- Project Cherokee -->
+      <div class="listing-card" data-cat="project">
+        <div class="listing-image-wrap">
+          <div class="listing-thumb" style="background:linear-gradient(135deg,#2d1a0d,#1a0d06);">
+            🔨
+            <span class="listing-state">Project</span>
+          </div>
+        </div>
+        <div class="listing-body">
+          <div class="listing-cats"><span class="lcat lcat-project">Project</span></div>
+          <div class="listing-name">2001 XJ Project Build, Partial Lift, Runs</div>
+          <div class="listing-loc">📍 Austin, TX</div>
+          <div class="listing-price">$2,200 <span class="listing-price-note">as-is</span></div>
+          <p class="listing-summary">Project listings show the vehicle's current state, what's been done, and what still needs work. Great for buyers looking for a build to continue.</p>
+          <div class="listing-actions">
+            <a href="submit.html" class="btn btn-red btn-sm">Post Like This</a>
+          </div>
+        </div>
+      </div>
 
-  <footer class="footer">
-    <div class="container">
-      <p class="footer-small">Independent buy & sell directory and resource for older Cherokee models. MyOldCherokee.com does not verify or guarantee third-party listings, businesses, products, or services. Users are responsible for their own due diligence. MyOldCherokee.com is not affiliated with or endorsed by Jeep® or Stellantis®. Brand and model names are used for identification and compatibility reference only. All trademarks are the property of their respective owners.</p>
+      <!-- Wanted -->
+      <div class="listing-card" data-cat="wanted">
+        <div class="listing-image-wrap">
+          <div class="listing-thumb" style="background:linear-gradient(135deg,#1a1a1a,#2d2d2d);">
+            🔍
+            <span class="listing-state">Wanted</span>
+          </div>
+        </div>
+        <div class="listing-body">
+          <div class="listing-cats"><span class="lcat lcat-wanted">Wanted</span></div>
+          <div class="listing-name">Wanted: Clean XJ, 1997-2001, Under 150k</div>
+          <div class="listing-loc">📍 Nashville, TN</div>
+          <div class="listing-price">Offer</div>
+          <p class="listing-summary">Post what you're looking for and let sellers come to you. Include year range, condition preferences, and your location or shipping terms.</p>
+          <div class="listing-actions">
+            <a href="submit.html" class="btn btn-red btn-sm">Post Wanted Ad</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit card -->
+      <div class="listing-card-submit">
+        <div style="font-size:2.5rem;">📋</div>
+        <h3>LIST WITH MY OLD CHEROKEE</h3>
+        <p>Post a vehicle, project Cherokee, or wanted listing. Free to submit. Each listing supports photos, pricing, and your contact details.</p>
+        <a href="submit.html" class="btn btn-red">Submit a Listing</a>
+      </div>
+
+    </div><!-- end #cherokees-grid -->
+
+    <!-- Bottom CTA bar -->
+    <div class="page-cta-bar">
+      <div>
+        <p class="page-cta-bar-title">Have a Cherokee to sell or looking to buy one?</p>
+        <p class="page-cta-bar-sub">Free to submit. Listings support photos, pricing, description, and contact info.</p>
+      </div>
+      <a href="submit.html" class="btn btn-red" style="flex-shrink:0;">Submit a Listing</a>
     </div>
-  </footer>
 
-<script src="app.js"></script>
+  </div>
+</section>
+
+
+<!-- SECTION 2: PARTS -->
+<section class="section" id="parts" style="border-top:2px solid var(--line);">
+  <div class="container">
+
+    <div class="section-head left">
+      <div class="section-label">Section 2</div>
+      <h2>Parts &amp; Accessories</h2>
+      <p>Cherokee parts for sale, hard-to-find pieces, and parts wanted listings. Browse by category or post your own parts listing.</p>
+    </div>
+
+    <!-- Filter pills -->
+    <div class="filter-bar">
+      <span class="filter-label">Filter:</span>
+      <button class="filter-pill active-pill" onclick="filterSection(this,'parts-grid','all')">All</button>
+      <button class="filter-pill" onclick="filterSection(this,'parts-grid','engine')">Engine</button>
+      <button class="filter-pill" onclick="filterSection(this,'parts-grid','drivetrain')">Drivetrain</button>
+      <button class="filter-pill" onclick="filterSection(this,'parts-grid','suspension')">Suspension</button>
+      <button class="filter-pill" onclick="filterSection(this,'parts-grid','body')">Body &amp; Interior</button>
+      <button class="filter-pill" onclick="filterSection(this,'parts-grid','electrical')">Electrical</button>
+    </div>
+
+    <div class="grid g3" id="parts-grid">
+
+      <!-- Engine parts -->
+      <div class="listing-card" data-cat="engine">
+        <div class="listing-image-wrap">
+          <div class="listing-thumb" style="background:linear-gradient(135deg,#1a1a2d,#0d0d1a);">
+            🔩
+            <span class="listing-state">Engine</span>
+          </div>
+        </div>
+        <div class="listing-body">
+          <div class="listing-cats"><span class="lcat lcat-parts">Engine</span></div>
+          <div class="listing-name">4.0L Long Block, 110k Miles, Good Compression</div>
+          <div class="listing-loc">📍 Phoenix, AZ</div>
+          <div class="listing-price">$1,800 <span class="listing-price-note">pickup only</span></div>
+          <p class="listing-summary">Parts listings support photos and detailed descriptions. Great for engines, heads, and complete powertrain assemblies.</p>
+          <div class="listing-actions">
+            <a href="submit.html" class="btn btn-red btn-sm">Post Like This</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drivetrain -->
+      <div class="listing-card" data-cat="drivetrain">
+        <div class="listing-image-wrap">
+          <div class="listing-thumb" style="background:linear-gradient(135deg,#2d1a1a,#1a0d0d);">
+            ⚙️
+            <span class="listing-state">Drivetrain</span>
+          </div>
+        </div>
+        <div class="listing-body">
+          <div class="listing-cats"><span class="lcat lcat-parts">Drivetrain</span></div>
+          <div class="listing-name">AW4 Automatic Transmission, Shifts Clean</div>
+          <div class="listing-loc">📍 Dallas, TX</div>
+          <div class="listing-price">$650 <span class="listing-price-note">OBO</span></div>
+          <p class="listing-summary">Transmission, transfer case, axles, and driveshaft listings. Confirm fitment for your exact year and model before buying.</p>
+          <div class="listing-actions">
+            <a href="submit.html" class="btn btn-red btn-sm">Post Like This</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Suspension -->
+      <div class="listing-card" data-cat="suspension">
+        <div class="listing-image-wrap">
+          <div class="listing-thumb" style="background:linear-gradient(135deg,#1a2d1a,#0d1a0d);">
+            🔧
+            <span class="listing-state">Suspension</span>
+          </div>
+        </div>
+        <div class="listing-body">
+          <div class="listing-cats"><span class="lcat lcat-parts">Suspension</span></div>
+          <div class="listing-name">3.5" Lift Kit, Complete, Off a 2000 XJ</div>
+          <div class="listing-loc">📍 Salt Lake City, UT</div>
+          <div class="listing-price">$220 <span class="listing-price-note">all included</span></div>
+          <p class="listing-summary">Lift kits, control arms, track bars, and shocks. Include full details and what vehicle it came off of for the best response.</p>
+          <div class="listing-actions">
+            <a href="submit.html" class="btn btn-red btn-sm">Post Like This</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Body & Interior -->
+      <div class="listing-card" data-cat="body">
+        <div class="listing-image-wrap">
+          <div class="listing-thumb" style="background:linear-gradient(135deg,#2d2a1a,#1a1a0d);">
+            🚘
+            <span class="listing-state">Body</span>
+          </div>
+        </div>
+        <div class="listing-body">
+          <div class="listing-cats"><span class="lcat lcat-parts">Body &amp; Interior</span></div>
+          <div class="listing-name">XJ Front Clip  -  Hood, Fenders, Grille, Headlights</div>
+          <div class="listing-loc">📍 Portland, OR</div>
+          <div class="listing-price">$350 <span class="listing-price-note">local pickup</span></div>
+          <p class="listing-summary">Body panels, bumpers, doors, interior trim, and glass. Include color code and year compatibility for faster sales.</p>
+          <div class="listing-actions">
+            <a href="submit.html" class="btn btn-red btn-sm">Post Like This</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Electrical -->
+      <div class="listing-card" data-cat="electrical">
+        <div class="listing-image-wrap">
+          <div class="listing-thumb" style="background:linear-gradient(135deg,#1a1a2d,#0d0d2d);">
+            ⚡
+            <span class="listing-state">Electrical</span>
+          </div>
+        </div>
+        <div class="listing-body">
+          <div class="listing-cats"><span class="lcat lcat-parts">Electrical</span></div>
+          <div class="listing-name">PCM / ECU  -  1999 XJ 4.0L, Tested Good</div>
+          <div class="listing-loc">📍 Columbus, OH</div>
+          <div class="listing-price">$120 <span class="listing-price-note">shipped</span></div>
+          <p class="listing-summary">ECU, PCM, sensors, switches, and wiring listings. Include the exact VIN or year and engine for compatibility verification.</p>
+          <div class="listing-actions">
+            <a href="submit.html" class="btn btn-red btn-sm">Post Like This</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit card -->
+      <div class="listing-card-submit">
+        <div style="font-size:2.5rem;">🔩</div>
+        <h3>SELL YOUR PARTS HERE</h3>
+        <p>Post a parts listing with photos, pricing, condition details, and fitment info. Free to submit.</p>
+        <a href="submit.html" class="btn btn-red">Submit Parts Listing</a>
+      </div>
+
+    </div><!-- end #parts-grid -->
+
+    <!-- Bottom CTA bar -->
+    <div class="page-cta-bar">
+      <div>
+        <p class="page-cta-bar-title">Have Cherokee parts to sell?</p>
+        <p class="page-cta-bar-sub">Post a parts listing with photos, description, fitment info, and your contact details. Free to submit.</p>
+      </div>
+      <a href="submit.html" class="btn btn-red" style="flex-shrink:0;">Submit Parts Listing</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- EMAIL CAPTURE -->
+<section class="email-band">
+  <div class="container email-band-inner">
+    <div class="email-band-text">
+      <h2>Join the ride!</h2>
+      <p>Stay up to date on new listings, guides, and Cherokee community news.</p>
+    </div>
+    <form class="email-band-form" onsubmit="return false;">
+      <input type="email" class="email-band-input" placeholder="Enter your email address" />
+      <button type="submit" class="btn btn-red">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand-block">
+        <div style="font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff;">MyOldCherokee.com</div>
+        <p>An independent buy and sell directory for older Cherokee models, with repair shops, junk/salvage yard listings, DIY/troubleshooting Guides, and community resources.</p>
+        <p class="footer-disclaimer">Listings and information are provided in good faith and believed accurate to the best of our knowledge. We do not verify or guarantee third-party listings, businesses, products, or services. Users are responsible for their own due diligence. MyOldCherokee.com is not affiliated with or endorsed by Jeep&reg; or Stellantis&reg;. Brand and model names are used for identification and compatibility purposes only. All trademarks are the property of their respective owners.</p>
+      </div>
+      <div class="footer-col"><h4>Buy &amp; Sell</h4><ul>
+        <li><a href="buy-sell.html#vehicles">Vehicles for Sale</a></li>
+        <li><a href="buy-sell.html#parts">Parts for Sale</a></li>
+        <li><a href="buy-sell.html#project">Project Cherokees</a></li>
+        <li><a href="buy-sell.html#wanted">Wanted Listings</a></li>
+        <li><a href="submit.html">Post a Listing</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Resources</h4><ul>
+        <li><a href="directory.html#repair-shops">Repair Shops</a></li>
+        <li><a href="directory.html#junkyards">Junk / Salvage Yards</a></li>
+        <li><a href="directory.html#parts">Shop for Parts</a></li>
+        <li><a href="guides.html">Guides</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="duediligence.html">Due Diligence</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="yr"></span> MyOldCherokee.com. All rights reserved. | <a class="footer-disclaimer-link" href="#">Privacy Policy</a> | <a class="footer-disclaimer-link" href="#">Terms of Use</a> | <a class="footer-disclaimer-link" href="duediligence.html">Due Diligence</a></p>
+      <p>www.myoldcherokee.com</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  function filterSection(btn, gridId, cat) {
+    btn.closest('.filter-bar').querySelectorAll('.filter-pill').forEach(function(p) {
+      p.classList.remove('active-pill');
+    });
+    btn.classList.add('active-pill');
+    document.querySelectorAll('#' + gridId + ' .listing-card').forEach(function(card) {
+      if (cat === 'all' || card.getAttribute('data-cat') === cat) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+</script>
 </body>
 </html>
