@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +12,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="favicon.png" type="image/png" />
+
+  <style>
+    /* Keeps all disclaimer text the same size and spacing, without changing your words */
+    .about-disclaimer {
+      font-size: 1rem;
+      line-height: 1.7;
+      margin: 0;
+    }
+    .about-disclaimer p {
+      margin: 0 0 0.9rem 0;
+    }
+    .about-disclaimer p:last-child {
+      margin-bottom: 0;
+    }
+  </style>
 </head>
 <body>
 
@@ -49,14 +65,24 @@
     </div>
 
     <p class="about-lead">
-      MyOldCherokee.com is an independent buy and sell directory and resource hub focused on older Cherokee models. It was created because owners needed one place to buy, sell, find parts, locate repair shops, and access DIY and troubleshooting information without digging through scattered forums, outdated listings, or coming up empty. Our goal is to build more than a directory. We are building a community grounded in Cherokee pride. If you have Cherokee pride, join the ride. </p>
+      MyOldCherokee.com is an independent buy and sell directory and resource hub focused on older Cherokee models. It was created because owners needed one place to buy, sell, find parts, locate repair shops, and access DIY and troubleshooting information without digging through scattered forums, outdated listings, or coming up empty. Our goal is to build more than a directory. We are building a community grounded in Cherokee pride. If you have Cherokee pride, join the ride.
+    </p>
 
     <div style="margin-top:2.5rem;margin-bottom:2rem;padding:1.5rem 1.5rem 1.5rem 1.25rem;border-left:4px solid var(--red);background:var(--off);border-radius:0 10px 10px 0;">
       <h3 style="font-family:'Oswald',sans-serif;font-size:1.15rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:var(--text);margin-bottom:1rem;">Please Read</h3>
-MyOldCherokee.com is an independent directory and informational resource for owners of older Cherokee models. Listings, links, and user-submitted information are provided in good faith and believed accurate to the best of our knowledge. We do not provide professional advice and we do not verify, inspect, certify, or guarantee third-party listings, sellers, businesses, products, services, pricing, availability, qualifications, licensing, condition, or outcomes. Users are responsible for their own due diligence before buying a vehicle or part, hiring a service provider, contacting a junk or salvage yard, or relying on any information found on this site. We may offer reporting tools and may review, edit, or remove listings at our discretion, but this does not constitute monitoring, verification, or approval. To the fullest extent permitted by law, MyOldCherokee.com disclaims liability for transactions, disputes, losses, damages, or outcomes arising from third-party listings, businesses, products, or services. <p style="margin-bottom:0.9rem;line-height:1.7;">Users are responsible for performing their own due diligence before buying a vehicle or part, hiring a service provider, contacting a junk or salvage yard, or relying on any listing or information found on this site.</p>
-      <p style="margin-bottom:0.9rem;line-height:1.7;">We may provide user flagging and reporting tools and may review, edit, or remove listings at our discretion, but the availability of these tools do not constitute verification, monitoring, or approval of any listing.</p>
-      <p style="margin-bottom:0.9rem;line-height:1.7;">To the fullest extent permitted by law, MyOldCherokee.com disclaims liability for transactions, disputes, losses, damages, or outcomes arising from third-party listings, businesses, products, or services.</p>
-MyOldCherokee.com is not affiliated with or endorsed by Jeep® or Stellantis®. Brand and model names are used for identification and compatibility reference only. All trademarks are the property of their respective owners.</div>
+
+      <div class="about-disclaimer">
+        <p>MyOldCherokee.com is an independent directory and informational resource for owners of older Cherokee models. Listings, links, and user-submitted information are provided in good faith and believed accurate to the best of our knowledge. We do not provide professional advice and we do not verify, inspect, certify, or guarantee third-party listings, sellers, businesses, products, services, pricing, availability, qualifications, licensing, condition, or outcomes. Users are responsible for their own due diligence before buying a vehicle or part, hiring a service provider, contacting a junk or salvage yard, or relying on any information found on this site. We may offer reporting tools and may review, edit, or remove listings at our discretion, but this does not constitute monitoring, verification, or approval. To the fullest extent permitted by law, MyOldCherokee.com disclaims liability for transactions, disputes, losses, damages, or outcomes arising from third-party listings, businesses, products, or services.</p>
+
+        <p>Users are responsible for performing their own due diligence before buying a vehicle or part, hiring a service provider, contacting a junk or salvage yard, or relying on any listing or information found on this site.</p>
+
+        <p>We may provide user flagging and reporting tools and may review, edit, or remove listings at our discretion, but the availability of these tools do not constitute verification, monitoring, or approval of any listing.</p>
+
+        <p>To the fullest extent permitted by law, MyOldCherokee.com disclaims liability for transactions, disputes, losses, damages, or outcomes arising from third-party listings, businesses, products, or services.</p>
+
+        <p>MyOldCherokee.com is not affiliated with or endorsed by Jeep® or Stellantis®. Brand and model names are used for identification and compatibility reference only. All trademarks are the property of their respective owners.</p>
+      </div>
+    </div>
 
     <p><a href="duediligence.html" style="color:var(--red);text-decoration:underline;">→ View our Buyer &amp; Seller Due Diligence checklist</a></p>
   </div>
@@ -113,3 +139,5 @@ MyOldCherokee.com is not affiliated with or endorsed by Jeep® or Stellantis®. 
 <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
 </html>
+```
+
