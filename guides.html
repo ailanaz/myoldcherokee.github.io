@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DIY &amp; Troubleshooting Guides for Older Cherokees | MyOldCherokee.com</title>
   <meta name="description" content="DIY and troubleshooting guides for older Cherokee owners. Covers no-start, overheating, death wobble, electrical drain, rough idle, and 4WD issues." />
+  <meta name="description" content="DIY and troubleshooting guides for owners of older Cherokee models.. Covers no-start, overheating, death wobble, electrical drain, rough idle, and 4WD issues." />
   <link rel="canonical" href="https://www.myoldcherokee.com/guides.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +18,7 @@
 <div class="topbar">
   <div class="container topbar-inner">
     <span>Independent buy and sell directory and resource for older Cherokee models</span>
+    <span>#1 Independent buy and sell directory and resource hub for owners of older Cherokee models</span>
     <div class="topbar-links">
       <a href="submit.html">Submit a Listing</a>
       <a href="contact.html">Contact</a>
@@ -35,6 +37,7 @@
       <a href="buy-sell.html">Buy &amp; Sell</a>
       <a href="directory.html">Repair Shops</a>
       <a href="junkyards.html">Junk / Salvage Yards</a>
+      <a href="directory.html">Directory</a>
       <a href="guides.html" class="active">Guides</a>
       <a href="community.html">Community</a>
       <a href="about.html">About</a>
@@ -48,6 +51,11 @@
     <div class="section-label" style="color:rgba(255,255,255,0.6);margin-bottom:0.75rem;">Guides</div>
     <h1 style="font-family:'Oswald',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;text-transform:uppercase;letter-spacing:0.02em;color:#fff;margin-bottom:0.5rem;">Guides</h1>
     <p style="font-family:'Source Serif 4',serif;color:rgba(255,255,255,0.78);font-size:1.05rem;max-width:58ch;">DIY and troubleshooting resources to help diagnose, repair, and maintain older Cherokee models.</p>
+<div class="page-hero">
+  <div class="container">
+    <div class="page-hero-label">DIY &amp; Troubleshooting</div>
+    <h1 class="page-hero-title">Guides for Older Cherokee Owners</h1>
+    <p class="page-hero-sub">Owner-focused DIY and troubleshooting resources for older Cherokee models, organized to help you diagnose issues, understand common repairs, and keep your Cherokee running.</p>
   </div>
 </div>
 
@@ -57,6 +65,13 @@
     <!-- Filter pills -->
     <div style="display:flex;gap:0.5rem;flex-wrap:wrap;align-items:center;margin-bottom:2rem;">
       <span style="font-family:'Oswald',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-lite);margin-right:0.25rem;">Filter:</span>
+    <div class="notice-amber">
+      <strong>Accuracy note.</strong> Guides and troubleshooting content are provided in good faith and are accurate to the best of our knowledge. Specific results may vary by vehicle, model year, or condition. Always use proper safety precautions and consult a qualified professional when needed.
+    </div>
+
+    <!-- Filter pills -->
+    <div class="filter-bar">
+      <span class="filter-label">Filter:</span>
       <button class="filter-pill active-pill" onclick="filterGuides(this,'all')">All Guides</button>
       <button class="filter-pill" onclick="filterGuides(this,'no-start')">No Start</button>
       <button class="filter-pill" onclick="filterGuides(this,'overheating')">Overheating</button>
@@ -69,6 +84,7 @@
     <div class="grid g3" id="guides-grid">
 
       <a href="#" id="no-start" class="article-card" data-cat="no-start">
+      <a href="#no-start" class="article-card" id="no-start" data-cat="no-start">
         <div class="article-thumb" style="background:linear-gradient(135deg,#6b1228,#3d0a17);">
           🔑
           <span class="article-thumb-label">No Start</span>
@@ -89,6 +105,7 @@
       </a>
 
       <a href="#" id="overheating" class="article-card" data-cat="overheating">
+      <a href="#overheating" class="article-card" id="overheating" data-cat="overheating">
         <div class="article-thumb" style="background:linear-gradient(135deg,#c87020,#7a4210);">
           🌡️
           <span class="article-thumb-label">Overheating</span>
@@ -109,6 +126,7 @@
       </a>
 
       <a href="#" id="electrical" class="article-card" data-cat="electrical">
+      <a href="#electrical" class="article-card" id="electrical" data-cat="electrical">
         <div class="article-thumb" style="background:linear-gradient(135deg,#2c5cc5,#1a3878);">
           ⚡
           <span class="article-thumb-label">Electrical</span>
@@ -129,6 +147,7 @@
       </a>
 
       <a href="#" id="death-wobble" class="article-card" data-cat="suspension">
+      <a href="#death-wobble" class="article-card" id="death-wobble" data-cat="suspension">
         <div class="article-thumb" style="background:linear-gradient(135deg,#2a6648,#163825);">
           🌀
           <span class="article-thumb-label">Suspension</span>
@@ -149,6 +168,7 @@
       </a>
 
       <a href="#" id="rough-idle" class="article-card" data-cat="engine">
+      <a href="#rough-idle" class="article-card" id="rough-idle" data-cat="engine">
         <div class="article-thumb" style="background:linear-gradient(135deg,#b36000,#6b3800);">
           💨
           <span class="article-thumb-label">Engine / Idle</span>
@@ -169,6 +189,7 @@
       </a>
 
       <a href="#" id="transmission" class="article-card" data-cat="4wd">
+      <a href="#transmission" class="article-card" id="transmission" data-cat="4wd">
         <div class="article-thumb" style="background:linear-gradient(135deg,#5a1228,#3d0a1e);">
           &#9881;
           <span class="article-thumb-label">4WD</span>
@@ -197,6 +218,12 @@
         <p style="font-family:'Source Serif 4',serif;font-size:0.9rem;color:var(--text-mid);">Submit a tip, how-to, or troubleshooting walkthrough. All submissions are reviewed.</p>
               </div>
       <a href="contact.html" class="btn btn-red" style="flex-shrink:0;">Share your Tip</a>
+    <div class="page-cta-bar">
+      <div>
+        <p class="page-cta-bar-title">Have a guide or fix to share?</p>
+        <p class="page-cta-bar-sub">Submit a tip, how-to, or troubleshooting walkthrough through the community page. All submissions are reviewed.</p>
+      </div>
+      <a href="community.html" class="btn btn-red" style="flex-shrink:0;">Submit a Guide</a>
     </div>
 
   </div>
@@ -212,6 +239,17 @@
       <a href="directory.html" class="btn btn-red btn-lg">Repair Shop Listings</a>
       <a href="community.html" class="btn btn-ghost btn-lg">Ask the Community</a>
     </div>
+<!-- EMAIL CAPTURE -->
+<section class="email-band">
+  <div class="container email-band-inner">
+    <div class="email-band-text">
+      <h2>Join the ride!</h2>
+      <p>Stay up to date on new listings, guides, and Cherokee community news.</p>
+    </div>
+    <form class="email-band-form" onsubmit="return false;">
+      <input type="email" class="email-band-input" placeholder="Enter your email address" />
+      <button type="submit" class="btn btn-red">Subscribe</button>
+    </form>
   </div>
 </section>
 
@@ -245,11 +283,23 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="submit.html">Submit a Listing</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <p class="footer-disclaimer">Listings are provided for informational purposes and do not constitute professional guidance. We do not verify or guarantee third-party listings, businesses, products, or services. Users are responsible for their own due diligence. Not affiliated with Jeep&reg; or Stellantis&reg;.</p>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul>
+        <li><a href="buy-sell.html">Buy &amp; Sell</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="guides.html">Guides</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="submit.html">Submit a Listing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="duediligence.html">Due Diligence</a></li>
         <li><a href="faq.html">FAQ</a></li>
       </ul></div>
     </div>
     <div class="footer-bottom">
       <p>&copy; <span id="yr"></span> MyOldCherokee.com. All rights reserved. | <a class="footer-disclaimer-link" href="about.html">About</a> | <a class="footer-disclaimer-link" href="contact.html">Contact</a> | <a class="footer-disclaimer-link" href="duediligence.html">Due Diligence</a></p>
+      <p>&copy; <span id="yr"></span> MyOldCherokee.com. All rights reserved. | <a class="footer-disclaimer-link" href="#">Privacy Policy</a> | <a class="footer-disclaimer-link" href="#">Terms of Use</a> | <a class="footer-disclaimer-link" href="duediligence.html">Due Diligence</a></p>
       <p>www.myoldcherokee.com</p>
     </div>
   </div>
