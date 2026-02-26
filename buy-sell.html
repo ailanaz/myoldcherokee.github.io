@@ -1,81 +1,154 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Buy & Sell | MyOldCherokee</title>
-  <meta name="description" content="Buy and sell older Cherokee models, parts, project vehicles, and wanted listings." />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buy &amp; Sell Directory for Older Cherokees | MyOldCherokee.com</title>
+  <meta name="description" content="Browse buy and sell listings for older Cherokee models including vehicles, parts, project builds, and wanted listings." />
+  <link rel="canonical" href="https://www.myoldcherokee.com/buy-sell.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
 </head>
 <body>
 
-  <div class="utility-bar">
-    <div class="container utility-inner">
-      <div class="utility-left">Independent buy and sell directory and resource hub for older Cherokee models.</div>
-      <div class="utility-right">
-        <a href="submit-listing.html">Submit a Listing</a>
-        <a href="contact.html">Contact</a>
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span>Independent buy and sell directory and resource for older Cherokee models</span>
+    <div class="topbar-links">
+      <a href="submit.html">Submit a Listing</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <img src="logo.png" alt="MyOldCherokee.com logo" />
+      <span class="brand-name">MyOldCherokee.com</span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="buy-sell.html" class="active">Buy &amp; Sell</a>
+      <a href="directory.html">Repair Shops</a>
+      <a href="junkyards.html">Junk / Salvage Yards</a>
+      <a href="guides.html">Guides</a>
+      <a href="community.html">Community</a>
+      <a href="about.html">About</a>
+    </nav>
+  </div>
+</header>
+
+<div style="background:var(--red);padding:3rem 0 2.5rem;">
+  <div class="container">
+    <div class="section-label" style="color:rgba(255,255,255,0.6);margin-bottom:0.75rem;">Buy &amp; Sell Directory</div>
+    <h1 style="font-family:'Oswald',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;text-transform:uppercase;letter-spacing:0.02em;color:#fff;margin-bottom:0.5rem;">Buy &amp; Sell for Older Cherokee Models</h1>
+    <p style="font-family:'Source Serif 4',serif;color:rgba(255,255,255,0.78);font-size:1.05rem;max-width:58ch;">Browse listings for vehicles, project builds, parts and accessories, and wanted posts from the Cherokee community.</p>
+  </div>
+</div>
+
+<section class="section section-off">
+  <div class="container">
+    <div class="section-head split">
+      <div><div class="section-label">Buy &amp; Sell</div><h2>Featured Listings</h2></div>
+      <a href="submit.html" class="btn btn-red">Submit a Listing</a>
+    </div>
+
+    <div class="grid g3">
+      <div class="listing-card">
+        <div class="listing-image-wrap">
+          <div class="listing-thumb" style="background:linear-gradient(135deg,#1a2d1a,#0d1a0d);height:100%;min-height:180px;">🚗<span class="listing-state">XJ</span></div>
+        </div>
+        <div class="listing-body">
+          <div class="listing-cats"><span class="lcat">Cherokees for Sale</span></div>
+          <div class="listing-name">1998 Cherokee Classic 4x4</div>
+          <div class="listing-loc">📍 Boise, ID</div>
+          <div class="listing-price">$5,300 <span class="listing-price-note">OBO</span></div>
+          <p class="listing-summary">Clean driver with service history, mild lift, and fresh all-terrain tires.</p>
+        </div>
+      </div>
+
+      <div class="listing-card">
+        <div class="listing-image-wrap">
+          <div class="listing-thumb" style="background:linear-gradient(135deg,#1a1a2d,#0d0d1a);height:100%;min-height:180px;">⚙️<span class="listing-state">Parts</span></div>
+        </div>
+        <div class="listing-body">
+          <div class="listing-cats"><span class="lcat">Parts and Accessories</span></div>
+          <div class="listing-name">4.0L Intake, Header, and Throttle Body Set</div>
+          <div class="listing-loc">📍 Tulsa, OK</div>
+          <div class="listing-price">$450 <span class="listing-price-note">local pickup</span></div>
+          <p class="listing-summary">Bundle listing with photos and compatibility notes for XJ platform buyers.</p>
+        </div>
+      </div>
+
+      <div class="listing-card-submit">
+        <div style="font-size:2.5rem;">📋</div>
+        <h3>LIST WITH MY OLD CHEROKEE</h3>
+        <p>Post a vehicle, project Cherokee, parts, accessories, or wanted listing in the directory.</p>
+        <a href="submit.html" class="btn btn-red">Submit a Listing</a>
       </div>
     </div>
   </div>
+</section>
 
-  <header class="main-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="MyOldCherokee homepage">
-        <img class="brand-logo" src="logo.jpeg" alt="MyOldCherokee logo" onerror="this.style.display='none';" />
-        <span class="brand-name">MyOldCherokee</span>
-      </a>
-
-      <nav class="tabs" aria-label="Primary navigation">
-        <a href="index.html">Home</a>
-        <a href="buy-sell.html" class="active">Buy &amp; Sell</a>
-        <a href="repair-shops.html">Repair Shops</a>
-        <a href="junk-salvage.html">Junk/Salvage Yards</a>
-        <a href="guides.html">Guides</a>
-        <a href="community.html">Community</a>
-        <a href="about.html">About</a>
-      </nav>
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-label">Browse by Category</div>
+      <h2>Buy &amp; Sell Categories</h2>
     </div>
-  </header>
-
-
-  <main class="container">
-    <div class="page-head">
-      <h1>Buy & Sell</h1>
-      <p>Buy and sell older Cherokee models, parts, project vehicles, and wanted listings.</p>
+    <div class="grid g4">
+      <a id="buy" href="submit.html" class="cat-card"><div class="cat-icon">🚗</div><h3>Cherokees for Sale</h3><p>Complete Cherokee listings from private sellers and enthusiasts.</p></a>
+      <a id="sell" href="submit.html" class="cat-card"><div class="cat-icon">🔨</div><h3>Project Cherokee</h3><p>Build-ready projects and fixer listings for restoration plans.</p></a>
+      <a href="submit.html" class="cat-card"><div class="cat-icon">⚙️</div><h3>Parts and Accessories</h3><p>Engines, driveline parts, body parts, trim pieces, and upgrades.</p></a>
+      <a id="wanted" href="submit.html" class="cat-card"><div class="cat-icon">🔍</div><h3>Wanted Listings</h3><p>Post parts or vehicle requests and connect with sellers.</p></a>
     </div>
+  </div>
+</section>
 
-    <div class="search-module" aria-label="Buy & Sell search">
-      <div class="search-row">
-        <div class="field"><input type="search" placeholder="Search listings, parts, projects, wanted..." /></div>
-        <div class="field"><input type="text" placeholder="ZIP or State (optional)" /></div>
-        <button class="btn primary" type="button" style="background:var(--brand); border-color:var(--brand); color:#fff; border-radius:999px; height:54px; padding:0 18px; font-weight:950;">Search</button>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand-block">
+        <div style="font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff;">MyOldCherokee.com</div>
+        <p>An independent buy and sell directory for older Cherokee models, with repair shops, junk/salvage yard listings, DIY/troubleshooting Guides, and community resources.</p>
+        <p class="footer-disclaimer">Listings and information are provided in good faith and believed accurate to the best of our knowledge. We do not verify or guarantee third-party listings, businesses, products, or services. Users are responsible for their own due diligence. MyOldCherokee.com is not affiliated with or endorsed by Jeep® or Stellantis®. Brand and model names are used for identification and compatibility purposes only. All trademarks are the property of their respective owners.</p>
+              <a href="contact.html" class="btn btn-outline btn-sm footer-contact-btn">Contact Us</a>
       </div>
-      <p class="help">Vehicle and parts listings are submitted by third parties. MyOldCherokee.com does not inspect or verify vehicle condition, title status, mileage, ownership, authenticity, legality, or seller claims. Always perform your own due diligence before buying.</p>
+      <div class="footer-col"><h4>Buy &amp; Sell</h4><ul>
+        <li><a href="buy-sell.html">Vehicles for Sale</a></li>
+        <li><a href="buy-sell.html">Parts for Sale</a></li>
+        <li><a href="buy-sell.html">Project Cherokees</a></li>
+        <li><a href="buy-sell.html">Wanted Listings</a></li>
+        <li><a href="submit.html">Post a Listing</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Resources</h4><ul>
+        <li><a href="directory.html">Repair Shops</a></li>
+        <li><a href="junkyards.html">Junk / Salvage Yards</a></li>
+        <li><a href="guides.html">Guides</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="duediligence.html">Due Diligence</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="submit.html">Submit a Listing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul></div>
     </div>
-
-    <section class="section">
-      <div class="section-head">
-        <div>
-          <h2>Sample listings</h2>
-          <p>Replace these placeholders with real listings and filters later.</p>
-        </div>
-      </div>
-      <div class="grid">
-        <div class="card"><div class="ico">1</div><div><div class="card-title">Example listing</div><div class="card-sub">City, State. Short description.</div></div></div>
-        <div class="card"><div class="ico">2</div><div><div class="card-title">Example listing</div><div class="card-sub">City, State. Short description.</div></div></div>
-        <div class="card"><div class="ico">3</div><div><div class="card-title">Example listing</div><div class="card-sub">City, State. Short description.</div></div></div>
-      </div>
-    </section>
-  </main>
-
-
-  <footer class="footer">
-    <div class="container">
-      <p class="footer-small">Independent buy & sell directory and resource for older Cherokee models. MyOldCherokee.com does not verify or guarantee third-party listings, businesses, products, or services. Users are responsible for their own due diligence. MyOldCherokee.com is not affiliated with or endorsed by Jeep® or Stellantis®. Brand and model names are used for identification and compatibility reference only. All trademarks are the property of their respective owners.</p>
+    <div class="footer-bottom">
+      <p>&copy; <span id="yr"></span> MyOldCherokee.com. All rights reserved. | <a class="footer-disclaimer-link" href="about.html">About</a> | <a class="footer-disclaimer-link" href="contact.html">Contact</a> | <a class="footer-disclaimer-link" href="duediligence.html">Due Diligence</a></p>
+      <p>www.myoldcherokee.com</p>
     </div>
-  </footer>
+  </div>
+</footer>
 
-<script src="app.js"></script>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Community — Tips, Photos &amp; Stories | MyOldCherokee.com</title>
+  <title>Community , Tips, Photos &amp; Stories | MyOldCherokee.com</title>
   <meta name="description" content="Share your Cherokee tips, fixes, photos, and stories with the MyOldCherokee.com community. Ask questions and help other Cherokee XJ owners." />
   <link rel="canonical" href="https://www.myoldcherokee.com/community.html" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,11 +16,9 @@
 
 <div class="topbar">
   <div class="container topbar-inner">
-    <span>Independent buy and sell directory and resource for older Cherokee models.</span>
+    <span>Independent buy and sell directory and resource for older Cherokee models</span>
     <div class="topbar-links">
-      <a href="index.html">Browse Listings</a>
-      <a href="submit.html">Post a Listing</a>
-      <a href="junkyards.html">Junk / Salvage</a>
+      <a href="submit.html">Submit a Listing</a>
       <a href="contact.html">Contact</a>
     </div>
   </div>
@@ -33,134 +31,67 @@
       <span class="brand-name">MyOldCherokee.com</span>
     </a>
     <nav class="site-nav">
-      <a href="index.html">Buy &amp; Sell</a>
+      <a href="index.html">Home</a>
+      <a href="buy-sell.html">Buy &amp; Sell</a>
       <a href="directory.html">Repair Shops</a>
-      <a href="junkyards.html">Junk / Salvage</a>
+      <a href="junkyards.html">Junk / Salvage Yards</a>
       <a href="guides.html">Guides</a>
       <a href="community.html" class="active">Community</a>
-      <a href="submit.html" class="nav-cta">Submit Listing</a>
       <a href="about.html">About</a>
     </nav>
   </div>
 </header>
 
-<section class="section">
-  <div class="container" style="max-width:860px;">
-    <div class="section-head left">
-      <div class="section-label">Community</div>
-      <h2>Share Your Cherokee Knowledge</h2>
-      <p>Got a tip, a fix, a photo, or a story? Submit it here. All submissions are reviewed before going live — this is a curated community, not a free-for-all.</p>
+<div style="background:var(--red);padding:3rem 0 2.5rem;">
+  <div class="container">
+    <div class="section-label" style="color:rgba(255,255,255,0.6);margin-bottom:0.75rem;">Cherokee Community</div>
+    <h1 style="font-family:'Oswald',sans-serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;text-transform:uppercase;letter-spacing:0.02em;color:#fff;margin-bottom:0.5rem;">Community</h1>
+    <p style="font-family:'Source Serif 4',serif;color:rgba(255,255,255,0.78);font-size:1.05rem;max-width:58ch;">Community chatter, owner questions, trail stories, and shared fixes from people keeping old Cherokees on the road.</p>
+  </div>
+</div>
+
+<section class="section section-off">
+  <div class="container" style="max-width:940px;">
+    <div class="listing-card" style="padding:1.25rem 1.5rem;margin-bottom:1.5rem;">
+      <h3 style="font-family:'Oswald',sans-serif;font-size:1rem;letter-spacing:.04em;text-transform:uppercase;margin-bottom:.4rem;">Community Rules</h3>
+      <p style="margin-bottom:.35rem;">Be respectful, stay on-topic, and no spam or harassment.</p>
+      <p>Posts and comments may be reviewed before showing publicly.</p>
     </div>
 
-    <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:2rem;">
-      <button class="btn btn-red btn-sm" onclick="showTab('tip',this)" id="ctab-tip">💡 Tip or Fix</button>
-      <button class="btn btn-outline btn-sm" onclick="showTab('photo',this)" id="ctab-photo">📷 Photo</button>
-      <button class="btn btn-outline btn-sm" onclick="showTab('story',this)" id="ctab-story">📝 Story or Experience</button>
-      <button class="btn btn-outline btn-sm" onclick="showTab('question',this)" id="ctab-question">❓ Question for the Community</button>
+    <div class="listing-card" style="padding:1.5rem;margin-bottom:1.5rem;">
+      <h3 style="font-family:'Oswald',sans-serif;font-size:1rem;letter-spacing:.04em;text-transform:uppercase;margin-bottom:.75rem;">Add a New Post</h3>
+      <div class="form-row"><label>Post Title</label><input type="text" placeholder="What are you working on?" /></div>
+      <div class="form-row"><label>Category</label><select><option>General Discussion</option><option>Tech Question</option><option>Trail / Events</option><option>Build Update</option></select></div>
+      <div class="form-row"><label>Post Content</label><textarea rows="5" placeholder="Share your question, update, or tip"></textarea></div>
+      <button class="btn btn-red">Submit Post</button>
     </div>
 
-    <!-- TIP TAB -->
-    <div id="ctab-content-tip" class="community-tab-content">
-      <div class="form-wrap">
-        <div class="form-section-title">Submit a Tip or Fix</div>
-        <p style="font-family:'Source Serif 4',serif;font-size:0.9rem;color:var(--text-mid);margin-bottom:1.25rem;line-height:1.6;">Found a fix that worked on your Cherokee? A shortcut, a workaround, a part that's better than OEM? Share it with the community.</p>
-        <div class="form-g2">
-          <div class="form-row"><label>Your Name (or handle)</label><input type="text" placeholder="e.g. TrailDust_Cherokee" /></div>
-          <div class="form-row"><label>Your Cherokee Year &amp; Model</label><input type="text" placeholder="e.g. 1998 Cherokee Sport" /></div>
-        </div>
-        <div class="form-row"><label>Tip Title *</label><input type="text" placeholder="e.g. Easy fix for the classic Cherokee death wobble at 55mph" /></div>
-        <div class="form-row">
-          <label>Category</label>
-          <select>
-            <option value="">Select a category…</option>
-            <option>No Start / Cranking</option>
-            <option>Overheating / Cooling</option>
-            <option>Electrical / Gremlins</option>
-            <option>Suspension / Steering</option>
-            <option>Engine / Idle</option>
-            <option>4WD / Transfer Case</option>
-            <option>Driveline / Axle</option>
-            <option>Body / Interior</option>
-            <option>Parts Recommendation</option>
-            <option>General Maintenance</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="form-row"><label>The Tip / Fix *</label><textarea rows="6" placeholder="Describe the issue and your fix in as much detail as you'd like. What symptoms did you see? What did you try? What worked?"></textarea></div>
-        <div class="form-row"><label>Photo (optional)</label><input type="file" accept="image/*" style="background:var(--off);padding:0.5rem 0.9rem;cursor:pointer;" /></div>
-        <div class="form-row"><label>Email (not published — for follow-up only)</label><input type="email" placeholder="you@example.com" /></div>
-        <button class="btn btn-red btn-lg" style="width:100%;margin-top:0.25rem;">Submit for Review</button>
-        <p class="form-note">All submissions are reviewed before publishing. We may lightly edit for clarity. Your email will never be shared.</p>
+    <div class="section-head left" style="margin-bottom:1rem;"><h2>Recent Posts</h2></div>
+
+    <article class="listing-card" style="padding:1.5rem;margin-bottom:1rem;">
+      <h3 style="font-family:'Oswald',sans-serif;font-size:1.05rem;">Best radiator upgrade for summer trail use?</h3>
+      <p style="color:var(--text-mid);margin:.35rem 0 .8rem;">Posted by XJTrail94 in Tech Question</p>
+      <p>My 2000 XJ runs hot on long climbs. Looking for radiator and fan setup recommendations.</p>
+      <div style="border-top:1px solid var(--line);margin-top:1rem;padding-top:1rem;">
+        <h4 style="font-family:'Oswald',sans-serif;font-size:.9rem;letter-spacing:.04em;text-transform:uppercase;">Comments</h4>
+        <p><strong>MoabCherokee:</strong> I swapped to an all-metal radiator and new fan clutch, huge difference.</p>
+        <p><strong>RedClayXJ:</strong> Check your shroud seal and verify thermostat opening temp.</p>
+        <div class="form-row" style="margin-top:.75rem;"><label>Add a Reply</label><textarea rows="3" placeholder="Write a reply"></textarea></div>
+        <button class="btn btn-outline btn-sm">Post Reply</button>
       </div>
-    </div>
+    </article>
 
-    <!-- PHOTO TAB -->
-    <div id="ctab-content-photo" class="community-tab-content" style="display:none;">
-      <div class="form-wrap">
-        <div class="form-section-title">Submit a Photo</div>
-        <p style="font-family:'Source Serif 4',serif;font-size:0.9rem;color:var(--text-mid);margin-bottom:1.25rem;line-height:1.6;">Trail shots, builds, before-and-afters, engine bays — whatever you're proud of. Keep it Cherokee.</p>
-        <div class="form-g2">
-          <div class="form-row"><label>Your Name (or handle)</label><input type="text" placeholder="e.g. MudBound_1997" /></div>
-          <div class="form-row"><label>Your Cherokee Year &amp; Model</label><input type="text" placeholder="e.g. 1994 Cherokee Country" /></div>
-        </div>
-        <div class="form-row"><label>Photo *</label><input type="file" accept="image/*" style="background:var(--off);padding:0.5rem 0.9rem;cursor:pointer;" /></div>
-        <div class="form-row"><label>Caption</label><input type="text" placeholder="A short description of what we're looking at" /></div>
-        <div class="form-row"><label>Location (optional)</label><input type="text" placeholder="e.g. Moab, UT or Hill Country, TX" /></div>
-        <div class="form-row"><label>Email (not published)</label><input type="email" placeholder="you@example.com" /></div>
-        <button class="btn btn-red btn-lg" style="width:100%;margin-top:0.25rem;">Submit for Review</button>
-        <p class="form-note">By submitting you confirm you own or have rights to the photo. Reviewed before publishing.</p>
+    <article class="listing-card" style="padding:1.5rem;">
+      <h3 style="font-family:'Oswald',sans-serif;font-size:1.05rem;">Weekend build log: new suspension refresh</h3>
+      <p style="color:var(--text-mid);margin:.35rem 0 .8rem;">Posted by ShopLotXJ in Build Update</p>
+      <p>Finished control arms and track bar this weekend, next up is alignment and test drive.</p>
+      <div style="border-top:1px solid var(--line);margin-top:1rem;padding-top:1rem;">
+        <h4 style="font-family:'Oswald',sans-serif;font-size:.9rem;letter-spacing:.04em;text-transform:uppercase;">Comments</h4>
+        <p><strong>Lifted98:</strong> Nice setup, post alignment specs when you get them.</p>
+        <div class="form-row" style="margin-top:.75rem;"><label>Add a Reply</label><textarea rows="3" placeholder="Write a reply"></textarea></div>
+        <button class="btn btn-outline btn-sm">Post Reply</button>
       </div>
-    </div>
-
-    <!-- STORY TAB -->
-    <div id="ctab-content-story" class="community-tab-content" style="display:none;">
-      <div class="form-wrap">
-        <div class="form-section-title">Share a Story or Experience</div>
-        <p style="font-family:'Source Serif 4',serif;font-size:0.9rem;color:var(--text-mid);margin-bottom:1.25rem;line-height:1.6;">How you got your Cherokee, a trip it survived, a shop that saved you, or the one that got away. Long or short — we want to hear it.</p>
-        <div class="form-g2">
-          <div class="form-row"><label>Your Name (or handle)</label><input type="text" placeholder="e.g. BackRoad_Bill" /></div>
-          <div class="form-row"><label>Your Cherokee Year &amp; Model</label><input type="text" placeholder="e.g. 2001 Cherokee Classic" /></div>
-        </div>
-        <div class="form-row"><label>Story Title *</label><input type="text" placeholder="e.g. How a $400 Cherokee became my favorite vehicle ever" /></div>
-        <div class="form-row"><label>Your Story *</label><textarea rows="10" placeholder="Write as much or as little as you'd like."></textarea></div>
-        <div class="form-row"><label>Photo (optional)</label><input type="file" accept="image/*" style="background:var(--off);padding:0.5rem 0.9rem;cursor:pointer;" /></div>
-        <div class="form-row"><label>Email (not published)</label><input type="email" placeholder="you@example.com" /></div>
-        <button class="btn btn-red btn-lg" style="width:100%;margin-top:0.25rem;">Submit for Review</button>
-        <p class="form-note">Reviewed before publishing. We may lightly edit for length or clarity.</p>
-      </div>
-    </div>
-
-    <!-- QUESTION TAB -->
-    <div id="ctab-content-question" class="community-tab-content" style="display:none;">
-      <div class="form-wrap">
-        <div class="form-section-title">Ask the Community</div>
-        <p style="font-family:'Source Serif 4',serif;font-size:0.9rem;color:var(--text-mid);margin-bottom:1.25rem;line-height:1.6;">Stumped by something? Post a question and other Cherokee owners may have the answer. Reviewed and posted to the community board.</p>
-        <div class="form-g2">
-          <div class="form-row"><label>Your Name (or handle)</label><input type="text" placeholder="e.g. NewToCherokee" /></div>
-          <div class="form-row"><label>Your Cherokee Year &amp; Model</label><input type="text" placeholder="e.g. 1996 Cherokee" /></div>
-        </div>
-        <div class="form-row"><label>Your Question *</label><input type="text" placeholder="e.g. Best replacement thermostat for a 4.0 that keeps running hot?" /></div>
-        <div class="form-row"><label>More Detail (optional)</label><textarea rows="4" placeholder="Describe what you've already tried, symptoms you're seeing, etc."></textarea></div>
-        <div class="form-row">
-          <label>Category</label>
-          <select>
-            <option value="">Select a category…</option>
-            <option>No Start / Cranking</option>
-            <option>Overheating / Cooling</option>
-            <option>Electrical / Gremlins</option>
-            <option>Suspension / Steering</option>
-            <option>Engine / Idle</option>
-            <option>4WD / Transfer Case</option>
-            <option>Parts / Shopping</option>
-            <option>General</option>
-          </select>
-        </div>
-        <div class="form-row"><label>Email (not published — we'll notify you when answers come in)</label><input type="email" placeholder="you@example.com" /></div>
-        <button class="btn btn-red btn-lg" style="width:100%;margin-top:0.25rem;">Submit Question</button>
-        <p class="form-note">Questions are reviewed before posting. This is a moderated community board — keep it helpful and on-topic.</p>
-      </div>
-    </div>
-
+    </article>
   </div>
 </section>
 
@@ -170,13 +101,14 @@
       <div class="footer-brand-block">
         <div style="font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff;">MyOldCherokee.com</div>
         <p>An independent buy and sell directory for older Cherokee models, with repair shops, junk/salvage yard listings, DIY/troubleshooting Guides, and community resources.</p>
-        <p class="footer-disclaimer">Independent directory and resource for older Cherokee owners. Listings and information are provided in good faith and believed to be accurate to the best of our knowledge. MyOldCherokee.com makes no guarantees regarding third-party listings, businesses, products, or services. Users are responsible for their own due diligence. Not affiliated with or endorsed by Jeep(R) or Stellantis(R). Brand and model names are used for identification only. All trademarks are the property of their respective owners.</p>
+        <p class="footer-disclaimer">Listings and information are provided in good faith and believed accurate to the best of our knowledge. We do not verify or guarantee third-party listings, businesses, products, or services. Users are responsible for their own due diligence. MyOldCherokee.com is not affiliated with or endorsed by Jeep® or Stellantis®. Brand and model names are used for identification and compatibility purposes only. All trademarks are the property of their respective owners.</p>
+              <a href="contact.html" class="btn btn-outline btn-sm footer-contact-btn">Contact Us</a>
       </div>
       <div class="footer-col"><h4>Buy &amp; Sell</h4><ul>
-        <li><a href="index.html">Vehicles for Sale</a></li>
-        <li><a href="index.html">Parts for Sale</a></li>
-        <li><a href="index.html">Project Cherokees</a></li>
-        <li><a href="index.html">Wanted Listings</a></li>
+        <li><a href="buy-sell.html">Vehicles for Sale</a></li>
+        <li><a href="buy-sell.html">Parts for Sale</a></li>
+        <li><a href="buy-sell.html">Project Cherokees</a></li>
+        <li><a href="buy-sell.html">Wanted Listings</a></li>
         <li><a href="submit.html">Post a Listing</a></li>
       </ul></div>
       <div class="footer-col"><h4>Resources</h4><ul>
@@ -189,15 +121,15 @@
         <li><a href="contact.html">Contact</a></li>
         <li><a href="duediligence.html">Due Diligence</a></li>
       </ul></div>
-      <div class="footer-col"><h4>Coverage</h4><ul>
-        <li><a href="#">United States (live)</a></li>
-        <li><a href="#">Canada (coming soon)</a></li>
-        <li><a href="#">Australia (planned)</a></li>
-        <li><a href="#">International (future)</a></li>
+      <div class="footer-col"><h4>Quick Links</h4><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="submit.html">Submit a Listing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
       </ul></div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; <span id="yr"></span> MyOldCherokee.com. All rights reserved. | <a class="footer-disclaimer-link" href="#">Privacy Policy</a> | <a class="footer-disclaimer-link" href="#">Terms of Use</a> | <a class="footer-disclaimer-link" href="duediligence.html">Due Diligence</a></p>
+      <p>&copy; <span id="yr"></span> MyOldCherokee.com. All rights reserved. | <a class="footer-disclaimer-link" href="about.html">About</a> | <a class="footer-disclaimer-link" href="contact.html">Contact</a> | <a class="footer-disclaimer-link" href="duediligence.html">Due Diligence</a></p>
       <p>www.myoldcherokee.com</p>
     </div>
   </div>
