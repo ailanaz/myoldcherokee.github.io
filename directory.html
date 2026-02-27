@@ -11,14 +11,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <style>
-    /* DIRECTORY NAV */
-    .dir-nav { background: var(--white); border-bottom: 2px solid var(--line); position: sticky; top: 76px; z-index: 90; }
-    .dir-nav-inner { display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; }
-    .dir-nav-inner::-webkit-scrollbar { display: none; }
-    .dir-nav-link { display: flex; align-items: center; gap: 0.45rem; padding: 1rem 1.4rem; font-family: 'Oswald', sans-serif; font-size: 0.88rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--text-mid); border-bottom: 3px solid transparent; margin-bottom: -2px; white-space: nowrap; transition: color 0.15s, border-color 0.15s; cursor: pointer; text-decoration: none; }
-    .dir-nav-link:hover { color: var(--red); border-bottom-color: var(--red); }
-    .dir-nav-link.active { color: var(--red); border-bottom-color: var(--red); }
-    .dir-nav-link .nav-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    /* DIRECTORY FILTER BAR */
+    .dir-filter-bar { background: var(--white); border-bottom: 2px solid var(--line); padding: 0.85rem 0; position: sticky; top: 76px; z-index: 90; }
+    .dir-filter-inner { display: flex; gap: 0.5rem; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; align-items: center; padding: 0.1rem 0; }
+    .dir-filter-inner::-webkit-scrollbar { display: none; }
+    .cat-section.hidden { display: none; }
 
     /* CATEGORY SECTION HEADERS */
     .cat-section { padding: 4rem 0; }
@@ -91,22 +88,18 @@
   </div>
 </section>
 
-<!-- STICKY CATEGORY NAV -->
-<nav class="dir-nav">
+<!-- DIRECTORY FILTER BAR -->
+<div class="dir-filter-bar">
   <div class="container">
-    <div class="dir-nav-inner">
-      <a href="#repair-shops" class="dir-nav-link active">
-        <span class="nav-dot" style="background:#6b1228;"></span> Repair Shops
-      </a>
-      <a href="#junk-yards" class="dir-nav-link">
-        <span class="nav-dot" style="background:#c87020;"></span> Junk Yards
-      </a>
-      <a href="#shop-parts" class="dir-nav-link">
-        <span class="nav-dot" style="background:#c87020;"></span>🛒 Shop for Parts
-      </a>
+    <div class="dir-filter-inner">
+      <span style="font-family:'Oswald',sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-lite);margin-right:0.25rem;flex-shrink:0;">Filter:</span>
+      <button class="filter-pill active-pill" data-cat="all" onclick="filterDirectory(this)">All</button>
+      <button class="filter-pill" data-cat="repair-shops" onclick="filterDirectory(this)">Repair Shops</button>
+      <button class="filter-pill" data-cat="junkyards" onclick="filterDirectory(this)">Salvage &amp; Junk Yards</button>
+      <button class="filter-pill" data-cat="shop-parts" onclick="filterDirectory(this)">Shop for Parts and More</button>
     </div>
   </div>
-</nav>
+</div>
 
 <div class="container">
 
@@ -436,19 +429,22 @@
     btn.classList.add('active-pill');
   }
 
-  // Highlight active directory nav link on scroll
-  const sections = document.querySelectorAll('[id]');
-  const navLinks = document.querySelectorAll('.dir-nav-link');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        navLinks.forEach(l => l.classList.remove('active'));
-        const active = document.querySelector(`.dir-nav-link[href="#${entry.target.id}"]`);
-        if (active) active.classList.add('active');
+  function filterDirectory(btn) {
+    document.querySelectorAll('.dir-filter-inner .filter-pill').forEach(function (p) { p.classList.remove('active-pill'); });
+    btn.classList.add('active-pill');
+    var cat = btn.getAttribute('data-cat');
+    document.querySelectorAll('.cat-section').forEach(function (s) {
+      if (cat === 'all') {
+        s.classList.remove('hidden');
+      } else {
+        if (s.id === cat) {
+          s.classList.remove('hidden');
+        } else {
+          s.classList.add('hidden');
+        }
       }
     });
-  }, { rootMargin: '-20% 0px -70% 0px' });
-  sections.forEach(s => observer.observe(s));
+  }
 </script>
 </body>
 </html>
