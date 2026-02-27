@@ -11,6 +11,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="favicon.png" type="image/png" />
+  <style>
+    .dir-nav { background: var(--white); border-bottom: 2px solid var(--line); position: sticky; top: 76px; z-index: 90; }
+    .dir-nav-inner { display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; }
+    .dir-nav-inner::-webkit-scrollbar { display: none; }
+    .dir-nav-link { display: flex; align-items: center; gap: 0.45rem; padding: 1rem 1.4rem; font-family: 'Oswald', sans-serif; font-size: 0.88rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--text-mid); border-bottom: 3px solid transparent; margin-bottom: -2px; white-space: nowrap; transition: color 0.15s, border-color 0.15s; cursor: pointer; text-decoration: none; }
+    .dir-nav-link:hover { color: var(--red); border-bottom-color: var(--red); }
+    .dir-nav-link.active { color: var(--red); border-bottom-color: var(--red); }
+    .dir-nav-link .nav-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .cat-section { padding: 4rem 0; }
+    .cat-section + .cat-section { border-top: 2px solid var(--line); }
+    .cat-header { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; }
+    .cat-header-left { display: flex; align-items: center; gap: 1rem; }
+    .cat-icon-lg { width: 56px; height: 56px; border-radius: 12px; display: grid; place-items: center; font-size: 1.6rem; flex-shrink: 0; }
+    .cat-title-block h2 { font-family: 'Oswald', sans-serif; font-size: clamp(1.5rem, 2.5vw, 2.2rem); font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; color: var(--text); margin-bottom: 0.2rem; }
+    .cat-title-block p { font-family: 'Source Serif 4', serif; color: var(--text-mid); font-size: 0.95rem; }
+  </style>
 </head>
 <body>
 
@@ -50,24 +66,47 @@
   </div>
 </section>
 
-<section class="section">
+<!-- GUIDES NAV -->
+<nav class="dir-nav">
   <div class="container">
-
-    <!-- Filter pills -->
-    <div class="filter-bar">
-      <span class="filter-label">Filter:</span>
-      <button class="filter-pill active-pill" onclick="filterGuides(this,'all')">All Guides</button>
-      <button class="filter-pill" onclick="filterGuides(this,'no-start')">No Start</button>
-      <button class="filter-pill" onclick="filterGuides(this,'overheating')">Overheating</button>
-      <button class="filter-pill" onclick="filterGuides(this,'electrical')">Electrical</button>
-      <button class="filter-pill" onclick="filterGuides(this,'suspension')">Suspension</button>
-      <button class="filter-pill" onclick="filterGuides(this,'engine')">Engine / Idle</button>
-      <button class="filter-pill" onclick="filterGuides(this,'4wd')">4WD</button>
+    <div class="dir-nav-inner">
+      <a href="#no-start" class="dir-nav-link active">
+        <span class="nav-dot" style="background:#6b1228;"></span>🔑 No Start
+      </a>
+      <a href="#overheating" class="dir-nav-link">
+        <span class="nav-dot" style="background:#c87020;"></span>🌡️ Overheating
+      </a>
+      <a href="#electrical" class="dir-nav-link">
+        <span class="nav-dot" style="background:#2c5cc5;"></span>⚡ Electrical
+      </a>
+      <a href="#suspension" class="dir-nav-link">
+        <span class="nav-dot" style="background:#2a6648;"></span>🌀 Suspension
+      </a>
+      <a href="#engine-idle" class="dir-nav-link">
+        <span class="nav-dot" style="background:#b36000;"></span>💨 Engine / Idle
+      </a>
+      <a href="#4wd" class="dir-nav-link">
+        <span class="nav-dot" style="background:#5a1228;"></span>⚙️ 4WD
+      </a>
     </div>
+  </div>
+</nav>
 
-    <div class="grid g3" id="guides-grid">
+<div class="container">
 
-      <a href="#no-start" class="article-card" id="no-start" data-cat="no-start">
+  <!-- NO START -->
+  <section class="cat-section" id="no-start">
+    <div class="cat-header">
+      <div class="cat-header-left">
+        <div class="cat-icon-lg" style="background:rgba(107,18,40,0.1);">🔑</div>
+        <div class="cat-title-block">
+          <h2>No Start</h2>
+          <p>Diagnosis guides for Cherokee no-start and no-crank conditions.</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid g3">
+      <a href="#no-start" class="article-card">
         <div class="article-thumb" style="background:linear-gradient(135deg,#6b1228,#3d0a17);">
           🔑
           <span class="article-thumb-label">No Start</span>
@@ -86,8 +125,22 @@
           </div>
         </div>
       </a>
+    </div>
+  </section>
 
-      <a href="#overheating" class="article-card" id="overheating" data-cat="overheating">
+  <!-- OVERHEATING -->
+  <section class="cat-section" id="overheating">
+    <div class="cat-header">
+      <div class="cat-header-left">
+        <div class="cat-icon-lg" style="background:rgba(200,112,32,0.1);">🌡️</div>
+        <div class="cat-title-block">
+          <h2>Overheating</h2>
+          <p>Cooling system checks for Cherokee overheating and coolant loss.</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid g3">
+      <a href="#overheating" class="article-card">
         <div class="article-thumb" style="background:linear-gradient(135deg,#c87020,#7a4210);">
           🌡️
           <span class="article-thumb-label">Overheating</span>
@@ -106,8 +159,22 @@
           </div>
         </div>
       </a>
+    </div>
+  </section>
 
-      <a href="#electrical" class="article-card" id="electrical" data-cat="electrical">
+  <!-- ELECTRICAL -->
+  <section class="cat-section" id="electrical">
+    <div class="cat-header">
+      <div class="cat-header-left">
+        <div class="cat-icon-lg" style="background:rgba(44,92,197,0.1);">⚡</div>
+        <div class="cat-title-block">
+          <h2>Electrical</h2>
+          <p>Parasitic drain, dead battery, and electrical diagnosis for older Cherokees.</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid g3">
+      <a href="#electrical" class="article-card">
         <div class="article-thumb" style="background:linear-gradient(135deg,#2c5cc5,#1a3878);">
           ⚡
           <span class="article-thumb-label">Electrical</span>
@@ -126,8 +193,22 @@
           </div>
         </div>
       </a>
+    </div>
+  </section>
 
-      <a href="#death-wobble" class="article-card" id="death-wobble" data-cat="suspension">
+  <!-- SUSPENSION -->
+  <section class="cat-section" id="suspension">
+    <div class="cat-header">
+      <div class="cat-header-left">
+        <div class="cat-icon-lg" style="background:rgba(42,102,72,0.1);">🌀</div>
+        <div class="cat-title-block">
+          <h2>Suspension</h2>
+          <p>Death wobble, steering shake, and suspension diagnosis guides.</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid g3">
+      <a href="#suspension" class="article-card">
         <div class="article-thumb" style="background:linear-gradient(135deg,#2a6648,#163825);">
           🌀
           <span class="article-thumb-label">Suspension</span>
@@ -146,8 +227,22 @@
           </div>
         </div>
       </a>
+    </div>
+  </section>
 
-      <a href="#rough-idle" class="article-card" id="rough-idle" data-cat="engine">
+  <!-- ENGINE / IDLE -->
+  <section class="cat-section" id="engine-idle">
+    <div class="cat-header">
+      <div class="cat-header-left">
+        <div class="cat-icon-lg" style="background:rgba(179,96,0,0.1);">💨</div>
+        <div class="cat-title-block">
+          <h2>Engine / Idle</h2>
+          <p>Rough idle, stalling, and engine performance guides for the Cherokee 4.0.</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid g3">
+      <a href="#engine-idle" class="article-card">
         <div class="article-thumb" style="background:linear-gradient(135deg,#b36000,#6b3800);">
           💨
           <span class="article-thumb-label">Engine / Idle</span>
@@ -166,10 +261,24 @@
           </div>
         </div>
       </a>
+    </div>
+  </section>
 
-      <a href="#transmission" class="article-card" id="transmission" data-cat="4wd">
+  <!-- 4WD -->
+  <section class="cat-section" id="4wd">
+    <div class="cat-header">
+      <div class="cat-header-left">
+        <div class="cat-icon-lg" style="background:rgba(90,18,40,0.1);">⚙️</div>
+        <div class="cat-title-block">
+          <h2>4WD</h2>
+          <p>Transfer case, vacuum line, and 4WD engagement diagnosis guides.</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid g3">
+      <a href="#4wd" class="article-card">
         <div class="article-thumb" style="background:linear-gradient(135deg,#5a1228,#3d0a1e);">
-          &#9881;
+          ⚙️
           <span class="article-thumb-label">4WD</span>
         </div>
         <div class="article-body">
@@ -186,12 +295,10 @@
           </div>
         </div>
       </a>
-
     </div>
+  </section>
 
-
-  </div>
-</section>
+</div>
 
 <section class="cta-banner">
   <div class="container cta-inner">
@@ -236,20 +343,6 @@
   </div>
 </footer>
 
-<script>
-  document.getElementById('yr').textContent = new Date().getFullYear();
-
-  function filterGuides(btn, cat) {
-    document.querySelectorAll('.filter-pill').forEach(function(p) { p.classList.remove('active-pill'); });
-    btn.classList.add('active-pill');
-    document.querySelectorAll('#guides-grid .article-card').forEach(function(card) {
-      if (cat === 'all' || card.getAttribute('data-cat') === cat) {
-        card.style.display = 'flex';
-      } else {
-        card.style.display = 'none';
-      }
-    });
-  }
-</script>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
 </html>
