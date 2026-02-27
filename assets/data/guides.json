@@ -987,7 +987,7 @@
   },
   {
     "title": "Common XJ weak links: what fails often and what to inspect first",
-    "category": "Engine and Idle",
+    "category": "Start Here Troubleshooting",
     "slug": "common-xj-weak-links-what-fails-often",
     "summary": "A simple list of high-frequency issues to help owners troubleshoot faster.",
     "whenToUse": "You want a quick baseline of what usually goes wrong.",
@@ -1007,7 +1007,7 @@
   },
   {
     "title": "Start-here maintenance baseline: what to check after buying an XJ",
-    "category": "Engine and Idle",
+    "category": "Start Here Troubleshooting",
     "slug": "start-here-maintenance-baseline-after-buying-xj",
     "summary": "A plain checklist to reduce surprises and prevent common breakdowns.",
     "whenToUse": "You just bought an XJ and want to make it reliable.",

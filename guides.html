@@ -69,6 +69,7 @@
     <div class="guides-filter-inner">
       <span style="font-family:'Oswald',sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-lite);margin-right:0.25rem;flex-shrink:0;">Filter:</span>
       <button class="filter-pill active-pill" data-cat="all" onclick="filterGuides(this)">All</button>
+      <button class="filter-pill" data-cat="start-here" onclick="filterGuides(this)">Start Here</button>
       <button class="filter-pill" data-cat="no-start" onclick="filterGuides(this)">No Start</button>
       <button class="filter-pill" data-cat="overheating" onclick="filterGuides(this)">Overheating</button>
       <button class="filter-pill" data-cat="electrical" onclick="filterGuides(this)">Electrical</button>
@@ -82,6 +83,19 @@
 <div class="container">
 
   <p style="font-size:0.9rem;color:var(--text-mid);padding:1.25rem 0 0.5rem;">We try to keep our links and references up to date. If a link is broken, please <a href="contact.html">let us know</a> so we can update it.</p>
+
+  <!-- START HERE TROUBLESHOOTING -->
+  <section class="cat-section" id="start-here">
+    <div class="cat-header">
+      <div class="cat-header-left">
+        <div class="cat-title-block">
+          <h2>Start Here Troubleshooting</h2>
+          <p>Common failures and a new-owner baseline — the two best places to start on any XJ.</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid g3" id="grid-start-here"></div>
+  </section>
 
   <!-- NO START -->
   <section class="cat-section" id="no-start">
@@ -225,6 +239,7 @@
 <script>
 (function () {
   var CAT_CONFIG = {
+    'Start Here Troubleshooting': { emoji: '🔧', bg: 'linear-gradient(135deg,#2a4a20,#152810)' },
     'No Start':               { emoji: '🔑',  bg: 'linear-gradient(135deg,#6b1228,#3d0a17)' },
     'Overheating':            { emoji: '🌡️', bg: 'linear-gradient(135deg,#c87020,#7a4210)' },
     'Electrical':             { emoji: '⚡',  bg: 'linear-gradient(135deg,#2c5cc5,#1a3878)' },
@@ -233,6 +248,7 @@
     '4WD and Transfer Case':  { emoji: '⚙️', bg: 'linear-gradient(135deg,#5a1228,#3d0a1e)' }
   };
   var CAT_GRID = {
+    'Start Here Troubleshooting': 'grid-start-here',
     'No Start':               'grid-no-start',
     'Overheating':            'grid-overheating',
     'Electrical':             'grid-electrical',
