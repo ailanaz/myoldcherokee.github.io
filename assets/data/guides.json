@@ -1,0 +1,496 @@
+[
+  {
+    "title": "Cranks but will not start: fast triage (spark vs fuel)",
+    "category": "No Start",
+    "slug": "cranks-but-will-not-start-fast-triage",
+    "summary": "A quick way to split the problem into spark or fuel so you stop guessing.",
+    "whenToUse": "It cranks normally but never fires.",
+    "links": [
+      { "label": "NAXJA: How to Troubleshoot a No Start XJ", "url": "https://naxja.org/threads/how-to-troubleshoot-a-no-start-xj.101119/" },
+      { "label": "NAXJA: The usual suspects (common XJ problems)", "url": "https://naxja.org/threads/the-usual-suspects-common-problems-with-the-xj-and-what-usually-fixes-it.1081832/" }
+    ]
+  },
+  {
+    "title": "No crank (nothing happens): battery cables, grounds, starter circuit basics",
+    "category": "No Start",
+    "slug": "no-crank-battery-cables-grounds-starter-basics",
+    "summary": "Start with the most common causes of a dead key turn before replacing parts.",
+    "whenToUse": "You turn the key and the engine does not crank.",
+    "links": [
+      { "label": "NAXJA: The usual suspects (includes no-crank notes)", "url": "https://naxja.org/threads/the-usual-suspects-common-problems-with-the-xj-and-what-usually-fixes-it.1081832/" },
+      { "label": "CherokeeTalk: XJ will not start (basic checks)", "url": "https://www.cherokeetalk.com/threads/xj-will-not-start-need-help-asap.16927/" }
+    ]
+  },
+  {
+    "title": "Starts then dies right away: idle air and vacuum basics",
+    "category": "No Start",
+    "slug": "starts-then-dies-idle-air-vacuum-basics",
+    "summary": "Many start-then-die problems come from dirty idle air parts or vacuum leaks.",
+    "whenToUse": "It starts but dies unless you hold the gas.",
+    "links": [
+      { "label": "Cruiser54: Throttle Body and IAC Cleaning", "url": "https://cruiser54.com/?p=60" },
+      { "label": "CherokeeForum: Cleaning TB and IAC", "url": "https://www.cherokeeforum.com/f2/cleaning-tb-iac-84496/" }
+    ]
+  },
+  {
+    "title": "Hot restart failure: starts cold, will not restart hot (heat soak checklist)",
+    "category": "No Start",
+    "slug": "hot-restart-failure-heat-soak-checklist",
+    "summary": "Some sensors and wiring fail when hot, then work again after cooling down.",
+    "whenToUse": "It runs fine, you shut it off, then it will not restart until it cools.",
+    "links": [
+      { "label": "NAXJA: How to Troubleshoot a No Start XJ", "url": "https://naxja.org/threads/how-to-troubleshoot-a-no-start-xj.101119/" },
+      { "label": "NAXJA: Crank but no start (examples and tests)", "url": "https://naxja.org/threads/crank-but-no-start-i-can-hear-the-fuel-pump-running.1147199/" }
+    ]
+  },
+  {
+    "title": "Crank Position Sensor (CPS): symptoms and confirmation tests",
+    "category": "No Start",
+    "slug": "crank-position-sensor-cps-symptoms-and-tests",
+    "summary": "The CPS is a common cause of crank-no-start, especially intermittent failures.",
+    "whenToUse": "It cranks but you cannot confirm spark, or it dies randomly and restarts later.",
+    "links": [
+      { "label": "NAXJA: How to Troubleshoot a No Start XJ", "url": "https://naxja.org/threads/how-to-troubleshoot-a-no-start-xj.101119/" },
+      { "label": "Cruiser54: Renix CPS testing and adjusting (1987 to 1990)", "url": "https://cruiser54.com/?p=50" }
+    ]
+  },
+  {
+    "title": "Renix (1987 to 1990): ground refreshing for better starts and drivability",
+    "category": "No Start",
+    "slug": "renix-ground-refreshing-better-starts",
+    "summary": "Bad grounds can create random no-starts and weird sensor behavior on Renix rigs.",
+    "whenToUse": "1987 to 1990 XJ with intermittent issues, stalling, or rough running.",
+    "links": [
+      { "label": "Cruiser54: Renix Ground Refreshing", "url": "https://cruiser54.com/?p=19" },
+      { "label": "Cruiser54: Mostly Renix Tips index", "url": "https://cruiser54.com/?page_id=75" }
+    ]
+  },
+  {
+    "title": "Long crank time: what is normal and what points to a problem",
+    "category": "No Start",
+    "slug": "long-crank-time-normal-vs-problem",
+    "summary": "Long crank issues usually follow patterns that help you find the cause faster.",
+    "whenToUse": "It always starts, but it takes too long to fire.",
+    "links": [
+      { "label": "NAXJA: How to Troubleshoot a No Start XJ", "url": "https://naxja.org/threads/how-to-troubleshoot-a-no-start-xj.101119/" },
+      { "label": "CherokeeForum: Extremely common XJ problems (includes start issues)", "url": "https://www.cherokeeforum.com/f59/your-guide-extremely-common-problems-xj-how-fix-them-135869/" }
+    ]
+  },
+  {
+    "title": "Fuel pump runs but it still will not start: what that means",
+    "category": "No Start",
+    "slug": "fuel-pump-runs-but-will-not-start-what-it-means",
+    "summary": "Hearing the pump does not prove you have correct fuel pressure or spark.",
+    "whenToUse": "You hear the pump prime but it still will not start.",
+    "links": [
+      { "label": "NAXJA: Crank but no start (pump noise is not proof)", "url": "https://naxja.org/threads/crank-but-no-start-i-can-hear-the-fuel-pump-running.1147199/" },
+      { "label": "NAXJA: How to Troubleshoot a No Start XJ", "url": "https://naxja.org/threads/how-to-troubleshoot-a-no-start-xj.101119/" }
+    ]
+  },
+  {
+    "title": "Overheating checklist: idle vs highway tells you what to inspect",
+    "category": "Overheating",
+    "slug": "overheating-checklist-idle-vs-highway",
+    "summary": "Where and when it overheats is the clue that points to airflow or coolant flow issues.",
+    "whenToUse": "Temps climb in traffic, on the highway, or only under load.",
+    "links": [
+      { "label": "NAXJA: XJ Cooling System Deficiencies and Solutions", "url": "https://naxja.org/threads/xj-cooling-system-deficiencies-solutions.1009479/" },
+      { "label": "Off Road Xtreme: XJ cooling problems and cures", "url": "https://www.offroadxtreme.com/tech-stories/a-cooler-solution-jeep-xj-cherokee-cooling-problems-and-cures/" }
+    ]
+  },
+  {
+    "title": "Runs hot at idle: fan airflow checks (electric fan and fan clutch)",
+    "category": "Overheating",
+    "slug": "runs-hot-at-idle-fan-airflow-checks",
+    "summary": "Idle overheating is often an airflow problem, not a mystery thermostat problem.",
+    "whenToUse": "Temps climb sitting still or moving slowly.",
+    "links": [
+      { "label": "NAXJA: XJ Cooling System Deficiencies and Solutions", "url": "https://naxja.org/threads/xj-cooling-system-deficiencies-solutions.1009479/" },
+      { "label": "Off Road Xtreme: Cooling problems and cures", "url": "https://www.offroadxtreme.com/tech-stories/a-cooler-solution-jeep-xj-cherokee-cooling-problems-and-cures/" }
+    ]
+  },
+  {
+    "title": "Runs hot on the highway: radiator flow, restriction, and hose checks",
+    "category": "Overheating",
+    "slug": "runs-hot-on-highway-radiator-flow-restriction-hose-checks",
+    "summary": "Highway overheating can point to restricted flow, radiator issues, or airflow blockage.",
+    "whenToUse": "It runs fine in town but climbs at speed.",
+    "links": [
+      { "label": "NAXJA: XJ Cooling System Deficiencies and Solutions", "url": "https://naxja.org/threads/xj-cooling-system-deficiencies-solutions.1009479/" },
+      { "label": "Off Road Xtreme: Cooling problems and cures", "url": "https://www.offroadxtreme.com/tech-stories/a-cooler-solution-jeep-xj-cherokee-cooling-problems-and-cures/" }
+    ]
+  },
+  {
+    "title": "Weak heater and temp swings after service: burping air from the system",
+    "category": "Overheating",
+    "slug": "weak-heater-temp-swings-burping-air",
+    "summary": "Trapped air can cause weak heat, weird gauge swings, and overheating after coolant work.",
+    "whenToUse": "You recently changed coolant parts and now temps act weird.",
+    "links": [
+      { "label": "NAXJA: XJ Cooling System Deficiencies and Solutions", "url": "https://naxja.org/threads/xj-cooling-system-deficiencies-solutions.1009479/" },
+      { "label": "r/CherokeeXJ: Still running hot on highway (troubleshooting examples)", "url": "https://www.reddit.com/r/CherokeeXJ/comments/178hjz4/still_running_hot_on_highway_have_replaced/" }
+    ]
+  },
+  {
+    "title": "A/C makes temps climb: what is normal and what is not",
+    "category": "Overheating",
+    "slug": "ac-makes-temps-climb-normal-vs-not",
+    "summary": "A/C adds heat in front of the radiator, weak fans show up fast.",
+    "whenToUse": "Temps rise mainly when A/C is on.",
+    "links": [
+      { "label": "NAXJA: XJ Cooling System Deficiencies and Solutions", "url": "https://naxja.org/threads/xj-cooling-system-deficiencies-solutions.1009479/" },
+      { "label": "Off Road Xtreme: Cooling problems and cures", "url": "https://www.offroadxtreme.com/tech-stories/a-cooler-solution-jeep-xj-cherokee-cooling-problems-and-cures/" }
+    ]
+  },
+  {
+    "title": "Cooling baseline for a new-to-you XJ: what to inspect first",
+    "category": "Overheating",
+    "slug": "cooling-baseline-new-to-you-xj-what-to-inspect",
+    "summary": "A short list of cooling checks that prevents the most common breakdowns.",
+    "whenToUse": "You just bought an XJ or you want to reset the baseline.",
+    "links": [
+      { "label": "r/CherokeeXJ: XJ maintenance at 100k (baseline ideas)", "url": "https://www.reddit.com/r/CherokeeXJ/comments/6w4dtd/xj_maintenance_at_100k/" },
+      { "label": "NAXJA: XJ Cooling System Deficiencies and Solutions", "url": "https://naxja.org/threads/xj-cooling-system-deficiencies-solutions.1009479/" }
+    ]
+  },
+  {
+    "title": "Coolant filter: when it helps and when it is overkill",
+    "category": "Overheating",
+    "slug": "coolant-filter-when-it-helps",
+    "summary": "A coolant filter can catch debris in older systems, but it needs maintenance.",
+    "whenToUse": "You see rust, junk, or repeat cooling system issues.",
+    "links": [
+      { "label": "CherokeeForum: Coolant filter install write-up", "url": "https://www.cherokeeforum.com/f67/coolant-filter-install-write-up-236267/" },
+      { "label": "NAXJA: XJ Cooling System Deficiencies and Solutions", "url": "https://naxja.org/threads/xj-cooling-system-deficiencies-solutions.1009479/" }
+    ]
+  },
+  {
+    "title": "Renix cooling notes: open cooling system conversion basics",
+    "category": "Overheating",
+    "slug": "renix-open-cooling-system-conversion-basics",
+    "summary": "Some Renix-era rigs benefit from later-style cooling system approaches.",
+    "whenToUse": "1987 to 1990 XJ with persistent cooling issues after normal fixes.",
+    "links": [
+      { "label": "Cruiser54: Mostly Renix Tips index (open cooling conversion listed)", "url": "https://cruiser54.com/?page_id=75" },
+      { "label": "NAXJA: XJ Cooling System Deficiencies and Solutions", "url": "https://naxja.org/threads/xj-cooling-system-deficiencies-solutions.1009479/" }
+    ]
+  },
+  {
+    "title": "Parasitic battery drain test (safe multimeter steps)",
+    "category": "Electrical",
+    "slug": "parasitic-battery-drain-test-safe-multimeter-steps",
+    "summary": "Measure key-off draw correctly so you can find the circuit causing the drain.",
+    "whenToUse": "Battery dies overnight or after a few days sitting.",
+    "links": [
+      { "label": "Innova: How to test for a parasitic draw", "url": "https://www.innova.com/blogs/fix-advices/how-to-test-for-a-parasitic-draw" },
+      { "label": "JeepForum: Think I have parasitic draw?", "url": "https://www.jeepforum.com/threads/think-i-have-parasitic-draw.4477584/" }
+    ]
+  },
+  {
+    "title": "Battery keeps dying: common draw sources to check first",
+    "category": "Electrical",
+    "slug": "battery-keeps-dying-common-draw-sources",
+    "summary": "Start with the most common offenders before tearing the Jeep apart.",
+    "whenToUse": "You confirmed a draw and need next steps.",
+    "links": [
+      { "label": "JeepForum: Think I have parasitic draw?", "url": "https://www.jeepforum.com/threads/think-i-have-parasitic-draw.4477584/" },
+      { "label": "JeepForum: Parasitic draw threads (more examples)", "url": "https://www.jeepforum.com/search/12446854/?q=parasitic+draw&c[title_only]=1&o=relevance" }
+    ]
+  },
+  {
+    "title": "Renix sensor ground upgrade (1987 to 1990): what it fixes",
+    "category": "Electrical",
+    "slug": "renix-sensor-ground-upgrade-what-it-fixes",
+    "summary": "Improves sensor ground quality so readings are more stable.",
+    "whenToUse": "1987 to 1990 XJ with random drivability issues and known ground problems.",
+    "links": [
+      { "label": "Cruiser54: Sensor Ground Upgrade", "url": "https://cruiser54.com/?p=47" },
+      { "label": "Cruiser54: Mostly Renix Tips index", "url": "https://cruiser54.com/?page_id=75" }
+    ]
+  },
+  {
+    "title": "Headlight harness upgrade: brighter lights with relays (beginner guide)",
+    "category": "Electrical",
+    "slug": "headlight-harness-upgrade-brighter-lights-with-relays",
+    "summary": "Relays and better wiring give headlights more voltage and reduce switch stress.",
+    "whenToUse": "Headlights are dim or you want a safer night-driving upgrade.",
+    "links": [
+      { "label": "CherokeeForum: Headlight harness upgrade write-up", "url": "https://www.cherokeeforum.com/f2/headlight-harness-upgrade-step-step-illustrated-diy-write-up-total-beginners-182360/" },
+      { "label": "NAXJA: Headlight harness upgrade with pics", "url": "https://naxja.org/threads/headlight-harness-upgrade-with-pics.1040689/" }
+    ]
+  },
+  {
+    "title": "Blower only works on high: melted resistor plug and what to replace",
+    "category": "Electrical",
+    "slug": "blower-only-works-on-high-melted-resistor-plug",
+    "summary": "A failing blower motor can overheat the connector and resistor pack.",
+    "whenToUse": "Fan only works on high, or the connector is melted.",
+    "links": [
+      { "label": "JeepForum: Definitive blower motor resistor and wiring fix", "url": "https://www.jeepforum.com/threads/the-definitive-blower-motor-blown-melted-resistor-switch-wire-fix.580627/" },
+      { "label": "CherokeeForum: Fan speed control melted (1997 XJ)", "url": "https://www.cherokeeforum.com/f2/fan-speed-control-melted-1997-xj-243139/" }
+    ]
+  },
+  {
+    "title": "Renix MAP vacuum line upgrade: fix the brittle elbow problem",
+    "category": "Electrical",
+    "slug": "renix-map-vacuum-line-upgrade-brittle-elbow-fix",
+    "summary": "A leaking MAP vacuum line causes bad readings and poor running on Renix rigs.",
+    "whenToUse": "1987 to 1990 XJ with hesitation, rough running, or vacuum line failure.",
+    "links": [
+      { "label": "Cruiser54: Throttle body to MAP sensor hose fix", "url": "https://cruiser54.com/?p=280" },
+      { "label": "Cruiser54: Mostly Renix Tips index", "url": "https://cruiser54.com/?page_id=75" }
+    ]
+  },
+  {
+    "title": "Random weird electrical behavior: start with grounds and connectors",
+    "category": "Electrical",
+    "slug": "random-weird-electrical-behavior-start-with-grounds",
+    "summary": "Before chasing ghosts, clean and verify the known weak points.",
+    "whenToUse": "Multiple small issues that come and go (gauges, idle, sensors, lights).",
+    "links": [
+      { "label": "Cruiser54: Renix Ground Refreshing", "url": "https://cruiser54.com/?p=19" },
+      { "label": "CherokeeForum: Extremely common XJ problems", "url": "https://www.cherokeeforum.com/f59/your-guide-extremely-common-problems-xj-how-fix-them-135869/" }
+    ]
+  },
+  {
+    "title": "Common problems index: a simple Start Here page for XJ owners",
+    "category": "Electrical",
+    "slug": "common-problems-index-start-here-xj-owners",
+    "summary": "A curated index that points people to the right guide fast.",
+    "whenToUse": "You want a single page to help visitors find the right fix.",
+    "links": [
+      { "label": "CherokeeForum: Extremely common problems with an XJ", "url": "https://www.cherokeeforum.com/f59/your-guide-extremely-common-problems-xj-how-fix-them-135869/" },
+      { "label": "NAXJA: The usual suspects (common XJ problems)", "url": "https://naxja.org/threads/the-usual-suspects-common-problems-with-the-xj-and-what-usually-fixes-it.1081832/" }
+    ]
+  },
+  {
+    "title": "Death wobble basics: what it is and what it is not",
+    "category": "Suspension and Steering",
+    "slug": "death-wobble-basics-what-it-is-and-what-it-is-not",
+    "summary": "Death wobble is usually loose or worn parts, not a steering stabilizer problem.",
+    "whenToUse": "Front end shakes violently after hitting a bump.",
+    "links": [
+      { "label": "JeepForum: Diagnosing death wobble and fixing shimmies", "url": "https://www.jeepforum.com/threads/diagnosing-death-wobble-and-fixing-non-dw-shimmies-and-wobbles.1052221/" },
+      { "label": "JeepForum: Death wobble and shimmy videos", "url": "https://www.jeepforum.com/threads/diagnosing-death-wobble-and-non-dw-wobbles-and-shimmies-videos.1376201/" }
+    ]
+  },
+  {
+    "title": "Death wobble inspection order: track bar and mounting holes first",
+    "category": "Suspension and Steering",
+    "slug": "death-wobble-inspection-order-track-bar-first",
+    "summary": "Check the track bar and mounting points before chasing anything else.",
+    "whenToUse": "You want the fastest path to the root cause.",
+    "links": [
+      { "label": "JeepForum: Diagnosing death wobble and fixing shimmies", "url": "https://www.jeepforum.com/threads/diagnosing-death-wobble-and-fixing-non-dw-shimmies-and-wobbles.1052221/" },
+      { "label": "JeepForum: Death wobble help threads (more examples)", "url": "https://www.jeepforum.com/search/12446867/?q=death+wobble&c[title_only]=1&o=relevance" }
+    ]
+  },
+  {
+    "title": "Alignment basics that affect wobble: toe and caster in plain English",
+    "category": "Suspension and Steering",
+    "slug": "alignment-basics-toe-and-caster-plain-english",
+    "summary": "Bad alignment can trigger shake, wobble, and tire wear, especially after a lift.",
+    "whenToUse": "You have a lift, bigger tires, or recent steering work.",
+    "links": [
+      { "label": "JeepForum: Diagnosing death wobble and fixing shimmies", "url": "https://www.jeepforum.com/threads/diagnosing-death-wobble-and-fixing-non-dw-shimmies-and-wobbles.1052221/" },
+      { "label": "JeepForum: Steering wheel not centered after lift (alignment basics)", "url": "https://naxja.org/help/new_faq_item9/" }
+    ]
+  },
+  {
+    "title": "Steering stabilizer myths: what it can and cannot fix",
+    "category": "Suspension and Steering",
+    "slug": "steering-stabilizer-myths-what-it-can-and-cannot-fix",
+    "summary": "A stabilizer can hide symptoms but will not fix the root cause.",
+    "whenToUse": "You are tempted to replace the stabilizer as the solution.",
+    "links": [
+      { "label": "JeepForum: Diagnosing death wobble and fixing shimmies", "url": "https://www.jeepforum.com/threads/diagnosing-death-wobble-and-fixing-non-dw-shimmies-and-wobbles.1052221/" },
+      { "label": "JeepForum: Death wobble discussions", "url": "https://www.jeepforum.com/threads/death-wobble.4440123/" }
+    ]
+  },
+  {
+    "title": "Post-lift checklist: what to re-check after installing a lift",
+    "category": "Suspension and Steering",
+    "slug": "post-lift-checklist-what-to-recheck-after-lift",
+    "summary": "Most lift problems come from loose bolts, alignment, and worn parts that show up after.",
+    "whenToUse": "You just installed a lift or bought a lifted XJ.",
+    "links": [
+      { "label": "Wayalife: 2.5 Rancho XJ lift install write-up", "url": "https://www.wayalife.com/threads/2-5-rancho-jeep-xj-cherokee-lift-installation-write-up.24915/" },
+      { "label": "JeepForum: Diagnosing death wobble and fixing shimmies", "url": "https://www.jeepforum.com/threads/diagnosing-death-wobble-and-fixing-non-dw-shimmies-and-wobbles.1052221/" }
+    ]
+  },
+  {
+    "title": "New vibration after lift: simple inspection checklist before buying parts",
+    "category": "Suspension and Steering",
+    "slug": "new-vibration-after-lift-simple-inspection-checklist",
+    "summary": "Vibration is usually angles, worn joints, or something left loose after install.",
+    "whenToUse": "A vibration started after lift, driveshaft, or suspension work.",
+    "links": [
+      { "label": "Wayalife: Lift install write-up (reference for common steps)", "url": "https://www.wayalife.com/threads/2-5-rancho-jeep-xj-cherokee-lift-installation-write-up.24915/" },
+      { "label": "JeepForum: Driveshaft angle and vibration discussions", "url": "https://www.jeepforum.com/search/12446876/?q=xj+vibration+after+lift&c[title_only]=1&o=relevance" }
+    ]
+  },
+  {
+    "title": "Clean the throttle body and IAC: smoother idle and fewer stalls",
+    "category": "Engine and Idle",
+    "slug": "clean-throttle-body-and-iac-smoother-idle",
+    "summary": "Carbon buildup affects idle quality and throttle response.",
+    "whenToUse": "Rough idle, stalling at stops, idle hunting.",
+    "links": [
+      { "label": "Cruiser54: Throttle Body and IAC Cleaning", "url": "https://cruiser54.com/?p=60" },
+      { "label": "CherokeeForum: Cleaning TB and IAC", "url": "https://www.cherokeeforum.com/f2/cleaning-tb-iac-84496/" }
+    ]
+  },
+  {
+    "title": "Renix TPS adjustment (1987 to 1990): what it helps and how to set it",
+    "category": "Engine and Idle",
+    "slug": "renix-tps-adjustment-what-it-helps-and-how-to-set",
+    "summary": "Correct TPS voltage helps drivability and can improve how it feels on throttle.",
+    "whenToUse": "1987 to 1990 XJ with drivability complaints after basics are handled.",
+    "links": [
+      { "label": "Cruiser54: Renix TPS Testing and Adjusting", "url": "https://cruiser54.com/?p=54" },
+      { "label": "Cruiser54: Mostly Renix Tips index", "url": "https://cruiser54.com/?page_id=75" }
+    ]
+  },
+  {
+    "title": "Renix throttle butterfly stop screw: why adjusting it causes problems",
+    "category": "Engine and Idle",
+    "slug": "renix-throttle-butterfly-stop-screw-why-it-causes-problems",
+    "summary": "That screw is not an idle adjustment and changing it often creates new issues.",
+    "whenToUse": "Idle is weird after someone adjusted the throttle body screw.",
+    "links": [
+      { "label": "Cruiser54: Restoring Throttle Butterfly Adjustment", "url": "https://cruiser54.com/?p=94" },
+      { "label": "Cruiser54: Throttle Body and IAC Cleaning", "url": "https://cruiser54.com/?p=60" }
+    ]
+  },
+  {
+    "title": "Running lean or rough idle: simple checks before parts swapping",
+    "category": "Engine and Idle",
+    "slug": "running-lean-or-rough-idle-simple-checks",
+    "summary": "Many lean and rough idle problems are vacuum leaks, dirty idle parts, or bad readings.",
+    "whenToUse": "Lean codes, rough idle, hesitation, stalling at lights.",
+    "links": [
+      { "label": "CherokeeForum: Running lean and rough idle", "url": "https://www.cherokeeforum.com/f2/running-lean-rough-idle-272227/" },
+      { "label": "NAXJA: Rough idle and running lean discussion", "url": "https://naxja.org/threads/rough-idle-running-lean.1159796/" }
+    ]
+  },
+  {
+    "title": "Vacuum gauge test for exhaust restriction (simple driveway test)",
+    "category": "Engine and Idle",
+    "slug": "vacuum-gauge-test-for-exhaust-restriction",
+    "summary": "A vacuum gauge can help spot a clogged exhaust without tearing anything apart.",
+    "whenToUse": "Loss of power, poor acceleration, or suspicion of a clogged converter.",
+    "links": [
+      { "label": "Cruiser54: Vacuum test for exhaust restriction", "url": "https://cruiser54.com/?p=98" }
+    ]
+  },
+  {
+    "title": "Renix MAP vacuum line problems: symptoms and how to confirm a leak",
+    "category": "Engine and Idle",
+    "slug": "renix-map-vacuum-line-problems-symptoms-and-confirmation",
+    "summary": "A small leak at the MAP line can cause big drivability problems on Renix rigs.",
+    "whenToUse": "1987 to 1990 XJ with rough running, hesitation, or brittle elbow failures.",
+    "links": [
+      { "label": "Cruiser54: Throttle body to MAP sensor hose fix", "url": "https://cruiser54.com/?p=280" },
+      { "label": "NAXJA: Question about Cruiser's MAP line fix", "url": "https://naxja.org/threads/question-cruisers-map-line-fix.1163520/" }
+    ]
+  },
+  {
+    "title": "Common XJ weak links: what fails often and what to inspect first",
+    "category": "Engine and Idle",
+    "slug": "common-xj-weak-links-what-fails-often",
+    "summary": "A simple list of high-frequency issues to help owners troubleshoot faster.",
+    "whenToUse": "You want a quick baseline of what usually goes wrong.",
+    "links": [
+      { "label": "MotorTrend: 1984 to 2001 XJ weak links and strong fixes", "url": "https://www.motortrend.com/features/129-0606-1984-2001-jeep-cherokee-xj" },
+      { "label": "NAXJA: The usual suspects (common XJ problems)", "url": "https://naxja.org/threads/the-usual-suspects-common-problems-with-the-xj-and-what-usually-fixes-it.1081832/" }
+    ]
+  },
+  {
+    "title": "Start-here maintenance baseline: what to check after buying an XJ",
+    "category": "Engine and Idle",
+    "slug": "start-here-maintenance-baseline-after-buying-xj",
+    "summary": "A plain checklist to reduce surprises and prevent common breakdowns.",
+    "whenToUse": "You just bought an XJ and want to make it reliable.",
+    "links": [
+      { "label": "r/CherokeeXJ: XJ maintenance at 100k", "url": "https://www.reddit.com/r/CherokeeXJ/comments/6w4dtd/xj_maintenance_at_100k/" },
+      { "label": "CherokeeForum: Extremely common XJ problems", "url": "https://www.cherokeeforum.com/f59/your-guide-extremely-common-problems-xj-how-fix-them-135869/" }
+    ]
+  },
+  {
+    "title": "4WD not engaging: linkage check and adjustment before deeper fixes",
+    "category": "4WD and Transfer Case",
+    "slug": "4wd-not-engaging-linkage-check-and-adjustment",
+    "summary": "Loose or misadjusted linkage can prevent full engagement even if the transfer case is fine.",
+    "whenToUse": "Shifter moves but 4WD does not feel engaged.",
+    "links": [
+      { "label": "CherokeeForum: Transfer case chain or linkage needs adjustment?", "url": "https://www.cherokeeforum.com/f67/transfer-case-chain-linkage-needs-adjustment-243118/" },
+      { "label": "NAXJA: Linkage adjust or loose transfer case chain?", "url": "https://naxja.org/threads/linkage-adjust-or-loose-t-case-chain.15618/" }
+    ]
+  },
+  {
+    "title": "4H not engaging but 4L works: what that points to and what to check",
+    "category": "4WD and Transfer Case",
+    "slug": "4h-not-engaging-but-4l-works-what-to-check",
+    "summary": "This can be linkage or engagement issues depending on year and setup.",
+    "whenToUse": "4L works, but 4H acts like 2WD.",
+    "links": [
+      { "label": "CherokeeForum: 4H not engaging, 4L is fine", "url": "https://www.cherokeeforum.com/f2/4wd-4h-not-engaging-4l-fine-267726/" },
+      { "label": "JeepForum: 4Lo works but not 4Hi", "url": "https://www.jeepforum.com/threads/95-4-0-4lo-works-but-not-4hi.2858233/" }
+    ]
+  },
+  {
+    "title": "4WD lever will not stay put: quick checks and simple adjustments",
+    "category": "4WD and Transfer Case",
+    "slug": "4wd-lever-will-not-stay-put-quick-checks",
+    "summary": "Often caused by linkage, bushings, or a worn connection point.",
+    "whenToUse": "It pops out of 4H or 4L or feels loose.",
+    "links": [
+      { "label": "CherokeeForum: 4WD lever not holding", "url": "https://www.cherokeeforum.com/f2/4wd-lever-not-holding-264550/" },
+      { "label": "JeepForum: 4WD lever loose", "url": "https://www.jeepforum.com/threads/4wd-lever-loose.264916/" }
+    ]
+  },
+  {
+    "title": "Loose shifter and no 4WD indicator: how to tell if linkage is disconnected",
+    "category": "4WD and Transfer Case",
+    "slug": "loose-shifter-no-4wd-indicator-linkage-disconnected-check",
+    "summary": "If the shifter suddenly feels too easy, something may have slipped or broken.",
+    "whenToUse": "Shifter moves smoothly with little resistance and 4WD does not engage.",
+    "links": [
+      { "label": "NAXJA: 01 XJ 4WD not engaging", "url": "https://naxja.org/threads/01-xj-4wd-not-engaging.1155312/" },
+      { "label": "NAXJA: Linkage adjust or loose transfer case chain?", "url": "https://naxja.org/threads/linkage-adjust-or-loose-t-case-chain.15618/" }
+    ]
+  },
+  {
+    "title": "Chain stretch vs linkage: simple symptoms that help you tell the difference",
+    "category": "4WD and Transfer Case",
+    "slug": "chain-stretch-vs-linkage-simple-symptoms",
+    "summary": "Linkage problems feel like incomplete shifts. Chain stretch can show up under load.",
+    "whenToUse": "It feels like it is in neutral, skips under load, or does not fully engage.",
+    "links": [
+      { "label": "CherokeeForum: Transfer case chain or linkage needs adjustment?", "url": "https://www.cherokeeforum.com/f67/transfer-case-chain-linkage-needs-adjustment-243118/" },
+      { "label": "JeepForum: Transfer case chain slipping discussion", "url": "https://www.jeepforum.com/threads/transfer-case-chain-slipping-badly.374223/" }
+    ]
+  },
+  {
+    "title": "Early-model vacuum disconnect front axle: why 4WD may not pull the front",
+    "category": "4WD and Transfer Case",
+    "slug": "early-model-vacuum-disconnect-front-axle-why-4wd-fails",
+    "summary": "Some setups rely on vacuum to engage the front axle. Leaks can leave you in 2WD.",
+    "whenToUse": "Transfer case seems to shift but the front wheels do not pull.",
+    "links": [
+      { "label": "JeepForum: My 4WD does not engage in the front", "url": "https://www.jeepforum.com/threads/my-4wd-doesnt-engage-in-the-front.968384/" },
+      { "label": "NAXJA: 4WD not engaging, why?", "url": "https://naxja.org/threads/4wd-not-engaging-why.1042820/" }
+    ]
+  },
+  {
+    "title": "NP231 vs NP242: how to identify your transfer case and what modes mean",
+    "category": "4WD and Transfer Case",
+    "slug": "np231-vs-np242-how-to-identify-and-what-modes-mean",
+    "summary": "A quick way to identify your case and understand part-time vs full-time.",
+    "whenToUse": "You are not sure what transfer case you have, or which mode is safe to use.",
+    "links": [
+      { "label": "JeepForum: NP231 or NP242 (identification discussion)", "url": "https://www.jeepforum.com/threads/np231-or-np242.289219/" },
+      { "label": "NAXJA: NP231 vs 242 differences", "url": "https://naxja.org/threads/np231-vs-242.21469/" }
+    ]
+  }
+]
