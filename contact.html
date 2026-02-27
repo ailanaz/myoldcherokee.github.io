@@ -45,7 +45,6 @@
 <section class="section">
   <div class="container" style="max-width:640px;">
     <div class="section-head left">
-      <div class="section-label">Get in Touch</div>
       <h2>Contact Us</h2>
       <p>Questions, listing updates, guide suggestions, partnership inquiries, or community posts. We read everything.</p>
     </div>
@@ -56,17 +55,42 @@
       <div class="form-row">
         <label>Category *</label>
         <select>
-          <option>General Inquiry</option>
-          <option>Listing Issue</option>
-          <option>Directory Issue</option>
-          <option>Guides / Fix Tip</option>
-          <option>Community Comment</option>
+          <option value="">— Select a Category —</option>
+          <optgroup label="Buy &amp; Sell">
+            <option>Buy &amp; Sell – Listing Question</option>
+            <option>Buy &amp; Sell – Report a Listing</option>
+            <option>Buy &amp; Sell – Submit / Update My Listing</option>
+          </optgroup>
+          <optgroup label="Directory">
+            <option>Directory – Repair Shop</option>
+            <option>Directory – Junk / Salvage Yard</option>
+            <option>Directory – Shop for Parts</option>
+            <option>Directory – Add or Update a Business</option>
+          </optgroup>
+          <optgroup label="Guides">
+            <option>Guides – Suggest a Fix-It Topic</option>
+            <option>Guides – Submit a Tip or How-To</option>
+            <option>Guides – Correction or Update</option>
+          </optgroup>
+          <optgroup label="Community">
+            <option>Community – Post or Question</option>
+            <option>Community – Report a Post</option>
+          </optgroup>
+          <optgroup label="Site &amp; Other">
+            <option>State Search – Issue or Missing State</option>
+            <option>List with Us – Question</option>
+            <option>Due Diligence – Question</option>
+            <option>FAQ – Question Not Answered</option>
+            <option>Partnership / Sponsorship</option>
+            <option>Website Feedback</option>
+            <option>General Inquiry</option>
+          </optgroup>
         </select>
       </div>
       <div class="form-row"><label>Message *</label><textarea rows="5" placeholder="How can we help?"></textarea></div>
       <div class="form-row"><label>Attach Images (optional)</label><input type="file" multiple accept=".jpg,.jpeg,.png,.webp" /></div>
       <button class="btn btn-red btn-lg" style="width:100%;">Send Message</button>
-      <p class="form-note">Use this form for all inquiries, including community questions and feedback. We typically respond within 1 to 2 business days.</p>
+      <p class="form-note">Use this form for all inquiries, including community questions and feedback. We will review messages within 3 days.</p>
     </div>
   </div>
 </section>
