@@ -65,65 +65,17 @@
   </div>
 </section>
 
-<!-- RECENT POSTS -->
+<!-- HYVOR TALK COMMENTS -->
 <section class="section">
   <div class="container">
-    <h2 style="margin-bottom:1.5rem;">Recent Posts</h2>
-    <div class="thread-list">
-
-      <div class="thread-card" style="border:1.5px solid #6b1228;border-radius:8px;padding:1.25rem;margin-bottom:1.5rem;background:#fff;">
-        <div class="thread-top" style="display:flex;align-items:flex-start;gap:1rem;">
-          <div class="thread-avatar" style="width:44px;height:44px;border-radius:50%;background:#6b1228;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">C</div>
-          <div style="flex:1;">
-            <div style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;">
-              <strong>CherokeeChris</strong>
-              <span style="font-size:.8rem;color:#888;">3 days ago</span>
-              <span class="lcat" style="background:#6b1228;color:#fff;padding:.15rem .5rem;border-radius:4px;font-size:.75rem;">Build Thread</span>
-            </div>
-            <div style="font-weight:600;margin:.35rem 0;">My 2001 XJ Two-Door Restoration</div>
-            <p style="margin:0;color:#444;">Bought it with 180k on the clock and a rusted unibody. Eight months later, here's where it stands.</p>
-          </div>
-        </div>
-        <div class="comment-thread" style="margin-top:1rem;padding-top:1rem;border-top:1px solid #eee;">
-          <div style="display:flex;gap:.75rem;margin-bottom:.75rem;">
-            <div style="width:32px;height:32px;border-radius:50%;background:#ddd;display:flex;align-items:center;justify-content:center;font-size:.75rem;flex-shrink:0;">M</div>
-            <div><strong style="font-size:.9rem;">MudMike</strong> <span style="font-size:.8rem;color:#888;">2 days ago</span><p style="margin:.2rem 0 0;font-size:.9rem;">That unibody work looks solid. What did you use for rust treatment?</p></div>
-          </div>
-        </div>
-        <div style="margin-top:.75rem;">
-          <button class="btn btn-outline btn-sm" onclick="toggleReply('t1','r1')">Reply</button>
-          <div id="r1" style="display:none;margin-top:.75rem;">
-            <textarea rows="2" placeholder="Write a reply..." style="width:100%;padding:.5rem;border:1px solid #ccc;border-radius:4px;"></textarea>
-            <button class="btn btn-red btn-sm" style="margin-top:.5rem;">Post Reply</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="thread-card" style="border:1.5px solid #6b1228;border-radius:8px;padding:1.25rem;margin-bottom:1.5rem;background:#fff;">
-        <div class="thread-top" style="display:flex;align-items:flex-start;gap:1rem;">
-          <div class="thread-avatar" style="width:44px;height:44px;border-radius:50%;background:#c87020;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;flex-shrink:0;">M</div>
-          <div style="flex:1;">
-            <div style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;">
-              <strong>MudMike</strong>
-              <span style="font-size:.8rem;color:#888;">1 week ago</span>
-              <span class="lcat" style="background:#c87020;color:#fff;padding:.15rem .5rem;border-radius:4px;font-size:.75rem;">Question</span>
-            </div>
-            <div style="font-weight:600;margin:.35rem 0;">Best Source for XJ Rear Axle Seals?</div>
-            <p style="margin:0;color:#444;">Tired of ordering the wrong ones. Anyone have a go-to supplier for 8.25 rear axle seals that ship fast?</p>
-          </div>
-        </div>
-        <div style="margin-top:.75rem;">
-          <button class="btn btn-outline btn-sm" onclick="toggleReply('t2','r2')">Reply</button>
-          <div id="r2" style="display:none;margin-top:.75rem;">
-            <textarea rows="2" placeholder="Write a reply..." style="width:100%;padding:.5rem;border:1px solid #ccc;border-radius:4px;"></textarea>
-            <button class="btn btn-red btn-sm" style="margin-top:.5rem;">Post Reply</button>
-          </div>
-        </div>
-      </div>
-
-    </div>
+    <hyvor-talk-comments
+      website-id="15083"
+      page-id="community-hub"
+    ></hyvor-talk-comments>
   </div>
 </section>
+
+<script type="module" src="https://talk.hyvor.com/embed/embed.js"></script>
 
 <footer class="site-footer">
   <div class="container">
@@ -131,7 +83,7 @@
       <div class="footer-brand-block">
         <div style="font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff;">MyOldCherokee.com</div>
         <p>An independent buy and sell directory for older Cherokee models, with repair shops, junk/salvage yard listings, DIY/troubleshooting Guides, and community resources.</p>
-        <p class="footer-disclaimer">Listings and information are provided in good faith and believed accurate to the best of our knowledge. We do not verify or guarantee third-party listings, businesses, products, or services. Users are responsible for their own due diligence. MyOldCherokee.com is not affiliated with or endorsed by Jeep® or Stellantis®. Brand and model names are used for identification and compatibility purposes only. All trademarks are the property of their respective owners.</p>
+        <p class="footer-disclaimer">Listings and information are provided in good faith and believed accurate to the best of our knowledge. We do not verify or guarantee third-party listings, businesses, products, or services. Users are responsible for their own due diligence. MyOldCherokee.com is not affiliated with or endorsed by Jeep&reg; or Stellantis&reg;. Brand and model names are used for identification and compatibility purposes only. All trademarks are the property of their respective owners.</p>
         <a href="contact.html" class="btn btn-outline btn-sm footer-contact-btn">Contact Us</a>
       </div>
       <div class="footer-col">
@@ -162,13 +114,6 @@
   </div>
 </footer>
 
-<script>
-  document.getElementById('yr').textContent = new Date().getFullYear();
-
-  function toggleReply(threadId, formId) {
-    var f = document.getElementById(formId);
-    f.style.display = f.style.display === 'none' ? 'block' : 'none';
-  }
-</script>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
 </html>
