@@ -402,4 +402,4 @@ img { max-width: 100%; display: block; }
 
 .listing-card, .article-card, .cat-card, .guide-card, .parts-card, .tip-card, .form-wrap { border-color: var(--red) !important; }
 
-.hero-title-image { width: min(760px, 100%); height: auto; display: block; margin: 0 0 0.75rem 0; position: relative; z-index: 2; }
+.hero-title-image { width: min(920px, 100%); height: auto; display: block; margin: 0 0 0.75rem 0; position: relative; z-index: 2; }
