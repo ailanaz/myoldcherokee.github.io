@@ -1,0 +1,114 @@
+[
+  {
+    "title": "1999 Jeep Cherokee Sport 4x4",
+    "category": "Vehicle for Sale",
+    "state": "CO",
+    "city": "Denver",
+    "price": "$4,200 OBO",
+    "summary": "High-mileage Sport with solid body, new belts, and a fresh tune. Runs well. Minor rust on rocker panels. Ready to drive."
+  },
+  {
+    "title": "1997 Grand Cherokee Limited 4x4",
+    "category": "Vehicle for Sale",
+    "state": "GA",
+    "city": "Atlanta",
+    "price": "$5,500 firm",
+    "summary": "ZJ in solid shape. Full leather interior, cold AC, no major rust. Recent transmission service. Clear title."
+  },
+  {
+    "title": "2001 XJ Project Build, Partial Lift, Runs",
+    "category": "Project Cherokee",
+    "state": "TX",
+    "city": "Austin",
+    "price": "$2,200 as-is",
+    "summary": "2.5-inch lift started, needs shocks and alignment. Engine runs strong. Good bones for a build. Sold as-is."
+  },
+  {
+    "title": "Wanted: Clean XJ, 1997-2001, Under 150k",
+    "category": "Wanted",
+    "state": "TN",
+    "city": "Nashville",
+    "price": "Offer",
+    "summary": "Looking for a clean 97-01 XJ, prefer Sport or Country trim. No flood, no major rust. Will travel within 500 miles."
+  },
+  {
+    "title": "4.0L Long Block, 110k Miles, Good Compression",
+    "category": "Parts for Sale",
+    "state": "AZ",
+    "city": "Phoenix",
+    "price": "$1,800 pickup only",
+    "summary": "Pulled from a 2000 XJ, ran great until the body rusted out. Compression checked, all six cylinders good."
+  },
+  {
+    "title": "AW4 Automatic Transmission, Shifts Clean",
+    "category": "Parts for Sale",
+    "state": "TX",
+    "city": "Dallas",
+    "price": "$650 OBO",
+    "summary": "Pulled from a low-mileage XJ. Shifts through all gears cleanly. No slipping or codes."
+  },
+  {
+    "title": "3.5\" Lift Kit, Complete, Off a 2000 XJ",
+    "category": "Parts for Sale",
+    "state": "UT",
+    "city": "Salt Lake City",
+    "price": "$220 all included",
+    "summary": "Complete 3.5-inch lift kit removed during upgrade. Springs, shocks, and hardware included. Confirm fitment for your year."
+  },
+  {
+    "title": "XJ Front Clip - Hood, Fenders, Grille, Headlights",
+    "category": "Parts for Sale",
+    "state": "OR",
+    "city": "Portland",
+    "price": "$350 local pickup",
+    "summary": "1997-2001 XJ front clip, straight panels. Minor paint fade. Good option for a rust repair or color change."
+  },
+  {
+    "title": "PCM / ECU - 1999 XJ 4.0L, Tested Good",
+    "category": "Parts for Sale",
+    "state": "OH",
+    "city": "Columbus",
+    "price": "$120 shipped",
+    "summary": "Tested good before removal. Confirm your exact VIN compatibility before ordering. Ships USPS Priority."
+  },
+  {
+    "title": "Wanted: NP231 Transfer Case, 1997-2001",
+    "category": "Wanted",
+    "state": "NC",
+    "city": "Charlotte",
+    "price": "Offer",
+    "summary": "Need a working NP231 from a 97-01 XJ. Will pay fair price for a unit that shifts into all ranges cleanly."
+  },
+  {
+    "title": "2000 Cherokee Sport, 130k, Clean Title",
+    "category": "Vehicle for Sale",
+    "state": "VA",
+    "city": "Richmond",
+    "price": "$3,800",
+    "summary": "Daily driver for years, time to let it go. Runs well, cold AC, minor surface rust on frame. Maintenance records available."
+  },
+  {
+    "title": "1994 Cherokee Country 4x4",
+    "category": "Vehicle for Sale",
+    "state": "WA",
+    "city": "Seattle",
+    "price": "$2,900 OBO",
+    "summary": "Older Country with the 4.0L and AW4. High miles but runs well. Some exterior wear. Good project or budget daily."
+  },
+  {
+    "title": "2001 XJ 4-Door Sport, 180k, Recent Head Gasket",
+    "category": "Vehicle for Sale",
+    "state": "FL",
+    "city": "Tampa",
+    "price": "$3,200",
+    "summary": "Head gasket replaced at 175k by shop. Runs strong. Could use new tires and an alignment. Rust-free Florida truck."
+  },
+  {
+    "title": "1998 Cherokee Classic, 4x4, 155k",
+    "category": "Vehicle for Sale",
+    "state": "CA",
+    "city": "Sacramento",
+    "price": "$4,500 OBO",
+    "summary": "Classic trim with factory options. Clean interior, original paint in fair condition. Good daily with some minor work."
+  }
+]

@@ -18,7 +18,7 @@
     .state-cell rect { transition: opacity 0.15s; }
     .state-cell:hover rect { opacity: 0.8; }
     .state-label { font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 700; pointer-events: none; }
-    #coming-soon-banner { display: none; background: var(--amber); color: var(--text); padding: 0.75rem 1.25rem; border-radius: 8px; margin-top: 1rem; font-weight: 600; text-align: center; }
+    #coming-soon-banner { display: none; }
     .live-state-list { display: none; }
     @media (max-width: 600px) {
       .map-container { display: none; }
@@ -67,22 +67,62 @@
 <section class="section section-off">
   <div class="container">
 
-    <!-- Mobile fallback: simple list -->
+    <!-- Mobile fallback: full state list -->
     <div class="live-state-list">
-      <h3 style="margin-bottom:1rem;font-family:'Oswald',sans-serif;font-size:1.1rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;">Live State Pages</h3>
-      <ul style="list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;max-width:380px;">
+      <h3 style="margin-bottom:1rem;font-family:'Oswald',sans-serif;font-size:1.1rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;">All State Pages</h3>
+      <ul style="list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;max-width:420px;">
+        <li><a href="state/alabama.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Alabama</a></li>
+        <li><a href="state/alaska.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Alaska</a></li>
+        <li><a href="state/arizona.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Arizona</a></li>
+        <li><a href="state/arkansas.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Arkansas</a></li>
+        <li><a href="state/california.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">California</a></li>
+        <li><a href="state/colorado.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Colorado</a></li>
+        <li><a href="state/connecticut.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Connecticut</a></li>
+        <li><a href="state/delaware.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Delaware</a></li>
+        <li><a href="state/district-of-columbia.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">DC</a></li>
+        <li><a href="state/florida.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Florida</a></li>
+        <li><a href="state/georgia.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Georgia</a></li>
+        <li><a href="state/hawaii.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Hawaii</a></li>
+        <li><a href="state/idaho.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Idaho</a></li>
+        <li><a href="state/illinois.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Illinois</a></li>
+        <li><a href="state/indiana.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Indiana</a></li>
+        <li><a href="state/iowa.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Iowa</a></li>
+        <li><a href="state/kansas.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Kansas</a></li>
+        <li><a href="state/kentucky.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Kentucky</a></li>
+        <li><a href="state/louisiana.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Louisiana</a></li>
+        <li><a href="state/maine.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Maine</a></li>
+        <li><a href="state/maryland.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Maryland</a></li>
+        <li><a href="state/massachusetts.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Massachusetts</a></li>
+        <li><a href="state/michigan.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Michigan</a></li>
+        <li><a href="state/minnesota.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Minnesota</a></li>
+        <li><a href="state/mississippi.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Mississippi</a></li>
+        <li><a href="state/missouri.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Missouri</a></li>
+        <li><a href="state/montana.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Montana</a></li>
+        <li><a href="state/nebraska.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Nebraska</a></li>
+        <li><a href="state/nevada.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Nevada</a></li>
+        <li><a href="state/new-hampshire.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">New Hampshire</a></li>
+        <li><a href="state/new-jersey.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">New Jersey</a></li>
+        <li><a href="state/new-mexico.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">New Mexico</a></li>
+        <li><a href="state/new-york.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">New York</a></li>
+        <li><a href="state/north-carolina.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">North Carolina</a></li>
+        <li><a href="state/north-dakota.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">North Dakota</a></li>
+        <li><a href="state/ohio.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Ohio</a></li>
+        <li><a href="state/oklahoma.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Oklahoma</a></li>
+        <li><a href="state/oregon.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Oregon</a></li>
+        <li><a href="state/pennsylvania.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Pennsylvania</a></li>
+        <li><a href="state/rhode-island.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Rhode Island</a></li>
+        <li><a href="state/south-carolina.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">South Carolina</a></li>
+        <li><a href="state/south-dakota.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">South Dakota</a></li>
         <li><a href="state/tennessee.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Tennessee</a></li>
         <li><a href="state/texas.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Texas</a></li>
-        <li><a href="state/florida.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Florida</a></li>
-        <li><a href="state/california.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">California</a></li>
-        <li><a href="state/arizona.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Arizona</a></li>
-        <li><a href="state/colorado.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Colorado</a></li>
-        <li><a href="state/north-carolina.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">North Carolina</a></li>
-        <li><a href="state/georgia.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Georgia</a></li>
+        <li><a href="state/utah.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Utah</a></li>
+        <li><a href="state/vermont.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Vermont</a></li>
         <li><a href="state/virginia.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Virginia</a></li>
         <li><a href="state/washington.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Washington</a></li>
+        <li><a href="state/west-virginia.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">West Virginia</a></li>
+        <li><a href="state/wisconsin.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Wisconsin</a></li>
+        <li><a href="state/wyoming.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Wyoming</a></li>
       </ul>
-      <p style="margin-top:1rem;font-size:0.88rem;color:var(--text-mid);">More states coming soon.</p>
     </div>
 
     <!-- Desktop map -->
@@ -419,33 +459,64 @@
   document.getElementById('yr').textContent = new Date().getFullYear();
 
   var stateRoutes = {
-    'TN': 'state/tennessee.html', 'Tennessee': 'state/tennessee.html',
-    'TX': 'state/texas.html', 'Texas': 'state/texas.html',
-    'FL': 'state/florida.html', 'Florida': 'state/florida.html',
-    'CA': 'state/california.html', 'California': 'state/california.html',
-    'AZ': 'state/arizona.html', 'Arizona': 'state/arizona.html',
-    'CO': 'state/colorado.html', 'Colorado': 'state/colorado.html',
-    'NC': 'state/north-carolina.html', 'North Carolina': 'state/north-carolina.html',
-    'GA': 'state/georgia.html', 'Georgia': 'state/georgia.html',
-    'VA': 'state/virginia.html', 'Virginia': 'state/virginia.html',
-    'WA': 'state/washington.html', 'Washington': 'state/washington.html'
+    'AL': 'state/alabama.html',
+    'AK': 'state/alaska.html',
+    'AZ': 'state/arizona.html',
+    'AR': 'state/arkansas.html',
+    'CA': 'state/california.html',
+    'CO': 'state/colorado.html',
+    'CT': 'state/connecticut.html',
+    'DC': 'state/district-of-columbia.html',
+    'DE': 'state/delaware.html',
+    'FL': 'state/florida.html',
+    'GA': 'state/georgia.html',
+    'HI': 'state/hawaii.html',
+    'ID': 'state/idaho.html',
+    'IL': 'state/illinois.html',
+    'IN': 'state/indiana.html',
+    'IA': 'state/iowa.html',
+    'KS': 'state/kansas.html',
+    'KY': 'state/kentucky.html',
+    'LA': 'state/louisiana.html',
+    'ME': 'state/maine.html',
+    'MD': 'state/maryland.html',
+    'MA': 'state/massachusetts.html',
+    'MI': 'state/michigan.html',
+    'MN': 'state/minnesota.html',
+    'MS': 'state/mississippi.html',
+    'MO': 'state/missouri.html',
+    'MT': 'state/montana.html',
+    'NE': 'state/nebraska.html',
+    'NV': 'state/nevada.html',
+    'NH': 'state/new-hampshire.html',
+    'NJ': 'state/new-jersey.html',
+    'NM': 'state/new-mexico.html',
+    'NY': 'state/new-york.html',
+    'NC': 'state/north-carolina.html',
+    'ND': 'state/north-dakota.html',
+    'OH': 'state/ohio.html',
+    'OK': 'state/oklahoma.html',
+    'OR': 'state/oregon.html',
+    'PA': 'state/pennsylvania.html',
+    'RI': 'state/rhode-island.html',
+    'SC': 'state/south-carolina.html',
+    'SD': 'state/south-dakota.html',
+    'TN': 'state/tennessee.html',
+    'TX': 'state/texas.html',
+    'UT': 'state/utah.html',
+    'VT': 'state/vermont.html',
+    'VA': 'state/virginia.html',
+    'WA': 'state/washington.html',
+    'WV': 'state/west-virginia.html',
+    'WI': 'state/wisconsin.html',
+    'WY': 'state/wyoming.html'
   };
 
-  var liveStates = ['TN','TX','FL','CA','AZ','CO','NC','GA','VA','WA'];
-
   function handleStateClick(abbr, name) {
-    if (stateRoutes[abbr]) {
-      window.location.href = stateRoutes[abbr];
-    } else {
-      showComingSoon(name);
+    var route = stateRoutes[abbr];
+    if (route) {
+      window.location.href = route;
     }
-  }
-
-  function showComingSoon(name) {
-    var b = document.getElementById('coming-soon-banner');
-    b.textContent = name + ' \u2014 Coming Soon!';
-    b.style.display = 'block';
-    setTimeout(function(){ b.style.display = 'none'; }, 4000);
   }
 </script>
 </body>

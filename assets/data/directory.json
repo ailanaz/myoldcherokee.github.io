@@ -1,0 +1,146 @@
+[
+  {
+    "name": "High Country 4x4 & Offroad",
+    "type": "Repair Shops",
+    "state": "CO",
+    "city": "Denver",
+    "categories": ["4x4", "suspension"],
+    "summary": "4x4 and suspension specialists. Lifts, axle rebuilds, and Cherokee-specific work. Call ahead for Cherokee appointments."
+  },
+  {
+    "name": "Cherokee Country Repair",
+    "type": "Repair Shops",
+    "state": "TN",
+    "city": "Nashville",
+    "categories": ["general", "diagnostics"],
+    "summary": "General Cherokee and Jeep repair. Known for accurate diagnostics on the 4.0L. Locally owned."
+  },
+  {
+    "name": "South TX Offroad Works",
+    "type": "Repair Shops",
+    "state": "TX",
+    "city": "San Antonio",
+    "categories": ["4x4", "suspension", "driveline"],
+    "summary": "Lifts, axle swaps, and driveline work on XJs and ZJs. Shop rate competitive. Work backs up fast so book early."
+  },
+  {
+    "name": "Pacific Trail Garage",
+    "type": "Repair Shops",
+    "state": "WA",
+    "city": "Tacoma",
+    "categories": ["general", "suspension", "4x4"],
+    "summary": "Full-service shop with a focus on older 4x4s. Familiar with XJ quirks. Honest diagnostics before any work starts."
+  },
+  {
+    "name": "Blue Ridge Jeep & 4x4",
+    "type": "Repair Shops",
+    "state": "VA",
+    "city": "Roanoke",
+    "categories": ["general", "4x4", "cooling"],
+    "summary": "XJ and ZJ specialists. Full general repair plus overheating and cooling system fixes. Reasonable rates."
+  },
+  {
+    "name": "Coastal Cherokee Clinic",
+    "type": "Repair Shops",
+    "state": "NC",
+    "city": "Fayetteville",
+    "categories": ["general", "electrical", "diagnostics"],
+    "summary": "Good general shop that handles Cherokee electrical issues well. Clean work and fair pricing."
+  },
+  {
+    "name": "Sun State Cherokee Shop",
+    "type": "Repair Shops",
+    "state": "FL",
+    "city": "Orlando",
+    "categories": ["general", "cooling", "electrical"],
+    "summary": "Cooling system and electrical specialists. Familiar with the overheating problems common on Florida-heat Cherokees."
+  },
+  {
+    "name": "Desert Iron 4x4",
+    "type": "Repair Shops",
+    "state": "AZ",
+    "city": "Tucson",
+    "categories": ["4x4", "suspension", "general"],
+    "summary": "Lift installs, axle work, and general XJ repairs. Owner has run Cherokees for 20+ years."
+  },
+  {
+    "name": "Peach State Jeep Works",
+    "type": "Repair Shops",
+    "state": "GA",
+    "city": "Macon",
+    "categories": ["general", "driveline", "diagnostics"],
+    "summary": "Honest general shop that handles Cherokee driveline and diagnostics. Long wait times but solid work."
+  },
+  {
+    "name": "Appalachian Offroad & Repair",
+    "type": "Repair Shops",
+    "state": "GA",
+    "city": "Dalton",
+    "categories": ["4x4", "suspension", "general"],
+    "summary": "Full 4x4 repair shop with Cherokee experience. Lift installs, steering, and general service."
+  },
+  {
+    "name": "Northern Cal Cherokee Works",
+    "type": "Repair Shops",
+    "state": "CA",
+    "city": "Fresno",
+    "categories": ["general", "electrical", "cooling"],
+    "summary": "General repair with solid electrical troubleshooting. Has Cherokee-specific diagnostic experience."
+  },
+  {
+    "name": "Rocky Mountain Salvage",
+    "type": "Salvage and Junk Yards",
+    "state": "CO",
+    "city": "Colorado Springs",
+    "summary": "Large inventory of XJ and ZJ parts. Call ahead to check Cherokee availability before making the trip."
+  },
+  {
+    "name": "Southern Pull-A-Part",
+    "type": "Salvage and Junk Yards",
+    "state": "TN",
+    "city": "Memphis",
+    "summary": "Self-service yard with rotating Cherokee inventory. Bring your own tools. Low prices on pulled parts."
+  },
+  {
+    "name": "Texas Auto Recyclers",
+    "type": "Salvage and Junk Yards",
+    "state": "TX",
+    "city": "Houston",
+    "summary": "Full-service salvage with a large inventory. Cherokee parts available. Shipping options on major components."
+  },
+  {
+    "name": "Pacific Northwest Jeep Salvage",
+    "type": "Salvage and Junk Yards",
+    "state": "WA",
+    "city": "Olympia",
+    "summary": "XJ and ZJ specialist salvage. Good rust-free inventory due to dry storage. Call before visiting."
+  },
+  {
+    "name": "Volunteer State Auto Parts",
+    "type": "Salvage and Junk Yards",
+    "state": "TN",
+    "city": "Knoxville",
+    "summary": "Pull-a-part and full-service options. Regular Cherokee turnover. Check inventory online before the drive."
+  },
+  {
+    "name": "Desert Southwest Salvage",
+    "type": "Salvage and Junk Yards",
+    "state": "AZ",
+    "city": "Phoenix",
+    "summary": "Dry climate means rust-free parts. Strong Cherokee XJ inventory. Open most weekends."
+  },
+  {
+    "name": "Cherokee Parts Direct",
+    "type": "Shop for Parts and More",
+    "state": "TN",
+    "city": "Nashville",
+    "summary": "Online and local Cherokee-specific parts supplier. New and used XJ components. Ships nationwide."
+  },
+  {
+    "name": "Four Wheel Drive Hardware",
+    "type": "Shop for Parts and More",
+    "state": "OH",
+    "city": "Columbiana",
+    "summary": "Mail-order and online parts retailer specializing in Jeep parts including XJ and ZJ components."
+  }
+]

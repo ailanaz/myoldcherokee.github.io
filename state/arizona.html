@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arizona Cherokee Directory | MyOldCherokee.com</title>
+  <title>Arizona Cherokee Listings | MyOldCherokee.com</title>
   <meta name="description" content="Find Cherokee vehicles, parts, repair shops, and salvage yards in Arizona." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,37 +44,31 @@
 <section class="page-hero">
   <div class="container">
     <div class="eyebrow">State Directory</div>
-    <h1>Arizona</h1>
-    <p class="hero-sub">Cherokee listings, shops, and salvage yards across Arizona.</p>
+    <h1 id="state-title">Arizona</h1>
+    <p class="hero-sub" id="state-hero-sub">Cherokee listings, shops, and salvage yards across Arizona.</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <p><a href="../state-search.html">&larr; Back to State Map</a></p>
-    <div class="notice-amber" style="margin-top:1.5rem;">
-      <strong>Coming Soon</strong> — We're building out the Arizona directory. Submit a listing or shop to get it started.
+
+    <p style="margin-bottom:1.5rem;"><a href="../state-search.html">&larr; Back to State Map</a></p>
+
+    <!-- State data anchor — only data-state and data-state-name change per page -->
+    <div id="state-page" data-state="AZ" data-state-name="Arizona"></div>
+
+    <!-- Buy and Sell listings render here -->
+    <div id="state-buy-sell"></div>
+
+    <!-- Directory listings render here -->
+    <div id="state-directory"></div>
+
+    <!-- Submit CTA -->
+    <div class="notice-amber" style="margin-top:2rem;">
+      <strong>Add a Listing</strong> &mdash; Know a shop, yard, or have a Cherokee for sale in Arizona?
+      <a href="../submit.html">Submit it here.</a>
     </div>
-    <div class="grid g3" style="margin-top:2rem;">
-      <div class="listing-card-submit">
-        <div style="font-size:2rem;">🚗</div>
-        <h3>Vehicles &amp; Parts</h3>
-        <p>Browse Cherokee vehicles and parts listings.</p>
-        <a href="../buy-sell.html" class="btn btn-red btn-sm">Browse Listings</a>
-      </div>
-      <div class="listing-card-submit">
-        <div style="font-size:2rem;">🏪</div>
-        <h3>Shops &amp; Yards</h3>
-        <p>Find repair shops and salvage yards.</p>
-        <a href="../directory.html" class="btn btn-red btn-sm">View Directory</a>
-      </div>
-      <div class="listing-card-submit">
-        <div style="font-size:2rem;">💬</div>
-        <h3>Community</h3>
-        <p>Connect with Cherokee owners.</p>
-        <a href="../community.html" class="btn btn-red btn-sm">Join Community</a>
-      </div>
-    </div>
+
   </div>
 </section>
 
@@ -84,7 +78,7 @@
       <div class="footer-brand-block">
         <div style="font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff;">MyOldCherokee.com</div>
         <p>An independent buy and sell directory for older Cherokee models, with repair shops, junk/salvage yard listings, DIY/troubleshooting Guides, and community resources.</p>
-        <p class="footer-disclaimer">Listings and information are provided in good faith and believed accurate to the best of our knowledge. We do not verify or guarantee third-party listings, businesses, products, or services. Users are responsible for their own due diligence. MyOldCherokee.com is not affiliated with or endorsed by Jeep® or Stellantis®.</p>
+        <p class="footer-disclaimer">Listings and information are provided in good faith and believed accurate to the best of our knowledge. We do not verify or guarantee third-party listings, businesses, products, or services. Users are responsible for their own due diligence. MyOldCherokee.com is not affiliated with or endorsed by Jeep&reg; or Stellantis&reg;. Brand and model names are used for identification and compatibility purposes only. All trademarks are the property of their respective owners.</p>
         <a href="../contact.html" class="btn btn-outline btn-sm footer-contact-btn">Contact Us</a>
       </div>
       <div class="footer-col">
@@ -109,12 +103,15 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; <span id="yr"></span> MyOldCherokee.com. All rights reserved.</p>
+      <p>&copy; <span id="yr"></span> MyOldCherokee.com. All rights reserved. | <a class="footer-disclaimer-link" href="../about.html">About</a> | <a class="footer-disclaimer-link" href="../contact.html">Contact</a> | <a class="footer-disclaimer-link" href="../duediligence.html">Due Diligence</a></p>
       <p>www.myoldcherokee.com</p>
     </div>
   </div>
 </footer>
 
-<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+<script src="../assets/js/state-page.js"></script>
 </body>
 </html>
