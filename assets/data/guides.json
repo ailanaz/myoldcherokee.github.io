@@ -25,7 +25,8 @@
         "label": "2000 XJ crank-no-start diagnosis example (YouTube)",
         "url": "https://www.youtube.com/results?search_query=2000+jeep+cherokee+xj+crank+no+start+diagnosis"
       }
-    ]
+    ],
+    "tag": "Spark / Fuel"
   },
   {
     "title": "No crank (nothing happens): battery cables, grounds, starter circuit basics",
@@ -44,7 +45,8 @@
         "url": "https://www.cherokeetalk.com/threads/xj-will-not-start-need-help-asap.16927/"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "No Crank"
   },
   {
     "title": "Starts then dies right away: idle air and vacuum basics",
@@ -63,7 +65,8 @@
         "url": "https://www.cherokeeforum.com/f2/cleaning-tb-iac-84496/"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "Idle / Vacuum"
   },
   {
     "title": "Hot restart failure: starts cold, will not restart hot (heat soak checklist)",
@@ -87,7 +90,8 @@
         "label": "2000 XJ crank-no-start diagnosis example (YouTube)",
         "url": "https://www.youtube.com/results?search_query=2000+jeep+cherokee+xj+hot+no+start+heat+soak"
       }
-    ]
+    ],
+    "tag": "Heat Soak"
   },
   {
     "title": "Crank Position Sensor (CPS): symptoms and confirmation tests",
@@ -111,7 +115,8 @@
         "label": "Crank/no-start diagnosis — Jeep 4.0 MPI (YouTube)",
         "url": "https://www.youtube.com/results?search_query=jeep+4.0+crank+position+sensor+no+start+diagnosis"
       }
-    ]
+    ],
+    "tag": "CPS"
   },
   {
     "title": "Renix (1987 to 1990): ground refreshing for better starts and drivability",
@@ -135,7 +140,8 @@
         "label": "Renix ground and wire repairs (YouTube)",
         "url": "https://www.youtube.com/results?search_query=jeep+xj+renix+ground+refresh+repair"
       }
-    ]
+    ],
+    "tag": "Grounds"
   },
   {
     "title": "Long crank time: what is normal and what points to a problem",
@@ -154,7 +160,8 @@
         "url": "https://www.cherokeeforum.com/f59/your-guide-extremely-common-problems-xj-how-fix-them-135869/"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "Long Crank"
   },
   {
     "title": "Fuel pump runs but it still will not start: what that means",
@@ -178,7 +185,8 @@
         "label": "97–01 XJ no-start fuel pump diagnosis (YouTube)",
         "url": "https://www.youtube.com/results?search_query=97+01+jeep+cherokee+xj+no+start+fuel+pump+test"
       }
-    ]
+    ],
+    "tag": "Fuel Pump"
   },
   {
     "title": "Overheating checklist: idle vs highway tells you what to inspect",
@@ -202,7 +210,8 @@
         "label": "01 XJ overheating: diagnose and radiator work (YouTube)",
         "url": "https://www.youtube.com/results?search_query=jeep+xj+cherokee+overheating+diagnosis+radiator"
       }
-    ]
+    ],
+    "tag": "Checklist"
   },
   {
     "title": "Runs hot at idle: fan airflow checks (electric fan and fan clutch)",
@@ -221,7 +230,8 @@
         "url": "https://www.offroadxtreme.com/tech-stories/a-cooler-solution-jeep-xj-cherokee-cooling-problems-and-cures/"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "Fan / Airflow"
   },
   {
     "title": "Runs hot on the highway: radiator flow, restriction, and hose checks",
@@ -245,7 +255,8 @@
         "label": "Overheating Cherokee XJ: diagnosis and radiator replacement (YouTube)",
         "url": "https://www.youtube.com/results?search_query=jeep+cherokee+xj+overheating+highway+radiator+replacement"
       }
-    ]
+    ],
+    "tag": "Radiator"
   },
   {
     "title": "Weak heater and temp swings after service: burping air from the system",
@@ -264,7 +275,8 @@
         "url": "https://www.reddit.com/r/CherokeeXJ/comments/178hjz4/still_running_hot_on_highway_have_replaced/"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "Air in System"
   },
   {
     "title": "A/C makes temps climb: what is normal and what is not",
@@ -283,7 +295,8 @@
         "url": "https://www.offroadxtreme.com/tech-stories/a-cooler-solution-jeep-xj-cherokee-cooling-problems-and-cures/"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "A/C Load"
   },
   {
     "title": "Cooling baseline for a new-to-you XJ: what to inspect first",
@@ -307,7 +320,8 @@
         "label": "XJ cooling system upgrade and common cooling issues (YouTube)",
         "url": "https://www.youtube.com/results?search_query=jeep+xj+cherokee+cooling+system+upgrade+inspection"
       }
-    ]
+    ],
+    "tag": "Baseline"
   },
   {
     "title": "Coolant filter: when it helps and when it is overkill",
@@ -326,7 +340,8 @@
         "url": "https://naxja.org/threads/xj-cooling-system-deficiencies-solutions.1009479/"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "Coolant Filter"
   },
   {
     "title": "Renix cooling notes: open cooling system conversion basics",
@@ -345,7 +360,8 @@
         "url": "https://naxja.org/threads/xj-cooling-system-deficiencies-solutions.1009479/"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "Renix / Cooling"
   },
   {
     "title": "Parasitic battery drain test (safe multimeter steps)",
@@ -364,7 +380,8 @@
         "url": "https://www.jeepforum.com/threads/think-i-have-parasitic-draw.4477584/"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "Battery Drain"
   },
   {
     "title": "Battery keeps dying: common draw sources to check first",
@@ -383,7 +400,8 @@
         "url": "https://www.jeepforum.com/search/12446854/?q=parasitic+draw&c[title_only]=1&o=relevance"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "Battery Drain"
   },
   {
     "title": "Renix sensor ground upgrade (1987 to 1990): what it fixes",
@@ -407,7 +425,8 @@
         "label": "Renix ground and wire repairs (YouTube)",
         "url": "https://www.youtube.com/results?search_query=jeep+xj+renix+sensor+ground+upgrade"
       }
-    ]
+    ],
+    "tag": "Grounds"
   },
   {
     "title": "Headlight harness upgrade: brighter lights with relays (beginner guide)",
@@ -435,7 +454,8 @@
         "label": "Headlight wire harness upgrade (YouTube)",
         "url": "https://www.youtube.com/results?search_query=jeep+xj+cherokee+headlight+harness+upgrade+relay"
       }
-    ]
+    ],
+    "tag": "Headlights"
   },
   {
     "title": "Blower only works on high: melted resistor plug and what to replace",
@@ -463,7 +483,8 @@
         "label": "Melted blower motor resistor connector repair (YouTube)",
         "url": "https://www.youtube.com/results?search_query=jeep+xj+melted+blower+motor+resistor+connector+repair"
       }
-    ]
+    ],
+    "tag": "Blower / HVAC"
   },
   {
     "title": "Renix MAP vacuum line upgrade: fix the brittle elbow problem",
@@ -482,7 +503,8 @@
         "url": "https://cruiser54.com/?page_id=75"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "MAP / Vacuum"
   },
   {
     "title": "Random weird electrical behavior: start with grounds and connectors",
@@ -506,7 +528,8 @@
         "label": "Renix ground and wire repairs (YouTube)",
         "url": "https://www.youtube.com/results?search_query=jeep+xj+cherokee+grounds+connectors+electrical+gremlins"
       }
-    ]
+    ],
+    "tag": "Grounds"
   },
   {
     "title": "Common problems index: a simple Start Here page for XJ owners",
@@ -525,7 +548,8 @@
         "url": "https://naxja.org/threads/the-usual-suspects-common-problems-with-the-xj-and-what-usually-fixes-it.1081832/"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "Index"
   },
   {
     "title": "Fuse box basics for Jeep Cherokee XJ (1984–2001): locations, diagrams, and safe testing",
@@ -557,7 +581,8 @@
         "label": "Jeep Cherokee XJ 1984–1996 fuse box diagrams (alternate) (YouTube)",
         "url": "https://www.youtube.com/watch?v=9DQVpB0lnG0"
       }
-    ]
+    ],
+    "tag": "Fuses"
   },
   {
     "title": "1997–2001 under-hood fuse box (PDC): how to read it and what relays do",
@@ -585,7 +610,8 @@
         "label": "Jeep Cherokee fuse box and relay basics (YouTube)",
         "url": "https://www.youtube.com/watch?v=uBtKWpfQSZY"
       }
-    ]
+    ],
+    "tag": "Fuses / PDC"
   },
   {
     "title": "How to test a fuse correctly (not just eyeballing it)",
@@ -609,7 +635,8 @@
         "label": "How to test car fuses with a test light (YouTube)",
         "url": "https://www.youtube.com/watch?v=o_AWj2fcQS4"
       }
-    ]
+    ],
+    "tag": "Fuses"
   },
   {
     "title": "Fuse keeps blowing: what it means and how to find the short safely",
@@ -637,7 +664,8 @@
         "label": "Find a shorted circuit (YouTube)",
         "url": "https://www.youtube.com/watch?v=Lfk-vmeK4G0"
       }
-    ]
+    ],
+    "tag": "Fuses"
   },
   {
     "title": "1987–1990 Renix fuse panel: loose terminals, overheating connectors, and repair options",
@@ -661,7 +689,8 @@
         "label": "Renix fuse panel support (YouTube)",
         "url": "https://www.youtube.com/watch?v=TFBNsVFchCM"
       }
-    ]
+    ],
+    "tag": "Fuses / Renix"
   },
   {
     "title": "Fuse diagrams by year: 1984–1996 and 1997–2001 quick links",
@@ -689,7 +718,8 @@
         "label": "Checking fuses using a test light (YouTube)",
         "url": "https://www.youtube.com/watch?v=ksrsXwwukFc"
       }
-    ]
+    ],
+    "tag": "Fuses"
   },
   {
     "title": "Death wobble basics: what it is and what it is not",
@@ -713,7 +743,8 @@
         "label": "How to find and cure death wobble — Jeep XJ (YouTube)",
         "url": "https://www.youtube.com/results?search_query=jeep+xj+death+wobble+diagnosis+cure"
       }
-    ]
+    ],
+    "tag": "Death Wobble"
   },
   {
     "title": "Death wobble inspection order: track bar and mounting holes first",
@@ -741,7 +772,8 @@
         "label": "Loose steering and death wobble: track bar mount focus (YouTube)",
         "url": "https://www.youtube.com/results?search_query=xj+death+wobble+track+bar+mount+worn+bracket"
       }
-    ]
+    ],
+    "tag": "Death Wobble"
   },
   {
     "title": "Alignment basics that affect wobble: toe and caster in plain English",
@@ -760,7 +792,8 @@
         "url": "https://naxja.org/help/new_faq_item9/"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "Alignment"
   },
   {
     "title": "Steering stabilizer myths: what it can and cannot fix",
@@ -779,7 +812,8 @@
         "url": "https://www.jeepforum.com/threads/death-wobble.4440123/"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "Steering Stabilizer"
   },
   {
     "title": "Post-lift checklist: what to re-check after installing a lift",
@@ -798,7 +832,8 @@
         "url": "https://www.jeepforum.com/threads/diagnosing-death-wobble-and-fixing-non-dw-shimmies-and-wobbles.1052221/"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "Post-Lift"
   },
   {
     "title": "New vibration after lift: simple inspection checklist before buying parts",
@@ -817,7 +852,8 @@
         "url": "https://www.jeepforum.com/search/12446876/?q=xj+vibration+after+lift&c[title_only]=1&o=relevance"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "Post-Lift"
   },
   {
     "title": "Clean the throttle body and IAC: smoother idle and fewer stalls",
@@ -841,7 +877,8 @@
         "label": "Cleaning throttle body and IAC on a Jeep XJ (YouTube)",
         "url": "https://www.youtube.com/results?search_query=jeep+xj+throttle+body+iac+cleaning+rough+idle"
       }
-    ]
+    ],
+    "tag": "TB / IAC"
   },
   {
     "title": "Renix TPS adjustment (1987 to 1990): what it helps and how to set it",
@@ -869,7 +906,8 @@
         "label": "Cleaning throttle body and adjusting TPS on a Renix (YouTube)",
         "url": "https://www.youtube.com/results?search_query=renix+xj+throttle+body+cleaning+tps+adjustment"
       }
-    ]
+    ],
+    "tag": "TPS / Renix"
   },
   {
     "title": "Renix throttle butterfly stop screw: why adjusting it causes problems",
@@ -888,7 +926,8 @@
         "url": "https://cruiser54.com/?p=60"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "Throttle / Renix"
   },
   {
     "title": "Running lean or rough idle: simple checks before parts swapping",
@@ -907,7 +946,8 @@
         "url": "https://naxja.org/threads/rough-idle-running-lean.1159796/"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "Lean / Idle"
   },
   {
     "title": "Vacuum gauge test for exhaust restriction (simple driveway test)",
@@ -922,7 +962,8 @@
         "url": "https://cruiser54.com/?p=98"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "Vacuum / Exhaust"
   },
   {
     "title": "Renix MAP vacuum line problems: symptoms and how to confirm a leak",
@@ -941,7 +982,8 @@
         "url": "https://naxja.org/threads/question-cruisers-map-line-fix.1163520/"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "MAP / Vacuum"
   },
   {
     "title": "Common XJ weak links: what fails often and what to inspect first",
@@ -960,7 +1002,8 @@
         "url": "https://naxja.org/threads/the-usual-suspects-common-problems-with-the-xj-and-what-usually-fixes-it.1081832/"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "Common Issues"
   },
   {
     "title": "Start-here maintenance baseline: what to check after buying an XJ",
@@ -979,7 +1022,8 @@
         "url": "https://www.cherokeeforum.com/f59/your-guide-extremely-common-problems-xj-how-fix-them-135869/"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "Baseline"
   },
   {
     "title": "4WD not engaging: linkage check and adjustment before deeper fixes",
@@ -1007,7 +1051,8 @@
         "label": "Adjusting transfer case linkages on an XJ (YouTube)",
         "url": "https://www.youtube.com/results?search_query=xj+transfer+case+linkage+adjustment+floor+shifter"
       }
-    ]
+    ],
+    "tag": "Linkage"
   },
   {
     "title": "4H not engaging but 4L works: what that points to and what to check",
@@ -1026,7 +1071,8 @@
         "url": "https://www.jeepforum.com/threads/95-4-0-4lo-works-but-not-4hi.2858233/"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "4H / 4L"
   },
   {
     "title": "4WD lever will not stay put: quick checks and simple adjustments",
@@ -1050,7 +1096,8 @@
         "label": "XJ transfer case shift linkage easy repair (YouTube)",
         "url": "https://www.youtube.com/results?search_query=xj+transfer+case+shift+linkage+repair+lever"
       }
-    ]
+    ],
+    "tag": "Shift Lever"
   },
   {
     "title": "Loose shifter and no 4WD indicator: how to tell if linkage is disconnected",
@@ -1069,7 +1116,8 @@
         "url": "https://naxja.org/threads/linkage-adjust-or-loose-t-case-chain.15618/"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "Linkage"
   },
   {
     "title": "Chain stretch vs linkage: simple symptoms that help you tell the difference",
@@ -1088,7 +1136,8 @@
         "url": "https://www.jeepforum.com/threads/transfer-case-chain-slipping-badly.374223/"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "Chain / Linkage"
   },
   {
     "title": "Early-model vacuum disconnect front axle: why 4WD may not pull the front",
@@ -1107,7 +1156,8 @@
         "url": "https://naxja.org/threads/4wd-not-engaging-why.1042820/"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "Vacuum Disconnect"
   },
   {
     "title": "NP231 vs NP242: how to identify your transfer case and what modes mean",
@@ -1126,6 +1176,7 @@
         "url": "https://naxja.org/threads/np231-vs-242.21469/"
       }
     ],
-    "videos": []
+    "videos": [],
+    "tag": "Transfer Case ID"
   }
 ]
