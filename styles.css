@@ -259,7 +259,7 @@ img { max-width: 100%; display: block; }
 .faq-item p { padding: 0 1.25rem 1.25rem; font-family: 'Source Serif 4', serif; color: var(--text-mid); font-size: 0.94rem; line-height: 1.65; }
 
 /* FILTER PILLS */
-.filter-pill { background: var(--white); border: 1.5px solid var(--line); color: var(--text-mid); padding: 0.35rem 1rem; border-radius: var(--radius-full); font-family: 'DM Sans', sans-serif; font-size: 0.82rem; font-weight: 600; cursor: pointer; transition: all 0.15s; white-space: nowrap; }
+.filter-pill { background: var(--white); border: 2px solid var(--text-lite); color: var(--text); padding: 0.35rem 1rem; border-radius: var(--radius-full); font-family: 'DM Sans', sans-serif; font-size: 0.85rem; font-weight: 700; cursor: pointer; transition: all 0.15s; white-space: nowrap; }
 .filter-pill:hover { border-color: var(--red); color: var(--red); background: var(--red-lite); }
 .filter-pill.active-pill { background: var(--red); border-color: var(--red); color: #fff; }
 
