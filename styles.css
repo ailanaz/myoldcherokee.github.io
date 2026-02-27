@@ -274,8 +274,9 @@ img { max-width: 100%; display: block; }
 .footer-brand-block p { font-family: 'Source Serif 4', serif; font-size: 0.88rem; color: rgba(255,255,255,0.5); line-height: 1.65; margin-top: 0.75rem; }
 .footer-disclaimer { font-size: 0.74rem; color: rgba(255,255,255,0.3); font-style: italic; margin-top: 0.75rem; line-height: 1.55; }
 .footer-col h4 { font-family: 'Oswald', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 0.9rem; }
-.footer-col ul { list-style: none; column-count: 2; column-gap: 1.5rem; }
-.footer-col li { margin-bottom: 0.5rem; break-inside: avoid; }
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 0.5rem; }
+.footer-col .ql-cols { display: flex; gap: 2rem; }
 .footer-col a { font-size: 0.88rem; color: rgba(255,255,255,0.6); transition: color 0.15s; }
 .footer-col a:hover { color: #fff; }
 .footer-bottom { padding: 1.25rem 0; display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
