@@ -116,22 +116,22 @@
     </div>
 
     <!-- Filter pills -->
-    <div style="display:flex;gap:0.5rem;flex-wrap:wrap;align-items:center;margin-bottom:1.5rem;">
+    <div class="shops-filter-bar" style="display:flex;gap:0.5rem;flex-wrap:wrap;align-items:center;margin-bottom:1.5rem;">
       <span style="font-family:'Oswald',sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-lite);margin-right:0.25rem;">Filter:</span>
-      <button class="filter-pill active-pill" onclick="setFilter(this)">All</button>
-      <button class="filter-pill" onclick="setFilter(this)">General Repair</button>
-      <button class="filter-pill" onclick="setFilter(this)">Electrical</button>
-      <button class="filter-pill" onclick="setFilter(this)">Cooling &amp; Radiator</button>
-      <button class="filter-pill" onclick="setFilter(this)">Suspension &amp; Alignment</button>
-      <button class="filter-pill" onclick="setFilter(this)">4x4 &amp; Off-Road</button>
-      <button class="filter-pill" onclick="setFilter(this)">Driveline &amp; Axle</button>
-      <button class="filter-pill" onclick="setFilter(this)">Diagnostics</button>
-      <button class="filter-pill" onclick="setFilter(this)">Towing &amp; Recovery</button>
+      <button class="filter-pill active-pill" data-cat="all" onclick="setFilter(this)">All</button>
+      <button class="filter-pill" data-cat="general" onclick="setFilter(this)">General Repair</button>
+      <button class="filter-pill" data-cat="electrical" onclick="setFilter(this)">Electrical</button>
+      <button class="filter-pill" data-cat="cooling" onclick="setFilter(this)">Cooling &amp; Radiator</button>
+      <button class="filter-pill" data-cat="suspension" onclick="setFilter(this)">Suspension &amp; Alignment</button>
+      <button class="filter-pill" data-cat="4x4" onclick="setFilter(this)">4x4 &amp; Off-Road</button>
+      <button class="filter-pill" data-cat="driveline" onclick="setFilter(this)">Driveline &amp; Axle</button>
+      <button class="filter-pill" data-cat="diagnostics" onclick="setFilter(this)">Diagnostics</button>
+      <button class="filter-pill" data-cat="towing" onclick="setFilter(this)">Towing &amp; Recovery</button>
     </div>
 
     <!-- Listing cards -->
     <div class="grid g3">
-      <div class="listing-card">
+      <div class="listing-card" data-cats="4x4 suspension">
         <div class="listing-thumb" style="background:linear-gradient(135deg,#2d3a2e,#1a2a1c);
           <span class="listing-state">Featured</span>
         </div>
@@ -145,7 +145,7 @@
           </div>
         </div>
       </div>
-      <div class="listing-card">
+      <div class="listing-card" data-cats="electrical diagnostics">
         <div class="listing-thumb" style="background:linear-gradient(135deg,#2a2a3a,#1a1a2c);
           <span class="listing-state">Featured</span>
         </div>
@@ -159,7 +159,7 @@
           </div>
         </div>
       </div>
-      <div class="listing-card">
+      <div class="listing-card" data-cats="cooling">
         <div class="listing-thumb" style="background:linear-gradient(135deg,#3a2a1a,#2c1a0a);
           <span class="listing-state">Featured</span>
         </div>
@@ -423,8 +423,20 @@
   document.getElementById('yr').textContent = new Date().getFullYear();
 
   function setFilter(btn) {
-    document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active-pill'));
+    var bar = btn.closest('.shops-filter-bar');
+    bar.querySelectorAll('.filter-pill').forEach(function(p) { p.classList.remove('active-pill'); });
     btn.classList.add('active-pill');
+    var cat = btn.getAttribute('data-cat');
+    var grid = btn.closest('.cat-section').querySelector('.grid');
+    if (!grid) return;
+    grid.querySelectorAll('.listing-card').forEach(function(card) {
+      if (cat === 'all') {
+        card.style.display = '';
+      } else {
+        var cats = (card.getAttribute('data-cats') || '').split(' ');
+        card.style.display = cats.indexOf(cat) !== -1 ? '' : 'none';
+      }
+    });
   }
 
   function filterDirectory(btn) {
