@@ -46,17 +46,43 @@ function renderGroup(container, title, items) {
 
   var ul = document.createElement('ul');
   ul.style.cssText = 'list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.6rem;';
+
   for (var i = 0; i < items.length; i++) {
     var it = items[i];
     var li = document.createElement('li');
     li.style.cssText = 'border:1px solid var(--line);border-radius:8px;padding:0.75rem 1rem;background:var(--off);';
+
     var name = esc(it.title || it.name || 'Listing');
-    var city = it.city ? ' <span style="color:var(--text-mid);font-size:0.88rem;">\u2014 ' + esc(it.city) + '</span>' : '';
+    var city = it.city ? ' <span style="color:var(--text-mid);font-size:0.88rem;">\u2014 ' + esc(it.city) + ', ' + esc(it.state || '') + '</span>' : '';
     var price = it.price ? ' <span style="color:var(--text-mid);font-size:0.85rem;">(' + esc(it.price) + ')</span>' : '';
-    var summary = it.summary ? '<p style="margin:0.35rem 0 0;font-size:0.87rem;color:var(--text-mid);line-height:1.5;">' + esc(it.summary) + '</p>' : '';
-    li.innerHTML = '<strong>' + name + '</strong>' + city + price + summary;
+
+    var website = it.website
+      ? '<div style="margin-top:0.35rem;"><a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" style="font-size:0.82rem;">' + esc(it.website) + '</a></div>'
+      : '';
+
+    var phone = it.phone
+      ? '<div style="font-size:0.82rem;color:var(--text-mid);margin-top:0.2rem;">' + esc(it.phone) + '</div>'
+      : '';
+
+    var summary = it.summary
+      ? '<p style="margin:0.35rem 0 0;font-size:0.87rem;color:var(--text-mid);line-height:1.5;">' + esc(it.summary) + '</p>'
+      : '';
+
+    var sourceLink = it.jeep_friendly_source_url
+      ? ' <a href="' + esc(it.jeep_friendly_source_url) + '" target="_blank" rel="noopener noreferrer" style="font-size:0.78rem;margin-left:0.4rem;white-space:nowrap;">' + esc(it.jeep_friendly_source_label || 'Source') + ' &rarr;</a>'
+      : '';
+
+    var blurb = it.jeep_friendly_blurb
+      ? '<p style="margin:0.5rem 0 0;font-size:0.83rem;padding:0.4rem 0.65rem;background:rgba(42,102,72,0.1);border-left:3px solid #2a6648;border-radius:0 4px 4px 0;line-height:1.5;">'
+        + '<strong style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.05em;display:block;margin-bottom:0.15rem;">Jeep-friendly</strong>'
+        + esc(it.jeep_friendly_blurb) + sourceLink
+        + '</p>'
+      : '';
+
+    li.innerHTML = '<strong>' + name + '</strong>' + city + price + website + phone + summary + blurb;
     ul.appendChild(li);
   }
+
   wrap.appendChild(ul);
   container.appendChild(wrap);
 }
@@ -91,7 +117,7 @@ function renderSection(container, sectionTitle, groups, orderedKeys) {
   if (!Object.keys(groups).length) {
     var none = document.createElement('div');
     none.style.cssText = 'background:var(--off);border:1.5px dashed var(--line-mid);border-radius:10px;padding:2rem;text-align:center;margin-top:1rem;color:var(--text-mid);';
-    none.innerHTML = 'No ' + sectionTitle.toLowerCase() + ' listings yet for this state. <a href="../submit.html">Submit one.</a>';
+    none.innerHTML = 'No confirmed ' + sectionTitle.toLowerCase() + ' listings yet for this state. <a href="../submit.html">Submit one.</a>';
     container.appendChild(none);
   }
 }
@@ -124,8 +150,10 @@ async function initStatePage() {
     var buySell = buySellAll.filter(function(x) {
       return (x.state || '').toUpperCase() === stateCode;
     });
+
+    // Only show directory businesses with a confirmed jeep_friendly_blurb
     var directory = dirAll.filter(function(x) {
-      return (x.state || '').toUpperCase() === stateCode;
+      return (x.state || '').toUpperCase() === stateCode && x.jeep_friendly_blurb;
     });
 
     var buySellGroups = groupBy(buySell, 'category');

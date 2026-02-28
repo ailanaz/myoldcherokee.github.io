@@ -175,6 +175,17 @@
         </div>
       </div>
     </div>
+
+    <!-- Confirmed Jeep-friendly shops loaded from directory.json -->
+    <div style="margin-top:2.5rem;">
+      <div class="subcat-header" style="margin:0 0 1rem;">
+        <span class="guide-tag tag-green" style="font-size:0.78rem;">Jeep-Friendly</span>
+        <h3>Confirmed Jeep-Friendly Shops</h3>
+        <div class="subcat-divider"></div>
+      </div>
+      <div id="confirmed-shops" class="grid g3"></div>
+    </div>
+
   </section>
 
 
@@ -552,6 +563,86 @@
       }
     });
   }
+</script>
+
+<script>
+/* Load confirmed Jeep-friendly shops from directory.json into #confirmed-shops */
+(function() {
+  function esc(s) {
+    return String(s || '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  var container = document.getElementById('confirmed-shops');
+  if (!container) return;
+
+  fetch('assets/data/directory.json')
+    .then(function(res) { if (!res.ok) throw new Error('load failed'); return res.json(); })
+    .then(function(data) {
+      var shops = data.filter(function(x) {
+        return x.type === 'Repair Shops' && x.jeep_friendly_blurb;
+      });
+
+      if (!shops.length) {
+        container.innerHTML = '<p style="color:var(--text-mid);padding:0.5rem 0;">No confirmed shops yet. <a href="submit.html">Submit one.</a></p>';
+        return;
+      }
+
+      shops.forEach(function(it) {
+        var card = document.createElement('div');
+        card.className = 'listing-card';
+
+        var stateBadge = it.state
+          ? '<span class="listing-state">' + esc(it.state) + '</span>'
+          : '';
+
+        var loc = (it.city && it.state)
+          ? '<div class="listing-loc">&#128205; ' + esc(it.city) + ', ' + esc(it.state) + '</div>'
+          : '';
+
+        var website = it.website
+          ? '<div style="margin-top:0.3rem;"><a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" style="font-size:0.82rem;">' + esc(it.website) + '</a></div>'
+          : '';
+
+        var phone = it.phone
+          ? '<div style="font-size:0.82rem;color:var(--text-mid);margin-top:0.2rem;">' + esc(it.phone) + '</div>'
+          : '';
+
+        var summary = it.summary
+          ? '<p class="listing-summary">' + esc(it.summary) + '</p>'
+          : '';
+
+        var sourceLink = it.jeep_friendly_source_url
+          ? ' <a href="' + esc(it.jeep_friendly_source_url) + '" target="_blank" rel="noopener noreferrer" style="font-size:0.78rem;margin-left:0.4rem;white-space:nowrap;">' + esc(it.jeep_friendly_source_label || 'Source') + ' &rarr;</a>'
+          : '';
+
+        var blurb = '<div style="margin-top:0.6rem;font-size:0.83rem;padding:0.4rem 0.65rem;background:rgba(42,102,72,0.1);border-left:3px solid #2a6648;border-radius:0 4px 4px 0;line-height:1.5;">'
+          + '<strong style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.05em;display:block;margin-bottom:0.15rem;">Jeep-friendly</strong>'
+          + esc(it.jeep_friendly_blurb) + sourceLink
+          + '</div>';
+
+        card.innerHTML =
+          '<div class="listing-thumb" style="background:linear-gradient(135deg,#2a3d2e,#1a2a1c);">' + stateBadge + '</div>'
+          + '<div class="listing-body">'
+          + '<div class="listing-name">' + esc(it.name || 'Shop') + '</div>'
+          + loc
+          + website
+          + phone
+          + summary
+          + blurb
+          + '</div>';
+
+        container.appendChild(card);
+      });
+    })
+    .catch(function() {
+      container.innerHTML = '<p style="color:var(--text-mid);padding:1rem 0;">Shops could not load. Please refresh the page.</p>';
+    });
+})();
 </script>
 </body>
 </html>
