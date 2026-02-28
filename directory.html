@@ -132,47 +132,44 @@
 
     <!-- Listing cards -->
     <div class="grid g3">
-      <div class="listing-card" data-cats="4x4 suspension">
-        <div class="listing-thumb" style="background:linear-gradient(135deg,#507a52,#386840);">
-          <span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(255,255,255,0.2);color:#fff;font-family:'Oswald',sans-serif;font-size:0.85rem;font-weight:700;padding:0.3rem 0.9rem;border-radius:2rem;letter-spacing:0.06em;text-transform:uppercase;white-space:nowrap;">Shop</span>
-          <span class="listing-state">State</span>
+      <div class="biz-card" data-cats="4x4 suspension">
+        <div class="biz-logo-wrap">
+          <div class="biz-logo" aria-hidden="true" style="background:var(--off-2);color:var(--text-lite);font-size:1.4rem;">🔧</div>
         </div>
-        <div class="listing-body">
-          <div class="listing-cats"><span class="lcat">4x4 &amp; Off-Road</span><span class="lcat">Suspension</span></div>
-          <div class="listing-name">Your Shop Here</div>
-          <div class="listing-loc">📍 City, State</div>
-          <p class="listing-summary">This spot is reserved for the first featured shop in your area. Be the go-to Cherokee specialist in your region.</p>
-          <div class="listing-actions">
+        <div class="biz-body">
+          <span class="biz-type">4x4 &amp; Off-Road · Suspension</span>
+          <div class="biz-name">Your Shop Here</div>
+          <div class="biz-loc">📍 City, State</div>
+          <p class="biz-desc">This spot is reserved for the first featured shop in your area. Be the go-to Cherokee specialist in your region.</p>
+          <div class="biz-actions">
             <a href="submit.html" class="btn btn-red btn-sm">Claim This Spot</a>
           </div>
         </div>
       </div>
-      <div class="listing-card" data-cats="electrical diagnostics">
-        <div class="listing-thumb" style="background:linear-gradient(135deg,#505878,#384868);">
-          <span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(255,255,255,0.2);color:#fff;font-family:'Oswald',sans-serif;font-size:0.85rem;font-weight:700;padding:0.3rem 0.9rem;border-radius:2rem;letter-spacing:0.06em;text-transform:uppercase;white-space:nowrap;">Shop</span>
-          <span class="listing-state">State</span>
+      <div class="biz-card" data-cats="electrical diagnostics">
+        <div class="biz-logo-wrap">
+          <div class="biz-logo" aria-hidden="true" style="background:var(--off-2);color:var(--text-lite);font-size:1.4rem;">⚡</div>
         </div>
-        <div class="listing-body">
-          <div class="listing-cats"><span class="lcat">Electrical</span><span class="lcat">Diagnostics</span></div>
-          <div class="listing-name">Your Shop Here</div>
-          <div class="listing-loc">📍 City, State</div>
-          <p class="listing-summary">Electrical and diagnostic specialists for older Cherokees. This listing is open  -  get your shop in front of Cherokee owners searching now.</p>
-          <div class="listing-actions">
+        <div class="biz-body">
+          <span class="biz-type">Electrical · Diagnostics</span>
+          <div class="biz-name">Your Shop Here</div>
+          <div class="biz-loc">📍 City, State</div>
+          <p class="biz-desc">Electrical and diagnostic specialists for older Cherokees. This listing is open — get your shop in front of Cherokee owners searching now.</p>
+          <div class="biz-actions">
             <a href="submit.html" class="btn btn-red btn-sm">Claim This Spot</a>
           </div>
         </div>
       </div>
-      <div class="listing-card" data-cats="cooling">
-        <div class="listing-thumb" style="background:linear-gradient(135deg,#786040,#5a4828);">
-          <span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(255,255,255,0.2);color:#fff;font-family:'Oswald',sans-serif;font-size:0.85rem;font-weight:700;padding:0.3rem 0.9rem;border-radius:2rem;letter-spacing:0.06em;text-transform:uppercase;white-space:nowrap;">Shop</span>
-          <span class="listing-state">State</span>
+      <div class="biz-card" data-cats="cooling">
+        <div class="biz-logo-wrap">
+          <div class="biz-logo" aria-hidden="true" style="background:var(--off-2);color:var(--text-lite);font-size:1.4rem;">🌡️</div>
         </div>
-        <div class="listing-body">
-          <div class="listing-cats"><span class="lcat">Cooling</span><span class="lcat">Radiator</span></div>
-          <div class="listing-name">Your Shop Here</div>
-          <div class="listing-loc">📍 City, State</div>
-          <p class="listing-summary">Cooling system specialists. If you handle the overheating issues that plague older Cherokees, this spot is for you.</p>
-          <div class="listing-actions">
+        <div class="biz-body">
+          <span class="biz-type">Cooling · Radiator</span>
+          <div class="biz-name">Your Shop Here</div>
+          <div class="biz-loc">📍 City, State</div>
+          <p class="biz-desc">Cooling system specialists. If you handle the overheating issues that plague older Cherokees, this spot is for you.</p>
+          <div class="biz-actions">
             <a href="submit.html" class="btn btn-red btn-sm">Claim This Spot</a>
           </div>
         </div>
@@ -540,7 +537,7 @@
     var cat = btn.getAttribute('data-cat');
     var grid = btn.closest('.cat-section').querySelector('.grid');
     if (!grid) return;
-    grid.querySelectorAll('.listing-card').forEach(function(card) {
+    grid.querySelectorAll('[data-cats]').forEach(function(card) {
       if (cat === 'all') {
         card.style.display = '';
       } else {
@@ -580,28 +577,6 @@
       .replace(/'/g, '&#39;');
   }
 
-  /* Consistent per-state color derived from state code */
-  var STATE_PALETTE = [
-    '#2a7a5a', /* teal green  */
-    '#4a5ea8', /* blue        */
-    '#a85028', /* rust orange */
-    '#6a3a8a', /* purple      */
-    '#28708a', /* steel blue  */
-    '#7a4a20', /* warm brown  */
-    '#a83030', /* red         */
-    '#486090', /* slate blue  */
-    '#7a6a20', /* gold/olive  */
-    '#3a6878', /* dark teal   */
-    '#6a4878', /* mauve       */
-    '#2a6848'  /* forest green*/
-  ];
-  function stateColor(code) {
-    var s = (code || '').toUpperCase();
-    var idx = 0;
-    for (var i = 0; i < s.length; i++) { idx += s.charCodeAt(i); }
-    return STATE_PALETTE[idx % STATE_PALETTE.length];
-  }
-
   var container = document.getElementById('confirmed-shops');
   if (!container) return;
 
@@ -619,15 +594,13 @@
 
       shops.forEach(function(it) {
         var card = document.createElement('div');
-        card.className = 'listing-card';
+        card.className = 'biz-card';
 
-        var catPill = '<span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:rgba(255,255,255,0.2);color:#fff;font-family:\'Oswald\',sans-serif;font-size:0.85rem;font-weight:700;padding:0.3rem 0.9rem;border-radius:2rem;letter-spacing:0.06em;text-transform:uppercase;white-space:nowrap;">Shop</span>';
-        var stateBadge = it.state
-          ? '<span class="listing-state" style="background:' + stateColor(it.state) + ';font-size:0.92rem;padding:0.3rem 0.85rem;letter-spacing:0.08em;">' + esc(it.state) + '</span>'
-          : '';
+        /* Initials for logo circle — up to 2 letters from the shop name */
+        var initials = (it.name || 'S').split(/\s+/).map(function(w) { return w.charAt(0); }).slice(0, 2).join('').toUpperCase();
 
         var loc = (it.city && it.state)
-          ? '<div class="listing-loc">&#128205; ' + esc(it.city) + ', ' + esc(it.state) + '</div>'
+          ? '<div class="biz-loc">&#128205; ' + esc(it.city) + ', ' + esc(it.state) + '</div>'
           : '';
 
         var website = it.website
@@ -639,7 +612,7 @@
           : '';
 
         var summary = it.summary
-          ? '<p class="listing-summary">' + esc(it.summary) + '</p>'
+          ? '<p class="biz-desc">' + esc(it.summary) + '</p>'
           : '';
 
         var sourceLink = it.jeep_friendly_source_url
@@ -652,9 +625,10 @@
           + '</div>';
 
         card.innerHTML =
-          '<div class="listing-thumb" style="background:linear-gradient(135deg,#507a52,#386840);">' + catPill + stateBadge + '</div>'
-          + '<div class="listing-body">'
-          + '<div class="listing-name">' + esc(it.name || 'Shop') + '</div>'
+          '<div class="biz-logo-wrap"><div class="biz-logo">' + initials + '</div></div>'
+          + '<div class="biz-body">'
+          + '<span class="biz-type">Repair Shop</span>'
+          + '<div class="biz-name">' + esc(it.name || 'Shop') + '</div>'
           + loc
           + website
           + phone
