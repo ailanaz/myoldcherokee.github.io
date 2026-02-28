@@ -75,19 +75,20 @@
       <iframe data-tally-src="https://tally.so/r/7RdJdZ?transparentBackground=1&formEventsForwarding=1" loading="lazy" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0" title="Submit a Buy/Sell Listing"></iframe>
     </div>
 
-    <!-- Business / Directory form -->
-    <div id="form-business" style="display:none;">
-      <iframe data-tally-src="https://tally.so/r/kdY05M?transparentBackground=1&formEventsForwarding=1" loading="lazy" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0" title="Directory Submission"></iframe>
-    </div>
+    <!-- Business / Directory form — opens as standalone full-page -->
+    <!-- Redirect handled in showForm() below -->
 
   </div>
 </section>
 
 <script>
   function showForm(val) {
+    if (val === 'business') {
+      window.location.href = 'submit-directory.html';
+      return;
+    }
     document.getElementById('form-placeholder').style.display = val ? 'none' : 'block';
-    document.getElementById('form-sell').style.display     = val === 'sell'     ? 'block' : 'none';
-    document.getElementById('form-business').style.display = val === 'business' ? 'block' : 'none';
+    document.getElementById('form-sell').style.display = val === 'sell' ? 'block' : 'none';
   }
 </script>
 
