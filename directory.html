@@ -599,16 +599,18 @@
         /* Initials for logo circle — up to 2 letters from the shop name */
         var initials = (it.name || 'S').split(/\s+/).map(function(w) { return w.charAt(0); }).slice(0, 2).join('').toUpperCase();
 
+        /* Google Maps search URL — use full address if available, else name+city+state */
+        var mapQuery = it.address
+          ? (it.name || '') + ' ' + it.address
+          : (it.name || '') + ' ' + (it.city || '') + ' ' + (it.state || '');
+        var mapsUrl = 'https://www.google.com/maps/search/' + encodeURIComponent(mapQuery.trim());
+
         var loc = (it.city && it.state)
           ? '<div class="biz-loc">&#128205; ' + esc(it.city) + ', ' + esc(it.state) + '</div>'
           : '';
 
-        var website = it.website
-          ? '<div style="margin-top:0.3rem;"><a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" style="font-size:0.82rem;">' + esc(it.website) + '</a></div>'
-          : '';
-
         var phone = it.phone
-          ? '<div style="font-size:0.82rem;color:var(--text-mid);margin-top:0.2rem;">' + esc(it.phone) + '</div>'
+          ? '<div style="font-size:0.82rem;color:var(--text-mid);margin-top:0.2rem;">&#128222; ' + esc(it.phone) + '</div>'
           : '';
 
         var summary = it.summary
@@ -624,16 +626,22 @@
           + esc(it.jeep_friendly_blurb) + sourceLink
           + '</div>';
 
+        /* Action buttons — always show map, add website button if available */
+        var actions = '<div class="biz-actions" style="flex-wrap:wrap;gap:0.4rem;margin-top:0.85rem;">'
+          + '<a href="' + esc(mapsUrl) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">&#128205; View on Map</a>'
+          + (it.website ? '<a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Website</a>' : '')
+          + '</div>';
+
         card.innerHTML =
           '<div class="biz-logo-wrap"><div class="biz-logo">' + initials + '</div></div>'
           + '<div class="biz-body">'
           + '<span class="biz-type">Repair Shop</span>'
           + '<div class="biz-name">' + esc(it.name || 'Shop') + '</div>'
           + loc
-          + website
           + phone
           + summary
           + blurb
+          + actions
           + '</div>';
 
         container.appendChild(card);
