@@ -240,13 +240,13 @@
 <script>
 (function () {
   var CAT_CONFIG = {
-    'Start Here Troubleshooting': { emoji: '🔧', bg: 'linear-gradient(135deg,#2a4a20,#152810)' },
-    'No Start':               { emoji: '🔑',  bg: 'linear-gradient(135deg,#6b1228,#3d0a17)' },
-    'Overheating':            { emoji: '🌡️', bg: 'linear-gradient(135deg,#c87020,#7a4210)' },
-    'Electrical':             { emoji: '⚡',  bg: 'linear-gradient(135deg,#2c5cc5,#1a3878)' },
-    'Suspension and Steering':{ emoji: '🌀',  bg: 'linear-gradient(135deg,#2a6648,#163825)' },
-    'Engine and Idle':        { emoji: '💨',  bg: 'linear-gradient(135deg,#b36000,#6b3800)' },
-    '4WD and Transfer Case':  { emoji: '⚙️', bg: 'linear-gradient(135deg,#5a1228,#3d0a1e)' }
+    'Start Here Troubleshooting': { cls: 'guide-colorbar--start-here' },
+    'No Start':               { cls: 'guide-colorbar--nostart' },
+    'Overheating':            { cls: 'guide-colorbar--overheating' },
+    'Electrical':             { cls: 'guide-colorbar--electrical' },
+    'Suspension and Steering':{ cls: 'guide-colorbar--suspension' },
+    'Engine and Idle':        { cls: 'guide-colorbar--engine' },
+    '4WD and Transfer Case':  { cls: 'guide-colorbar--4wd' }
   };
   var CAT_GRID = {
     'Start Here Troubleshooting': 'grid-start-here',
@@ -263,11 +263,10 @@
   }
 
   function cardHtml(g) {
-    var cfg = CAT_CONFIG[g.category] || { emoji: '📋', bg: 'linear-gradient(135deg,#444,#222)' };
+    var cfg = CAT_CONFIG[g.category] || { cls: '' };
     var tagHtml = g.tag ? '<span class="card-tag">' + esc(g.tag) + '</span>' : '';
     return '<a href="guides/' + g.slug + '.html" class="article-card">'
-      + '<div class="article-thumb" style="background:' + cfg.bg + ';">'
-      + '<span class="article-thumb-label">' + esc(g.category) + '</span>'
+      + '<div class="article-thumb ' + (cfg.cls || '') + '">'
       + '</div>'
       + '<div class="article-body">'
       + tagHtml
