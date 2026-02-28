@@ -626,10 +626,13 @@
           + esc(it.jeep_friendly_blurb) + sourceLink
           + '</div>';
 
-        /* Action buttons — always show map, add website button if available */
+        /* Action buttons — website first, map second, Yelp source as fallback */
+        var yelpUrl = (!it.website && it.jeep_friendly_source_url && it.jeep_friendly_source_url.indexOf('yelp.com') !== -1)
+          ? it.jeep_friendly_source_url : '';
         var actions = '<div class="biz-actions" style="flex-wrap:wrap;gap:0.4rem;margin-top:0.85rem;">'
-          + '<a href="' + esc(mapsUrl) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">&#128205; View on Map</a>'
           + (it.website ? '<a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Website</a>' : '')
+          + '<a href="' + esc(mapsUrl) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">&#128205; Map</a>'
+          + (yelpUrl ? '<a href="' + esc(yelpUrl) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Yelp</a>' : '')
           + '</div>';
 
         card.innerHTML =
