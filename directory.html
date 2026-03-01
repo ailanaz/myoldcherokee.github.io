@@ -95,12 +95,14 @@
 <!-- DIRECTORY FILTER BAR -->
 <div class="dir-filter-bar">
   <div class="container">
-    <div class="dir-filter-inner">
-      <span style="font-family:'Oswald',sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-lite);margin-right:0.25rem;flex-shrink:0;">Filter:</span>
-      <button class="filter-pill active-pill" data-cat="all" onclick="filterDirectory(this)">All</button>
-      <button class="filter-pill" data-cat="repair-shops" onclick="filterDirectory(this)">Repair Shops</button>
-      <button class="filter-pill" data-cat="junkyards" onclick="filterDirectory(this)">Salvage &amp; Junk Yards</button>
-      <button class="filter-pill" data-cat="shop-parts" onclick="filterDirectory(this)">Shop for Parts and More</button>
+    <div class="filter-dropdown-bar" style="border:none;padding:0.25rem 0;">
+      <input type="search" id="dir-search" class="filter-search-input" placeholder="Search directory…" autocomplete="off" oninput="filterDirectory()" />
+      <select id="dir-cat" class="filter-select" onchange="filterDirectory()" aria-label="Filter directory sections">
+        <option value="all">All Sections</option>
+        <option value="repair-shops">Repair Shops</option>
+        <option value="junkyards">Salvage &amp; Junk Yards</option>
+        <option value="shop-parts">Shop for Parts</option>
+      </select>
     </div>
   </div>
 </div>
@@ -119,18 +121,46 @@
       </div>
     </div>
 
-    <!-- Filter pills -->
-    <div class="shops-filter-bar" style="display:flex;gap:0.5rem;flex-wrap:wrap;align-items:center;margin-bottom:1.5rem;">
-      <span style="font-family:'Oswald',sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-lite);margin-right:0.25rem;">Filter:</span>
-      <button class="filter-pill active-pill" data-cat="all" onclick="setFilter(this)">All</button>
-      <button class="filter-pill" data-cat="general" onclick="setFilter(this)">General Repair</button>
-      <button class="filter-pill" data-cat="electrical" onclick="setFilter(this)">Electrical</button>
-      <button class="filter-pill" data-cat="cooling" onclick="setFilter(this)">Cooling &amp; Radiator</button>
-      <button class="filter-pill" data-cat="suspension" onclick="setFilter(this)">Suspension &amp; Alignment</button>
-      <button class="filter-pill" data-cat="4x4" onclick="setFilter(this)">4x4 &amp; Off-Road</button>
-      <button class="filter-pill" data-cat="driveline" onclick="setFilter(this)">Driveline &amp; Axle</button>
-      <button class="filter-pill" data-cat="diagnostics" onclick="setFilter(this)">Diagnostics</button>
-      <button class="filter-pill" data-cat="towing" onclick="setFilter(this)">Towing &amp; Recovery</button>
+    <!-- Featured shops strip -->
+    <div class="featured-section" style="margin-bottom:2rem;">
+      <div class="featured-section-head">
+        <span class="featured-section-title">⭐ Featured Shops</span>
+        <a href="featured.html" class="featured-section-link">View All →</a>
+      </div>
+      <div class="grid g3" style="align-items:start;">
+        <a href="https://www.google.com/maps/search/Banker+Automotive,+10404+Slaughter+Creek+Dr,+Austin,+TX+78748" target="_blank" rel="noopener noreferrer" class="featured-biz-card">
+          <div class="featured-biz-img"><div class="featured-biz-initials">BA</div></div>
+          <div class="featured-biz-body">
+            <div class="featured-biz-header"><span class="featured-badge">Featured</span><span class="featured-biz-type">Repair Shop</span></div>
+            <div class="featured-biz-name">Banker Automotive</div>
+            <div class="featured-biz-loc">📍 Austin, TX &nbsp;·&nbsp; <span class="featured-biz-area">TX (78748)</span></div>
+            <p class="featured-biz-desc">One garage we have used for our 96 Jeep Cherokee and were more than pleased with all the work they have done. Reliable, honest, and thorough.</p>
+            <div class="featured-biz-tags"><span class="featured-biz-tag">XJ</span><span class="featured-biz-tag">General Repair</span><span class="featured-biz-tag">Austin TX</span></div>
+            <div class="featured-verified">Submitter verified location &amp; hours</div>
+            <div class="featured-biz-actions">
+              <span class="btn btn-outline btn-sm">📞 (512) 280-0877</span>
+              <span class="btn btn-red btn-sm">📍 Map</span>
+            </div>
+          </div>
+        </a>
+        <!-- Additional featured shop cards go here as more businesses sign up -->
+      </div>
+    </div>
+
+    <!-- Shop type filter -->
+    <div class="filter-dropdown-bar" style="margin-bottom:1.5rem;">
+      <input type="search" id="shops-search" class="filter-search-input" placeholder="Filter shops…" autocomplete="off" oninput="setFilterDropdown()" />
+      <select id="shops-cat" class="filter-select" onchange="setFilterDropdown()" aria-label="Filter by shop type">
+        <option value="all">All Types</option>
+        <option value="general">General Repair</option>
+        <option value="electrical">Electrical</option>
+        <option value="cooling">Cooling &amp; Radiator</option>
+        <option value="suspension">Suspension &amp; Alignment</option>
+        <option value="4x4">4x4 &amp; Off-Road</option>
+        <option value="driveline">Driveline &amp; Axle</option>
+        <option value="diagnostics">Diagnostics</option>
+        <option value="towing">Towing &amp; Recovery</option>
+      </select>
     </div>
 
     <!-- Listing cards -->
@@ -177,6 +207,15 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Get Featured nudge -->
+    <div class="get-featured-nudge">
+      <div>
+        <strong>Get your shop seen by Cherokee owners.</strong>
+        <p>Featured placement puts your shop at the top of this page, on the homepage carousel, and on the Featured Businesses page.</p>
+      </div>
+      <a href="featured.html#get-featured" class="btn btn-red btn-sm">Get Featured</a>
     </div>
 
     <!-- Confirmed Jeep-friendly shops loaded from directory.json -->
@@ -511,6 +550,56 @@
       </div>
     </div>
 
+    <!-- Accessories & Gear -->
+    <div class="subcat-header" style="margin:2.5rem 0 1rem;">
+      <span class="guide-tag tag-amber" style="font-size:0.78rem;">Accessories &amp; Gear</span>
+      <h3>Accessories &amp; Gear</h3>
+      <div class="subcat-divider"></div>
+    </div>
+    <div class="grid g3">
+
+      <!-- B071RXKC7M — Jeep Cherokee Cargo Storage Bag -->
+      <div class="parts-card">
+        <a href="https://www.amazon.com/dp/B071RXKC7M?tag=moc09c-20" target="_blank" rel="noopener noreferrer nofollow" class="parts-card-img"><img src="https://m.media-amazon.com/images/I/61MK5VxZAhL._SL300_.jpg" alt="Cherokee Cargo Storage Bag" loading="lazy"></a>
+        <div class="parts-card-top"><h4>Cherokee Cargo Storage Bag</h4><span class="parts-tag">Accessories</span></div>
+        <p>Heavy-duty cargo storage bag sized for Cherokee interiors. Keeps tools, recovery gear, and everyday items organized in the back. Black.</p>
+        <div style="margin-top:auto;padding-top:.75rem;"><a href="https://www.amazon.com/dp/B071RXKC7M?tag=moc09c-20" target="_blank" rel="noopener noreferrer nofollow" class="btn btn-amber btn-sm">View on Amazon</a></div>
+      </div>
+
+      <!-- B0BCXH25VP — Update name/image after verifying on Amazon -->
+      <div class="parts-card">
+        <a href="https://www.amazon.com/dp/B0BCXH25VP?tag=moc09c-20" target="_blank" rel="noopener noreferrer nofollow" class="parts-card-img"><img src="https://placehold.co/300x200/f5f0e8/888?text=View+on+Amazon" alt="Product image" loading="lazy"></a>
+        <div class="parts-card-top"><h4>Cherokee Accessory</h4><span class="parts-tag">Accessories</span></div>
+        <p>XJ-compatible accessory. Click through to Amazon for full details, specs, and fitment notes.</p>
+        <div style="margin-top:auto;padding-top:.75rem;"><a href="https://www.amazon.com/dp/B0BCXH25VP?tag=moc09c-20" target="_blank" rel="noopener noreferrer nofollow" class="btn btn-amber btn-sm">View on Amazon</a></div>
+      </div>
+
+      <!-- B0CQY2ZCRD — Update name/image after verifying on Amazon -->
+      <div class="parts-card">
+        <a href="https://www.amazon.com/dp/B0CQY2ZCRD?tag=moc09c-20" target="_blank" rel="noopener noreferrer nofollow" class="parts-card-img"><img src="https://placehold.co/300x200/f5f0e8/888?text=View+on+Amazon" alt="Product image" loading="lazy"></a>
+        <div class="parts-card-top"><h4>Cherokee Accessory</h4><span class="parts-tag">Accessories</span></div>
+        <p>XJ-compatible accessory. Click through to Amazon for full details, specs, and fitment notes.</p>
+        <div style="margin-top:auto;padding-top:.75rem;"><a href="https://www.amazon.com/dp/B0CQY2ZCRD?tag=moc09c-20" target="_blank" rel="noopener noreferrer nofollow" class="btn btn-amber btn-sm">View on Amazon</a></div>
+      </div>
+
+      <!-- B07PGN1KQL — Update name/image after verifying on Amazon -->
+      <div class="parts-card">
+        <a href="https://www.amazon.com/dp/B07PGN1KQL?tag=moc09c-20" target="_blank" rel="noopener noreferrer nofollow" class="parts-card-img"><img src="https://placehold.co/300x200/f5f0e8/888?text=View+on+Amazon" alt="Product image" loading="lazy"></a>
+        <div class="parts-card-top"><h4>Cherokee Accessory</h4><span class="parts-tag">Accessories</span></div>
+        <p>XJ-compatible accessory. Click through to Amazon for full details, specs, and fitment notes.</p>
+        <div style="margin-top:auto;padding-top:.75rem;"><a href="https://www.amazon.com/dp/B07PGN1KQL?tag=moc09c-20" target="_blank" rel="noopener noreferrer nofollow" class="btn btn-amber btn-sm">View on Amazon</a></div>
+      </div>
+
+      <!-- B0F5HN2ZRH — Update name/image after verifying on Amazon -->
+      <div class="parts-card">
+        <a href="https://www.amazon.com/dp/B0F5HN2ZRH?tag=moc09c-20" target="_blank" rel="noopener noreferrer nofollow" class="parts-card-img"><img src="https://placehold.co/300x200/f5f0e8/888?text=View+on+Amazon" alt="Product image" loading="lazy"></a>
+        <div class="parts-card-top"><h4>Cherokee Accessory</h4><span class="parts-tag">Accessories</span></div>
+        <p>XJ-compatible accessory. Click through to Amazon for full details, specs, and fitment notes.</p>
+        <div style="margin-top:auto;padding-top:.75rem;"><a href="https://www.amazon.com/dp/B0F5HN2ZRH?tag=moc09c-20" target="_blank" rel="noopener noreferrer nofollow" class="btn btn-amber btn-sm">View on Amazon</a></div>
+      </div>
+
+    </div>
+
     <div style="background:var(--off);border:1.5px solid var(--line);border-radius:10px;padding:1.25rem 1.5rem;margin-top:1.5rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
       <div>
         <p style="font-family:'Oswald',sans-serif;font-size:0.92rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:var(--text);margin-bottom:0.2rem;">Know a source for Cherokee parts?</p>
@@ -540,15 +629,18 @@
           <li><a href="guides.html">Guides</a></li>
           <li><a href="community.html">Community</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
         </ul>
         <div>
           <h4>Quick Links</h4>
           <ul>
             <li><a href="state-search.html">State Search</a></li>
+            <li><a href="featured.html">Featured Businesses</a></li>
+            <li><a href="featured.html#get-featured">Get Featured</a></li>
             <li><a href="submit.html">List with Us</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="duediligence.html">Due Diligence</a></li>
-            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="faq.html#featured-faq">FAQ – Featured</a></li>
           </ul>
         </div>
       </div>
@@ -563,36 +655,25 @@
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
 
-  function setFilter(btn) {
-    var bar = btn.closest('.shops-filter-bar');
-    bar.querySelectorAll('.filter-pill').forEach(function(p) { p.classList.remove('active-pill'); });
-    btn.classList.add('active-pill');
-    var cat = btn.getAttribute('data-cat');
-    var grid = btn.closest('.cat-section').querySelector('.grid');
+  function setFilterDropdown() {
+    var cat = (document.getElementById('shops-cat') || {}).value || 'all';
+    var query = ((document.getElementById('shops-search') || {}).value || '').toLowerCase().trim();
+    var grid = document.querySelector('#repair-shops .grid');
     if (!grid) return;
     grid.querySelectorAll('[data-cats]').forEach(function(card) {
-      if (cat === 'all') {
-        card.style.display = '';
-      } else {
-        var cats = (card.getAttribute('data-cats') || '').split(' ');
-        card.style.display = cats.indexOf(cat) !== -1 ? '' : 'none';
-      }
+      var matchCat = (cat === 'all') || ((card.getAttribute('data-cats') || '').split(' ').indexOf(cat) !== -1);
+      var matchSearch = !query || card.textContent.toLowerCase().indexOf(query) !== -1;
+      card.style.display = (matchCat && matchSearch) ? '' : 'none';
     });
   }
 
-  function filterDirectory(btn) {
-    document.querySelectorAll('.dir-filter-inner .filter-pill').forEach(function (p) { p.classList.remove('active-pill'); });
-    btn.classList.add('active-pill');
-    var cat = btn.getAttribute('data-cat');
-    document.querySelectorAll('.cat-section').forEach(function (s) {
+  function filterDirectory() {
+    var cat = (document.getElementById('dir-cat') || {}).value || 'all';
+    document.querySelectorAll('.cat-section').forEach(function(s) {
       if (cat === 'all') {
         s.classList.remove('hidden');
       } else {
-        if (s.id === cat) {
-          s.classList.remove('hidden');
-        } else {
-          s.classList.add('hidden');
-        }
+        s.classList.toggle('hidden', s.id !== cat);
       }
     });
   }

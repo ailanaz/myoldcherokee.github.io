@@ -67,16 +67,18 @@
 <!-- GUIDES FILTER BAR -->
 <div class="guides-filter-bar">
   <div class="container">
-    <div class="guides-filter-inner">
-      <span style="font-family:'Oswald',sans-serif;font-size:0.72rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-lite);margin-right:0.25rem;flex-shrink:0;">Filter:</span>
-      <button class="filter-pill active-pill" data-cat="all" onclick="filterGuides(this)">All</button>
-      <button class="filter-pill" data-cat="start-here" onclick="filterGuides(this)">Start Here</button>
-      <button class="filter-pill" data-cat="no-start" onclick="filterGuides(this)">No Start</button>
-      <button class="filter-pill" data-cat="overheating" onclick="filterGuides(this)">Overheating</button>
-      <button class="filter-pill" data-cat="electrical" onclick="filterGuides(this)">Electrical</button>
-      <button class="filter-pill" data-cat="suspension" onclick="filterGuides(this)">Suspension &amp; Steering</button>
-      <button class="filter-pill" data-cat="engine-idle" onclick="filterGuides(this)">Engine &amp; Idle</button>
-      <button class="filter-pill" data-cat="4wd" onclick="filterGuides(this)">4WD</button>
+    <div class="filter-dropdown-bar" id="guides-filter-bar" style="border:none;padding:0.25rem 0;">
+      <input type="search" id="guides-search" class="filter-search-input" placeholder="Search guides…" autocomplete="off" oninput="filterGuides()" />
+      <select id="guides-cat" class="filter-select" onchange="filterGuides()" aria-label="Filter by category">
+        <option value="all">All Categories</option>
+        <option value="start-here">Start Here</option>
+        <option value="no-start">No Start</option>
+        <option value="overheating">Overheating</option>
+        <option value="electrical">Electrical</option>
+        <option value="suspension">Suspension &amp; Steering</option>
+        <option value="engine-idle">Engine &amp; Idle</option>
+        <option value="4wd">4WD</option>
+      </select>
     </div>
   </div>
 </div>
@@ -196,15 +198,18 @@
           <li><a href="guides.html">Guides</a></li>
           <li><a href="community.html">Community</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
         </ul>
         <div>
           <h4>Quick Links</h4>
           <ul>
             <li><a href="state-search.html">State Search</a></li>
+            <li><a href="featured.html">Featured Businesses</a></li>
+            <li><a href="featured.html#get-featured">Get Featured</a></li>
             <li><a href="submit.html">List with Us</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="duediligence.html">Due Diligence</a></li>
-            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="faq.html#featured-faq">FAQ – Featured</a></li>
           </ul>
         </div>
       </div>
@@ -219,19 +224,24 @@
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
 
-  function filterGuides(btn) {
-    document.querySelectorAll('.filter-pill').forEach(function (p) { p.classList.remove('active-pill'); });
-    btn.classList.add('active-pill');
-    var cat = btn.getAttribute('data-cat');
-    document.querySelectorAll('.cat-section').forEach(function (s) {
-      if (cat === 'all') {
-        s.classList.remove('hidden');
+  function filterGuides() {
+    var cat = (document.getElementById('guides-cat') || {}).value || 'all';
+    var query = ((document.getElementById('guides-search') || {}).value || '').toLowerCase().trim();
+    document.querySelectorAll('.cat-section').forEach(function(s) {
+      var matchCat = (cat === 'all') || (s.id === cat);
+      if (!matchCat) { s.classList.add('hidden'); return; }
+      if (query) {
+        var cards = s.querySelectorAll('.article-card');
+        var anyVisible = false;
+        cards.forEach(function(c) {
+          var show = c.textContent.toLowerCase().indexOf(query) !== -1;
+          c.style.display = show ? '' : 'none';
+          if (show) anyVisible = true;
+        });
+        s.classList.toggle('hidden', !anyVisible);
       } else {
-        if (s.id === cat) {
-          s.classList.remove('hidden');
-        } else {
-          s.classList.add('hidden');
-        }
+        s.querySelectorAll('.article-card').forEach(function(c) { c.style.display = ''; });
+        s.classList.remove('hidden');
       }
     });
   }

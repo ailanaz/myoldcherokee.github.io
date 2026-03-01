@@ -65,13 +65,14 @@
       <h2>Buy and Sell</h2>
     </div>
 
-    <!-- Filter pills -->
-    <div class="filter-bar">
-      <span class="filter-label">Filter:</span>
-      <button class="filter-pill active-pill" onclick="filterSection(this,'cherokees-grid','all')">All</button>
-      <button class="filter-pill" onclick="filterSection(this,'cherokees-grid','vehicle')">For Sale</button>
-      <button class="filter-pill" onclick="filterSection(this,'cherokees-grid','wanted')">Wanted</button>
-      <button class="filter-pill" onclick="filterSection(this,'cherokees-grid','project')">Project</button>
+    <div class="filter-dropdown-bar" data-grid="cherokees-grid">
+      <input type="search" class="filter-search-input" placeholder="Search listings…" autocomplete="off" oninput="filterDropdown('cherokees-grid')" />
+      <select class="filter-select" onchange="filterDropdown('cherokees-grid')" aria-label="Filter listings">
+        <option value="all">All Types</option>
+        <option value="vehicle">For Sale</option>
+        <option value="wanted">Wanted</option>
+        <option value="project">Project</option>
+      </select>
     </div>
 
     <div class="grid g3" id="cherokees-grid">
@@ -196,15 +197,16 @@
       <h2>Used Parts</h2>
     </div>
 
-    <!-- Filter pills -->
-    <div class="filter-bar">
-      <span class="filter-label">Filter:</span>
-      <button class="filter-pill active-pill" onclick="filterSection(this,'parts-grid','all')">All</button>
-      <button class="filter-pill" onclick="filterSection(this,'parts-grid','engine')">Engine</button>
-      <button class="filter-pill" onclick="filterSection(this,'parts-grid','drivetrain')">Drivetrain</button>
-      <button class="filter-pill" onclick="filterSection(this,'parts-grid','suspension')">Suspension</button>
-      <button class="filter-pill" onclick="filterSection(this,'parts-grid','body')">Body &amp; Interior</button>
-      <button class="filter-pill" onclick="filterSection(this,'parts-grid','electrical')">Electrical</button>
+    <div class="filter-dropdown-bar" data-grid="parts-grid">
+      <input type="search" class="filter-search-input" placeholder="Search parts…" autocomplete="off" oninput="filterDropdown('parts-grid')" />
+      <select class="filter-select" onchange="filterDropdown('parts-grid')" aria-label="Filter parts">
+        <option value="all">All Categories</option>
+        <option value="engine">Engine</option>
+        <option value="drivetrain">Drivetrain</option>
+        <option value="suspension">Suspension</option>
+        <option value="body">Body &amp; Interior</option>
+        <option value="electrical">Electrical</option>
+      </select>
     </div>
 
     <div class="grid g3" id="parts-grid">
@@ -334,15 +336,18 @@
           <li><a href="guides.html">Guides</a></li>
           <li><a href="community.html">Community</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
         </ul>
         <div>
           <h4>Quick Links</h4>
           <ul>
             <li><a href="state-search.html">State Search</a></li>
+            <li><a href="featured.html">Featured Businesses</a></li>
+            <li><a href="featured.html#get-featured">Get Featured</a></li>
             <li><a href="submit.html">List with Us</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="duediligence.html">Due Diligence</a></li>
-            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="faq.html#featured-faq">FAQ – Featured</a></li>
           </ul>
         </div>
       </div>
@@ -396,17 +401,14 @@
   }
   // ────────────────────────────────────────────────────────────────────────────
 
-  function filterSection(btn, gridId, cat) {
-    btn.closest('.filter-bar').querySelectorAll('.filter-pill').forEach(function(p) {
-      p.classList.remove('active-pill');
-    });
-    btn.classList.add('active-pill');
+  function filterDropdown(gridId) {
+    var bar = document.querySelector('.filter-dropdown-bar[data-grid="' + gridId + '"]');
+    var searchVal = (bar.querySelector('.filter-search-input').value || '').toLowerCase().trim();
+    var catVal = bar.querySelector('.filter-select').value;
     document.querySelectorAll('#' + gridId + ' .listing-card').forEach(function(card) {
-      if (cat === 'all' || card.getAttribute('data-cat') === cat) {
-        card.style.display = 'flex';
-      } else {
-        card.style.display = 'none';
-      }
+      var matchCat = (catVal === 'all') || (card.getAttribute('data-cat') === catVal);
+      var matchSearch = !searchVal || card.textContent.toLowerCase().indexOf(searchVal) !== -1;
+      card.style.display = (matchCat && matchSearch) ? 'flex' : 'none';
     });
   }
 </script>

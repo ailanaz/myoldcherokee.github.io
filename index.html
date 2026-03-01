@@ -65,6 +65,54 @@
   </div>
 </section>
 
+<!-- FEATURED SHOPS & SERVICES CAROUSEL -->
+<section class="featured-carousel-section">
+  <div class="container">
+    <div class="featured-carousel-head">
+      <div>
+        <h2 class="home-section-title">Featured Shops &amp; Services</h2>
+        <p class="home-section-desc">These businesses support the site and serve Cherokee owners.</p>
+      </div>
+      <a href="featured.html" class="btn btn-outline btn-sm">View All Featured</a>
+    </div>
+    <div class="carousel-outer">
+      <button class="carousel-btn prev" onclick="carouselMove(-1)" aria-label="Previous">&#8592;</button>
+      <div class="carousel-track-wrap">
+        <div class="carousel-track" id="featured-carousel">
+
+          <!-- BANKER AUTOMOTIVE — first card, real listing -->
+          <a href="https://www.google.com/maps/search/Banker+Automotive,+10404+Slaughter+Creek+Dr,+Austin,+TX+78748" target="_blank" rel="noopener noreferrer" class="featured-biz-card">
+            <div class="featured-biz-img">
+              <div class="featured-biz-initials">BA</div>
+            </div>
+            <div class="featured-biz-body">
+              <div class="featured-biz-header">
+                <span class="featured-badge">Featured</span>
+                <span class="featured-biz-type">Repair Shop</span>
+              </div>
+              <div class="featured-biz-name">Banker Automotive</div>
+              <div class="featured-biz-loc">📍 Austin, TX &nbsp;·&nbsp; <span class="featured-biz-area">TX (78748)</span></div>
+              <p class="featured-biz-desc">One garage we have used for our 96 Jeep Cherokee and were more than pleased with all the work they have done. Reliable, honest, and thorough.</p>
+              <div class="featured-biz-tags">
+                <span class="featured-biz-tag">XJ</span>
+                <span class="featured-biz-tag">General Repair</span>
+                <span class="featured-biz-tag">Austin TX</span>
+              </div>
+              <div class="featured-verified">Submitter verified location &amp; hours</div>
+              <div class="featured-biz-actions">
+                <span class="btn btn-outline btn-sm">📞 (512) 280-0877</span>
+                <span class="btn btn-red btn-sm">📍 Map</span>
+              </div>
+            </div>
+          </a>
+
+        </div><!-- end carousel-track -->
+      </div>
+      <button class="carousel-btn next" onclick="carouselMove(1)" aria-label="Next">&#8594;</button>
+    </div>
+  </div>
+</section>
+
 <!-- BUY & SELL ROW -->
 <section class="home-section">
   <div class="container">
@@ -279,15 +327,18 @@
           <li><a href="guides.html">Guides</a></li>
           <li><a href="community.html">Community</a></li>
           <li><a href="about.html">About</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
         </ul>
         <div>
           <h4>Quick Links</h4>
           <ul>
             <li><a href="state-search.html">State Search</a></li>
+            <li><a href="featured.html">Featured Businesses</a></li>
+            <li><a href="featured.html#get-featured">Get Featured</a></li>
             <li><a href="submit.html">List with Us</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="duediligence.html">Due Diligence</a></li>
-            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="faq.html#featured-faq">FAQ – Featured</a></li>
           </ul>
         </div>
       </div>
@@ -301,6 +352,27 @@
 
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* ── Featured carousel ── */
+  (function() {
+    var track = document.getElementById('featured-carousel');
+    if (!track) return;
+    var pos = 0;
+    var cardW = function() {
+      var card = track.querySelector('.featured-biz-card');
+      if (!card) return 320;
+      var style = window.getComputedStyle(card);
+      return card.offsetWidth + parseInt(style.marginRight || 0, 10) + 16;
+    };
+    window.carouselMove = function(dir) {
+      var cards = track.querySelectorAll('.featured-biz-card');
+      if (!cards.length) return;
+      var visible = Math.max(1, Math.floor(track.parentElement.offsetWidth / cardW()));
+      var max = Math.max(0, cards.length - visible);
+      pos = Math.min(max, Math.max(0, pos + dir));
+      track.style.transform = 'translateX(-' + (pos * cardW()) + 'px)';
+    };
+  })();
 
   (function() {
     var input = document.getElementById('hero-search');
