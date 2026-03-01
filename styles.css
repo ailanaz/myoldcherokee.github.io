@@ -397,8 +397,11 @@ img { max-width: 100%; display: block; }
   .dir-filters { grid-template-columns: 1fr; }
   .form-g2 { grid-template-columns: 1fr; }
   .site-nav { display: none; }
-  .topbar-inner { flex-direction: column; align-items: center; text-align: center; gap: 0.4rem; padding: 0.5rem 0; }
-  .topbar-links { gap: 0.75rem; }
+  .topbar-inner { flex-direction: column; align-items: stretch; gap: 0; padding: 0; }
+  .topbar-inner > span { padding: 0.45rem 1rem; text-align: center; display: block; }
+  .topbar-links { background: #fff; justify-content: center; gap: 0; padding: 0.45rem 0.75rem; flex-wrap: wrap; }
+  .topbar-links a { color: var(--red); opacity: 1; padding: 0.2rem 0.6rem; font-weight: 600; }
+  .header-inner { justify-content: center; }
   .cta-inner { flex-direction: column; }
   .section-head.split { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
   .home-categories .section-head { text-align: left; }
