@@ -296,12 +296,10 @@ img { max-width: 100%; display: block; }
 .search-wrap { position: relative; max-width: 540px; margin-left: auto; margin-right: auto; margin-bottom: 1.4rem; }
 .search-wrap .hero-search-box { margin-bottom: 0; max-width: 100%; }
 .search-dropdown { position: absolute; top: calc(100% + 6px); left: 0; right: 0; background: #fff; border-radius: var(--radius); box-shadow: var(--shadow-lg); z-index: 300; overflow: hidden; border: 1.5px solid var(--line); }
-.search-suggestion { display: flex; align-items: center; gap: 0.75rem; padding: 0.72rem 1.25rem; cursor: pointer; font-size: 0.9rem; color: var(--text); transition: background 0.12s; border-bottom: 1px solid var(--line); text-decoration: none; }
+.search-suggestion { display: block; padding: 0.72rem 1.25rem; cursor: pointer; font-size: 0.9rem; color: var(--text); transition: background 0.12s; border-bottom: 1px solid var(--line); text-decoration: none; }
 .search-suggestion:last-child { border-bottom: none; }
 .search-suggestion:hover { background: var(--off); }
-.search-suggestion-icon { font-size: 1.1rem; flex-shrink: 0; width: 24px; text-align: center; }
-.search-suggestion-text { flex: 1; }
-.search-suggestion-label { font-size: 0.7rem; font-family: 'Oswald', sans-serif; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-lite); margin-left: auto; padding-left: 0.5rem; white-space: nowrap; }
+.search-suggestion-text { display: block; }
 
 /* ARTICLE CARDS (guides) */
 .article-card { background: var(--white); border: var(--moc-outline) solid var(--moc-red); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s; text-decoration: none; color: inherit; }
