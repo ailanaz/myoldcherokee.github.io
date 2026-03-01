@@ -39,6 +39,7 @@
       <a href="../directory.html">Directory</a>
       <a href="../guides.html">Guides</a>
       <a href="../community.html">Community</a>
+      <a href="../blog/index.html">Blog</a>
     </nav>
   </div>
 </header>
@@ -60,33 +61,57 @@
     <div id="state-page" data-state="TX" data-state-name="Texas"></div>
 
     <!-- FEATURED BUSINESSES — Texas -->
-    <div style="margin-bottom:2rem;">
-      <div style="font-family:'Oswald',sans-serif;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--red);margin-bottom:0.75rem;">Featured in Texas</div>
+    <div class="state-featured-section">
+      <div class="state-featured-label">Featured in Texas</div>
+      <div class="state-featured-track">
 
-      <a href="https://www.google.com/maps/search/Banker+Automotive,+10404+Slaughter+Creek+Dr,+Austin,+TX+78748" target="_blank" rel="noopener noreferrer" style="display:flex;gap:1rem;background:#fff;border:1.5px solid #e5e5e5;border-radius:10px;padding:1.25rem;text-decoration:none;color:inherit;margin-bottom:0.75rem;align-items:flex-start;transition:box-shadow 0.2s;">
-        <div style="flex-shrink:0;">
-          <div class="featured-biz-initials">BA</div>
-        </div>
-        <div style="flex:1;min-width:0;">
-          <div style="display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap;margin-bottom:0.35rem;">
-            <span class="featured-badge">Featured</span>
-            <span class="featured-biz-type">Repair Shop</span>
+        <!-- Card 1: Banker Automotive Inc. (active) -->
+        <a href="https://www.google.com/maps/search/Banker+Automotive,+10404+Slaughter+Creek+Dr,+Austin,+TX+78748" target="_blank" rel="noopener noreferrer" class="state-feat-card">
+          <div class="state-feat-img">
+            <img src="../assets/images/banker-automotive.png" alt="Banker Automotive shop in Manchaca TX" />
           </div>
-          <div class="featured-biz-name">Banker Automotive Inc.</div>
-          <div class="featured-biz-loc">📍 Manchaca, TX &nbsp;·&nbsp; <span class="featured-biz-area">TX (78748)</span></div>
-          <p class="featured-biz-desc" style="margin:0.5rem 0 0.5rem;">One shop we have used for our 96 XJ Cherokee. Reliable and honest work. Mon–Fri 8am–6pm, closed weekends. First-come, first-served — no appointments. After-hours drop-off: park right of the commercial dumpster.</p>
-          <div class="featured-biz-tags">
-            <span class="featured-biz-tag">XJ</span>
-            <span class="featured-biz-tag">General Repair</span>
-            <span class="featured-biz-tag">Manchaca TX</span>
+          <div class="state-feat-body">
+            <div class="state-feat-badges">
+              <span class="featured-badge">Featured</span>
+              <span class="featured-biz-type">Repair Shop</span>
+            </div>
+            <div class="state-feat-name">Banker Automotive Inc.</div>
+            <div class="state-feat-loc">📍 Manchaca, TX &nbsp;·&nbsp; 78748</div>
+            <p class="state-feat-desc">One shop we have used for our 96 XJ Cherokee. Reliable and honest work. Mon–Fri 8am–6pm, closed weekends. First-come, first-served, no appointments. After-hours drop-off: park right of the commercial dumpster.</p>
+            <div class="featured-biz-tags" style="margin-bottom:0.6rem;">
+              <span class="featured-biz-tag">XJ</span>
+              <span class="featured-biz-tag">General Repair</span>
+              <span class="featured-biz-tag">Manchaca TX</span>
+            </div>
+            <div class="featured-verified">Submitter verified location, hours &amp; contact</div>
+            <div class="state-feat-actions">
+              <span class="btn btn-outline btn-sm">📞 (512) 280-0877</span>
+              <span class="btn btn-red btn-sm">📍 Map</span>
+            </div>
           </div>
-          <div class="featured-verified" style="margin-top:0.5rem;">Submitter verified location, hours &amp; contact</div>
-          <div class="featured-biz-actions" style="margin-top:0.75rem;">
-            <span class="btn btn-outline btn-sm">📞 (512) 280-0877</span>
-            <span class="btn btn-red btn-sm">📍 Map</span>
+        </a>
+
+        <!-- Card 2: Placeholder -->
+        <a href="../featured.html#get-featured" class="state-feat-card state-feat-card--inactive">
+          <div class="state-feat-img--empty">+</div>
+          <div class="state-feat-placeholder-body">
+            <div class="state-feat-placeholder-title">Get Featured Here</div>
+            <p class="state-feat-placeholder-sub">Repair shop, parts seller, or salvage yard in Texas? Get your business in front of XJ owners.</p>
+            <span class="btn btn-red btn-sm">Learn More &rarr;</span>
           </div>
-        </div>
-      </a>
+        </a>
+
+        <!-- Card 3: Placeholder -->
+        <a href="../featured.html#get-featured" class="state-feat-card state-feat-card--inactive">
+          <div class="state-feat-img--empty">+</div>
+          <div class="state-feat-placeholder-body">
+            <div class="state-feat-placeholder-title">Get Featured Here</div>
+            <p class="state-feat-placeholder-sub">Repair shop, parts seller, or salvage yard in Texas? Get your business in front of XJ owners.</p>
+            <span class="btn btn-red btn-sm">Learn More &rarr;</span>
+          </div>
+        </a>
+
+      </div>
     </div>
 
     <!-- Buy and Sell listings render here -->
