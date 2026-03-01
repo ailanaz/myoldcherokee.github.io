@@ -89,23 +89,19 @@
   <div class="container">
     <h1>Shops, Yards &amp; More</h1>
     <p class="hero-sub">Find repair shops, salvage yards, and parts sources for older Cherokee models.</p>
-  </div>
-</section>
-
-<!-- DIRECTORY FILTER BAR -->
-<div class="dir-filter-bar">
-  <div class="container">
-    <div class="filter-dropdown-bar" style="border:none;padding:0.25rem 0;">
-      <span class="filter-label">Filter:</span>
-      <select id="dir-cat" class="filter-select" onchange="filterDirectory()" aria-label="Filter directory sections">
-        <option value="all">All Sections</option>
-        <option value="repair-shops">Repair Shops</option>
-        <option value="junkyards">Salvage &amp; Junk Yards</option>
-        <option value="shop-parts">Shop for Parts</option>
-      </select>
+    <div class="page-filter-hero">
+      <div class="page-filter-hero-label">What do you need?</div>
+      <div class="page-filter-hero-box">
+        <select id="dir-cat" class="filter-select" onchange="filterDirectory()" aria-label="Filter directory sections">
+          <option value="all">All Sections</option>
+          <option value="repair-shops">Repair Shops</option>
+          <option value="junkyards">Salvage &amp; Junk Yards</option>
+          <option value="shop-parts">Shop for Parts</option>
+        </select>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
 <div class="container">
 
@@ -148,19 +144,21 @@
     </div>
 
     <!-- Shop type filter -->
-    <div class="filter-dropdown-bar" style="margin-bottom:1.5rem;">
-      <span class="filter-label">Filter:</span>
-      <select id="shops-cat" class="filter-select" onchange="setFilterDropdown()" aria-label="Filter by shop type">
-        <option value="all">All Types</option>
-        <option value="general">General Repair</option>
-        <option value="electrical">Electrical</option>
-        <option value="cooling">Cooling &amp; Radiator</option>
-        <option value="suspension">Suspension &amp; Alignment</option>
-        <option value="4x4">4x4 &amp; Off-Road</option>
-        <option value="driveline">Driveline &amp; Axle</option>
-        <option value="diagnostics">Diagnostics</option>
-        <option value="towing">Towing &amp; Recovery</option>
-      </select>
+    <div class="section-filter-wrap">
+      <div class="section-filter-label">What type of shop?</div>
+      <div class="section-filter-box">
+        <select id="shops-cat" class="filter-select" onchange="setFilterDropdown()" aria-label="Filter by shop type">
+          <option value="all">All Types</option>
+          <option value="general">General Repair</option>
+          <option value="electrical">Electrical</option>
+          <option value="cooling">Cooling &amp; Radiator</option>
+          <option value="suspension">Suspension &amp; Alignment</option>
+          <option value="4x4">4x4 &amp; Off-Road</option>
+          <option value="driveline">Driveline &amp; Axle</option>
+          <option value="diagnostics">Diagnostics</option>
+          <option value="towing">Towing &amp; Recovery</option>
+        </select>
+      </div>
     </div>
 
     <!-- Listing cards -->

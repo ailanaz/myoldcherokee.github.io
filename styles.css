@@ -496,6 +496,20 @@ img { max-width: 100%; display: block; }
 .featured-vendor-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; }
 
 /* ── FILTER DROPDOWN BAR ──────────────────────────────────────────────────── */
+/* Centered page-level filter widget — placed inside .page-hero */
+.page-filter-hero { max-width: 520px; margin: 1.75rem auto 0; text-align: center; }
+.page-filter-hero-label { font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 0.6rem; }
+.page-filter-hero-box { background: #fff; border-radius: var(--radius-full); padding: 0.3rem 0.5rem 0.3rem 1.4rem; display: flex; align-items: center; box-shadow: var(--shadow-lg); }
+.page-filter-hero-box .filter-select { flex: 1; border: none; background: transparent; box-shadow: none; height: 44px; font-size: 0.95rem; color: var(--text); padding-left: 0; }
+.page-filter-hero-box .filter-select:focus { box-shadow: none; border-color: transparent; }
+
+/* Centered section-level filter (not in hero — white background sections) */
+.section-filter-wrap { max-width: 520px; margin: 0 auto 1.75rem; text-align: center; }
+.section-filter-label { font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-lite); margin-bottom: 0.6rem; }
+.section-filter-box { background: var(--off); border-radius: var(--radius-full); padding: 0.3rem 0.5rem 0.3rem 1.4rem; display: flex; align-items: center; border: 1.5px solid var(--line); box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.section-filter-box .filter-select { flex: 1; border: none; background: transparent; box-shadow: none; height: 44px; font-size: 0.95rem; color: var(--text); padding-left: 0; }
+.section-filter-box .filter-select:focus { box-shadow: none; border-color: transparent; }
+
 .filter-dropdown-bar { display: flex; gap: 0.75rem; align-items: center; margin-bottom: 1.75rem; flex-wrap: wrap; }
 .filter-search-input { height: 42px; border-radius: var(--radius-full); border: 1.5px solid var(--line); background: var(--off); color: var(--text); padding: 0 1.1rem; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; outline: none; transition: border-color 0.2s; min-width: 160px; flex: 1; }
 .filter-search-input:focus { border-color: var(--red); background: var(--white); box-shadow: 0 0 0 3px var(--red-lite); }

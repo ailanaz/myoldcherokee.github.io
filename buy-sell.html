@@ -49,6 +49,17 @@
   <div class="container">
     <h1>Vehicles, Parts &amp; Wanted</h1>
     <p class="hero-sub">Browse listings or post your own Cherokee vehicle, parts, or wanted ad.</p>
+    <div class="page-filter-hero" data-grid="cherokees-grid">
+      <div class="page-filter-hero-label">What are you looking for?</div>
+      <div class="page-filter-hero-box">
+        <select class="filter-select" onchange="filterDropdown('cherokees-grid')" aria-label="Filter listings">
+          <option value="all">All Types</option>
+          <option value="vehicle">For Sale</option>
+          <option value="wanted">Wanted</option>
+          <option value="project">Project</option>
+        </select>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -63,16 +74,6 @@
 
     <div class="section-head left">
       <h2>Buy and Sell</h2>
-    </div>
-
-    <div class="filter-dropdown-bar" data-grid="cherokees-grid">
-      <span class="filter-label">Filter:</span>
-      <select class="filter-select" onchange="filterDropdown('cherokees-grid')" aria-label="Filter listings">
-        <option value="all">All Types</option>
-        <option value="vehicle">For Sale</option>
-        <option value="wanted">Wanted</option>
-        <option value="project">Project</option>
-      </select>
     </div>
 
     <div class="grid g3" id="cherokees-grid">
@@ -197,16 +198,18 @@
       <h2>Used Parts</h2>
     </div>
 
-    <div class="filter-dropdown-bar" data-grid="parts-grid">
-      <span class="filter-label">Filter:</span>
-      <select class="filter-select" onchange="filterDropdown('parts-grid')" aria-label="Filter parts">
-        <option value="all">All Categories</option>
-        <option value="engine">Engine</option>
-        <option value="drivetrain">Drivetrain</option>
-        <option value="suspension">Suspension</option>
-        <option value="body">Body &amp; Interior</option>
-        <option value="electrical">Electrical</option>
-      </select>
+    <div class="section-filter-wrap" data-grid="parts-grid">
+      <div class="section-filter-label">What type of part?</div>
+      <div class="section-filter-box">
+        <select class="filter-select" onchange="filterDropdown('parts-grid')" aria-label="Filter parts">
+          <option value="all">All Categories</option>
+          <option value="engine">Engine</option>
+          <option value="drivetrain">Drivetrain</option>
+          <option value="suspension">Suspension</option>
+          <option value="body">Body &amp; Interior</option>
+          <option value="electrical">Electrical</option>
+        </select>
+      </div>
     </div>
 
     <div class="grid g3" id="parts-grid">
@@ -403,9 +406,9 @@
   // ────────────────────────────────────────────────────────────────────────────
 
   function filterDropdown(gridId) {
-    var bar = document.querySelector('.filter-dropdown-bar[data-grid="' + gridId + '"]');
-    var searchVal = ((bar.querySelector('.filter-search-input') || {}).value || '').toLowerCase().trim();
-    var catVal = bar.querySelector('.filter-select').value;
+    var bar = document.querySelector('[data-grid="' + gridId + '"]');
+    var searchVal = ((bar && bar.querySelector('.filter-search-input') || {}).value || '').toLowerCase().trim();
+    var catVal = (bar && bar.querySelector('.filter-select')) ? bar.querySelector('.filter-select').value : 'all';
     document.querySelectorAll('#' + gridId + ' .listing-card').forEach(function(card) {
       var matchCat = (catVal === 'all') || (card.getAttribute('data-cat') === catVal);
       var matchSearch = !searchVal || card.textContent.toLowerCase().indexOf(searchVal) !== -1;
