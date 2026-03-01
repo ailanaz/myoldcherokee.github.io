@@ -363,7 +363,7 @@
   // Zapier picks up every new submission and emails the seller_email field.
   //
   // Zapier Zap:
-  //   Trigger : Tally → New Submission (form: xXd0Ay)
+  //   Trigger : Tally → New Submission (form: J928BY)
   //   Action  : Gmail → Send Email
   //             To      = {{seller_email}}
   //             Subject = "New buyer inquiry: {{listing_title}}"
@@ -372,7 +372,7 @@
   // Usage in each listing card:
   //   onclick="openSellerContact('seller@email.com', 'Listing Title')"
 
-  var CONTACT_FORM_ID = 'xXd0Ay'; // single shared Tally form
+  var CONTACT_FORM_ID = 'J928BY'; // single shared Tally form
 
   function openSellerContact(sellerEmail, listingTitle) {
     if (typeof Tally !== 'undefined') {
