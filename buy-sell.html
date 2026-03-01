@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="favicon.png" type="image/png" />
+  <script async src="https://tally.so/widgets/embed.js"></script>
 </head>
 <body>
 
@@ -90,7 +91,7 @@
           <div class="listing-price">$4,200 <span class="listing-price-note">OBO</span></div>
           <p class="listing-summary">This is how your listing will appear. Sellers can add photos, a full description, condition notes, mileage, and contact info.</p>
           <div class="listing-actions">
-            <a href="submit.html" class="btn btn-red btn-sm">Post Like This</a>
+            <button class="btn btn-red btn-sm" onclick="openSellerContact('xj-001','1999 Jeep Cherokee Sport 4x4')">Contact Seller</button>
           </div>
         </div>
       </div>
@@ -110,7 +111,7 @@
           <div class="listing-price">$5,500 <span class="listing-price-note">firm</span></div>
           <p class="listing-summary">Listings with photos get more attention. Upload up to 8 images when you submit. Photos appear right in the image area above.</p>
           <div class="listing-actions">
-            <a href="submit.html" class="btn btn-red btn-sm">Post Like This</a>
+            <button class="btn btn-red btn-sm" onclick="openSellerContact('zj-001','1997 Grand Cherokee Limited 4x4')">Contact Seller</button>
           </div>
         </div>
       </div>
@@ -130,7 +131,7 @@
           <div class="listing-price">$2,200 <span class="listing-price-note">as-is</span></div>
           <p class="listing-summary">Project listings show the vehicle's current state, what's been done, and what still needs work. Great for buyers looking for a build to continue.</p>
           <div class="listing-actions">
-            <a href="submit.html" class="btn btn-red btn-sm">Post Like This</a>
+            <button class="btn btn-red btn-sm" onclick="openSellerContact('xj-project-001','2001 XJ Project Build')">Contact Seller</button>
           </div>
         </div>
       </div>
@@ -150,7 +151,7 @@
           <div class="listing-price">Offer</div>
           <p class="listing-summary">Post what you're looking for and let sellers come to you. Include year range, condition preferences, and your location or shipping terms.</p>
           <div class="listing-actions">
-            <a href="submit.html" class="btn btn-red btn-sm">Post Wanted Ad</a>
+            <button class="btn btn-red btn-sm" onclick="openSellerContact('wanted-001','Wanted: Clean XJ 1997-2001')">Contact Seller</button>
           </div>
         </div>
       </div>
@@ -216,7 +217,7 @@
           <div class="listing-price">$1,800 <span class="listing-price-note">pickup only</span></div>
           <p class="listing-summary">Parts listings support photos and detailed descriptions. Great for engines, heads, and complete powertrain assemblies.</p>
           <div class="listing-actions">
-            <a href="submit.html" class="btn btn-red btn-sm">Post Like This</a>
+            <button class="btn btn-red btn-sm" onclick="openSellerContact('parts-engine-001','4.0L Long Block 110k Miles')">Contact Seller</button>
           </div>
         </div>
       </div>
@@ -236,7 +237,7 @@
           <div class="listing-price">$650 <span class="listing-price-note">OBO</span></div>
           <p class="listing-summary">Transmission, transfer case, axles, and driveshaft listings. Confirm fitment for your exact year and model before buying.</p>
           <div class="listing-actions">
-            <a href="submit.html" class="btn btn-red btn-sm">Post Like This</a>
+            <button class="btn btn-red btn-sm" onclick="openSellerContact('parts-drivetrain-001','AW4 Automatic Transmission')">Contact Seller</button>
           </div>
         </div>
       </div>
@@ -256,7 +257,7 @@
           <div class="listing-price">$220 <span class="listing-price-note">all included</span></div>
           <p class="listing-summary">Lift kits, control arms, track bars, and shocks. Include full details and what vehicle it came off of for the best response.</p>
           <div class="listing-actions">
-            <a href="submit.html" class="btn btn-red btn-sm">Post Like This</a>
+            <button class="btn btn-red btn-sm" onclick="openSellerContact('parts-suspension-001','3.5 Inch Lift Kit Complete')">Contact Seller</button>
           </div>
         </div>
       </div>
@@ -276,7 +277,7 @@
           <div class="listing-price">$350 <span class="listing-price-note">local pickup</span></div>
           <p class="listing-summary">Body panels, bumpers, doors, interior trim, and glass. Include color code and year compatibility for faster sales.</p>
           <div class="listing-actions">
-            <a href="submit.html" class="btn btn-red btn-sm">Post Like This</a>
+            <button class="btn btn-red btn-sm" onclick="openSellerContact('parts-body-001','XJ Front Clip Hood Fenders Grille')">Contact Seller</button>
           </div>
         </div>
       </div>
@@ -296,7 +297,7 @@
           <div class="listing-price">$120 <span class="listing-price-note">shipped</span></div>
           <p class="listing-summary">ECU, PCM, sensors, switches, and wiring listings. Include the exact VIN or year and engine for compatibility verification.</p>
           <div class="listing-actions">
-            <a href="submit.html" class="btn btn-red btn-sm">Post Like This</a>
+            <button class="btn btn-red btn-sm" onclick="openSellerContact('parts-electrical-001','PCM ECU 1999 XJ 4.0L')">Contact Seller</button>
           </div>
         </div>
       </div>
@@ -363,6 +364,33 @@
 
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // ── CONTACT SELLER ──────────────────────────────────────────────────────────
+  // Replace YOUR_TALLY_FORM_ID with your Tally contact form ID once created.
+  // Each listing passes its own ID and title — Tally sends both to Zapier/Make.
+  var CONTACT_FORM_ID = 'YOUR_TALLY_FORM_ID';
+
+  function openSellerContact(listingId, listingTitle) {
+    if (typeof Tally !== 'undefined') {
+      Tally.openPopup(CONTACT_FORM_ID, {
+        layout: 'modal',
+        overlay: true,
+        hiddenFields: {
+          listing_id: listingId,
+          listing_title: listingTitle
+        }
+      });
+    } else {
+      // Fallback if embed.js hasn't loaded yet
+      window.open(
+        'https://tally.so/r/' + CONTACT_FORM_ID +
+        '?listing_id=' + encodeURIComponent(listingId) +
+        '&listing_title=' + encodeURIComponent(listingTitle),
+        '_blank'
+      );
+    }
+  }
+  // ────────────────────────────────────────────────────────────────────────────
 
   function filterSection(btn, gridId, cat) {
     btn.closest('.filter-bar').querySelectorAll('.filter-pill').forEach(function(p) {
