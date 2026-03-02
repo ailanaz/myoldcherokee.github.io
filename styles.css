@@ -560,6 +560,23 @@ img { max-width: 100%; display: block; }
 .get-featured-nudge { background: var(--off); border: 1.5px dashed var(--amber); border-radius: var(--radius); padding: 0.85rem 1.1rem; font-size: 0.86rem; color: var(--text-mid); display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem; }
 .get-featured-nudge strong { color: var(--text); }
 
+/* ── STAR RATINGS ─────────────────────────────────────────────────────────── */
+.biz-rating-wrap { margin: 0.35rem 0 0.5rem; }
+.biz-rating-row { display: flex; align-items: center; flex-wrap: wrap; gap: 0.3rem; font-size: 0.8rem; line-height: 1.4; }
+.biz-rating-stars { color: var(--amber); font-weight: 700; font-size: 0.82rem; }
+.biz-rating-count { color: var(--text-lite); font-size: 0.78rem; }
+.biz-rating-none { color: var(--text-lite); font-size: 0.78rem; font-style: italic; }
+.rating-already { color: var(--text-lite); font-size: 0.75rem; }
+.biz-rating-row .rating-open-btn { padding: 0.12rem 0.55rem; height: 24px; font-size: 0.72rem; line-height: 1; }
+.rating-form { display: none; align-items: center; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.4rem; padding: 0.5rem 0.65rem; background: var(--off); border: 1px solid var(--line); border-radius: var(--radius-sm); }
+.rating-form.open { display: flex; }
+.star-picker { display: flex; gap: 0.1rem; }
+.sp-star { font-size: 1.4rem; cursor: pointer; color: var(--line-mid); transition: color 0.08s; line-height: 1; user-select: none; }
+.sp-star.sp-hover { color: var(--amber); }
+.sp-star.sp-active { color: var(--amber); }
+.rating-form .rating-submit-btn { padding: 0.2rem 0.7rem; height: 28px; font-size: 0.75rem; }
+.rating-confirm { font-size: 0.8rem; color: var(--green); font-weight: 600; }
+
 /* ── RESPONSIVE ADDITIONS ─────────────────────────────────────────────────── */
 @media (max-width: 1024px) {
   .pricing-grid { grid-template-columns: 1fr 1fr; }
