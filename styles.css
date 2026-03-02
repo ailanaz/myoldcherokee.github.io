@@ -54,8 +54,8 @@ img { max-width: 100%; display: block; }
 .site-header { background: var(--white); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow-sm); }
 .header-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; gap: 2rem; }
 .brand { display: flex; align-items: center; gap: 0.65rem; flex-shrink: 0; text-decoration: none; }
-.brand img { max-height: 42px; max-width: 200px; height: auto; width: auto; display: block; }
-.brand-name { font-family: 'Oswald', sans-serif; font-size: 1.3rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--red); }
+.brand img { max-height: 50px; max-width: 240px; height: auto; width: auto; display: block; }
+.brand-name { display: none; }
 
 /* NAV */
 .site-nav { display: flex; align-items: center; gap: 0.05rem; }
