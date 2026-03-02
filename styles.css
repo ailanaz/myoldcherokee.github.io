@@ -340,6 +340,8 @@ img { max-width: 100%; display: block; }
 .listing-card--inactive:hover { transform: none; box-shadow: none; border-color: var(--line-mid); }
 .listing-card--inactive .listing-thumb { background: var(--off-2) !important; }
 .listing-card--inactive .listing-thumb-icon { font-size: 2rem; color: var(--line-mid); }
+.listing-card--inactive .listing-image-wrap { background: var(--off-2); }
+.listing-card--inactive .listing-no-photo::after { content: 'YOUR PHOTO GOES HERE'; color: var(--line-mid); }
 
 /* HOME SECTION ROWS */
 .home-section { padding: 3.5rem 0; border-top: 1px solid var(--line); }
