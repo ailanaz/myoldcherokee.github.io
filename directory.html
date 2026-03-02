@@ -70,19 +70,7 @@
 </head>
 <body>
 
-<div class="topbar">
-  <div class="container topbar-inner">
-    <span>#1 Independent buy and sell directory and resource hub for owners of older Cherokee models</span>
-    <div class="topbar-links">
-      <a href="index.html">Home</a>
-      <a href="state-search.html">Map</a>
-      <a href="buy-sell.html">Buy &amp; Sell</a>
-      <a href="directory.html">Directory</a>
-      <a href="guides.html">Guides</a>
-      <a href="community.html">Community</a>
-    </div>
-  </div>
-</div>
+
 
 <header class="site-header">
   <div class="container header-inner">
@@ -90,15 +78,27 @@
       <img src="og-logo.jpg" alt="MyOldCherokee.com" />
       <span class="brand-name">MyOldCherokee.com</span>
     </a>
+    <span class="header-tagline">#1 Independent buy and sell directory and resource hub for owners of older Cherokee models</span>
     <nav class="site-nav">
-      
-      <a href="submit.html">Post</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">About</a>
-      <a href="blog/index.html">Blog</a>
+      <a href="index.html">Home</a>
+      <a href="state-search.html">States</a>
+      <a href="buy-sell.html">Buy &amp; Sell</a>
+      <a href="directory.html">Directory</a>
+      <a href="guides.html">Guides</a>
+      <a href="community.html">Chat</a>
+      <div class="nav-more">
+        <button class="nav-more-btn" onclick="this.closest('.nav-more').classList.toggle('open')" aria-expanded="false" aria-haspopup="true">More &#9663;</button>
+        <div class="nav-more-menu">
+          <a href="submit.html">Post</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+          <a href="blog/index.html">Blog</a>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
+<script>document.addEventListener('click',function(e){if(!e.target.closest('.nav-more'))document.querySelectorAll('.nav-more.open').forEach(function(m){m.classList.remove('open');m.querySelector('.nav-more-btn').setAttribute('aria-expanded','false');});});</script>
 
 <!-- PAGE HERO -->
 <section class="page-hero">
@@ -115,6 +115,8 @@
       <option value="repair-shops">Repair Shops</option>
       <option value="junkyards">Salvage &amp; Junk Yards</option>
       <option value="shop-parts">Shop for Parts</option>
+      <option value="tires-wheels">Tires &amp; Wheels</option>
+      <option value="body-shop">Body Shops</option>
       <option value="fabrication">Fabrication &amp; Welding (4x4)</option>
     </select>
   </div>
@@ -208,6 +210,246 @@
       </div>
     </div>
 
+    <!-- TEXAS REPAIR SHOPS -->
+    <div class="subcat-header">
+      <h3>Texas</h3>
+      <div class="subcat-divider"></div>
+    </div>
+    <div class="grid g3">
+
+      <div class="biz-card" data-business-id="just-jeeps-austin-tx" data-cats="general 4x4">
+        <div class="biz-logo-wrap"><div class="biz-logo">JJ</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Repair · Jeep Specialist</span>
+          <div class="biz-name">Just Jeeps</div>
+          <div class="biz-loc">Austin, TX</div>
+          <p class="biz-desc">Austin's dedicated Jeep-only repair shop. Highest quality products and services for all Jeep models including the XJ Cherokee.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.justjeepsaustin.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Just+Jeeps+Austin+TX" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="jnt-automotive-houston-tx" data-cats="general 4x4 driveline">
+        <div class="biz-logo-wrap"><div class="biz-logo">JT</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Repair · ASE Certified</span>
+          <div class="biz-name">J&amp;T Automotive</div>
+          <div class="biz-loc">Houston, TX</div>
+          <p class="biz-desc">Decades of experience with Jeep repair in Houston. ASE-certified mechanics, honest work, and 4WD/AWD system diagnostics and repairs.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://jntautomotive.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/J%26T+Automotive+Houston+TX" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="chimney-rock-car-care-houston-tx" data-cats="general suspension diagnostics">
+        <div class="biz-logo-wrap"><div class="biz-logo">CR</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Repair · General &amp; Suspension</span>
+          <div class="biz-name">Chimney Rock Car Care</div>
+          <div class="biz-loc">Houston, TX</div>
+          <p class="biz-desc">Trusted Houston Jeep repair. Oil changes through complex repairs for Cherokee, Wrangler, and all Jeep models. Competitive pricing.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://chimneyrockcarcare.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Chimney+Rock+Car+Care+Houston+TX" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="paynes-automotive-houston-tx" data-cats="general suspension">
+        <div class="biz-logo-wrap"><div class="biz-logo">PA</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Repair · General</span>
+          <div class="biz-name">Payne's Automotive</div>
+          <div class="biz-loc">Houston, TX</div>
+          <p class="biz-desc">Expert Jeep repairs and service in Houston. Full-service shop for Cherokee and all Jeep models. Book online or call for availability.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.paynesautomotive.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Payne%27s+Automotive+Houston+TX" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="silva-family-auto-san-antonio-tx" data-cats="general 4x4 suspension">
+        <div class="biz-logo-wrap"><div class="biz-logo">SF</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Repair · 4x4 Specialist</span>
+          <div class="biz-name">Silva Family Automotive</div>
+          <div class="biz-loc">San Antonio, TX</div>
+          <p class="biz-desc">Certified technicians trained in Jeep 4x4 systems. OEM parts, advanced diagnostics, and nationwide warranty. Keeps your XJ adventure-ready.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.silvafamilyautomotive.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Silva+Family+Automotive+San+Antonio+TX" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="goose-auto-repair-san-antonio-tx" data-cats="general suspension">
+        <div class="biz-logo-wrap"><div class="biz-logo">GA</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Repair · ASE Certified</span>
+          <div class="biz-name">Goose Auto Repair</div>
+          <div class="biz-loc">San Antonio, TX</div>
+          <p class="biz-desc">Near Hill Country Village. ASE-certified shop for classic Cherokee and all Jeep models. Factory-scheduled maintenance through complex repairs.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://gooseautorepair.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Goose+Auto+Repair+San+Antonio+TX" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="rick-rays-auto-fort-worth-tx" data-cats="general suspension driveline">
+        <div class="biz-logo-wrap"><div class="biz-logo">RR</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Repair · General</span>
+          <div class="biz-name">Rick &amp; Ray's Auto Plaza</div>
+          <div class="biz-loc">Fort Worth, TX</div>
+          <p class="biz-desc">Fort Worth auto repair serving DFW Jeep owners. Full-service repair and maintenance for Cherokee, Wrangler, and other 4x4 vehicles.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.google.com/maps/search/Rick+and+Rays+Auto+Plaza+Fort+Worth+TX" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="west-ave-automotive-san-antonio-tx" data-cats="general driveline">
+        <div class="biz-logo-wrap"><div class="biz-logo">WA</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Repair · Transmission &amp; General</span>
+          <div class="biz-name">West Ave Automotive &amp; Transmissions</div>
+          <div class="biz-loc">San Antonio, TX</div>
+          <p class="biz-desc">Trusted Jeep repair in San Antonio with reliable maintenance. Technicians diagnose the root cause, not just the symptom, for long-lasting Cherokee repairs.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.westaveautomotive.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/West+Ave+Automotive+San+Antonio+TX" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end TX repair grid -->
+
+    <!-- TENNESSEE REPAIR SHOPS -->
+    <div class="subcat-header" style="margin-top:2.5rem;">
+      <h3>Tennessee</h3>
+      <div class="subcat-divider"></div>
+    </div>
+    <div class="grid g3">
+
+      <div class="biz-card" data-business-id="terrys-service-center-nashville-tn" data-cats="general suspension">
+        <div class="biz-logo-wrap"><div class="biz-logo">TS</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Repair · General</span>
+          <div class="biz-name">Terry's Service Center</div>
+          <div class="biz-loc">Nashville, TN</div>
+          <p class="biz-desc">Expert Jeep repairs and maintenance since 1990. Long-running Nashville shop with a high standard for customer service and Cherokee-specific knowledge.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.terrysservicecenter.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Terry%27s+Service+Center+Nashville+TN" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="tennessee-off-road-lebanon-tn" data-cats="driveline 4x4 suspension">
+        <div class="biz-logo-wrap"><div class="biz-logo">TO</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Repair · Driveline &amp; 4x4</span>
+          <div class="biz-name">Tennessee Off Road, LLC</div>
+          <div class="biz-loc">Lebanon, TN (near Nashville)</div>
+          <p class="biz-desc">Recommended Jeep driveline repair shop near Nashville. Specializes in 4x4 drivetrain work for XJ and other Jeep platforms. Nashville line: 615-248-8638.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.google.com/maps/search/Tennessee+Off+Road+LLC+Lebanon+TN" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="the-car-people-nashville-tn" data-cats="general suspension">
+        <div class="biz-logo-wrap"><div class="biz-logo">CP</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Repair · General</span>
+          <div class="biz-name">The Car People LLC</div>
+          <div class="biz-loc">Nashville &amp; Murfreesboro, TN</div>
+          <p class="biz-desc">Certified technicians in Nashville and Murfreesboro delivering quality Jeep repair at competitive prices. Two Middle TN locations.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://thecarpeoplellc.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/The+Car+People+Nashville+TN" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="all-terrain-auto-care-knoxville-tn" data-cats="general 4x4">
+        <div class="biz-logo-wrap"><div class="biz-logo">AT</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Repair · Jeep Specialist</span>
+          <div class="biz-name">All Terrain Auto Care</div>
+          <div class="biz-loc">Knoxville, TN</div>
+          <p class="biz-desc">Formerly Just Jeeps and More — Knoxville's dedicated Jeep specialist. Services XJ Cherokees, Wranglers, Grand Cherokees, and all Jeep models.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.allterrainautocare.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/All+Terrain+Auto+Care+Knoxville+TN" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="autoxtend-knoxville-tn" data-cats="general suspension 4x4">
+        <div class="biz-logo-wrap"><div class="biz-logo">AX</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Repair · Off-Road</span>
+          <div class="biz-name">AutoXtend</div>
+          <div class="biz-loc">Knoxville, TN</div>
+          <p class="biz-desc">Rock crawlers to daily drivers — dependable Jeep repair supporting your off-road lifestyle. High-quality, affordable service at 1309 E Beaver Creek Dr.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.autoxtend.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/AutoXtend+Knoxville+TN" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="ss-auto-repair-chattanooga-tn" data-cats="general diagnostics suspension">
+        <div class="biz-logo-wrap"><div class="biz-logo">SS</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Repair · General</span>
+          <div class="biz-name">S&amp;S Auto Repair</div>
+          <div class="biz-loc">Chattanooga, TN</div>
+          <p class="biz-desc">Professional Jeep repair in Chattanooga for Wrangler, Cherokee, Grand Cherokee, Compass, and Gladiator. Advanced diagnostic tools and expert technicians.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://ssautorepair.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/S%26S+Auto+Repair+Chattanooga+TN" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="hydes-automotive-chattanooga-tn" data-cats="general diagnostics">
+        <div class="biz-logo-wrap"><div class="biz-logo">HA</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Repair · General</span>
+          <div class="biz-name">Hyde's Automotive</div>
+          <div class="biz-loc">Chattanooga, TN</div>
+          <p class="biz-desc">State-of-the-art Jeep repair in Chattanooga. Advanced diagnostics and high standards for excellence on Cherokee and all Jeep models.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.takeittohydes.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Hyde%27s+Automotive+Chattanooga+TN" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="winchester-tire-memphis-tn" data-cats="general suspension">
+        <div class="biz-logo-wrap"><div class="biz-logo">WT</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Repair · Tire &amp; Alignment</span>
+          <div class="biz-name">Todd Holliday's Winchester Tire</div>
+          <div class="biz-loc">Memphis, TN</div>
+          <p class="biz-desc">Repairing Jeeps since 1972. Full service for Cherokee and all Jeep models serving Memphis, Cordova, Germantown, and Desoto County, MS.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://winchestertire.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Winchester+Tire+Memphis+TN" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end TN repair grid -->
+
     <!-- Listing cards -->
     <div class="grid g3">
       <a href="submit-featured.html" class="biz-card" style="border-style:dashed;opacity:0.7;text-decoration:none;color:inherit;" data-cats="4x4 suspension">
@@ -277,11 +519,147 @@
       </div>
     </div>
 
-    <!-- Coming soon placeholder -->
-    <div style="background:var(--off);border:1.5px dashed var(--line-mid);border-radius:12px;padding:3rem 2rem;text-align:center;margin-bottom:2rem;">
-      <h3 style="font-family:'Oswald',sans-serif;font-size:1.15rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:var(--text);margin-bottom:0.4rem;">Salvage Listings Coming Soon</h3>
-      <a href="submit.html" class="btn btn-amber">Submit a Yard</a>
+    <!-- TEXAS SALVAGE YARDS -->
+    <div class="subcat-header">
+      <h3>Texas</h3>
+      <div class="subcat-divider"></div>
     </div>
+    <div class="grid g3">
+
+      <div class="biz-card" data-business-id="collins-bros-jeep-wylie-tx" data-cats="salvage parts 4x4">
+        <div class="biz-logo-wrap"><div class="biz-logo">CB</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Salvage · Jeep Specialist</span>
+          <div class="biz-name">Collins Bros Jeep</div>
+          <div class="biz-loc">Wylie, TX (DFW)</div>
+          <p class="biz-desc">DFW Jeep-specialist yard with a large inventory of XJ Cherokee parts. Knowledgeable staff dedicated to Jeep-only inventory.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.google.com/maps/search/Collins+Bros+Jeep+Wylie+TX" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="wrench-a-part-austin-tx" data-cats="salvage parts">
+        <div class="biz-logo-wrap"><div class="biz-logo">WP</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Salvage · Self-Service</span>
+          <div class="biz-name">Wrench-A-Part</div>
+          <div class="biz-loc">Austin, TX</div>
+          <p class="biz-desc">Self-service salvage yard in Austin. Bring your own tools and pull Cherokee parts yourself at significant savings over retail pricing.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.wrenchpart.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Wrench+A+Part+Austin+TX" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="u-pull-pay-houston-tx" data-cats="salvage parts">
+        <div class="biz-logo-wrap"><div class="biz-logo">UP</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Salvage · Self-Service</span>
+          <div class="biz-name">U-Pull-&amp;-Pay</div>
+          <div class="biz-loc">Houston, TX</div>
+          <p class="biz-desc">Clean and organized Houston salvage yard. Browse vehicle inventory online before you visit. Bring your tools and pull Cherokee parts yourself to save.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.upullandpay.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/U+Pull+Pay+Houston+TX" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="all-import-auto-fort-worth-tx" data-cats="salvage parts">
+        <div class="biz-logo-wrap"><div class="biz-logo">AI</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Salvage · Full-Service</span>
+          <div class="biz-name">All Import Auto Parts</div>
+          <div class="biz-loc">Fort Worth, TX</div>
+          <p class="biz-desc">Full-service DFW salvage yard. Can locate Cherokee parts from their yard or search a national salvage network for hard-to-find XJ parts.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://all-import.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/All+Import+Auto+Parts+Fort+Worth+TX" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="pull-a-part-texas-tx" data-cats="salvage parts">
+        <div class="biz-logo-wrap"><div class="biz-logo">PA</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Salvage · Self-Service</span>
+          <div class="biz-name">Pull-A-Part</div>
+          <div class="biz-loc">Multiple TX Locations</div>
+          <p class="biz-desc">Self-service salvage yards across Texas. Search their daily-refreshed inventory online before visiting. Cherokee inventory listed by year and model.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.pullapart.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end TX salvage grid -->
+
+    <!-- TENNESSEE SALVAGE YARDS -->
+    <div class="subcat-header" style="margin-top:2.5rem;">
+      <h3>Tennessee</h3>
+      <div class="subcat-divider"></div>
+    </div>
+    <div class="grid g3">
+
+      <div class="biz-card" data-business-id="dexjs-selmer-tn" data-cats="salvage parts 4x4">
+        <div class="biz-logo-wrap"><div class="biz-logo">DX</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Salvage · XJ Specialist</span>
+          <div class="biz-name">DeXJ's</div>
+          <div class="biz-loc">Selmer, TN</div>
+          <p class="biz-desc">The world's largest Jeep Cherokee XJ junkyard — approximately 700 XJs on-site. Owner Dexter Browder has been in the Jeep business for 20+ years. Known nationwide among XJ owners.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.dexjs.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/DeXJ%27s+Selmer+TN" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="mr-complete-memphis-tn" data-cats="salvage parts">
+        <div class="biz-logo-wrap"><div class="biz-logo">MC</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Salvage · Jeep &amp; Chrysler</span>
+          <div class="biz-name">Mr. Complete</div>
+          <div class="biz-loc">Memphis, TN</div>
+          <p class="biz-desc">Memphis Jeep specialist salvage. Breaks down Wranglers, Cherokees, Grand Cherokees, and more. Sells used parts at a fraction of new cost. 2635 Jackson Ave.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://creepersjeepers.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Mr+Complete+2635+Jackson+Ave+Memphis+TN" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="pull-a-part-knoxville-tn" data-cats="salvage parts">
+        <div class="biz-logo-wrap"><div class="biz-logo">PA</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Salvage · Self-Service</span>
+          <div class="biz-name">Pull-A-Part</div>
+          <div class="biz-loc">Knoxville, TN</div>
+          <p class="biz-desc">Self-service Knoxville salvage yard. Check daily-updated online inventory for Cherokee availability before making the drive. Bring your own tools.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.pullapart.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Pull+A+Part+Knoxville+TN" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="lkq-pick-your-part-chattanooga-tn" data-cats="salvage parts">
+        <div class="biz-logo-wrap"><div class="biz-logo">LK</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Salvage · Self-Service</span>
+          <div class="biz-name">LKQ Pick Your Part</div>
+          <div class="biz-loc">Chattanooga, TN</div>
+          <p class="biz-desc">400 Workman Rd, Chattanooga. New inventory daily, rows of vehicles on stands. 90-day guarantee on parts. Pull Cherokee parts yourself for maximum savings.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://locations.lkqpickyourpart.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/LKQ+Pick+Your+Part+400+Workman+Rd+Chattanooga+TN" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end TN salvage grid -->
 
     <!-- Before You Go tips -->
     <div class="subcat-header">
@@ -655,6 +1033,333 @@
         <p style="font-family:'Source Serif 4',serif;font-size:0.88rem;color:var(--text-mid);">Suggest a supplier, vendor, or parts tip via the contact page.</p>
       </div>
       <a href="contact.html" class="btn btn-outline btn-sm" style="flex-shrink:0;">Suggest a Source</a>
+    </div>
+
+  </section>
+
+  <!-- =============================== -->
+  <!-- TIRES & WHEELS                  -->
+  <!-- =============================== -->
+  <section class="cat-section" id="tires-wheels">
+    <div class="cat-header">
+      <div class="cat-header-left">
+        <div class="cat-title-block">
+          <h2>Tires &amp; Wheels</h2>
+          <p>Off-road tire and wheel shops serving XJ Cherokee owners in Texas and Tennessee.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="subcat-header">
+      <h3>Texas</h3>
+      <div class="subcat-divider"></div>
+    </div>
+    <div class="grid g3">
+
+      <div class="biz-card" data-business-id="jacked-up-truck-jeep-austin-tx" data-cats="tires wheels suspension 4x4">
+        <div class="biz-logo-wrap"><div class="biz-logo">JU</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Tires &amp; Wheels · Lift Kits</span>
+          <div class="biz-name">Jacked Up Truck &amp; Jeep Outfitters</div>
+          <div class="biz-loc">Austin, TX</div>
+          <p class="biz-desc">Austin Jeep and truck outfitter for lift kits, custom wheels and tires, and accessories. Carries Fuel and Toyo brands. Call 512-230-5759.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://jackeduptruckandjeep.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Jacked+Up+Truck+Jeep+Austin+TX" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="awt-offroad-tw-houston-tx" data-cats="tires wheels 4x4">
+        <div class="biz-logo-wrap"><div class="biz-logo">AW</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Tires &amp; Wheels · Off-Road</span>
+          <div class="biz-name">AWT Offroad</div>
+          <div class="biz-loc">Houston, TX</div>
+          <p class="biz-desc">40 years in Houston backed by American Wheel and Tire. Full 4x4 tire and wheel fitment, custom service, and off-road accessories.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://awtoffroad.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/AWT+Offroad+Houston+TX" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="four-wheel-parts-texas-tx" data-cats="tires wheels suspension 4x4">
+        <div class="biz-logo-wrap"><div class="biz-logo">4W</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Tires &amp; Wheels · Off-Road Parts</span>
+          <div class="biz-name">4 Wheel Parts</div>
+          <div class="biz-loc">Texas (Multiple Locations)</div>
+          <p class="biz-desc">National off-road retailer with Texas locations carrying XJ-compatible tires, wheels, and lift kits. In-store installation available.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.4wheelparts.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="discount-tire-texas-tx" data-cats="tires wheels">
+        <div class="biz-logo-wrap"><div class="biz-logo">DT</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Tires &amp; Wheels</span>
+          <div class="biz-name">Discount Tire</div>
+          <div class="biz-loc">Texas (Widespread)</div>
+          <p class="biz-desc">Largest independent tire retailer in the US with dozens of Texas locations. Carries XJ-compatible tire and wheel fitments. Free flat repair and rotation.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.discounttire.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end TX tires grid -->
+
+    <div class="subcat-header" style="margin-top:2.5rem;">
+      <h3>Tennessee</h3>
+      <div class="subcat-divider"></div>
+    </div>
+    <div class="grid g3">
+
+      <div class="biz-card" data-business-id="outlaw-offroad-tw-nashville-tn" data-cats="tires wheels suspension 4x4">
+        <div class="biz-logo-wrap"><div class="biz-logo">OO</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Tires &amp; Wheels · Off-Road</span>
+          <div class="biz-name">Outlaw Offroad</div>
+          <div class="biz-loc">Nashville, TN</div>
+          <p class="biz-desc">Middle Tennessee's premier off-road center. Lift kits, leveling kits, wheels, tires, and accessories for Jeeps and 4x4s. Expert installation.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://outlawnashville.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Outlaw+Offroad+Nashville+TN" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="garys-off-road-tw-knoxville-tn" data-cats="tires wheels suspension 4x4">
+        <div class="biz-logo-wrap"><div class="biz-logo">GO</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Tires &amp; Wheels · Off-Road</span>
+          <div class="biz-name">Gary's Off Road Center</div>
+          <div class="biz-loc">Knoxville &amp; Oak Ridge, TN</div>
+          <p class="biz-desc">Tennessee's Jeep and RAM custom shop with two East TN locations. Wheels, tires, lift kits, and custom builds. Knoxville: 865-409-5490.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.garysoffroad.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Gary%27s+Off+Road+Center+Knoxville+TN" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="winchester-tire-tw-memphis-tn" data-cats="tires wheels suspension">
+        <div class="biz-logo-wrap"><div class="biz-logo">WT</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Tires &amp; Wheels · Alignment</span>
+          <div class="biz-name">Todd Holliday's Winchester Tire</div>
+          <div class="biz-loc">Memphis, TN</div>
+          <p class="biz-desc">Serving Memphis Jeep owners since 1972. Full tire and alignment service for Cherokee and all Jeep models. Serving Cordova, Germantown, and Desoto County.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://winchestertire.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Winchester+Tire+Memphis+TN" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end TN tires grid -->
+
+    <div class="get-featured-nudge">
+      <div>
+        <strong>Know a tire or wheel shop that belongs here?</strong>
+        <p>Submit a Tires &amp; Wheels listing to grow this section.</p>
+      </div>
+      <a href="submit.html" class="btn btn-red btn-sm">Submit a Shop</a>
+    </div>
+
+  </section>
+
+  <!-- =============================== -->
+  <!-- BODY SHOPS                      -->
+  <!-- =============================== -->
+  <section class="cat-section" id="body-shop">
+    <div class="cat-header">
+      <div class="cat-header-left">
+        <div class="cat-title-block">
+          <h2>Body Shops</h2>
+          <p>Collision repair, paint, and body restoration shops for the XJ Cherokee in Texas and Tennessee.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="subcat-header">
+      <h3>Texas</h3>
+      <div class="subcat-divider"></div>
+    </div>
+    <div class="grid g3">
+
+      <div class="biz-card" data-business-id="nyle-maxwell-collision-austin-tx" data-cats="body collision paint">
+        <div class="biz-logo-wrap"><div class="biz-logo">NM</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Body Shop · Collision</span>
+          <div class="biz-name">Nyle Maxwell Collision Center</div>
+          <div class="biz-loc">Austin, TX</div>
+          <p class="biz-desc">Chrysler Dodge Jeep RAM certified collision center in Austin. OEM precision repair with Enterprise Rental pick-up service available on-site.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.nylemaxwellcdjr.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Nyle+Maxwell+Collision+Center+Austin+TX" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="texas-body-works-dallas-tx" data-cats="body collision paint">
+        <div class="biz-logo-wrap"><div class="biz-logo">TB</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Body Shop · Paint &amp; Collision</span>
+          <div class="biz-name">Texas Body Works</div>
+          <div class="biz-loc">Dallas, TX</div>
+          <p class="biz-desc">32+ years of North Texas collision and auto body repair. Advanced paint matching for exact color match. Jeep Cherokee collision repair. Call 972-250-6722.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.texasbodyworks.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Texas+Body+Works+Dallas+TX" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="texas-collision-centers-dfw-tx" data-cats="body collision paint">
+        <div class="biz-logo-wrap"><div class="biz-logo">TC</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Body Shop · Collision</span>
+          <div class="biz-name">Texas Collision Centers</div>
+          <div class="biz-loc">DFW, TX (16 Locations)</div>
+          <p class="biz-desc">16-location DFW collision repair network. Certified body work, paint, hail damage repair, and ADAS calibration with a lifetime warranty on repairs.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.texascollisioncenters.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="river-oaks-paint-body-houston-tx" data-cats="body collision paint">
+        <div class="biz-logo-wrap"><div class="biz-logo">RO</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Body Shop · Paint &amp; Collision</span>
+          <div class="biz-name">River Oaks Paint &amp; Body</div>
+          <div class="biz-loc">Houston, TX</div>
+          <p class="biz-desc">Top-rated Jeep collision center in Houston. Insurance claims handled in-house. State-of-the-art paint and factory-quality finishes for all Jeep models.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.riveroakspaintandbody.net" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/River+Oaks+Paint+Body+Houston+TX" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="race-track-auto-center-houston-tx" data-cats="body collision paint">
+        <div class="biz-logo-wrap"><div class="biz-logo">RT</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Body Shop · Collision</span>
+          <div class="biz-name">Race Track Auto Center</div>
+          <div class="biz-loc">Houston, TX</div>
+          <p class="biz-desc">9840 Westpark Dr, Houston. Insurance-approved Jeep body shop specializing in restoring Cherokees to factory specs. Lifetime warranty on body and paint.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://racetrackautocenter.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Race+Track+Auto+Center+Houston+TX" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="gunn-collision-san-antonio-tx" data-cats="body collision paint">
+        <div class="biz-logo-wrap"><div class="biz-logo">GC</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Body Shop · Jeep Certified</span>
+          <div class="biz-name">Gunn Collision</div>
+          <div class="biz-loc">San Antonio, TX</div>
+          <p class="biz-desc">ASE, I-CAR Gold Class, and Jeep-certified collision center in San Antonio. OEM parts and guaranteed workmanship on all Jeep Cherokee models.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.gunncollision.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Gunn+Collision+San+Antonio+TX" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end TX body shop grid -->
+
+    <div class="subcat-header" style="margin-top:2.5rem;">
+      <h3>Tennessee</h3>
+      <div class="subcat-divider"></div>
+    </div>
+    <div class="grid g3">
+
+      <div class="biz-card" data-business-id="gerber-collision-nashville-tn" data-cats="body collision paint">
+        <div class="biz-logo-wrap"><div class="biz-logo">GE</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Body Shop · FCA Jeep Certified</span>
+          <div class="biz-name">Gerber Collision &amp; Glass</div>
+          <div class="biz-loc">Nashville, TN</div>
+          <p class="biz-desc">FCA Certified Collision Care Program Jeep shop at 999 Polk Ave. Certified tools, equipment, and technicians for OEM-spec Jeep repairs. 615-254-6946.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.gerbercollision.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Gerber+Collision+999+Polk+Ave+Nashville+TN" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="dalton-collision-knoxville-tn" data-cats="body collision paint">
+        <div class="biz-logo-wrap"><div class="biz-logo">DC</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Body Shop · I-CAR Gold Class</span>
+          <div class="biz-name">Dalton Collision</div>
+          <div class="biz-loc">Knoxville, TN</div>
+          <p class="biz-desc">I-CAR Gold Class since 1998 — the longest-tenured Gold Class shop in Tennessee. Expert collision repair for the XJ Cherokee in the Knoxville area.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://daltoncollision.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Dalton+Collision+Knoxville+TN" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="harper-collision-knoxville-tn" data-cats="body collision paint">
+        <div class="biz-logo-wrap"><div class="biz-logo">HC</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Body Shop · Collision &amp; Refinish</span>
+          <div class="biz-name">Harper Collision Center</div>
+          <div class="biz-loc">Knoxville, TN</div>
+          <p class="biz-desc">Premier collision repair and refinishing in Greater Knoxville. State-of-the-art equipment and technology for factory-quality Cherokee restoration.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.harpercollision.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Harper+Collision+Knoxville+TN" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="caliber-collision-memphis-tn" data-cats="body collision paint">
+        <div class="biz-logo-wrap"><div class="biz-logo">CC</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Body Shop · Collision</span>
+          <div class="biz-name">Caliber Collision</div>
+          <div class="biz-loc">Memphis, TN</div>
+          <p class="biz-desc">I-CAR Gold Class certified collision centers in Memphis. Insurance-partnered, state-of-the-art equipment, and written repair guarantees on all work.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.caliber.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Caliber+Collision+Memphis+TN" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="biz-card" data-business-id="caliber-collision-chattanooga-tn" data-cats="body collision paint">
+        <div class="biz-logo-wrap"><div class="biz-logo">CC</div></div>
+        <div class="biz-body">
+          <span class="biz-type">Body Shop · Collision</span>
+          <div class="biz-name">Caliber Collision</div>
+          <div class="biz-loc">Chattanooga, TN</div>
+          <p class="biz-desc">I-CAR Gold Class certified collision repair in Chattanooga. Works with all major insurance providers. Restores Jeep Cherokee to pre-accident condition.</p>
+          <div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">
+            <a href="https://www.caliber.com" class="btn btn-red btn-sm" target="_blank" rel="noopener noreferrer">Website</a>
+            <a href="https://www.google.com/maps/search/Caliber+Collision+Chattanooga+TN" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">Map</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end TN body shop grid -->
+
+    <div class="get-featured-nudge">
+      <div>
+        <strong>Know a body shop that belongs here?</strong>
+        <p>Submit a Body Shop listing to grow this section.</p>
+      </div>
+      <a href="submit.html" class="btn btn-red btn-sm">Submit a Shop</a>
     </div>
 
   </section>

@@ -29,19 +29,7 @@
 </head>
 <body>
 
-<div class="topbar">
-  <div class="container topbar-inner">
-    <span>#1 Independent buy and sell directory and resource hub for owners of older Cherokee models</span>
-    <div class="topbar-links">
-      <a href="index.html">Home</a>
-      <a href="state-search.html">Map</a>
-      <a href="buy-sell.html">Buy &amp; Sell</a>
-      <a href="directory.html">Directory</a>
-      <a href="guides.html">Guides</a>
-      <a href="community.html">Community</a>
-    </div>
-  </div>
-</div>
+
 
 <header class="site-header">
   <div class="container header-inner">
@@ -49,14 +37,27 @@
       <img src="og-logo.jpg" alt="MyOldCherokee.com" />
       <span class="brand-name">MyOldCherokee.com</span>
     </a>
+    <span class="header-tagline">#1 Independent buy and sell directory and resource hub for owners of older Cherokee models</span>
     <nav class="site-nav">
-      <a href="submit.html">Post</a>
-      <a href="contact.html">Contact</a>
-      <a href="about.html">About</a>
-      <a href="blog/index.html">Blog</a>
+      <a href="index.html">Home</a>
+      <a href="state-search.html">States</a>
+      <a href="buy-sell.html">Buy &amp; Sell</a>
+      <a href="directory.html">Directory</a>
+      <a href="guides.html">Guides</a>
+      <a href="community.html">Chat</a>
+      <div class="nav-more">
+        <button class="nav-more-btn" onclick="this.closest('.nav-more').classList.toggle('open')" aria-expanded="false" aria-haspopup="true">More &#9663;</button>
+        <div class="nav-more-menu">
+          <a href="submit.html">Post</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+          <a href="blog/index.html">Blog</a>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
+<script>document.addEventListener('click',function(e){if(!e.target.closest('.nav-more'))document.querySelectorAll('.nav-more.open').forEach(function(m){m.classList.remove('open');m.querySelector('.nav-more-btn').setAttribute('aria-expanded','false');});});</script>
 
 <section class="section">
   <div class="container" style="max-width:820px;">
