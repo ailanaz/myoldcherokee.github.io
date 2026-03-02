@@ -452,7 +452,18 @@ img { max-width: 100%; display: block; }
 .featured-biz-actions { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 0.85rem; }
 .featured-biz-actions .btn { flex: 1; min-width: 80px; font-size: 0.78rem; height: 34px; padding: 0 0.75rem; }
 .featured-verified { font-size: 0.75rem; color: var(--green); font-weight: 600; display: flex; align-items: center; gap: 0.3rem; margin-top: 0.3rem; }
-.featured-verified::before { content: '✓'; }
+.featured-verified::before { content: '★'; color: var(--amber); }
+
+/* ── INACTIVE FEATURED CARD ────────────────────────────────────────────────── */
+.featured-biz-card--inactive { border-color: var(--line-mid); border-style: dashed; background: var(--off); box-shadow: none; }
+.featured-biz-card--inactive:hover { transform: none; box-shadow: none; }
+.featured-biz-card--inactive .featured-biz-img--empty { height: 140px; background: var(--off-2); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: var(--line-mid); }
+.featured-biz-card--inactive .featured-biz-body { align-items: center; justify-content: center; text-align: center; min-height: 200px; }
+
+/* ── INACTIVE PARTS CARD ─────────────────────────────────────────────────── */
+.parts-card--inactive { border-style: dashed; border-color: var(--line-mid); background: var(--off); }
+.parts-card--inactive:hover { box-shadow: none; border-color: var(--line-mid); }
+.parts-card--inactive .parts-card-img--empty { height: 140px; background: var(--off-2); border-radius: 8px; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--line-mid); margin-bottom: 0.25rem; }
 
 /* ── STATE PAGE FEATURED CAROUSEL ─────────────────────────────────────────── */
 .state-featured-section { margin-bottom: 2.5rem; }

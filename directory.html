@@ -65,6 +65,7 @@
       <a href="submit.html">Post</a>
       <a href="contact.html">Contact</a>
       <a href="about.html">About</a>
+      <a href="blog/index.html">Blog</a>
     </div>
   </div>
 </div>
@@ -80,7 +81,6 @@
       <a href="directory.html" class="active">Directory</a>
       <a href="guides.html">Guides</a>
       <a href="community.html">Community</a>
-      <a href="blog/index.html">Blog</a>
     </nav>
   </div>
 </header>
@@ -117,29 +117,60 @@
       </div>
     </div>
 
-    <!-- Featured shops strip -->
-    <div class="featured-section" style="margin-bottom:2rem;">
-      <div class="featured-section-head">
-        <span class="featured-section-title">⭐ Featured Shops</span>
-        <a href="featured.html" class="featured-section-link">View All →</a>
+    <!-- Featured shops carousel -->
+    <div class="state-featured-section">
+      <div class="state-featured-label" style="justify-content:space-between;">
+        <span>Featured Shops</span>
+        <a href="featured.html" class="featured-section-link" style="font-family:'DM Sans',sans-serif;font-size:0.8rem;font-weight:600;color:var(--amber);text-decoration:none;letter-spacing:normal;text-transform:none;">View All &rarr;</a>
       </div>
-      <div class="grid g3" style="align-items:start;">
-        <a href="https://www.google.com/maps/search/Banker+Automotive,+10404+Slaughter+Creek+Dr,+Austin,+TX+78748" target="_blank" rel="noopener noreferrer" class="featured-biz-card">
-          <div class="featured-biz-img"><div class="featured-biz-initials">BA</div></div>
-          <div class="featured-biz-body">
-            <div class="featured-biz-header"><span class="featured-badge">Featured</span><span class="featured-biz-type">Repair Shop</span></div>
-            <div class="featured-biz-name">Banker Automotive Inc.</div>
-            <div class="featured-biz-loc">📍 Manchaca, TX &nbsp;·&nbsp; <span class="featured-biz-area">TX (78748)</span></div>
-            <p class="featured-biz-desc">One shop we have used for our 96 XJ Cherokee. Reliable and honest work. Mon–Fri 8am–6pm, closed weekends. First-come, first-served — no appointments. After-hours drop-off: park right of the commercial dumpster.</p>
-            <div class="featured-biz-tags"><span class="featured-biz-tag">XJ</span><span class="featured-biz-tag">General Repair</span><span class="featured-biz-tag">Manchaca TX</span></div>
+      <div class="state-featured-track">
+
+        <!-- Card 1: Banker Automotive (active) -->
+        <a href="https://www.google.com/maps/search/Banker+Automotive,+10404+Slaughter+Creek+Dr,+Austin,+TX+78748" target="_blank" rel="noopener noreferrer" class="state-feat-card">
+          <div class="state-feat-img">
+            <img src="assets/images/banker-automotive.png" alt="Banker Automotive shop in Manchaca TX" />
+          </div>
+          <div class="state-feat-body">
+            <div class="state-feat-badges">
+              <span class="featured-badge">Featured</span>
+              <span class="featured-biz-type">Repair Shop</span>
+            </div>
+            <div class="state-feat-name">Banker Automotive Inc.</div>
+            <div class="state-feat-loc">📍 Manchaca, TX &nbsp;·&nbsp; 78748</div>
+            <p class="state-feat-desc">One shop we have used for our 96 XJ Cherokee. Reliable and honest work. Mon–Fri 8am–6pm, closed weekends. First-come, first-served, no appointments. After-hours drop-off: park right of the commercial dumpster.</p>
+            <div class="featured-biz-tags" style="margin-bottom:0.5rem;">
+              <span class="featured-biz-tag">XJ</span>
+              <span class="featured-biz-tag">General Repair</span>
+              <span class="featured-biz-tag">Manchaca TX</span>
+            </div>
             <div class="featured-verified">Submitter verified location, hours &amp; contact</div>
-            <div class="featured-biz-actions">
+            <div class="state-feat-actions">
               <span class="btn btn-outline btn-sm">📞 (512) 280-0877</span>
               <span class="btn btn-red btn-sm">📍 Map</span>
             </div>
           </div>
         </a>
-        <!-- Additional featured shop cards go here as more businesses sign up -->
+
+        <!-- Card 2: Placeholder -->
+        <a href="featured.html#get-featured" class="state-feat-card state-feat-card--inactive">
+          <div class="state-feat-img--empty">+</div>
+          <div class="state-feat-placeholder-body">
+            <div class="state-feat-placeholder-title">Get Featured Here</div>
+            <p class="state-feat-placeholder-sub">Repair shop, parts seller, or salvage yard? Get your business in front of XJ owners.</p>
+            <span class="btn btn-red btn-sm">Learn More &rarr;</span>
+          </div>
+        </a>
+
+        <!-- Card 3: Placeholder -->
+        <a href="featured.html#get-featured" class="state-feat-card state-feat-card--inactive">
+          <div class="state-feat-img--empty">+</div>
+          <div class="state-feat-placeholder-body">
+            <div class="state-feat-placeholder-title">Get Featured Here</div>
+            <p class="state-feat-placeholder-sub">Repair shop, parts seller, or salvage yard? Get your business in front of XJ owners.</p>
+            <span class="btn btn-red btn-sm">Learn More &rarr;</span>
+          </div>
+        </a>
+
       </div>
     </div>
 

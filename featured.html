@@ -23,6 +23,7 @@
       <a href="submit.html">Post</a>
       <a href="contact.html">Contact</a>
       <a href="about.html">About</a>
+      <a href="blog/index.html">Blog</a>
     </div>
   </div>
 </div>
@@ -38,41 +39,49 @@
       <a href="directory.html">Directory</a>
       <a href="guides.html">Guides</a>
       <a href="community.html">Community</a>
-      <a href="blog/index.html">Blog</a>
     </nav>
   </div>
 </header>
 
 <!-- PAGE HEADER -->
-<section class="page-hero" style="background:var(--dark);padding:2.5rem 0 2rem;border-bottom:3px solid var(--red);">
+<section class="page-hero" style="text-align:center;">
   <div class="container">
-    <h1 style="font-family:'Oswald',sans-serif;font-size:2rem;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:0.05em;margin:0 0 0.5rem;">Featured Businesses</h1>
-    <p style="color:rgba(255,255,255,0.75);font-size:1rem;max-width:640px;margin:0;">These businesses support the site. Featured placement helps keep the directory updated and free for everyone.</p>
+    <div class="eyebrow">Directory</div>
+    <h1>Featured Businesses</h1>
+    <p class="hero-sub" style="margin:0 auto;">These businesses support the site. Featured placement helps keep the directory updated and free for everyone.</p>
   </div>
 </section>
 
-<!-- FILTER + GRID -->
-<section class="home-section" style="padding-top:2rem;">
+<!-- FILTER -->
+<section class="home-section" style="padding-top:2rem;padding-bottom:0;">
+  <div class="container">
+    <div class="page-filter-hero" style="margin-top:0;margin-bottom:1.75rem;">
+      <div class="page-filter-hero-box">
+        <select id="featured-cat" class="filter-select" aria-label="Filter by category" onchange="applyFeaturedFilter()">
+          <option value="all">All Business Types</option>
+          <option value="repair">Repair Shops</option>
+          <option value="parts">Parts Suppliers</option>
+          <option value="salvage">Salvage Yards</option>
+          <option value="rust">Rust Repair</option>
+          <option value="fabrication">Fabrication</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED BUSINESSES -->
+<section class="home-section" style="padding-top:0.5rem;">
   <div class="container">
 
-    <div class="filter-dropdown-bar" style="margin-bottom:1.75rem;">
-      <input type="search" id="featured-search" class="filter-search-input" placeholder="Search businesses…" autocomplete="off" />
-      <select id="featured-cat" class="filter-select" aria-label="Filter by category">
-        <option value="all">All Categories</option>
-        <option value="repair">Repair Shops</option>
-        <option value="parts">Parts Suppliers</option>
-        <option value="salvage">Salvage Yards</option>
-        <option value="rust">Rust Repair</option>
-        <option value="fabrication">Fabrication</option>
-      </select>
-    </div>
+    <div class="state-featured-label" style="margin-bottom:1rem;">Featured Businesses</div>
 
-    <div id="featured-grid" class="grid g3" style="align-items:start;">
+    <div id="featured-grid" class="grid g2" style="align-items:start;margin-bottom:0.5rem;">
 
       <!-- BANKER AUTOMOTIVE -->
       <a href="https://www.google.com/maps/search/Banker+Automotive,+10404+Slaughter+Creek+Dr,+Austin,+TX+78748" target="_blank" rel="noopener noreferrer" class="featured-biz-card" data-cat="repair" data-name="banker automotive inc repair shop manchaca austin texas">
         <div class="featured-biz-img">
-          <div class="featured-biz-initials">BA</div>
+          <img src="assets/images/banker-automotive.png" alt="Banker Automotive shop in Manchaca TX" />
         </div>
         <div class="featured-biz-body">
           <div class="featured-biz-header">
@@ -81,7 +90,7 @@
           </div>
           <div class="featured-biz-name">Banker Automotive Inc.</div>
           <div class="featured-biz-loc">📍 Manchaca, TX &nbsp;·&nbsp; <span class="featured-biz-area">TX (78748)</span></div>
-          <p class="featured-biz-desc">One shop we have used for our 96 XJ Cherokee. Reliable and honest work. Mon–Fri 8am–6pm, closed weekends. First-come, first-served — no appointments. After-hours drop-off: park right of the commercial dumpster.</p>
+          <p class="featured-biz-desc">One shop we have used for our 96 XJ Cherokee. Reliable and honest work. Mon–Fri 8am–6pm, closed weekends. First-come, first-served, no appointments. After-hours drop-off: park right of the commercial dumpster.</p>
           <div class="featured-biz-tags">
             <span class="featured-biz-tag">XJ</span>
             <span class="featured-biz-tag">General Repair</span>
@@ -95,10 +104,68 @@
         </div>
       </a>
 
+      <!-- Inactive placeholder -->
+      <a href="featured.html#get-featured" class="featured-biz-card featured-biz-card--inactive">
+        <div class="featured-biz-img--empty">+</div>
+        <div class="featured-biz-body">
+          <div style="font-family:'Oswald',sans-serif;font-size:0.95rem;font-weight:700;text-transform:uppercase;color:var(--text-mid);margin-bottom:0.5rem;">Get Featured Here</div>
+          <p style="font-size:0.84rem;color:var(--text-lite);line-height:1.5;flex:1;">Repair shop, parts seller, or salvage yard? Get your business in front of XJ owners across the country.</p>
+          <span class="btn btn-red btn-sm" style="margin-top:1rem;align-self:flex-start;">Learn More &rarr;</span>
+        </div>
+      </a>
+
     </div><!-- end featured-grid -->
 
-    <p id="featured-empty" style="display:none;color:#888;font-style:italic;margin-top:1.5rem;">No businesses match your search. <a href="mailto:contact@myoldcherokee.com">Know one?</a></p>
+    <p id="featured-empty" style="display:none;color:#888;font-style:italic;margin-top:1.5rem;">No businesses match this filter. <a href="contact.html">Know one?</a></p>
 
+  </div>
+</section>
+
+<!-- CHEROKEE PICKS — Affiliate Products -->
+<section class="home-section" style="padding-top:1.5rem;">
+  <div class="container">
+
+    <div class="state-featured-label" style="margin-bottom:1rem;">Cherokee Picks</div>
+
+    <p class="affiliate-disclaimer" style="margin-bottom:1.25rem;">As an Amazon Associate I earn from qualifying purchases. Links below may earn a commission at no additional cost to you.</p>
+
+    <div class="grid g2" style="align-items:start;">
+
+      <!-- Product 1: XJ Cubby Pocket -->
+      <a href="https://amzn.to/4b040dk" target="_blank" rel="noopener noreferrer nofollow" class="parts-card" style="text-decoration:none;color:inherit;">
+        <div class="parts-card-img"><img src="https://m.media-amazon.com/images/I/A17nTgqKtrL._AC_SL1500_.jpg" alt="XJ Cherokee Cubby Pocket Organizer" loading="lazy"></div>
+        <div class="parts-card-top"><h4>XJ Cubby Pocket Organizer</h4><span class="parts-tag">Interior</span></div>
+        <p>Molded cubby pocket organizer designed specifically for the Jeep Cherokee XJ. Fits the factory cubby space behind the center console.</p>
+        <div style="margin-top:auto;padding-top:.75rem;"><span class="btn btn-amber btn-sm">View on Amazon</span></div>
+      </a>
+
+      <!-- Product 2: LED Headlights -->
+      <a href="https://amzn.to/3Pax8qX" target="_blank" rel="noopener noreferrer nofollow" class="parts-card" style="text-decoration:none;color:inherit;">
+        <div class="parts-card-img"><img src="https://m.media-amazon.com/images/I/71y8o-KjfyL._AC_SL1500_.jpg" alt="LED Headlights for Jeep Cherokee XJ" loading="lazy"></div>
+        <div class="parts-card-top"><h4>H6054 LED Headlights</h4><span class="parts-tag">Lighting</span></div>
+        <p>140W LED headlights compatible with XJ Cherokee and Wrangler YJ. DOT-compliant with DRL, turn signal, and hi/low beam. Significant brightness upgrade over factory sealed beams.</p>
+        <div style="margin-top:auto;padding-top:.75rem;"><span class="btn btn-amber btn-sm">View on Amazon</span></div>
+      </a>
+
+      <!-- Product 3: XJ Storage Bag -->
+      <a href="https://amzn.to/4rK0U4f" target="_blank" rel="noopener noreferrer nofollow" class="parts-card" style="text-decoration:none;color:inherit;">
+        <div class="parts-card-img"><img src="https://m.media-amazon.com/images/I/51ThQq6sQtL._AC_SL1500_.jpg" alt="Storage Bag for Jeep Cherokee XJ" loading="lazy"></div>
+        <div class="parts-card-top"><h4>XJ Storage Bag</h4><span class="parts-tag">Interior</span></div>
+        <p>Storage bag designed to fit in the rear "chuuby hole" of the Jeep Cherokee XJ. Front mesh pocket. Attaches with supplied screws. Good for first aid kits, recovery gear, and trail essentials.</p>
+        <div style="margin-top:auto;padding-top:.75rem;"><span class="btn btn-amber btn-sm">View on Amazon</span></div>
+      </a>
+
+      <!-- Inactive product placeholder -->
+      <div class="parts-card parts-card--inactive">
+        <div class="parts-card-img--empty">+</div>
+        <div style="text-align:center;padding:0.5rem 0;">
+          <div style="font-family:'Oswald',sans-serif;font-size:0.9rem;font-weight:700;text-transform:uppercase;color:var(--text-mid);margin-bottom:0.35rem;">Suggest a Product</div>
+          <p style="font-size:0.82rem;color:var(--text-lite);line-height:1.5;">Know an XJ essential we should list? Let us know.</p>
+        </div>
+        <div style="margin-top:auto;padding-top:.75rem;"><a href="contact.html" class="btn btn-outline btn-sm">Contact Us &rarr;</a></div>
+      </div>
+
+    </div>
   </div>
 </section>
 
