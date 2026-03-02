@@ -336,6 +336,10 @@ img { max-width: 100%; display: block; }
 .listing-no-photo::after { content: 'NO PHOTO'; font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; color: rgba(255,255,255,0.18); }
 .listing-card-red-outline { border: 1.8px solid var(--red); box-shadow: 0 0 0 1px rgba(107,18,40,0.08); }
 .listing-card-red-outline:hover { border-color: var(--red-dark); }
+.listing-card--inactive { border-color: var(--line-mid); border-style: dashed; background: var(--off); cursor: default; }
+.listing-card--inactive:hover { transform: none; box-shadow: none; border-color: var(--line-mid); }
+.listing-card--inactive .listing-thumb { background: var(--off-2) !important; }
+.listing-card--inactive .listing-thumb-icon { font-size: 2rem; color: var(--line-mid); }
 
 /* HOME SECTION ROWS */
 .home-section { padding: 3.5rem 0; border-top: 1px solid var(--line); }
