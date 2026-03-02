@@ -50,18 +50,19 @@
   <div class="container">
     <h1>Marketplace</h1>
     <p class="hero-sub">Browse listings or sell your old Cherokee or parts.</p>
-    <div class="page-filter-hero" data-grid="cherokees-grid">
-      <div class="page-filter-hero-box">
-        <select class="filter-select" onchange="filterDropdown('cherokees-grid')" aria-label="Filter listings">
-          <option value="all">What are you looking for?</option>
-          <option value="vehicle">For Sale</option>
-          <option value="wanted">Wanted</option>
-          <option value="project">Project</option>
-        </select>
-      </div>
-    </div>
   </div>
 </section>
+
+<div style="background:var(--white);border-bottom:2px solid var(--line);padding:0.85rem 0;position:sticky;top:76px;z-index:90;" data-grid="cherokees-grid">
+  <div class="container" style="display:flex;gap:0.5rem;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;align-items:center;">
+    <select class="filter-select" onchange="filterDropdown('cherokees-grid')" aria-label="Filter listings">
+      <option value="all">What are you looking for?</option>
+      <option value="vehicle">For Sale</option>
+      <option value="wanted">Wanted</option>
+      <option value="project">Project</option>
+    </select>
+  </div>
+</div>
 
 <!-- SECTION 1: CHEROKEES -->
 <section class="section" id="vehicles">

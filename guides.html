@@ -62,22 +62,23 @@
   <div class="container">
     <h1>DIY Guides</h1>
     <p class="hero-sub">DIY repairs, troubleshooting, and how-tos.</p>
-    <div class="page-filter-hero">
-      <div class="page-filter-hero-box">
-        <select id="guides-cat" class="filter-select" onchange="filterGuides()" aria-label="Filter by category">
-          <option value="all">Need to Troubleshoot?</option>
-          <option value="start-here">Start Here</option>
-          <option value="no-start">No Start</option>
-          <option value="overheating">Overheating</option>
-          <option value="electrical">Electrical</option>
-          <option value="suspension">Suspension &amp; Steering</option>
-          <option value="engine-idle">Engine &amp; Idle</option>
-          <option value="4wd">4WD</option>
-        </select>
-      </div>
-    </div>
   </div>
 </section>
+
+<div style="background:var(--white);border-bottom:2px solid var(--line);padding:0.85rem 0;position:sticky;top:76px;z-index:90;">
+  <div class="container" style="display:flex;gap:0.5rem;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;align-items:center;">
+    <select id="guides-cat" class="filter-select" onchange="filterGuides()" aria-label="Filter by category">
+      <option value="all">Need to Troubleshoot?</option>
+      <option value="start-here">Start Here</option>
+      <option value="no-start">No Start</option>
+      <option value="overheating">Overheating</option>
+      <option value="electrical">Electrical</option>
+      <option value="suspension">Suspension &amp; Steering</option>
+      <option value="engine-idle">Engine &amp; Idle</option>
+      <option value="4wd">4WD</option>
+    </select>
+  </div>
+</div>
 
 <div class="container">
 
