@@ -159,7 +159,7 @@ async function initStatePage() {
     var buySellGroups = groupBy(buySell, 'category');
     var dirGroups = groupBy(directory, 'type');
 
-    var dirOrder = ['Repair Shops', 'Salvage and Junk Yards', 'Shop for Parts and More', 'Other'];
+    var dirOrder = ['Repair Shops', 'Salvage and Junk Yards', 'Tires and Wheels', 'Body Shops', 'Shop for Parts and More', 'Other'];
 
     renderSection(bsContainer, 'Buy and Sell', buySellGroups, null);
     renderSection(dirContainer, 'Directory', dirGroups, dirOrder);

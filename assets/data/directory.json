@@ -7,7 +7,11 @@
     "address": "2335 Piney Grove Church Rd, Knoxville, TN 37909",
     "phone": "(865) 691-3400",
     "website": "https://www.allterrainautocare.com/",
-    "categories": ["general", "diagnostics", "4x4"],
+    "categories": [
+      "general",
+      "diagnostics",
+      "4x4"
+    ],
     "summary": "Started as a Jeep-only shop in 2000. Now services all makes but maintains a strong Jeep and Cherokee focus with factory-trained techs.",
     "jeep_friendly_blurb": "Jeep specialist shop in Knoxville that services Jeep models including Cherokee and Wrangler. Good fit for older Cherokee owners who want a shop that is used to Jeep platforms.",
     "jeep_friendly_source_url": "https://allterrainautocare.com/services/",
@@ -21,7 +25,11 @@
     "address": "603 Williams St., Austin, TX 78752",
     "phone": "(512) 459-5337",
     "website": "https://www.justjeepsaustin.com/",
-    "categories": ["general", "4x4", "diagnostics"],
+    "categories": [
+      "general",
+      "4x4",
+      "diagnostics"
+    ],
     "summary": "Austin's original Jeep-only repair facility. In business 21+ years. Specializes in Cherokee, Grand Cherokee, Wrangler, and Comanche.",
     "jeep_friendly_blurb": "Jeep-only repair shop in Austin. Good option if you want a place that works on Jeeps every day instead of all-makes shops.",
     "jeep_friendly_source_url": "https://www.justjeepsaustin.com/",
@@ -35,7 +43,9 @@
     "address": "10404 Slaughter Creek Dr, Austin, TX 78748",
     "phone": "(512) 280-0877",
     "website": null,
-    "categories": ["general"],
+    "categories": [
+      "general"
+    ],
     "summary": "General repair shop in South Austin. Not a Jeep specialist but personally used by the site owner for their 1996 Jeep Cherokee with good results.",
     "jeep_friendly_blurb": "General repair shop in Austin used by the site owner for their 1996 Jeep Cherokee. Not a Jeep specialist, but work quality was solid.",
     "jeep_friendly_source_url": "https://www.yelp.com/biz/banker-automotive-austin",
@@ -49,7 +59,10 @@
     "address": "2101 63rd Ave E, Bradenton, FL 34203",
     "phone": "(941) 727-5506",
     "website": "https://suncoastautorepair.com/",
-    "categories": ["general", "diagnostics"],
+    "categories": [
+      "general",
+      "diagnostics"
+    ],
     "summary": "Full-service repair shop in Bradenton serving Jeep owners since 2003. Covers Wrangler, Cherokee, Grand Cherokee, and more.",
     "jeep_friendly_blurb": "Bradenton shop that advertises Jeep service and repair. Good general repair option for Cherokee owners who want a shop comfortable working on Jeep systems.",
     "jeep_friendly_source_url": "https://suncoastautorepair.com/make-Jeep-repair.html",
@@ -63,7 +76,11 @@
     "address": "521 W 6th St, Corona, CA 92882",
     "phone": "(951) 737-9878",
     "website": "https://harveysautotech.com/",
-    "categories": ["general", "diagnostics", "electrical"],
+    "categories": [
+      "general",
+      "diagnostics",
+      "electrical"
+    ],
     "summary": "Independent shop in Corona repairing Jeeps since 1991. Owner calls out Jeep enthusiasm on the site.",
     "jeep_friendly_blurb": "Corona shop that calls out Jeep repair and claims Jeep enthusiasm. Good for Cherokee owners who want a shop that openly welcomes Jeep work.",
     "jeep_friendly_source_url": "https://harveysautotech.com/make-Jeep-repair.html",
@@ -77,7 +94,11 @@
     "address": "6465 East Golf Links Road, Tucson, AZ 85730",
     "phone": "(520) 572-7505",
     "website": "https://garrigansautorepair.com/",
-    "categories": ["general", "diagnostics", "cooling"],
+    "categories": [
+      "general",
+      "diagnostics",
+      "cooling"
+    ],
     "summary": "Full-service Tucson shop with two locations. Servicing Jeeps since 2000 with modern inspection reporting.",
     "jeep_friendly_blurb": "Tucson full-service shop that explicitly advertises Jeep repairs. Good for basic Cherokee maintenance and repair with modern inspection reporting.",
     "jeep_friendly_source_url": "https://garrigansautorepair.com/vehicles-we-service/jeep",
@@ -91,7 +112,11 @@
     "address": "6024 S College Ave, Fort Collins, CO 80525",
     "phone": "(970) 482-5500",
     "website": "https://www.fortcollins4x4.com/",
-    "categories": ["4x4", "suspension", "general"],
+    "categories": [
+      "4x4",
+      "suspension",
+      "general"
+    ],
     "summary": "ASE-certified 4x4 specialists and NAPA AutoCare Center in Fort Collins. Services all Jeep generations including XJ.",
     "jeep_friendly_blurb": "4x4-oriented shop that explicitly includes Jeeps in their service focus. Good for Cherokee owners doing lifts, suspension, lighting, and off-road upgrades.",
     "jeep_friendly_source_url": "https://www.fortcollins4x4.com/vehicles/jeep",
@@ -105,7 +130,11 @@
     "address": "568 Haywood Road, Asheville, NC 28806",
     "phone": "(828) 255-2628",
     "website": "https://www.organic-mechanic.com/",
-    "categories": ["general", "diagnostics", "electrical"],
+    "categories": [
+      "general",
+      "diagnostics",
+      "electrical"
+    ],
     "summary": "Family-owned Asheville shop with certified Jeep mechanics on staff. Services Cherokee, Wrangler, and all Jeep models.",
     "jeep_friendly_blurb": "Asheville shop that calls out Jeep-specific service. Good for Cherokee owners who want a shop that clearly advertises Jeep competence rather than a generic all-makes shop.",
     "jeep_friendly_source_url": "https://www.organic-mechanic.com/vehicles?objId=1627",
@@ -119,7 +148,10 @@
     "address": "3354 Stone Mountain Highway, Snellville, GA 30078",
     "phone": "(770) 972-3799",
     "website": "https://snellvilleautocenter.com/",
-    "categories": ["general", "diagnostics"],
+    "categories": [
+      "general",
+      "diagnostics"
+    ],
     "summary": "Family-owned Snellville shop serving Jeep owners since 1987. Straightforward repair and maintenance in the Atlanta metro area.",
     "jeep_friendly_blurb": "Snellville shop that specifically advertises Jeep repairs. Good general repair option for Cherokee owners in the Atlanta metro area.",
     "jeep_friendly_source_url": "https://snellvilleautocenter.com/make-Jeep-repair.html",
@@ -133,7 +165,11 @@
     "address": "104 Roxbury Industrial Center, Charles City, VA 23030",
     "phone": "(855) 955-3377",
     "website": "https://davisautosports.com/",
-    "categories": ["4x4", "general", "driveline"],
+    "categories": [
+      "4x4",
+      "general",
+      "driveline"
+    ],
     "summary": "Nation's leading Cherokee XJ builder and seller with 300+ custom XJs built. Also handles builds, restoration, and used XJ sales.",
     "jeep_friendly_blurb": "XJ-focused build and restoration shop. Best fit for Cherokee owners who want higher-end XJ work, builds, and restoration-style services.",
     "jeep_friendly_source_url": "https://davisautosports.com/custom-build-cheorkee",
@@ -147,7 +183,11 @@
     "address": "4233 N.E. Sunset Blvd, Ste. 5, Renton, WA 98059",
     "phone": "(425) 528-8992",
     "website": "https://www.thegarageinrenton.com/",
-    "categories": ["general", "diagnostics", "electrical"],
+    "categories": [
+      "general",
+      "diagnostics",
+      "electrical"
+    ],
     "summary": "Renton shop with technicians who call themselves Jeep enthusiasts. Explicitly lists Cherokee among serviced Jeep models.",
     "jeep_friendly_blurb": "Renton shop that openly services Jeep models including Cherokee. Good for Cherokee owners who want a normal repair shop that still calls out Jeep service directly.",
     "jeep_friendly_source_url": "https://www.thegarageinrenton.com/vehicles/jeep",
@@ -158,7 +198,10 @@
     "type": "Repair Shops",
     "state": "CO",
     "city": "Denver",
-    "categories": ["4x4", "suspension"],
+    "categories": [
+      "4x4",
+      "suspension"
+    ],
     "summary": "4x4 and suspension specialists. Lifts, axle rebuilds, and Cherokee-specific work. Call ahead for Cherokee appointments."
   },
   {
@@ -166,7 +209,10 @@
     "type": "Repair Shops",
     "state": "TN",
     "city": "Nashville",
-    "categories": ["general", "diagnostics"],
+    "categories": [
+      "general",
+      "diagnostics"
+    ],
     "summary": "General Cherokee and Jeep repair. Known for accurate diagnostics on the 4.0L. Locally owned."
   },
   {
@@ -174,7 +220,11 @@
     "type": "Repair Shops",
     "state": "TX",
     "city": "San Antonio",
-    "categories": ["4x4", "suspension", "driveline"],
+    "categories": [
+      "4x4",
+      "suspension",
+      "driveline"
+    ],
     "summary": "Lifts, axle swaps, and driveline work on XJs and ZJs. Shop rate competitive. Work backs up fast so book early."
   },
   {
@@ -182,7 +232,11 @@
     "type": "Repair Shops",
     "state": "WA",
     "city": "Tacoma",
-    "categories": ["general", "suspension", "4x4"],
+    "categories": [
+      "general",
+      "suspension",
+      "4x4"
+    ],
     "summary": "Full-service shop with a focus on older 4x4s. Familiar with XJ quirks. Honest diagnostics before any work starts."
   },
   {
@@ -190,7 +244,11 @@
     "type": "Repair Shops",
     "state": "VA",
     "city": "Roanoke",
-    "categories": ["general", "4x4", "cooling"],
+    "categories": [
+      "general",
+      "4x4",
+      "cooling"
+    ],
     "summary": "XJ and ZJ specialists. Full general repair plus overheating and cooling system fixes. Reasonable rates."
   },
   {
@@ -198,7 +256,11 @@
     "type": "Repair Shops",
     "state": "NC",
     "city": "Fayetteville",
-    "categories": ["general", "electrical", "diagnostics"],
+    "categories": [
+      "general",
+      "electrical",
+      "diagnostics"
+    ],
     "summary": "Good general shop that handles Cherokee electrical issues well. Clean work and fair pricing."
   },
   {
@@ -206,7 +268,11 @@
     "type": "Repair Shops",
     "state": "FL",
     "city": "Orlando",
-    "categories": ["general", "cooling", "electrical"],
+    "categories": [
+      "general",
+      "cooling",
+      "electrical"
+    ],
     "summary": "Cooling system and electrical specialists. Familiar with the overheating problems common on Florida-heat Cherokees."
   },
   {
@@ -214,7 +280,11 @@
     "type": "Repair Shops",
     "state": "AZ",
     "city": "Tucson",
-    "categories": ["4x4", "suspension", "general"],
+    "categories": [
+      "4x4",
+      "suspension",
+      "general"
+    ],
     "summary": "Lift installs, axle work, and general XJ repairs. Owner has run Cherokees for 20+ years."
   },
   {
@@ -222,7 +292,11 @@
     "type": "Repair Shops",
     "state": "GA",
     "city": "Macon",
-    "categories": ["general", "driveline", "diagnostics"],
+    "categories": [
+      "general",
+      "driveline",
+      "diagnostics"
+    ],
     "summary": "Honest general shop that handles Cherokee driveline and diagnostics. Long wait times but solid work."
   },
   {
@@ -230,7 +304,11 @@
     "type": "Repair Shops",
     "state": "GA",
     "city": "Dalton",
-    "categories": ["4x4", "suspension", "general"],
+    "categories": [
+      "4x4",
+      "suspension",
+      "general"
+    ],
     "summary": "Full 4x4 repair shop with Cherokee experience. Lift installs, steering, and general service."
   },
   {
@@ -238,7 +316,11 @@
     "type": "Repair Shops",
     "state": "CA",
     "city": "Fresno",
-    "categories": ["general", "electrical", "cooling"],
+    "categories": [
+      "general",
+      "electrical",
+      "cooling"
+    ],
     "summary": "General repair with solid electrical troubleshooting. Has Cherokee-specific diagnostic experience."
   },
   {
@@ -296,5 +378,732 @@
     "state": "OH",
     "city": "Columbiana",
     "summary": "Mail-order and online parts retailer specializing in Jeep parts including XJ and ZJ components."
+  },
+  {
+    "name": "J&T Automotive",
+    "type": "Repair Shops",
+    "state": "TX",
+    "city": "Houston",
+    "address": "Houston, TX",
+    "phone": null,
+    "website": "https://jntautomotive.com",
+    "categories": [
+      "general",
+      "4x4",
+      "driveline"
+    ],
+    "summary": "Decades of Jeep repair experience in Houston. ASE-certified mechanics and 4WD/AWD system diagnostics.",
+    "jeep_friendly_blurb": "ASE-certified Houston shop with long Jeep repair history. Good for Cherokee owners who want experienced mechanics comfortable with 4x4 drivetrains.",
+    "jeep_friendly_source_url": "https://jntautomotive.com",
+    "jeep_friendly_source_label": "J&T Automotive website"
+  },
+  {
+    "name": "Chimney Rock Car Care",
+    "type": "Repair Shops",
+    "state": "TX",
+    "city": "Houston",
+    "address": "Houston, TX",
+    "phone": null,
+    "website": "https://chimneyrockcarcare.com",
+    "categories": [
+      "general",
+      "suspension",
+      "diagnostics"
+    ],
+    "summary": "Trusted Houston Jeep repair covering oil changes through complex repairs. Competitive pricing for Cherokee and all Jeep models.",
+    "jeep_friendly_blurb": "Houston shop advertising Jeep repair across all models including Cherokee. Good general-repair option with competitive pricing.",
+    "jeep_friendly_source_url": "https://chimneyrockcarcare.com",
+    "jeep_friendly_source_label": "Chimney Rock Car Care website"
+  },
+  {
+    "name": "Payne's Automotive",
+    "type": "Repair Shops",
+    "state": "TX",
+    "city": "Houston",
+    "address": "Houston, TX",
+    "phone": null,
+    "website": "https://www.paynesautomotive.com",
+    "categories": [
+      "general",
+      "suspension"
+    ],
+    "summary": "Expert Jeep repairs and service in Houston. Full-service shop for Cherokee and all Jeep models.",
+    "jeep_friendly_blurb": "Houston full-service shop that advertises Jeep repair for all models including Cherokee. Book online or call.",
+    "jeep_friendly_source_url": "https://www.paynesautomotive.com",
+    "jeep_friendly_source_label": "Payne's Automotive website"
+  },
+  {
+    "name": "Silva Family Automotive",
+    "type": "Repair Shops",
+    "state": "TX",
+    "city": "San Antonio",
+    "address": "San Antonio, TX",
+    "phone": null,
+    "website": "https://www.silvafamilyautomotive.com",
+    "categories": [
+      "general",
+      "4x4",
+      "suspension"
+    ],
+    "summary": "Certified Jeep 4x4 technicians in San Antonio. OEM parts, advanced diagnostics, and nationwide warranty.",
+    "jeep_friendly_blurb": "San Antonio shop with certified Jeep 4x4 technicians. Good for Cherokee owners wanting OEM-spec repairs and a 4WD-knowledgeable shop.",
+    "jeep_friendly_source_url": "https://www.silvafamilyautomotive.com",
+    "jeep_friendly_source_label": "Silva Family Automotive website"
+  },
+  {
+    "name": "Goose Auto Repair",
+    "type": "Repair Shops",
+    "state": "TX",
+    "city": "San Antonio",
+    "address": "San Antonio, TX (near Hill Country Village)",
+    "phone": null,
+    "website": "https://gooseautorepair.com",
+    "categories": [
+      "general",
+      "suspension"
+    ],
+    "summary": "ASE-certified shop near Hill Country Village for classic Cherokee and all Jeep models. Factory-scheduled maintenance through complex repairs.",
+    "jeep_friendly_blurb": "ASE-certified San Antonio shop that covers Cherokee and all Jeep models. Good for factory maintenance through more complex repairs.",
+    "jeep_friendly_source_url": "https://gooseautorepair.com",
+    "jeep_friendly_source_label": "Goose Auto Repair website"
+  },
+  {
+    "name": "Rick & Ray's Auto Plaza",
+    "type": "Repair Shops",
+    "state": "TX",
+    "city": "Fort Worth",
+    "address": "Fort Worth, TX",
+    "phone": null,
+    "website": null,
+    "categories": [
+      "general",
+      "suspension",
+      "driveline"
+    ],
+    "summary": "Fort Worth auto repair serving DFW Jeep owners. Full-service repair and maintenance for Cherokee, Wrangler, and other 4x4 vehicles.",
+    "jeep_friendly_blurb": "Fort Worth full-service shop that covers Cherokee, Wrangler, and 4x4 vehicles. Good general repair option in the DFW area.",
+    "jeep_friendly_source_url": "https://www.google.com/maps/search/Rick+and+Rays+Auto+Plaza+Fort+Worth+TX",
+    "jeep_friendly_source_label": "Google Maps listing"
+  },
+  {
+    "name": "West Ave Automotive & Transmissions",
+    "type": "Repair Shops",
+    "state": "TX",
+    "city": "San Antonio",
+    "address": "San Antonio, TX",
+    "phone": null,
+    "website": "https://www.westaveautomotive.com",
+    "categories": [
+      "general",
+      "driveline"
+    ],
+    "summary": "San Antonio Jeep repair shop. Technicians diagnose the root cause for long-lasting Cherokee repairs.",
+    "jeep_friendly_blurb": "San Antonio shop covering Cherokee repair and maintenance including transmission work. Known for diagnosing root causes rather than surface fixes.",
+    "jeep_friendly_source_url": "https://www.westaveautomotive.com",
+    "jeep_friendly_source_label": "West Ave Automotive website"
+  },
+  {
+    "name": "Terry's Service Center",
+    "type": "Repair Shops",
+    "state": "TN",
+    "city": "Nashville",
+    "address": "Nashville, TN",
+    "phone": null,
+    "website": "https://www.terrysservicecenter.com",
+    "categories": [
+      "general",
+      "suspension"
+    ],
+    "summary": "Expert Jeep repairs and maintenance since 1990. Long-running Nashville shop with Cherokee-specific knowledge.",
+    "jeep_friendly_blurb": "Nashville shop repairing Jeeps since 1990. Good for Cherokee owners who want a long-established shop with direct Jeep experience.",
+    "jeep_friendly_source_url": "https://www.terrysservicecenter.com",
+    "jeep_friendly_source_label": "Terry's Service Center website"
+  },
+  {
+    "name": "Tennessee Off Road, LLC",
+    "type": "Repair Shops",
+    "state": "TN",
+    "city": "Lebanon",
+    "address": "Lebanon, TN (near Nashville)",
+    "phone": "(615) 248-8638",
+    "website": null,
+    "categories": [
+      "4x4",
+      "driveline",
+      "suspension"
+    ],
+    "summary": "Recommended Jeep driveline repair shop near Nashville. Specializes in 4x4 drivetrain work for XJ and other Jeep platforms.",
+    "jeep_friendly_blurb": "Lebanon TN shop specializing in Jeep 4x4 driveline work near Nashville. Good for XJ owners needing drivetrain repairs.",
+    "jeep_friendly_source_url": "https://www.google.com/maps/search/Tennessee+Off+Road+LLC+Lebanon+TN",
+    "jeep_friendly_source_label": "Google Maps listing"
+  },
+  {
+    "name": "The Car People LLC",
+    "type": "Repair Shops",
+    "state": "TN",
+    "city": "Nashville",
+    "address": "Nashville & Murfreesboro, TN",
+    "phone": null,
+    "website": "https://thecarpeoplellc.com",
+    "categories": [
+      "general",
+      "suspension"
+    ],
+    "summary": "Certified technicians in Nashville and Murfreesboro. Two Middle TN locations for Cherokee repair.",
+    "jeep_friendly_blurb": "Middle Tennessee shop with two locations covering Cherokee and Jeep repair. Competitive pricing with certified technicians.",
+    "jeep_friendly_source_url": "https://thecarpeoplellc.com",
+    "jeep_friendly_source_label": "The Car People website"
+  },
+  {
+    "name": "AutoXtend",
+    "type": "Repair Shops",
+    "state": "TN",
+    "city": "Knoxville",
+    "address": "1309 E Beaver Creek Dr, Knoxville, TN",
+    "phone": null,
+    "website": "https://www.autoxtend.com",
+    "categories": [
+      "general",
+      "4x4",
+      "suspension"
+    ],
+    "summary": "Dependable Jeep repair in Knoxville supporting off-road lifestyles. Rock crawlers to daily drivers.",
+    "jeep_friendly_blurb": "Knoxville shop covering Cherokee and Jeep repair for everything from daily drivers to off-road builds.",
+    "jeep_friendly_source_url": "https://www.autoxtend.com",
+    "jeep_friendly_source_label": "AutoXtend website"
+  },
+  {
+    "name": "S&S Auto Repair",
+    "type": "Repair Shops",
+    "state": "TN",
+    "city": "Chattanooga",
+    "address": "Chattanooga, TN",
+    "phone": null,
+    "website": "https://ssautorepair.com",
+    "categories": [
+      "general",
+      "diagnostics",
+      "suspension"
+    ],
+    "summary": "Professional Jeep repair in Chattanooga for Wrangler, Cherokee, Grand Cherokee, Compass, and Gladiator.",
+    "jeep_friendly_blurb": "Chattanooga shop that explicitly covers Cherokee and all Jeep models with advanced diagnostics.",
+    "jeep_friendly_source_url": "https://ssautorepair.com",
+    "jeep_friendly_source_label": "S&S Auto Repair website"
+  },
+  {
+    "name": "Hyde's Automotive",
+    "type": "Repair Shops",
+    "state": "TN",
+    "city": "Chattanooga",
+    "address": "Chattanooga, TN",
+    "phone": null,
+    "website": "https://www.takeittohydes.com",
+    "categories": [
+      "general",
+      "diagnostics"
+    ],
+    "summary": "State-of-the-art Jeep repair in Chattanooga with advanced diagnostics and high standards.",
+    "jeep_friendly_blurb": "Chattanooga shop with state-of-the-art diagnostics covering Cherokee and all Jeep models.",
+    "jeep_friendly_source_url": "https://www.takeittohydes.com",
+    "jeep_friendly_source_label": "Hyde's Automotive website"
+  },
+  {
+    "name": "Todd Holliday's Winchester Tire",
+    "type": "Repair Shops",
+    "state": "TN",
+    "city": "Memphis",
+    "address": "Memphis, TN",
+    "phone": null,
+    "website": "https://winchestertire.com",
+    "categories": [
+      "general",
+      "suspension"
+    ],
+    "summary": "Repairing Jeeps since 1972. Full service for Cherokee and all Jeep models in Memphis and surrounding area.",
+    "jeep_friendly_blurb": "Memphis shop repairing Jeeps since 1972. Covers Cherokee, Cordova, Germantown, and Desoto County MS.",
+    "jeep_friendly_source_url": "https://winchestertire.com",
+    "jeep_friendly_source_label": "Winchester Tire website"
+  },
+  {
+    "name": "Collins Bros Jeep",
+    "type": "Salvage and Junk Yards",
+    "state": "TX",
+    "city": "Wylie",
+    "address": "Wylie, TX (DFW)",
+    "phone": null,
+    "website": null,
+    "categories": [
+      "salvage",
+      "parts",
+      "4x4"
+    ],
+    "summary": "DFW Jeep-specialist yard with large XJ Cherokee parts inventory. Knowledgeable staff dedicated to Jeep-only inventory.",
+    "jeep_friendly_blurb": "DFW Jeep-only salvage yard with a strong XJ Cherokee inventory. One of the best specialty yards in Texas for Cherokee parts.",
+    "jeep_friendly_source_url": "https://www.google.com/maps/search/Collins+Bros+Jeep+Wylie+TX",
+    "jeep_friendly_source_label": "Google Maps listing"
+  },
+  {
+    "name": "Wrench-A-Part",
+    "type": "Salvage and Junk Yards",
+    "state": "TX",
+    "city": "Austin",
+    "address": "Austin, TX",
+    "phone": null,
+    "website": "https://www.wrenchpart.com",
+    "categories": [
+      "salvage",
+      "parts"
+    ],
+    "summary": "Self-service salvage yard in Austin. Bring your own tools and pull Cherokee parts yourself.",
+    "jeep_friendly_blurb": "Austin self-service salvage yard. Check inventory online before visiting. Pull your own Cherokee parts for significant savings.",
+    "jeep_friendly_source_url": "https://www.wrenchpart.com",
+    "jeep_friendly_source_label": "Wrench-A-Part website"
+  },
+  {
+    "name": "U-Pull-&-Pay",
+    "type": "Salvage and Junk Yards",
+    "state": "TX",
+    "city": "Houston",
+    "address": "Houston, TX",
+    "phone": null,
+    "website": "https://www.upullandpay.com",
+    "categories": [
+      "salvage",
+      "parts"
+    ],
+    "summary": "Clean, organized Houston salvage yard. Browse vehicle inventory online before visiting. Pull Cherokee parts yourself.",
+    "jeep_friendly_blurb": "Houston self-service salvage. Check daily-updated inventory online for Cherokee availability. Clean, organized yard.",
+    "jeep_friendly_source_url": "https://www.upullandpay.com",
+    "jeep_friendly_source_label": "U-Pull-&-Pay website"
+  },
+  {
+    "name": "All Import Auto Parts",
+    "type": "Salvage and Junk Yards",
+    "state": "TX",
+    "city": "Fort Worth",
+    "address": "Fort Worth, TX",
+    "phone": null,
+    "website": "https://all-import.com",
+    "categories": [
+      "salvage",
+      "parts"
+    ],
+    "summary": "Full-service DFW salvage yard. Locates Cherokee parts on-site or via national salvage network for hard-to-find XJ parts.",
+    "jeep_friendly_blurb": "Fort Worth salvage with full-service pull or national network search. Good for hard-to-find XJ Cherokee parts.",
+    "jeep_friendly_source_url": "https://all-import.com",
+    "jeep_friendly_source_label": "All Import Auto Parts website"
+  },
+  {
+    "name": "Pull-A-Part (TX)",
+    "type": "Salvage and Junk Yards",
+    "state": "TX",
+    "city": "Multiple Locations",
+    "address": "Multiple TX Locations",
+    "phone": null,
+    "website": "https://www.pullapart.com",
+    "categories": [
+      "salvage",
+      "parts"
+    ],
+    "summary": "Self-service salvage yards across Texas. Search daily-refreshed inventory online for Cherokee availability.",
+    "jeep_friendly_blurb": "Texas self-service salvage chain with searchable online inventory. Check for Cherokee availability before making the drive.",
+    "jeep_friendly_source_url": "https://www.pullapart.com",
+    "jeep_friendly_source_label": "Pull-A-Part website"
+  },
+  {
+    "name": "DeXJ's",
+    "type": "Salvage and Junk Yards",
+    "state": "TN",
+    "city": "Selmer",
+    "address": "Selmer, TN",
+    "phone": null,
+    "website": "https://www.dexjs.com",
+    "categories": [
+      "salvage",
+      "parts",
+      "4x4"
+    ],
+    "summary": "World's largest Jeep Cherokee XJ junkyard — approximately 700 XJs on-site. Owner Dexter Browder has 20+ years of XJ experience. Known nationwide among XJ owners.",
+    "jeep_friendly_blurb": "The world's largest XJ-specific junkyard in Selmer TN with ~700 Cherokees on-site. A pilgrimage spot for XJ owners needing parts.",
+    "jeep_friendly_source_url": "https://www.dexjs.com",
+    "jeep_friendly_source_label": "DeXJ's website"
+  },
+  {
+    "name": "Mr. Complete",
+    "type": "Salvage and Junk Yards",
+    "state": "TN",
+    "city": "Memphis",
+    "address": "2635 Jackson Ave, Memphis, TN",
+    "phone": null,
+    "website": "https://creepersjeepers.com",
+    "categories": [
+      "salvage",
+      "parts"
+    ],
+    "summary": "Memphis Jeep specialist salvage. Breaks down Wranglers, Cherokees, Grand Cherokees. Sells used parts at a fraction of new cost.",
+    "jeep_friendly_blurb": "Memphis Jeep-focused salvage yard that breaks down and sells Cherokee, Wrangler, and Grand Cherokee parts.",
+    "jeep_friendly_source_url": "https://creepersjeepers.com",
+    "jeep_friendly_source_label": "Mr. Complete website"
+  },
+  {
+    "name": "Pull-A-Part (Knoxville)",
+    "type": "Salvage and Junk Yards",
+    "state": "TN",
+    "city": "Knoxville",
+    "address": "Knoxville, TN",
+    "phone": null,
+    "website": "https://www.pullapart.com",
+    "categories": [
+      "salvage",
+      "parts"
+    ],
+    "summary": "Self-service Knoxville salvage yard. Check daily-updated inventory for Cherokee availability before visiting.",
+    "jeep_friendly_blurb": "Knoxville self-service salvage. Check daily inventory online for Cherokee availability before making the drive.",
+    "jeep_friendly_source_url": "https://www.pullapart.com",
+    "jeep_friendly_source_label": "Pull-A-Part website"
+  },
+  {
+    "name": "LKQ Pick Your Part",
+    "type": "Salvage and Junk Yards",
+    "state": "TN",
+    "city": "Chattanooga",
+    "address": "400 Workman Rd, Chattanooga, TN",
+    "phone": null,
+    "website": "https://locations.lkqpickyourpart.com",
+    "categories": [
+      "salvage",
+      "parts"
+    ],
+    "summary": "Self-service salvage in Chattanooga with new inventory daily. 90-day part guarantee. Pull Cherokee parts for maximum savings.",
+    "jeep_friendly_blurb": "Chattanooga self-service salvage yard with daily new inventory and 90-day parts guarantee. Good for Cherokee parts.",
+    "jeep_friendly_source_url": "https://locations.lkqpickyourpart.com",
+    "jeep_friendly_source_label": "LKQ Pick Your Part website"
+  },
+  {
+    "name": "Jacked Up Truck & Jeep Outfitters",
+    "type": "Tires and Wheels",
+    "state": "TX",
+    "city": "Austin",
+    "address": "Austin, TX",
+    "phone": "(512) 230-5759",
+    "website": "https://jackeduptruckandjeep.com",
+    "categories": [
+      "tires",
+      "wheels",
+      "suspension",
+      "4x4"
+    ],
+    "summary": "Austin Jeep and truck outfitter for lift kits, custom wheels and tires, and accessories. Carries Fuel and Toyo brands.",
+    "jeep_friendly_blurb": "Austin-based Jeep outfitter stocking XJ-compatible lift kits, tires, and wheels. Good for Cherokee owners looking for an off-road shop that knows Jeeps.",
+    "jeep_friendly_source_url": "https://jackeduptruckandjeep.com",
+    "jeep_friendly_source_label": "Jacked Up Truck & Jeep website"
+  },
+  {
+    "name": "AWT Offroad",
+    "type": "Tires and Wheels",
+    "state": "TX",
+    "city": "Houston",
+    "address": "Houston, TX",
+    "phone": null,
+    "website": "https://awtoffroad.com",
+    "categories": [
+      "tires",
+      "wheels",
+      "4x4"
+    ],
+    "summary": "40 years in Houston backed by American Wheel and Tire. Full 4x4 tire and wheel fitment, custom service, and off-road accessories.",
+    "jeep_friendly_blurb": "40-year Houston shop specializing in 4x4 tire and wheel fitments. Knowledgeable for XJ Cherokee wheel and tire setups.",
+    "jeep_friendly_source_url": "https://awtoffroad.com",
+    "jeep_friendly_source_label": "AWT Offroad website"
+  },
+  {
+    "name": "4 Wheel Parts (TX)",
+    "type": "Tires and Wheels",
+    "state": "TX",
+    "city": "Multiple Locations",
+    "address": "Multiple TX Locations",
+    "phone": null,
+    "website": "https://www.4wheelparts.com",
+    "categories": [
+      "tires",
+      "wheels",
+      "suspension",
+      "4x4"
+    ],
+    "summary": "National off-road retailer with Texas locations. XJ-compatible tires, wheels, and lift kits. In-store installation available.",
+    "jeep_friendly_blurb": "Texas off-road retailer with XJ-compatible tires and wheels in stock. In-store installation makes it convenient for Cherokee owners.",
+    "jeep_friendly_source_url": "https://www.4wheelparts.com",
+    "jeep_friendly_source_label": "4 Wheel Parts website"
+  },
+  {
+    "name": "Discount Tire (TX)",
+    "type": "Tires and Wheels",
+    "state": "TX",
+    "city": "Multiple Locations",
+    "address": "Multiple TX Locations",
+    "phone": null,
+    "website": "https://www.discounttire.com",
+    "categories": [
+      "tires",
+      "wheels"
+    ],
+    "summary": "Largest independent tire retailer in the US with dozens of Texas locations. XJ-compatible fitments. Free flat repair and rotation.",
+    "jeep_friendly_blurb": "Widespread Texas tire retailer that can fit XJ Cherokee tire and wheel packages. Free flat repair and rotation.",
+    "jeep_friendly_source_url": "https://www.discounttire.com",
+    "jeep_friendly_source_label": "Discount Tire website"
+  },
+  {
+    "name": "Outlaw Offroad",
+    "type": "Tires and Wheels",
+    "state": "TN",
+    "city": "Nashville",
+    "address": "Nashville, TN",
+    "phone": null,
+    "website": "https://outlawnashville.com",
+    "categories": [
+      "tires",
+      "wheels",
+      "suspension",
+      "4x4"
+    ],
+    "summary": "Middle Tennessee's premier off-road center. Lift kits, leveling kits, wheels, tires, and accessories for Jeeps and 4x4s.",
+    "jeep_friendly_blurb": "Nashville off-road shop specializing in Jeep tires, wheels, and lift kits. Good for Cherokee owners doing XJ builds or tire upgrades.",
+    "jeep_friendly_source_url": "https://outlawnashville.com",
+    "jeep_friendly_source_label": "Outlaw Offroad website"
+  },
+  {
+    "name": "Gary's Off Road Center",
+    "type": "Tires and Wheels",
+    "state": "TN",
+    "city": "Knoxville",
+    "address": "Knoxville & Oak Ridge, TN",
+    "phone": "(865) 409-5490",
+    "website": "https://www.garysoffroad.com",
+    "categories": [
+      "tires",
+      "wheels",
+      "suspension",
+      "4x4"
+    ],
+    "summary": "Tennessee's Jeep and RAM custom shop with two East TN locations. Wheels, tires, lift kits, and custom builds.",
+    "jeep_friendly_blurb": "East Tennessee Jeep custom shop with two locations for tires, wheels, and lift kits. Great for XJ Cherokee builds.",
+    "jeep_friendly_source_url": "https://www.garysoffroad.com",
+    "jeep_friendly_source_label": "Gary's Off Road Center website"
+  },
+  {
+    "name": "Todd Holliday's Winchester Tire (Tires)",
+    "type": "Tires and Wheels",
+    "state": "TN",
+    "city": "Memphis",
+    "address": "Memphis, TN",
+    "phone": null,
+    "website": "https://winchestertire.com",
+    "categories": [
+      "tires",
+      "wheels",
+      "suspension"
+    ],
+    "summary": "Full tire and alignment service for Cherokee and all Jeep models in Memphis. Serving since 1972.",
+    "jeep_friendly_blurb": "Memphis tire shop serving Jeep owners since 1972. Covers Cherokee tire fitting and alignment in the Greater Memphis area.",
+    "jeep_friendly_source_url": "https://winchestertire.com",
+    "jeep_friendly_source_label": "Winchester Tire website"
+  },
+  {
+    "name": "Nyle Maxwell Collision Center",
+    "type": "Body Shops",
+    "state": "TX",
+    "city": "Austin",
+    "address": "Austin, TX",
+    "phone": null,
+    "website": "https://www.nylemaxwellcdjr.com",
+    "categories": [
+      "body",
+      "collision",
+      "paint"
+    ],
+    "summary": "Chrysler Dodge Jeep RAM certified collision center in Austin. OEM precision repair with Enterprise Rental pick-up service on-site.",
+    "jeep_friendly_blurb": "Austin Jeep-certified collision center offering OEM-spec body repair for Cherokee models. Rental car pickup on-site.",
+    "jeep_friendly_source_url": "https://www.nylemaxwellcdjr.com",
+    "jeep_friendly_source_label": "Nyle Maxwell website"
+  },
+  {
+    "name": "Texas Body Works",
+    "type": "Body Shops",
+    "state": "TX",
+    "city": "Dallas",
+    "address": "Dallas, TX",
+    "phone": "(972) 250-6722",
+    "website": "https://www.texasbodyworks.com",
+    "categories": [
+      "body",
+      "collision",
+      "paint"
+    ],
+    "summary": "32+ years of North Texas collision and auto body repair. Advanced paint matching. Jeep Cherokee collision repair.",
+    "jeep_friendly_blurb": "Dallas body shop with 32+ years of experience and advanced paint matching for exact color restoration on Cherokee models.",
+    "jeep_friendly_source_url": "https://www.texasbodyworks.com",
+    "jeep_friendly_source_label": "Texas Body Works website"
+  },
+  {
+    "name": "Texas Collision Centers",
+    "type": "Body Shops",
+    "state": "TX",
+    "city": "DFW",
+    "address": "DFW, TX (16 Locations)",
+    "phone": null,
+    "website": "https://www.texascollisioncenters.com",
+    "categories": [
+      "body",
+      "collision",
+      "paint"
+    ],
+    "summary": "16-location DFW collision repair network. Certified body work, paint, hail damage, and ADAS calibration. Lifetime warranty.",
+    "jeep_friendly_blurb": "DFW collision network with 16 locations. Certified repair and lifetime warranty on body and paint for Cherokee and all vehicles.",
+    "jeep_friendly_source_url": "https://www.texascollisioncenters.com",
+    "jeep_friendly_source_label": "Texas Collision Centers website"
+  },
+  {
+    "name": "River Oaks Paint & Body",
+    "type": "Body Shops",
+    "state": "TX",
+    "city": "Houston",
+    "address": "Houston, TX",
+    "phone": null,
+    "website": "https://www.riveroakspaintandbody.net",
+    "categories": [
+      "body",
+      "collision",
+      "paint"
+    ],
+    "summary": "Top-rated Jeep collision center in Houston. Insurance claims handled in-house. Factory-quality finishes for all Jeep models.",
+    "jeep_friendly_blurb": "Houston Jeep collision repair with in-house insurance handling. Factory-quality paint and body finishes for Cherokee models.",
+    "jeep_friendly_source_url": "https://www.riveroakspaintandbody.net",
+    "jeep_friendly_source_label": "River Oaks Paint & Body website"
+  },
+  {
+    "name": "Race Track Auto Center",
+    "type": "Body Shops",
+    "state": "TX",
+    "city": "Houston",
+    "address": "9840 Westpark Dr, Houston, TX",
+    "phone": null,
+    "website": "https://racetrackautocenter.com",
+    "categories": [
+      "body",
+      "collision",
+      "paint"
+    ],
+    "summary": "Insurance-approved Jeep body shop in Houston. Specializes in restoring Cherokees to factory specs. Lifetime warranty on body and paint.",
+    "jeep_friendly_blurb": "Houston body shop specializing in restoring Jeep Cherokees to factory specs. Lifetime warranty on all body and paint work.",
+    "jeep_friendly_source_url": "https://racetrackautocenter.com",
+    "jeep_friendly_source_label": "Race Track Auto Center website"
+  },
+  {
+    "name": "Gunn Collision",
+    "type": "Body Shops",
+    "state": "TX",
+    "city": "San Antonio",
+    "address": "San Antonio, TX",
+    "phone": null,
+    "website": "https://www.gunncollision.com",
+    "categories": [
+      "body",
+      "collision",
+      "paint"
+    ],
+    "summary": "ASE, I-CAR Gold Class, and Jeep-certified collision center in San Antonio. OEM parts and guaranteed workmanship.",
+    "jeep_friendly_blurb": "San Antonio body shop that is Jeep-certified, I-CAR Gold Class, and uses OEM parts for Cherokee collision repair.",
+    "jeep_friendly_source_url": "https://www.gunncollision.com",
+    "jeep_friendly_source_label": "Gunn Collision website"
+  },
+  {
+    "name": "Gerber Collision & Glass",
+    "type": "Body Shops",
+    "state": "TN",
+    "city": "Nashville",
+    "address": "999 Polk Ave, Nashville, TN",
+    "phone": "(615) 254-6946",
+    "website": "https://www.gerbercollision.com",
+    "categories": [
+      "body",
+      "collision",
+      "paint"
+    ],
+    "summary": "FCA Certified Collision Care Program Jeep shop. Certified tools, equipment, and technicians for OEM-spec Jeep repairs.",
+    "jeep_friendly_blurb": "FCA Certified collision shop at 999 Polk Ave Nashville — certified for OEM-spec Jeep Cherokee collision repair.",
+    "jeep_friendly_source_url": "https://www.gerbercollision.com",
+    "jeep_friendly_source_label": "Gerber Collision website"
+  },
+  {
+    "name": "Dalton Collision",
+    "type": "Body Shops",
+    "state": "TN",
+    "city": "Knoxville",
+    "address": "Knoxville, TN",
+    "phone": null,
+    "website": "https://daltoncollision.com",
+    "categories": [
+      "body",
+      "collision",
+      "paint"
+    ],
+    "summary": "I-CAR Gold Class since 1998 — longest-tenured Gold Class shop in Tennessee. Expert Cherokee collision repair in Knoxville.",
+    "jeep_friendly_blurb": "Knoxville body shop with I-CAR Gold Class certification since 1998. Highly experienced collision repair for Cherokee models.",
+    "jeep_friendly_source_url": "https://daltoncollision.com",
+    "jeep_friendly_source_label": "Dalton Collision website"
+  },
+  {
+    "name": "Harper Collision Center",
+    "type": "Body Shops",
+    "state": "TN",
+    "city": "Knoxville",
+    "address": "Knoxville, TN",
+    "phone": null,
+    "website": "https://www.harpercollision.com",
+    "categories": [
+      "body",
+      "collision",
+      "paint"
+    ],
+    "summary": "Premier collision repair and refinishing in Greater Knoxville. State-of-the-art equipment for factory-quality Cherokee restoration.",
+    "jeep_friendly_blurb": "Knoxville premier collision shop with state-of-the-art equipment. Factory-quality restoration work for Cherokee models.",
+    "jeep_friendly_source_url": "https://www.harpercollision.com",
+    "jeep_friendly_source_label": "Harper Collision website"
+  },
+  {
+    "name": "Caliber Collision (Memphis)",
+    "type": "Body Shops",
+    "state": "TN",
+    "city": "Memphis",
+    "address": "Memphis, TN",
+    "phone": null,
+    "website": "https://www.caliber.com",
+    "categories": [
+      "body",
+      "collision",
+      "paint"
+    ],
+    "summary": "I-CAR Gold Class certified collision centers in Memphis. Insurance-partnered with written repair guarantees.",
+    "jeep_friendly_blurb": "Memphis I-CAR Gold Class collision shop partnered with major insurers. Written guarantee on Cherokee and all vehicle repairs.",
+    "jeep_friendly_source_url": "https://www.caliber.com",
+    "jeep_friendly_source_label": "Caliber Collision website"
+  },
+  {
+    "name": "Caliber Collision (Chattanooga)",
+    "type": "Body Shops",
+    "state": "TN",
+    "city": "Chattanooga",
+    "address": "Chattanooga, TN",
+    "phone": null,
+    "website": "https://www.caliber.com",
+    "categories": [
+      "body",
+      "collision",
+      "paint"
+    ],
+    "summary": "I-CAR Gold Class certified collision repair in Chattanooga. Works with all major insurance providers.",
+    "jeep_friendly_blurb": "Chattanooga I-CAR Gold Class collision shop working with all major insurers. Restores Cherokee to pre-accident condition.",
+    "jeep_friendly_source_url": "https://www.caliber.com",
+    "jeep_friendly_source_label": "Caliber Collision website"
   }
 ]
