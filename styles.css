@@ -569,7 +569,7 @@ img { max-width: 100%; display: block; }
   .pricing-grid { grid-template-columns: 1fr; }
   .carousel-outer { padding: 0; }
   .carousel-btn { display: none; }
-  .carousel-track-wrap { overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .carousel-track-wrap { overflow-x: auto; overflow-y: auto; scroll-snap-type: x mandatory; scrollbar-width: none; -webkit-overflow-scrolling: touch; height: auto; }
   .carousel-track-wrap::-webkit-scrollbar { display: none; }
   .carousel-track { flex-wrap: nowrap; }
   .carousel-track .featured-biz-card { flex: 0 0 88%; scroll-snap-align: start; }
