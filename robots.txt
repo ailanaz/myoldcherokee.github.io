@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.oldxjs.com/sitemap.xml
+Sitemap: https://oldxjs.com/sitemap.xml
