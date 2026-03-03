@@ -117,8 +117,8 @@
     position: relative !important;
     inset: auto !important;
     width: 100%;
-    min-height: 210px;
-    background-position: center 75%;
+    min-height: 320px;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -135,9 +135,9 @@
     z-index: 3;
     display: flex;
     justify-content: center;
-    margin-top: -2px;
-    padding: 0 16px 8px;
-    background: #0b0d18;
+    margin-top: 0;
+    padding: 0 16px 10px;
+    background: transparent;
   }
 
   .hero.hero--stack .search-wrap {
@@ -152,11 +152,13 @@
 
   @media (max-width: 700px) {
     .hero.hero--stack .hero-photo {
-      min-height: 165px;
+      min-height: 230px;
+      background-position: center center;
+      background-size: contain;
     }
     .hero.hero--stack .hero-search-below {
-      margin-top: -2px;
-      padding: 0 12px 6px;
+      margin-top: 0;
+      padding: 0 12px 8px;
     }
   }
 </style>
