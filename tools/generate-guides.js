@@ -44,7 +44,7 @@ function buildPage(g) {
 
 <div class="topbar">
   <div class="container topbar-inner">
-    <span>#1 Independent buy and sell directory and resource hub for owners of Old XJs</span>
+    <span>Your one stop XJ hub</span>
     <div class="topbar-links">
       <a href="../index.html">Home</a>
       <a href="../state-search.html">Map</a>
