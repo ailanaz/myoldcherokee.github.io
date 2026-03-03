@@ -103,7 +103,7 @@ img { max-width: 100%; display: block; }
 .hero-sub { font-family: 'Source Serif 4', serif; font-size: 1.08rem; color: #fbbf24; max-width: 52ch; line-height: 1.7; margin-bottom: 2rem; }
 
 /* HERO SEARCH BAR */
-.hero-search-box { background: #fff; border-radius: var(--radius-full); padding: 0.35rem 0.35rem 0.35rem 1.4rem; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.4rem; box-shadow: var(--shadow-lg); max-width: 540px; }
+.hero-search-box { background: #fff; border-radius: var(--radius-full); padding: 0.35rem 0.35rem 0.35rem 1.4rem; display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1.4rem; box-shadow: var(--shadow-lg); max-width: 540px; outline: 2px solid #830319; outline-offset: 0; }
 .hero-search-box input { flex: 1; border: none; background: transparent; height: 44px; font-family: 'DM Sans', sans-serif; font-size: 0.93rem; color: var(--text); outline: none; min-width: 0; }
 .hero-search-box input::placeholder { color: var(--text-lite); }
 .hero-search-box .btn { border-radius: var(--radius-full); height: 40px; flex-shrink: 0; font-size: 0.88rem; }
