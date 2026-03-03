@@ -86,7 +86,7 @@ img { max-width: 100%; display: block; }
 
 /* HERO */
 .hero { position: relative; min-height: 600px; display: flex; align-items: center; overflow: visible; background: #131318; z-index: 5; }
-.hero-photo { position: absolute; inset: 0; background: linear-gradient(to right, rgba(15,12,10,0.88) 0%, rgba(15,12,10,0.6) 55%, rgba(15,12,10,0.28) 100%), url("hero-cherokee.jpg"); background-size: cover; background-position: center; }
+.hero-photo { position: absolute; inset: 0; background: url("hero-cherokee.jpg") center/contain no-repeat; }
 .hero-content { position: relative; z-index: 2; padding: 5rem 0 4.5rem; max-width: 640px; margin-left: auto; margin-right: auto; }
 .eyebrow { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.9); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.32rem 0.85rem; border-radius: var(--radius-full); margin-bottom: 1.1rem; }
 .hero h1 { font-size: clamp(2.4rem, 4.5vw, 3.75rem); font-weight: 700; line-height: 1.06; letter-spacing: 0.01em; text-transform: uppercase; color: #fff; margin-bottom: 1rem; }
@@ -95,7 +95,7 @@ img { max-width: 100%; display: block; }
 
 /* HERO SEARCH BAR - Angi pill style */
 .hero { position: relative; min-height: 600px; display: flex; align-items: center; background: #131318; }
-.hero-photo { position: absolute; inset: 0; background: linear-gradient(to right, rgba(15,12,10,0.88) 0%, rgba(15,12,10,0.6) 55%, rgba(15,12,10,0.28) 100%), url("hero-cherokee.jpg"); background-size: cover; background-position: center; }
+.hero-photo { position: absolute; inset: 0; background: url("hero-cherokee.jpg") center/contain no-repeat; }
 .hero-content { position: relative; z-index: 2; padding: 5rem 0 4.5rem; max-width: 640px; margin-left: auto; margin-right: auto; }
 .eyebrow { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.9); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.32rem 0.85rem; border-radius: var(--radius-full); margin-bottom: 1.1rem; }
 .hero h1 { font-size: clamp(3rem, 5.5vw, 5rem); font-weight: 700; line-height: 1.06; letter-spacing: -0.03em; text-transform: uppercase; color: #fff; margin-bottom: 1rem; }
