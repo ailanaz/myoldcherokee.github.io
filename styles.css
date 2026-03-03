@@ -415,22 +415,31 @@ img { max-width: 100%; display: block; }
   .nav-more-btn { padding: 0.1rem 0.34rem; font-size: 0.66rem; line-height: 1.1; border-width: 1px; }
 
   /* Mobile label override: Guides -> DIY in top nav */
-  .topbar-links > a[href$="guides.html"] {
-    font-size: 0 !important;
+  .topbar-links > a[href*="guides.html"] {
+    position: relative;
+    color: transparent !important;
   }
-  .topbar-links > a[href$="guides.html"]::after {
+  .topbar-links > a[href*="guides.html"]::after {
     content: "DIY";
+    color: #fff;
     font-size: 0.66rem;
     line-height: 1.1;
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
   }
 
   /* Mobile label override on homepage search dropdown: Guides -> DIY Guides */
   #search-dropdown .search-suggestion[data-href="guides.html"] .search-suggestion-text {
-    font-size: 0;
+    display: none !important;
   }
-  #search-dropdown .search-suggestion[data-href="guides.html"] .search-suggestion-text::after {
+  #search-dropdown .search-suggestion[data-href="guides.html"]::after {
     content: "DIY Guides";
     font-size: 0.88rem;
+    color: var(--text);
   }
 }
 @media (max-width: 1024px) {
