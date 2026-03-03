@@ -74,32 +74,33 @@
     </h1>
   </div>
 
-  <div class="container hero-search-below">
-    <div class="search-wrap">
-      <div class="hero-search-box">
-        <input
-          type="search"
-          id="hero-search"
-          autocomplete="off"
-          placeholder="Choose your path"
-          readonly
-          aria-label="Choose your path"
-        />
-      </div>
-      <div class="search-dropdown" id="search-dropdown" style="display:none;">
-        <div class="search-suggestion" data-href="buy-sell.html"><span class="search-suggestion-text">Buy &amp; Sell</span></div>
-        <div class="search-suggestion" data-href="directory.html"><span class="search-suggestion-text">Directory</span></div>
-        <div class="search-suggestion" data-href="directory.html#fabrication"><span class="search-suggestion-text">Fabrication Shops</span></div>
-        <div class="search-suggestion" data-href="guides.html"><span class="search-suggestion-text">Guides</span></div>
-        <div class="search-suggestion" data-href="community.html"><span class="search-suggestion-text">Chat Board</span></div>
-        <div class="search-suggestion" data-href="blog/index.html"><span class="search-suggestion-text">Blog</span></div>
-        <div class="search-suggestion" data-href="about.html"><span class="search-suggestion-text">About</span></div>
-        <div class="search-suggestion" data-href="submit.html"><span class="search-suggestion-text">Submit a Listing</span></div>
-        <div class="search-suggestion" data-href="contact.html"><span class="search-suggestion-text">Contact</span></div>
-      </div>
+</section>
+
+<div class="container hero-search-below">
+  <div class="search-wrap">
+    <div class="hero-search-box">
+      <input
+        type="search"
+        id="hero-search"
+        autocomplete="off"
+        placeholder="Choose your path"
+        readonly
+        aria-label="Choose your path"
+      />
+    </div>
+    <div class="search-dropdown" id="search-dropdown" style="display:none;">
+      <div class="search-suggestion" data-href="buy-sell.html"><span class="search-suggestion-text">Buy &amp; Sell</span></div>
+      <div class="search-suggestion" data-href="directory.html"><span class="search-suggestion-text">Directory</span></div>
+      <div class="search-suggestion" data-href="directory.html#fabrication"><span class="search-suggestion-text">Fabrication Shops</span></div>
+      <div class="search-suggestion" data-href="guides.html"><span class="search-suggestion-text">Guides</span></div>
+      <div class="search-suggestion" data-href="community.html"><span class="search-suggestion-text">Chat Board</span></div>
+      <div class="search-suggestion" data-href="blog/index.html"><span class="search-suggestion-text">Blog</span></div>
+      <div class="search-suggestion" data-href="about.html"><span class="search-suggestion-text">About</span></div>
+      <div class="search-suggestion" data-href="submit.html"><span class="search-suggestion-text">Submit a Listing</span></div>
+      <div class="search-suggestion" data-href="contact.html"><span class="search-suggestion-text">Contact</span></div>
     </div>
   </div>
-</section>
+</div>
 
 <!-- Paste this style block anywhere AFTER styles.css is loaded (best: right under the HERO) -->
 <style>
@@ -115,7 +116,8 @@
     position: relative !important;
     inset: auto !important;
     width: 100%;
-    min-height: 320px;
+    height: clamp(240px, 30vw, 360px);
+    min-height: 0;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -127,18 +129,17 @@
     max-width: none;
   }
 
-  /* Search sits below image block */
-  .hero.hero--stack .hero-search-below {
+  /* Search sits below hero section */
+  .hero-search-below {
     position: relative;
     z-index: 3;
     display: flex;
     justify-content: center;
-    margin: -22px 0 0 !important;
-    padding: 0 8px 4px !important;
+    margin: 0 !important;
+    padding: 8px 8px 8px !important;
   }
 
-  /* Override any absolute/center overlay rules that were placing it on top of the plate */
-  .hero.hero--stack .search-wrap {
+  .hero-search-below .search-wrap {
     position: relative !important;
     left: auto !important;
     top: auto !important;
