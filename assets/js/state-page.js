@@ -72,10 +72,14 @@ function renderGroup(container, title, items) {
       ? ' <a href="' + esc(it.jeep_friendly_source_url) + '" target="_blank" rel="noopener noreferrer" style="font-size:0.78rem;margin-left:0.4rem;white-space:nowrap;">' + esc(it.jeep_friendly_source_label || 'Source') + ' &rarr;</a>'
       : '';
 
-    var blurb = it.jeep_friendly_blurb
+    var cleanBlurb = String(it.jeep_friendly_blurb || '')
+      .replace(/\bjeep[-\s]?friendly\b/gi, '')
+      .replace(/\s{2,}/g, ' ')
+      .trim();
+
+    var blurb = cleanBlurb
       ? '<p style="margin:0.5rem 0 0;font-size:0.83rem;padding:0.4rem 0.65rem;background:rgba(42,102,72,0.1);border-left:3px solid #2a6648;border-radius:0 4px 4px 0;line-height:1.5;">'
-        + '<strong style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.05em;display:block;margin-bottom:0.15rem;">Jeep-friendly</strong>'
-        + esc(it.jeep_friendly_blurb) + sourceLink
+        + esc(cleanBlurb) + sourceLink
         + '</p>'
       : '';
 
@@ -115,6 +119,40 @@ function renderSection(container, sectionTitle, groups, orderedKeys) {
 
   // If no groups at all, show a placeholder
   if (!Object.keys(groups).length) {
+    if (sectionTitle === 'Buy and Sell') {
+      var inactiveWrap = document.createElement('div');
+      inactiveWrap.style.cssText = 'margin-top:1rem;';
+      inactiveWrap.innerHTML =
+        '<div class="grid g4">' +
+          '<a href="../submit.html" class="listing-card listing-card--inactive">' +
+            '<div class="listing-image-wrap listing-no-photo"><span class="listing-state">—</span></div>' +
+            '<div class="listing-body">' +
+              '<div class="listing-cats"><span class="lcat lcat-wanted">Wanted</span></div>' +
+              '<div class="listing-name">Looking for a Cherokee Part?</div>' +
+              '<p class="listing-summary">Post a wanted ad and let Cherokee owners in this state come to you.</p>' +
+              '<span class="btn btn-outline btn-sm">Post a Wanted Ad</span>' +
+            '</div>' +
+          '</a>' +
+          '<a href="../submit.html" class="listing-card listing-card--inactive">' +
+            '<div class="listing-image-wrap listing-no-photo"><span class="listing-state">—</span></div>' +
+            '<div class="listing-body">' +
+              '<div class="listing-cats"><span class="lcat lcat-parts">Parts</span></div>' +
+              '<div class="listing-name">Used Cherokee Parts</div>' +
+              '<p class="listing-summary">No active parts listings yet for this state. Add yours to be first.</p>' +
+              '<span class="btn btn-amber btn-sm">Post Parts</span>' +
+            '</div>' +
+          '</a>' +
+          '<div class="listing-card-submit">' +
+            '<div style="font-size:2.5rem;">📋</div>' +
+            '<h3>Selling Your Old Cherokee?</h3>' +
+            '<p>Post a vehicle, parts, project Cherokee, or wanted listing in this state.</p>' +
+            '<a href="../submit.html" class="btn btn-red btn-sm">List with Us</a>' +
+          '</div>' +
+        '</div>';
+      container.appendChild(inactiveWrap);
+      return;
+    }
+
     var none = document.createElement('div');
     none.style.cssText = 'background:var(--off);border:1.5px dashed var(--line-mid);border-radius:10px;padding:2rem;text-align:center;margin-top:1rem;color:var(--text-mid);';
     none.innerHTML = 'No confirmed ' + sectionTitle.toLowerCase() + ' listings yet for this state. <a href="../submit.html">Submit one.</a>';
@@ -151,12 +189,18 @@ async function initStatePage() {
       return (x.state || '').toUpperCase() === stateCode;
     });
 
+    // Render only active buy/sell records on state pages.
+    // This prevents sample/fake seed listings from appearing.
+    var activeBuySell = buySell.filter(function(x) {
+      return x.is_active === true || String(x.status || '').toLowerCase() === 'active';
+    });
+
     // Only show directory businesses with a confirmed jeep_friendly_blurb
     var directory = dirAll.filter(function(x) {
       return (x.state || '').toUpperCase() === stateCode && x.jeep_friendly_blurb;
     });
 
-    var buySellGroups = groupBy(buySell, 'category');
+    var buySellGroups = groupBy(activeBuySell, 'category');
     var dirGroups = groupBy(directory, 'type');
 
     var dirOrder = ['Repair Shops', 'Salvage and Junk Yards', 'Tires and Wheels', 'Body Shops', 'Shop for Parts and More', 'Other'];
