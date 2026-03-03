@@ -1889,27 +1889,13 @@
         var loc = (it.city && it.state)
           ? '<div class="biz-loc">&#128205; ' + esc(it.city) + ', ' + esc(it.state) + '</div>'
           : '';
+        var address = it.address
+          ? '<div class="biz-loc" style="margin-top:0.2rem;">&#128205; ' + esc(it.address) + '</div>'
+          : '';
 
         var phone = it.phone
           ? '<div style="font-size:0.82rem;color:var(--text-mid);margin-top:0.2rem;">&#128222; ' + esc(it.phone) + '</div>'
           : '';
-
-        var summary = it.summary
-          ? '<p class="biz-desc">' + esc(it.summary) + '</p>'
-          : '';
-
-        var sourceLink = it.jeep_friendly_source_url
-          ? ' <a href="' + esc(it.jeep_friendly_source_url) + '" target="_blank" rel="noopener noreferrer" style="font-size:0.78rem;margin-left:0.4rem;white-space:nowrap;">' + esc(it.jeep_friendly_source_label || 'Source') + ' &rarr;</a>'
-          : '';
-
-        var cleanBlurb = String(it.jeep_friendly_blurb || '')
-          .replace(/\bjeep[-\s]?friendly\b/gi, '')
-          .replace(/\s{2,}/g, ' ')
-          .trim();
-
-        var blurb = '<div style="margin-top:0.6rem;font-size:0.83rem;padding:0.4rem 0.65rem;background:rgba(42,102,72,0.1);border-left:3px solid #2a6648;border-radius:0 4px 4px 0;line-height:1.5;">'
-          + esc(cleanBlurb) + sourceLink
-          + '</div>';
 
         /* Single action button — website first, map second, Yelp third */
         var yelpUrl = (it.jeep_friendly_source_url && it.jeep_friendly_source_url.indexOf('yelp.com') !== -1)
@@ -1930,9 +1916,8 @@
           + '<span class="biz-type">Repair Shop</span>'
           + '<div class="biz-name">' + esc(it.name || 'Shop') + '</div>'
           + loc
+          + address
           + phone
-          + summary
-          + blurb
           + actions
           + '</div>';
 

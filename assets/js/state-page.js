@@ -51,10 +51,14 @@ function renderGroup(container, title, items) {
     var it = items[i];
     var li = document.createElement('li');
     li.style.cssText = 'border:1px solid var(--line);border-radius:8px;padding:0.75rem 1rem;background:var(--off);';
+    var isDirectoryCard = !!it.type;
 
     var name = esc(it.title || it.name || 'Listing');
     var city = it.city ? ' <span style="color:var(--text-mid);font-size:0.88rem;">\u2014 ' + esc(it.city) + ', ' + esc(it.state || '') + '</span>' : '';
     var price = it.price ? ' <span style="color:var(--text-mid);font-size:0.85rem;">(' + esc(it.price) + ')</span>' : '';
+    var address = it.address
+      ? '<div style="font-size:0.82rem;color:var(--text-mid);margin-top:0.22rem;">\u{1F4CD} ' + esc(it.address) + '</div>'
+      : '';
 
     var website = it.website
       ? '<div style="margin-top:0.35rem;"><a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" style="font-size:0.82rem;">' + esc(it.website) + '</a></div>'
@@ -64,26 +68,11 @@ function renderGroup(container, title, items) {
       ? '<div style="font-size:0.82rem;color:var(--text-mid);margin-top:0.2rem;">' + esc(it.phone) + '</div>'
       : '';
 
-    var summary = it.summary
+    var summary = (!isDirectoryCard && it.summary)
       ? '<p style="margin:0.35rem 0 0;font-size:0.87rem;color:var(--text-mid);line-height:1.5;">' + esc(it.summary) + '</p>'
       : '';
 
-    var sourceLink = it.jeep_friendly_source_url
-      ? ' <a href="' + esc(it.jeep_friendly_source_url) + '" target="_blank" rel="noopener noreferrer" style="font-size:0.78rem;margin-left:0.4rem;white-space:nowrap;">' + esc(it.jeep_friendly_source_label || 'Source') + ' &rarr;</a>'
-      : '';
-
-    var cleanBlurb = String(it.jeep_friendly_blurb || '')
-      .replace(/\bjeep[-\s]?friendly\b/gi, '')
-      .replace(/\s{2,}/g, ' ')
-      .trim();
-
-    var blurb = cleanBlurb
-      ? '<p style="margin:0.5rem 0 0;font-size:0.83rem;padding:0.4rem 0.65rem;background:rgba(42,102,72,0.1);border-left:3px solid #2a6648;border-radius:0 4px 4px 0;line-height:1.5;">'
-        + esc(cleanBlurb) + sourceLink
-        + '</p>'
-      : '';
-
-    li.innerHTML = '<strong>' + name + '</strong>' + city + price + website + phone + summary + blurb;
+    li.innerHTML = '<strong>' + name + '</strong>' + city + price + address + website + phone + summary;
     ul.appendChild(li);
   }
 
