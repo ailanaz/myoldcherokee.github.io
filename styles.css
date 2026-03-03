@@ -88,18 +88,18 @@ img { max-width: 100%; display: block; }
 .btn-sm { height: 36px; padding: 0 1rem; font-size: 0.82rem; }
 
 /* HERO */
-.hero { position: relative; min-height: 320px; display: flex; align-items: center; overflow: visible; background: #131318; z-index: 5; }
+.hero { position: relative; min-height: 600px; display: flex; align-items: center; overflow: visible; background: #131318; z-index: 5; }
 .hero-photo { position: absolute; inset: 0; background: url("og-default.jpg") center/contain no-repeat; }
-.hero-content { position: relative; z-index: 2; padding: 2rem 0 1.75rem; max-width: 640px; margin-left: auto; margin-right: auto; }
+.hero-content { position: relative; z-index: 2; padding: 5rem 0 4.5rem; max-width: 640px; margin-left: auto; margin-right: auto; }
 .eyebrow { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.9); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.32rem 0.85rem; border-radius: var(--radius-full); margin-bottom: 1.1rem; }
 .hero h1 { font-size: clamp(2.4rem, 4.5vw, 3.75rem); font-weight: 700; line-height: 1.06; letter-spacing: 0.01em; text-transform: uppercase; color: #fff; margin-bottom: 1rem; }
 .hero h1 span { color: #fbbf24; }
 .hero-sub { font-family: 'Source Serif 4', serif; font-size: 1.08rem; color: rgba(255,255,255,0.78); max-width: 52ch; line-height: 1.7; margin-bottom: 2rem; }
 
 /* HERO SEARCH BAR - Angi pill style */
-.hero { position: relative; min-height: 320px; display: flex; align-items: center; background: #131318; }
+.hero { position: relative; min-height: 600px; display: flex; align-items: center; background: #131318; }
 .hero-photo { position: absolute; inset: 0; background: url("og-default.jpg") center/contain no-repeat; }
-.hero-content { position: relative; z-index: 2; padding: 2rem 0 1.75rem; max-width: 640px; margin-left: auto; margin-right: auto; }
+.hero-content { position: relative; z-index: 2; padding: 5rem 0 4.5rem; max-width: 640px; margin-left: auto; margin-right: auto; }
 
 /* HERO STACK — license plate image above, search bar below */
 .hero--stack { flex-direction: column; justify-content: flex-end; align-items: stretch; min-height: 320px; }
