@@ -1,5 +1,5 @@
 /* ratings.js — anonymous 1-5 star ratings via Supabase
-   MyOldCherokee.com — static GitHub Pages
+   OldXJS.com — static GitHub Pages
    ─────────────────────────────────────────────────────── */
 (function () {
   'use strict';
