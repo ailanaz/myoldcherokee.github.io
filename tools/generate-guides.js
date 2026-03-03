@@ -32,7 +32,7 @@ function buildPage(g) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>${esc(g.title)} | MyOldCherokee.com</title>
+  <title>${esc(g.title)} | OldXJS.com</title>
   <meta name="description" content="${esc(g.summary)}" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +44,7 @@ function buildPage(g) {
 
 <div class="topbar">
   <div class="container topbar-inner">
-    <span>#1 Independent buy and sell directory and resource hub for owners of older Cherokee models</span>
+    <span>#1 Independent buy and sell directory and resource hub for owners of Old XJs</span>
     <div class="topbar-links">
       <a href="../index.html">Home</a>
       <a href="../state-search.html">Map</a>
@@ -58,8 +58,8 @@ function buildPage(g) {
 <header class="site-header">
   <div class="container header-inner">
     <a href="../index.html" class="brand">
-      <img src="../logo.png" alt="MyOldCherokee.com logo" />
-      <span class="brand-name">MyOldCherokee.com</span>
+      <img src="../logo.png" alt="OldXJS.com logo" />
+      <span class="brand-name">OldXJS.com</span>
     </a>
     <nav class="site-nav">
       <a href="../buy-sell.html">Buy &amp; Sell</a>
@@ -133,9 +133,9 @@ function buildPage(g) {
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand-block">
-        <div style="font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff;">MyOldCherokee.com</div>
+        <div style="font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff;">OldXJS.com</div>
         <p>An independent buy and sell directory for older Cherokee models, with repair shops, junk/salvage yard listings, DIY/troubleshooting Guides, and community resources.</p>
-        <p class="footer-disclaimer">Listings and information are provided in good faith and believed accurate to the best of our knowledge. We do not verify or guarantee third-party listings, businesses, products, or services. Users are responsible for their own due diligence. MyOldCherokee.com is not affiliated with or endorsed by Jeep&reg; or Stellantis&reg;. Brand and model names are used for identification and compatibility purposes only. All trademarks are the property of their respective owners.</p>
+        <p class="footer-disclaimer">Listings and information are provided in good faith and believed accurate to the best of our knowledge. We do not verify or guarantee third-party listings, businesses, products, or services. Users are responsible for their own due diligence. OldXJS.com is not affiliated with or endorsed by Jeep&reg; or Stellantis&reg;. Brand and model names are used for identification and compatibility purposes only. All trademarks are the property of their respective owners.</p>
         <a href="../contact.html" class="btn btn-outline btn-sm footer-contact-btn">Contact Us</a>
       </div>
       <div class="footer-col">
@@ -160,7 +160,7 @@ function buildPage(g) {
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; <span id="yr"></span> MyOldCherokee.com. All rights reserved. | <a class="footer-disclaimer-link" href="../about.html">About</a> | <a class="footer-disclaimer-link" href="../contact.html">Contact</a> | <a class="footer-disclaimer-link" href="../duediligence.html">Due Diligence</a></p>
+      <p>&copy; <span id="yr"></span> OldXJS.com. All rights reserved. | <a class="footer-disclaimer-link" href="../about.html">About</a> | <a class="footer-disclaimer-link" href="../contact.html">Contact</a> | <a class="footer-disclaimer-link" href="../duediligence.html">Due Diligence</a></p>
       <p>www.myoldcherokee.com</p>
     </div>
   </div>
