@@ -65,14 +65,30 @@
 </header>
 
 <!-- HERO -->
-<section class="hero">
+<!-- HERO (replace your current <section class="hero">...</section> with this) -->
+<section class="hero hero--stack">
   <div class="hero-photo"></div>
+
   <div class="container hero-content">
-    <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">OldXJS.com — Cherokee Buy &amp; Sell, Directory &amp; Guides</h1>
+    <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
+      OldXJS.com — Cherokee Buy &amp; Sell, Directory &amp; Guides
+    </h1>
+  </div>
+
+  <!-- Search moved BELOW the license plate -->
+  <div class="container hero-search-below">
     <div class="search-wrap">
       <div class="hero-search-box">
-        <input type="search" id="hero-search" autocomplete="off" placeholder="Choose your path" readonly aria-label="Choose your path" />
+        <input
+          type="search"
+          id="hero-search"
+          autocomplete="off"
+          placeholder="Choose your path"
+          readonly
+          aria-label="Choose your path"
+        />
       </div>
+
       <div class="search-dropdown" id="search-dropdown" style="display:none;">
         <div class="search-suggestion" data-href="buy-sell.html"><span class="search-suggestion-text">Buy &amp; Sell</span></div>
         <div class="search-suggestion" data-href="directory.html"><span class="search-suggestion-text">Directory</span></div>
@@ -86,6 +102,26 @@
     </div>
   </div>
 </section>
+
+<style>
+  /* Forces the search bar to sit below the plate (without changing your hero image) */
+  .hero.hero--stack .hero-search-below {
+    display: flex;
+    justify-content: center;
+    padding: 18px 16px 26px;
+  }
+
+  /* Override any absolute/center overlay rules that were placing it on top of the plate */
+  .hero.hero--stack .search-wrap {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    margin: 0 auto !important;
+    width: 100%;
+    max-width: 780px;
+  }
+</style>
 
 <!-- FEATURED SHOPS & SERVICES CAROUSEL -->
 <section class="featured-carousel-section">
