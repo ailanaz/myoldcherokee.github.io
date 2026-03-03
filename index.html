@@ -67,7 +67,9 @@
 <!-- HERO -->
 <!-- HERO (replace your current <section class="hero">...</section> with this) -->
 <section class="hero hero--stack">
-  <div class="hero-photo"></div>
+  <div class="hero-photo">
+    <img class="hero-photo-img" src="og-default.jpg" alt="Old XJS license plate" />
+  </div>
 
   <div class="container hero-content">
     <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
@@ -115,12 +117,16 @@
 
   .hero.hero--stack .hero-photo {
     position: relative !important;
-    inset: auto !important;
     width: 100%;
-    min-height: 290px;
-    background-position: center 60%;
-    background-repeat: no-repeat;
-    background-size: contain;
+    display: flex;
+    justify-content: center;
+    padding: 8px 0 0;
+  }
+
+  .hero.hero--stack .hero-photo-img {
+    display: block;
+    width: min(760px, 92vw);
+    height: auto;
   }
 
   .hero.hero--stack .hero-content {
@@ -135,7 +141,7 @@
     z-index: 3;
     display: flex;
     justify-content: center;
-    margin-top: -74px;
+    margin-top: 0;
     padding: 0 16px 0;
     background: transparent;
   }
@@ -152,12 +158,13 @@
 
   @media (max-width: 700px) {
     .hero.hero--stack .hero-photo {
-      min-height: 235px;
-      background-position: center 60%;
-      background-size: contain;
+      padding-top: 6px;
+    }
+    .hero.hero--stack .hero-photo-img {
+      width: min(620px, 94vw);
     }
     .hero.hero--stack .hero-search-below {
-      margin-top: -54px;
+      margin-top: 0;
       padding: 0 12px 0;
     }
   }
