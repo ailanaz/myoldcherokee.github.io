@@ -161,7 +161,7 @@ function buildPage(g) {
     </div>
     <div class="footer-bottom">
       <p>&copy; <span id="yr"></span> OldXJS.com. All rights reserved. | <a class="footer-disclaimer-link" href="../about.html">About</a> | <a class="footer-disclaimer-link" href="../contact.html">Contact</a> | <a class="footer-disclaimer-link" href="../duediligence.html">Due Diligence</a></p>
-      <p>www.myoldcherokee.com</p>
+      <p>www.oldxjs.com</p>
     </div>
   </div>
 </footer>

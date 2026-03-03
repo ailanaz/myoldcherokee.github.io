@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.myoldcherokee.com/sitemap.xml
+Sitemap: https://www.oldxjs.com/sitemap.xml
