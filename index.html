@@ -73,6 +73,7 @@
     <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">
       OldXJS.com — Cherokee Buy &amp; Sell, Directory &amp; Guides
     </h1>
+    <p class="hero-plate-tagline">Independent buy &amp; sell and resource directory for old XJs</p>
   </div>
 
   <!-- Search moved BELOW the license plate -->
@@ -117,16 +118,27 @@
     position: relative !important;
     inset: auto !important;
     width: 100%;
-    min-height: 290px;
-    background-position: center 55%;
+    min-height: 230px;
+    background-position: center 75%;
     background-repeat: no-repeat;
     background-size: contain;
   }
 
   .hero.hero--stack .hero-content {
     position: static !important;
-    padding: 0 !important;
+    padding: 0 0 10px !important;
     max-width: none;
+    text-align: center;
+  }
+
+  .hero.hero--stack .hero-plate-tagline {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(1.05rem, 1.8vw, 1.95rem);
+    line-height: 1.12;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #830319;
   }
 
   .hero.hero--stack .hero-search-below {
@@ -134,8 +146,9 @@
     z-index: 3;
     display: flex;
     justify-content: center;
-    margin-top: -56px;
-    padding: 0 16px 0;
+    margin-top: 0;
+    padding: 10px 16px;
+    background: #0b0d18;
   }
 
   .hero.hero--stack .search-wrap {
@@ -150,11 +163,15 @@
 
   @media (max-width: 700px) {
     .hero.hero--stack .hero-photo {
-      min-height: 235px;
+      min-height: 180px;
     }
     .hero.hero--stack .hero-search-below {
-      margin-top: -40px;
-      padding: 0 12px 0;
+      margin-top: 0;
+      padding: 8px 12px;
+    }
+    .hero.hero--stack .hero-plate-tagline {
+      font-size: clamp(0.9rem, 4vw, 1.2rem);
+      letter-spacing: 0.05em;
     }
   }
 </style>
