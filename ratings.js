@@ -21,11 +21,6 @@
     try { localStorage.setItem(LS_PREFIX + bid, String(Date.now())); } catch (e) {}
   }
 
-  /* ── safe ID for DOM element ids ────────────────────── */
-  function sid(bid) {
-    return bid.replace(/[^a-z0-9]/gi, '-');
-  }
-
   /* ── build the inner HTML for a .biz-rating-wrap ─────── */
   function buildInner(bid, data) {
     var rated = hasRated(bid);
@@ -43,7 +38,7 @@
 
     /* star form (omitted if already rated) */
     var formHtml = rated ? '' :
-      '<div class="rating-form" id="rf-' + sid(bid) + '" aria-hidden="true">' +
+      '<div class="rating-form" aria-hidden="true">' +
         '<div class="star-picker" data-bid="' + bid + '" data-selected="0">' +
           [1, 2, 3, 4, 5].map(function (v) {
             return '<span class="sp-star" data-val="' + v + '" role="button" tabindex="0" aria-label="' + v + ' star">\u2605</span>';
@@ -58,7 +53,9 @@
 
   /* ── inject wrap into a card ─────────────────────────── */
   function inject(card, bid, data) {
-    var body = card.querySelector('.biz-body') || card.querySelector('.featured-biz-body');
+    var body = card.querySelector('.biz-body') ||
+      card.querySelector('.featured-biz-body') ||
+      card.querySelector('.state-feat-body');
     if (!body) return;
     if (body.querySelector('.biz-rating-wrap')) return; // already injected
 
@@ -67,22 +64,27 @@
     wrap.setAttribute('data-bid', bid);
     wrap.innerHTML = buildInner(bid, data);
 
-    var actions = body.querySelector('.biz-actions') || body.querySelector('.featured-biz-actions');
+    var actions = body.querySelector('.biz-actions') ||
+      body.querySelector('.featured-biz-actions') ||
+      body.querySelector('.state-feat-actions');
     if (actions) body.insertBefore(wrap, actions);
     else body.appendChild(wrap);
   }
 
   /* ── update display after a successful submit ─────────── */
   function refreshDisplay(bid, data) {
-    var wrap = document.querySelector('.biz-rating-wrap[data-bid="' + bid + '"]');
-    if (!wrap) return;
-    var row = wrap.querySelector('.biz-rating-row');
-    if (!row) return;
+    var wraps = Array.prototype.slice.call(
+      document.querySelectorAll('.biz-rating-wrap[data-bid="' + bid + '"]')
+    );
+    if (!wraps.length) return;
     var dispHtml = (data && data.rating_count > 0)
       ? '<span class="biz-rating-stars">\u2605 ' + data.avg_rating + '</span>' +
         '\u00a0<span class="biz-rating-count">(' + data.rating_count + ')</span>'
       : '<span class="biz-rating-none">No ratings yet</span>';
-    row.innerHTML = dispHtml + '\u00a0<span class="rating-already">· Rated \u2713</span>';
+    wraps.forEach(function (wrap) {
+      var row = wrap.querySelector('.biz-rating-row');
+      if (row) row.innerHTML = dispHtml + '\u00a0<span class="rating-already">· Rated \u2713</span>';
+    });
   }
 
   /* ── delegated event listeners (wired once) ──────────── */
@@ -94,8 +96,8 @@
       /* open / close rating form */
       var openBtn = t.closest ? t.closest('.rating-open-btn') : null;
       if (openBtn) {
-        var bid  = openBtn.getAttribute('data-bid');
-        var form = document.getElementById('rf-' + sid(bid));
+        var wrap = openBtn.closest('.biz-rating-wrap');
+        var form = wrap && wrap.querySelector('.rating-form');
         if (!form) return;
         var isOpen = form.classList.contains('open');
         form.classList.toggle('open', !isOpen);
@@ -124,7 +126,8 @@
       var subBtn = t.closest ? t.closest('.rating-submit-btn') : null;
       if (subBtn) {
         var bid    = subBtn.getAttribute('data-bid');
-        var form   = document.getElementById('rf-' + sid(bid));
+        var wrap   = subBtn.closest('.biz-rating-wrap');
+        var form   = wrap && wrap.querySelector('.rating-form');
         var picker = form && form.querySelector('.star-picker');
         var sel    = picker ? parseInt(picker.getAttribute('data-selected'), 10) : 0;
 
@@ -195,7 +198,11 @@
     }
 
     var db    = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
-    var cards = Array.prototype.slice.call(document.querySelectorAll('[data-business-id]'));
+    var cards = Array.prototype.slice.call(
+      document.querySelectorAll(
+        '[data-business-id]:not(.featured-biz-card--inactive):not(.biz-card--inactive):not(.state-feat-card--inactive):not(.listing-card--inactive)'
+      )
+    );
     if (!cards.length) return;
 
     /* collect unique business_ids */
