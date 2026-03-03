@@ -62,9 +62,9 @@ img { max-width: 100%; display: block; }
 
 /* HEADER — logo only, slightly thinner */
 .site-header { background: var(--white); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 100; box-shadow: var(--shadow-sm); }
-.header-inner { display: flex; align-items: center; justify-content: flex-start; height: 60px; gap: 1.25rem; }
+.header-inner { display: flex; align-items: center; justify-content: flex-start; height: 54px; gap: 1.25rem; }
 .brand { display: flex; align-items: center; gap: 0.65rem; flex-shrink: 0; text-decoration: none; }
-.brand img { max-height: 44px; max-width: 220px; height: auto; width: auto; display: block; }
+.brand img { max-height: 44px; max-width: 220px; height: auto; width: auto; display: none; }
 .brand-name { display: none; }
 
 /* BUTTONS */
