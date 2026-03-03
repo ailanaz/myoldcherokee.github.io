@@ -103,8 +103,34 @@
 
 <!-- Paste this style block anywhere AFTER styles.css is loaded (best: right under the HERO) -->
 <style>
-  /* Forces the search bar to sit below the plate (without changing your hero image) */
+  /* Force stacked hero layout: image block first, search block second */
+  .hero.hero--stack {
+    display: block !important;
+    min-height: 0 !important;
+    background: transparent;
+    overflow: visible;
+  }
+
+  .hero.hero--stack .hero-photo {
+    position: relative !important;
+    inset: auto !important;
+    width: 100%;
+    min-height: 320px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .hero.hero--stack .hero-content {
+    position: static !important;
+    padding: 0 !important;
+    max-width: none;
+  }
+
+  /* Search sits below image block */
   .hero.hero--stack .hero-search-below {
+    position: relative;
+    z-index: 3;
     display: flex;
     justify-content: center;
     padding: 18px 16px 26px;
