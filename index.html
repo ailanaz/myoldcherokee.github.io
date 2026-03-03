@@ -64,6 +64,8 @@
   </div>
 </header>
 
+<section class="hero-stage" aria-hidden="true"></section>
+
 <div class="container hero-search-below">
   <div class="search-wrap">
     <div class="hero-search-box">
@@ -91,11 +93,19 @@
 </div>
 
 <style>
+  :root { --search-row-height: 72px; }
+
+  .hero-stage {
+    height: calc(var(--search-row-height) * 3);
+    background: #fff;
+  }
+
   .hero-search-below {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto !important;
+    min-height: var(--search-row-height);
     padding: 8px 0 !important;
   }
 
