@@ -116,7 +116,7 @@
     position: relative !important;
     inset: auto !important;
     width: 100%;
-    min-height: 320px;
+    min-height: 280px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -133,7 +133,8 @@
     z-index: 3;
     display: flex;
     justify-content: center;
-    padding: 18px 16px 26px;
+    margin-top: -22px;
+    padding: 4px 16px 10px;
   }
 
   .hero.hero--stack .search-wrap {
@@ -144,6 +145,16 @@
     margin: 0 auto !important;
     width: 100%;
     max-width: 780px;
+  }
+
+  @media (max-width: 700px) {
+    .hero.hero--stack .hero-photo {
+      min-height: 220px;
+    }
+    .hero.hero--stack .hero-search-below {
+      margin-top: -14px;
+      padding: 2px 12px 8px;
+    }
   }
 </style>
 
