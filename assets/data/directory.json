@@ -723,7 +723,7 @@
       "parts",
       "4x4"
     ],
-    "summary": "World's largest Jeep Cherokee XJ junkyard — approximately 700 XJs on-site. Owner Dexter Browder has 20+ years of XJ experience. Known nationwide among XJ owners.",
+    "summary": "World's largest Jeep Cherokee XJ junkyard \u2014 approximately 700 XJs on-site. Owner Dexter Browder has 20+ years of XJ experience. Known nationwide among XJ owners.",
     "jeep_friendly_blurb": "The world's largest XJ-specific junkyard in Selmer TN with ~700 Cherokees on-site. A pilgrimage spot for XJ owners needing parts.",
     "jeep_friendly_source_url": "https://www.dexjs.com",
     "jeep_friendly_source_label": "DeXJ's website"
@@ -1030,7 +1030,7 @@
       "paint"
     ],
     "summary": "FCA Certified Collision Care Program Jeep shop. Certified tools, equipment, and technicians for OEM-spec Jeep repairs.",
-    "jeep_friendly_blurb": "FCA Certified collision shop at 999 Polk Ave Nashville — certified for OEM-spec Jeep Cherokee collision repair.",
+    "jeep_friendly_blurb": "FCA Certified collision shop at 999 Polk Ave Nashville \u2014 certified for OEM-spec Jeep Cherokee collision repair.",
     "jeep_friendly_source_url": "https://www.gerbercollision.com",
     "jeep_friendly_source_label": "Gerber Collision website"
   },
@@ -1047,7 +1047,7 @@
       "collision",
       "paint"
     ],
-    "summary": "I-CAR Gold Class since 1998 — longest-tenured Gold Class shop in Tennessee. Expert Cherokee collision repair in Knoxville.",
+    "summary": "I-CAR Gold Class since 1998 \u2014 longest-tenured Gold Class shop in Tennessee. Expert Cherokee collision repair in Knoxville.",
     "jeep_friendly_blurb": "Knoxville body shop with I-CAR Gold Class certification since 1998. Highly experienced collision repair for Cherokee models.",
     "jeep_friendly_source_url": "https://daltoncollision.com",
     "jeep_friendly_source_label": "Dalton Collision website"
@@ -1105,5 +1105,95 @@
     "jeep_friendly_blurb": "Chattanooga I-CAR Gold Class collision shop working with all major insurers. Restores Cherokee to pre-accident condition.",
     "jeep_friendly_source_url": "https://www.caliber.com",
     "jeep_friendly_source_label": "Caliber Collision website"
+  },
+  {
+    "name": "Wilson Auto Repair",
+    "type": "Repair Shops",
+    "state": "TX",
+    "city": "Garland",
+    "address": "3133 Saturn Rd, Garland, TX 75041",
+    "phone": "(972) 271-3579",
+    "website": "https://wilsonauto.com",
+    "categories": [
+      "general",
+      "restoration",
+      "4x4"
+    ],
+    "summary": "Classic car and Jeep restoration specialist in Garland TX since 1980. Twice named AAA Top Shop in DFW based on customer satisfaction. 98% satisfaction rating across independent shops and dealerships.",
+    "jeep_friendly_blurb": "One of the premier Jeep restoration specialists in DFW. Wilson Auto repairs problems common to older Jeep frames and can restore a classic Cherokee from bumper to bumper \u2014 body, engine, and interior. A strong option for owners of 84\u201301 XJs looking for serious restoration work in the Dallas metro.",
+    "jeep_friendly_source_url": "https://wilsonauto.com/jeep-restoration-repair-dallas/",
+    "jeep_friendly_source_label": "Jeep restoration and repair page"
+  },
+  {
+    "name": "MW4 Outfitters",
+    "type": "Repair Shops",
+    "state": "TX",
+    "city": "Humble",
+    "address": "2006 Rotary Dr Suite A, Humble, TX 77338",
+    "phone": "(281) 570-4901",
+    "website": "https://mw4offroad.com",
+    "categories": [
+      "4x4",
+      "general",
+      "offroad"
+    ],
+    "summary": "Off-road service, repair, and modification shop in Humble TX serving the Houston area. Specializes in Jeep, Ford, Toyota, and Land Rover 4x4 trucks and SUVs. Mon\u2013Fri 9am\u20131pm.",
+    "jeep_friendly_blurb": "4x4-focused shop in the Houston metro (Humble) that services Jeep models including Cherokee and Wrangler. Good option for XJ owners in the north Houston area who want a shop that understands Jeep platforms and off-road builds.",
+    "jeep_friendly_source_url": "https://mw4offroad.com/jeep-repair-custom-upgrades-humble/",
+    "jeep_friendly_source_label": "Jeep 4x4 service and repair page"
+  },
+  {
+    "name": "Kacal's Auto and Truck Service",
+    "type": "Repair Shops",
+    "state": "TX",
+    "city": "Houston",
+    "address": "5030 Old Spanish Trail, Houston, TX 77021",
+    "phone": "(713) 747-8076",
+    "website": "https://kacals.com",
+    "categories": [
+      "general",
+      "diagnostics",
+      "fleet"
+    ],
+    "summary": "Houston institution since 1949. 21-bay facility with ASE master certified technicians. NAPA AutoCare Center. Serves individuals and fleet customers across the Houston area.",
+    "jeep_friendly_blurb": "Long-established Houston shop (75+ years) with a dedicated Jeep repair page and ASE-certified techs. A reliable all-makes option for XJ owners in the Houston area who want experienced, professional service with a solid track record.",
+    "jeep_friendly_source_url": "https://kacals.com/make-Jeep-repair.html",
+    "jeep_friendly_source_label": "Jeep repair services page"
+  },
+  {
+    "name": "Dallas Offroad Shop",
+    "type": "Repair Shops",
+    "state": "TX",
+    "city": "Dallas",
+    "address": "11338 Emerald St, Dallas, TX 75229",
+    "phone": "(214) 222-1323",
+    "website": "https://www.dallasoffroad.com",
+    "categories": [
+      "4x4",
+      "offroad",
+      "general"
+    ],
+    "summary": "DFW's go-to 4x4 service and modification shop. Works on most 4x4 makes and models including Jeep. 12-month/12,000-mile warranty on all work and parts. Mon\u2013Thu 9am\u20136pm, Fri 9am\u20135pm.",
+    "jeep_friendly_blurb": "Jeep and truck 4x4 specialists in Dallas with a strong community presence (affiliated with Collin County and North Texas Jeep clubs). Solid option for XJ owners in the DFW area looking for a shop that lives and breathes off-road rigs.",
+    "jeep_friendly_source_url": "https://www.dallasoffroad.com/services/",
+    "jeep_friendly_source_label": "Services page"
+  },
+  {
+    "name": "Fox Plaza Automotive",
+    "type": "Repair Shops",
+    "state": "TN",
+    "city": "Memphis",
+    "address": "5419 Fox Plaza Dr, Memphis, TN 38115",
+    "phone": "(901) 509-9797",
+    "website": "https://www.foxplazatire.com",
+    "categories": [
+      "general",
+      "diagnostics",
+      "tires"
+    ],
+    "summary": "Memphis area auto repair and tire shop with 40+ years of service. ASE-certified technicians. Uses ACDelco and CarQuest parts. Also has a Collierville TN location. Mon\u2013Fri 7am\u20135:30pm.",
+    "jeep_friendly_blurb": "Established multi-location Memphis area shop with ASE-certified techs and a long local reputation. A practical all-makes option for XJ owners in the Memphis area needing general maintenance, diagnostics, or tire service.",
+    "jeep_friendly_source_url": "https://www.foxplazatire.com/services",
+    "jeep_friendly_source_label": "Auto repair services page"
   }
 ]
