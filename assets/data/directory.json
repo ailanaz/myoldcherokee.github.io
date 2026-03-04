@@ -1240,26 +1240,6 @@
     "lon": -86.8417905
   },
   {
-    "name": "NTB",
-    "type": "Repair Shops (XJ/Jeep-Friendly)",
-    "state": "AL",
-    "city": "Birmingham",
-    "address": "4631, United States Highway 280, Birmingham, AL, 35242",
-    "phone": "+1 205-382-8155",
-    "website": "https://www.mavis.com/locations/birmingham-4631-hwy-280-al",
-    "summary": "",
-    "categories": [
-      "repair",
-      "mechanic"
-    ],
-    "source": "OSM",
-    "osm_id": "way/610605473",
-    "business_id": "ntb-al",
-    "google_maps_link": "https://www.google.com/maps?q=33.426404,-86.703715",
-    "lat": 33.4264038,
-    "lon": -86.7037148
-  },
-  {
     "name": "One Cut Glass",
     "type": "Repair Shops (XJ/Jeep-Friendly)",
     "state": "AL",
@@ -20937,26 +20917,6 @@
     "lon": -104.9932792
   },
   {
-    "name": "Center Parts Store",
-    "type": "Parts Shops and 4x4 Retailers",
-    "state": "CO",
-    "city": "Center",
-    "address": "651, South Torres Street, Center, CO, 81125",
-    "phone": "+1-719-754-2766",
-    "website": "https://www.carquest.com/stores/co/center/5392",
-    "summary": "",
-    "categories": [
-      "parts",
-      "retail"
-    ],
-    "source": "OSM",
-    "osm_id": "way/785503025",
-    "business_id": "center-parts-store-co",
-    "google_maps_link": "https://www.google.com/maps?q=37.749958,-106.103513",
-    "lat": 37.7499583,
-    "lon": -106.1035129
-  },
-  {
     "name": "Complete Auto Glass",
     "type": "Parts Shops and 4x4 Retailers",
     "state": "CO",
@@ -21433,7 +21393,7 @@
       "suspension",
       "general"
     ],
-    "summary": "ASE-certified 4x4 specialists and NAPA AutoCare Center in Fort Collins. Services all Jeep generations including XJ.",
+    "summary": "ASE-certified 4x4 specialists and independent service center in Fort Collins. Services all Jeep generations including XJ.",
     "jeep_friendly_blurb": "4x4-oriented shop that explicitly includes Jeeps in their service focus. Good for Cherokee owners doing lifts, suspension, lighting, and off-road upgrades.",
     "jeep_friendly_source_url": "https://www.fortcollins4x4.com/vehicles/jeep",
     "jeep_friendly_source_label": "Jeep service page"
@@ -38118,26 +38078,6 @@
     "google_maps_link": "https://www.google.com/maps?q=31.945771,-81.112652",
     "lat": 31.9457713,
     "lon": -81.1126519
-  },
-  {
-    "name": "Savannah tire",
-    "type": "Repair Shops (XJ/Jeep-Friendly)",
-    "state": "GA",
-    "city": "Savannah",
-    "address": "4138, Waters Avenue, Savannah, GA, 31404",
-    "phone": "+1-912-250-6018",
-    "website": "https://www.mavistire.com/locations/savannah-waters-ave-ga.asp?ab=SAV",
-    "summary": "",
-    "categories": [
-      "repair",
-      "mechanic"
-    ],
-    "source": "OSM",
-    "osm_id": "way/638244485",
-    "business_id": "savannah-tire-ga",
-    "google_maps_link": "https://www.google.com/maps?q=32.035979,-81.089838",
-    "lat": 32.0359791,
-    "lon": -81.089838
   },
   {
     "name": "Scott DeLong's Auto Service",
@@ -77244,46 +77184,6 @@
     "name": "NTB",
     "type": "Repair Shops (XJ/Jeep-Friendly)",
     "state": "OH",
-    "city": "Zanesville",
-    "address": "1327, Brandywine Boulevard, Zanesville, OH, 43701",
-    "phone": "+1 740-520-0931",
-    "website": "https://www.mavis.com/locations/zanesville-oh/",
-    "summary": "",
-    "categories": [
-      "repair",
-      "mechanic"
-    ],
-    "source": "OSM",
-    "osm_id": "way/849636376",
-    "business_id": "ntb-oh-6",
-    "google_maps_link": "https://www.google.com/maps?q=39.985186,-82.025092",
-    "lat": 39.9851859,
-    "lon": -82.0250919
-  },
-  {
-    "name": "NTB",
-    "type": "Repair Shops (XJ/Jeep-Friendly)",
-    "state": "OH",
-    "city": "",
-    "address": "2901, Harshman Road, OH",
-    "phone": "+1-937-912-1579",
-    "website": "https://www.mavis.com/locations/dayton-oh/",
-    "summary": "",
-    "categories": [
-      "repair",
-      "mechanic"
-    ],
-    "source": "OSM",
-    "osm_id": "way/138098395",
-    "business_id": "ntb-oh-2",
-    "google_maps_link": "https://www.google.com/maps?q=39.813689,-84.130656",
-    "lat": 39.8136893,
-    "lon": -84.130656
-  },
-  {
-    "name": "NTB",
-    "type": "Repair Shops (XJ/Jeep-Friendly)",
-    "state": "OH",
     "city": "Mentor",
     "address": "7361, Mentor Avenue, Mentor, OH, 44060",
     "phone": "",
@@ -91257,26 +91157,6 @@
     "lon": -80.1354672
   },
   {
-    "name": "Jack Williams Tire and Auto Service Center",
-    "type": "Repair Shops (XJ/Jeep-Friendly)",
-    "state": "PA",
-    "city": "Lancaster",
-    "address": "1543, Oregon Pike, Lancaster, PA, 17601",
-    "phone": "+1 717-879-9376",
-    "website": "https://www.mavis.com/locations/lancaster-oregon-pike-pa",
-    "summary": "",
-    "categories": [
-      "repair",
-      "mechanic"
-    ],
-    "source": "OSM",
-    "osm_id": "way/469539953",
-    "business_id": "jack-williams-tire-and-auto-service-center-pa",
-    "google_maps_link": "https://www.google.com/maps?q=40.063380,-76.305277",
-    "lat": 40.0633803,
-    "lon": -76.305277
-  },
-  {
     "name": "Jack's Garage",
     "type": "Repair Shops (XJ/Jeep-Friendly)",
     "state": "PA",
@@ -93962,26 +93842,6 @@
     "name": "National Tire and Battery",
     "type": "Repair Shops (XJ/Jeep-Friendly)",
     "state": "PA",
-    "city": "Mechanicsburg",
-    "address": "6051, Carlisle Pike, Mechanicsburg, PA, 17050",
-    "phone": "+1 717-219-2632",
-    "website": "https://www.mavis.com/locations/mechanicsburg-6051-carlisle-pike-pa/",
-    "summary": "",
-    "categories": [
-      "repair",
-      "mechanic"
-    ],
-    "source": "OSM",
-    "osm_id": "way/572630230",
-    "business_id": "national-tire-and-battery-pa-4",
-    "google_maps_link": "https://www.google.com/maps?q=40.243671,-76.991968",
-    "lat": 40.2436706,
-    "lon": -76.991968
-  },
-  {
-    "name": "National Tire and Battery",
-    "type": "Repair Shops (XJ/Jeep-Friendly)",
-    "state": "PA",
     "city": "Pittsburgh",
     "address": "5525, Penn Avenue, Pittsburgh, PA, 15206",
     "phone": "",
@@ -94217,26 +94077,6 @@
     "google_maps_link": "https://www.google.com/maps?q=39.983747,-76.740745",
     "lat": 39.9837465,
     "lon": -76.7407453
-  },
-  {
-    "name": "NTB",
-    "type": "Repair Shops (XJ/Jeep-Friendly)",
-    "state": "PA",
-    "city": "Pittsburgh",
-    "address": "405, Home Drive, Pittsburgh, PA, 15275",
-    "phone": "+1-412-887-3620",
-    "website": "https://www.mavis.com/locations/pittsburgh-home-dr-pa/",
-    "summary": "",
-    "categories": [
-      "repair",
-      "mechanic"
-    ],
-    "source": "OSM",
-    "osm_id": "node/13530370665",
-    "business_id": "ntb-pa-2",
-    "google_maps_link": "https://www.google.com/maps?q=40.449870,-80.182350",
-    "lat": 40.4498699,
-    "lon": -80.1823505
   },
   {
     "name": "NTB",
@@ -101805,26 +101645,6 @@
     "name": "NTB",
     "type": "Repair Shops (XJ/Jeep-Friendly)",
     "state": "SC",
-    "city": "Mount Pleasant",
-    "address": "1820, North US Highway 17, Mount Pleasant, SC, 29464",
-    "phone": "+1-843-438-9776",
-    "website": "https://www.mavis.com/locations/mount-pleasant-sc/",
-    "summary": "",
-    "categories": [
-      "repair",
-      "mechanic"
-    ],
-    "source": "OSM",
-    "osm_id": "way/1481013214",
-    "business_id": "ntb-sc-3",
-    "google_maps_link": "https://www.google.com/maps?q=32.830022,-79.834524",
-    "lat": 32.8300217,
-    "lon": -79.8345241
-  },
-  {
-    "name": "NTB",
-    "type": "Repair Shops (XJ/Jeep-Friendly)",
-    "state": "SC",
     "city": "Simpsonville",
     "address": "26, Ray E Talley Court, Simpsonville, SC, 29680",
     "phone": "",
@@ -103140,7 +102960,7 @@
       "diagnostics",
       "tires"
     ],
-    "summary": "Memphis area auto repair and tire shop with 40+ years of service. ASE-certified technicians. Uses ACDelco and CarQuest parts. Also has a Collierville TN location. Mon\u2013Fri 7am\u20135:30pm.",
+    "summary": "Memphis area auto repair and tire shop with 40+ years of service. ASE-certified technicians. Uses ACDelco and aftermarket parts. Also has a Collierville TN location. Mon\u2013Fri 7am\u20135:30pm.",
     "jeep_friendly_blurb": "Established multi-location Memphis area shop with ASE-certified techs and a long local reputation. A practical all-makes option for XJ owners in the Memphis area needing general maintenance, diagnostics, or tire service.",
     "jeep_friendly_source_url": "https://www.foxplazatire.com/services",
     "jeep_friendly_source_label": "Auto repair services page"
@@ -103580,7 +103400,7 @@
       "diagnostics",
       "fleet"
     ],
-    "summary": "Houston institution since 1949. 21-bay facility with ASE master certified technicians. NAPA AutoCare Center. Serves individuals and fleet customers across the Houston area.",
+    "summary": "Houston institution since 1949. 21-bay facility with ASE master certified technicians. independent service center. Serves individuals and fleet customers across the Houston area.",
     "jeep_friendly_blurb": "Long-established Houston shop (75+ years) with a dedicated Jeep repair page and ASE-certified techs. A reliable all-makes option for XJ owners in the Houston area who want experienced, professional service with a solid track record.",
     "jeep_friendly_source_url": "https://kacals.com/make-Jeep-repair.html",
     "jeep_friendly_source_label": "Jeep repair services page"
