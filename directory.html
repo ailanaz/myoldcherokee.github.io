@@ -1866,7 +1866,7 @@
     .then(function(res) { if (!res.ok) throw new Error('load failed'); return res.json(); })
     .then(function(data) {
       var shops = data.filter(function(x) {
-        return x.type === 'Repair Shops' && x.jeep_friendly_blurb;
+        return x.type === 'Repair Shops';
       });
 
       if (!shops.length) {
