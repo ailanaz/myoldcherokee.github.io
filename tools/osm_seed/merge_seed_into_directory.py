@@ -34,6 +34,25 @@ def make_key(r: Dict) -> Tuple[str, str, str]:
     )
 
 
+CHAIN_NAME_RE = re.compile(
+    r"\b("
+    r"autozone|advance\s+auto(\s+parts?)?|car\s*quest|o['’]?reilly|napa|pep\s*boys|firestone|"
+    r"express\s+oil\s+change|mavis|performance\s+tire|precision\s+tune|southern\s+armature\s+works|"
+    r"lamb\s+motors|discount\s+tire|les\s+schwab|meineke|midas|jiffy\s+lube|valvoline|walmart|"
+    r"take\s*5|aaa|caliber|gerber|safelite|lkq|pull[- ]?a[- ]?part"
+    r")\b",
+    re.I,
+)
+CHAIN_DOMAIN_RE = re.compile(
+    r"(autozone\.com|advanceautoparts\.com|carquest\.com|oreillyauto\.com|napaonline\.com|"
+    r"pepboys\.com|firestonecompleteautocare\.com|expressoil\.com|mavis\.com|mavistire\.com|"
+    r"precisiontuneauto\.com|discounttire\.com|lesschwab\.com|meineke\.com|midas\.com|"
+    r"jiffylube\.com|valvoline\.com|walmart\.com|take5oilchange\.com|aaa\.com|caliber\.com|"
+    r"gerbercollision\.com|safelite\.com|lkqcorp\.com|lkqpickyourpart\.com|pullapart\.com)",
+    re.I,
+)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--seed", default="data/import/osm_seed/all/listings.json")
@@ -56,6 +75,12 @@ def main() -> int:
 
     added = 0
     for r in seed_rows:
+        name = r.get("name", "")
+        business_id = r.get("business_id", "")
+        website = r.get("website", "")
+        if CHAIN_NAME_RE.search(name) or CHAIN_NAME_RE.search(business_id) or CHAIN_DOMAIN_RE.search(website):
+            continue
+
         key = make_key(r)
         phone = norm_phone(r.get("phone", ""))
         if key in existing_name_city_state:
@@ -94,4 +119,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

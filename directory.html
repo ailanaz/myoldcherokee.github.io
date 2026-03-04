@@ -1870,6 +1870,21 @@
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
 
+  function isChainFranchiseName(name) {
+    return /\b(autozone|advance\s+auto(\s+parts?)?|car\s*quest|o['’]?reilly|napa|pep\s*boys|firestone|express\s+oil\s+change|mavis|performance\s+tire|precision\s+tune|southern\s+armature\s+works|lamb\s+motors|discount\s+tire|les\s+schwab|meineke|midas|jiffy\s+lube|valvoline|walmart|take\s*5|aaa|caliber|gerber|safelite|lkq|pull[- ]?a[- ]?part)\b/i.test(name || '');
+  }
+
+  function hideChainCardsInDirectoryPage() {
+    document.querySelectorAll('.biz-card').forEach(function(card) {
+      var nameEl = card.querySelector('.biz-name');
+      var name = nameEl ? nameEl.textContent : '';
+      if (isChainFranchiseName(name)) {
+        card.style.display = 'none';
+      }
+    });
+  }
+  hideChainCardsInDirectoryPage();
+
   function setFilterDropdown() {
     var cat = (document.getElementById('shops-cat') || {}).value || 'all';
     var query = ((document.getElementById('shops-search') || {}).value || '').toLowerCase().trim();
@@ -1878,6 +1893,10 @@
     grid.querySelectorAll('[data-cats]').forEach(function(card) {
       var matchCat = (cat === 'all') || ((card.getAttribute('data-cats') || '').split(' ').indexOf(cat) !== -1);
       var matchSearch = !query || card.textContent.toLowerCase().indexOf(query) !== -1;
+      if (isChainFranchiseName((card.querySelector('.biz-name') || {}).textContent || '')) {
+        card.style.display = 'none';
+        return;
+      }
       card.style.display = (matchCat && matchSearch) ? '' : 'none';
     });
   }
