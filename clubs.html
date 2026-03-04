@@ -282,7 +282,7 @@
     <p class="clubs-hero-sub">Find local Jeep and XJ communities for trail rides, meetups, tech help, and parts leads.</p>
     <div class="clubs-hero-cta">
       <span>Know a club? Submit it.</span>
-      <a id="submit-club-btn" href="submit.html" class="btn btn-outline btn-sm">Submit Club</a>
+      <a id="submit-club-btn" href="submit-club.html" class="btn btn-outline btn-sm">Submit Club</a>
     </div>
   </div>
 </section>
@@ -835,7 +835,7 @@
 
   function initSubmitFallback() {
     const btn = document.getElementById("submit-club-btn");
-    fetch("submit.html", { method: "HEAD" })
+    fetch("submit-club.html", { method: "HEAD" })
       .then((res) => {
         if (!res.ok) throw new Error("submit missing");
       })
