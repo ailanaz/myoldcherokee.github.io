@@ -21,6 +21,14 @@
     /* DIRECTORY FILTER BAR */
     .dir-filter-bar { background: var(--white); border-bottom: 2px solid var(--line); padding: 0.75rem 0; position: sticky; top: 76px; z-index: 90; }
     .dir-filter-inner { display: flex; justify-content: center; align-items: center; }
+    .clubs-filters-wrap { background: #fff; border: 1.5px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-xs); padding: 1rem; }
+    .clubs-filters-grid { display: grid; gap: 0.75rem; }
+    .clubs-filter-group label { display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-mid); margin-bottom: 0.35rem; }
+    .clubs-filter-group input, .clubs-filter-group select { width: 100%; height: 42px; border: 1.5px solid var(--line-mid); border-radius: var(--radius-sm); padding: 0 0.75rem; font-family: 'DM Sans', sans-serif; font-size: 0.92rem; color: var(--text); background: #fff; outline: none; }
+    .clubs-filter-group input:focus, .clubs-filter-group select:focus { border-color: var(--red); box-shadow: 0 0 0 2px rgba(107,18,40,0.08); }
+    @media (max-width: 700px) {
+      .clubs-filters-grid { grid-template-columns: 1fr !important; }
+    }
     .cat-section.hidden { display: none; }
 
     /* CATEGORY SECTION HEADERS */
@@ -127,6 +135,44 @@
     </div>
   </div>
 </div>
+
+<section class="home-section" style="padding-top:1.5rem;padding-bottom:1.5rem;border-top:none;">
+  <div class="container">
+    <div class="home-section-head" style="margin-bottom:1rem;">
+      <div>
+        <h2 class="home-section-title">All Businesses (Live Directory Data)</h2>
+        <p class="home-section-desc">Showing statewide directory entries pulled into one searchable view.</p>
+      </div>
+    </div>
+
+    <div class="clubs-filters-wrap" style="margin-top:0;">
+      <div class="clubs-filters-grid" style="grid-template-columns:2fr 1fr 1fr;">
+        <div class="clubs-filter-group">
+          <label for="live-search">Search</label>
+          <input id="live-search" type="search" placeholder="Search name, city, state, tags..." />
+        </div>
+        <div class="clubs-filter-group">
+          <label for="live-state">State</label>
+          <select id="live-state" aria-label="Filter by state">
+            <option value="all">All states</option>
+          </select>
+        </div>
+        <div class="clubs-filter-group">
+          <label for="live-type">Business Type</label>
+          <select id="live-type" aria-label="Filter by type">
+            <option value="all">All types</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <p id="live-count" style="margin:0.85rem 0 1rem;color:var(--text-mid);font-size:0.88rem;"></p>
+    <div id="live-grid" class="grid g3"></div>
+    <div style="text-align:center;margin-top:1rem;">
+      <button id="live-more" class="btn btn-outline btn-sm" type="button" style="display:none;">Load More</button>
+    </div>
+  </div>
+</section>
 
 <div class="container">
 
@@ -1849,7 +1895,6 @@
 </script>
 
 <script>
-/* Load confirmed Jeep-friendly shops from directory.json into #confirmed-shops */
 (function() {
   function esc(s) {
     return String(s || '')
@@ -1860,74 +1905,127 @@
       .replace(/'/g, '&#39;');
   }
 
-  var container = document.getElementById('confirmed-shops');
-  if (!container) return;
+  var grid = document.getElementById('live-grid');
+  var stateSel = document.getElementById('live-state');
+  var typeSel = document.getElementById('live-type');
+  var searchEl = document.getElementById('live-search');
+  var countEl = document.getElementById('live-count');
+  var moreBtn = document.getElementById('live-more');
+  if (!grid || !stateSel || !typeSel || !searchEl || !countEl || !moreBtn) return;
+
+  var allRows = [];
+  var filteredRows = [];
+  var pageSize = 36;
+  var shown = pageSize;
+
+  function mapUrl(it) {
+    if (it.google_maps_link) return it.google_maps_link;
+    var q = [it.name || '', it.address || '', it.city || '', it.state || ''].join(' ').trim();
+    return 'https://www.google.com/maps/search/' + encodeURIComponent(q);
+  }
+
+  function initFilters(rows) {
+    var states = {};
+    var types = {};
+    rows.forEach(function(r) {
+      var st = (r.state || '').toUpperCase();
+      var tp = (r.type || '').trim();
+      if (st) states[st] = true;
+      if (tp) types[tp] = true;
+    });
+    Object.keys(states).sort().forEach(function(st) {
+      var o = document.createElement('option');
+      o.value = st;
+      o.textContent = st;
+      stateSel.appendChild(o);
+    });
+    Object.keys(types).sort().forEach(function(tp) {
+      var o = document.createElement('option');
+      o.value = tp;
+      o.textContent = tp;
+      typeSel.appendChild(o);
+    });
+  }
+
+  function applyFilters() {
+    var state = stateSel.value || 'all';
+    var type = typeSel.value || 'all';
+    var q = (searchEl.value || '').toLowerCase().trim();
+
+    filteredRows = allRows.filter(function(it) {
+      if (state !== 'all' && (it.state || '').toUpperCase() !== state) return false;
+      if (type !== 'all' && (it.type || '') !== type) return false;
+      if (!q) return true;
+      var tags = Array.isArray(it.categories) ? it.categories.join(' ') : '';
+      var hay = [it.name || '', it.city || '', it.state || '', it.type || '', tags].join(' ').toLowerCase();
+      return hay.indexOf(q) !== -1;
+    });
+    shown = pageSize;
+    render();
+  }
+
+  function render() {
+    var rows = filteredRows.slice(0, shown);
+    grid.innerHTML = '';
+
+    if (!filteredRows.length) {
+      grid.innerHTML = '<p style="color:var(--text-mid);padding:0.75rem 0;">No businesses match these filters.</p>';
+      countEl.textContent = '0 results';
+      moreBtn.style.display = 'none';
+      return;
+    }
+
+    rows.forEach(function(it) {
+      var initials = (it.name || 'B').split(/\s+/).map(function(w) { return w.charAt(0); }).slice(0, 2).join('').toUpperCase();
+      var cityState = (it.city && it.state) ? esc(it.city) + ', ' + esc(it.state) : esc(it.state || '');
+      var addr = it.address ? '<div class="biz-loc" style="margin-top:0.15rem;">&#128205; ' + esc(it.address) + '</div>' : '';
+      var phone = it.phone ? '<div class="biz-loc" style="margin-top:0.15rem;">&#128222; ' + esc(it.phone) + '</div>' : '';
+      var map = mapUrl(it);
+      var webBtn = it.website ? '<a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">Website</a>' : '';
+      var mapBtn = '<a href="' + esc(map) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>';
+      var bid = it.business_id ? esc(it.business_id) : '';
+
+      var card = document.createElement('div');
+      card.className = 'biz-card';
+      card.setAttribute('data-cats', ((it.categories || []).join(' ')).toLowerCase());
+      if (bid) card.setAttribute('data-business-id', bid);
+      card.innerHTML =
+        '<div class="biz-logo-wrap"><div class="biz-logo">' + initials + '</div></div>' +
+        '<div class="biz-body">' +
+          '<span class="biz-type">' + esc(it.type || 'Business') + '</span>' +
+          '<div class="biz-name">' + esc(it.name || 'Business') + '</div>' +
+          '<div class="biz-loc">' + (cityState || 'Location not set') + '</div>' +
+          addr +
+          phone +
+          '<div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">' + webBtn + mapBtn + '</div>' +
+        '</div>';
+      grid.appendChild(card);
+    });
+
+    countEl.textContent = filteredRows.length.toLocaleString() + ' results';
+    moreBtn.style.display = filteredRows.length > shown ? '' : 'none';
+  }
+
+  moreBtn.addEventListener('click', function() {
+    shown += pageSize;
+    render();
+  });
+  searchEl.addEventListener('input', applyFilters);
+  stateSel.addEventListener('change', applyFilters);
+  typeSel.addEventListener('change', applyFilters);
 
   fetch('assets/data/directory.json')
     .then(function(res) { if (!res.ok) throw new Error('load failed'); return res.json(); })
-    .then(function(data) {
-      var shops = data.filter(function(x) {
-        return x.type === 'Repair Shops';
-      });
-
-      if (!shops.length) {
-        container.innerHTML = '<p style="color:var(--text-mid);padding:0.5rem 0;">No confirmed shops yet. <a href="submit.html">Submit one.</a></p>';
-        return;
-      }
-
-      shops.forEach(function(it) {
-        var card = document.createElement('div');
-        card.className = 'biz-card';
-
-        /* Initials for logo circle — up to 2 letters from the shop name */
-        var initials = (it.name || 'S').split(/\s+/).map(function(w) { return w.charAt(0); }).slice(0, 2).join('').toUpperCase();
-
-        /* Google Maps search URL — use full address if available, else name+city+state */
-        var mapQuery = it.address
-          ? (it.name || '') + ' ' + it.address
-          : (it.name || '') + ' ' + (it.city || '') + ' ' + (it.state || '');
-        var mapsUrl = 'https://www.google.com/maps/search/' + encodeURIComponent(mapQuery.trim());
-
-        var loc = (it.city && it.state)
-          ? '<div class="biz-loc">&#128205; ' + esc(it.city) + ', ' + esc(it.state) + '</div>'
-          : '';
-        var address = it.address
-          ? '<div class="biz-loc" style="margin-top:0.2rem;">&#128205; ' + esc(it.address) + '</div>'
-          : '';
-
-        var phone = it.phone
-          ? '<div style="font-size:0.82rem;color:var(--text-mid);margin-top:0.2rem;">&#128222; ' + esc(it.phone) + '</div>'
-          : '';
-
-        /* Single action button — website first, map second, Yelp third */
-        var yelpUrl = (it.jeep_friendly_source_url && it.jeep_friendly_source_url.indexOf('yelp.com') !== -1)
-          ? it.jeep_friendly_source_url : '';
-        var primaryHref = it.website ? esc(it.website)
-          : yelpUrl ? esc(yelpUrl)
-          : esc(mapsUrl);
-        var primaryLabel = it.website ? 'Visit Website'
-          : yelpUrl ? 'View on Yelp'
-          : '&#128205; View on Map';
-        var actions = '<div class="biz-actions" style="margin-top:0.85rem;">'
-          + '<a href="' + primaryHref + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">' + primaryLabel + '</a>'
-          + '</div>';
-
-        card.innerHTML =
-          '<div class="biz-logo-wrap"><div class="biz-logo">' + initials + '</div></div>'
-          + '<div class="biz-body">'
-          + '<span class="biz-type">Repair Shop</span>'
-          + '<div class="biz-name">' + esc(it.name || 'Shop') + '</div>'
-          + loc
-          + address
-          + phone
-          + actions
-          + '</div>';
-
-        container.appendChild(card);
-      });
+    .then(function(rows) {
+      allRows = Array.isArray(rows) ? rows : [];
+      initFilters(allRows);
+      filteredRows = allRows.slice();
+      render();
     })
     .catch(function() {
-      container.innerHTML = '<p style="color:var(--text-mid);padding:1rem 0;">Shops could not load. Please refresh the page.</p>';
+      grid.innerHTML = '<p style="color:var(--text-mid);padding:1rem 0;">Directory data could not load. Please refresh the page.</p>';
+      countEl.textContent = '';
+      moreBtn.style.display = 'none';
     });
 })();
 </script>
