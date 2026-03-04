@@ -26,6 +26,16 @@ function esc(s) {
 }
 
 function renderGroup(container, title, items) {
+  var sortedItems = (items || []).slice().sort(function(a, b) {
+    var an = String(a.name || a.title || '').toLowerCase();
+    var bn = String(b.name || b.title || '').toLowerCase();
+    if (an !== bn) return an < bn ? -1 : 1;
+    var ac = String(a.city || '').toLowerCase();
+    var bc = String(b.city || '').toLowerCase();
+    if (ac !== bc) return ac < bc ? -1 : 1;
+    return 0;
+  });
+
   var wrap = document.createElement('div');
   wrap.className = 'card';
   wrap.style.cssText = 'padding:16px;margin-top:16px;border-radius:10px;';
@@ -35,7 +45,7 @@ function renderGroup(container, title, items) {
   h3.textContent = title;
   wrap.appendChild(h3);
 
-  if (!items.length) {
+  if (!sortedItems.length) {
     var none = document.createElement('p');
     none.style.color = 'var(--text-mid)';
     none.textContent = 'No listings yet for this state.';
@@ -47,8 +57,8 @@ function renderGroup(container, title, items) {
   var ul = document.createElement('ul');
   ul.style.cssText = 'list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.6rem;';
 
-  for (var i = 0; i < items.length; i++) {
-    var it = items[i];
+  for (var i = 0; i < sortedItems.length; i++) {
+    var it = sortedItems[i];
     var li = document.createElement('li');
     li.style.cssText = 'border:1px solid var(--line);border-radius:8px;padding:0.75rem 1rem;background:var(--off);';
     var isDirectoryCard = !!it.type;
@@ -192,7 +202,23 @@ async function initStatePage() {
     var buySellGroups = groupBy(activeBuySell, 'category');
     var dirGroups = groupBy(directory, 'type');
 
-    var dirOrder = ['Repair Shops', 'Salvage and Junk Yards', 'Tires and Wheels', 'Body Shops', 'Shop for Parts and More', 'Other'];
+    var dirOrder = [
+      'Repair Shops (XJ/Jeep-Friendly)',
+      'Suspension, Alignment, and Lift Install',
+      'Drivetrain Specialists (Axles, Gears, Driveshafts)',
+      'Electrical and Diagnostics (Older Vehicle Friendly)',
+      'Radiator and Cooling Specialists',
+      'Auto Glass and Windshield',
+      'Fabrication and Welding (4x4)',
+      'Rust Repair and Body (Welding Focus)',
+      'Upholstery and Interior (Headliners, Seats)',
+      'Towing and Recovery (4x4 capable)',
+      'Salvage Yards and Junkyards (Used Jeep Parts)',
+      'Parts Shops and 4x4 Retailers',
+      'Body Shops',
+      'Tires and Wheels',
+      'Other'
+    ];
 
     renderSection(bsContainer, 'Buy and Sell', buySellGroups, null);
     renderSection(dirContainer, 'Directory', dirGroups, dirOrder);

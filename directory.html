@@ -1936,6 +1936,11 @@
   var filteredRows = [];
   var pageSize = 36;
   var shown = pageSize;
+  var typeAlias = {
+    'Repair Shops': 'Repair Shops (XJ/Jeep-Friendly)',
+    'Salvage and Junk Yards': 'Salvage Yards and Junkyards (Used Jeep Parts)',
+    'Shop for Parts and More': 'Parts Shops and 4x4 Retailers'
+  };
 
   function mapUrl(it) {
     if (it.google_maps_link) return it.google_maps_link;
@@ -1948,7 +1953,7 @@
     var types = {};
     rows.forEach(function(r) {
       var st = (r.state || '').toUpperCase();
-      var tp = (r.type || '').trim();
+      var tp = (typeAlias[(r.type || '').trim()] || (r.type || '').trim());
       if (st) states[st] = true;
       if (tp) types[tp] = true;
     });
@@ -1966,6 +1971,21 @@
     });
   }
 
+  function sortRows(rows) {
+    return rows.slice().sort(function(a, b) {
+      var as = String(a.state || '').toUpperCase();
+      var bs = String(b.state || '').toUpperCase();
+      if (as !== bs) return as < bs ? -1 : 1;
+      var at = String(a.type || '').toLowerCase();
+      var bt = String(b.type || '').toLowerCase();
+      if (at !== bt) return at < bt ? -1 : 1;
+      var an = String(a.name || '').toLowerCase();
+      var bn = String(b.name || '').toLowerCase();
+      if (an !== bn) return an < bn ? -1 : 1;
+      return 0;
+    });
+  }
+
   function applyFilters() {
     var state = stateSel.value || 'all';
     var type = typeSel.value || 'all';
@@ -1979,6 +1999,7 @@
       var hay = [it.name || '', it.city || '', it.state || '', it.type || '', tags].join(' ').toLowerCase();
       return hay.indexOf(q) !== -1;
     });
+    filteredRows = sortRows(filteredRows);
     shown = pageSize;
     render();
   }
@@ -2036,7 +2057,13 @@
   fetch('assets/data/directory.json')
     .then(function(res) { if (!res.ok) throw new Error('load failed'); return res.json(); })
     .then(function(rows) {
-      allRows = Array.isArray(rows) ? rows : [];
+      allRows = Array.isArray(rows) ? rows.map(function(r) {
+        var t = (r.type || '').trim();
+        if (typeAlias[t]) r.type = typeAlias[t];
+        if (r.state) r.state = String(r.state).toUpperCase();
+        return r;
+      }) : [];
+      allRows = sortRows(allRows);
       initFilters(allRows);
       filteredRows = allRows.slice();
       render();
