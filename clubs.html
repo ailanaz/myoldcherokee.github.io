@@ -33,12 +33,6 @@
       flex-wrap: wrap;
       justify-content: center;
     }
-    .clubs-last-updated {
-      margin-top: 0.75rem;
-      font-size: 0.83rem;
-      color: rgba(255,255,255,0.8);
-    }
-
     .clubs-filters-wrap {
       background: #fff;
       border: 1.5px solid var(--line);
@@ -290,7 +284,6 @@
       <span>Know a club? Submit it.</span>
       <a id="submit-club-btn" href="submit.html" class="btn btn-outline btn-sm">Submit Club</a>
     </div>
-    <div class="clubs-last-updated">Last updated: <span id="last-updated"></span></div>
   </div>
 </section>
 
@@ -851,17 +844,10 @@
       });
   }
 
-  function initLastUpdated() {
-    const d = new Date();
-    const txt = d.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
-    document.getElementById("last-updated").textContent = txt;
-    document.getElementById("yr").textContent = d.getFullYear();
-  }
-
   document.addEventListener("DOMContentLoaded", function() {
     initStateFilter();
     initSubmitFallback();
-    initLastUpdated();
+    document.getElementById("yr").textContent = new Date().getFullYear();
 
     ["clubs-search", "clubs-state", "clubs-type", "clubs-platform"].forEach((id) => {
       document.getElementById(id).addEventListener("input", render);
