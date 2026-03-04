@@ -253,7 +253,7 @@ def overpass_fetch(overpass_urls: List[str], query: str, retries_per_url: int = 
         for attempt in range(1, retries_per_url + 1):
             try:
                 req = urllib.request.Request(url, data=data, headers={"User-Agent": "oldxjs-osm-seed/1.0"})
-                with urllib.request.urlopen(req, timeout=240) as resp:
+                with urllib.request.urlopen(req, timeout=75) as resp:
                     return json.loads(resp.read().decode("utf-8"))
             except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as err:
                 last_err = err
@@ -551,7 +551,7 @@ def parse_args() -> argparse.Namespace:
     )
     p.add_argument(
         "--overpass-urls",
-        default="https://overpass-api.de/api/interpreter,https://overpass.kumi.systems/api/interpreter,https://lz4.overpass-api.de/api/interpreter",
+        default="https://maps.mail.ru/osm/tools/overpass/api/interpreter,https://overpass-api.de/api/interpreter,https://overpass.kumi.systems/api/interpreter,https://lz4.overpass-api.de/api/interpreter",
         help="Comma-separated Overpass interpreter endpoints used as fallback chain.",
     )
     p.add_argument("--out-dir", default="data/import/osm_seed")
