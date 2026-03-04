@@ -252,15 +252,26 @@
   <div class="container topbar-inner">
     <span class="topbar-tagline">Your one stop XJ hub</span>
     <div class="topbar-links">
+      <a href="index.html">Home</a>
+      <a href="state-search.html">States</a>
       <a href="buy-sell.html">Buy &amp; Sell</a>
-      <a href="directory.html">Business Directory</a>
+      <a href="directory.html">Directory</a>
       <a href="guides.html">Guides</a>
-      <a href="community.html">Community</a>
-      <a href="state-search.html">Map</a>
-      <a href="clubs.html">Clubs</a>
+      <div class="nav-more">
+        <button class="nav-more-btn" onclick="this.closest('.nav-more').classList.toggle('open')" aria-expanded="false">More &#9663;</button>
+        <div class="nav-more-menu">
+          <a href="community.html">Chat</a>
+          <a href="submit.html">Post</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+          <a href="blog/index.html">Blog</a>
+          <a href="clubs.html">Clubs</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+<script>document.addEventListener('click',function(e){if(!e.target.closest('.nav-more'))document.querySelectorAll('.nav-more.open').forEach(function(m){m.classList.remove('open');var b=m.querySelector('[aria-expanded]');if(b)b.setAttribute('aria-expanded','false');});});</script>
 
 <header class="site-header">
   <div class="container header-inner">
