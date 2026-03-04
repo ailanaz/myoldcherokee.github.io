@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="fo-verify" content="80ffc469-4c17-4e6f-967d-cd493410dc16" />
+  <title>Clubs &amp; Groups | OldXJS.com</title>
+  <meta name="description" content="Find local Jeep and XJ communities for trail rides, meetups, tech help, and parts leads." />
+  <link rel="canonical" href="https://oldxjs.com/clubs.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://oldxjs.com/clubs.html" />
+  <meta property="og:title" content="Clubs &amp; Groups | OldXJS.com" />
+  <meta property="og:description" content="Find local Jeep and XJ communities for trail rides, meetups, tech help, and parts leads." />
+  <meta property="og:image" content="https://oldxjs.com/og-default.jpg" />
+  <meta property="og:site_name" content="OldXJS.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+
+  <style>
+    .clubs-hero-sub {
+      max-width: 72ch;
+      margin: 0.4rem auto 0;
+      color: rgba(255,255,255,0.85);
+    }
+    .clubs-hero-cta {
+      margin-top: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .clubs-last-updated {
+      margin-top: 0.75rem;
+      font-size: 0.83rem;
+      color: rgba(255,255,255,0.8);
+    }
+
+    .clubs-filters-wrap {
+      background: #fff;
+      border: 1.5px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-xs);
+      padding: 1rem;
+      margin-top: 1rem;
+    }
+    .clubs-filters-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 0.75rem;
+    }
+    .clubs-filter-group label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-mid);
+      margin-bottom: 0.35rem;
+    }
+    .clubs-filter-group input,
+    .clubs-filter-group select {
+      width: 100%;
+      height: 42px;
+      border: 1.5px solid var(--line-mid);
+      border-radius: var(--radius-sm);
+      padding: 0 0.75rem;
+      font-family: "DM Sans", sans-serif;
+      font-size: 0.92rem;
+      color: var(--text);
+      background: #fff;
+      outline: none;
+    }
+    .clubs-filter-group input:focus,
+    .clubs-filter-group select:focus {
+      border-color: var(--red);
+      box-shadow: 0 0 0 2px rgba(107,18,40,0.08);
+    }
+
+    .clubs-section-title {
+      margin: 2rem 0 1rem;
+      font-family: "Oswald", sans-serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      border-bottom: 2px solid var(--line);
+      padding-bottom: 0.45rem;
+    }
+
+    .clubs-local-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+    .club-card {
+      background: #fff;
+      border: 1.5px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-xs);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      min-height: 220px;
+    }
+    .club-name {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+      color: var(--text);
+    }
+    .club-info {
+      color: var(--text-mid);
+      font-size: 0.9rem;
+      line-height: 1.45;
+      margin-bottom: 0.6rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      min-height: 2.6em;
+    }
+    .club-contact,
+    .club-location {
+      font-size: 0.86rem;
+      color: var(--text-mid);
+      margin-bottom: 0.35rem;
+    }
+    .club-contact strong,
+    .club-location strong {
+      color: var(--text);
+      font-weight: 700;
+    }
+    .club-links {
+      margin-top: 0.5rem;
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+    .club-links .btn {
+      height: 30px;
+      padding: 0 0.7rem;
+      font-size: 0.76rem;
+    }
+    .club-report {
+      margin-top: auto;
+      font-size: 0.79rem;
+      color: var(--text-lite);
+      padding-top: 0.65rem;
+    }
+    .club-report a {
+      color: var(--red);
+      text-decoration: underline;
+    }
+
+    .online-list {
+      background: #fff;
+      border: 1.5px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .online-row {
+      padding: 0.8rem 0.95rem;
+      border-top: 1px solid var(--line);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.7rem;
+      align-items: baseline;
+      line-height: 1.45;
+    }
+    .online-row:first-child {
+      border-top: none;
+    }
+    .online-name {
+      font-weight: 700;
+      color: var(--text);
+      margin-right: 0.2rem;
+    }
+    .online-info {
+      color: var(--text-mid);
+      font-size: 0.88rem;
+    }
+    .online-platform {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--amber);
+    }
+    .online-links {
+      display: inline-flex;
+      gap: 0.45rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .online-links a {
+      color: var(--red);
+      font-size: 0.82rem;
+      text-decoration: underline;
+    }
+    .online-issue {
+      margin-left: auto;
+      font-size: 0.8rem;
+      color: var(--text-lite);
+      white-space: nowrap;
+    }
+    .online-issue a {
+      color: var(--red);
+      text-decoration: underline;
+    }
+
+    .clubs-empty {
+      border: 1.5px dashed var(--line-mid);
+      border-radius: var(--radius);
+      background: var(--off);
+      padding: 1.25rem;
+      text-align: center;
+      color: var(--text-mid);
+      font-size: 0.92rem;
+      margin-top: 0.75rem;
+    }
+
+    @media (max-width: 1024px) {
+      .clubs-filters-grid { grid-template-columns: 1fr 1fr; }
+      .clubs-local-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 700px) {
+      .clubs-filters-grid { grid-template-columns: 1fr; }
+      .clubs-local-grid { grid-template-columns: 1fr; }
+      .online-row { flex-direction: column; align-items: flex-start; }
+      .online-issue { margin-left: 0; white-space: normal; }
+    }
+  </style>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E34BYWMN94"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-E34BYWMN94");
+  </script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span class="topbar-tagline">Your one stop XJ hub</span>
+    <div class="topbar-links">
+      <a href="buy-sell.html">Buy &amp; Sell</a>
+      <a href="directory.html">Business Directory</a>
+      <a href="guides.html">Guides</a>
+      <a href="community.html">Community</a>
+      <a href="state-search.html">Map</a>
+      <a href="clubs.html">Clubs</a>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <img src="og-logo.jpg" alt="OldXJS.com" />
+      <span class="brand-name">OldXJS.com</span>
+    </a>
+  </div>
+</header>
+
+<section class="page-hero" style="padding-top:1.583%;padding-bottom:1.583%;text-align:center;">
+  <div class="container">
+    <h1>Clubs &amp; Groups</h1>
+    <p class="clubs-hero-sub">Find local Jeep and XJ communities for trail rides, meetups, tech help, and parts leads.</p>
+    <div class="clubs-hero-cta">
+      <span>Know a club? Submit it.</span>
+      <a id="submit-club-btn" href="submit.html" class="btn btn-outline btn-sm">Submit Club</a>
+    </div>
+    <div class="clubs-last-updated">Last updated: <span id="last-updated"></span></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="clubs-filters-wrap" aria-label="Clubs filters">
+      <div class="clubs-filters-grid">
+        <div class="clubs-filter-group">
+          <label for="clubs-search">Search</label>
+          <input id="clubs-search" type="search" placeholder="Search club name, city, state, info, tags..." />
+        </div>
+        <div class="clubs-filter-group">
+          <label for="clubs-state">State</label>
+          <select id="clubs-state" aria-label="Filter by state">
+            <option value="all">All states</option>
+          </select>
+        </div>
+        <div class="clubs-filter-group">
+          <label for="clubs-type">Type</label>
+          <select id="clubs-type" aria-label="Filter by type">
+            <option value="all">All</option>
+            <option value="local">Local only</option>
+            <option value="online">Online only</option>
+          </select>
+        </div>
+        <div class="clubs-filter-group">
+          <label for="clubs-platform">Platform</label>
+          <select id="clubs-platform" aria-label="Filter by platform">
+            <option value="all">All</option>
+            <option value="website">Website</option>
+            <option value="facebook">Facebook</option>
+            <option value="instagram">Instagram</option>
+            <option value="discord">Discord</option>
+            <option value="forum">Forum</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="clubs-section-title">Local Clubs</h2>
+    <div id="local-results" class="clubs-local-grid"></div>
+    <div id="local-empty" class="clubs-empty" style="display:none;">No local clubs match your current filters.</div>
+
+    <h2 class="clubs-section-title">Online Clubs</h2>
+    <div id="online-results" class="online-list"></div>
+    <div id="online-empty" class="clubs-empty" style="display:none;">No online clubs match your current filters.</div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand-block">
+        <div style="font-family:'Oswald',sans-serif;font-size:1.3rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff;">OldXJS.com</div>
+        <p>An independent buy and sell directory for older Cherokee models, with repair shops, junk/salvage yard listings, DIY/troubleshooting Guides, and community resources.</p>
+        <p class="footer-disclaimer">Independent buy &amp; sell, and resource directory for older Cherokee models. We do not verify or guarantee third-party listings, businesses, products, or services. Users are responsible for due diligence. We do not sell vehicles or parts, broker transactions, or participate in buyer&ndash;seller communications. Not affiliated with or endorsed by Jeep&reg; or Stellantis&reg;. Trademarks are used for identification and compatibility only.</p>
+        <a href="contact.html" class="btn btn-outline btn-sm footer-contact-btn">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="buy-sell.html">Buy &amp; Sell</a></li>
+          <li><a href="directory.html">Business Directory</a></li>
+          <li><a href="guides.html">Guides</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="state-search.html">Map</a></li>
+          <li><a href="clubs.html">Clubs</a></li>
+        </ul>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="featured.html">Featured Businesses</a></li>
+            <li><a href="submit.html">List with Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="duediligence.html">Due Diligence</a></li>
+            <li><a href="disclaimer.html">Legal Disclaimers</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="yr"></span> OldXJS.com. All rights reserved. | <a class="footer-disclaimer-link" href="about.html">About</a> | <a class="footer-disclaimer-link" href="contact.html">Contact</a> | <a class="footer-disclaimer-link" href="duediligence.html">Due Diligence</a> | <a class="footer-disclaimer-link" href="disclaimer.html">Legal Disclaimers</a></p>
+      <p>www.oldxjs.com</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const clubs = [
+    {
+      type: "local",
+      name: "Central Texas XJ Collective",
+      info: "Weekend trail runs, wrench nights, and recovery practice for old-school XJ owners in the Austin area.",
+      contact: "Contact: Jamie R. | (512) 555-0184 | ctxjcollective@email.com",
+      city: "Austin",
+      state: "TX",
+      links: {
+        website: "https://example.com/ctxjcollective",
+        facebook: "https://facebook.com/groups/ctxjcollective",
+        instagram: "https://instagram.com/ctxjcollective",
+        discord: "",
+        forum: ""
+      },
+      tags: ["xj", "trail rides", "austin", "wrench night", "4x4"]
+    },
+    {
+      type: "local",
+      name: "North Texas Jeep & XJ Riders",
+      info: "Dallas/Fort Worth meetups focused on beginner-friendly trails, suspension setup help, and camp weekends.",
+      contact: "Contact: Chris M. | (214) 555-0197",
+      city: "Dallas",
+      state: "TX",
+      links: {
+        website: "",
+        facebook: "https://facebook.com/groups/ntxjeepxj",
+        instagram: "",
+        discord: "https://discord.gg/example-ntx",
+        forum: ""
+      },
+      tags: ["dfw", "xj", "lift installs", "off-road"]
+    },
+    {
+      type: "local",
+      name: "Houston Backroads Jeep Club",
+      info: "Monthly social meetup and quarterly off-road trips with a strong Cherokee and classic Jeep turnout.",
+      contact: "Contact: hbjeepclub@email.com",
+      city: "Houston",
+      state: "TX",
+      links: {
+        website: "https://example.com/houstonbackroads",
+        facebook: "https://facebook.com/houstonbackroadsjeep",
+        instagram: "https://instagram.com/houstonbackroadsjeep",
+        discord: "",
+        forum: ""
+      },
+      tags: ["houston", "meetups", "xj owners", "trail builds"]
+    },
+    {
+      type: "local",
+      name: "West TN Cherokee Crew",
+      info: "Memphis-area Cherokee group running local trails and helping members source parts for 84–01 builds.",
+      contact: "Contact: Dana P. | (901) 555-0102",
+      city: "Memphis",
+      state: "TN",
+      links: {
+        website: "",
+        facebook: "https://facebook.com/groups/westtncherokeecrew",
+        instagram: "",
+        discord: "",
+        forum: ""
+      },
+      tags: ["memphis", "parts leads", "xj", "west tennessee"]
+    },
+    {
+      type: "local",
+      name: "Middle Tennessee Jeep Trail Society",
+      info: "Nashville-based local club with monthly ride calendar, family-friendly trail days, and convoy meetups.",
+      contact: "Contact: mtjtrailsociety@email.com | (615) 555-0136",
+      city: "Nashville",
+      state: "TN",
+      links: {
+        website: "https://example.com/mtjtrail",
+        facebook: "https://facebook.com/mtjtrail",
+        instagram: "https://instagram.com/mtjtrail",
+        discord: "https://discord.gg/example-mtj",
+        forum: ""
+      },
+      tags: ["nashville", "trail rides", "family", "xj"]
+    },
+    {
+      type: "local",
+      name: "Knoxville XJ Garage Group",
+      info: "Garage-first group focused on diagnostics, drivetrain swaps, and keeping high-mileage Cherokees alive.",
+      contact: "Contact: Mike T. | knoxxjgarage@email.com",
+      city: "Knoxville",
+      state: "TN",
+      links: {
+        website: "",
+        facebook: "https://facebook.com/groups/knoxxjgarage",
+        instagram: "",
+        discord: "https://discord.gg/example-knox",
+        forum: "https://forum.example.com/knoxxjgarage"
+      },
+      tags: ["knoxville", "diagnostics", "drivetrain", "xj tech"]
+    },
+    {
+      type: "local",
+      name: "East Texas Jeep Recon",
+      info: "Smaller local crew around Tyler/Longview focused on trail prep checklists and overland-style runs.",
+      contact: "Contact: (903) 555-0119",
+      city: "Tyler",
+      state: "TX",
+      links: {
+        website: "",
+        facebook: "https://facebook.com/groups/easttxjeeprecon",
+        instagram: "https://instagram.com/easttxjeeprecon",
+        discord: "",
+        forum: ""
+      },
+      tags: ["east texas", "trail prep", "xj", "recovery"]
+    },
+    {
+      type: "local",
+      name: "Chattanooga Jeep & XJ Meetup",
+      info: "Local Chattanooga club organizing Saturday meetups, parts swaps, and scenic ridge trail rides.",
+      contact: "Contact: chattxjmeetup@email.com",
+      city: "Chattanooga",
+      state: "TN",
+      links: {
+        website: "https://example.com/chattxj",
+        facebook: "https://facebook.com/chattxjmeetup",
+        instagram: "",
+        discord: "",
+        forum: ""
+      },
+      tags: ["chattanooga", "parts swap", "xj owners", "tennessee"]
+    },
+
+    {
+      type: "online",
+      name: "Old XJ Owners Hub",
+      info: "General online group for 84–01 Cherokee owners, with tech threads and buy/sell leads.",
+      contact: "",
+      city: "",
+      state: "",
+      links: {
+        website: "https://example.com/oldxjhub",
+        facebook: "https://facebook.com/groups/oldxjhub",
+        instagram: "",
+        discord: "",
+        forum: ""
+      },
+      platform_label: "Facebook group",
+      tags: ["xj", "online", "tech help"]
+    },
+    {
+      type: "online",
+      name: "XJ Troubleshooting Forum",
+      info: "Archived and active troubleshooting topics for common 4.0L and AW4 issues.",
+      contact: "",
+      city: "",
+      state: "",
+      links: {
+        website: "",
+        facebook: "",
+        instagram: "",
+        discord: "",
+        forum: "https://forum.example.com/xj-troubleshooting"
+      },
+      platform_label: "Forum",
+      tags: ["forum", "diagnostics", "xj"]
+    },
+    {
+      type: "online",
+      name: "Cherokee Trail Planning Discord",
+      info: "Trip planning channels, map pins, and convoy scheduling across regions.",
+      contact: "",
+      city: "",
+      state: "",
+      links: {
+        website: "",
+        facebook: "",
+        instagram: "",
+        discord: "https://discord.gg/example-trail",
+        forum: ""
+      },
+      platform_label: "Discord",
+      tags: ["discord", "trail rides", "planning"]
+    },
+    {
+      type: "online",
+      name: "Classic XJ Build Journal Community",
+      info: "Build threads, before/after galleries, and long-term project documentation.",
+      contact: "",
+      city: "",
+      state: "",
+      links: {
+        website: "https://example.com/xjbuildjournal",
+        facebook: "",
+        instagram: "https://instagram.com/xjbuildjournal",
+        discord: "",
+        forum: "https://forum.example.com/buildjournal"
+      },
+      platform_label: "Forum",
+      tags: ["builds", "project cherokee", "xj"]
+    },
+    {
+      type: "online",
+      name: "XJ Parts Locator Network",
+      info: "Members post hard-to-find parts leads and salvage yard finds.",
+      contact: "",
+      city: "",
+      state: "",
+      links: {
+        website: "",
+        facebook: "https://facebook.com/groups/xjpartslocator",
+        instagram: "",
+        discord: "",
+        forum: ""
+      },
+      platform_label: "Facebook group",
+      tags: ["parts", "salvage", "xj parts"]
+    },
+    {
+      type: "online",
+      name: "Jeep Cherokee Tech Talk Live",
+      info: "Weekly livestream discussion and Q&A with archived notes.",
+      contact: "",
+      city: "",
+      state: "",
+      links: {
+        website: "https://example.com/xjtechtalk",
+        facebook: "https://facebook.com/xjtechtalk",
+        instagram: "https://instagram.com/xjtechtalk",
+        discord: "",
+        forum: ""
+      },
+      platform_label: "Website",
+      tags: ["tech talk", "maintenance", "xj"]
+    },
+    {
+      type: "online",
+      name: "Trail Build Sheet Exchange",
+      info: "Suspension setup templates, tire fitment notes, and ride reports.",
+      contact: "",
+      city: "",
+      state: "",
+      links: {
+        website: "",
+        facebook: "",
+        instagram: "",
+        discord: "https://discord.gg/example-buildsheet",
+        forum: "https://forum.example.com/buildsheet"
+      },
+      platform_label: "Discord",
+      tags: ["lift installs", "trail builds", "setup"]
+    },
+    {
+      type: "online",
+      name: "XJ Daily Driver Owners Group",
+      info: "Focused on reliability, commuting setups, and practical maintenance.",
+      contact: "",
+      city: "",
+      state: "",
+      links: {
+        website: "",
+        facebook: "https://facebook.com/groups/xjdailydriver",
+        instagram: "https://instagram.com/xjdailydriver",
+        discord: "",
+        forum: ""
+      },
+      platform_label: "Facebook group",
+      tags: ["daily driver", "maintenance", "xj owners"]
+    },
+    {
+      type: "online",
+      name: "Cherokee Recovery & Winch Community",
+      info: "Recovery gear recommendations, safe strap technique, and trail extraction tips.",
+      contact: "",
+      city: "",
+      state: "",
+      links: {
+        website: "https://example.com/xjrecovery",
+        facebook: "",
+        instagram: "",
+        discord: "https://discord.gg/example-recovery",
+        forum: ""
+      },
+      platform_label: "Discord",
+      tags: ["recovery", "winch", "off-road"]
+    },
+    {
+      type: "online",
+      name: "OldXJ Forum Classifieds Circle",
+      info: "Community classifieds for Cherokee projects, parts, and wanted posts.",
+      contact: "",
+      city: "",
+      state: "",
+      links: {
+        website: "",
+        facebook: "",
+        instagram: "",
+        discord: "",
+        forum: "https://forum.example.com/oldxj-classifieds"
+      },
+      platform_label: "Forum",
+      tags: ["classifieds", "buy sell", "wanted"]
+    }
+  ];
+
+  function safe(v) {
+    return (v || "").toString().trim();
+  }
+
+  function issueMailto(clubName) {
+    return "mailto:contact@oldxjs.com?subject=" + encodeURIComponent("Report issue - " + clubName);
+  }
+
+  function linkButtons(links, compact) {
+    const labels = [
+      ["website", "Website"],
+      ["facebook", "Facebook"],
+      ["instagram", "Instagram"],
+      ["discord", "Discord"],
+      ["forum", "Forum"]
+    ];
+    const parts = [];
+
+    labels.forEach(([key, label]) => {
+      const href = safe(links && links[key]);
+      if (!href) return;
+      if (compact) {
+        parts.push('<a href="' + href + '" target="_blank" rel="noopener noreferrer">' + label + "</a>");
+      } else {
+        parts.push('<a href="' + href + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">' + label + "</a>");
+      }
+    });
+
+    return parts.join(compact ? " | " : "");
+  }
+
+  function platformHit(club, platform) {
+    if (platform === "all") return true;
+    return !!safe(club.links && club.links[platform]);
+  }
+
+  function textBlob(club) {
+    return [
+      safe(club.name),
+      safe(club.info),
+      safe(club.contact),
+      safe(club.city),
+      safe(club.state),
+      Array.isArray(club.tags) ? club.tags.join(" ") : ""
+    ].join(" ").toLowerCase();
+  }
+
+  function filterClubs() {
+    const search = safe(document.getElementById("clubs-search").value).toLowerCase();
+    const state = safe(document.getElementById("clubs-state").value).toUpperCase();
+    const type = safe(document.getElementById("clubs-type").value);
+    const platform = safe(document.getElementById("clubs-platform").value);
+
+    return clubs.filter((club) => {
+      if (type !== "all" && club.type !== type) return false;
+
+      if (state !== "ALL") {
+        if (club.type === "local") {
+          if ((safe(club.state).toUpperCase() || "") !== state) return false;
+        } else {
+          return false;
+        }
+      }
+
+      if (!platformHit(club, platform)) return false;
+
+      if (search) {
+        if (!textBlob(club).includes(search)) return false;
+      }
+
+      return true;
+    });
+  }
+
+  function render() {
+    const filtered = filterClubs();
+    const local = filtered.filter((c) => c.type === "local");
+    const online = filtered.filter((c) => c.type === "online");
+
+    const localWrap = document.getElementById("local-results");
+    const localEmpty = document.getElementById("local-empty");
+    const onlineWrap = document.getElementById("online-results");
+    const onlineEmpty = document.getElementById("online-empty");
+
+    localWrap.innerHTML = "";
+    onlineWrap.innerHTML = "";
+
+    if (!local.length) {
+      localEmpty.style.display = "";
+    } else {
+      localEmpty.style.display = "none";
+      local.forEach((club) => {
+        const card = document.createElement("article");
+        card.className = "club-card";
+
+        const clubName = safe(club.name);
+        const info = safe(club.info);
+        const contact = safe(club.contact) || "Contact details coming soon";
+        const cityState = [safe(club.city), safe(club.state)].filter(Boolean).join(", ");
+
+        card.innerHTML =
+          '<div class="club-name">' + clubName + "</div>" +
+          '<div class="club-info">' + info + "</div>" +
+          '<div class="club-contact"><strong>Contact:</strong> ' + contact + "</div>" +
+          '<div class="club-location"><strong>City / State:</strong> ' + cityState + "</div>" +
+          '<div class="club-links">' + linkButtons(club.links || {}, false) + "</div>" +
+          '<div class="club-report"><a href="' + issueMailto(clubName) + '">Report an issue</a></div>';
+
+        localWrap.appendChild(card);
+      });
+    }
+
+    if (!online.length) {
+      onlineEmpty.style.display = "";
+    } else {
+      onlineEmpty.style.display = "none";
+      online.forEach((club) => {
+        const row = document.createElement("div");
+        row.className = "online-row";
+        const clubName = safe(club.name);
+        const info = safe(club.info);
+        const platformLabel = safe(club.platform_label);
+
+        row.innerHTML =
+          '<span class="online-name">' + clubName + "</span>" +
+          (info ? '<span class="online-info">' + info + "</span>" : "") +
+          (platformLabel ? '<span class="online-platform">' + platformLabel + "</span>" : "") +
+          '<span class="online-links">' + linkButtons(club.links || {}, true) + "</span>" +
+          '<span class="online-issue"><a href="' + issueMailto(clubName) + '">Report an issue</a></span>';
+
+        onlineWrap.appendChild(row);
+      });
+    }
+  }
+
+  function initStateFilter() {
+    const select = document.getElementById("clubs-state");
+    const states = Array.from(
+      new Set(
+        clubs
+          .filter((c) => c.type === "local")
+          .map((c) => safe(c.state).toUpperCase())
+          .filter(Boolean)
+      )
+    ).sort();
+
+    if (!states.includes("TX")) states.unshift("TX");
+    if (!states.includes("TN")) states.unshift("TN");
+
+    states.forEach((s) => {
+      const opt = document.createElement("option");
+      opt.value = s;
+      opt.textContent = s;
+      select.appendChild(opt);
+    });
+  }
+
+  function initSubmitFallback() {
+    const btn = document.getElementById("submit-club-btn");
+    fetch("submit.html", { method: "HEAD" })
+      .then((res) => {
+        if (!res.ok) throw new Error("submit missing");
+      })
+      .catch(() => {
+        btn.href = "contact.html";
+      });
+  }
+
+  function initLastUpdated() {
+    const d = new Date();
+    const txt = d.toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
+    document.getElementById("last-updated").textContent = txt;
+    document.getElementById("yr").textContent = d.getFullYear();
+  }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    initStateFilter();
+    initSubmitFallback();
+    initLastUpdated();
+
+    ["clubs-search", "clubs-state", "clubs-type", "clubs-platform"].forEach((id) => {
+      document.getElementById(id).addEventListener("input", render);
+      document.getElementById(id).addEventListener("change", render);
+    });
+
+    render();
+  });
+</script>
+</body>
+</html>
