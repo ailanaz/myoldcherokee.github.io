@@ -122,12 +122,25 @@
   }
 
   .hero-search-below .hero-search-box {
-    padding: 0.28rem 0.28rem 0.28rem 1.12rem;
+    background: #fff;
+    border: 1.5px solid var(--line) !important;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-xs);
+    padding: 0.55rem;
   }
 
   .hero-search-below .hero-search-box input {
-    height: 35px;
-    font-size: 0.75rem;
+    height: 42px;
+    border: 1.5px solid var(--line-mid);
+    border-radius: var(--radius-sm);
+    padding: 0 0.75rem;
+    font-size: 0.92rem;
+    background: #fff;
+  }
+
+  .hero-search-below .hero-search-box input:focus {
+    border-color: var(--red);
+    box-shadow: 0 0 0 2px rgba(107,18,40,0.08);
   }
 </style>
 

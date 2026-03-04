@@ -19,9 +19,8 @@
   <link rel="stylesheet" href="styles.css" />
   <style>
     /* DIRECTORY FILTER BAR */
-    .dir-filter-bar { background: var(--white); border-bottom: 2px solid var(--line); padding: 0.85rem 0; position: sticky; top: 76px; z-index: 90; }
-    .dir-filter-inner { display: flex; gap: 0.5rem; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; align-items: center; padding: 0.1rem 0; }
-    .dir-filter-inner::-webkit-scrollbar { display: none; }
+    .dir-filter-bar { background: var(--white); border-bottom: 2px solid var(--line); padding: 0.75rem 0; position: sticky; top: 76px; z-index: 90; }
+    .dir-filter-inner { display: flex; justify-content: center; align-items: center; }
     .cat-section.hidden { display: none; }
 
     /* CATEGORY SECTION HEADERS */
@@ -115,15 +114,17 @@
 
 <div class="dir-filter-bar">
   <div class="container dir-filter-inner">
-    <select id="dir-cat" class="filter-select" onchange="filterDirectory()" aria-label="Filter directory sections">
-      <option value="all">What do you need?</option>
-      <option value="repair-shops">Repair Shops</option>
-      <option value="junkyards">Salvage &amp; Junk Yards</option>
-      <option value="shop-parts">Shop for Parts</option>
-      <option value="tires-wheels">Tires &amp; Wheels</option>
-      <option value="body-shop">Body Shops</option>
-      <option value="fabrication">Fabrication &amp; Welding (4x4)</option>
-    </select>
+    <div class="clubs-style-field-wrap">
+      <select id="dir-cat" class="filter-select" onchange="filterDirectory()" aria-label="Filter directory sections">
+        <option value="all">What do you need?</option>
+        <option value="repair-shops">Repair Shops</option>
+        <option value="junkyards">Salvage &amp; Junk Yards</option>
+        <option value="shop-parts">Shop for Parts</option>
+        <option value="tires-wheels">Tires &amp; Wheels</option>
+        <option value="body-shop">Body Shops</option>
+        <option value="fabrication">Fabrication &amp; Welding (4x4)</option>
+      </select>
+    </div>
   </div>
 </div>
 

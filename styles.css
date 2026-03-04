@@ -619,15 +619,60 @@ img { max-width: 100%; display: block; }
 /* Centered section-level filter (not in hero — white background sections) */
 .section-filter-wrap { max-width: 520px; margin: 0 auto 1.75rem; text-align: center; }
 .section-filter-label { font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-lite); margin-bottom: 0.6rem; }
-.section-filter-box { background: var(--off); border-radius: var(--radius-full); padding: 0.3rem 0.5rem 0.3rem 1.4rem; display: flex; align-items: center; border: 1.5px solid var(--line); box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
-.section-filter-box .filter-select { flex: 1; border: none; background: transparent; box-shadow: none; height: 44px; font-size: 0.95rem; color: var(--text); padding-left: 0; }
-.section-filter-box .filter-select:focus { box-shadow: none; border-color: transparent; }
+.section-filter-box { background: #fff; border: 1.5px solid var(--line); border-radius: var(--radius); padding: 0.55rem; display: flex; align-items: center; box-shadow: var(--shadow-xs); }
+.section-filter-box .filter-select { flex: 1; height: 42px; border: 1.5px solid var(--line-mid); border-radius: var(--radius-sm); background: #fff; box-shadow: none; font-size: 0.92rem; color: var(--text); padding: 0 2.1rem 0 0.7rem; }
+.section-filter-box .filter-select:focus { border-color: var(--red); box-shadow: 0 0 0 2px rgba(107,18,40,0.08); }
 
 .filter-dropdown-bar { display: flex; gap: 0.75rem; align-items: center; margin-bottom: 1.75rem; flex-wrap: wrap; }
 .filter-search-input { height: 42px; border-radius: var(--radius-full); border: 1.5px solid var(--line); background: var(--off); color: var(--text); padding: 0 1.1rem; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; outline: none; transition: border-color 0.2s; min-width: 160px; flex: 1; }
 .filter-search-input:focus { border-color: var(--red); background: var(--white); box-shadow: 0 0 0 3px var(--red-lite); }
 .filter-select { height: 42px; border-radius: var(--radius-full); border: 1.5px solid var(--line); background: var(--off); color: var(--text); padding: 0 2.25rem 0 1rem; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; outline: none; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23909090' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 0.9rem center; cursor: pointer; transition: border-color 0.2s; }
 .filter-select:focus { border-color: var(--red); background-color: var(--white); box-shadow: 0 0 0 3px var(--red-lite); }
+
+/* Clubs-style filter/search bars used across pages */
+.clubs-style-sticky-bar {
+  background: var(--white);
+  border-bottom: 2px solid var(--line);
+  padding: 0.75rem 0;
+  position: sticky;
+  top: 76px;
+  z-index: 90;
+}
+.clubs-style-sticky-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clubs-style-field-wrap {
+  width: min(520px, 100%);
+  background: #fff;
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-xs);
+  padding: 0.55rem;
+}
+.clubs-style-field-wrap .filter-select,
+.clubs-style-field-wrap .filter-search-input {
+  width: 100%;
+  height: 42px;
+  border: 1.5px solid var(--line-mid);
+  border-radius: var(--radius-sm);
+  background: #fff;
+  color: var(--text);
+  font-size: 0.92rem;
+  box-shadow: none;
+}
+.clubs-style-field-wrap .filter-select {
+  padding: 0 2.1rem 0 0.7rem;
+}
+.clubs-style-field-wrap .filter-search-input {
+  padding: 0 0.75rem;
+}
+.clubs-style-field-wrap .filter-select:focus,
+.clubs-style-field-wrap .filter-search-input:focus {
+  border-color: var(--red);
+  box-shadow: 0 0 0 2px rgba(107,18,40,0.08);
+}
 
 /* ── GET FEATURED NUDGE ───────────────────────────────────────────────────── */
 .get-featured-nudge { background: var(--off); border: 1.5px dashed var(--amber); border-radius: var(--radius); padding: 0.85rem 1.1rem; font-size: 0.86rem; color: var(--text-mid); display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem; }

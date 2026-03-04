@@ -73,14 +73,16 @@
   </div>
 </section>
 
-<div style="background:var(--white);border-bottom:2px solid var(--line);padding:0.85rem 0;position:sticky;top:76px;z-index:90;" data-grid="cherokees-grid">
-  <div class="container" style="display:flex;gap:0.5rem;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;align-items:center;">
-    <select class="filter-select" onchange="filterDropdown('cherokees-grid')" aria-label="Filter listings">
-      <option value="all">What are you looking for?</option>
+<div class="clubs-style-sticky-bar" data-grid="cherokees-grid">
+  <div class="container clubs-style-sticky-inner">
+    <div class="clubs-style-field-wrap">
+      <select class="filter-select" onchange="filterDropdown('cherokees-grid')" aria-label="Filter listings">
+        <option value="all">What are you looking for?</option>
       <option value="vehicle">For Sale</option>
       <option value="wanted">Wanted</option>
       <option value="project">Project</option>
-    </select>
+      </select>
+    </div>
   </div>
 </div>
 
