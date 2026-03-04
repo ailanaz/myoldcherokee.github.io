@@ -1,0 +1,5456 @@
+[
+  {
+    "business_id": "cornerstone-auto-glass-new-tampa-fl",
+    "name": "Cornerstone Auto Glass New Tampa",
+    "category": "Auto Glass and Windshield",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "19456, Paddock View Drive, Tampa, FL, 33647",
+    "phone": "+1-727-809-0699",
+    "website": "https://cornerstoneglassrepair.com",
+    "google_maps_link": "https://www.google.com/maps?q=28.166646,-82.297013",
+    "tags": [
+      "auto-glass",
+      "windshield"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6390284293",
+    "lat": 28.1666458,
+    "lon": -82.2970127
+  },
+  {
+    "business_id": "florida-prime-glass-fl",
+    "name": "Florida Prime Glass",
+    "category": "Auto Glass and Windshield",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "+1 855-377-4634",
+    "website": "https://www.floridaprimeglass.com/",
+    "google_maps_link": "https://www.google.com/maps?q=26.370393,-80.125805",
+    "tags": [
+      "auto-glass",
+      "windshield"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13091351266",
+    "lat": 26.370393,
+    "lon": -80.1258054
+  },
+  {
+    "business_id": "homestead-glass-co-fl",
+    "name": "Homestead Glass Co",
+    "category": "Auto Glass and Windshield",
+    "city": "Homestead",
+    "state": "FL",
+    "address": "515, N Krome Ave, Homestead, FL, 33030",
+    "phone": "+1 305-247-5025",
+    "website": "https://homesteadglass.com",
+    "google_maps_link": "https://www.google.com/maps?q=25.474626,-80.477260",
+    "tags": [
+      "auto-glass",
+      "windshield"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9791865199",
+    "lat": 25.4746263,
+    "lon": -80.4772598
+  },
+  {
+    "business_id": "mike-s-auto-glass-express-fl",
+    "name": "Mike's Auto Glass Express",
+    "category": "Auto Glass and Windshield",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "8512, North Florida Avenue, Tampa, FL, 33604",
+    "phone": "+1-813-833-2973",
+    "website": "https://www.nationsautoglass.com",
+    "google_maps_link": "https://www.google.com/maps?q=28.027725,-82.459926",
+    "tags": [
+      "auto-glass",
+      "windshield"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12313719390",
+    "lat": 28.0277249,
+    "lon": -82.4599258
+  },
+  {
+    "business_id": "mike-s-auto-glass-tampa-fl",
+    "name": "Mike's Auto Glass Tampa",
+    "category": "Auto Glass and Windshield",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "4901, North Armenia Avenue, Tampa, FL, 33603",
+    "phone": "+1-813-876-4115",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.990814,-82.484117",
+    "tags": [
+      "auto-glass",
+      "windshield"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12313856981",
+    "lat": 27.9908142,
+    "lon": -82.4841175
+  },
+  {
+    "business_id": "lizotte-s-welding-fl",
+    "name": "Lizotte's Welding",
+    "category": "Fabrication and Welding (4x4)",
+    "city": "",
+    "state": "FL",
+    "address": "3303, Tyrone Boulevard North, FL",
+    "phone": "+1-727-343-7690",
+    "website": "http://www.lizottewelding.net/",
+    "google_maps_link": "https://www.google.com/maps?q=27.802256,-82.741798",
+    "tags": [
+      "fabrication",
+      "welding",
+      "4x4"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/228264526",
+    "lat": 27.8022565,
+    "lon": -82.7417976
+  },
+  {
+    "business_id": "aaa-million-auto-parts-fl",
+    "name": "AAA Million Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Miami",
+    "state": "FL",
+    "address": "311, Southwest 22nd Avenue, Miami, FL, 33135",
+    "phone": "",
+    "website": "https://www.aaamillion.com/",
+    "google_maps_link": "https://www.google.com/maps?q=25.769395,-80.230461",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/435739811",
+    "lat": 25.7693947,
+    "lon": -80.2304611
+  },
+  {
+    "business_id": "advance-auto-parts-fl-7",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Margate",
+    "state": "FL",
+    "address": "7912, West Sample Road, Margate, FL, 33065",
+    "phone": "+1 954-752-4702",
+    "website": "https://stores.advanceautoparts.com/fl/margate/7912-w-sample-rd",
+    "google_maps_link": "https://www.google.com/maps?q=26.271731,-80.231542",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4741640771",
+    "lat": 26.2717306,
+    "lon": -80.2315416
+  },
+  {
+    "business_id": "advance-auto-parts-fl-8",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Pembroke Park",
+    "state": "FL",
+    "address": "3000, West Hallandale Bouleva, Pembroke Park, FL, 33009",
+    "phone": "+1-954-455-0042",
+    "website": "https://stores.advanceautoparts.com/fl/pembroke-park/3000-west-hallandale-boulevard",
+    "google_maps_link": "https://www.google.com/maps?q=25.984337,-80.166355",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5700682171",
+    "lat": 25.9843372,
+    "lon": -80.1663553
+  },
+  {
+    "business_id": "advance-auto-parts-fl-3",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Boca Raton",
+    "state": "FL",
+    "address": "21775, State Road 7, Boca Raton, FL, 33428",
+    "phone": "+1 561-487-5309",
+    "website": "https://stores.advanceautoparts.com/fl/boca-raton/21775-state-road-7",
+    "google_maps_link": "https://www.google.com/maps?q=26.352210,-80.203953",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12623342388",
+    "lat": 26.3522095,
+    "lon": -80.203953
+  },
+  {
+    "business_id": "advance-auto-parts-fl-5",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "North Miami Beach",
+    "state": "FL",
+    "address": "295, Northeast 167th Street, North Miami Beach, FL, 33162",
+    "phone": "+1-786-654-5511",
+    "website": "https://stores.advanceautoparts.com/fl/north-miami-beach/295-ne-167th-st",
+    "google_maps_link": "https://www.google.com/maps?q=25.928878,-80.194909",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13188032577",
+    "lat": 25.9288785,
+    "lon": -80.1949088
+  },
+  {
+    "business_id": "advance-auto-parts-fl-19",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Miami",
+    "state": "FL",
+    "address": "12120, Southwest 117th Avenue, Miami, FL, 33186",
+    "phone": "+1-305-251-0452",
+    "website": "https://stores.advanceautoparts.com/fl/miami/12120-sw-117th-ave",
+    "google_maps_link": "https://www.google.com/maps?q=25.656025,-80.384031",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/286204168",
+    "lat": 25.6560248,
+    "lon": -80.3840306
+  },
+  {
+    "business_id": "advance-auto-parts-fl-10",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Valrico",
+    "state": "FL",
+    "address": "1029, Bloomingdale Avenue, Valrico, FL, 33594",
+    "phone": "+1-813-643-2196",
+    "website": "https://stores.advanceautoparts.com/fl/valrico/1029-bloomingdale-ave",
+    "google_maps_link": "https://www.google.com/maps?q=27.893238,-82.267276",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5700922951",
+    "lat": 27.8932377,
+    "lon": -82.2672756
+  },
+  {
+    "business_id": "advance-auto-parts-fl-9",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Winter Springs",
+    "state": "FL",
+    "address": "380, East State Hwy 434, Winter Springs, FL, 32708",
+    "phone": "+1-407-327-6169",
+    "website": "https://stores.advanceautoparts.com/fl/winter-springs/380-e-state-road-434",
+    "google_maps_link": "https://www.google.com/maps?q=28.699485,-81.301484",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5700835887",
+    "lat": 28.699485,
+    "lon": -81.301484
+  },
+  {
+    "business_id": "advance-auto-parts-fl",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Orlando",
+    "state": "FL",
+    "address": "1479 East, Michigan Street, Orlando, FL, 32806",
+    "phone": "+1-407-895-9527",
+    "website": "https://stores.advanceautoparts.com/fl/orlando/1479-e-michigan-st",
+    "google_maps_link": "https://www.google.com/maps?q=28.513374,-81.361216",
+    "tags": [
+      "parts",
+      "retail",
+      "4x4"
+    ],
+    "jeep_note": "4x4 focused",
+    "source": "OSM",
+    "osm_id": "node/10798810360",
+    "lat": 28.5133742,
+    "lon": -81.3612165
+  },
+  {
+    "business_id": "advance-auto-parts-fl-29",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Jacksonville",
+    "state": "FL",
+    "address": "2676, Race Track Road, Jacksonville, FL, 32259",
+    "phone": "+1-904-900-7272",
+    "website": "https://stores.advanceautoparts.com/fl/jacksonville/2676-race-track-rd",
+    "google_maps_link": "https://www.google.com/maps?q=30.114102,-81.592942",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/971742380",
+    "lat": 30.1141016,
+    "lon": -81.5929418
+  },
+  {
+    "business_id": "advance-auto-parts-fl-20",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Fort Myers",
+    "state": "FL",
+    "address": "11591, Gladiolus Drive, Fort Myers, FL, 33908",
+    "phone": "+1-239-437-7065",
+    "website": "https://stores.advanceautoparts.com/fl/fort-myers/11591-gladiolus-dr",
+    "google_maps_link": "https://www.google.com/maps?q=26.515454,-81.942424",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/288427785",
+    "lat": 26.5154536,
+    "lon": -81.9424241
+  },
+  {
+    "business_id": "advance-auto-parts-fl-22",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "FL",
+    "address": "12114, US 301 (FL), FL, 33592",
+    "phone": "+1-813-982-2283",
+    "website": "http://www.advanceautoparts.com/",
+    "google_maps_link": "https://www.google.com/maps?q=28.064976,-82.306502",
+    "tags": [
+      "parts",
+      "retail",
+      "4x4"
+    ],
+    "jeep_note": "4x4 focused",
+    "source": "OSM",
+    "osm_id": "way/401323059",
+    "lat": 28.0649758,
+    "lon": -82.3065017
+  },
+  {
+    "business_id": "advance-auto-parts-fl-11",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "West Miami",
+    "state": "FL",
+    "address": "6520, Southwest 8th Street, West Miami, FL, 33144",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/west-miami/6520-sw-8th-st",
+    "google_maps_link": "https://www.google.com/maps?q=25.762769,-80.302336",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/7389740903",
+    "lat": 25.7627693,
+    "lon": -80.3023356
+  },
+  {
+    "business_id": "advance-auto-parts-fl-2",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Fort Lauderdale",
+    "state": "FL",
+    "address": "821, West Broward Boulevard, Fort Lauderdale, FL, 33312",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/fort-lauderdale/821-w-broward-blvd",
+    "google_maps_link": "https://www.google.com/maps?q=26.122342,-80.153060",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11059909552",
+    "lat": 26.1223424,
+    "lon": -80.1530605
+  },
+  {
+    "business_id": "advance-auto-parts-fl-21",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Hialeah",
+    "state": "FL",
+    "address": "7500, Northwest 186th Street, Hialeah, FL, 33015",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/miami-gardens/7500-nw-186th-st",
+    "google_maps_link": "https://www.google.com/maps?q=25.941613,-80.321559",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/295111272",
+    "lat": 25.9416126,
+    "lon": -80.3215594
+  },
+  {
+    "business_id": "advance-auto-parts-fl-23",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Hallandale Beach",
+    "state": "FL",
+    "address": "117, Federal Highway, Hallandale Beach, FL, 33009",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/hallandale-beach/117-n-federal-hwy",
+    "google_maps_link": "https://www.google.com/maps?q=25.987476,-80.142856",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/435144550",
+    "lat": 25.987476,
+    "lon": -80.1428562
+  },
+  {
+    "business_id": "advance-auto-parts-fl-24",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Miami Springs",
+    "state": "FL",
+    "address": "4100, Northwest 72nd Avenue, Miami Springs, FL, 33166",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/miami/4100-nw-72nd-ave",
+    "google_maps_link": "https://www.google.com/maps?q=25.811977,-80.313724",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/435520631",
+    "lat": 25.8119773,
+    "lon": -80.3137237
+  },
+  {
+    "business_id": "advance-auto-parts-fl-25",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "North Miami",
+    "state": "FL",
+    "address": "14301, West Dixie Highway, North Miami, FL, 33161",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/north-miami/14301-w-dixie-hwy",
+    "google_maps_link": "https://www.google.com/maps?q=25.907701,-80.170200",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/436040668",
+    "lat": 25.9077008,
+    "lon": -80.1702
+  },
+  {
+    "business_id": "advance-auto-parts-fl-27",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Dania Beach",
+    "state": "FL",
+    "address": "1750, Stirling Road, Dania Beach, FL, 33004",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/dania-beach/1750-stirling-rd",
+    "google_maps_link": "https://www.google.com/maps?q=26.048802,-80.157173",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/661162172",
+    "lat": 26.0488023,
+    "lon": -80.1571728
+  },
+  {
+    "business_id": "advance-auto-parts-fl-28",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Pembroke Pines",
+    "state": "FL",
+    "address": "303, North University Drive, Pembroke Pines, FL, 33024",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/pembroke-pines/303-n-university-dr",
+    "google_maps_link": "https://www.google.com/maps?q=26.012910,-80.247473",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/957900659",
+    "lat": 26.0129096,
+    "lon": -80.2474735
+  },
+  {
+    "business_id": "advance-auto-parts-fl-12",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "North Lauderdale",
+    "state": "FL",
+    "address": "7522, Southgate Boulevard, North Lauderdale, FL, 33068",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/north-lauderdale/7522-southgate-blvd",
+    "google_maps_link": "https://www.google.com/maps?q=26.227703,-80.226130",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1097381453",
+    "lat": 26.2277027,
+    "lon": -80.2261297
+  },
+  {
+    "business_id": "advance-auto-parts-fl-13",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Miami Beach",
+    "state": "FL",
+    "address": "957, Normandy Drive, Miami Beach, FL, 33141",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/miami-beach/957-normandy-dr",
+    "google_maps_link": "https://www.google.com/maps?q=25.856044,-80.129295",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1305549327",
+    "lat": 25.8560436,
+    "lon": -80.1292953
+  },
+  {
+    "business_id": "advance-auto-parts-fl-6",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Largo",
+    "state": "FL",
+    "address": "10500, Seminole Blvd, Largo, FL, 33778",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/largo/13015-seminole-blvd",
+    "google_maps_link": "https://www.google.com/maps?q=27.891723,-82.786647",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/2027063800",
+    "lat": 27.8917231,
+    "lon": -82.7866465
+  },
+  {
+    "business_id": "advance-auto-parts-fl-4",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "8427, west hillsborough avenue, Tampa, FL, 33615",
+    "phone": "+1-813-886-4139",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.997204,-82.579131",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12713784913",
+    "lat": 27.9972041,
+    "lon": -82.5791306
+  },
+  {
+    "business_id": "advance-auto-parts-fl-14",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Saint Petersburg",
+    "state": "FL",
+    "address": "5601, 34th Street North, Saint Petersburg, FL",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/saint-petersburg/5601-34th-st-n",
+    "google_maps_link": "https://www.google.com/maps?q=27.823224,-82.679022",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/162042311",
+    "lat": 27.823224,
+    "lon": -82.6790217
+  },
+  {
+    "business_id": "advance-auto-parts-fl-15",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Dunedin",
+    "state": "FL",
+    "address": "Main St, Dunedin, FL, 33761",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/dunedin/1915-main-st",
+    "google_maps_link": "https://www.google.com/maps?q=28.018848,-82.754388",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/173664476",
+    "lat": 28.0188477,
+    "lon": -82.7543879
+  },
+  {
+    "business_id": "advance-auto-parts-fl-16",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Pinellas Park",
+    "state": "FL",
+    "address": "Park Boulevard, Pinellas Park, FL",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/pinellas-park/6301-park-blvd-n",
+    "google_maps_link": "https://www.google.com/maps?q=27.839606,-82.722962",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/192508207",
+    "lat": 27.8396063,
+    "lon": -82.722962
+  },
+  {
+    "business_id": "advance-auto-parts-fl-17",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Clearwater",
+    "state": "FL",
+    "address": "22991, US 19 Northbound Frontage Road, Clearwater, FL, 33765",
+    "phone": "+1-727-443-4564",
+    "website": "https://stores.advanceautoparts.com/fl/clearwater/22991-us-highway-19-n",
+    "google_maps_link": "https://www.google.com/maps?q=27.981741,-82.729023",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/192575567",
+    "lat": 27.9817412,
+    "lon": -82.7290229
+  },
+  {
+    "business_id": "advance-auto-parts-fl-18",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Seminole",
+    "state": "FL",
+    "address": "7399, Seminole Boulevard, Seminole, FL, 33772",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/seminole/7399-seminole-blvd",
+    "google_maps_link": "https://www.google.com/maps?q=27.839233,-82.786659",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/227003464",
+    "lat": 27.8392335,
+    "lon": -82.7866592
+  },
+  {
+    "business_id": "advance-auto-parts-fl-26",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Apopka",
+    "state": "FL",
+    "address": "1400, Rock Springs Road, Apopka, FL, 32712",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/apopka/1400-rock-springs-rd",
+    "google_maps_link": "https://www.google.com/maps?q=28.703780,-81.509832",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/611669269",
+    "lat": 28.70378,
+    "lon": -81.5098317
+  },
+  {
+    "business_id": "advanced-auto-parts-fl",
+    "name": "Advanced Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "FL",
+    "address": "12731, Trade Center Drive, FL, 34135",
+    "phone": "+1 239-390-1048",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=26.330792,-81.743282",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12200477604",
+    "lat": 26.3307918,
+    "lon": -81.7432824
+  },
+  {
+    "business_id": "advanced-discount-auto-parts-fl",
+    "name": "Advanced Discount Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/tampa/3402-e-hillsborough-ave",
+    "google_maps_link": "https://www.google.com/maps?q=27.996490,-82.421939",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/1669573793",
+    "lat": 27.9964904,
+    "lon": -82.4219392
+  },
+  {
+    "business_id": "arrow-toppers-fl",
+    "name": "Arrow Toppers",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Pinellas Park",
+    "state": "FL",
+    "address": "102nd Ave N, Pinellas Park, FL, 33782",
+    "phone": "+1-727-573-1800",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.864230,-82.699417",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/1770044181",
+    "lat": 27.86423,
+    "lon": -82.699417
+  },
+  {
+    "business_id": "autozone-fl-6",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Miami",
+    "state": "FL",
+    "address": "59, Northeast 79th Street, Miami, FL, 33138",
+    "phone": "+13057574866",
+    "website": "https://www.autozone.com/locations/fl/miami/59-ne-79th-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=25.847874,-80.195881",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/358728152",
+    "lat": 25.8478742,
+    "lon": -80.1958809
+  },
+  {
+    "business_id": "autozone-fl-7",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "West Miami",
+    "state": "FL",
+    "address": "6010, Southwest 8th Street, West Miami, FL, 33144",
+    "phone": "+1-305-267-6747",
+    "website": "https://www.autozone.com/locations/fl/west-miami/6010-sw-8th-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=25.762916,-80.293620",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/7524329314",
+    "lat": 25.7629156,
+    "lon": -80.2936201
+  },
+  {
+    "business_id": "autozone-fl-3",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "North Miami",
+    "state": "FL",
+    "address": "13903, West Dixie Highway, North Miami, FL, 33161",
+    "phone": "+13058918004",
+    "website": "https://www.autozone.com/locations/fl/north-miami/13903-w-dixie-hwy.html",
+    "google_maps_link": "https://www.google.com/maps?q=25.904005,-80.173749",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13577882569",
+    "lat": 25.904005,
+    "lon": -80.173749
+  },
+  {
+    "business_id": "autozone-fl-17",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Sunrise",
+    "state": "FL",
+    "address": "3001, North University Drive, Sunrise, FL, 33322",
+    "phone": "+1 954 742 3814",
+    "website": "https://www.autozone.com/locations/fl/sunrise/3001-n-university-dr.html",
+    "google_maps_link": "https://www.google.com/maps?q=26.162577,-80.257765",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/385897742",
+    "lat": 26.1625772,
+    "lon": -80.2577648
+  },
+  {
+    "business_id": "autozone-fl-18",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Cutler Bay",
+    "state": "FL",
+    "address": "19525, South Dixie Highway, Cutler Bay, FL, 33157",
+    "phone": "+1-786-732-8305",
+    "website": "https://www.autozone.com/locations/fl/cutler-bay/19525-s-dixie-hwy.html",
+    "google_maps_link": "https://www.google.com/maps?q=25.586179,-80.361552",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/435540598",
+    "lat": 25.5861789,
+    "lon": -80.3615516
+  },
+  {
+    "business_id": "autozone-fl-21",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Plantation",
+    "state": "FL",
+    "address": "801, State Road 7, Plantation, FL, 33317",
+    "phone": "+1-954-583-8717",
+    "website": "https://www.autozone.com/locations/fl/plantation/801-s-state-rd-7.html",
+    "google_maps_link": "https://www.google.com/maps?q=26.111091,-80.202223",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/638304684",
+    "lat": 26.1110913,
+    "lon": -80.2022232
+  },
+  {
+    "business_id": "autozone-fl-15",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Clearwater",
+    "state": "FL",
+    "address": "1675, Gulf to Bay Boulevard, Clearwater, FL, 33755",
+    "phone": "+1-727-443-4882",
+    "website": "https://www.autozone.com/locations/fl/clearwater/1675-gulf-to-bay-blvd.html",
+    "google_maps_link": "https://www.google.com/maps?q=27.960136,-82.767427",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/236786302",
+    "lat": 27.9601362,
+    "lon": -82.7674272
+  },
+  {
+    "business_id": "autozone-fl-19",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Largo",
+    "state": "FL",
+    "address": "200, Starkey Road, Largo, FL, 33771",
+    "phone": "+1-727-518-0161",
+    "website": "https://www.autozone.com/locations/fl/largo/200-starkey-rd.html",
+    "google_maps_link": "https://www.google.com/maps?q=27.915266,-82.763051",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/525012109",
+    "lat": 27.9152661,
+    "lon": -82.763051
+  },
+  {
+    "business_id": "autozone-fl-9",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Kissimmee",
+    "state": "FL",
+    "address": "3294, John Young Parkway, Kissimmee, FL, 34746",
+    "phone": "+1-407-552-0355",
+    "website": "https://www.autozone.com/locations/fl/kissimmee/3294-s-john-young-pkwy.html",
+    "google_maps_link": "https://www.google.com/maps?q=28.260473,-81.435183",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/8604462369",
+    "lat": 28.260473,
+    "lon": -81.4351832
+  },
+  {
+    "business_id": "autozone-fl",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Orlando",
+    "state": "FL",
+    "address": "8103, Lee Vista Boulevard, Orlando, FL, 32829",
+    "phone": "+1-407-533-6532",
+    "website": "https://www.autozone.com/locations/fl/orlando/8103-lee-vista.html",
+    "google_maps_link": "https://www.google.com/maps?q=28.466593,-81.274988",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10981503346",
+    "lat": 28.4665933,
+    "lon": -81.2749883
+  },
+  {
+    "business_id": "autozone-fl-10",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Jacksonville",
+    "state": "FL",
+    "address": "300, Bartram Market Drive, Jacksonville, FL, 32259",
+    "phone": "+1-904-417-9073",
+    "website": "https://www.autozone.com/locations/fl/saint-johns/300-bartram-market-drive.html",
+    "google_maps_link": "https://www.google.com/maps?q=30.102116,-81.520290",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1025572952",
+    "lat": 30.1021159,
+    "lon": -81.5202898
+  },
+  {
+    "business_id": "autozone-fl-4",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Miami Gardens",
+    "state": "FL",
+    "address": "200, Northwest 191st Street, Miami Gardens, FL, 33169",
+    "phone": "+13052497990",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=25.949499,-80.205953",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13600659602",
+    "lat": 25.9494989,
+    "lon": -80.2059533
+  },
+  {
+    "business_id": "autozone-fl-16",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Hialeah",
+    "state": "FL",
+    "address": "5751, Northwest 183rd Street, Hialeah, FL, 33015",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/fl/hialeah/5751-nw-183rd-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=25.939860,-80.295434",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/287993116",
+    "lat": 25.9398601,
+    "lon": -80.2954338
+  },
+  {
+    "business_id": "autozone-fl-5",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "West Hillsborough Avenue, Tampa, FL, 33614",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/fl/tampa/1775-w-hillsborough-ave.html",
+    "google_maps_link": "https://www.google.com/maps?q=27.996390,-82.478757",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/1954798818",
+    "lat": 27.9963902,
+    "lon": -82.478757
+  },
+  {
+    "business_id": "autozone-fl-14",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Pinellas Park",
+    "state": "FL",
+    "address": "6465, Park Boulevard, Pinellas Park, FL, 33781",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/fl/pinellas-park/6465-park-blvd.html",
+    "google_maps_link": "https://www.google.com/maps?q=27.839603,-82.725440",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/192508094",
+    "lat": 27.8396027,
+    "lon": -82.72544
+  },
+  {
+    "business_id": "autozone-fl-20",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Seminole",
+    "state": "FL",
+    "address": "10890, Park Boulevard, Seminole, FL",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/fl/seminole/10890-park-blvd.html",
+    "google_maps_link": "https://www.google.com/maps?q=27.839154,-82.789487",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/525780217",
+    "lat": 27.8391545,
+    "lon": -82.7894866
+  },
+  {
+    "business_id": "autozone-fl-11",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Zephyrhills",
+    "state": "FL",
+    "address": "5350, Gall Boulevard, Zephyrhills, FL, 33542",
+    "phone": "+1-813-783-9228",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=28.235740,-82.182321",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1026505732",
+    "lat": 28.2357404,
+    "lon": -82.1823208
+  },
+  {
+    "business_id": "autozone-fl-12",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "New Port Richey",
+    "state": "FL",
+    "address": "6136, Ridge Road, New Port Richey, FL, 34668",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/fl/port-richey/6136-ridge-rd.html",
+    "google_maps_link": "https://www.google.com/maps?q=28.279942,-82.712464",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1059426614",
+    "lat": 28.2799423,
+    "lon": -82.712464
+  },
+  {
+    "business_id": "autozone-fl-23",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Saint Cloud",
+    "state": "FL",
+    "address": "4841, Bronson Highway, Saint Cloud, FL, 34771",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/fl/saint-cloud/4841-e-irlo-bronson-memorial.html",
+    "google_maps_link": "https://www.google.com/maps?q=28.246772,-81.246188",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/891528917",
+    "lat": 28.2467715,
+    "lon": -81.2461884
+  },
+  {
+    "business_id": "autozone-fl-13",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Davenport",
+    "state": "FL",
+    "address": "1001, Champions Drive, Davenport, FL, 33897",
+    "phone": "+1-863-256-1144",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=28.272221,-81.660706",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1342729799",
+    "lat": 28.2722207,
+    "lon": -81.6607057
+  },
+  {
+    "business_id": "autozone-fl-22",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Saint Augustine",
+    "state": "FL",
+    "address": "5465, FL 16, Saint Augustine, FL, 32092",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/fl/st-augustine/5465-state-road-16.html",
+    "google_maps_link": "https://www.google.com/maps?q=29.963118,-81.493559",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/769502574",
+    "lat": 29.9631184,
+    "lon": -81.4935585
+  },
+  {
+    "business_id": "autozone-fl-2",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Fort Myers",
+    "state": "FL",
+    "address": "8750, Gladiolus Drive, Fort Myers, FL, 33908",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/fort-myers/8750-gladiolus-dr",
+    "google_maps_link": "https://www.google.com/maps?q=26.521500,-81.900002",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11502239953",
+    "lat": 26.5214995,
+    "lon": -81.9000024
+  },
+  {
+    "business_id": "autozone-fl-8",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/fl/delray-beach/1545-s-congress-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=26.440696,-80.091326",
+    "tags": [
+      "parts",
+      "retail",
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/7667473784",
+    "lat": 26.4406959,
+    "lon": -80.0913261
+  },
+  {
+    "business_id": "electro-battery-inc-fl",
+    "name": "Electro Battery Inc.",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Saint Petersburg",
+    "state": "FL",
+    "address": "3138, 23rd Avenue North, Saint Petersburg, FL, 33713",
+    "phone": "",
+    "website": "https://www.electrobatteryinc.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.792502,-82.676286",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/7066869655",
+    "lat": 27.7925015,
+    "lon": -82.6762859
+  },
+  {
+    "business_id": "glenn-joiner-son-auto-parts-fl",
+    "name": "Glenn Joiner & Son Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Apopka",
+    "state": "FL",
+    "address": "250, East Third Street;East 3rd Street, Apopka, FL, 32703",
+    "phone": "+1-407-889-5222",
+    "website": "https://www.napaonline.com/en/fl/apopka/store/30685?sdref=modal",
+    "google_maps_link": "https://www.google.com/maps?q=28.673916,-81.506045",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/8423289708",
+    "lat": 28.6739164,
+    "lon": -81.5060453
+  },
+  {
+    "business_id": "glenn-joiner-son-automotive-supplies-fl",
+    "name": "Glenn Joiner & Son Automotive Supplies",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Winter Garden",
+    "state": "FL",
+    "address": "13202, West Colonial Drive, Winter Garden, FL, 34787",
+    "phone": "+1-407-656-4141",
+    "website": "https://www.napaonline.com/en/fl/winter-garden/store/24937?sdref=modal",
+    "google_maps_link": "https://www.google.com/maps?q=28.550418,-81.579025",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/8423283437",
+    "lat": 28.5504185,
+    "lon": -81.5790252
+  },
+  {
+    "business_id": "hobby-shop-garage-fl",
+    "name": "Hobby Shop Garage",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Lighthouse Point",
+    "state": "FL",
+    "address": "1941, Northeast 34th Court, Lighthouse Point, FL, 33064",
+    "phone": "+1-866-800-1941",
+    "website": "https://www.hobbyshopgarage.com/",
+    "google_maps_link": "https://www.google.com/maps?q=26.273298,-80.097033",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11381966078",
+    "lat": 26.2732979,
+    "lon": -80.0970334
+  },
+  {
+    "business_id": "hornblasters-inc-fl",
+    "name": "HornBlasters, Inc.",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "6511, North 54th Street, Tampa, FL, 33610",
+    "phone": "+1-877-209-8179",
+    "website": "https://hornblasters.com/",
+    "google_maps_link": "https://www.google.com/maps?q=28.008580,-82.395197",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9395888852",
+    "lat": 28.0085796,
+    "lon": -82.3951968
+  },
+  {
+    "business_id": "j-n-b-auto-parts-fl",
+    "name": "J n B Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "+1-407-568-2131",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=28.560774,-81.126790",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/388362389",
+    "lat": 28.5607742,
+    "lon": -81.1267902
+  },
+  {
+    "business_id": "just-brakes-fl",
+    "name": "Just Brakes",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Pinellas Park",
+    "state": "FL",
+    "address": "6790, US Highway 19 N, Pinellas Park, FL, 33781",
+    "phone": "+1-727-522-5188",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.833586,-82.680890",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/128965446",
+    "lat": 27.8335865,
+    "lon": -82.6808899
+  },
+  {
+    "business_id": "mercantile-europarts-inc-fl",
+    "name": "Mercantile Europarts, Inc.",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Miami",
+    "state": "FL",
+    "address": "6747, Southwest 8th Street, Miami, FL, 33144",
+    "phone": "+1-305-266-0507",
+    "website": "http://meuroparts.com",
+    "google_maps_link": "https://www.google.com/maps?q=25.763334,-80.304815",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4454912674",
+    "lat": 25.7633339,
+    "lon": -80.3048146
+  },
+  {
+    "business_id": "napa-auto-parts-fl-2",
+    "name": "NAPA Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Orlando",
+    "state": "FL",
+    "address": "1140, South Rio Grande Avenue, Orlando, FL, 32805",
+    "phone": "+1-407-246-0684",
+    "website": "https://www.napaonline.com/stores/fl/orlando/1140-s-rio-grande-ave?sdref=modal",
+    "google_maps_link": "https://www.google.com/maps?q=28.527614,-81.401726",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/8423239505",
+    "lat": 28.527614,
+    "lon": -81.4017263
+  },
+  {
+    "business_id": "napa-auto-parts-fl-3",
+    "name": "NAPA Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Oviedo",
+    "state": "FL",
+    "address": "174A, East Mitchell Hammock Road, Oviedo, FL, 32765",
+    "phone": "+1-407-971-3061",
+    "website": "https://www.napaonline.com/en/fl/oviedo/store/30175?sdref=modal",
+    "google_maps_link": "https://www.google.com/maps?q=28.655304,-81.206515",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/8423479138",
+    "lat": 28.6553037,
+    "lon": -81.2065153
+  },
+  {
+    "business_id": "napa-auto-parts-fl",
+    "name": "NAPA Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Saint Petersburg",
+    "state": "FL",
+    "address": "2675, 54th Avenue North, Saint Petersburg, FL, 33714",
+    "phone": "+1-727-527-2181",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.821609,-82.669759",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/1739872463",
+    "lat": 27.821609,
+    "lon": -82.669759
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl-3",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Miami",
+    "state": "FL",
+    "address": "14701, West Dixie Highway, Miami, FL, 33181",
+    "phone": "+17865283014",
+    "website": "https://locations.oreillyauto.com/en-us/fl/miami/autoparts-6503.html",
+    "google_maps_link": "https://www.google.com/maps?q=25.911276,-80.166560",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13577882570",
+    "lat": 25.9112758,
+    "lon": -80.1665598
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl-5",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Lauderhill",
+    "state": "FL",
+    "address": "7940, West Commercial Boulevard, Lauderhill, FL, 33351",
+    "phone": "+1-954-947-0228",
+    "website": "https://locations.oreillyauto.com/fl/lauderhill/autoparts-5315.html",
+    "google_maps_link": "https://www.google.com/maps?q=26.193250,-80.257387",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1095774454",
+    "lat": 26.1932497,
+    "lon": -80.2573874
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl-8",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Clearwater",
+    "state": "FL",
+    "address": "2355, Gulf to Bay Boulevard, Clearwater, FL, 33765",
+    "phone": "+1-727-725-2363",
+    "website": "https://locations.oreillyauto.com/en-us/fl/clearwater/autoparts-4626.html",
+    "google_maps_link": "https://www.google.com/maps?q=27.960007,-82.740082",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/524969694",
+    "lat": 27.9600071,
+    "lon": -82.7400818
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl-9",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Largo",
+    "state": "FL",
+    "address": "8651, Ulmerton Road, Largo, FL, 33771",
+    "phone": "+1-727-531-3081",
+    "website": "https://locations.oreillyauto.com/fl/largo/autoparts-4413.html",
+    "google_maps_link": "https://www.google.com/maps?q=27.895083,-82.758619",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/525258251",
+    "lat": 27.8950829,
+    "lon": -82.7586189
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Orlando",
+    "state": "FL",
+    "address": "2512, South Orange Blossom Trail, Orlando, FL, 32805",
+    "phone": "+1-407-284-1900",
+    "website": "https://locations.oreillyauto.com/fl/orlando/autoparts-4862.html",
+    "google_maps_link": "https://www.google.com/maps?q=28.516134,-81.397240",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11534230951",
+    "lat": 28.5161338,
+    "lon": -81.3972403
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl-10",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "jac",
+    "state": "FL",
+    "address": "12510, san j, jac, FL, 32223",
+    "phone": "+1-904-292-1863",
+    "website": "https://locations.oreillyauto.com/fl/jacksonville/autoparts-4586.html",
+    "google_maps_link": "https://www.google.com/maps?q=30.141329,-81.633230",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/608444580",
+    "lat": 30.1413286,
+    "lon": -81.6332302
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl-7",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Fort Myers",
+    "state": "FL",
+    "address": "15681, San Carlos Boulevard, Fort Myers, FL, 33908",
+    "phone": "+1-239-215-1436",
+    "website": "https://locations.oreillyauto.com/fl/fortmyers/autoparts-5035.html",
+    "google_maps_link": "https://www.google.com/maps?q=26.512635,-81.943196",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/523139215",
+    "lat": 26.5126346,
+    "lon": -81.9431955
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl-2",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Boca Raton",
+    "state": "FL",
+    "address": "4040, North Dixie Highway, Boca Raton, FL, 33431",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/fl/bocaraton/autoparts-5440.html",
+    "google_maps_link": "https://www.google.com/maps?q=26.386741,-80.081000",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12070138946",
+    "lat": 26.3867408,
+    "lon": -80.0809999
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl-6",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Saint Petersburg",
+    "state": "FL",
+    "address": "6398, 9th Street North, Saint Petersburg, FL, 33703",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/fl/stpetersburg/autoparts-5418.html",
+    "google_maps_link": "https://www.google.com/maps?q=27.829891,-82.647331",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/43877603",
+    "lat": 27.8298911,
+    "lon": -82.6473309
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl-11",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Jacksonville",
+    "state": "FL",
+    "address": "3842, Sunbeam Road, Jacksonville, FL, 32257",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/fl/jacksonville/autoparts-2349.html",
+    "google_maps_link": "https://www.google.com/maps?q=30.205172,-81.615484",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/814019729",
+    "lat": 30.2051725,
+    "lon": -81.6154837
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl-12",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Lehigh Acres",
+    "state": "FL",
+    "address": "5003, Lee Boulevard, Lehigh Acres, FL, 33971",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/fl/lehighacres/autoparts-5312.html",
+    "google_maps_link": "https://www.google.com/maps?q=26.617666,-81.731096",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/904582276",
+    "lat": 26.6176655,
+    "lon": -81.7310964
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl-4",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/fl/delraybeach/autoparts-5446.html",
+    "google_maps_link": "https://www.google.com/maps?q=26.458841,-80.093273",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/7671664496",
+    "lat": 26.4588406,
+    "lon": -80.0932732
+  },
+  {
+    "business_id": "persons-auto-parts-fl",
+    "name": "Persons Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Saint Cloud",
+    "state": "FL",
+    "address": "1320, Kentucky Avenue, Saint Cloud, FL, 34769",
+    "phone": "+1-407-892-6000",
+    "website": "https://www.napaonline.com/en/fl/saint-cloud/store/25020?sdref=modal",
+    "google_maps_link": "https://www.google.com/maps?q=28.245397,-81.286136",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/907103953",
+    "lat": 28.2453975,
+    "lon": -81.2861362
+  },
+  {
+    "business_id": "persons-auto-parts-inc-fl",
+    "name": "Persons Auto Parts Inc",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Kissimmee",
+    "state": "FL",
+    "address": "2213, North Main Street, Kissimmee, FL, 34744",
+    "phone": "+1-407-847-2851",
+    "website": "https://www.napaonline.com/en/fl/kissimmee/store/24958?sdref=modal",
+    "google_maps_link": "https://www.google.com/maps?q=28.311242,-81.403193",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/8423180224",
+    "lat": 28.3112425,
+    "lon": -81.4031932
+  },
+  {
+    "business_id": "s-m-truck-world-fl",
+    "name": "S&M Truck World",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Clearwater",
+    "state": "FL",
+    "address": "2868, Gulf to Bay Boulevard, Clearwater, FL, 33759",
+    "phone": "+1-727-724-3437",
+    "website": "https://www.smtruckworld.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.960894,-82.718659",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/1994058888",
+    "lat": 27.960894,
+    "lon": -82.718659
+  },
+  {
+    "business_id": "sanford-auto-truck-fl",
+    "name": "Sanford Auto & Truck",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Sanford",
+    "state": "FL",
+    "address": "2913, South Orlando Dr, Sanford, FL, 32773",
+    "phone": "+1-407-322-5651",
+    "website": "https://www.napaonline.com/en/fl/sanford/store/25262?sdref=modal",
+    "google_maps_link": "https://www.google.com/maps?q=28.773638,-81.277801",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/8423510954",
+    "lat": 28.773638,
+    "lon": -81.2778015
+  },
+  {
+    "business_id": "superior-sound-auto-accessories-fl",
+    "name": "Superior Sound & Auto Accessories",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Hialeah",
+    "state": "FL",
+    "address": "5990, West 20th Avenue, Hialeah, FL, 33016",
+    "phone": "+1-305-698-2854",
+    "website": "http://superiorsoundandauto.com",
+    "google_maps_link": "https://www.google.com/maps?q=25.876871,-80.326366",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5765799457",
+    "lat": 25.8768712,
+    "lon": -80.3263658
+  },
+  {
+    "business_id": "aaa-radiator-and-auto-air-conditioning-fl",
+    "name": "AAA Radiator and Auto Air Conditioning",
+    "category": "Radiator and Cooling Specialists",
+    "city": "North Miami Beach",
+    "state": "FL",
+    "address": "15570, West Dixie Highway, North Miami Beach, FL, 33162",
+    "phone": "+1-305-947-3501",
+    "website": "https://www.autoacservice.com/",
+    "google_maps_link": "https://www.google.com/maps?q=25.919498,-80.159033",
+    "tags": [
+      "radiator",
+      "cooling"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/435541055",
+    "lat": 25.9194977,
+    "lon": -80.1590326
+  },
+  {
+    "business_id": "101-auto-care-fl",
+    "name": "101 Auto Care",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Miami",
+    "state": "FL",
+    "address": "16707, Southwest 117th Avenue, Miami, FL, 33177",
+    "phone": "+1-305-712-3001",
+    "website": "https://101auto.care",
+    "google_maps_link": "https://www.google.com/maps?q=25.613661,-80.380824",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13468251708",
+    "lat": 25.6136611,
+    "lon": -80.3808236
+  },
+  {
+    "business_id": "1k-motorsports-fl",
+    "name": "1K Motorsports",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Fort Myers",
+    "state": "FL",
+    "address": "1924, Commercial Drive, Fort Myers, FL, 33901",
+    "phone": "+1 239-204-9177",
+    "website": "https://1kmotorsports.com",
+    "google_maps_link": "https://www.google.com/maps?q=26.602787,-81.873544",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10007962786",
+    "lat": 26.6027869,
+    "lon": -81.8735445
+  },
+  {
+    "business_id": "24-7-tow-truck-fl",
+    "name": "24/7 Tow Truck",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "+1-239-420-1631",
+    "website": "https://247-towingservice.com/fl/tampa.html",
+    "google_maps_link": "https://www.google.com/maps?q=27.933349,-82.506073",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/8347727478",
+    "lat": 27.9333494,
+    "lon": -82.5060729
+  },
+  {
+    "business_id": "954mufflers-fl",
+    "name": "954Mufflers",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Hollywood",
+    "state": "FL",
+    "address": "5960, Thomas Street, Hollywood, FL, 33021",
+    "phone": "+1-954-354-2313",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=26.029913,-80.207584",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6436399185",
+    "lat": 26.0299127,
+    "lon": -80.2075841
+  },
+  {
+    "business_id": "aaa-car-care-plus-fl",
+    "name": "AAA Car Care Plus",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Clearwater",
+    "state": "FL",
+    "address": "2347, Gulf to Bay Boulevard, Clearwater, FL, 33765",
+    "phone": "",
+    "website": "https://locator.acg.aaa.com/fl/clearwater/aaa-clearwater-car-care-plus",
+    "google_maps_link": "https://www.google.com/maps?q=27.959960,-82.740651",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/919260214",
+    "lat": 27.9599598,
+    "lon": -82.7406508
+  },
+  {
+    "business_id": "ace-collision-experts-fl",
+    "name": "Ace Collision Experts",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Fort Myers",
+    "state": "FL",
+    "address": "2238, Hemingway Drive, Fort Myers, FL, 33912-1971",
+    "phone": "+1-239-219-5064",
+    "website": "https://acecollision.net/",
+    "google_maps_link": "https://www.google.com/maps?q=26.533618,-81.856308",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13461531440",
+    "lat": 26.5336181,
+    "lon": -81.8563083
+  },
+  {
+    "business_id": "advanced-auto-air-fl",
+    "name": "Advanced Auto Air",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Gibsonton",
+    "state": "FL",
+    "address": "12001, US 41 (FL), Gibsonton, FL, 33534",
+    "phone": "+1-813-236-2886",
+    "website": "https://advancedautoair.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.824911,-82.382228",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/980423691",
+    "lat": 27.8249109,
+    "lon": -82.3822282
+  },
+  {
+    "business_id": "affordable-auto-ac-repair-of-tampa-fl",
+    "name": "Affordable Auto & AC Repair of Tampa",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "12729, N Florida Ave #B, Tampa, FL, 33612",
+    "phone": "+1-813-932-9643",
+    "website": "http://affordableautoandac.com",
+    "google_maps_link": "https://www.google.com/maps?q=28.063462,-82.459846",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4572617501",
+    "lat": 28.0634616,
+    "lon": -82.4598458
+  },
+  {
+    "business_id": "affordable-auto-tire-service-fl",
+    "name": "Affordable Auto & Tire Service",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "27861, Crown Lake Boulevard, FL",
+    "phone": "+1-239-498-0946",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=26.332921,-81.804354",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/524557397",
+    "lat": 26.3329209,
+    "lon": -81.8043541
+  },
+  {
+    "business_id": "all-jap-cars-fl",
+    "name": "All Jap. Cars",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Lauderhill",
+    "state": "FL",
+    "address": "4897, North University Drive, Lauderhill, FL, 33351",
+    "phone": "+1-954-749-5584",
+    "website": "http://www.alljapcars.com",
+    "google_maps_link": "https://www.google.com/maps?q=26.185830,-80.252746",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/545568717",
+    "lat": 26.1858299,
+    "lon": -80.2527456
+  },
+  {
+    "business_id": "all-parts-usa-com-fl",
+    "name": "All Parts Usa.com",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "8290, Northwest 56th Street, FL, 33166",
+    "phone": "+1-305-546-0376",
+    "website": "https://www.allpartsusa.com/",
+    "google_maps_link": "https://www.google.com/maps?q=25.824370,-80.331366",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4282184690",
+    "lat": 25.8243703,
+    "lon": -80.3313659
+  },
+  {
+    "business_id": "altamonte-springs-automotive-fl",
+    "name": "Altamonte Springs Automotive",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Altamonte Springs",
+    "state": "FL",
+    "address": "440, FL 434, Altamonte Springs, FL, 32714",
+    "phone": "+1-407-869-8848",
+    "website": "https://altamontespringsautomotive.com",
+    "google_maps_link": "https://www.google.com/maps?q=28.666503,-81.419606",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5316172226",
+    "lat": 28.6665027,
+    "lon": -81.4196063
+  },
+  {
+    "business_id": "andino-auto-service-fl",
+    "name": "Andino Auto Service",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Miami",
+    "state": "FL",
+    "address": "5101, Northwest 7th Avenue, Miami, FL, 33127",
+    "phone": "+1-786-317-4756",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=25.822398,-80.207847",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/436042040",
+    "lat": 25.8223983,
+    "lon": -80.2078465
+  },
+  {
+    "business_id": "apple-s-automotive-service-fl",
+    "name": "Apple\u2019s Automotive Service",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Orlando",
+    "state": "FL",
+    "address": "6944, Venture Circle, Orlando, FL, 32807",
+    "phone": "+1-407-223-0679",
+    "website": "https://applesautomotiveservices.com/",
+    "google_maps_link": "https://www.google.com/maps?q=28.577658,-81.297692",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13431008172",
+    "lat": 28.5776577,
+    "lon": -81.2976922
+  },
+  {
+    "business_id": "atlas-auto-center-fl",
+    "name": "Atlas Auto Center",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "6905, Sheldon Road, FL, 33615",
+    "phone": "+18138866353",
+    "website": "https://www.atlas-autocenter.com/",
+    "google_maps_link": "https://www.google.com/maps?q=28.012027,-82.582860",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13395803101",
+    "lat": 28.0120268,
+    "lon": -82.5828601
+  },
+  {
+    "business_id": "ats-all-transmission-services-fl",
+    "name": "ATS - All Transmission Services",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Land O' Lakes",
+    "state": "FL",
+    "address": "3929, American Plaza Blvd, Land O' Lakes, FL, 34638",
+    "phone": "+1-813-995-2885",
+    "website": "http://www.alltransmissionservices.com/",
+    "google_maps_link": "https://www.google.com/maps?q=28.214939,-82.461702",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5831599069",
+    "lat": 28.2149393,
+    "lon": -82.4617021
+  },
+  {
+    "business_id": "auto-care-fl",
+    "name": "Auto Care",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Saint Petersburg",
+    "state": "FL",
+    "address": "5867, Haines Road North, Saint Petersburg, FL, 33714",
+    "phone": "+1-727-525-3762",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.825941,-82.673067",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/1768758399",
+    "lat": 27.8259405,
+    "lon": -82.6730667
+  },
+  {
+    "business_id": "auto-mech-and-muffler-fl",
+    "name": "Auto Mech and Muffler",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Oviedo",
+    "state": "FL",
+    "address": "1301, Broadway Street, Oviedo, FL, 32765",
+    "phone": "+1-407-366-2887",
+    "website": "https://www.automechandmuffler.com/",
+    "google_maps_link": "https://www.google.com/maps?q=28.666360,-81.224946",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/622914157",
+    "lat": 28.6663602,
+    "lon": -81.2249457
+  },
+  {
+    "business_id": "autocare-of-naples-fl",
+    "name": "Autocare of Naples",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Naples",
+    "state": "FL",
+    "address": "1973, Elsa Street, Naples, FL, 34109",
+    "phone": "+1-239-514-7270",
+    "website": "http://autocareofnaples.com",
+    "google_maps_link": "https://www.google.com/maps?q=26.219634,-81.779393",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4312153437",
+    "lat": 26.2196337,
+    "lon": -81.7793925
+  },
+  {
+    "business_id": "automotive-evolution-fl",
+    "name": "Automotive Evolution",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "12382, Starkey Road, FL, 33773",
+    "phone": "+1-727-531-7107",
+    "website": "http://www.automotiveevolution.com",
+    "google_maps_link": "https://www.google.com/maps?q=27.884225,-82.762734",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9511026219",
+    "lat": 27.8842251,
+    "lon": -82.7627338
+  },
+  {
+    "business_id": "autoworks-of-tampa-fl",
+    "name": "Autoworks of Tampa",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "5507, N Nebraska Ave, Tampa, FL, 33604",
+    "phone": "+1-813-452-4945",
+    "website": "https://www.autoworksoftampa.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.997456,-82.452519",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5081449162",
+    "lat": 27.9974559,
+    "lon": -82.4525188
+  },
+  {
+    "business_id": "aventura-chrysler-jeep-dodge-ram-service-parts-fl",
+    "name": "Aventura Chrysler Jeep Dodge Ram Service & Parts",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "North Miami Beach",
+    "state": "FL",
+    "address": "16050, West Dixie Highway, North Miami Beach, FL, 33160",
+    "phone": "+1-305-405-3317",
+    "website": "https://www.aventurachryslerjeepdodgeram.com/",
+    "google_maps_link": "https://www.google.com/maps?q=25.923804,-80.156193",
+    "tags": [
+      "repair",
+      "mechanic",
+      "jeep"
+    ],
+    "jeep_note": "Jeep mentioned",
+    "source": "OSM",
+    "osm_id": "node/13272319554",
+    "lat": 25.9238036,
+    "lon": -80.1561932
+  },
+  {
+    "business_id": "awsome-auto-repair-fl",
+    "name": "Awsome Auto repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "+1 813-443-8316; +1 813-855-1771",
+    "website": "https://www.awesomeautomotiveanddiagnosticrepair.com/",
+    "google_maps_link": "https://www.google.com/maps?q=28.034861,-82.657905",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/172417574",
+    "lat": 28.0348612,
+    "lon": -82.6579048
+  },
+  {
+    "business_id": "boca-auto-fix-fl",
+    "name": "Boca Auto Fix",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Boca Raton",
+    "state": "FL",
+    "address": "4301, Oak Circle, Boca Raton, FL, 33431",
+    "phone": "",
+    "website": "https://bocaautofix.com",
+    "google_maps_link": "https://www.google.com/maps?q=26.388292,-80.084062",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10178512260",
+    "lat": 26.3882915,
+    "lon": -80.0840618
+  },
+  {
+    "business_id": "brake-and-muffler-authority-fl",
+    "name": "Brake and Muffler Authority",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Hallandale Beach",
+    "state": "FL",
+    "address": "907, West Hallandale Beach Boulevard, Hallandale Beach, FL, 33009",
+    "phone": "+19544542292",
+    "website": "http://www.brakeauthorityofhallandale.com/",
+    "google_maps_link": "https://www.google.com/maps?q=25.984763,-80.160715",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13524514437",
+    "lat": 25.9847631,
+    "lon": -80.1607155
+  },
+  {
+    "business_id": "brewer-s-garage-fl",
+    "name": "Brewer's Garage",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "2929, 16th Street North, FL",
+    "phone": "+1-727-525-7375",
+    "website": "http://brewers.mechanicnet.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.799121,-82.654713",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/3834873523",
+    "lat": 27.7991214,
+    "lon": -82.654713
+  },
+  {
+    "business_id": "caliber-collision-fl",
+    "name": "Caliber Collision",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Jacksonville",
+    "state": "FL",
+    "address": "7208, Golden Wings Road, Jacksonville, FL, 32244",
+    "phone": "+1-904-642-9002",
+    "website": "https://www.caliber.com/find-a-location/jacksonville-fl-nas",
+    "google_maps_link": "https://www.google.com/maps?q=30.225795,-81.703160",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12695823170",
+    "lat": 30.225795,
+    "lon": -81.7031604
+  },
+  {
+    "business_id": "car-tune-automotive-sound-inc-fl",
+    "name": "Car Tune Automotive & Sound Inc.",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Holiday",
+    "state": "FL",
+    "address": "2940, Grand Boulevard, Holiday, FL, 34690",
+    "phone": "+1-727-841-9999",
+    "website": "https://www.cartuneautomotive.net/",
+    "google_maps_link": "https://www.google.com/maps?q=28.202183,-82.723074",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6618295841",
+    "lat": 28.2021829,
+    "lon": -82.7230745
+  },
+  {
+    "business_id": "chachy-s-auto-tinting-fl",
+    "name": "Chachy's Auto Tinting",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Miami",
+    "state": "FL",
+    "address": "2601, Northwest 103rd Street, Miami, FL, 33147",
+    "phone": "+1-305-696-7798",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=25.868416,-80.241767",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12634891574",
+    "lat": 25.8684155,
+    "lon": -80.2417675
+  },
+  {
+    "business_id": "charlie-s-autofix-fl",
+    "name": "Charlie's Autofix",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "North Fort Myers",
+    "state": "FL",
+    "address": "978, Pondella Road, North Fort Myers, FL, 33903",
+    "phone": "+1 239-656-6233",
+    "website": "https://www.charliesautofix.com/",
+    "google_maps_link": "https://www.google.com/maps?q=26.667887,-81.918915",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6024718344",
+    "lat": 26.6678874,
+    "lon": -81.9189148
+  },
+  {
+    "business_id": "clarke-automotive-systems-fl",
+    "name": "Clarke Automotive Systems",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Brandon",
+    "state": "FL",
+    "address": "131, Central Drive, Brandon, FL, 33510",
+    "phone": "+1-813-685-2939",
+    "website": "https://www.clarkeauto.net/",
+    "google_maps_link": "https://www.google.com/maps?q=27.940048,-82.293024",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5010865384",
+    "lat": 27.9400479,
+    "lon": -82.2930244
+  },
+  {
+    "business_id": "classic-collision-fl",
+    "name": "Classic Collision",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "North Miami",
+    "state": "FL",
+    "address": "1650, Northeast 134th Street, North Miami, FL, 33181",
+    "phone": "+1-305-381-0317",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=25.899203,-80.166299",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12631837269",
+    "lat": 25.8992028,
+    "lon": -80.166299
+  },
+  {
+    "business_id": "classic-mazda-service-fl",
+    "name": "Classic Mazda Service",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Orlando",
+    "state": "FL",
+    "address": "1983 N, Semoran Boulevard, Orlando, FL, 32807",
+    "phone": "+1-407-681-2222",
+    "website": "https://www.classicmazda.com/",
+    "google_maps_link": "https://www.google.com/maps?q=28.570572,-81.310155",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13362851269",
+    "lat": 28.5705717,
+    "lon": -81.3101551
+  },
+  {
+    "business_id": "clear-cut-detailing-fl",
+    "name": "Clear Cut Detailing",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Winter Park",
+    "state": "FL",
+    "address": "6649, Amory Court, Winter Park, FL, 32792",
+    "phone": "+1-321-316-4034",
+    "website": "https://www.clearcutdetailing.com",
+    "google_maps_link": "https://www.google.com/maps?q=28.595064,-81.300702",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13382435132",
+    "lat": 28.5950644,
+    "lon": -81.3007023
+  },
+  {
+    "business_id": "collision-center-fl",
+    "name": "Collision Center",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "+1-239-649-1400",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=26.196927,-81.793128",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13612684188",
+    "lat": 26.1969265,
+    "lon": -81.7931282
+  },
+  {
+    "business_id": "cor-auto-repair-inc-fl",
+    "name": "COR-AUTO REPAIR INC",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Miami",
+    "state": "FL",
+    "address": "3655, Northwest 48th Street, Miami, FL, 33142",
+    "phone": "+1-305-633-3304",
+    "website": "https://www.cor-auto-repair.com/",
+    "google_maps_link": "https://www.google.com/maps?q=25.817096,-80.255858",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9259374872",
+    "lat": 25.8170956,
+    "lon": -80.2558578
+  },
+  {
+    "business_id": "crash-champions-fl",
+    "name": "Crash Champions",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "+1 727-845-4111",
+    "website": "https://crashchampions.com/locations/crash-champions-new-port-richey",
+    "google_maps_link": "https://www.google.com/maps?q=28.251142,-82.729098",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1161221715",
+    "lat": 28.2511418,
+    "lon": -82.7290981
+  },
+  {
+    "business_id": "dan-s-brake-world-fl",
+    "name": "Dan's Brake World",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Saint Petersburg",
+    "state": "FL",
+    "address": "2200, 34th Street South, Saint Petersburg, FL, 33711",
+    "phone": "+1-727-323-5500",
+    "website": "https://www.dansbrakeworld.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.748061,-82.678937",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4542611953",
+    "lat": 27.7480614,
+    "lon": -82.6789368
+  },
+  {
+    "business_id": "dart-auto-repairs-fl",
+    "name": "Dart Auto Repairs",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Apopka",
+    "state": "FL",
+    "address": "3, West Main Street, Apopka, FL, 32703",
+    "phone": "+1-407-222-1053",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=28.673412,-81.511777",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/832975382",
+    "lat": 28.6734122,
+    "lon": -81.5117772
+  },
+  {
+    "business_id": "dayton-andrews-inc-fl",
+    "name": "Dayton Andrews Inc",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Clearwater",
+    "state": "FL",
+    "address": "2388, Gulf to Bay Boulevard, Clearwater, FL, 33765",
+    "phone": "+1-727-799-4539",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.961179,-82.740704",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/2863216201",
+    "lat": 27.961179,
+    "lon": -82.740704
+  },
+  {
+    "business_id": "dealers-choice-complete-car-fl",
+    "name": "Dealers Choice Complete Car",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "12951, Trade Center Drive, FL, 34135",
+    "phone": "+1 239-390-1552",
+    "website": "https://dealerschoiceautorepair.com/",
+    "google_maps_link": "https://www.google.com/maps?q=26.331056,-81.739392",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12200477602",
+    "lat": 26.3310562,
+    "lon": -81.7393916
+  },
+  {
+    "business_id": "decolores-collision-center-fl",
+    "name": "DeColores Collision Center",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Miami",
+    "state": "FL",
+    "address": "280, Southwest 22nd Avenue, Miami, FL, 33135",
+    "phone": "",
+    "website": "https://decolorescollisioncenter.com/",
+    "google_maps_link": "https://www.google.com/maps?q=25.769515,-80.231087",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6082677037",
+    "lat": 25.7695147,
+    "lon": -80.2310871
+  },
+  {
+    "business_id": "devonaire-service-and-tire-fl",
+    "name": "Devonaire Service and Tire",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Miami",
+    "state": "FL",
+    "address": "12253, Southwest 112th Street, Miami, FL, 33186",
+    "phone": "+1 305-274-2227",
+    "website": "http://www.devonaireserviceandtire.com",
+    "google_maps_link": "https://www.google.com/maps?q=25.663181,-80.393190",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12003980169",
+    "lat": 25.6631813,
+    "lon": -80.39319
+  },
+  {
+    "business_id": "dna-speedometers-fl",
+    "name": "DNA Speedometers",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "+1-813-875-8226",
+    "website": "https://dnaspeedometers.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.983512,-82.507580",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/522648471",
+    "lat": 27.9835116,
+    "lon": -82.5075796
+  },
+  {
+    "business_id": "dulux-auto-sales-inc-car-rental-fl",
+    "name": "Dulux Auto Sales Inc & Car Rental",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Hollywood",
+    "state": "FL",
+    "address": "2401, Pembroke Road, Hollywood, FL, 33020",
+    "phone": "+1-954-893-8118; +1-954-710-0629",
+    "website": "https://www.duluxautosales.com/",
+    "google_maps_link": "https://www.google.com/maps?q=25.996724,-80.154177",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/528550058",
+    "lat": 25.9967238,
+    "lon": -80.1541769
+  },
+  {
+    "business_id": "east-bay-auto-service-fl",
+    "name": "East Bay Auto Service",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Largo",
+    "state": "FL",
+    "address": "500, East Bay Drive, Largo, FL, 33770",
+    "phone": "+1-727-581-5483",
+    "website": "https://eastbayauto.net/",
+    "google_maps_link": "https://www.google.com/maps?q=27.916870,-82.781990",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/522746073",
+    "lat": 27.9168702,
+    "lon": -82.7819903
+  },
+  {
+    "business_id": "easy-credit-of-tampa-fl",
+    "name": "Easy Credit of Tampa",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "4141, Causeway Boulevard, Tampa, FL, 33619",
+    "phone": "+1-813-644-7973",
+    "website": "https://www.easycreditoftampa.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.922633,-82.408133",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6609781748",
+    "lat": 27.9226326,
+    "lon": -82.4081332
+  },
+  {
+    "business_id": "ed-larcom-s-garage-fl",
+    "name": "Ed Larcom's Garage",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "7001, South Trask St, FL, 33616",
+    "phone": "",
+    "website": "http://local.acdelco.com/dma/?fac=624982&c=vgn",
+    "google_maps_link": "https://www.google.com/maps?q=27.864600,-82.522828",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/1708887548",
+    "lat": 27.8645997,
+    "lon": -82.5228284
+  },
+  {
+    "business_id": "element-pickup-trucks-and-trailer-repair-fl",
+    "name": "Element, Pickup trucks and trailer repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "3120D, Northwest 16th Terrace, FL, 33064",
+    "phone": "+1-786-977-0000",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=26.267610,-80.145185",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "Trail builds",
+    "source": "OSM",
+    "osm_id": "node/13004896901",
+    "lat": 26.2676103,
+    "lon": -80.1451854
+  },
+  {
+    "business_id": "eme-and-my-friend-body-shop-fl",
+    "name": "Eme and my friend body shop",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "4818, North Lauber Way, Tampa, FL, 33614",
+    "phone": "+1-404-957-8244",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.990734,-82.518674",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/522648082",
+    "lat": 27.9907336,
+    "lon": -82.5186739
+  },
+  {
+    "business_id": "empire-autowerx-fl",
+    "name": "Empire Autowerx",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Fort Myers",
+    "state": "FL",
+    "address": "16221, Lee Road, Fort Myers, FL, 33912-2584",
+    "phone": "+1-239-469-6602",
+    "website": "https://empireautowerx.store/",
+    "google_maps_link": "https://www.google.com/maps?q=26.500705,-81.811321",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13389475114",
+    "lat": 26.5007049,
+    "lon": -81.8113212
+  },
+  {
+    "business_id": "everything-on-wheels-auto-truck-repair-center-fl",
+    "name": "Everything On Wheels Auto & Truck Repair Center",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Tarpon Springs",
+    "state": "FL",
+    "address": "1986, N Pinellas Ave, Tarpon Springs, FL, 34689",
+    "phone": "+1 727-942-2886",
+    "website": "http://everythingonwheelsauto.com",
+    "google_maps_link": "https://www.google.com/maps?q=28.172910,-82.749331",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5843750214",
+    "lat": 28.1729104,
+    "lon": -82.749331
+  },
+  {
+    "business_id": "faded-a-window-tinting-company-fl",
+    "name": "Faded - A Window Tinting Company",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Fort Lauderdale",
+    "state": "FL",
+    "address": "828, Northwest 1st Street, Fort Lauderdale, FL, 33311",
+    "phone": "+1-561-872-1311",
+    "website": "https://fadedawtc.com",
+    "google_maps_link": "https://www.google.com/maps?q=26.122606,-80.153688",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13545079549",
+    "lat": 26.1226064,
+    "lon": -80.1536876
+  },
+  {
+    "business_id": "firestone-fl-3",
+    "name": "Firestone",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Miami",
+    "state": "FL",
+    "address": "15697, Southwest 88th Street, Miami, FL, 33196",
+    "phone": "+1 305-423-2028",
+    "website": "https://firestonecompleteautocare.com/",
+    "google_maps_link": "https://www.google.com/maps?q=25.684837,-80.444958",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6032865068",
+    "lat": 25.6848367,
+    "lon": -80.4449576
+  },
+  {
+    "business_id": "firestone-fl-5",
+    "name": "Firestone",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Land O' Lakes",
+    "state": "FL",
+    "address": "25170, Maren Way, Land O' Lakes, FL, 34639",
+    "phone": "+1-813-501-2678",
+    "website": "https://www.firestonecompleteautocare.com/florida/land-o-lakes/25170-maren-way",
+    "google_maps_link": "https://www.google.com/maps?q=28.188639,-82.401243",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/912777051",
+    "lat": 28.1886386,
+    "lon": -82.4012433
+  },
+  {
+    "business_id": "firestone-fl-2",
+    "name": "Firestone",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Winter Springs",
+    "state": "FL",
+    "address": "5960, Red Bug Lake Road, Winter Springs, FL, 32708",
+    "phone": "+1 321 214 8065",
+    "website": "https://www.firestonecompleteautocare.com/store-detail/26247/",
+    "google_maps_link": "https://www.google.com/maps?q=28.648124,-81.265534",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/3952851743",
+    "lat": 28.6481244,
+    "lon": -81.2655336
+  },
+  {
+    "business_id": "firestone-fl",
+    "name": "Firestone",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "FL, 33186",
+    "phone": "+1-305-969-8000",
+    "website": "https://local.firestonecompleteautocare.com/florida/miami/",
+    "google_maps_link": "https://www.google.com/maps?q=25.656030,-80.403957",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12003614192",
+    "lat": 25.6560302,
+    "lon": -80.4039571
+  },
+  {
+    "business_id": "firestone-fl-4",
+    "name": "Firestone",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Fort Myers",
+    "state": "FL",
+    "address": "15155, McGregor Boulevard, Fort Myers, FL, 33908",
+    "phone": "",
+    "website": "https://local.firestonecompleteautocare.com/florida/fort-myers/15155-mcgregor-blvd/?",
+    "google_maps_link": "https://www.google.com/maps?q=26.521244,-81.939288",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/422594100",
+    "lat": 26.5212437,
+    "lon": -81.9392883
+  },
+  {
+    "business_id": "firestone-auto-repair-fl",
+    "name": "Firestone Auto Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "952, Patricia Avenue, FL, 34698",
+    "phone": "+1-727-474-0509",
+    "website": "https://local.firestonecompleteautocare.com/florida/dunedin/952-patricia-ave",
+    "google_maps_link": "https://www.google.com/maps?q=28.017954,-82.776627",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11429071369",
+    "lat": 28.0179536,
+    "lon": -82.776627
+  },
+  {
+    "business_id": "firestone-complete-auto-care-fl",
+    "name": "Firestone Complete Auto Care",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Weston",
+    "state": "FL",
+    "address": "2580, Glades Circle, Weston, FL, 33327",
+    "phone": "+1 954-320-7265",
+    "website": "https://local.firestonecompleteautocare.com/florida/fort-lauderdale/2580-glades-cir/",
+    "google_maps_link": "https://www.google.com/maps?q=26.139418,-80.421328",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5637868943",
+    "lat": 26.1394183,
+    "lon": -80.4213282
+  },
+  {
+    "business_id": "firestone-complete-auto-care-fl-3",
+    "name": "Firestone Complete Auto Care",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "North Miami Beach",
+    "state": "FL",
+    "address": "16251, Miami Drive, North Miami Beach, FL, 33162",
+    "phone": "+1-305-626-4783",
+    "website": "https://www.firestonecompleteautocare.com/florida/north-miami-beach/16251-miami-dr/",
+    "google_maps_link": "https://www.google.com/maps?q=25.925340,-80.169341",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/435540013",
+    "lat": 25.9253398,
+    "lon": -80.1693407
+  },
+  {
+    "business_id": "firestone-complete-auto-care-fl-2",
+    "name": "Firestone Complete Auto Care",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Miami",
+    "state": "FL",
+    "address": "20701, Dixie Highway, Miami, FL, 33189",
+    "phone": "+1-305-506-2155",
+    "website": "https://local.firestonecompleteautocare.com/florida/miami/20701-s-dixie-hwy/",
+    "google_maps_link": "https://www.google.com/maps?q=25.574762,-80.372741",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1002430257",
+    "lat": 25.5747619,
+    "lon": -80.3727406
+  },
+  {
+    "business_id": "firstgear-transmission-auto-repair-fl",
+    "name": "Firstgear Transmission & Auto Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Brandon",
+    "state": "FL",
+    "address": "119, Central Drive, Brandon, FL, 33511",
+    "phone": "+1-813-643-0066",
+    "website": "https://www.firstgearbrandon.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.939426,-82.292070",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1051393983",
+    "lat": 27.9394264,
+    "lon": -82.2920697
+  },
+  {
+    "business_id": "flash-garage-llc-fl",
+    "name": "Flash Garage LLC",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Fort Lauderdale",
+    "state": "FL",
+    "address": "930, Northeast 4th Avenue, Fort Lauderdale, FL, 33304",
+    "phone": "+1-954-825-1637",
+    "website": "https://flashgarageauto.com/",
+    "google_maps_link": "https://www.google.com/maps?q=26.136201,-80.140160",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11060328766",
+    "lat": 26.1362014,
+    "lon": -80.14016
+  },
+  {
+    "business_id": "florida-body-shop-paint-fl",
+    "name": "Florida Body Shop & Paint",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Largo",
+    "state": "FL",
+    "address": "6363, Ulmerton Road, Largo, FL, 33771",
+    "phone": "+1-727-536-3505",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.894067,-82.724397",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/1990935941",
+    "lat": 27.894067,
+    "lon": -82.724397
+  },
+  {
+    "business_id": "foreign-corvette-repair-world-fl",
+    "name": "Foreign & Corvette Repair World",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Margate",
+    "state": "FL",
+    "address": "2108 Mears Pkwy, Margate, FL, 33063",
+    "phone": "+1-954-972-8410",
+    "website": "https://fandcrepairworld.com/",
+    "google_maps_link": "https://www.google.com/maps?q=26.251110,-80.198865",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9729793767",
+    "lat": 26.2511104,
+    "lon": -80.1988649
+  },
+  {
+    "business_id": "g-exhaust-davie-fl",
+    "name": "G Exhaust \u2013 Davie",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Davie",
+    "state": "FL",
+    "address": "4641, FL-7, Davie, FL, 33314",
+    "phone": "+1-954-708-6039",
+    "website": "https://gexhaust.com/",
+    "google_maps_link": "https://www.google.com/maps?q=26.064845,-80.208335",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11066492779",
+    "lat": 26.0648449,
+    "lon": -80.2083345
+  },
+  {
+    "business_id": "gabriel-s-speciality-autobodyshop-fl",
+    "name": "Gabriel's Speciality Autobodyshop",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "FL, 33186",
+    "phone": "+1-305-542-0957",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=25.880227,-80.340960",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10846059206",
+    "lat": 25.880227,
+    "lon": -80.3409605
+  },
+  {
+    "business_id": "global-truck-trailer-repair-fl",
+    "name": "Global Truck & Trailer Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Davie",
+    "state": "FL",
+    "address": "3300, SW 50th Ave, Davie, FL, 33314",
+    "phone": "+1-954-727-3877",
+    "website": "https://globaltruck.shop/",
+    "google_maps_link": "https://www.google.com/maps?q=26.080966,-80.214345",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "Trail builds",
+    "source": "OSM",
+    "osm_id": "node/13302603117",
+    "lat": 26.0809658,
+    "lon": -80.2143451
+  },
+  {
+    "business_id": "goodyear-fl",
+    "name": "Goodyear",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Valrico",
+    "state": "FL",
+    "address": "3523, Bell Shoals Road, Valrico, FL, 33596",
+    "phone": "+1-813-651-9585",
+    "website": "https://locations.thetirechoice.com/fl/valrico/3523-bell-shoals-road.html",
+    "google_maps_link": "https://www.google.com/maps?q=27.890140,-82.268788",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4593176545",
+    "lat": 27.8901395,
+    "lon": -82.2687876
+  },
+  {
+    "business_id": "goodyear-fl-2",
+    "name": "Goodyear",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Jacksonville",
+    "state": "FL",
+    "address": "11800, San Jose Boulevard, Jacksonville, FL, 32223",
+    "phone": "+1-904-262-0090",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=30.157032,-81.633306",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9349043317",
+    "lat": 30.1570323,
+    "lon": -81.6333055
+  },
+  {
+    "business_id": "goodyear-fl-3",
+    "name": "Goodyear",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "9927, Atlantic Boulevard, FL, 32225",
+    "phone": "+1-904-578-5916",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=30.322977,-81.541293",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9733411517",
+    "lat": 30.3229767,
+    "lon": -81.5412933
+  },
+  {
+    "business_id": "goodyear-auto-service-center-fl",
+    "name": "Goodyear Auto Service Center",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "North Miami Beach",
+    "state": "FL",
+    "address": "1098, North Miami Beach Boulevard, North Miami Beach, FL, 33162",
+    "phone": "+1 305-627-3427",
+    "website": "https://www.miamiautotires.com/",
+    "google_maps_link": "https://www.google.com/maps?q=25.925605,-80.178376",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13163302346",
+    "lat": 25.9256052,
+    "lon": -80.1783755
+  },
+  {
+    "business_id": "goodyear-auto-service-center-fl-2",
+    "name": "Goodyear Auto Service Center",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "3813, South Dale Mabry Highway, Tampa, FL, 33611",
+    "phone": "+1-818-831-1891",
+    "website": "https://www.goodyearautoservice.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.908079,-82.506630",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/2409174250",
+    "lat": 27.908079,
+    "lon": -82.50663
+  },
+  {
+    "business_id": "goodyear-auto-service-center-fl-3",
+    "name": "Goodyear Auto Service Center",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Miami",
+    "state": "FL",
+    "address": "11530, Southwest 147th Avenue, Miami, FL, 33196",
+    "phone": "+1-305-385-9753",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=25.659603,-80.432619",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4511617464",
+    "lat": 25.6596034,
+    "lon": -80.4326192
+  },
+  {
+    "business_id": "goodyear-auto-service-center-fl-4",
+    "name": "Goodyear Auto Service Center",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "+1-813-677-1794",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.788975,-82.334344",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/202995951",
+    "lat": 27.7889748,
+    "lon": -82.3343438
+  },
+  {
+    "business_id": "gulfport-auto-garage-fl",
+    "name": "Gulfport Auto Garage",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Gulfport",
+    "state": "FL",
+    "address": "2731 Beach Blvd. S, Gulfport, FL, 33707",
+    "phone": "+1 727-345-1798",
+    "website": "http://gulfportautogarage.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.742375,-82.708371",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12149704163",
+    "lat": 27.7423747,
+    "lon": -82.7083714
+  },
+  {
+    "business_id": "honka-auto-repair-fl",
+    "name": "Honka Auto Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Clearwater",
+    "state": "FL",
+    "address": "1266, Court Street, Clearwater, FL, 33756",
+    "phone": "+1-727-446-0596",
+    "website": "https://honkaautorepairs.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.961091,-82.784484",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/524442734",
+    "lat": 27.961091,
+    "lon": -82.7844836
+  },
+  {
+    "business_id": "hughes-auto-ac-repair-fl",
+    "name": "Hughes Auto AC Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Neptune Beach",
+    "state": "FL",
+    "address": "2202, Florida Boulevard, Neptune Beach, FL, 32266",
+    "phone": "+1 904 241 2344",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=30.323902,-81.419067",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4544894469",
+    "lat": 30.3239022,
+    "lon": -81.4190671
+  },
+  {
+    "business_id": "hyde-park-auto-collision-center-fl",
+    "name": "Hyde Park Auto Collision Center",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "2138, West Arch Street, Tampa, FL, 33607",
+    "phone": "",
+    "website": "https://hyde-park-auto-collision-and-repairs.business.site/",
+    "google_maps_link": "https://www.google.com/maps?q=27.954071,-82.482704",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1188520049",
+    "lat": 27.9540713,
+    "lon": -82.482704
+  },
+  {
+    "business_id": "ice-cold-air-fl",
+    "name": "Ice Cold Air",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Pinellas Park",
+    "state": "FL",
+    "address": "6401, US Highway 19 N, Pinellas Park, FL, 33781",
+    "phone": "+1-727-525-1197",
+    "website": "https://www.icecoldair.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.830454,-82.679267",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/525424767",
+    "lat": 27.8304543,
+    "lon": -82.6792672
+  },
+  {
+    "business_id": "ice-cold-air-discount-auto-repair-fl",
+    "name": "Ice Cold Air Discount Auto Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Largo",
+    "state": "FL",
+    "address": "1198, East Bay Drive, Largo, FL, 33770",
+    "phone": "+1-727-584-1198",
+    "website": "https://www.icecoldair.com/locations/1198-east-bay-drive/",
+    "google_maps_link": "https://www.google.com/maps?q=27.917049,-82.775293",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/522746493",
+    "lat": 27.9170492,
+    "lon": -82.7752928
+  },
+  {
+    "business_id": "icu-motors-llc-fl",
+    "name": "ICU Motors LLC",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Orlando",
+    "state": "FL",
+    "address": "9527, Bachman Road, Orlando, FL, 32824",
+    "phone": "+1-407-729-7678",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=28.427549,-81.392019",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1354783794",
+    "lat": 28.4275486,
+    "lon": -81.3920185
+  },
+  {
+    "business_id": "jiffy-lube-fl-2",
+    "name": "Jiffy Lube",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Orlando",
+    "state": "FL",
+    "address": "4531, Conroy Road, Orlando, FL",
+    "phone": "+1-407-316-8413",
+    "website": "https://orlando.jiffylube.com/locations/store/1830/4531-conroy-rd-orlando-fl-32811-7442",
+    "google_maps_link": "https://www.google.com/maps?q=28.495757,-81.436102",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/734702713",
+    "lat": 28.4957566,
+    "lon": -81.4361023
+  },
+  {
+    "business_id": "jiffy-lube-fl",
+    "name": "Jiffy Lube",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "28145, South Tamiami Trail, FL, 34134",
+    "phone": "+1 239-992-2055",
+    "website": "https://www.jiffylube.com/locations/fl/bonita-springs/1260",
+    "google_maps_link": "https://www.google.com/maps?q=26.328943,-81.805140",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12198986804",
+    "lat": 26.3289433,
+    "lon": -81.8051401
+  },
+  {
+    "business_id": "john-s-automotive-complete-auto-repairs-fl",
+    "name": "John's Automotive Complete Auto Repairs",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Jacksonville",
+    "state": "FL",
+    "address": "5748, Arlington Road, Jacksonville, FL, 32211",
+    "phone": "+1-904-743-3857",
+    "website": "http://autoacrepairjax.com",
+    "google_maps_link": "https://www.google.com/maps?q=30.333267,-81.600679",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/583483873",
+    "lat": 30.333267,
+    "lon": -81.6006785
+  },
+  {
+    "business_id": "jsb-autoworks-fl",
+    "name": "JSB Autoworks",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Miami",
+    "state": "FL",
+    "address": "4501, Southwest 74th Avenue, Miami, FL, 33155",
+    "phone": "+1 305 269 8999",
+    "website": "https://www.jsbauto.com/",
+    "google_maps_link": "https://www.google.com/maps?q=25.728143,-80.314616",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6018252768",
+    "lat": 25.7281427,
+    "lon": -80.3146158
+  },
+  {
+    "business_id": "k-m-mobile-detailing-fl",
+    "name": "K&M Mobile Detailing",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "16541, Lake Brigadoon Cir, Tampa, FL, 33618",
+    "phone": "+1-813-727-8902",
+    "website": "http://kmtampadetailing.com",
+    "google_maps_link": "https://www.google.com/maps?q=28.112498,-82.493758",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5512958037",
+    "lat": 28.1124977,
+    "lon": -82.4937578
+  },
+  {
+    "business_id": "kt-roadside-assistance-mobile-tire-services-fl",
+    "name": "KT Roadside Assistance: Mobile Tire Services",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Lauderhill",
+    "state": "FL",
+    "address": "4450, Northwest 74th Avenue, Lauderhill, FL, 33319",
+    "phone": "+1-954-940-1237",
+    "website": "https://www.mobiletireservicebroward.com/",
+    "google_maps_link": "https://www.google.com/maps?q=26.179533,-80.247911",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12443783048",
+    "lat": 26.1795329,
+    "lon": -80.2479105
+  },
+  {
+    "business_id": "latino-s-automobile-repair-fl",
+    "name": "Latino's Automobile Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Naples",
+    "state": "FL",
+    "address": "4284, Enterprise Avenue, Naples, FL, 34104",
+    "phone": "+1 239-403-4322",
+    "website": "http://latinosautomobilerepair.com",
+    "google_maps_link": "https://www.google.com/maps?q=26.160365,-81.757181",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5690493308",
+    "lat": 26.1603653,
+    "lon": -81.7571807
+  },
+  {
+    "business_id": "legacy-automotive-customs-refinishing-fl",
+    "name": "Legacy Automotive Customs & Refinishing",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Jacksonville",
+    "state": "FL",
+    "address": "1816, Saint Johns Bluff Road South, Jacksonville, FL, 32246",
+    "phone": "+1-904-716-9947",
+    "website": "https://legacyautomotivecustomsrefinishing.com/",
+    "google_maps_link": "https://www.google.com/maps?q=30.319931,-81.524548",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13322178877",
+    "lat": 30.3199306,
+    "lon": -81.524548
+  },
+  {
+    "business_id": "lexus-of-west-kendall-service-fl",
+    "name": "Lexus of West Kendall Service",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Miami",
+    "state": "FL",
+    "address": "13800, Southwest 136th Street, Miami, FL, 33186",
+    "phone": "+17865737600",
+    "website": "https://www.lexusofwestkendall.com/service/serviceapptform/",
+    "google_maps_link": "https://www.google.com/maps?q=25.640274,-80.417910",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13463308079",
+    "lat": 25.6402742,
+    "lon": -80.4179099
+  },
+  {
+    "business_id": "lokey-nissan-service-fl",
+    "name": "Lokey Nissan Service",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Clearwater",
+    "state": "FL",
+    "address": "27758, US 19 North, Clearwater, FL, 33761",
+    "phone": "+1-727-789-8100 x2133",
+    "website": "https://www.lokeynissan.com/",
+    "google_maps_link": "https://www.google.com/maps?q=28.024284,-82.739790",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/2127980704",
+    "lat": 28.024284,
+    "lon": -82.73979
+  },
+  {
+    "business_id": "lube-fiu-fl",
+    "name": "Lube @ FIU",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "",
+    "website": "https://shop.fiu.edu/services/automotive/lube-fiu/",
+    "google_maps_link": "https://www.google.com/maps?q=25.753266,-80.382266",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12015491903",
+    "lat": 25.7532662,
+    "lon": -80.3822659
+  },
+  {
+    "business_id": "ludek-s-european-auto-service-fl",
+    "name": "Ludek's European Auto Service",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "3327, Gandy Boulevard, Tampa, FL, 33611",
+    "phone": "+1-813-832-2738",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.894182,-82.499962",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/2122568183",
+    "lat": 27.894182,
+    "lon": -82.499962
+  },
+  {
+    "business_id": "luis-auto-repair-fl",
+    "name": "Luis' Auto Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Hollywood",
+    "state": "FL",
+    "address": "5944, Thomas Street, Hollywood, FL, 33021",
+    "phone": "+1-954-983-3365",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=26.029991,-80.207474",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6436403185",
+    "lat": 26.0299912,
+    "lon": -80.207474
+  },
+  {
+    "business_id": "m-m-auto-sales-of-north-miami-fl",
+    "name": "M & M Auto Sales Of North Miami",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "North Miami",
+    "state": "FL",
+    "address": "13077, Northeast 14th Avenue, North Miami, FL, 33161",
+    "phone": "+1-305-893-4043",
+    "website": "http://mmautosalesmiami.com",
+    "google_maps_link": "https://www.google.com/maps?q=25.896118,-80.170435",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4563000057",
+    "lat": 25.8961177,
+    "lon": -80.1704349
+  },
+  {
+    "business_id": "madeira-beach-garage-fl",
+    "name": "Madeira Beach Garage",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Madeira Beach",
+    "state": "FL",
+    "address": "125, Welch Causeway, Madeira Beach, FL, 33708",
+    "phone": "+1-727-391-7790",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.801834,-82.799743",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/218755134",
+    "lat": 27.8018338,
+    "lon": -82.7997428
+  },
+  {
+    "business_id": "mahoney-auto-repair-inc-fl",
+    "name": "Mahoney Auto Repair Inc.",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "St. Petersburg",
+    "state": "FL",
+    "address": "4040, 54th Avenue North, St. Petersburg, FL, 33714",
+    "phone": "+1-727-527-7773",
+    "website": "https://mahoneyautorepairinc.com",
+    "google_maps_link": "https://www.google.com/maps?q=27.820803,-82.688795",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11850287285",
+    "lat": 27.8208026,
+    "lon": -82.6887946
+  },
+  {
+    "business_id": "marc-s-automotive-fl",
+    "name": "Marc's Automotive",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "17492, Rockefeller Circle, FL, 33967",
+    "phone": "+1-239-233-2453",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=26.481366,-81.834455",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13599836201",
+    "lat": 26.4813657,
+    "lon": -81.8344545
+  },
+  {
+    "business_id": "masters-tire-auto-fl",
+    "name": "Masters Tire & Auto",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Saint Petersburg",
+    "state": "FL",
+    "address": "Haines Road North, Saint Petersburg, FL, 33702",
+    "phone": "+1-727-657-8850",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.831834,-82.678829",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/1990926438",
+    "lat": 27.831834,
+    "lon": -82.678829
+  },
+  {
+    "business_id": "mavis-fl",
+    "name": "Mavis",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Wesley Chapel",
+    "state": "FL",
+    "address": "27303, Wesley Chapel Boulevard, Wesley Chapel, FL, 33544",
+    "phone": "+1-813-278-1627",
+    "website": "https://www.mavis.com/locations/wesley-chapel-27303-wes-chp-blvd-fl/?stnum=1796",
+    "google_maps_link": "https://www.google.com/maps?q=28.238815,-82.364363",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/465272153",
+    "lat": 28.2388149,
+    "lon": -82.3643627
+  },
+  {
+    "business_id": "mavis-tires-brakes-fl",
+    "name": "Mavis Tires & Brakes",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Orlando",
+    "state": "FL",
+    "address": "300, Alafaya Trail, Orlando, FL, 32828",
+    "phone": "+1-689-232-5644",
+    "website": "https://www.mavis.com/",
+    "google_maps_link": "https://www.google.com/maps?q=28.543710,-81.205296",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/61377348",
+    "lat": 28.5437103,
+    "lon": -81.2052962
+  },
+  {
+    "business_id": "max-express-lube-fl",
+    "name": "Max Express Lube",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Fort Myers",
+    "state": "FL",
+    "address": "15140, S Tamiami Trl, Fort Myers, FL, 33908",
+    "phone": "+1-239-219-6290",
+    "website": "http://maxexpresslube.com",
+    "google_maps_link": "https://www.google.com/maps?q=26.522562,-81.870639",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5639635214",
+    "lat": 26.5225617,
+    "lon": -81.8706387
+  },
+  {
+    "business_id": "mccleary-s-auto-and-truck-repair-fl",
+    "name": "McCleary's Auto and Truck Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "12350 #4A, South Belcher Road, FL",
+    "phone": "+1-727-530-1370",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.884560,-82.747642",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11666797169",
+    "lat": 27.8845605,
+    "lon": -82.747642
+  },
+  {
+    "business_id": "meineke-fl-2",
+    "name": "Meineke",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Saint Petersburg",
+    "state": "FL",
+    "address": "Tyrone Boulevard North, Saint Petersburg, FL, 33709",
+    "phone": "+1-727-344-2060",
+    "website": "https://www.meineke.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.802535,-82.743977",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/228264506",
+    "lat": 27.8025353,
+    "lon": -82.7439771
+  },
+  {
+    "business_id": "meineke-fl",
+    "name": "Meineke",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "23193, Sandalfoot Plaza Drive, FL, 33428",
+    "phone": "+1 561-288-0749",
+    "website": "https://www.meineke.com/locations/fl/boca-raton-2534/",
+    "google_maps_link": "https://www.google.com/maps?q=26.331519,-80.202165",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12630707621",
+    "lat": 26.3315193,
+    "lon": -80.2021651
+  },
+  {
+    "business_id": "mercedes-service-centers-fl",
+    "name": "Mercedes Service Centers",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Hallandale Beach",
+    "state": "FL",
+    "address": "911, West Hallandale Beach Boulevard, Hallandale Beach, FL, 33009",
+    "phone": "+19544582525",
+    "website": "http://www.brakeauthorityofhallandale.com/",
+    "google_maps_link": "https://www.google.com/maps?q=25.984761,-80.160878",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13524514438",
+    "lat": 25.9847609,
+    "lon": -80.1608777
+  },
+  {
+    "business_id": "mid-county-collision-fl",
+    "name": "Mid-County Collision",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Largo",
+    "state": "FL",
+    "address": "Ulmerton Road, Largo, FL",
+    "phone": "+1 727 530-1192",
+    "website": "https://www.collisionpinellascounty.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.894783,-82.753644",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6783962208",
+    "lat": 27.8947826,
+    "lon": -82.7536445
+  },
+  {
+    "business_id": "midas-fl",
+    "name": "Midas",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Miami",
+    "state": "FL",
+    "address": "2390, Northwest 107th Avenue, Miami, FL, 33172",
+    "phone": "+1-305-597-5555",
+    "website": "http://midas.com/miami/store.aspx?shopnum=3311&dmanum=568",
+    "google_maps_link": "https://www.google.com/maps?q=25.795829,-80.369434",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4444985140",
+    "lat": 25.7958294,
+    "lon": -80.3694337
+  },
+  {
+    "business_id": "midas-fl-2",
+    "name": "Midas",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "10311, Atlantic Boulevard, FL, 32225",
+    "phone": "+1-904-515-4361",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=30.323713,-81.532463",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9767835917",
+    "lat": 30.3237128,
+    "lon": -81.532463
+  },
+  {
+    "business_id": "midas-auto-service-experts-fl",
+    "name": "Midas Auto Service Experts",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Largo",
+    "state": "FL",
+    "address": "5105, East Bay Drive, Largo, FL, 33764",
+    "phone": "+1-727-531-4070",
+    "website": "http://www.clearwatermidas.com",
+    "google_maps_link": "https://www.google.com/maps?q=27.915882,-82.733995",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/1998900364",
+    "lat": 27.915882,
+    "lon": -82.733995
+  },
+  {
+    "business_id": "mlr-automotive-fl",
+    "name": "MLR Automotive",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Winter Park",
+    "state": "FL",
+    "address": "4300 Aloma Ave, Winter Park, FL, 32792",
+    "phone": "+1-407-331-4657",
+    "website": "https://mlrautorepair.com",
+    "google_maps_link": "https://www.google.com/maps?q=28.611535,-81.282048",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9685137203",
+    "lat": 28.6115354,
+    "lon": -81.2820477
+  },
+  {
+    "business_id": "napa-auto-care-center-fl",
+    "name": "Napa Auto Care Center",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "2727, Roosevelt Boulevard, FL, 33760",
+    "phone": "",
+    "website": "https://www.napaonline.com/en/autocare/?facilityId=1221208",
+    "google_maps_link": "https://www.google.com/maps?q=27.915720,-82.724146",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12745372968",
+    "lat": 27.9157204,
+    "lon": -82.7241463
+  },
+  {
+    "business_id": "napa-auto-parts-fl-4",
+    "name": "Napa Auto Parts",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Bonita Springs",
+    "state": "FL",
+    "address": "10525, Reynolds Street, Bonita Springs, FL, 34135",
+    "phone": "+1-239-992-6969",
+    "website": "https://www.napaautopartsfl.com/",
+    "google_maps_link": "https://www.google.com/maps?q=26.340867,-81.778113",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4538996911",
+    "lat": 26.3408672,
+    "lon": -81.7781125
+  },
+  {
+    "business_id": "newmans-truck-body-and-equipment-fl",
+    "name": "Newmans Truck Body and Equipment",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Jacksonville",
+    "state": "FL",
+    "address": "6880, West 12th Street, Jacksonville, FL, 32254",
+    "phone": "+1-904-695-9589",
+    "website": "https://newmanstruckbody.com/",
+    "google_maps_link": "https://www.google.com/maps?q=30.349344,-81.760210",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/519129933",
+    "lat": 30.3493436,
+    "lon": -81.7602102
+  },
+  {
+    "business_id": "off-road-performance-shop-of-miami-fl",
+    "name": "Off-Road Performance Shop of Miami",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Miami",
+    "state": "FL",
+    "address": "14221, Southwest 140th Street, Miami, FL, 33186",
+    "phone": "+1-305-484-6157",
+    "website": "https://orpshop.square.site/",
+    "google_maps_link": "https://www.google.com/maps?q=25.637502,-80.423684",
+    "tags": [
+      "repair",
+      "mechanic",
+      "4x4"
+    ],
+    "jeep_note": "4x4 focused",
+    "source": "OSM",
+    "osm_id": "node/13524324904",
+    "lat": 25.6375018,
+    "lon": -80.4236844
+  },
+  {
+    "business_id": "oviedo-auto-repair-fl",
+    "name": "Oviedo Auto Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Oviedo",
+    "state": "FL",
+    "address": "1512, West Broadway Street, Oviedo, FL, 32765",
+    "phone": "+1-407-977-1733",
+    "website": "https://www.oviedoautorepair.com/",
+    "google_maps_link": "https://www.google.com/maps?q=28.662683,-81.223863",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/2507853659",
+    "lat": 28.6626835,
+    "lon": -81.2238629
+  },
+  {
+    "business_id": "pep-boys-fl-4",
+    "name": "Pep Boys",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Cutler Bay",
+    "state": "FL",
+    "address": "10200, Broad Channel Drive, Cutler Bay, FL, 33157",
+    "phone": "+1-305-252-7311",
+    "website": "https://www.pepboys.com/stores/FL/Miami/10200-BROAD-CHANNEL-RD?storecode=0133",
+    "google_maps_link": "https://www.google.com/maps?q=25.592251,-80.356447",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/435585180",
+    "lat": 25.5922507,
+    "lon": -80.3564468
+  },
+  {
+    "business_id": "pep-boys-fl-3",
+    "name": "Pep Boys",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Clearwater",
+    "state": "FL",
+    "address": "1559, Gulf to Bay Boulevard, Clearwater, FL, 33756",
+    "phone": "+1-727-443-1194",
+    "website": "https://www.pepboys.com/stores/fl/clearwater/1559b-gulf-to-bay-blvd",
+    "google_maps_link": "https://www.google.com/maps?q=27.960336,-82.771811",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/236786293",
+    "lat": 27.9603359,
+    "lon": -82.7718114
+  },
+  {
+    "business_id": "pep-boys-fl-2",
+    "name": "Pep Boys",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Orlando",
+    "state": "FL",
+    "address": "7750, South Orange Blossom Trail, Orlando, FL, 32809",
+    "phone": "+1 407-851-2626",
+    "website": "https://www.pepboys.com/stores/fl/orlando/7750-s-orange-blossom-tra?storecode=0125",
+    "google_maps_link": "https://www.google.com/maps?q=28.452964,-81.402120",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/2549293837",
+    "lat": 28.4529643,
+    "lon": -81.4021203
+  },
+  {
+    "business_id": "pep-boys-fl-6",
+    "name": "Pep Boys",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Celebration",
+    "state": "FL",
+    "address": "70, Blake Boulevard, Celebration, FL, 34747",
+    "phone": "+1 321-939-2581",
+    "website": "https://www.pepboys.com/stores/fl/celebration/70-blake-dr?storecode=1423",
+    "google_maps_link": "https://www.google.com/maps?q=28.330411,-81.529201",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/731729572",
+    "lat": 28.3304114,
+    "lon": -81.529201
+  },
+  {
+    "business_id": "pep-boys-fl-5",
+    "name": "Pep Boys",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "+1-813-933-2424",
+    "website": "https://pepboys.com/stores/fl/tampa/10124-n-florida-ave?storeCode=0136",
+    "google_maps_link": "https://www.google.com/maps?q=28.042482,-82.460224",
+    "tags": [
+      "repair",
+      "mechanic",
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/523818265",
+    "lat": 28.0424818,
+    "lon": -82.4602239
+  },
+  {
+    "business_id": "pep-boys-fl",
+    "name": "Pep Boys",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Kissimmee",
+    "state": "FL",
+    "address": "302, West Vine Street, Kissimmee, FL, 34741",
+    "phone": "",
+    "website": "https://www.pepboys.com/stores/FL/Kissimmee/302-W-Vine-St?storeCode=0310",
+    "google_maps_link": "https://www.google.com/maps?q=28.303959,-81.406717",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11759183579",
+    "lat": 28.3039593,
+    "lon": -81.4067167
+  },
+  {
+    "business_id": "pep-boys-auto-service-tires-fl",
+    "name": "Pep Boys Auto Service & Tires",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "7655, Hillsborough Avenue, FL, 33615",
+    "phone": "+1-813-249-7736",
+    "website": "https://www.pepboys.com/stores/fl/tampa/7655-w-hillsborough-ave",
+    "google_maps_link": "https://www.google.com/maps?q=27.996958,-82.565769",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/522767267",
+    "lat": 27.9969579,
+    "lon": -82.5657685
+  },
+  {
+    "business_id": "phoenix-complete-auto-care-tires-fl",
+    "name": "Phoenix Complete Auto Care & Tires",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "North Miami Beach",
+    "state": "FL",
+    "address": "1561, Northeast 163rd Street, North Miami Beach, FL, 33162",
+    "phone": "+1-305-957-0087",
+    "website": "https://phoenixcompleteautocare.com/",
+    "google_maps_link": "https://www.google.com/maps?q=25.926045,-80.168601",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13163307706",
+    "lat": 25.9260452,
+    "lon": -80.168601
+  },
+  {
+    "business_id": "quick-stop-muffler-brake-fl",
+    "name": "Quick Stop Muffler & Brake",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Saint Petersburg",
+    "state": "FL",
+    "address": "5401, 54th Avenue North, Saint Petersburg, FL, 33714",
+    "phone": "+1-727-525-6333",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.821377,-82.679114",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/149485287",
+    "lat": 27.8213768,
+    "lon": -82.6791138
+  },
+  {
+    "business_id": "reynoso-auto-repair-fl",
+    "name": "Reynoso Auto Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Kissimmee",
+    "state": "FL",
+    "address": "200, W Carroll St, Kissimmee, FL, 34741",
+    "phone": "+1-407-933-1203",
+    "website": "https://reynosoautorepair.com",
+    "google_maps_link": "https://www.google.com/maps?q=28.325916,-81.406052",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10023456278",
+    "lat": 28.3259159,
+    "lon": -81.4060516
+  },
+  {
+    "business_id": "roly-s-auto-service-fl",
+    "name": "Roly's Auto Service",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "",
+    "website": "www.rolysautoservice.com",
+    "google_maps_link": "https://www.google.com/maps?q=25.747718,-80.303974",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6233144536",
+    "lat": 25.7477184,
+    "lon": -80.303974
+  },
+  {
+    "business_id": "royal-tires-fl",
+    "name": "Royal Tires",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "5400, West Colonial Drive, FL",
+    "phone": "+1-407-704-6911",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=28.551988,-81.453542",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/832702119",
+    "lat": 28.551988,
+    "lon": -81.453542
+  },
+  {
+    "business_id": "saaab-store-fl",
+    "name": "Saaab Store",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "4025, West Osborne Avenue, Tampa, FL, 33614",
+    "phone": "+1 813-877-7222",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.989234,-82.512272",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11917826605",
+    "lat": 27.9892338,
+    "lon": -82.5122721
+  },
+  {
+    "business_id": "safelite-autoglass-fl-2",
+    "name": "Safelite AutoGlass",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Miami",
+    "state": "FL",
+    "address": "2757, Southwest 8th Street, Miami, FL, 33135",
+    "phone": "+1 887-465-5224",
+    "website": "https://www.safelite.com/stores/Dade",
+    "google_maps_link": "https://www.google.com/maps?q=25.765278,-80.240211",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/7535969306",
+    "lat": 25.7652779,
+    "lon": -80.2402106
+  },
+  {
+    "business_id": "safelite-autoglass-fl",
+    "name": "Safelite AutoGlass",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "+1-800-800-2727",
+    "website": "safelite.com",
+    "google_maps_link": "https://www.google.com/maps?q=28.336975,-81.397433",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5320877794",
+    "lat": 28.3369754,
+    "lon": -81.3974328
+  },
+  {
+    "business_id": "saint-pete-garage-fl",
+    "name": "Saint Pete Garage",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Saint Petersburg",
+    "state": "FL",
+    "address": "501, 49th Street South, Saint Petersburg, FL, 33707",
+    "phone": "+1-727-498-8766",
+    "website": "https://www.stpetegaragefl.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.766157,-82.700083",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6618517490",
+    "lat": 27.7661569,
+    "lon": -82.7000833
+  },
+  {
+    "business_id": "scotty-s-automotive-fl",
+    "name": "Scotty's Automotive",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Fort Myers",
+    "state": "FL",
+    "address": "15610, McGregor Boulevard, Fort Myers, FL, 33908",
+    "phone": "+1-239-415-1996",
+    "website": "https://www.scottyautomotive.com/",
+    "google_maps_link": "https://www.google.com/maps?q=26.515217,-81.948623",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/512992980",
+    "lat": 26.5152166,
+    "lon": -81.9486227
+  },
+  {
+    "business_id": "sears-auto-center-fl",
+    "name": "Sears Auto Center",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Pinellas Park",
+    "state": "FL",
+    "address": "6500, 34th Street North, Pinellas Park, FL, 33781",
+    "phone": "+1-727-528-2811",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.831554,-82.680682",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/128965422",
+    "lat": 27.831554,
+    "lon": -82.6806816
+  },
+  {
+    "business_id": "sl-sons-auto-repair-fl",
+    "name": "Sl & Sons - Auto Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "901, 16th Street North, FL",
+    "phone": "+1-727-822-3551",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.781345,-82.654648",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/3834878349",
+    "lat": 27.7813447,
+    "lon": -82.6546485
+  },
+  {
+    "business_id": "snap-a-dent-fl",
+    "name": "Snap-a-Dent",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "2700, Northwest 72nd Avenue, FL, 33122",
+    "phone": "",
+    "website": "https://snapadent.com/",
+    "google_maps_link": "https://www.google.com/maps?q=25.799202,-80.313467",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10900971505",
+    "lat": 25.7992022,
+    "lon": -80.3134668
+  },
+  {
+    "business_id": "south-motors-collision-center-fl",
+    "name": "South Motors Collision Center",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Miami",
+    "state": "FL",
+    "address": "9720, Southwest 170th Street, Miami, FL, 33157",
+    "phone": "",
+    "website": "https://southmotorscollision.com/",
+    "google_maps_link": "https://www.google.com/maps?q=25.611590,-80.350297",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6020449932",
+    "lat": 25.6115903,
+    "lon": -80.3502974
+  },
+  {
+    "business_id": "sparkshift-customs-fl",
+    "name": "SparkShift Customs",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Naples",
+    "state": "FL",
+    "address": "2591, White Boulevard, Naples, FL, 34117",
+    "phone": "+1-718-689-2220",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=26.214170,-81.658403",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13425468002",
+    "lat": 26.2141702,
+    "lon": -81.6584034
+  },
+  {
+    "business_id": "spartan-tank-florida-fl",
+    "name": "Spartan Tank Florida",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "5801, East Broadway Avenue, Tampa, FL, 33619",
+    "phone": "+1-813-621-5434",
+    "website": "https://www.spartantank.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.963909,-82.390649",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11927650431",
+    "lat": 27.9639087,
+    "lon": -82.3906489
+  },
+  {
+    "business_id": "splash-car-wash-lube-fl",
+    "name": "Splash Car Wash & Lube",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Brandon",
+    "state": "FL",
+    "address": "802, West Bloomingdale Avenue, Brandon, FL, 33511",
+    "phone": "+1-813-661-4777",
+    "website": "http://splashbrandon.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.893962,-82.294501",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/350991860",
+    "lat": 27.8939618,
+    "lon": -82.2945008
+  },
+  {
+    "business_id": "sport-mazda-north-service-fl",
+    "name": "Sport Mazda North Service",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Longwood",
+    "state": "FL",
+    "address": "400 N, US 17-92, Longwood, FL, 32750",
+    "phone": "+1-321-300-7279",
+    "website": "https://www.sportmazdanorthorlando.com/",
+    "google_maps_link": "https://www.google.com/maps?q=28.703641,-81.327738",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13362862782",
+    "lat": 28.7036413,
+    "lon": -81.3277376
+  },
+  {
+    "business_id": "stadium-toyota-fl",
+    "name": "Stadium Toyota",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "5088, North Dale Mabry Highway, Tampa, FL, 33614",
+    "phone": "+1-813-358-1257",
+    "website": "https://www.stadiumtoyota.com/toyota-service-center-in-tampa-fl.htm",
+    "google_maps_link": "https://www.google.com/maps?q=27.992537,-82.506344",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10731500529",
+    "lat": 27.9925368,
+    "lon": -82.5063439
+  },
+  {
+    "business_id": "stage-3-automotive-fl",
+    "name": "Stage 3 Automotive",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "+1-407-291-2552",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=28.551937,-81.451862",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/832702122",
+    "lat": 28.551937,
+    "lon": -81.451862
+  },
+  {
+    "business_id": "subaru-of-jacksonville-service-department-fl",
+    "name": "Subaru of Jacksonville Service Department",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "10800, Atlantic Boulevard, FL, 32225",
+    "phone": "+1-904-263-4569",
+    "website": "https://www.subaruofjacksonville.com/service-department/",
+    "google_maps_link": "https://www.google.com/maps?q=30.323228,-81.520243",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11457499469",
+    "lat": 30.3232281,
+    "lon": -81.5202433
+  },
+  {
+    "business_id": "sunbelt-transmissions-fl",
+    "name": "Sunbelt Transmissions",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "13215, Memorial Highway, Tampa, FL, 33635",
+    "phone": "+1-813-961-5560",
+    "website": "https://www.sunbelttransmissions.net/",
+    "google_maps_link": "https://www.google.com/maps?q=28.031084,-82.639003",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6649105384",
+    "lat": 28.0310845,
+    "lon": -82.6390031
+  },
+  {
+    "business_id": "sunshine-automotive-inc-fl",
+    "name": "Sunshine Automotive Inc",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "363, 16th Street North, FL",
+    "phone": "+1 727-823-7191",
+    "website": "https://www.sunshineautomotiveinc.com/_index.php",
+    "google_maps_link": "https://www.google.com/maps?q=27.775285,-82.654543",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/3834878350",
+    "lat": 27.7752845,
+    "lon": -82.6545427
+  },
+  {
+    "business_id": "super-dave-tire-shop-fl",
+    "name": "Super Dave Tire Shop",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "6323, South Dale Mabry Highway, FL, 33611",
+    "phone": "+1-813-304-0185",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.874187,-82.506604",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12535310402",
+    "lat": 27.8741874,
+    "lon": -82.5066041
+  },
+  {
+    "business_id": "t-t-auto-repair-fl",
+    "name": "T & T Auto Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Dunedin",
+    "state": "FL",
+    "address": "481, Patricia Avenue, Dunedin, FL, 34698",
+    "phone": "+1 727 7361644",
+    "website": "http://tandtautorepair.com",
+    "google_maps_link": "https://www.google.com/maps?q=28.005995,-82.775219",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4223333656",
+    "lat": 28.005995,
+    "lon": -82.7752187
+  },
+  {
+    "business_id": "take-5-oil-change-fl-2",
+    "name": "Take 5 Oil Change",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Clearwater",
+    "state": "FL",
+    "address": "2070, Gulf to Bay Boulevard, Clearwater, FL, 33765",
+    "phone": "+1-727-219-2698",
+    "website": "https://www.take5.com/locations/oil-change/florida/clearwater/30357/",
+    "google_maps_link": "https://www.google.com/maps?q=27.960865,-82.751440",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/525275078",
+    "lat": 27.9608649,
+    "lon": -82.7514401
+  },
+  {
+    "business_id": "take-5-oil-change-fl",
+    "name": "Take 5 Oil Change",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Holiday",
+    "state": "FL",
+    "address": "1525, US Highway 19, Holiday, FL, 34690",
+    "phone": "+1-813-586-2296",
+    "website": "https://www.take5.com/locations/oil-change/florida/holiday/30417/?utm_source=google&utm_medium=organic&utm_campaign=gbp_website",
+    "google_maps_link": "https://www.google.com/maps?q=28.181637,-82.740827",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1190732937",
+    "lat": 28.1816366,
+    "lon": -82.7408271
+  },
+  {
+    "business_id": "tampa-mobile-rv-repair-fl",
+    "name": "Tampa Mobile RV Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "5001, Nebraska Avenue, Tampa, FL, 33603",
+    "phone": "+1-813-412-6707",
+    "website": "https://mobilervrepairtampa.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.990501,-82.450778",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6621930456",
+    "lat": 27.9905009,
+    "lon": -82.4507784
+  },
+  {
+    "business_id": "the-burg-automotive-fl",
+    "name": "The Burg Automotive",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "4590, 49th Street North, FL, 33709",
+    "phone": "+1-727-527-9622",
+    "website": "https://theburgauto.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.813562,-82.700385",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13439855601",
+    "lat": 27.8135616,
+    "lon": -82.7003851
+  },
+  {
+    "business_id": "the-car-port-specialist-of-belle-isle-ll-fl",
+    "name": "The Car Port Specialist of Belle Isle ll",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Orlando",
+    "state": "FL",
+    "address": "5242, South Orange Avenue, Orlando, FL, 32809",
+    "phone": "+1-407-927-9547",
+    "website": "https://thecarportspecialistllc.com",
+    "google_maps_link": "https://www.google.com/maps?q=28.482980,-81.372582",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10097090287",
+    "lat": 28.48298,
+    "lon": -81.3725825
+  },
+  {
+    "business_id": "the-tire-choice-fl",
+    "name": "The Tire Choice",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Boca Raton",
+    "state": "FL",
+    "address": "22923, Sandalfoot Plaza Drive, Boca Raton, FL, 33428",
+    "phone": "+1 561-287-6715",
+    "website": "https://www.thetirechoice.com/",
+    "google_maps_link": "https://www.google.com/maps?q=26.334668,-80.202211",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/295166112",
+    "lat": 26.3346676,
+    "lon": -80.2022109
+  },
+  {
+    "business_id": "tim-s-custom-tinting-fl",
+    "name": "Tim's Custom Tinting",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Orlando",
+    "state": "FL",
+    "address": "11461, South Orange Blossom Trail, Orlando, FL, 32837",
+    "phone": "+1-407-438-8989",
+    "website": "http://www.timscustomtint.com",
+    "google_maps_link": "https://www.google.com/maps?q=28.400802,-81.403857",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5795842566",
+    "lat": 28.4008024,
+    "lon": -81.4038574
+  },
+  {
+    "business_id": "tint-world-fl",
+    "name": "Tint World",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "North Miami Beach",
+    "state": "FL",
+    "address": "1581, Northeast 163rd Street, North Miami Beach, FL, 33162",
+    "phone": "+1-305-504-8687",
+    "website": "https://www.tintworld.com/locations/fl/miami-048/",
+    "google_maps_link": "https://www.google.com/maps?q=25.926051,-80.168371",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13163307707",
+    "lat": 25.9260512,
+    "lon": -80.1683714
+  },
+  {
+    "business_id": "tire-kingdom-fl",
+    "name": "Tire Kingdom",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Largo",
+    "state": "FL",
+    "address": "S Belcher Rd, Largo, FL, 33773",
+    "phone": "+1-800-423-5464",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.896911,-82.746297",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/1990977099",
+    "lat": 27.896911,
+    "lon": -82.746297
+  },
+  {
+    "business_id": "transmission-doctor-fl",
+    "name": "Transmission Doctor",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "North Lauderdale",
+    "state": "FL",
+    "address": "7548, West McNab Road, North Lauderdale, FL, 33068",
+    "phone": "+1-954-721-5531",
+    "website": "https://www.transmissiondoctor.com/",
+    "google_maps_link": "https://www.google.com/maps?q=26.207627,-80.226838",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5901795444",
+    "lat": 26.2076273,
+    "lon": -80.2268382
+  },
+  {
+    "business_id": "transmission-service-center-fl",
+    "name": "Transmission Service Center",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Lauderhill",
+    "state": "FL",
+    "address": "4897, North University Drive #A, Lauderhill, FL, 33351",
+    "phone": "+1-954-578-5050",
+    "website": "http://transctr.com",
+    "google_maps_link": "https://www.google.com/maps?q=26.185864,-80.252411",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4545928688",
+    "lat": 26.1858642,
+    "lon": -80.2524111
+  },
+  {
+    "business_id": "trico-transmission-fl",
+    "name": "Trico Transmission",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Largo",
+    "state": "FL",
+    "address": "1125, Starkey Road, Largo, FL, 33771",
+    "phone": "+1-727-535-7832",
+    "website": "https://www.tricotrans.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.907180,-82.761673",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/524125557",
+    "lat": 27.9071802,
+    "lon": -82.7616728
+  },
+  {
+    "business_id": "tuffy-tire-auto-service-center-fl",
+    "name": "Tuffy Tire & Auto Service Center",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Saint Johns",
+    "state": "FL",
+    "address": "2770, Race Track Road, Saint Johns, FL, 32259",
+    "phone": "+1-904-230-3363",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=30.112462,-81.588313",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12401360441",
+    "lat": 30.1124621,
+    "lon": -81.5883134
+  },
+  {
+    "business_id": "ultimate-auto-repair-fl",
+    "name": "Ultimate Auto Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Largo",
+    "state": "FL",
+    "address": "3230, East Bay Drive, Largo, FL, 33771",
+    "phone": "",
+    "website": "https://uarperformance.com/contact-us",
+    "google_maps_link": "https://www.google.com/maps?q=27.916940,-82.753433",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/524994799",
+    "lat": 27.9169397,
+    "lon": -82.7534328
+  },
+  {
+    "business_id": "valvoline-fl",
+    "name": "Valvoline",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "",
+    "website": "https://store.vioc.com/fl/miami/oil-change-gq0056.html",
+    "google_maps_link": "https://www.google.com/maps?q=25.605628,-80.351384",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1188982954",
+    "lat": 25.6056277,
+    "lon": -80.3513839
+  },
+  {
+    "business_id": "valvoline-instant-oil-change-fl",
+    "name": "Valvoline Instant Oil Change",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "North Miami",
+    "state": "FL",
+    "address": "1600, Northeast 123rd Street, North Miami, FL, 33181",
+    "phone": "",
+    "website": "https://store.vioc.com/fl/northmiami/oil-change-gq0049.html",
+    "google_maps_link": "https://www.google.com/maps?q=25.889031,-80.165790",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6106301874",
+    "lat": 25.8890311,
+    "lon": -80.1657899
+  },
+  {
+    "business_id": "valvoline-instant-oil-change-fl-2",
+    "name": "Valvoline Instant Oil Change",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Miami",
+    "state": "FL",
+    "address": "15203, Southwest 104th Street, Miami, FL, 33196",
+    "phone": "",
+    "website": "https://store.vioc.com/fl/miami/oil-change-gq0030.html",
+    "google_maps_link": "https://www.google.com/maps?q=25.670288,-80.440759",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/435579007",
+    "lat": 25.670288,
+    "lon": -80.4407588
+  },
+  {
+    "business_id": "viking-auto-electric-air-fl",
+    "name": "Viking Auto Electric & Air",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Jacksonville",
+    "state": "FL",
+    "address": "4521, Sunbeam Road, Jacksonville, FL, 32257",
+    "phone": "+1-904-731-5065",
+    "website": "https://www.vikingautoelectric.com/",
+    "google_maps_link": "https://www.google.com/maps?q=30.206278,-81.598634",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4540634195",
+    "lat": 30.206278,
+    "lon": -81.5986337
+  },
+  {
+    "business_id": "volvo-bomnin-fl",
+    "name": "Volvo Bomnin",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Miami",
+    "state": "FL",
+    "address": "8105, Southwest 70th Avenue, Miami, FL, 33143",
+    "phone": "+1-305-677-0641",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=25.695129,-80.305610",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/435732250",
+    "lat": 25.6951286,
+    "lon": -80.3056104
+  },
+  {
+    "business_id": "walter-s-automotive-service-center-fl",
+    "name": "Walter's Automotive Service Center",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Fort Myers",
+    "state": "FL",
+    "address": "15135, McGregor Boulevard, Fort Myers, FL, 33908",
+    "phone": "",
+    "website": "https://www.waltersautoservice.com/",
+    "google_maps_link": "https://www.google.com/maps?q=26.522143,-81.937992",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/502889393",
+    "lat": 26.5221432,
+    "lon": -81.9379919
+  },
+  {
+    "business_id": "west-miami-paint-and-body-shop-fl",
+    "name": "West Miami Paint and Body Shop",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "West Miami",
+    "state": "FL",
+    "address": "6468, Southwest 8th Street, West Miami, FL, 33144",
+    "phone": "+1-305-266-5226",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=25.762977,-80.301363",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6060697736",
+    "lat": 25.7629774,
+    "lon": -80.3013632
+  },
+  {
+    "business_id": "xclusive-window-tinting-fl",
+    "name": "Xclusive Window Tinting",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Orlando",
+    "state": "FL",
+    "address": "755, Bennett Road, Orlando, FL, 32803",
+    "phone": "+1-407-495-6666",
+    "website": "https://xclusivewindowtinting.com/",
+    "google_maps_link": "https://www.google.com/maps?q=28.555647,-81.333236",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13438464252",
+    "lat": 28.5556468,
+    "lon": -81.3332355
+  },
+  {
+    "business_id": "xpress-auto-care-fl",
+    "name": "Xpress Auto Care",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "6333, N Dale Mabry Hwy, Tampa, FL, 33614",
+    "phone": "+1 813-870-6919",
+    "website": "http://xpressautocarefl.com",
+    "google_maps_link": "https://www.google.com/maps?q=28.006053,-82.504506",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6261679334",
+    "lat": 28.0060534,
+    "lon": -82.5045058
+  },
+  {
+    "business_id": "xtreme-care-body-shop-fl",
+    "name": "Xtreme Care Body Shop",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Miami",
+    "state": "FL",
+    "address": "12596, Southwest 128th Street, Miami, FL, 33186",
+    "phone": "+1-305-255-5777",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=25.649116,-80.398009",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/2552834515",
+    "lat": 25.6491158,
+    "lon": -80.3980094
+  },
+  {
+    "business_id": "your-mechanic-813-fl",
+    "name": "Your Mechanic 813",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Brandon",
+    "state": "FL",
+    "address": "206, East Robertson Street, Brandon, FL, 33511",
+    "phone": "+1-813-685-1353",
+    "website": "https://yourmechanic813.com",
+    "google_maps_link": "https://www.google.com/maps?q=27.935958,-82.283883",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13447284952",
+    "lat": 27.9359576,
+    "lon": -82.2838833
+  },
+  {
+    "business_id": "all-florida-scrap-metals-inc-fl",
+    "name": "All Florida Scrap Metals, Inc.",
+    "category": "Salvage Yards and Junkyards (Used Jeep Parts)",
+    "city": "Miami",
+    "state": "FL",
+    "address": "2710, Northwest 32nd Avenue, Miami, FL, 33142",
+    "phone": "+1-305-633-2241",
+    "website": "www.AllFloridaScrap.com",
+    "google_maps_link": "https://www.google.com/maps?q=25.800761,-80.248602",
+    "tags": [
+      "salvage",
+      "junkyard",
+      "used-parts"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13416444552",
+    "lat": 25.8007609,
+    "lon": -80.2486024
+  },
+  {
+    "business_id": "boneyard-fl",
+    "name": "Boneyard",
+    "category": "Salvage Yards and Junkyards (Used Jeep Parts)",
+    "city": "Lake Buena Vista",
+    "state": "FL",
+    "address": "Lake Buena Vista, FL",
+    "phone": "",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=28.422877,-81.574553",
+    "tags": [
+      "salvage",
+      "junkyard",
+      "used-parts"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/700885765",
+    "lat": 28.4228765,
+    "lon": -81.5745529
+  },
+  {
+    "business_id": "cash-junk-cars-miami-fl",
+    "name": "Cash Junk Cars Miami",
+    "category": "Salvage Yards and Junkyards (Used Jeep Parts)",
+    "city": "Opa-locka",
+    "state": "FL",
+    "address": "12875, Alexandria Drive, Opa-locka, FL, 33054",
+    "phone": "+1-305-209-2044",
+    "website": "http://cashjunkcarsmiami.com/",
+    "google_maps_link": "https://www.google.com/maps?q=25.892021,-80.254241",
+    "tags": [
+      "salvage",
+      "junkyard",
+      "used-parts"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6037096835",
+    "lat": 25.8920208,
+    "lon": -80.2542408
+  },
+  {
+    "business_id": "delray-scrap-recycling-fl",
+    "name": "Delray Scrap Recycling",
+    "category": "Salvage Yards and Junkyards (Used Jeep Parts)",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=26.458752,-80.092447",
+    "tags": [
+      "salvage",
+      "junkyard",
+      "used-parts"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12818416746",
+    "lat": 26.4587524,
+    "lon": -80.0924474
+  },
+  {
+    "business_id": "big-john-s-brake-and-alignment-service-fl",
+    "name": "Big John's Brake and Alignment Service",
+    "category": "Suspension, Alignment, and Lift Install",
+    "city": "",
+    "state": "FL",
+    "address": "1210, 1st Avenue North, FL",
+    "phone": "+1-727-822-3108",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.771794,-82.650986",
+    "tags": [
+      "suspension",
+      "alignment",
+      "lift"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6925540985",
+    "lat": 27.7717936,
+    "lon": -82.6509858
+  },
+  {
+    "business_id": "sew-right-upholstery-fl",
+    "name": "Sew Right Upholstery",
+    "category": "Upholstery and Interior (Headliners, Seats)",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "5003, North 40th Street, Tampa, FL, 33610",
+    "phone": "+1 813 325 3213",
+    "website": "https://sewrightupholstery.wixsite.com/website",
+    "google_maps_link": "https://www.google.com/maps?q=27.990881,-82.413664",
+    "tags": [
+      "upholstery",
+      "interior"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13410718218",
+    "lat": 27.9908814,
+    "lon": -82.4136645
+  }
+]

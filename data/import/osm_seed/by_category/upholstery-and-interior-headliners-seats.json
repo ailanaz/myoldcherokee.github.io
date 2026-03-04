@@ -1,0 +1,142 @@
+[
+  {
+    "business_id": "a-better-quality-upholstering-ca",
+    "name": "A-Better Quality Upholstering",
+    "category": "Upholstery and Interior (Headliners, Seats)",
+    "city": "",
+    "state": "CA",
+    "address": "415, North Victory Boulevard, CA",
+    "phone": "+1 818-845-4511",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=34.178001,-118.318872",
+    "tags": [
+      "upholstery",
+      "interior"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11395339081",
+    "lat": 34.1780012,
+    "lon": -118.3188722
+  },
+  {
+    "business_id": "alexander-s-upholstering-ca",
+    "name": "Alexander's Upholstering",
+    "category": "Upholstery and Interior (Headliners, Seats)",
+    "city": "San Diego",
+    "state": "CA",
+    "address": "4034, Wabaska Drive, San Diego, CA, 92107",
+    "phone": "+1-619-222-1345",
+    "website": "https://alexandersupholstering.com/",
+    "google_maps_link": "https://www.google.com/maps?q=32.742133,-117.233328",
+    "tags": [
+      "upholstery",
+      "interior"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/8112468109",
+    "lat": 32.742133,
+    "lon": -117.2333278
+  },
+  {
+    "business_id": "carlson-s-upholstery-ca",
+    "name": "Carlson's Upholstery",
+    "category": "Upholstery and Interior (Headliners, Seats)",
+    "city": "Paramount",
+    "state": "CA",
+    "address": "15122, Downey Ave, Paramount, CA, 90723",
+    "phone": "+1-562-867-4782",
+    "website": "https://carlsonsupholstery.com",
+    "google_maps_link": "https://www.google.com/maps?q=33.889069,-118.127226",
+    "tags": [
+      "upholstery",
+      "interior"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11846863759",
+    "lat": 33.8890687,
+    "lon": -118.1272264
+  },
+  {
+    "business_id": "la-costa-upholstery-ca",
+    "name": "La Costa Upholstery",
+    "category": "Upholstery and Interior (Headliners, Seats)",
+    "city": "",
+    "state": "CA",
+    "address": "CA",
+    "phone": "+1 760-744-1360",
+    "website": "https://lacostaupholstery.com/",
+    "google_maps_link": "https://www.google.com/maps?q=33.106048,-117.224638",
+    "tags": [
+      "upholstery",
+      "interior"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11584627899",
+    "lat": 33.1060481,
+    "lon": -117.2246379
+  },
+  {
+    "business_id": "sardo-custom-upholstery-ca",
+    "name": "Sardo Custom Upholstery",
+    "category": "Upholstery and Interior (Headliners, Seats)",
+    "city": "Pasadena",
+    "state": "CA",
+    "address": "1456, East Walnut Street, Pasadena, CA, 91106",
+    "phone": "+1 626-577-1906",
+    "website": "https://www.sardocustomupholstery.com/",
+    "google_maps_link": "https://www.google.com/maps?q=34.149405,-118.120374",
+    "tags": [
+      "upholstery",
+      "interior"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/2035855387",
+    "lat": 34.1494046,
+    "lon": -118.1203737
+  },
+  {
+    "business_id": "winter-gardens-auto-upholstery-ca",
+    "name": "Winter gardens Auto Upholstery",
+    "category": "Upholstery and Interior (Headliners, Seats)",
+    "city": "Lakeside",
+    "state": "CA",
+    "address": "8940, Winter Gardens Boulevard, Lakeside, CA, 92040",
+    "phone": "+16195615606",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=32.839525,-116.933928",
+    "tags": [
+      "upholstery",
+      "interior"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1477001800",
+    "lat": 32.8395248,
+    "lon": -116.933928
+  },
+  {
+    "business_id": "sew-right-upholstery-fl",
+    "name": "Sew Right Upholstery",
+    "category": "Upholstery and Interior (Headliners, Seats)",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "5003, North 40th Street, Tampa, FL, 33610",
+    "phone": "+1 813 325 3213",
+    "website": "https://sewrightupholstery.wixsite.com/website",
+    "google_maps_link": "https://www.google.com/maps?q=27.990881,-82.413664",
+    "tags": [
+      "upholstery",
+      "interior"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13410718218",
+    "lat": 27.9908814,
+    "lon": -82.4136645
+  }
+]

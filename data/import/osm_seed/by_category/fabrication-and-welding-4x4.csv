@@ -1,0 +1,4 @@
+business_id,name,category,city,state,address,phone,website,google_maps_link,tags,jeep_note,source,osm_id,lat,lon
+mobile-dent-bumper-repair-ca,Mobile Dent & Bumper Repair,Fabrication and Welding (4x4),Covina,CA,"402, East Badillo Street, Covina, CA, 91723",+1-626-479-9017,https://bodyworkcovina.com,"https://www.google.com/maps?q=34.085941,-117.883372","fabrication, welding, 4x4",,OSM,node/11142931006,34.0859411,-117.883372
+santini-iron-works-ca,Santini Iron Works,Fabrication and Welding (4x4),,CA,CA,+1 310 390-4147,,"https://www.google.com/maps?q=33.984222,-118.402824","fabrication, welding, 4x4",,OSM,node/12139157748,33.9842224,-118.4028242
+lizotte-s-welding-fl,Lizotte's Welding,Fabrication and Welding (4x4),,FL,"3303, Tyrone Boulevard North, FL",+1-727-343-7690,http://www.lizottewelding.net/,"https://www.google.com/maps?q=27.802256,-82.741798","fabrication, welding, 4x4",,OSM,way/228264526,27.8022565,-82.7417976

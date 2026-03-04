@@ -1,0 +1,29 @@
+[
+  {
+    "states_requested": [
+      "FL",
+      "CA"
+    ],
+    "states_excluded": [
+      "TN",
+      "TX"
+    ],
+    "jobs": 10,
+    "records_raw": 3655,
+    "records_after_dedupe": 2626,
+    "records_final": 980,
+    "overpass_urls": [
+      "https://overpass-api.de/api/interpreter",
+      "https://overpass.kumi.systems/api/interpreter",
+      "https://lz4.overpass-api.de/api/interpreter"
+    ],
+    "failed_jobs": [
+      {
+        "state": "CA",
+        "geo": "bbox=(37.1, -122.7, 38.1, -121.7)",
+        "error": "The read operation timed out"
+      }
+    ],
+    "generated_at_epoch": 1772582730
+  }
+]

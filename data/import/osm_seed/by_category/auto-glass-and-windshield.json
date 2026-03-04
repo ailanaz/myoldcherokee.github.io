@@ -1,0 +1,242 @@
+[
+  {
+    "business_id": "auto-glass-now-ca-2",
+    "name": "Auto Glass Now",
+    "category": "Auto Glass and Windshield",
+    "city": "Fresno",
+    "state": "CA",
+    "address": "4645, North Blackstone Avenue, Fresno, CA, 93726",
+    "phone": "+1-559-825-6472",
+    "website": "autoglassnow.com",
+    "google_maps_link": "https://www.google.com/maps?q=36.802183,-119.790996",
+    "tags": [
+      "auto-glass",
+      "windshield"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13241142897",
+    "lat": 36.8021825,
+    "lon": -119.790996
+  },
+  {
+    "business_id": "auto-glass-now-ca",
+    "name": "Auto Glass Now",
+    "category": "Auto Glass and Windshield",
+    "city": "Sacramento",
+    "state": "CA",
+    "address": "5710, Roseville Road, Sacramento, CA, 95842",
+    "phone": "+1-916-999-1718",
+    "website": "https://www.autoglassnow.com/",
+    "google_maps_link": "https://www.google.com/maps?q=38.669821,-121.370679",
+    "tags": [
+      "auto-glass",
+      "windshield"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12850763338",
+    "lat": 38.6698213,
+    "lon": -121.370679
+  },
+  {
+    "business_id": "best-price-auto-glass-tint-ca",
+    "name": "Best Price Auto Glass & Tint",
+    "category": "Auto Glass and Windshield",
+    "city": "Spring Valley",
+    "state": "CA",
+    "address": "9995, Campo Road, Spring Valley, CA, 91977",
+    "phone": "+1-619-660-1041",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=32.747665,-116.980573",
+    "tags": [
+      "auto-glass",
+      "windshield"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/993510018",
+    "lat": 32.7476652,
+    "lon": -116.9805731
+  },
+  {
+    "business_id": "cali-auto-glass-tint-ca",
+    "name": "Cali Auto Glass & Tint",
+    "category": "Auto Glass and Windshield",
+    "city": "El Cajon",
+    "state": "CA",
+    "address": "1648, Magnolia Avenue, El Cajon, CA, 92020",
+    "phone": "+1 619-710-6128",
+    "website": "https://caliglassntint.net/",
+    "google_maps_link": "https://www.google.com/maps?q=32.821832,-116.962823",
+    "tags": [
+      "auto-glass",
+      "windshield"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13206889713",
+    "lat": 32.8218324,
+    "lon": -116.9628229
+  },
+  {
+    "business_id": "city-auto-glass-san-diego-ca",
+    "name": "City Auto Glass San Diego",
+    "category": "Auto Glass and Windshield",
+    "city": "San Diego",
+    "state": "CA",
+    "address": "6620, Miramar Road, San Diego, CA, 92121",
+    "phone": "+1 858-203-0865",
+    "website": "https://sdwindshieldrepair.com/mobile-windshield-replacement-san-diego-ca/",
+    "google_maps_link": "https://www.google.com/maps?q=32.878348,-117.172059",
+    "tags": [
+      "auto-glass",
+      "windshield"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/781631663",
+    "lat": 32.8783482,
+    "lon": -117.1720587
+  },
+  {
+    "business_id": "jerry-imperio-auto-glass-ca",
+    "name": "Jerry-Imperio Auto Glass",
+    "category": "Auto Glass and Windshield",
+    "city": "Fresno",
+    "state": "CA",
+    "address": "3929, North Blackstone Avenue, Fresno, CA, 93726",
+    "phone": "+1-559-349-5698",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=36.789183,-119.791023",
+    "tags": [
+      "auto-glass",
+      "windshield"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13246538396",
+    "lat": 36.7891827,
+    "lon": -119.7910233
+  },
+  {
+    "business_id": "priceless-auto-glass-ca",
+    "name": "Priceless Auto Glass",
+    "category": "Auto Glass and Windshield",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "address": "1701, Santa Rosa Avenue, Santa Rosa, CA",
+    "phone": "+1-707-544-6666",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=38.422174,-122.714223",
+    "tags": [
+      "auto-glass",
+      "windshield"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "relation/9640933",
+    "lat": 38.4221736,
+    "lon": -122.714223
+  },
+  {
+    "business_id": "cornerstone-auto-glass-new-tampa-fl",
+    "name": "Cornerstone Auto Glass New Tampa",
+    "category": "Auto Glass and Windshield",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "19456, Paddock View Drive, Tampa, FL, 33647",
+    "phone": "+1-727-809-0699",
+    "website": "https://cornerstoneglassrepair.com",
+    "google_maps_link": "https://www.google.com/maps?q=28.166646,-82.297013",
+    "tags": [
+      "auto-glass",
+      "windshield"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6390284293",
+    "lat": 28.1666458,
+    "lon": -82.2970127
+  },
+  {
+    "business_id": "florida-prime-glass-fl",
+    "name": "Florida Prime Glass",
+    "category": "Auto Glass and Windshield",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "+1 855-377-4634",
+    "website": "https://www.floridaprimeglass.com/",
+    "google_maps_link": "https://www.google.com/maps?q=26.370393,-80.125805",
+    "tags": [
+      "auto-glass",
+      "windshield"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13091351266",
+    "lat": 26.370393,
+    "lon": -80.1258054
+  },
+  {
+    "business_id": "homestead-glass-co-fl",
+    "name": "Homestead Glass Co",
+    "category": "Auto Glass and Windshield",
+    "city": "Homestead",
+    "state": "FL",
+    "address": "515, N Krome Ave, Homestead, FL, 33030",
+    "phone": "+1 305-247-5025",
+    "website": "https://homesteadglass.com",
+    "google_maps_link": "https://www.google.com/maps?q=25.474626,-80.477260",
+    "tags": [
+      "auto-glass",
+      "windshield"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9791865199",
+    "lat": 25.4746263,
+    "lon": -80.4772598
+  },
+  {
+    "business_id": "mike-s-auto-glass-express-fl",
+    "name": "Mike's Auto Glass Express",
+    "category": "Auto Glass and Windshield",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "8512, North Florida Avenue, Tampa, FL, 33604",
+    "phone": "+1-813-833-2973",
+    "website": "https://www.nationsautoglass.com",
+    "google_maps_link": "https://www.google.com/maps?q=28.027725,-82.459926",
+    "tags": [
+      "auto-glass",
+      "windshield"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12313719390",
+    "lat": 28.0277249,
+    "lon": -82.4599258
+  },
+  {
+    "business_id": "mike-s-auto-glass-tampa-fl",
+    "name": "Mike's Auto Glass Tampa",
+    "category": "Auto Glass and Windshield",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "4901, North Armenia Avenue, Tampa, FL, 33603",
+    "phone": "+1-813-876-4115",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.990814,-82.484117",
+    "tags": [
+      "auto-glass",
+      "windshield"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12313856981",
+    "lat": 27.9908142,
+    "lon": -82.4841175
+  }
+]

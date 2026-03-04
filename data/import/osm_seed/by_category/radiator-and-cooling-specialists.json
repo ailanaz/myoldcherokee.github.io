@@ -1,0 +1,22 @@
+[
+  {
+    "business_id": "aaa-radiator-and-auto-air-conditioning-fl",
+    "name": "AAA Radiator and Auto Air Conditioning",
+    "category": "Radiator and Cooling Specialists",
+    "city": "North Miami Beach",
+    "state": "FL",
+    "address": "15570, West Dixie Highway, North Miami Beach, FL, 33162",
+    "phone": "+1-305-947-3501",
+    "website": "https://www.autoacservice.com/",
+    "google_maps_link": "https://www.google.com/maps?q=25.919498,-80.159033",
+    "tags": [
+      "radiator",
+      "cooling"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/435541055",
+    "lat": 25.9194977,
+    "lon": -80.1590326
+  }
+]

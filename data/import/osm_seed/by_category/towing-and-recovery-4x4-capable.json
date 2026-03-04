@@ -1,0 +1,522 @@
+[
+  {
+    "business_id": "al-s-towing-ca",
+    "name": "Al's Towing",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "6180, South Saint Andrews Place, Los Angeles, CA, 90047",
+    "phone": "+1 323-430-8128",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=33.983650,-118.310790",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/412177072",
+    "lat": 33.9836501,
+    "lon": -118.31079
+  },
+  {
+    "business_id": "all-city-tow-service-ca",
+    "name": "All City Tow Service",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Culver City",
+    "state": "CA",
+    "address": "5832, Adams Boulevard, Culver City, CA, 90232",
+    "phone": "+1 323-934-0404",
+    "website": "https://www.allcitytowservices.com/",
+    "google_maps_link": "https://www.google.com/maps?q=34.032261,-118.371204",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/429377682",
+    "lat": 34.032261,
+    "lon": -118.3712042
+  },
+  {
+    "business_id": "auto-way-towing-service-ca",
+    "name": "Auto Way Towing Service",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "2860, East Pico Boulevard, Los Angeles, CA, 90023",
+    "phone": "+1-323-432-8939",
+    "website": "https://autowaytowingservice.com/",
+    "google_maps_link": "https://www.google.com/maps?q=34.019440,-118.218084",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12832762440",
+    "lat": 34.0194396,
+    "lon": -118.2180843
+  },
+  {
+    "business_id": "best-one-towing-ca",
+    "name": "Best One Towing",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "217, South Lorena Street, Los Angeles, CA, 90063",
+    "phone": "+1-323-891-1380",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=34.035119,-118.196568",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12832762439",
+    "lat": 34.0351185,
+    "lon": -118.1965684
+  },
+  {
+    "business_id": "bp-towing-ca",
+    "name": "BP Towing",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "6043, South Western Avenue, Los Angeles, CA, 90047",
+    "phone": "+1 310-327-8783",
+    "website": "https://bptowing.com/",
+    "google_maps_link": "https://www.google.com/maps?q=33.985111,-118.309413",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/412176912",
+    "lat": 33.9851111,
+    "lon": -118.3094127
+  },
+  {
+    "business_id": "brian-s-toledo-towing-ca",
+    "name": "Brian's Toledo Towing",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "2170, East 11th Street, Los Angeles, CA, 90021",
+    "phone": "+1-213-955-5767",
+    "website": "https://www.brianstoledotowingservice.com/",
+    "google_maps_link": "https://www.google.com/maps?q=34.024211,-118.234186",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1386017770",
+    "lat": 34.0242114,
+    "lon": -118.2341861
+  },
+  {
+    "business_id": "city-terrace-towing-east-la-ca",
+    "name": "City Terrace Towing East LA",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "4167, Whiteside Street, Los Angeles, CA, 90063",
+    "phone": "+1-323-262-8059",
+    "website": "https://www.cityterracetowing.com/",
+    "google_maps_link": "https://www.google.com/maps?q=34.060555,-118.177291",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/427275942",
+    "lat": 34.0605547,
+    "lon": -118.1772915
+  },
+  {
+    "business_id": "city-terrace-towing-los-angeles-ca",
+    "name": "City Terrace Towing Los Angeles",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "1770, Workman Street, Los Angeles, CA, 90031",
+    "phone": "+1-323-262-8052",
+    "website": "https://www.cityterracetowing.com/",
+    "google_maps_link": "https://www.google.com/maps?q=34.063225,-118.213725",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/429158921",
+    "lat": 34.063225,
+    "lon": -118.213725
+  },
+  {
+    "business_id": "emergency-west-hollywood-towing-ca",
+    "name": "Emergency West Hollywood Towing",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "West Hollywood",
+    "state": "CA",
+    "address": "1246, North Formosa Avenue, West Hollywood, CA, 90046",
+    "phone": "+1 213-449-1300",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=34.093944,-118.346084",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12839147329",
+    "lat": 34.0939443,
+    "lon": -118.3460836
+  },
+  {
+    "business_id": "emmett-s-tow-truck-and-roadside-service-ca",
+    "name": "Emmett's Tow Truck and Roadside Service",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "650, Robinson Street, Los Angeles, CA, 90026",
+    "phone": "",
+    "website": "https://www.emttowtruck.com/",
+    "google_maps_link": "https://www.google.com/maps?q=34.080047,-118.279051",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12832762445",
+    "lat": 34.0800467,
+    "lon": -118.2790514
+  },
+  {
+    "business_id": "fast-way-towing-inc-ca",
+    "name": "Fast Way Towing, Inc.",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "8552, Venice Boulevard, Los Angeles, CA, 90034",
+    "phone": "+1 310-559-7811",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=34.034064,-118.379419",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/429382698",
+    "lat": 34.0340645,
+    "lon": -118.3794195
+  },
+  {
+    "business_id": "huero-s-towing-ca",
+    "name": "Huero's Towing",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "4743, East Olympic Boulevard, Los Angeles, CA, 90022",
+    "phone": "+1-323-972-3779",
+    "website": "https://huerotowing.com/",
+    "google_maps_link": "https://www.google.com/maps?q=34.018247,-118.166621",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/440340488",
+    "lat": 34.0182471,
+    "lon": -118.1666211
+  },
+  {
+    "business_id": "jb-s-towing-transport-ca",
+    "name": "JB's Towing & Transport",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "3574, South Western Avenue, Los Angeles, CA, 90018",
+    "phone": "+1 310-435-7124",
+    "website": "https://losangeles-towingservices.com/",
+    "google_maps_link": "https://www.google.com/maps?q=34.023038,-118.308475",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/407080163",
+    "lat": 34.0230375,
+    "lon": -118.3084754
+  },
+  {
+    "business_id": "jd-club-service-towing-inc-ca",
+    "name": "JD Club Service & Towing, Inc.",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "1701, South Hoover Street, Los Angeles, CA, 90006",
+    "phone": "+1-310-273-6193",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=34.042710,-118.284401",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/427287839",
+    "lat": 34.04271,
+    "lon": -118.2844012
+  },
+  {
+    "business_id": "metro-towing-inc-ca",
+    "name": "Metro Towing, Inc.",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "1720, Workman Street, Los Angeles, CA, 90033",
+    "phone": "+1-323-342-0602",
+    "website": "https://www.metrotowinginc.com/",
+    "google_maps_link": "https://www.google.com/maps?q=34.061852,-118.213916",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/429159274",
+    "lat": 34.0618519,
+    "lon": -118.2139162
+  },
+  {
+    "business_id": "nathan-s-towing-ca",
+    "name": "Nathan's Towing",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Inglewood",
+    "state": "CA",
+    "address": "712, West Florence Avenue, Inglewood, CA, 90301",
+    "phone": "+1 424-269-8645",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=33.963535,-118.369028",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/420317843",
+    "lat": 33.9635353,
+    "lon": -118.369028
+  },
+  {
+    "business_id": "new-city-towing-ca",
+    "name": "New City Towing",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "4411, West 3rd Street, Los Angeles, CA, 90020",
+    "phone": "+1 310-916-8278",
+    "website": "https://www.newcitytowingco.com/",
+    "google_maps_link": "https://www.google.com/maps?q=34.069202,-118.310603",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12839147313",
+    "lat": 34.0692016,
+    "lon": -118.310603
+  },
+  {
+    "business_id": "pepe-s-towing-service-ca",
+    "name": "Pepe's Towing Service",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "918, South Boyle Avenue, Los Angeles, CA, 90023",
+    "phone": "+1-323-268-1609",
+    "website": "https://pepestowla.com/",
+    "google_maps_link": "https://www.google.com/maps?q=34.035068,-118.218833",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/428822602",
+    "lat": 34.0350681,
+    "lon": -118.2188332
+  },
+  {
+    "business_id": "poblanos-towing-ca",
+    "name": "Poblanos Towing",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "634, East 35th Street, Los Angeles, CA, 90011",
+    "phone": "+1 323-375-1694",
+    "website": "https://towingserviceinlosangelesca.com/",
+    "google_maps_link": "https://www.google.com/maps?q=34.014212,-118.263960",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12839147306",
+    "lat": 34.0142117,
+    "lon": -118.2639598
+  },
+  {
+    "business_id": "primary-towing-los-angeles-ca",
+    "name": "Primary Towing Los Angeles",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "5776, Venice Boulevard, Los Angeles, CA, 90019",
+    "phone": "+1 310-492-5075",
+    "website": "https://www.primarytowing-losangeles.com/",
+    "google_maps_link": "https://www.google.com/maps?q=34.042092,-118.365182",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12839147314",
+    "lat": 34.0420918,
+    "lon": -118.3651822
+  },
+  {
+    "business_id": "quick-silver-towing-inc-ca",
+    "name": "Quick Silver Towing, Inc.",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "1981, Cotner Avenue, Los Angeles, CA, 90025",
+    "phone": "+1-310-478-1201",
+    "website": "http://www.quicksilvertow.com/",
+    "google_maps_link": "https://www.google.com/maps?q=34.042409,-118.442202",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1386913980",
+    "lat": 34.0424091,
+    "lon": -118.4422024
+  },
+  {
+    "business_id": "swanney-mcdonald-towing-ca",
+    "name": "Swanney & McDonald Towing",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "4833, Exposition Boulevard, Los Angeles, CA, 90016",
+    "phone": "+1 323-733-6898",
+    "website": "https://swanneymcdonald.com/",
+    "google_maps_link": "https://www.google.com/maps?q=34.024660,-118.349675",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/428536933",
+    "lat": 34.0246603,
+    "lon": -118.3496747
+  },
+  {
+    "business_id": "u-s-tow-ca",
+    "name": "U.S. Tow",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "2119, East 25th Street, Los Angeles, CA, 90058",
+    "phone": "+1-213-749-7100",
+    "website": "https://www.ustow.com/",
+    "google_maps_link": "https://www.google.com/maps?q=34.015116,-118.233690",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/428414325",
+    "lat": 34.0151159,
+    "lon": -118.2336902
+  },
+  {
+    "business_id": "united-carrier-towing-services-ca",
+    "name": "United Carrier Towing Services",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "1823, South Hope Street, Los Angeles, CA, 90015",
+    "phone": "+1-213-747-2868",
+    "website": "https://unitedcarriertow.com/",
+    "google_maps_link": "https://www.google.com/maps?q=34.034475,-118.269409",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/426617681",
+    "lat": 34.0344751,
+    "lon": -118.2694091
+  },
+  {
+    "business_id": "van-lingen-towing-ca",
+    "name": "Van Lingen Towing",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Torrance",
+    "state": "CA",
+    "address": "2755, Lomita Boulevard, Torrance, CA, 90505",
+    "phone": "+1-310-370-4533",
+    "website": "https://www.vanlingen.com/",
+    "google_maps_link": "https://www.google.com/maps?q=33.810129,-118.336552",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/442301114",
+    "lat": 33.8101292,
+    "lon": -118.3365525
+  },
+  {
+    "business_id": "viertel-s-central-division-ca",
+    "name": "Viertel's Central Division",
+    "category": "Towing and Recovery (4x4 capable)",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "2010, North Figueroa Street, Los Angeles, CA, 90065",
+    "phone": "+1 323-342-0342",
+    "website": "http://www.opgla.com/divisions/ATSNortheast",
+    "google_maps_link": "https://www.google.com/maps?q=34.081567,-118.224942",
+    "tags": [
+      "towing",
+      "recovery"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/429176845",
+    "lat": 34.0815675,
+    "lon": -118.2249424
+  }
+]

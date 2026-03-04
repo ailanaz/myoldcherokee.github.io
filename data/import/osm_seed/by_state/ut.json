@@ -1,0 +1,5900 @@
+[
+  {
+    "business_id": "a-broken-windshield-ut",
+    "name": "A Broken Windshield",
+    "category": "Auto Glass and Windshield",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "400 West, Salt Lake City, UT, 84101",
+    "phone": "+1 801-597-0438",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.755896,-111.902940",
+    "tags": [
+      "auto-glass",
+      "windshield"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/2633259838",
+    "lat": 40.7558964,
+    "lon": -111.9029402
+  },
+  {
+    "business_id": "auto-glass-now-ut",
+    "name": "Auto Glass Now",
+    "category": "Auto Glass and Windshield",
+    "city": "South Salt Lake",
+    "state": "UT",
+    "address": "3817 S, State Street, South Salt Lake, UT, 84115",
+    "phone": "+1-801-281-1500",
+    "website": "https://www.autoglassnow.com/our-locations/salt-lake-city-57010/",
+    "google_maps_link": "https://www.google.com/maps?q=40.688166,-111.887867",
+    "tags": [
+      "auto-glass",
+      "windshield"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1056658569",
+    "lat": 40.6881656,
+    "lon": -111.8878675
+  },
+  {
+    "business_id": "low-price-auto-glass-ut",
+    "name": "Low Price Auto Glass",
+    "category": "Auto Glass and Windshield",
+    "city": "South Salt Lake",
+    "state": "UT",
+    "address": "585, West 3300 South, South Salt Lake, UT, 84115",
+    "phone": "",
+    "website": "https://www.lowpriceslc.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.699515,-111.907572",
+    "tags": [
+      "auto-glass",
+      "windshield"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10202586418",
+    "lat": 40.6995148,
+    "lon": -111.9075718
+  },
+  {
+    "business_id": "premier-auto-glass-ut",
+    "name": "Premier Auto Glass",
+    "category": "Auto Glass and Windshield",
+    "city": "Bountiful",
+    "state": "UT",
+    "address": "874, W 4000 S, Bountiful, UT, 84010",
+    "phone": "+1 801-839-9389",
+    "website": "http://premierautoglassut.net",
+    "google_maps_link": "https://www.google.com/maps?q=40.846115,-111.904617",
+    "tags": [
+      "auto-glass",
+      "windshield"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4616048038",
+    "lat": 40.8461149,
+    "lon": -111.9046165
+  },
+  {
+    "business_id": "prime-auto-glass-ut",
+    "name": "Prime Auto Glass",
+    "category": "Auto Glass and Windshield",
+    "city": "Riverton",
+    "state": "UT",
+    "address": "1754 W, 12600 South, Riverton, UT, 84065",
+    "phone": "+1-801-372-9705",
+    "website": "https://primeautoglassutah.com/riverton/",
+    "google_maps_link": "https://www.google.com/maps?q=40.522728,-111.939930",
+    "tags": [
+      "auto-glass",
+      "windshield"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/462959596",
+    "lat": 40.522728,
+    "lon": -111.9399304
+  },
+  {
+    "business_id": "top-gear-auto-service-ut",
+    "name": "Top Gear Auto Service",
+    "category": "Drivetrain Specialists (Axles, Gears, Driveshafts)",
+    "city": "Orem",
+    "state": "UT",
+    "address": "225, State Street, Orem, UT, 84058",
+    "phone": "+1-385-221-4308",
+    "website": "https://topgearautoservice.io/",
+    "google_maps_link": "https://www.google.com/maps?q=40.292828,-111.692322",
+    "tags": [
+      "drivetrain",
+      "axle",
+      "gears"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12941664054",
+    "lat": 40.2928281,
+    "lon": -111.6923219
+  },
+  {
+    "business_id": "4-wheel-parts-ut",
+    "name": "4-Wheel Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "1789 S, Redwood Road, Salt Lake City, UT, 84104",
+    "phone": "+1-801-954-8826",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.730967,-111.938264",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/298890174",
+    "lat": 40.7309665,
+    "lon": -111.9382641
+  },
+  {
+    "business_id": "advance-auto-parts-ut-4",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Layton",
+    "state": "UT",
+    "address": "1436, North Main Street, Layton, UT, 84041",
+    "phone": "+1 801-336-1198",
+    "website": "https://stores.advanceautoparts.com/ut/layton/1436-n-main-st",
+    "google_maps_link": "https://www.google.com/maps?q=41.081245,-111.989850",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/34196718",
+    "lat": 41.0812452,
+    "lon": -111.9898501
+  },
+  {
+    "business_id": "advance-auto-parts-ut-2",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "West Valley City",
+    "state": "UT",
+    "address": "1931 W, 3500 South, West Valley City, UT, 84119",
+    "phone": "+1-801-326-0072",
+    "website": "https://stores.advanceautoparts.com/ut/west-valley-city/1931-w-3500-s",
+    "google_maps_link": "https://www.google.com/maps?q=40.696095,-111.943207",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1058898306",
+    "lat": 40.6960953,
+    "lon": -111.9432068
+  },
+  {
+    "business_id": "advance-auto-parts-ut-3",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Riverton",
+    "state": "UT",
+    "address": "12583 S, 2200 West, Riverton, UT, 84065",
+    "phone": "+1-801-308-8164",
+    "website": "https://stores.advanceautoparts.com/ut/riverton/12583-s-2200-w",
+    "google_maps_link": "https://www.google.com/maps?q=40.522608,-111.947862",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1090758174",
+    "lat": 40.5226079,
+    "lon": -111.9478615
+  },
+  {
+    "business_id": "advance-auto-parts-ut-5",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Springville",
+    "state": "UT",
+    "address": "887, West 400 South, Springville, UT, 84663",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/ut/springville/887-w-400-s",
+    "google_maps_link": "https://www.google.com/maps?q=40.160675,-111.626418",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/682585064",
+    "lat": 40.1606751,
+    "lon": -111.6264185
+  },
+  {
+    "business_id": "advance-auto-parts-ut",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/ut/logan/1585-n-main-st",
+    "google_maps_link": "https://www.google.com/maps?q=41.761095,-111.835171",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9389035321",
+    "lat": 41.7610948,
+    "lon": -111.8351714
+  },
+  {
+    "business_id": "autozone-ut-6",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "939, South State Street, Salt Lake City, UT, 84111",
+    "phone": "+1-801-532-1919",
+    "website": "https://www.autozone.com/locations/ut/salt-lake-city/939-s-state-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.748834,-111.887821",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9917679549",
+    "lat": 40.7488338,
+    "lon": -111.8878213
+  },
+  {
+    "business_id": "autozone-ut-7",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "South Salt Lake",
+    "state": "UT",
+    "address": "3750 S, State Street, South Salt Lake, UT, 84115",
+    "phone": "+1-801-262-4448",
+    "website": "https://www.autozone.com/locations/ut/south-salt-lake/3750-state-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.689035,-111.888819",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9957307794",
+    "lat": 40.6890351,
+    "lon": -111.8888187
+  },
+  {
+    "business_id": "autozone-ut-2",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Ogden",
+    "state": "UT",
+    "address": "3130, Washington Boulevard, Ogden, UT",
+    "phone": "+1 801-392-5070",
+    "website": "https://www.autozone.com/locations/ut/ogden/3130-washington.html",
+    "google_maps_link": "https://www.google.com/maps?q=41.207238,-111.970581",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12926702591",
+    "lat": 41.2072379,
+    "lon": -111.9705809
+  },
+  {
+    "business_id": "autozone-ut-17",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Layton",
+    "state": "UT",
+    "address": "1559, North Main Street, Layton, UT, 84041",
+    "phone": "+1 801-774-5551",
+    "website": "https://www.autozone.com/locations/ut/layton/1559-n-main-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=41.082136,-111.993375",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/34196708",
+    "lat": 41.0821364,
+    "lon": -111.9933745
+  },
+  {
+    "business_id": "autozone-ut-18",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Bountiful",
+    "state": "UT",
+    "address": "615, South 500 West, Bountiful, UT, 84010",
+    "phone": "+1 801-292-0492",
+    "website": "https://www.autozone.com/locations/ut/bountiful/615-s-500-w.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.882441,-111.891642",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/35568920",
+    "lat": 40.8824406,
+    "lon": -111.8916421
+  },
+  {
+    "business_id": "autozone-ut-20",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Roy",
+    "state": "UT",
+    "address": "5780, South 1900 West, Roy, UT",
+    "phone": "+1 801-773-8800",
+    "website": "https://www.autozone.com/locations/ut/roy/5780-s-1900-w.html",
+    "google_maps_link": "https://www.google.com/maps?q=41.157899,-112.025488",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/42479039",
+    "lat": 41.1578992,
+    "lon": -112.0254878
+  },
+  {
+    "business_id": "autozone-ut-25",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Kaysville",
+    "state": "UT",
+    "address": "28, West 200 North, Kaysville, UT",
+    "phone": "+1 801-497-9460",
+    "website": "https://www.autozone.com/locations/ut/kaysville/28-w-200-n.html",
+    "google_maps_link": "https://www.google.com/maps?q=41.038369,-111.939249",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/57949946",
+    "lat": 41.0383691,
+    "lon": -111.9392488
+  },
+  {
+    "business_id": "autozone-ut-14",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Draper",
+    "state": "UT",
+    "address": "12234 S, 300 East, Draper, UT, 84020",
+    "phone": "+1-801-571-1044",
+    "website": "https://www.autozone.com/locations/ut/draper/12234-s-300-e.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.527854,-111.882323",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/224698914",
+    "lat": 40.527854,
+    "lon": -111.8823229
+  },
+  {
+    "business_id": "autozone-ut-15",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "South Jordan",
+    "state": "UT",
+    "address": "1574 W, South Jordan Parkway, South Jordan, UT, 84095",
+    "phone": "+1-801-302-8490",
+    "website": "https://www.autozone.com/locations/ut/south-jordan/1574-w-10400-s.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.562857,-111.935562",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/306461526",
+    "lat": 40.5628568,
+    "lon": -111.9355622
+  },
+  {
+    "business_id": "autozone-ut-23",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Taylorsville",
+    "state": "UT",
+    "address": "1899, West 5400 South, Taylorsville, UT, 84129",
+    "phone": "+1-801-601-3178",
+    "website": "https://www.autozone.com/locations/ut/taylorsville/1899-w-5400-s.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.652627,-111.942582",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/492394004",
+    "lat": 40.6526267,
+    "lon": -111.9425816
+  },
+  {
+    "business_id": "autozone-ut-27",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "West Valley",
+    "state": "UT",
+    "address": "3186 W, 3500 South, West Valley, UT, 84119",
+    "phone": "+1-801-849-2081",
+    "website": "https://www.autozone.com/locations/ut/west-valley-city/3186-w-3500-s.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.697354,-111.967229",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/983590783",
+    "lat": 40.6973536,
+    "lon": -111.9672292
+  },
+  {
+    "business_id": "autozone-ut-8",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Hurricane",
+    "state": "UT",
+    "address": "818, West State Street, Hurricane, UT, 84737",
+    "phone": "+1-435-703-7293",
+    "website": "https://www.autozone.com/locations/ut/hurricane/818-w-state-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=37.177039,-113.303253",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1000860987",
+    "lat": 37.177039,
+    "lon": -113.3032534
+  },
+  {
+    "business_id": "autozone-ut-9",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Lehi",
+    "state": "UT",
+    "address": "1220, East State Street, Lehi, UT, 84043",
+    "phone": "+1-385-345-9705",
+    "website": "https://www.autozone.com/locations/ut/lehi/1220-e-state-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.389715,-111.829943",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1063073479",
+    "lat": 40.3897147,
+    "lon": -111.8299432
+  },
+  {
+    "business_id": "autozone-ut-11",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Provo",
+    "state": "UT",
+    "address": "1475, North State Street, Provo, UT, 84604",
+    "phone": "+1-801-377-1021",
+    "website": "https://www.autozone.com/locations/ut/provo/1475-n-state-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.254158,-111.671222",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1177979852",
+    "lat": 40.2541581,
+    "lon": -111.6712215
+  },
+  {
+    "business_id": "autozone-ut-12",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Pleasant Grove",
+    "state": "UT",
+    "address": "743, South State Street, Pleasant Grove, UT, 84062",
+    "phone": "+1-801-785-1320",
+    "website": "https://www.autozone.com/locations/ut/pleasant-grove/743-s-state-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.355023,-111.734488",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1434079420",
+    "lat": 40.3550227,
+    "lon": -111.7344879
+  },
+  {
+    "business_id": "autozone-ut-13",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Stansbury Park",
+    "state": "UT",
+    "address": "588, East Pole Canyon Road, Stansbury Park, UT, 84074",
+    "phone": "+1-435-243-6297",
+    "website": "https://l.autozone.com/ut/stansbury-park/588-e-pole-canyon-rd.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.652717,-112.290710",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1461589916",
+    "lat": 40.652717,
+    "lon": -112.2907096
+  },
+  {
+    "business_id": "autozone-ut-3",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Kearns",
+    "state": "UT",
+    "address": "4095, West 5415 South, Kearns, UT, 84118",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ut/salt-lake-city/4095-w-5415-s.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.652034,-111.989008",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/2336213594",
+    "lat": 40.6520336,
+    "lon": -111.9890076
+  },
+  {
+    "business_id": "autozone-ut-5",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Logan",
+    "state": "UT",
+    "address": "1125, North Main Street, Logan, UT, 84341",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ut/logan/1125-n-main-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=41.752532,-111.834948",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9231616927",
+    "lat": 41.7525322,
+    "lon": -111.8349485
+  },
+  {
+    "business_id": "autozone-ut",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Centerville",
+    "state": "UT",
+    "address": "180, West Parrish Lane, Centerville, UT, 84014",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ut/centerville/180-w-parrish-lane.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.922471,-111.881936",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10724890407",
+    "lat": 40.9224712,
+    "lon": -111.8819364
+  },
+  {
+    "business_id": "autozone-ut-19",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Spanish Fork",
+    "state": "UT",
+    "address": "723, North 800 East Street, Spanish Fork, UT, 84660",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ut/spanish-fork/723-n-800-e.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.119328,-111.640988",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/38642136",
+    "lat": 40.1193278,
+    "lon": -111.6409879
+  },
+  {
+    "business_id": "autozone-ut-26",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "American Fork",
+    "state": "UT",
+    "address": "762, East State Street, American Fork, UT, 84003",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ut/american-fork/762-e-state-rd.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.371450,-111.777199",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/96895084",
+    "lat": 40.3714498,
+    "lon": -111.7771987
+  },
+  {
+    "business_id": "autozone-ut-16",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Cedar City",
+    "state": "UT",
+    "address": "550 S, Main Street, Cedar City, UT, 84720",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ut/cedar-city/550-s-main-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=37.667679,-113.063154",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/324443699",
+    "lat": 37.6676791,
+    "lon": -113.0631537
+  },
+  {
+    "business_id": "autozone-ut-21",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Midvale",
+    "state": "UT",
+    "address": "6804 S, State Street, Midvale, UT, 84047",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ut/midvale/6804-s-state-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.627661,-111.890554",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/471953012",
+    "lat": 40.6276611,
+    "lon": -111.8905539
+  },
+  {
+    "business_id": "autozone-ut-22",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "West Valley City",
+    "state": "UT",
+    "address": "4035, South 5600 West, West Valley City, UT, 84120",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ut/west-valley-city/4049-s-5600-w.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.683809,-112.024256",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/476955864",
+    "lat": 40.6838093,
+    "lon": -112.0242559
+  },
+  {
+    "business_id": "autozone-ut-24",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Herriman",
+    "state": "UT",
+    "address": "5462, 13400 South, Herriman, UT",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ut/herriman/5462-w-13400-s.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.508343,-112.021209",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/569185455",
+    "lat": 40.5083429,
+    "lon": -112.0212093
+  },
+  {
+    "business_id": "autozone-ut-10",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Eagle Mountain",
+    "state": "UT",
+    "address": "8087, Porters Crossing Pkwy, Eagle Mountain, UT, 84005",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ut/eagle-mountain/3987-e-pony-express-parkway.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.362551,-111.966702",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1115294044",
+    "lat": 40.3625508,
+    "lon": -111.9667021
+  },
+  {
+    "business_id": "autozone-ut-4",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ut/ephraim/787-n-main-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=39.374242,-111.587670",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4194266637",
+    "lat": 39.374242,
+    "lon": -111.5876696
+  },
+  {
+    "business_id": "best-deal-spring-truck-parts-ut",
+    "name": "Best Deal Spring & Truck Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "1760 W, Redwood Depot Lane, Salt Lake City, UT, 84104",
+    "phone": "+1-385-429-3800",
+    "website": "https://bestdealspring.com/branches.php?branch=5",
+    "google_maps_link": "https://www.google.com/maps?q=40.748685,-111.941096",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9629336898",
+    "lat": 40.7486848,
+    "lon": -111.9410959
+  },
+  {
+    "business_id": "carquest-ut",
+    "name": "Carquest",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Wendover",
+    "state": "UT",
+    "address": "950, Wendover Boulevard, Wendover, UT, 84083",
+    "phone": "+1 435 665 2254",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.737458,-114.029690",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/895463599",
+    "lat": 40.7374584,
+    "lon": -114.02969
+  },
+  {
+    "business_id": "dependable-tire-auto-ut",
+    "name": "Dependable Tire Auto",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "UT",
+    "address": "655, Main Street, UT, 84321",
+    "phone": "",
+    "website": "https://instagram.com/dependabletire.auto",
+    "google_maps_link": "https://www.google.com/maps?q=41.743775,-111.835970",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13502550601",
+    "lat": 41.7437753,
+    "lon": -111.8359704
+  },
+  {
+    "business_id": "discount-tire-ut",
+    "name": "Discount Tire",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "UT",
+    "address": "605, Washington Blvd, UT",
+    "phone": "+1 801-393-4079",
+    "website": "https://discounttire.com/",
+    "google_maps_link": "https://www.google.com/maps?q=41.252942,-111.970417",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13035538100",
+    "lat": 41.2529421,
+    "lon": -111.9704168
+  },
+  {
+    "business_id": "factory-motor-parts-ut",
+    "name": "Factory Motor Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Bountiful",
+    "state": "UT",
+    "address": "345, South 200 West, Bountiful, UT, 84010",
+    "phone": "+1 801-397-6051",
+    "website": "https://www.factorymotorparts.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.885839,-111.885270",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1126989573",
+    "lat": 40.8858386,
+    "lon": -111.8852702
+  },
+  {
+    "business_id": "interstate-batteries-ut",
+    "name": "Interstate Batteries",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Logan",
+    "state": "UT",
+    "address": "1433, North Main Street, Logan, UT, 84321",
+    "phone": "+1 435-213-9539",
+    "website": "https://www.interstatebatteries.com/DealerLocator/AbcDealerDetails.aspx?dealerId=244&storeId=9170&name=Logan,%20UT",
+    "google_maps_link": "https://www.google.com/maps?q=41.758498,-111.834914",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/3132442446",
+    "lat": 41.7584984,
+    "lon": -111.834914
+  },
+  {
+    "business_id": "jordan-camper-ut",
+    "name": "Jordan Camper",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "+1 801 255 1512",
+    "website": "https://jordancamper.com",
+    "google_maps_link": "https://www.google.com/maps?q=40.623666,-111.890663",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9239160344",
+    "lat": 40.6236661,
+    "lon": -111.8906633
+  },
+  {
+    "business_id": "laketown-speed-and-sound-ut",
+    "name": "Laketown Speed and Sound",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Draper",
+    "state": "UT",
+    "address": "11710, State Street, Draper, UT, 84020",
+    "phone": "+1 801-553-2223",
+    "website": "https://laketownspeedandsound.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.538783,-111.892078",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1238172266",
+    "lat": 40.5387826,
+    "lon": -111.8920782
+  },
+  {
+    "business_id": "midnight-4x4-ut",
+    "name": "Midnight 4x4",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "South Salt Lake",
+    "state": "UT",
+    "address": "3684 S, State Street, South Salt Lake, UT, 84115",
+    "phone": "+1-801-232-9562",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.691205,-111.888679",
+    "tags": [
+      "parts",
+      "retail",
+      "4x4"
+    ],
+    "jeep_note": "4x4 focused",
+    "source": "OSM",
+    "osm_id": "way/1086729627",
+    "lat": 40.6912049,
+    "lon": -111.8886791
+  },
+  {
+    "business_id": "mighty-distributing-system-of-idaho-ut",
+    "name": "Mighty Distributing System of Idaho",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "1810 W, Redwood Depot Lane, Salt Lake City, UT, 84104",
+    "phone": "+1-801-973-7272",
+    "website": "https://distributors.mightyautoparts.com/us/id/salt-lake/1810-w-redwood-dep-ln/",
+    "google_maps_link": "https://www.google.com/maps?q=40.748558,-111.941613",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9629336899",
+    "lat": 40.748558,
+    "lon": -111.941613
+  },
+  {
+    "business_id": "napa-auto-parts-ut",
+    "name": "NAPA Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Layton",
+    "state": "UT",
+    "address": "175, North Main Street, Layton, UT, 84041-2217",
+    "phone": "+1 801-544-1291",
+    "website": "https://www.napaonline.com/en/ut/layton/store/39426",
+    "google_maps_link": "https://www.google.com/maps?q=41.062542,-111.968954",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11161521776",
+    "lat": 41.0625415,
+    "lon": -111.968954
+  },
+  {
+    "business_id": "napa-auto-parts-ut-2",
+    "name": "NAPA Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "West Jordan",
+    "state": "UT",
+    "address": "3059, West 7800 South, West Jordan, UT, 84088",
+    "phone": "+1 801-566-0277",
+    "website": "https://www.napaonline.com/en/ut/west-jordan/store/26839",
+    "google_maps_link": "https://www.google.com/maps?q=40.609095,-111.965231",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11820459161",
+    "lat": 40.6090949,
+    "lon": -111.9652306
+  },
+  {
+    "business_id": "napa-auto-parts-ut-3",
+    "name": "NAPA Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Eden",
+    "state": "UT",
+    "address": "4930, East 2550 North, Eden, UT",
+    "phone": "+1-801-845-2737",
+    "website": "https://www.napaonline.com/en/ut/eden/store/806381",
+    "google_maps_link": "https://www.google.com/maps?q=41.305616,-111.829635",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12903810750",
+    "lat": 41.3056161,
+    "lon": -111.8296349
+  },
+  {
+    "business_id": "napa-auto-parts-ut-5",
+    "name": "NAPA Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Nephi",
+    "state": "UT",
+    "address": "793 N, Main Street, Nephi, UT, 84648",
+    "phone": "+1 435-623-1528",
+    "website": "https://www.napaonline.com/en/ut/nephi/store/24539",
+    "google_maps_link": "https://www.google.com/maps?q=39.719957,-111.836527",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/295431832",
+    "lat": 39.7199569,
+    "lon": -111.8365271
+  },
+  {
+    "business_id": "napa-auto-parts-ut-6",
+    "name": "NAPA Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Monticello",
+    "state": "UT",
+    "address": "64, South Main Street, Monticello, UT, 84535",
+    "phone": "+1 435-587-2286",
+    "website": "https://www.napaonline.com/en/ut/monticello/store/27913?cid=pl_DAC_jobber_MotorPartsOfMonticello_27913",
+    "google_maps_link": "https://www.google.com/maps?q=37.871800,-109.343444",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/325356793",
+    "lat": 37.8718003,
+    "lon": -109.3434442
+  },
+  {
+    "business_id": "napa-auto-parts-ut-4",
+    "name": "NAPA Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Tooele",
+    "state": "UT",
+    "address": "507, East 2400 North, Tooele, UT, 84074",
+    "phone": "+1-435-243-5404",
+    "website": "https://napaonline.com",
+    "google_maps_link": "https://www.google.com/maps?q=40.573445,-112.291110",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1384439223",
+    "lat": 40.5734445,
+    "lon": -112.2911098
+  },
+  {
+    "business_id": "napa-auto-parts-ut-7",
+    "name": "NAPA Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Salina",
+    "state": "UT",
+    "address": "65 N, State Street, Salina, UT, 84654",
+    "phone": "+14355297464",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=38.958274,-111.860383",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/494922366",
+    "lat": 38.9582736,
+    "lon": -111.8603834
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "1122, South State Street, Salt Lake City, UT, 84111",
+    "phone": "+1-801-484-4123",
+    "website": "https://locations.oreillyauto.com/ut/saltlakecity/autoparts-2694.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.744633,-111.888660",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10029954384",
+    "lat": 40.7446331,
+    "lon": -111.88866
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-2",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Naples",
+    "state": "UT",
+    "address": "1015 S, 1500 East, Naples, UT, 84078",
+    "phone": "+1 435-789-9248",
+    "website": "https://locations.oreillyauto.com/ut/naples/autoparts-6292.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.441124,-109.499084",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12644789398",
+    "lat": 40.4411236,
+    "lon": -109.4990842
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-3",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Ogden",
+    "state": "UT",
+    "address": "3114, Washington Boulevard, Ogden, UT, 84401",
+    "phone": "+1 801-621-4033",
+    "website": "https://locations.oreillyauto.com/ut/ogden/autoparts-2817.html",
+    "google_maps_link": "https://www.google.com/maps?q=41.207640,-111.970574",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12926702590",
+    "lat": 41.2076398,
+    "lon": -111.9705741
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-18",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Roy",
+    "state": "UT",
+    "address": "5881, South 1900 West, Roy, UT, 84067",
+    "phone": "+1 801-825-3066",
+    "website": "https://locations.oreillyauto.com/en-us/ut/roy/autoparts-2834.html",
+    "google_maps_link": "https://www.google.com/maps?q=41.156142,-112.026758",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/27422043",
+    "lat": 41.1561421,
+    "lon": -112.0267577
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-28",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Layton",
+    "state": "UT",
+    "address": "805, East 1000 North, Layton, UT, 84041",
+    "phone": "+1 801-593-6919",
+    "website": "https://locations.oreillyauto.com/ut/layton/autoparts-3604.html",
+    "google_maps_link": "https://www.google.com/maps?q=41.075008,-111.951599",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/81344902",
+    "lat": 41.0750079,
+    "lon": -111.9515994
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-29",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Kaysville",
+    "state": "UT",
+    "address": "315, West 200 North, Kaysville, UT, 84037",
+    "phone": "+1 801-444-1930",
+    "website": "https://locations.oreillyauto.com/ut/kaysville/autoparts-3116.html",
+    "google_maps_link": "https://www.google.com/maps?q=41.037644,-111.944414",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/89846341",
+    "lat": 41.037644,
+    "lon": -111.944414
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-19",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "South Jordan",
+    "state": "UT",
+    "address": "10363 S, Redwood Road, South Jordan, UT, 84095",
+    "phone": "+1-801-446-9382",
+    "website": "https://locations.oreillyauto.com/ut/southjordan/autoparts-2865.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.564122,-111.938086",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/306461528",
+    "lat": 40.5641217,
+    "lon": -111.9380856
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-20",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Hurricane",
+    "state": "UT",
+    "address": "825, West State Street, Hurricane, UT, 84737",
+    "phone": "+1-435-635-4252",
+    "website": "https://locations.oreillyauto.com/ut/hurricane/autoparts-3766.html",
+    "google_maps_link": "https://www.google.com/maps?q=37.176173,-113.303020",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/324493478",
+    "lat": 37.1761733,
+    "lon": -113.3030202
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-23",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Riverton",
+    "state": "UT",
+    "address": "1920 W, 12600 South, Riverton, UT, 84065",
+    "phone": "+1-801-446-1470",
+    "website": "https://locations.oreillyauto.com/ut/riverton/autoparts-3606.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.522691,-111.942845",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/462959577",
+    "lat": 40.5226905,
+    "lon": -111.9428448
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-25",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Tooele",
+    "state": "UT",
+    "address": "870, North Main Street, Tooele, UT, 84074",
+    "phone": "+1-435-882-8080",
+    "website": "https://locations.oreillyauto.com/ut/tooele/autoparts-2882.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.546612,-112.297502",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/556608010",
+    "lat": 40.5466124,
+    "lon": -112.2975025
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-26",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Lehi",
+    "state": "UT",
+    "address": "1744, S SR-92, Lehi, UT, 84043",
+    "phone": "+1 801-768-0419",
+    "website": "https://locations.oreillyauto.com/ut/lehi/autoparts-4473.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.430518,-111.821910",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/568726269",
+    "lat": 40.4305176,
+    "lon": -111.8219099
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-9",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "West Jordan",
+    "state": "UT",
+    "address": "3235, West 7800 South, West Jordan, UT, 84088",
+    "phone": "+1 801-280-2875",
+    "website": "https://www.oreillyauto.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.609066,-111.968262",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1018154531",
+    "lat": 40.6090665,
+    "lon": -111.9682616
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-10",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "West Valley City",
+    "state": "UT",
+    "address": "3408, West 3500 South, West Valley City, UT, 84119",
+    "phone": "+1 801-957-9662",
+    "website": "https://locations.oreillyauto.com/ut/westvalleycity/autoparts-2873.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.696996,-111.972458",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1049658012",
+    "lat": 40.6969961,
+    "lon": -111.9724576
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-12",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Eagle Mountain",
+    "state": "UT",
+    "address": "4266, East Pony Express Parkway, Eagle Mountain, UT, 84005",
+    "phone": "+13852871933",
+    "website": "https://locations.oreillyauto.com/ut/eaglemountain/autoparts-6207.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.361776,-111.962032",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1149252365",
+    "lat": 40.361776,
+    "lon": -111.962032
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-14",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Salem",
+    "state": "UT",
+    "address": "407, East 870 North, Salem, UT, 84653",
+    "phone": "+1-385-200-3025",
+    "website": "https://www.oreillyauto.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.068668,-111.664962",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1412930250",
+    "lat": 40.0686683,
+    "lon": -111.6649618
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-6",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "UT",
+    "address": "812, East 200 South, UT",
+    "phone": "+1 801-441-5048",
+    "website": "https://locations.oreillyauto.com/ut/saltlakecity/autoparts-6702.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.764659,-111.867547",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/7983142658",
+    "lat": 40.7646592,
+    "lon": -111.867547
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-4",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Murray",
+    "state": "UT",
+    "address": "4401 S, State Street, Murray, UT, 84107",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ut/murray/autoparts-2856.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.675214,-111.887323",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/3779008258",
+    "lat": 40.6752136,
+    "lon": -111.8873234
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-5",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Vineyard",
+    "state": "UT",
+    "address": "179, North Geneva Road, Vineyard, UT, 84059",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ut/vineyard/autoparts-5886.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.300197,-111.734558",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/7041182397",
+    "lat": 40.3001974,
+    "lon": -111.7345576
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-7",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Logan",
+    "state": "UT",
+    "address": "9, East 1400 North, Logan, UT, 84341",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ut/logan/autoparts-2756.html",
+    "google_maps_link": "https://www.google.com/maps?q=41.758924,-111.833609",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9387393435",
+    "lat": 41.758924,
+    "lon": -111.8336091
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-16",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Moab",
+    "state": "UT",
+    "address": "Moab, UT, 84532",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ut/moab/autoparts-3792.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.557316,-109.543319",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/185544409",
+    "lat": 38.5573164,
+    "lon": -109.5433192
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-17",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Midvale",
+    "state": "UT",
+    "address": "681, East Fort Union Boulevard, Midvale, UT, 84047",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ut/midvale/autoparts-3676.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.621092,-111.872503",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/239079650",
+    "lat": 40.6210919,
+    "lon": -111.872503
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-21",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Taylorsville",
+    "state": "UT",
+    "address": "4020 S, Redwood Road, Taylorsville, UT, 84123",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ut/taylorsville/autoparts-3198.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.684240,-111.939507",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/354335260",
+    "lat": 40.68424,
+    "lon": -111.9395072
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-22",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Woods Cross",
+    "state": "UT",
+    "address": "519, West 750 South, Woods Cross, UT, 84010",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ut/woodscross/autoparts-2898.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.881738,-111.892888",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/432006801",
+    "lat": 40.8817381,
+    "lon": -111.8928883
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-24",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Draper",
+    "state": "UT",
+    "address": "627, 12300 South, Draper, UT",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ut/draper/autoparts-3659.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.527422,-111.873883",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/465315030",
+    "lat": 40.5274219,
+    "lon": -111.8738834
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-27",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Spanish Fork",
+    "state": "UT",
+    "address": "272, East 1000 North Street, Spanish Fork, UT, 84660",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ut/spanishfork/autoparts-2988.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.122267,-111.649902",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/730016570",
+    "lat": 40.1222669,
+    "lon": -111.6499016
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-30",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Orem",
+    "state": "UT",
+    "address": "1108, North State Street, Orem, UT, 84057",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ut/orem/autoparts-2962.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.317186,-111.703299",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/918456928",
+    "lat": 40.3171862,
+    "lon": -111.7032995
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-11",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Centerville",
+    "state": "UT",
+    "address": "205, West Parrish Lane, Centerville, UT, 84014",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ut/centerville/autoparts-3665.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.921191,-111.882226",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1127621905",
+    "lat": 40.9211905,
+    "lon": -111.8822263
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-13",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "American Fork",
+    "state": "UT",
+    "address": "194, E Main St., American Fork, UT, 84003",
+    "phone": "+1 801 763 7367",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.376092,-111.793697",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1305582539",
+    "lat": 40.3760923,
+    "lon": -111.793697
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-15",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "North Ogden",
+    "state": "UT",
+    "address": "2596, North 300 East, North Ogden, UT, 84414",
+    "phone": "+1-801-564-6059",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=41.305328,-111.971586",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1417647932",
+    "lat": 41.3053276,
+    "lon": -111.9715863
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ut-8",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Nephi",
+    "state": "UT",
+    "address": "1259 N, Main Street, Nephi, UT, 84648",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ut/nephi/autoparts-5840.html",
+    "google_maps_link": "https://www.google.com/maps?q=39.726703,-111.836832",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "relation/19143026",
+    "lat": 39.7267027,
+    "lon": -111.8368315
+  },
+  {
+    "business_id": "parts-authority-ut",
+    "name": "Parts Authority",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Logan",
+    "state": "UT",
+    "address": "645, West 1000 North, Logan, UT, 84321",
+    "phone": "+1 435-753-4888",
+    "website": "https://partsauthority.com/locations/utah/nearby-logan-aftermarket-automotive-parts",
+    "google_maps_link": "https://www.google.com/maps?q=41.750856,-111.849779",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10030527042",
+    "lat": 41.7508558,
+    "lon": -111.8497795
+  },
+  {
+    "business_id": "premium-auto-parts-ut",
+    "name": "Premium Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "1775, North Chicago Street, Salt Lake City, UT, 84116",
+    "phone": "+1-801-746-3331",
+    "website": "http://www.premiumautopartsinc.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.804320,-111.918718",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/930031595",
+    "lat": 40.8043198,
+    "lon": -111.9187183
+  },
+  {
+    "business_id": "red-desert-off-road-ut",
+    "name": "Red Desert Off-Road",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "St. George",
+    "state": "UT",
+    "address": "4012, River Road, St. George, UT, 84790",
+    "phone": "+1-435-627-6888",
+    "website": "https://www.reddesertoffroad.com/",
+    "google_maps_link": "https://www.google.com/maps?q=37.040465,-113.557132",
+    "tags": [
+      "parts",
+      "retail",
+      "4x4"
+    ],
+    "jeep_note": "4x4 focused",
+    "source": "OSM",
+    "osm_id": "node/13364018763",
+    "lat": 37.0404649,
+    "lon": -113.5571323
+  },
+  {
+    "business_id": "south-bountiful-auto-parts-ut",
+    "name": "South Bountiful Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Woods Cross",
+    "state": "UT",
+    "address": "2166, West 2425 South, Woods Cross, UT, 84087",
+    "phone": "+1-801-292-2489",
+    "website": "http://southbountifulauto.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.864635,-111.940761",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/846440268",
+    "lat": 40.8646349,
+    "lon": -111.9407609
+  },
+  {
+    "business_id": "state-trailer-supply-ut",
+    "name": "State Trailer Supply",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "3600 S, Redwood Road, Salt Lake City, UT, 84119",
+    "phone": "+1 801-978-0400",
+    "website": "https://www.statetrailer.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.693972,-111.939600",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "Trail builds",
+    "source": "OSM",
+    "osm_id": "way/358900903",
+    "lat": 40.6939716,
+    "lon": -111.9396
+  },
+  {
+    "business_id": "truckpro-six-states-distributors-inc-ut",
+    "name": "TruckPro - Six States Distributors, Inc.",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Logan",
+    "state": "UT",
+    "address": "1077, West 1400 North, Logan, UT, 84321",
+    "phone": "+1 435-753-9191",
+    "website": "http://www.sixstates.com/",
+    "google_maps_link": "https://www.google.com/maps?q=41.757640,-111.860346",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1003290091",
+    "lat": 41.7576399,
+    "lon": -111.8603464
+  },
+  {
+    "business_id": "young-wholesale-parts-ut",
+    "name": "Young Wholesale Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Layton",
+    "state": "UT",
+    "address": "613, West 500 North, Layton, UT, 84041",
+    "phone": "+1 801-544-1835",
+    "website": "https://youngwholesaleparts.com/",
+    "google_maps_link": "https://www.google.com/maps?q=41.067884,-111.976292",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/51759070",
+    "lat": 41.0678841,
+    "lon": -111.9762921
+  },
+  {
+    "business_id": "j-mac-radiator-ut",
+    "name": "J-MAC Radiator",
+    "category": "Radiator and Cooling Specialists",
+    "city": "South Salt Lake",
+    "state": "UT",
+    "address": "3520 S, State Street, South Salt Lake, UT, 84115",
+    "phone": "+1-801-268-0919",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.694881,-111.889080",
+    "tags": [
+      "radiator",
+      "cooling"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1057189936",
+    "lat": 40.6948806,
+    "lon": -111.8890801
+  },
+  {
+    "business_id": "st-george-muffler-and-radiator-ut",
+    "name": "St. George Muffler and Radiator",
+    "category": "Radiator and Cooling Specialists",
+    "city": "St. George",
+    "state": "UT",
+    "address": "28, North University Avenue, St. George, UT, 84770",
+    "phone": "+1 435-673-2948",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=37.108723,-113.568241",
+    "tags": [
+      "radiator",
+      "cooling"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12194644290",
+    "lat": 37.1087233,
+    "lon": -113.5682405
+  },
+  {
+    "business_id": "aamco-ut",
+    "name": "AAMCO",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Taylorsville",
+    "state": "UT",
+    "address": "3692, West 5400 South, Taylorsville, UT, 84129",
+    "phone": "+1 801-410-7757",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.653430,-111.978882",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12166879678",
+    "lat": 40.6534299,
+    "lon": -111.9788823
+  },
+  {
+    "business_id": "aaron-s-auto-pro-ut",
+    "name": "Aaron's Auto Pro",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Bountiful",
+    "state": "UT",
+    "address": "845, South 500 West, Bountiful, UT, 84010",
+    "phone": "+1 801-295-6891",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.879778,-111.891730",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1126962781",
+    "lat": 40.8797779,
+    "lon": -111.8917296
+  },
+  {
+    "business_id": "ace-auto-ut",
+    "name": "Ace Auto",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "West Jordan",
+    "state": "UT",
+    "address": "3399 W, 8395 South, West Jordan, UT, 84088",
+    "phone": "+1-801-803-6016",
+    "website": "https://aceautoutah.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.598372,-111.972479",
+    "tags": [
+      "repair",
+      "mechanic",
+      "jeep"
+    ],
+    "jeep_note": "Jeep mentioned",
+    "source": "OSM",
+    "osm_id": "way/720414356",
+    "lat": 40.598372,
+    "lon": -111.9724791
+  },
+  {
+    "business_id": "affordable-car-care-ut",
+    "name": "Affordable Car Care",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "West Valley City",
+    "state": "UT",
+    "address": "3385 W, 3500 South, West Valley City, UT, 84119",
+    "phone": "+1-801-205-2050",
+    "website": "https://www.1carcare.com",
+    "google_maps_link": "https://www.google.com/maps?q=40.696267,-111.971923",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/997998145",
+    "lat": 40.6962674,
+    "lon": -111.9719234
+  },
+  {
+    "business_id": "ahns-custom-vinyl-ut",
+    "name": "Ahns Custom & Vinyl",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "+1 801 935 4943",
+    "website": "https://AhnsCustom.com",
+    "google_maps_link": "https://www.google.com/maps?q=40.696614,-111.896367",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9181368551",
+    "lat": 40.6966144,
+    "lon": -111.896367
+  },
+  {
+    "business_id": "airview-service-ut",
+    "name": "Airview Service",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "1646, 1100 East, Salt Lake City, UT, 84105",
+    "phone": "+1 801-484-5807",
+    "website": "https://airviewservice.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.733739,-111.860048",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/531878896",
+    "lat": 40.7337393,
+    "lon": -111.8600483
+  },
+  {
+    "business_id": "alpine-foreign-repair-ut",
+    "name": "Alpine Foreign Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "341 E, 900 South, Salt Lake City, UT",
+    "phone": "+1-801-355-6459",
+    "website": "https://www.alpineforeignrepair.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.750057,-111.881306",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4374905554",
+    "lat": 40.750057,
+    "lon": -111.881306
+  },
+  {
+    "business_id": "auto-car-solutions-ut",
+    "name": "Auto Car Solutions",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "15, North 900 West, Salt Lake City, UT",
+    "phone": "+1-801-953-6432",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.769877,-111.917322",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12863135888",
+    "lat": 40.7698771,
+    "lon": -111.9173216
+  },
+  {
+    "business_id": "autoworks-car-care-ut",
+    "name": "AutoWorks Car Care",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Payson",
+    "state": "UT",
+    "address": "484, East 100 North, Payson, UT, 84651",
+    "phone": "+1-801-465-9096",
+    "website": "https://autoworkscarcare.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.044056,-111.725668",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/465915243",
+    "lat": 40.0440562,
+    "lon": -111.7256676
+  },
+  {
+    "business_id": "basin-collision-repair-ut",
+    "name": "Basin Collision Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Vernal",
+    "state": "UT",
+    "address": "2243 W 1500 S, Vernal, UT, 84078",
+    "phone": "+1 435-789-7568",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.433027,-109.570586",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5739560764",
+    "lat": 40.4330267,
+    "lon": -109.5705855
+  },
+  {
+    "business_id": "big-o-tires-ut",
+    "name": "Big O Tires",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Murray",
+    "state": "UT",
+    "address": "6039 S, State Street, Murray, UT, 84107",
+    "phone": "",
+    "website": "https://www.bigotires.com/location/ut/murray/6039-s-state-st-84107/044268",
+    "google_maps_link": "https://www.google.com/maps?q=40.639777,-111.888071",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/548215956",
+    "lat": 40.6397766,
+    "lon": -111.8880707
+  },
+  {
+    "business_id": "bimmer-motorwerks-ut",
+    "name": "Bimmer Motorwerks",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "59, 1700 South, Salt Lake City, UT, 84115",
+    "phone": "+1-801-485-4565",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.733800,-111.889025",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/616844863",
+    "lat": 40.7338003,
+    "lon": -111.8890251
+  },
+  {
+    "business_id": "blackridge-service-ut",
+    "name": "Blackridge Service",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "New Harmony",
+    "state": "UT",
+    "address": "3802, East Highway 144, New Harmony, UT, 84757",
+    "phone": "+1-435-218-1767",
+    "website": "https://www.blackridgeservice.net",
+    "google_maps_link": "https://www.google.com/maps?q=37.481275,-113.222667",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/822722324",
+    "lat": 37.4812752,
+    "lon": -113.2226666
+  },
+  {
+    "business_id": "burt-brothers-ut-2",
+    "name": "Burt Brothers",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Bountiful",
+    "state": "UT",
+    "address": "2885, South Highway 89, Bountiful, UT, 84010",
+    "phone": "+1 801-299-1142",
+    "website": "https://burtbrothers.com/bountiful",
+    "google_maps_link": "https://www.google.com/maps?q=40.858578,-111.898080",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/881060201",
+    "lat": 40.8585784,
+    "lon": -111.8980796
+  },
+  {
+    "business_id": "burt-brothers-ut",
+    "name": "Burt Brothers",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Highland",
+    "state": "UT",
+    "address": "10918, North Town Center Boulevard, Highland, UT, 84003",
+    "phone": "+1 801 492 6300",
+    "website": "https://burtbrothers.com/locations/highland/",
+    "google_maps_link": "https://www.google.com/maps?q=40.430282,-111.788707",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1312881400",
+    "lat": 40.4302819,
+    "lon": -111.7887073
+  },
+  {
+    "business_id": "burts-auto-body-glass-shop-ut",
+    "name": "Burts Auto Body & Glass Shop",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "+14357236068",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=41.523026,-112.015083",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/948785940",
+    "lat": 41.523026,
+    "lon": -112.0150828
+  },
+  {
+    "business_id": "c-m-tires-ut",
+    "name": "C & M Tires",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Clearfield",
+    "state": "UT",
+    "address": "548, N Main St, Clearfield, UT, 84015",
+    "phone": "+1 801 7738159",
+    "website": "https://www.cmtires.com/",
+    "google_maps_link": "https://www.google.com/maps?q=41.121513,-112.025636",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/703556405",
+    "lat": 41.1215126,
+    "lon": -112.0256357
+  },
+  {
+    "business_id": "caliber-collision-ut",
+    "name": "Caliber Collision",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Lehi",
+    "state": "UT",
+    "address": "1614, North Boston Street, Lehi, UT, 84045",
+    "phone": "+1-385-374-1459",
+    "website": "https://www.caliber.com/find-a-location/lehi",
+    "google_maps_link": "https://www.google.com/maps?q=40.407388,-111.917330",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1465132815",
+    "lat": 40.407388,
+    "lon": -111.9173296
+  },
+  {
+    "business_id": "carbmaster-ut",
+    "name": "Carbmaster",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "West Jordan",
+    "state": "UT",
+    "address": "8409 W, Old Bingham Highway, West Jordan, UT, 84088",
+    "phone": "+1-801-280-1011",
+    "website": "https://www.carbmaster.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.598293,-111.972734",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/720414355",
+    "lat": 40.5982933,
+    "lon": -111.9727337
+  },
+  {
+    "business_id": "carsmart-ut-2",
+    "name": "CarSmart",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Hyrum",
+    "state": "UT",
+    "address": "45, South 800 East, Hyrum, UT, 84319",
+    "phone": "+1 435 363 0009",
+    "website": "https://www.carsmartautorepair.com/hyrum",
+    "google_maps_link": "https://www.google.com/maps?q=41.632562,-111.831927",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/953572382",
+    "lat": 41.6325618,
+    "lon": -111.8319274
+  },
+  {
+    "business_id": "carsmart-ut",
+    "name": "CarSmart",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Logan",
+    "state": "UT",
+    "address": "58 1/2, West 400 North, Logan, UT, 84321",
+    "phone": "+1 435-787-9458",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=41.738402,-111.836620",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11815242904",
+    "lat": 41.7384023,
+    "lon": -111.8366205
+  },
+  {
+    "business_id": "carter-s-automotive-ut",
+    "name": "Carter's Automotive",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Pleasant Grove",
+    "state": "UT",
+    "address": "681, West State Street, Pleasant Grove, UT, 84062",
+    "phone": "+1-801-785-3941",
+    "website": "https://www.cartersrepair.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.364519,-111.750305",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/228272858",
+    "lat": 40.3645187,
+    "lon": -111.7503052
+  },
+  {
+    "business_id": "cascade-collision-repair-ut",
+    "name": "Cascade Collision Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Lehi",
+    "state": "UT",
+    "address": "175, N 1200 E, Lehi, UT, 84043",
+    "phone": "+1 801-768-8010",
+    "website": "https://cascadecollision.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.389583,-111.830727",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12540944244",
+    "lat": 40.3895831,
+    "lon": -111.8307275
+  },
+  {
+    "business_id": "cascade-collision-repair-ut-2",
+    "name": "Cascade Collision Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Orem",
+    "state": "UT",
+    "address": "1005, N State St, Orem, UT, 84057",
+    "phone": "+1 801-224-8020",
+    "website": "https://cascadecollision.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.315879,-111.704348",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12540977420",
+    "lat": 40.3158787,
+    "lon": -111.7043482
+  },
+  {
+    "business_id": "cascade-collision-repair-ut-3",
+    "name": "Cascade Collision Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Provo",
+    "state": "UT",
+    "address": "1155, S State St, Provo, UT, 84606",
+    "phone": "+1 801-373-8020",
+    "website": "https://cascadecollision.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.218600,-111.637549",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12540998674",
+    "lat": 40.2185997,
+    "lon": -111.6375492
+  },
+  {
+    "business_id": "cascade-collision-repair-ut-4",
+    "name": "Cascade Collision Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Ogden",
+    "state": "UT",
+    "address": "3520, Wall Avenue, Ogden, UT, 84401",
+    "phone": "+1 801-395-1946",
+    "website": "https://cascadecollision.com/",
+    "google_maps_link": "https://www.google.com/maps?q=41.199451,-111.978823",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12541115456",
+    "lat": 41.199451,
+    "lon": -111.9788227
+  },
+  {
+    "business_id": "cascade-collision-repair-ut-5",
+    "name": "Cascade Collision Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Park City",
+    "state": "UT",
+    "address": "4021, N Forestdale Dr, Park City, UT, 84098",
+    "phone": "+1 435-655-8010",
+    "website": "https://cascadecollision.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.689197,-111.464203",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12541143511",
+    "lat": 40.6891975,
+    "lon": -111.4642027
+  },
+  {
+    "business_id": "cascade-collision-repair-ut-6",
+    "name": "Cascade Collision Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Spanish Fork",
+    "state": "UT",
+    "address": "1912, N Main St, Spanish Fork, UT, 84660",
+    "phone": "+1 801-794-9455",
+    "website": "https://cascadecollision.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.134760,-111.654443",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12541190039",
+    "lat": 40.1347598,
+    "lon": -111.6544433
+  },
+  {
+    "business_id": "cascade-collision-repair-ut-7",
+    "name": "Cascade Collision Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "West Haven",
+    "state": "UT",
+    "address": "3747, Midland Dr, West Haven, UT, 84401",
+    "phone": "+1 801-731-2369",
+    "website": "https://cascadecollision.com/",
+    "google_maps_link": "https://www.google.com/maps?q=41.195641,-112.043519",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12541201240",
+    "lat": 41.1956408,
+    "lon": -112.0435191
+  },
+  {
+    "business_id": "cascade-collision-repair-ut-8",
+    "name": "Cascade Collision Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Midvale",
+    "state": "UT",
+    "address": "8062, S State St, Midvale, UT, 84047",
+    "phone": "+1 801-996-8369",
+    "website": "https://cascadecollision.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.604953,-111.891558",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12541253130",
+    "lat": 40.6049525,
+    "lon": -111.8915575
+  },
+  {
+    "business_id": "cascade-collision-repair-ut-9",
+    "name": "Cascade Collision Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Murray",
+    "state": "UT",
+    "address": "4759, Riverside Dr, Murray, UT, 84123",
+    "phone": "+1 801-355-5174",
+    "website": "https://cascadecollision.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.669167,-111.905113",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12541277283",
+    "lat": 40.6691667,
+    "lon": -111.905113
+  },
+  {
+    "business_id": "cascaed-collision-repair-ut",
+    "name": "Cascaed Collision Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Eagle Mountain",
+    "state": "UT",
+    "address": "4124, East Pony Express Parkway, Eagle Mountain, UT, 84005",
+    "phone": "+1 385-853-8010",
+    "website": "https://cascadecollision.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.361738,-111.964709",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1115294046",
+    "lat": 40.361738,
+    "lon": -111.9647087
+  },
+  {
+    "business_id": "castrol-premium-lube-express-ut",
+    "name": "Castrol Premium Lube Express",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "West Valley City",
+    "state": "UT",
+    "address": "3105 W, 3500 South, West Valley City, UT, 84119",
+    "phone": "+1 801-417-8387",
+    "website": "http://www.castrolpremiumlube.com/Store/1630/",
+    "google_maps_link": "https://www.google.com/maps?q=40.696426,-111.965437",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9649197537",
+    "lat": 40.6964261,
+    "lon": -111.9654374
+  },
+  {
+    "business_id": "certified-automotive-ut",
+    "name": "Certified Automotive",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "",
+    "website": "https://www.certifiedauto.info/",
+    "google_maps_link": "https://www.google.com/maps?q=40.698446,-111.893541",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9181368536",
+    "lat": 40.6984462,
+    "lon": -111.8935409
+  },
+  {
+    "business_id": "charlie-s-service-center-ut",
+    "name": "Charlie's Service Center",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Sunset",
+    "state": "UT",
+    "address": "1901, North Main Street, Sunset, UT, 84015",
+    "phone": "+1-801-416-3373",
+    "website": "https://www.charliesservice.com",
+    "google_maps_link": "https://www.google.com/maps?q=41.141647,-112.026546",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/42478805",
+    "lat": 41.141647,
+    "lon": -112.0265457
+  },
+  {
+    "business_id": "chesty-s-auto-repair-ut",
+    "name": "Chesty's Auto Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Layton",
+    "state": "UT",
+    "address": "687, North Main Street, Layton, UT, 84041",
+    "phone": "+1 801-513-5227",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=41.070156,-111.976716",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4615139730",
+    "lat": 41.0701557,
+    "lon": -111.976716
+  },
+  {
+    "business_id": "christensen-s-point-s-ut",
+    "name": "Christensen's Point S",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "West Valley City",
+    "state": "UT",
+    "address": "4607 S, 5600 West, West Valley City, UT, 84120",
+    "phone": "+1 801-840-0772",
+    "website": "https://pointstire.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.669804,-112.024051",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5856227931",
+    "lat": 40.6698035,
+    "lon": -112.024051
+  },
+  {
+    "business_id": "colbys-tire-ut",
+    "name": "Colbys Tire",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "909, West South Temple, Salt Lake City, UT",
+    "phone": "+1 801-596-2425",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.768889,-111.917670",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12863135900",
+    "lat": 40.7688891,
+    "lon": -111.9176697
+  },
+  {
+    "business_id": "complete-automotive-solutions-ut",
+    "name": "Complete Automotive Solutions",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "+1 801-222-3213",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.303376,-111.696823",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12357196633",
+    "lat": 40.3033755,
+    "lon": -111.6968231
+  },
+  {
+    "business_id": "cougar-tire-auto-ut",
+    "name": "Cougar Tire & Auto",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Provo",
+    "state": "UT",
+    "address": "125, East 1230 North, Provo, UT, 84604",
+    "phone": "+1 801-374-6240",
+    "website": "https://cougartire.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.251054,-111.656605",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/202356247",
+    "lat": 40.2510542,
+    "lon": -111.6566045
+  },
+  {
+    "business_id": "cove-fort-towing-ut",
+    "name": "Cove Fort Towing",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Cove Fort",
+    "state": "UT",
+    "address": "17030, Highway 161, Cove Fort, UT, 84713",
+    "phone": "+1 435-438-5574",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=38.612326,-112.605240",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/693335865",
+    "lat": 38.6123262,
+    "lon": -112.6052401
+  },
+  {
+    "business_id": "d-v-auto-repair-ut",
+    "name": "D & V Auto Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Magna",
+    "state": "UT",
+    "address": "3495, South 8400 West, Magna, UT, 84044",
+    "phone": "+1 801-250-5742",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.696934,-112.091559",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1064663767",
+    "lat": 40.6969336,
+    "lon": -112.0915585
+  },
+  {
+    "business_id": "diesel-experts-ut",
+    "name": "Diesel Experts",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "+1 435-787-4223",
+    "website": "https://dieselexperts.co/",
+    "google_maps_link": "https://www.google.com/maps?q=41.737825,-111.859105",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11301057021",
+    "lat": 41.7378245,
+    "lon": -111.8591046
+  },
+  {
+    "business_id": "discount-tires-ut",
+    "name": "Discount Tires",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "UT",
+    "address": "1643, West 12600 South, UT",
+    "phone": "+1 801 446-2539",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.521706,-111.937288",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/463020855",
+    "lat": 40.5217061,
+    "lon": -111.9372879
+  },
+  {
+    "business_id": "dj-auto-ut",
+    "name": "DJ Auto",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Provo",
+    "state": "UT",
+    "address": "549, West Columbia Lane, Provo, UT, 84604",
+    "phone": "+1-801-737-1691",
+    "website": "https://mydjauto.com/index.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.250516,-111.668572",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1434411066",
+    "lat": 40.2505161,
+    "lon": -111.6685721
+  },
+  {
+    "business_id": "eden-automotive-ut",
+    "name": "Eden Automotive",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Eden",
+    "state": "UT",
+    "address": "4931 East, 2550 North, Eden, UT, 84310",
+    "phone": "+1-801-675-4931",
+    "website": "https://www.eden-automotive.com",
+    "google_maps_link": "https://www.google.com/maps?q=41.305551,-111.829730",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12202440978",
+    "lat": 41.3055515,
+    "lon": -111.82973
+  },
+  {
+    "business_id": "elite-emissions-sales-ut",
+    "name": "Elite Emissions & Sales",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Murray",
+    "state": "UT",
+    "address": "4659 S, State Street, Murray, UT, 84107",
+    "phone": "",
+    "website": "https://eliteemissions.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.670490,-111.887866",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10009043014",
+    "lat": 40.6704896,
+    "lon": -111.8878658
+  },
+  {
+    "business_id": "emissions-clinic-ut",
+    "name": "Emissions Clinic",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "775 S, 300 West, Salt Lake City, UT, 84101",
+    "phone": "+1 801-410-4544",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.752286,-111.899176",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/547991367",
+    "lat": 40.752286,
+    "lon": -111.899176
+  },
+  {
+    "business_id": "emissions-plus-ut-2",
+    "name": "Emissions Plus",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "1699, West North Temple, Salt Lake City, UT, 84116",
+    "phone": "+1 801-364-0215",
+    "website": "http://emissions-plus.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.771044,-111.938708",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/388557210",
+    "lat": 40.7710438,
+    "lon": -111.9387079
+  },
+  {
+    "business_id": "emissions-plus-ut",
+    "name": "Emissions Plus",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "American Fork",
+    "state": "UT",
+    "address": "162, South 400 East, American Fork, UT, 84003",
+    "phone": "+1 801 692 5178",
+    "website": "https://www.emissionsplusaf.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.373079,-111.788526",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1305578196",
+    "lat": 40.3730794,
+    "lon": -111.7885258
+  },
+  {
+    "business_id": "everest-collision-repair-ut",
+    "name": "Everest Collision Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Ogden",
+    "state": "UT",
+    "address": "1148, Century Drive, Ogden, UT, 84404",
+    "phone": "+1 801-393-1148",
+    "website": "http://www.everestcollisionrepairogden.com",
+    "google_maps_link": "https://www.google.com/maps?q=41.245638,-111.987886",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/51807912",
+    "lat": 41.245638,
+    "lon": -111.9878862
+  },
+  {
+    "business_id": "excel-automotive-repair-ut",
+    "name": "Excel Automotive Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "UT",
+    "address": "290 E, 3300 South, UT, 84115",
+    "phone": "+1 801-467-9011",
+    "website": "https://excelautomotiverepair.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.699343,-111.883081",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12688651501",
+    "lat": 40.6993426,
+    "lon": -111.8830808
+  },
+  {
+    "business_id": "express-oil-ut",
+    "name": "Express Oil",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Pleasant Grove",
+    "state": "UT",
+    "address": "1405, West State Street, Pleasant Grove, UT, 84062",
+    "phone": "",
+    "website": "https://www.expressoil.com/stores/pleasant-grove/ut/6500/",
+    "google_maps_link": "https://www.google.com/maps?q=40.367844,-111.761105",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1382828086",
+    "lat": 40.367844,
+    "lon": -111.7611051
+  },
+  {
+    "business_id": "fix-auto-riverton-ut",
+    "name": "Fix Auto Riverton",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Riverton",
+    "state": "UT",
+    "address": "3978 W, 12600 South, Riverton, UT, 84096",
+    "phone": "+1-801-302-9111",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.522796,-111.985755",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/465227797",
+    "lat": 40.5227955,
+    "lon": -111.9857552
+  },
+  {
+    "business_id": "flat-out-speed-shop-ut",
+    "name": "Flat Out Speed Shop",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Grantsville",
+    "state": "UT",
+    "address": "205, South Center Street, Grantsville, UT, 84029",
+    "phone": "+14358509805",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.595018,-112.469094",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11136185677",
+    "lat": 40.5950184,
+    "lon": -112.4690938
+  },
+  {
+    "business_id": "fulton-automotive-ut",
+    "name": "Fulton Automotive",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "2755 E, 3300 South, Salt Lake City, UT, 84109",
+    "phone": "+1-801-935-4572",
+    "website": "https://fultonautomotive.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.700158,-111.813883",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/620433475",
+    "lat": 40.7001581,
+    "lon": -111.8138825
+  },
+  {
+    "business_id": "fuzion-autoworks-ut",
+    "name": "Fuzion Autoworks",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Washington",
+    "state": "UT",
+    "address": "35, Industrial Drive, Washington, UT, 84780",
+    "phone": "+1 435-681-2161",
+    "website": "https://www.fuzionautoworks.com/",
+    "google_maps_link": "https://www.google.com/maps?q=37.115489,-113.509951",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13094695053",
+    "lat": 37.1154892,
+    "lon": -113.5099508
+  },
+  {
+    "business_id": "gines-service-ut",
+    "name": "Gines Service",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Kearns",
+    "state": "UT",
+    "address": "4261, West 5415 South, Kearns, UT, 84118",
+    "phone": "+1 801-966-6021",
+    "website": "https://www.ginesautoservice.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.652498,-111.992473",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/965257141",
+    "lat": 40.6524979,
+    "lon": -111.9924727
+  },
+  {
+    "business_id": "grease-monkey-ut-8",
+    "name": "Grease Monkey",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Pleasant Grove",
+    "state": "UT",
+    "address": "919, West State Street, Pleasant Grove, UT, 84062",
+    "phone": "+1-801-785-7272",
+    "website": "https://www.greasemonkey.com/locations/ut/pleasant-grove/919-west-state-st/",
+    "google_maps_link": "https://www.google.com/maps?q=40.366278,-111.754092",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/96895082",
+    "lat": 40.3662778,
+    "lon": -111.7540925
+  },
+  {
+    "business_id": "grease-monkey-ut-3",
+    "name": "Grease Monkey",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "American Fork",
+    "state": "UT",
+    "address": "589, West 130 North, American Fork, UT, 84003",
+    "phone": "+1 801 763 7572",
+    "website": "https://www.greasemonkeyauto.com/locations/us/ut/american-fork/589-130-north",
+    "google_maps_link": "https://www.google.com/maps?q=40.379306,-111.814021",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/287981342",
+    "lat": 40.3793056,
+    "lon": -111.8140207
+  },
+  {
+    "business_id": "grease-monkey-ut-4",
+    "name": "Grease Monkey",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Draper",
+    "state": "UT",
+    "address": "214, 13800 S, Draper, UT, 84020",
+    "phone": "+1-801-542-0366",
+    "website": "http://www.greasemonkeydraper805.com",
+    "google_maps_link": "https://www.google.com/maps?q=40.500351,-111.884449",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/570029315",
+    "lat": 40.5003509,
+    "lon": -111.8844486
+  },
+  {
+    "business_id": "grease-monkey-ut-5",
+    "name": "Grease Monkey",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Stansbury Park",
+    "state": "UT",
+    "address": "6663, North State Route 36, Stansbury Park, UT, 84074",
+    "phone": "+1 435-255-1720",
+    "website": "https://www.greasemonkey.com/locations/ut/stansbury-park/6663-utah-36/",
+    "google_maps_link": "https://www.google.com/maps?q=40.649982,-112.289334",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/848767874",
+    "lat": 40.6499817,
+    "lon": -112.2893345
+  },
+  {
+    "business_id": "grease-monkey-ut-6",
+    "name": "Grease Monkey",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "West Valley City",
+    "state": "UT",
+    "address": "2928 S, Glen Eagle Drive, West Valley City, UT, 84128",
+    "phone": "+1-801-969-0094",
+    "website": "https://www.greasemonkeyauto.com/locations/us/ut/west-valley-city/2928-south-glen-eagle-dr",
+    "google_maps_link": "https://www.google.com/maps?q=40.706872,-112.026301",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/850665119",
+    "lat": 40.7068719,
+    "lon": -112.0263007
+  },
+  {
+    "business_id": "grease-monkey-ut-2",
+    "name": "Grease Monkey",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Lehi",
+    "state": "UT",
+    "address": "1027, South 1100 West, Lehi, UT, 84043",
+    "phone": "+1-385-455-0044",
+    "website": "https://www.greasemonkeyauto.com/locations/us/ut/lehi/1027-s.-1100-w#services",
+    "google_maps_link": "https://www.google.com/maps?q=40.375677,-111.866557",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1380584419",
+    "lat": 40.3756769,
+    "lon": -111.8665568
+  },
+  {
+    "business_id": "grease-monkey-ut-7",
+    "name": "Grease Monkey",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Taylorsville",
+    "state": "UT",
+    "address": "3718, West 5400 South, Taylorsville, UT, 84129",
+    "phone": "+1 385-440-1390",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.653416,-111.979867",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/945651378",
+    "lat": 40.6534164,
+    "lon": -111.9798673
+  },
+  {
+    "business_id": "grease-monkey-ut",
+    "name": "Grease Monkey",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "+1 435 627 8444",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=37.121487,-113.521236",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/3614342660",
+    "lat": 37.1214868,
+    "lon": -113.521236
+  },
+  {
+    "business_id": "greenwood-service-ut",
+    "name": "Greenwood Service",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "American Fork",
+    "state": "UT",
+    "address": "202, E State Street, American Fork, UT, 84003",
+    "phone": "+1 801 756 2851",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.375330,-111.792590",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1305582538",
+    "lat": 40.3753305,
+    "lon": -111.79259
+  },
+  {
+    "business_id": "havoline-xpress-lube-ut",
+    "name": "Havoline Xpress Lube",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "West Valley City",
+    "state": "UT",
+    "address": "5534 W, 3500 South, West Valley City, UT, 84120",
+    "phone": "",
+    "website": "https://www.westvalleyxpresslube.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.696875,-112.023136",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1068060190",
+    "lat": 40.6968746,
+    "lon": -112.0231357
+  },
+  {
+    "business_id": "hillside-tire-service-ut",
+    "name": "Hillside Tire & Service",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Draper",
+    "state": "UT",
+    "address": "12241 S, State Street, Draper, UT, 84020",
+    "phone": "+1-801-619-6363",
+    "website": "https://www.hillsidetire.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.527685,-111.888156",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/224698911",
+    "lat": 40.5276853,
+    "lon": -111.8881564
+  },
+  {
+    "business_id": "hinkley-overlanding-ut",
+    "name": "Hinkley Overlanding",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "4231 S, State Street, Salt Lake City, UT, 84107",
+    "phone": "+1-801-484-8883",
+    "website": "https://www.hinckleyautomotive.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.679347,-111.887495",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/446620625",
+    "lat": 40.6793474,
+    "lon": -111.8874947
+  },
+  {
+    "business_id": "imt-auto-repair-and-small-engine-repair-ut",
+    "name": "IMT Auto Repair and Small Engine Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "+14352398249",
+    "website": "https://www.imtcomp.com/",
+    "google_maps_link": "https://www.google.com/maps?q=41.527450,-112.014703",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/948785979",
+    "lat": 41.5274504,
+    "lon": -112.0147031
+  },
+  {
+    "business_id": "j-s-auto-service-ut",
+    "name": "J & S Auto Service",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "1376 W, 1000 North, Salt Lake City, UT, 84116",
+    "phone": "+1-801-355-5573",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.791391,-111.930976",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/675437138",
+    "lat": 40.7913908,
+    "lon": -111.9309755
+  },
+  {
+    "business_id": "jake-s-automotive-ut",
+    "name": "Jake's Automotive",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Pleasant Grove",
+    "state": "UT",
+    "address": "215, North 600 West, Pleasant Grove, UT, 84062",
+    "phone": "+1-801-785-0337",
+    "website": "https://www.jakesautomotiveutah.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.366268,-111.750049",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/228394234",
+    "lat": 40.3662684,
+    "lon": -111.7500493
+  },
+  {
+    "business_id": "jake-s-quick-lube-and-services-ut",
+    "name": "Jake's Quick Lube and Services",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "4793 S, State Street, Salt Lake City, UT, 84107",
+    "phone": "+1 801-281-1935",
+    "website": "https://jakesquicklube.business.site/",
+    "google_maps_link": "https://www.google.com/maps?q=40.667229,-111.887752",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1133269468",
+    "lat": 40.6672294,
+    "lon": -111.887752
+  },
+  {
+    "business_id": "jeanette-auto-service-ut",
+    "name": "Jeanette Auto Service",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "4091 S, State Street, Salt Lake City, UT, 84107",
+    "phone": "+1-801-262-2065",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.682522,-111.887552",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9963920848",
+    "lat": 40.6825224,
+    "lon": -111.8875521
+  },
+  {
+    "business_id": "jeppson-automotive-repair-ut",
+    "name": "Jeppson Automotive Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "+1 801-879-1254",
+    "website": "https://www.jeppsonauto.com",
+    "google_maps_link": "https://www.google.com/maps?q=40.383680,-112.000437",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9392944450",
+    "lat": 40.3836799,
+    "lon": -112.0004372
+  },
+  {
+    "business_id": "jiffy-lube-ut-6",
+    "name": "Jiffy Lube",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Syracuse",
+    "state": "UT",
+    "address": "1129, West 1700 South, Syracuse, UT, 84075",
+    "phone": "+1 801-825-9300",
+    "website": "https://www.jiffylube.com/locations/ut/syracuse/3335",
+    "google_maps_link": "https://www.google.com/maps?q=41.088663,-112.048210",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/33301012",
+    "lat": 41.0886631,
+    "lon": -112.0482105
+  },
+  {
+    "business_id": "jiffy-lube-ut-7",
+    "name": "Jiffy Lube",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "North Salt Lake",
+    "state": "UT",
+    "address": "989, North Highway 89, North Salt Lake, UT, 84054",
+    "phone": "+1-801-296-1921",
+    "website": "https://www.jiffylube.com/locations/ut/north-salt-lake/2636",
+    "google_maps_link": "https://www.google.com/maps?q=40.859326,-111.898607",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/35936661",
+    "lat": 40.8593264,
+    "lon": -111.8986073
+  },
+  {
+    "business_id": "jiffy-lube-ut-4",
+    "name": "Jiffy Lube",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "757, West North Temple, Salt Lake City, UT, 84116",
+    "phone": "+1-801-355-1385",
+    "website": "https://www.jiffylube.com/locations/ut/salt-lake-city/2021",
+    "google_maps_link": "https://www.google.com/maps?q=40.771184,-111.912818",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/155922991",
+    "lat": 40.7711839,
+    "lon": -111.9128176
+  },
+  {
+    "business_id": "jiffy-lube-ut-5",
+    "name": "Jiffy Lube",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Riverton",
+    "state": "UT",
+    "address": "13318 S, Market Center Drive, Riverton, UT, 84065",
+    "phone": "+1-801-676-7528",
+    "website": "https://www.jiffylubeutah.com/locations",
+    "google_maps_link": "https://www.google.com/maps?q=40.509342,-111.981076",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/157636842",
+    "lat": 40.5093421,
+    "lon": -111.9810764
+  },
+  {
+    "business_id": "jiffy-lube-ut-8",
+    "name": "Jiffy Lube",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Layton",
+    "state": "UT",
+    "address": "236, North Fairfield Road, Layton, UT, 84041",
+    "phone": "+1 801-544-5041",
+    "website": "https://www.jiffylube.com/locations/ut/layton/1919",
+    "google_maps_link": "https://www.google.com/maps?q=41.063556,-111.946292",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/402209010",
+    "lat": 41.0635559,
+    "lon": -111.9462915
+  },
+  {
+    "business_id": "jiffy-lube-ut-11",
+    "name": "Jiffy Lube",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Ogden",
+    "state": "UT",
+    "address": "442, 12th Street, Ogden, UT, 84404",
+    "phone": "+1-801-689-2870",
+    "website": "https://www.jiffylube.com/locations/ut/ogden/3778",
+    "google_maps_link": "https://www.google.com/maps?q=41.244629,-111.968806",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/607448200",
+    "lat": 41.2446292,
+    "lon": -111.9688058
+  },
+  {
+    "business_id": "jiffy-lube-ut-2",
+    "name": "Jiffy Lube",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "West Valley City",
+    "state": "UT",
+    "address": "3796, West 3500 South, West Valley City, UT, 84120",
+    "phone": "+1 801-969-6457",
+    "website": "https://www.jiffylube.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.696937,-111.981839",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1053354461",
+    "lat": 40.6969367,
+    "lon": -111.9818391
+  },
+  {
+    "business_id": "jiffy-lube-ut",
+    "name": "Jiffy Lube",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Provo",
+    "state": "UT",
+    "address": "1575, North Freedom Boulevard, Provo, UT, 84604",
+    "phone": "+1 801-377-2072",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.255227,-111.662211",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11730762874",
+    "lat": 40.2552271,
+    "lon": -111.6622111
+  },
+  {
+    "business_id": "jiffy-lube-ut-9",
+    "name": "Jiffy Lube",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Orem",
+    "state": "UT",
+    "address": "809, North State Street, Orem, UT, 84057",
+    "phone": "+1 801-764-9500",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.312282,-111.702168",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/462632042",
+    "lat": 40.3122824,
+    "lon": -111.7021683
+  },
+  {
+    "business_id": "jiffy-lube-ut-10",
+    "name": "Jiffy Lube",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Eagle Mountain",
+    "state": "UT",
+    "address": "4019, East Pony Express Parkway, Eagle Mountain, UT, 84005",
+    "phone": "+1 801-789-4166",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.362496,-111.966362",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/479634182",
+    "lat": 40.3624961,
+    "lon": -111.9663617
+  },
+  {
+    "business_id": "jiffy-lube-ut-12",
+    "name": "Jiffy Lube",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Riverdale",
+    "state": "UT",
+    "address": "913, West Riverdale Road, Riverdale, UT",
+    "phone": "",
+    "website": "https://www.jiffylube.com/locations/ut/riverdale/3423",
+    "google_maps_link": "https://www.google.com/maps?q=41.176715,-112.001327",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/777223793",
+    "lat": 41.1767148,
+    "lon": -112.0013273
+  },
+  {
+    "business_id": "jiffy-lube-ut-13",
+    "name": "Jiffy Lube",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Taylorsville",
+    "state": "UT",
+    "address": "5373, South 2200 West, Taylorsville, UT, 84129",
+    "phone": "",
+    "website": "https://www.jiffylube.com/locations/ut/taylorsville/3732",
+    "google_maps_link": "https://www.google.com/maps?q=40.653474,-111.948035",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/960178112",
+    "lat": 40.6534744,
+    "lon": -111.9480352
+  },
+  {
+    "business_id": "jiffy-lube-ut-3",
+    "name": "Jiffy Lube",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Holladay",
+    "state": "UT",
+    "address": "2350, East 4500 South, Holladay, UT, 84117",
+    "phone": "+1 801-278-4760",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.674078,-111.823157",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1134018864",
+    "lat": 40.674078,
+    "lon": -111.8231567
+  },
+  {
+    "business_id": "jjh-auto-body-paint-ut",
+    "name": "JJH Auto Body & Paint",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "1039 S, Redwood Road, Salt Lake City, UT, 84104",
+    "phone": "+1-801-355-4311",
+    "website": "https://jjhautobodypaint.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.746330,-111.938592",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1047204501",
+    "lat": 40.74633,
+    "lon": -111.9385925
+  },
+  {
+    "business_id": "karl-malone-s-body-paint-ut",
+    "name": "Karl Malone's Body & Paint",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Draper",
+    "state": "UT",
+    "address": "11535, Lone Peak Parkway, Draper, UT, 84020",
+    "phone": "+1 801 553 5880",
+    "website": "https://www.karlmalonesbodyandpaint.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.541707,-111.895755",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/465102502",
+    "lat": 40.5417074,
+    "lon": -111.8957547
+  },
+  {
+    "business_id": "ken-garff-honda-downtown-repair-ut",
+    "name": "Ken Garff Honda Downtown Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "900 S, State Street, Salt Lake City, UT, 84111",
+    "phone": "+1-801-526-1730",
+    "website": "https://www.kengarffhondadowntown.com/service/",
+    "google_maps_link": "https://www.google.com/maps?q=40.748889,-111.889191",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10076906294",
+    "lat": 40.7488891,
+    "lon": -111.8891907
+  },
+  {
+    "business_id": "kenworth-sales-st-george-ut",
+    "name": "Kenworth Sales St. George",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "St. George",
+    "state": "UT",
+    "address": "4484, Desert Color Parkway, St. George, UT, 84790",
+    "phone": "",
+    "website": "https://www.kenworthsalesco.com",
+    "google_maps_link": "https://www.google.com/maps?q=37.031480,-113.600775",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1051366791",
+    "lat": 37.0314797,
+    "lon": -113.6007752
+  },
+  {
+    "business_id": "lance-paul-automotive-ut",
+    "name": "Lance Paul Automotive",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "North Salt Lake",
+    "state": "UT",
+    "address": "561 North, 700 West, North Salt Lake, UT, 84054",
+    "phone": "+18019286325",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.852047,-111.929233",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10292570339",
+    "lat": 40.852047,
+    "lon": -111.9292335
+  },
+  {
+    "business_id": "land-rover-service-ut",
+    "name": "Land Rover Service",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "320, 1700 South, Salt Lake City, UT, 84115",
+    "phone": "+1-801-*503-2683",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.733783,-111.900618",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/616845093",
+    "lat": 40.7337827,
+    "lon": -111.9006181
+  },
+  {
+    "business_id": "les-schwab-tire-center-saratoga-ut",
+    "name": "Les Schwab Tire Center - Saratoga",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "UT",
+    "address": "148, West Pioneer Crossing, UT, 84045",
+    "phone": "+1 385-352-7407",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.373657,-111.920253",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10278848109",
+    "lat": 40.3736574,
+    "lon": -111.9202532
+  },
+  {
+    "business_id": "liberty-auto-repair-ut",
+    "name": "Liberty Auto Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "",
+    "website": "https://libertyautorepairslc.com",
+    "google_maps_link": "https://www.google.com/maps?q=40.741430,-111.880020",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9180690696",
+    "lat": 40.7414304,
+    "lon": -111.88002
+  },
+  {
+    "business_id": "little-garage-inc-ut",
+    "name": "Little Garage, Inc.",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "1161, South 300 West, Salt Lake City, UT",
+    "phone": "+1 801-466-1161",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.743714,-111.899339",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/988433582",
+    "lat": 40.7437137,
+    "lon": -111.8993395
+  },
+  {
+    "business_id": "logicc-protection-studio-ut",
+    "name": "Logicc Protection Studio",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "1195, South 300 West, Salt Lake City, UT",
+    "phone": "+1 801-979-0619",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.742842,-111.899372",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/988433585",
+    "lat": 40.7428422,
+    "lon": -111.8993719
+  },
+  {
+    "business_id": "lucie-s-seat-covers-ut",
+    "name": "Lucie's Seat Covers",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "South Salt Lake",
+    "state": "UT",
+    "address": "3554 S, State Street, South Salt Lake, UT, 84115",
+    "phone": "+1-801-262-8123",
+    "website": "https://lucieseatcovers.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.693995,-111.888551",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9957041440",
+    "lat": 40.6939953,
+    "lon": -111.8885512
+  },
+  {
+    "business_id": "m-m-autocare-ut",
+    "name": "M&M Autocare",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Logan",
+    "state": "UT",
+    "address": "1650, North 100 West, Logan, UT, 84341",
+    "phone": "+1 435 753 0211",
+    "website": "https://mmautocare.com/",
+    "google_maps_link": "https://www.google.com/maps?q=41.762430,-111.837475",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10012351718",
+    "lat": 41.7624296,
+    "lon": -111.8374751
+  },
+  {
+    "business_id": "magna-s-automotive-center-ut",
+    "name": "Magna's Automotive Center",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Magna",
+    "state": "UT",
+    "address": "8840 W, Magna Main Street, Magna, UT, 84044",
+    "phone": "+1-801-250-1747",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.711336,-112.102468",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1101752483",
+    "lat": 40.7113363,
+    "lon": -112.1024676
+  },
+  {
+    "business_id": "main-street-mechanic-ut",
+    "name": "Main Street Mechanic",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "American Fork",
+    "state": "UT",
+    "address": "337, Main Street, American Fork, UT, 84003",
+    "phone": "+1 801-756-2661",
+    "website": "https://www.mainstreetmechanic.com",
+    "google_maps_link": "https://www.google.com/maps?q=40.376477,-111.807778",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1388077054",
+    "lat": 40.3764771,
+    "lon": -111.8077783
+  },
+  {
+    "business_id": "major-league-auto-repair-ut",
+    "name": "Major League Auto Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Pleasant Grove",
+    "state": "UT",
+    "address": "1983, West 680 North, Pleasant Grove, UT, 84062",
+    "phone": "+1-801-708-0914",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.370878,-111.768314",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10157497275",
+    "lat": 40.3708779,
+    "lon": -111.768314
+  },
+  {
+    "business_id": "mark-miller-toyota-service-ut",
+    "name": "Mark Miller Toyota Service",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "730 W, West Temple, Salt Lake City, UT, 84101",
+    "phone": "+1-855-959-1438",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.753449,-111.895175",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10076906260",
+    "lat": 40.7534487,
+    "lon": -111.8951749
+  },
+  {
+    "business_id": "martins-collision-repair-ut",
+    "name": "Martins Collision Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Orem",
+    "state": "UT",
+    "address": "225, State Street, Orem, UT, 84058",
+    "phone": "+1-801-226-2969",
+    "website": "https://martinscollision.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.292951,-111.692322",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12941681444",
+    "lat": 40.2929512,
+    "lon": -111.6923222
+  },
+  {
+    "business_id": "master-autotech-ut-2",
+    "name": "Master AutoTech",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Clearfield",
+    "state": "UT",
+    "address": "239, East 200 South, Clearfield, UT, 84015",
+    "phone": "+1 801-416-2064",
+    "website": "https://masterauto.tech/clearfield/",
+    "google_maps_link": "https://www.google.com/maps?q=41.111290,-112.022026",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9700839291",
+    "lat": 41.1112901,
+    "lon": -112.022026
+  },
+  {
+    "business_id": "master-autotech-ut",
+    "name": "Master Autotech",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Kearns",
+    "state": "UT",
+    "address": "4219, West 5415 South, Kearns, UT, 84118",
+    "phone": "+1 801-657-5000",
+    "website": "https://masterauto.tech/kearns/",
+    "google_maps_link": "https://www.google.com/maps?q=40.652460,-111.991361",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12167244710",
+    "lat": 40.6524603,
+    "lon": -111.9913606
+  },
+  {
+    "business_id": "master-autotech-ut-3",
+    "name": "Master Autotech",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Layton",
+    "state": "UT",
+    "address": "1591, North Main Street, Layton, UT, 84041",
+    "phone": "+1 801-663-7420",
+    "website": "https://masterauto.tech/layton/",
+    "google_maps_link": "https://www.google.com/maps?q=41.083194,-111.995440",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/34196702",
+    "lat": 41.0831939,
+    "lon": -111.99544
+  },
+  {
+    "business_id": "master-autotech-ut-5",
+    "name": "Master Autotech",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "North Salt Lake",
+    "state": "UT",
+    "address": "1025, North Highway 89, North Salt Lake, UT, 84054",
+    "phone": "+1-801-682-4406",
+    "website": "https://bountiful.mastermuffler.net/",
+    "google_maps_link": "https://www.google.com/maps?q=40.860020,-111.898095",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/41701326",
+    "lat": 40.8600201,
+    "lon": -111.8980946
+  },
+  {
+    "business_id": "master-autotech-ut-7",
+    "name": "Master Autotech",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Ogden",
+    "state": "UT",
+    "address": "3590, Wall Avenue, Ogden, UT, 84401",
+    "phone": "+1 801-938-8037",
+    "website": "https://masterauto.tech/ogden/",
+    "google_maps_link": "https://www.google.com/maps?q=41.198155,-111.979086",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/61515642",
+    "lat": 41.1981545,
+    "lon": -111.9790859
+  },
+  {
+    "business_id": "master-autotech-ut-8",
+    "name": "Master Autotech",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Logan",
+    "state": "UT",
+    "address": "601, North Main Street, Logan, UT, 84321",
+    "phone": "+1 435-485-9946",
+    "website": "https://masterauto.tech/logan/",
+    "google_maps_link": "https://www.google.com/maps?q=41.742828,-111.835149",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/998244499",
+    "lat": 41.7428277,
+    "lon": -111.8351491
+  },
+  {
+    "business_id": "master-autotech-ut-4",
+    "name": "Master AutoTech",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "UT",
+    "address": "690 S, Main Street, UT",
+    "phone": "+1-801-305-3049",
+    "website": "https://masterauto.tech/downtown-slc/",
+    "google_maps_link": "https://www.google.com/maps?q=40.754603,-111.891535",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/35965798",
+    "lat": 40.7546031,
+    "lon": -111.8915348
+  },
+  {
+    "business_id": "master-autotech-ut-6",
+    "name": "Master Autotech",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Provo",
+    "state": "UT",
+    "address": "825, West Center Street, Provo, UT, 84601",
+    "phone": "",
+    "website": "https://masterauto.tech/provo/",
+    "google_maps_link": "https://www.google.com/maps?q=40.233244,-111.673330",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/558663455",
+    "lat": 40.2332435,
+    "lon": -111.6733297
+  },
+  {
+    "business_id": "master-mechanic-ut",
+    "name": "Master Mechanic",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Providence",
+    "state": "UT",
+    "address": "142, North Gateway Drive, Providence, UT, 84332",
+    "phone": "+1 435-265-4345",
+    "website": "https://mastermechanicauto.com/",
+    "google_maps_link": "https://www.google.com/maps?q=41.710856,-111.828654",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10059736233",
+    "lat": 41.7108559,
+    "lon": -111.828654
+  },
+  {
+    "business_id": "master-muffler-ut-2",
+    "name": "Master Muffler",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Riverton",
+    "state": "UT",
+    "address": "2284 W, 12600 South, Riverton, UT, 84065",
+    "phone": "+1-801-436-5659",
+    "website": "https://riverton.mastermuffler.net/",
+    "google_maps_link": "https://www.google.com/maps?q=40.522867,-111.949722",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/465030368",
+    "lat": 40.5228674,
+    "lon": -111.9497223
+  },
+  {
+    "business_id": "master-muffler-ut",
+    "name": "Master Muffler",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "South Salt Lake",
+    "state": "UT",
+    "address": "3865 S, State Street, South Salt Lake, UT, 84115",
+    "phone": "+1-801-503-0049",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.687844,-111.887673",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1086744441",
+    "lat": 40.6878437,
+    "lon": -111.8876726
+  },
+  {
+    "business_id": "master-muffler-brake-complete-auto-care-ut",
+    "name": "Master Muffler & Brake Complete Auto Care",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "South Ogden",
+    "state": "UT",
+    "address": "1025 E, Chambers Street, South Ogden, UT, 84403",
+    "phone": "",
+    "website": "https://southogden.mastermuffler.net",
+    "google_maps_link": "https://www.google.com/maps?q=41.163965,-111.952500",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/7824243370",
+    "lat": 41.1639648,
+    "lon": -111.9524999
+  },
+  {
+    "business_id": "master-muffler-and-brake-ut",
+    "name": "Master Muffler And Brake",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Sandy",
+    "state": "UT",
+    "address": "9235, S 700 East, Sandy, UT, 84070",
+    "phone": "+1-801-566-0442",
+    "website": "https://www.mastermuffler.net",
+    "google_maps_link": "https://www.google.com/maps?q=40.584154,-111.871689",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1110622892",
+    "lat": 40.5841543,
+    "lon": -111.8716886
+  },
+  {
+    "business_id": "master-tech-automotive-ut",
+    "name": "Master Tech Automotive",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "1717 S, State Street, Salt Lake City, UT, 84115",
+    "phone": "+1 801-485-1212",
+    "website": "https://www.mastertechautomotive.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.732963,-111.887494",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/588296929",
+    "lat": 40.7329627,
+    "lon": -111.8874935
+  },
+  {
+    "business_id": "matt-s-off-road-recovery-ut",
+    "name": "Matt's Off-Road Recovery",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "UT",
+    "address": "455, North 2260 West, UT, 84737",
+    "phone": "+1-435-635-2231",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=37.182861,-113.330358",
+    "tags": [
+      "repair",
+      "mechanic",
+      "4x4"
+    ],
+    "jeep_note": "4x4 focused",
+    "source": "OSM",
+    "osm_id": "node/7341092186",
+    "lat": 37.1828612,
+    "lon": -113.3303575
+  },
+  {
+    "business_id": "millcreek-automotive-ut",
+    "name": "Millcreek Automotive",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "UT",
+    "address": "3385, Highland Drive, UT",
+    "phone": "+1 801-484-8311",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.697931,-111.849688",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/522750585",
+    "lat": 40.6979314,
+    "lon": -111.8496884
+  },
+  {
+    "business_id": "mitch-s-autoworks-ut",
+    "name": "Mitch's Autoworks",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Orem",
+    "state": "UT",
+    "address": "238, West 990 North, Orem, UT, 84057",
+    "phone": "+1-801-426-9990",
+    "website": "https://www.mitchsautoworks.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.315462,-111.700844",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5960781393",
+    "lat": 40.315462,
+    "lon": -111.7008442
+  },
+  {
+    "business_id": "moonlight-diesel-ut",
+    "name": "Moonlight Diesel",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "North Logan",
+    "state": "UT",
+    "address": "3280, North Main Street, North Logan, UT, 84341",
+    "phone": "+1 435-563-0643",
+    "website": "https://www.moonlightdiesel.com/",
+    "google_maps_link": "https://www.google.com/maps?q=41.792668,-111.832386",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1003338224",
+    "lat": 41.7926677,
+    "lon": -111.832386
+  },
+  {
+    "business_id": "neil-s-pro-service-ut",
+    "name": "Neil's Pro Service",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "1204 W, 600 North, Salt Lake City, UT, 84116",
+    "phone": "+1 801-521-0604",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.782724,-111.925981",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/155927726",
+    "lat": 40.7827237,
+    "lon": -111.9259812
+  },
+  {
+    "business_id": "new-image-body-paint-ut",
+    "name": "New Image Body & Paint",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Bountiful",
+    "state": "UT",
+    "address": "751, South 500 West, Bountiful, UT, 84010",
+    "phone": "+1 801-294-4210",
+    "website": "https://www.newimagebodypaint.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.881485,-111.891576",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/432008218",
+    "lat": 40.8814849,
+    "lon": -111.8915764
+  },
+  {
+    "business_id": "novus-glass-ut",
+    "name": "NOVUS Glass",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Logan",
+    "state": "UT",
+    "address": "355, North 50 West, Logan, UT, 84321",
+    "phone": "+1 435-770-8320",
+    "website": "https://www.novusglass.com/en-us/shop/logan/",
+    "google_maps_link": "https://www.google.com/maps?q=41.738202,-111.836617",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10897774883",
+    "lat": 41.7382022,
+    "lon": -111.8366167
+  },
+  {
+    "business_id": "parsons-service-center-ut",
+    "name": "Parsons Service Center",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Brigham City",
+    "state": "UT",
+    "address": "34, West 400 North, Brigham City, UT, 84302",
+    "phone": "+14357238566",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=41.519070,-112.016887",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/948729477",
+    "lat": 41.5190703,
+    "lon": -112.0168869
+  },
+  {
+    "business_id": "paskett-auto-complete-car-care-ut",
+    "name": "Paskett Auto Complete Car Care",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Roy",
+    "state": "UT",
+    "address": "4852, South 1900 West, Roy, UT, 84067",
+    "phone": "+1 385-233-4886",
+    "website": "https://www.autorepairroy.com/",
+    "google_maps_link": "https://www.google.com/maps?q=41.157941,-112.026481",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12926702574",
+    "lat": 41.1579407,
+    "lon": -112.0264806
+  },
+  {
+    "business_id": "paul-s-auto-repair-and-power-sports-ut",
+    "name": "Paul's Auto Repair and Power Sports",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Panguitch",
+    "state": "UT",
+    "address": "530 N, Main Street, Panguitch, UT, 84759",
+    "phone": "+1 435-676-8856",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=37.831314,-112.435241",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/351152966",
+    "lat": 37.8313136,
+    "lon": -112.4352409
+  },
+  {
+    "business_id": "payson-autobody-glass-llc-ut",
+    "name": "Payson Autobody & Glass, LLC.",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Payson",
+    "state": "UT",
+    "address": "438, South 100 West, Payson, UT, 84651",
+    "phone": "+1-801-465-3368",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.037690,-111.734285",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/466219521",
+    "lat": 40.0376899,
+    "lon": -111.7342847
+  },
+  {
+    "business_id": "pete-s-autoworks-ut",
+    "name": "Pete's Autoworks",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Washington",
+    "state": "UT",
+    "address": "35, Industrial Drive, Washington, UT, 84780",
+    "phone": "+1 435-773-7895",
+    "website": "http://www.petesautoworks.com/",
+    "google_maps_link": "https://www.google.com/maps?q=37.115460,-113.508651",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12183056858",
+    "lat": 37.1154595,
+    "lon": -113.5086507
+  },
+  {
+    "business_id": "point-s-ut",
+    "name": "Point S",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Bountiful",
+    "state": "UT",
+    "address": "400, West 500 South, Bountiful, UT, 84010",
+    "phone": "+1 801-294-2559",
+    "website": "https://gillspointstire.com/locations/400-w-500-s-tire-store-487",
+    "google_maps_link": "https://www.google.com/maps?q=40.884548,-111.889649",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12854479622",
+    "lat": 40.8845478,
+    "lon": -111.8896493
+  },
+  {
+    "business_id": "point-s-ut-2",
+    "name": "Point S",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "American Fork",
+    "state": "UT",
+    "address": "109, East 100 North, American Fork, UT, 84003",
+    "phone": "+1-801-756-7601",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.379290,-111.795210",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1302554007",
+    "lat": 40.3792897,
+    "lon": -111.7952101
+  },
+  {
+    "business_id": "precision-tune-auto-care-ut",
+    "name": "Precision Tune Auto Care",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Murray",
+    "state": "UT",
+    "address": "5851, South State Street, Murray, UT, 84107",
+    "phone": "+1 801-747-0145",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.644113,-111.888368",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/703151066",
+    "lat": 40.6441131,
+    "lon": -111.888368
+  },
+  {
+    "business_id": "precision-tune-auto-care-ut-2",
+    "name": "Precision Tune Auto Care",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Kearns",
+    "state": "UT",
+    "address": "4202, West 5415 South, Kearns, UT, 84118",
+    "phone": "+1 801-957-1700",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.653057,-111.991370",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/945870642",
+    "lat": 40.6530569,
+    "lon": -111.9913701
+  },
+  {
+    "business_id": "quality-emissions-ut",
+    "name": "Quality Emissions",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Millcreek",
+    "state": "UT",
+    "address": "4221 S, State Street, Millcreek, UT, 84107",
+    "phone": "+1-801-904-2275",
+    "website": "https://qualityemissionandinspection.business.site/",
+    "google_maps_link": "https://www.google.com/maps?q=40.679719,-111.887809",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/446620623",
+    "lat": 40.6797192,
+    "lon": -111.8878091
+  },
+  {
+    "business_id": "ramsay-towing-ut",
+    "name": "Ramsay Towing",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Kanab",
+    "state": "UT",
+    "address": "131, South 100 East, Kanab, UT, 84741",
+    "phone": "+1 435 644 8070",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=37.045951,-112.526095",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9207717988",
+    "lat": 37.0459514,
+    "lon": -112.526095
+  },
+  {
+    "business_id": "ray-bradford-automotive-ut",
+    "name": "Ray Bradford Automotive",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Provo",
+    "state": "UT",
+    "address": "816, North 700 east, Provo, UT, 84606",
+    "phone": "+1 801-377-7587",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.244629,-111.646200",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/202770459",
+    "lat": 40.2446293,
+    "lon": -111.6461997
+  },
+  {
+    "business_id": "ray-s-muffler-ut",
+    "name": "Ray's Muffler",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Woods Cross",
+    "state": "UT",
+    "address": "792, South 500 West, Woods Cross, UT, 84010",
+    "phone": "+1 801-292-4731",
+    "website": "https://www.raysmuffler.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.881568,-111.892636",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/432006803",
+    "lat": 40.8815676,
+    "lon": -111.8926357
+  },
+  {
+    "business_id": "red-rock-collision-repair-auto-painting-ut",
+    "name": "Red Rock Collision Repair & Auto Painting",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "+1-801-224-9979",
+    "website": "https://www.redrockcollisionrepair.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.307640,-111.698634",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/8431203687",
+    "lat": 40.3076401,
+    "lon": -111.6986339
+  },
+  {
+    "business_id": "regent-street-service-ut",
+    "name": "Regent Street Service",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "+1 801 487 6077",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.743081,-111.888526",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9180918716",
+    "lat": 40.7430813,
+    "lon": -111.8885264
+  },
+  {
+    "business_id": "rex-s-diesel-auto-ut",
+    "name": "Rex's Diesel & Auto",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Lehi",
+    "state": "UT",
+    "address": "2501, North 1200 West, Lehi, UT, 84043",
+    "phone": "",
+    "website": "https://www.rexsdieselauto.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.419534,-111.869384",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1193687896",
+    "lat": 40.4195338,
+    "lon": -111.8693843
+  },
+  {
+    "business_id": "ridgeline-automotive-ut",
+    "name": "Ridgeline Automotive",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Logan",
+    "state": "UT",
+    "address": "1200, East 2100 North, Logan, UT, 84341",
+    "phone": "+1 435 753 2592",
+    "website": "https://ridgelineautomotive.net/",
+    "google_maps_link": "https://www.google.com/maps?q=41.769132,-111.804290",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9307546986",
+    "lat": 41.7691324,
+    "lon": -111.8042902
+  },
+  {
+    "business_id": "romaine-electric-ut",
+    "name": "Romaine Electric",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "1125 S, 300 West, Salt Lake City, UT, 84101",
+    "phone": "+1-800-294-3664",
+    "website": "https://www.romaineelectric.com",
+    "google_maps_link": "https://www.google.com/maps?q=40.744240,-111.899306",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9136297265",
+    "lat": 40.7442403,
+    "lon": -111.899306
+  },
+  {
+    "business_id": "ross-automotive-ut",
+    "name": "Ross Automotive",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Grantsville",
+    "state": "UT",
+    "address": "6, East Main Street, Grantsville, UT, 84029",
+    "phone": "+1-435-884-3390",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.599450,-112.462998",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1082547216",
+    "lat": 40.59945,
+    "lon": -112.4629982
+  },
+  {
+    "business_id": "royal-express-transmission-automotive-ut",
+    "name": "Royal Express Transmission & Automotive",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Panguitch",
+    "state": "UT",
+    "address": "389 N, Main Street, Panguitch, UT, 84759",
+    "phone": "+1 435-676-8300",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=37.828617,-112.436195",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1091232963",
+    "lat": 37.8286174,
+    "lon": -112.436195
+  },
+  {
+    "business_id": "rush-diesel-automotive-ut",
+    "name": "RUSH Diesel & Automotive",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Midvale",
+    "state": "UT",
+    "address": "7936 South, State Street, Midvale, UT, 84047",
+    "phone": "+1-801-565-3634",
+    "website": "https://www.rushdieselrepair.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.607184,-111.891753",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5720721794",
+    "lat": 40.607184,
+    "lon": -111.8917529
+  },
+  {
+    "business_id": "s-r-automotive-ut",
+    "name": "S & R Automotive",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Provo",
+    "state": "UT",
+    "address": "2255, S State St, Provo, UT, 84606",
+    "phone": "+1-801-377-2365",
+    "website": "https://www.sandrautomotiveut.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.203678,-111.623764",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5892139692",
+    "lat": 40.2036779,
+    "lon": -111.623764
+  },
+  {
+    "business_id": "safelite-autoglass-ut",
+    "name": "Safelite AutoGlass",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Bountiful",
+    "state": "UT",
+    "address": "530, South 500 West, Bountiful, UT, 84010",
+    "phone": "",
+    "website": "https://www.safelite.com/stores/bountiful",
+    "google_maps_link": "https://www.google.com/maps?q=40.883359,-111.892644",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/432003134",
+    "lat": 40.8833592,
+    "lon": -111.892644
+  },
+  {
+    "business_id": "safelite-autoglass-ut-2",
+    "name": "Safelite AutoGlass",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Layton",
+    "state": "UT",
+    "address": "1357, North Main Street, Layton, UT, 84041",
+    "phone": "",
+    "website": "https://www.safelite.com/stores/layton",
+    "google_maps_link": "https://www.google.com/maps?q=41.079484,-111.988738",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/481850954",
+    "lat": 41.0794837,
+    "lon": -111.9887381
+  },
+  {
+    "business_id": "sam-s-body-shop-ut",
+    "name": "Sam's Body Shop",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Vernal",
+    "state": "UT",
+    "address": "1732, West 1000 South, Vernal, UT, 84078",
+    "phone": "+1 435-789-6718",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.441083,-109.561408",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5737720422",
+    "lat": 40.4410834,
+    "lon": -109.5614081
+  },
+  {
+    "business_id": "sapp-bros-service-center-ut",
+    "name": "Sapp Bros. Service Center",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "1953, West California Avenue, Salt Lake City, UT, 84104",
+    "phone": "+1-801-977-3900",
+    "website": "https://www.sappbros.net/location/salt-lake-city-ut-service-center/",
+    "google_maps_link": "https://www.google.com/maps?q=40.739762,-111.945283",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/221885763",
+    "lat": 40.7397615,
+    "lon": -111.9452834
+  },
+  {
+    "business_id": "schneider-auto-body-ut",
+    "name": "Schneider Auto Body",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "1180 South, 400 West, Salt Lake City, UT, 84101",
+    "phone": "+1 801-484-9400",
+    "website": "https://www.schneiderauto.net/",
+    "google_maps_link": "https://www.google.com/maps?q=40.743349,-111.902747",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4062017268",
+    "lat": 40.7433487,
+    "lon": -111.9027467
+  },
+  {
+    "business_id": "scotts-auto-clutch-repair-ut",
+    "name": "Scotts Auto & Clutch Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "144, West Crystal Avenue, Salt Lake City, UT, 84117",
+    "phone": "+1-801-485-4089",
+    "website": "https://slcautoshop.com",
+    "google_maps_link": "https://www.google.com/maps?q=40.714519,-111.895737",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11002112745",
+    "lat": 40.7145187,
+    "lon": -111.8957371
+  },
+  {
+    "business_id": "scotty-s-auto-repair-ut",
+    "name": "Scotty\u2019s Auto Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "UT",
+    "address": "5066, South Commerce Drive, UT, 84107",
+    "phone": "+1 801-266-2331",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.661313,-111.899134",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10717567505",
+    "lat": 40.6613129,
+    "lon": -111.8991341
+  },
+  {
+    "business_id": "shadetree-automotive-ut",
+    "name": "Shadetree Automotive",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Layton",
+    "state": "UT",
+    "address": "757, E Highway 193, Layton, UT, 84041",
+    "phone": "+1 801 771 6711",
+    "website": "https://www.shadetreeautomotive.net/",
+    "google_maps_link": "https://www.google.com/maps?q=41.103297,-111.952047",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/59770581",
+    "lat": 41.1032968,
+    "lon": -111.9520466
+  },
+  {
+    "business_id": "shi-stop-shop-ut",
+    "name": "Shi Stop Shop",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "UT",
+    "address": "UT, 84536",
+    "phone": "+14357273310",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=37.004554,-110.220560",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6389250285",
+    "lat": 37.004554,
+    "lon": -110.2205603
+  },
+  {
+    "business_id": "speedco-ut",
+    "name": "Speedco",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Lake Point",
+    "state": "UT",
+    "address": "8513, North Commerce Drive, Lake Point, UT, 84074",
+    "phone": "",
+    "website": "https://www.loves.com/locations/934",
+    "google_maps_link": "https://www.google.com/maps?q=40.683725,-112.272613",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/38846936",
+    "lat": 40.6837253,
+    "lon": -112.2726134
+  },
+  {
+    "business_id": "steve-s-automotive-specialists-ut",
+    "name": "Steve's Automotive Specialists",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "2809 S, 2300 East, Salt Lake City, UT, 84109",
+    "phone": "+1 801 466 2886",
+    "website": "https://stevesautomotivespecialists.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.710454,-111.824038",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/619243929",
+    "lat": 40.7104544,
+    "lon": -111.824038
+  },
+  {
+    "business_id": "t-h-auto-repair-ut",
+    "name": "T. H. Auto Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "335, 1700 South, Salt Lake City, UT, 84115",
+    "phone": "+1-801-879-5509",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.733126,-111.900880",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9626614652",
+    "lat": 40.7331263,
+    "lon": -111.9008796
+  },
+  {
+    "business_id": "take-5-oil-change-ut",
+    "name": "Take 5 Oil Change",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Taylorsville",
+    "state": "UT",
+    "address": "3936, West 5400 South, Taylorsville, UT, 84129",
+    "phone": "+1 385-275-2024",
+    "website": "https://www.take5.com/locations/oil-change/utah/taylorsville/31308/",
+    "google_maps_link": "https://www.google.com/maps?q=40.653386,-111.985078",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/945870656",
+    "lat": 40.6533858,
+    "lon": -111.9850784
+  },
+  {
+    "business_id": "tanner-transmissions-ut",
+    "name": "Tanner Transmissions",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Sunset",
+    "state": "UT",
+    "address": "1889, North Main Street, Sunset, UT, 84010",
+    "phone": "+1 801-528-7014",
+    "website": "https://tannertransmissions.com/sunset-ut/",
+    "google_maps_link": "https://www.google.com/maps?q=41.141184,-112.026501",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12926702571",
+    "lat": 41.141184,
+    "lon": -112.0265012
+  },
+  {
+    "business_id": "tanner-transmissions-ut-3",
+    "name": "Tanner Transmissions",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Taylorsville",
+    "state": "UT",
+    "address": "4931 S, Redwood Road, Taylorsville, UT, 84123",
+    "phone": "+1-801-657-3821",
+    "website": "http://www.tannertransmissions.com/taylorsville-ut/",
+    "google_maps_link": "https://www.google.com/maps?q=40.662116,-111.938230",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/962034676",
+    "lat": 40.662116,
+    "lon": -111.9382302
+  },
+  {
+    "business_id": "tanner-transmissions-ut-2",
+    "name": "Tanner Transmissions",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "1833 S, State Street, Salt Lake City, UT, 84115",
+    "phone": "+1-801-935-8192",
+    "website": "http://www.tannertransmissions.com/salt-lake-city/",
+    "google_maps_link": "https://www.google.com/maps?q=40.730002,-111.887766",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "relation/13989601",
+    "lat": 40.7300017,
+    "lon": -111.8877662
+  },
+  {
+    "business_id": "taysom-tire-muffler-auto-repair-ut",
+    "name": "Taysom Tire Muffler & Auto Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Orem",
+    "state": "UT",
+    "address": "651, North State Street, Orem, UT, 84057",
+    "phone": "+1 801-225-6343",
+    "website": "https://taysomtire.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.309144,-111.700524",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5831535284",
+    "lat": 40.3091443,
+    "lon": -111.700524
+  },
+  {
+    "business_id": "tesla-pleasant-grove-ut",
+    "name": "Tesla Pleasant Grove",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Pleasant Grove",
+    "state": "UT",
+    "address": "2265, W 700 S, Pleasant Grove, UT, 84062",
+    "phone": "+1-801-216-0160",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.353194,-111.771782",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1132933166",
+    "lat": 40.3531936,
+    "lon": -111.7717817
+  },
+  {
+    "business_id": "the-paint-spot-body-shop-ut",
+    "name": "The Paint Spot Body Shop",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Woods Cross",
+    "state": "UT",
+    "address": "952, South 500 West, Woods Cross, UT, 84010",
+    "phone": "+1 385-399-6259",
+    "website": "https://www.thepaintspotutah.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.879975,-111.892766",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13244258720",
+    "lat": 40.8799752,
+    "lon": -111.8927663
+  },
+  {
+    "business_id": "tip-top-transmissions-ut",
+    "name": "Tip Top Transmissions",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "2211, North Warm Springs Road, Salt Lake City, UT, 84116",
+    "phone": "+1 801-484-1688",
+    "website": "https://www.tiptoptransmissions.com",
+    "google_maps_link": "https://www.google.com/maps?q=40.736624,-111.897147",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4738711947",
+    "lat": 40.7366242,
+    "lon": -111.897147
+  },
+  {
+    "business_id": "tire-buster-s-supreme-auto-care-ut",
+    "name": "Tire Buster's Supreme Auto Care",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "American Fork",
+    "state": "UT",
+    "address": "338, North West State Road, American Fork, UT, 84003",
+    "phone": "+1 801 763 9060",
+    "website": "https://www.tirebustersauto.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.384136,-111.814753",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/287884208",
+    "lat": 40.3841357,
+    "lon": -111.8147527
+  },
+  {
+    "business_id": "tunex-ut-2",
+    "name": "Tunex",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Layton",
+    "state": "UT",
+    "address": "1141, West Antelope Drive, Layton, UT, 84041",
+    "phone": "+1 801-776-1786",
+    "website": "https://tunex.com/locations/layton/",
+    "google_maps_link": "https://www.google.com/maps?q=41.088712,-111.986510",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/49606871",
+    "lat": 41.0887115,
+    "lon": -111.9865105
+  },
+  {
+    "business_id": "tunex-ut-3",
+    "name": "Tunex",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Taylorsville",
+    "state": "UT",
+    "address": "5313, South 4015 West, Taylorsville, UT, 84129",
+    "phone": "+1-801-967-9325",
+    "website": "https://tunex.com/locations/kearns/",
+    "google_maps_link": "https://www.google.com/maps?q=40.654588,-111.986578",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/972970670",
+    "lat": 40.6545878,
+    "lon": -111.9865781
+  },
+  {
+    "business_id": "tunex-ut",
+    "name": "Tunex",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "American Fork",
+    "state": "UT",
+    "address": "142, North West State Street, American Fork, UT, 84003",
+    "phone": "+1 801 492 8111",
+    "website": "https://tunex.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.379950,-111.812898",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1305623767",
+    "lat": 40.3799499,
+    "lon": -111.8128983
+  },
+  {
+    "business_id": "tunex-automotive-service-ut",
+    "name": "Tunex Automotive Service",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Woods Cross",
+    "state": "UT",
+    "address": "2494, South Main Street, Woods Cross, UT, 84010",
+    "phone": "+1-801-295-5551",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.862830,-111.896048",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/42367736",
+    "lat": 40.86283,
+    "lon": -111.8960482
+  },
+  {
+    "business_id": "unique-auto-body-ut",
+    "name": "Unique Auto Body",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "South Jordan",
+    "state": "UT",
+    "address": "11521, South Redwood Road, South Jordan, UT, 84095",
+    "phone": "",
+    "website": "https://uniqueautobody.com/collision-repair-south-jordan/",
+    "google_maps_link": "https://www.google.com/maps?q=40.541730,-111.937968",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/465525366",
+    "lat": 40.5417304,
+    "lon": -111.9379685
+  },
+  {
+    "business_id": "unique-auto-body-midvale-ut",
+    "name": "Unique Auto Body Midvale",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Midvale",
+    "state": "UT",
+    "address": "798, West Center Street, Midvale, UT, 84047",
+    "phone": "+1-801-566-0791",
+    "website": "https://www.uniqueautobody.com/locations/midvale/",
+    "google_maps_link": "https://www.google.com/maps?q=40.610908,-111.912561",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/605686049",
+    "lat": 40.6109078,
+    "lon": -111.9125614
+  },
+  {
+    "business_id": "utah-moto-shop-ut",
+    "name": "Utah Moto Shop",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "UT",
+    "address": "#10, 1327 W 2550 S, Ogden, UT, UT",
+    "phone": "+1 801-589-3487",
+    "website": "https://utahmotoshop.com/",
+    "google_maps_link": "https://www.google.com/maps?q=41.218657,-112.010758",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12844983004",
+    "lat": 41.2186567,
+    "lon": -112.0107585
+  },
+  {
+    "business_id": "v-and-l-auto-service-and-repair-ut",
+    "name": "V and L Auto Service and Repair",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "836 S, Redwood Road, Salt Lake City, UT, 84104",
+    "phone": "+1-801-972-0990",
+    "website": "https://vlautorepairredwood.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.751722,-111.939517",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1047182796",
+    "lat": 40.7517225,
+    "lon": -111.9395171
+  },
+  {
+    "business_id": "valvoline-ut",
+    "name": "Valvoline",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Pleasant Grove",
+    "state": "UT",
+    "address": "1975, West State Street, Pleasant Grove, UT, 84062",
+    "phone": "",
+    "website": "https://store.vioc.com/ut/pleasantgrove/oil-change-gt0026.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.369707,-111.768751",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10157497277",
+    "lat": 40.3697067,
+    "lon": -111.7687507
+  },
+  {
+    "business_id": "valvoline-ut-2",
+    "name": "Valvoline",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "",
+    "website": "https://store.vioc.com/ut/draper/oil-change-gt0017.html",
+    "google_maps_link": "https://www.google.com/maps?q=40.527055,-111.874939",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9957963785",
+    "lat": 40.5270551,
+    "lon": -111.874939
+  },
+  {
+    "business_id": "wade-automotive-products-ut",
+    "name": "Wade Automotive Products",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "863, South 500 West, Salt Lake City, UT, 84101",
+    "phone": "+1-801-355-0972",
+    "website": "https://wadeauto.com",
+    "google_maps_link": "https://www.google.com/maps?q=40.750144,-111.904827",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11024820422",
+    "lat": 40.7501445,
+    "lon": -111.9048274
+  },
+  {
+    "business_id": "wasatch-motor-werks-ut",
+    "name": "Wasatch Motor Werks",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "4091 S, State Street, Salt Lake City, UT, 84107",
+    "phone": "+1-801-290-8536",
+    "website": "https://www.wasatchmotorwerks.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.682488,-111.887272",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9963920847",
+    "lat": 40.6824875,
+    "lon": -111.8872724
+  },
+  {
+    "business_id": "western-service-center-ut",
+    "name": "Western Service Center",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "address": "1490, South 400 West, Salt Lake City, UT, 84115",
+    "phone": "+1-888-615-1388",
+    "website": "https://www.westerntruck.com",
+    "google_maps_link": "https://www.google.com/maps?q=40.737386,-111.902804",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13607428481",
+    "lat": 40.7373855,
+    "lon": -111.9028036
+  },
+  {
+    "business_id": "wheeler-machinery-company-ut",
+    "name": "Wheeler Machinery Company",
+    "category": "Repair Shops (XJ/Jeep-Friendly)",
+    "city": "Cedar City",
+    "state": "UT",
+    "address": "451, North Lund Highway, Cedar City, UT, 84720",
+    "phone": "",
+    "website": "https://wheelercat.com/company/locations/cedar-city/",
+    "google_maps_link": "https://www.google.com/maps?q=37.685860,-113.111781",
+    "tags": [
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11137520008",
+    "lat": 37.6858604,
+    "lon": -113.1117812
+  },
+  {
+    "business_id": "b-c-auto-sales-salvage-ut",
+    "name": "B & C Auto Sales & Salvage",
+    "category": "Salvage Yards and Junkyards (Used Jeep Parts)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=41.739682,-112.146522",
+    "tags": [
+      "salvage",
+      "junkyard",
+      "used-parts"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1039670685",
+    "lat": 41.7396823,
+    "lon": -112.1465219
+  },
+  {
+    "business_id": "basin-industries-ut",
+    "name": "Basin Industries",
+    "category": "Salvage Yards and Junkyards (Used Jeep Parts)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.432862,-109.505765",
+    "tags": [
+      "salvage",
+      "junkyard",
+      "used-parts"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/616735633",
+    "lat": 40.4328624,
+    "lon": -109.5057651
+  },
+  {
+    "business_id": "capps-auto-wrecking-ut",
+    "name": "Capps Auto Wrecking",
+    "category": "Salvage Yards and Junkyards (Used Jeep Parts)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.453097,-109.501776",
+    "tags": [
+      "salvage",
+      "junkyard",
+      "used-parts"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/616738521",
+    "lat": 40.4530968,
+    "lon": -109.5017764
+  },
+  {
+    "business_id": "dd-auto-salvage-ut",
+    "name": "DD Auto & Salvage",
+    "category": "Salvage Yards and Junkyards (Used Jeep Parts)",
+    "city": "Logan",
+    "state": "UT",
+    "address": "1976, West 200 North, Logan, UT, 84321",
+    "phone": "+1 435-787-1204",
+    "website": "https://www.ddautoandsalvage.com/",
+    "google_maps_link": "https://www.google.com/maps?q=41.734674,-111.882359",
+    "tags": [
+      "salvage",
+      "junkyard",
+      "used-parts"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1002816444",
+    "lat": 41.7346738,
+    "lon": -111.8823587
+  },
+  {
+    "business_id": "herriman-police-impound-lot-ut",
+    "name": "Herriman Police Impound Lot",
+    "category": "Salvage Yards and Junkyards (Used Jeep Parts)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.496284,-112.042201",
+    "tags": [
+      "salvage",
+      "junkyard",
+      "used-parts"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1358890173",
+    "lat": 40.4962838,
+    "lon": -112.0422013
+  },
+  {
+    "business_id": "montgomery-recycling-inc-ut",
+    "name": "Montgomery Recycling Inc",
+    "category": "Salvage Yards and Junkyards (Used Jeep Parts)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.439030,-109.500655",
+    "tags": [
+      "salvage",
+      "junkyard",
+      "used-parts"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/616735819",
+    "lat": 40.4390299,
+    "lon": -109.5006552
+  },
+  {
+    "business_id": "pic-a-part-ut",
+    "name": "Pic-A-Part",
+    "category": "Salvage Yards and Junkyards (Used Jeep Parts)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.292570,-111.731657",
+    "tags": [
+      "salvage",
+      "junkyard",
+      "used-parts"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/531732584",
+    "lat": 40.2925702,
+    "lon": -111.731657
+  },
+  {
+    "business_id": "pick-n-pull-salt-lake-city-ut",
+    "name": "Pick-n-Pull - Salt Lake City",
+    "category": "Salvage Yards and Junkyards (Used Jeep Parts)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "",
+    "website": "https://www.picknpull.com/locations/74/salt-lake-city-ut",
+    "google_maps_link": "https://www.google.com/maps?q=40.698470,-111.907568",
+    "tags": [
+      "salvage",
+      "junkyard",
+      "used-parts"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1449452021",
+    "lat": 40.6984703,
+    "lon": -111.9075677
+  },
+  {
+    "business_id": "salvage-yard-ut",
+    "name": "salvage yard",
+    "category": "Salvage Yards and Junkyards (Used Jeep Parts)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=41.237782,-111.995314",
+    "tags": [
+      "salvage",
+      "junkyard",
+      "used-parts"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/40796652",
+    "lat": 41.2377821,
+    "lon": -111.9953144
+  },
+  {
+    "business_id": "savon-auto-parts-ut",
+    "name": "Savon Auto Parts",
+    "category": "Salvage Yards and Junkyards (Used Jeep Parts)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.425705,-109.503224",
+    "tags": [
+      "salvage",
+      "junkyard",
+      "used-parts"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/616735632",
+    "lat": 40.4257047,
+    "lon": -109.5032239
+  },
+  {
+    "business_id": "sparks-motors-ut",
+    "name": "Sparks Motors",
+    "category": "Salvage Yards and Junkyards (Used Jeep Parts)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.869945,-111.929016",
+    "tags": [
+      "salvage",
+      "junkyard",
+      "used-parts"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/981099973",
+    "lat": 40.8699451,
+    "lon": -111.9290156
+  },
+  {
+    "business_id": "utah-pic-a-part-ut",
+    "name": "Utah Pic-a-Part",
+    "category": "Salvage Yards and Junkyards (Used Jeep Parts)",
+    "city": "",
+    "state": "UT",
+    "address": "UT",
+    "phone": "",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=41.234965,-111.990340",
+    "tags": [
+      "salvage",
+      "junkyard",
+      "used-parts"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/40796628",
+    "lat": 41.234965,
+    "lon": -111.9903404
+  },
+  {
+    "business_id": "kirkham-upholstery-ut",
+    "name": "Kirkham Upholstery",
+    "category": "Upholstery and Interior (Headliners, Seats)",
+    "city": "American Fork",
+    "state": "UT",
+    "address": "329, American Fork, UT, 84003",
+    "phone": "+1 801-756-3739",
+    "website": "http://www.kirkhamupholstery.com",
+    "google_maps_link": "https://www.google.com/maps?q=40.376237,-111.807318",
+    "tags": [
+      "upholstery",
+      "interior"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1388079749",
+    "lat": 40.3762373,
+    "lon": -111.8073177
+  },
+  {
+    "business_id": "the-seat-cover-company-ut",
+    "name": "The Seat Cover Company",
+    "category": "Upholstery and Interior (Headliners, Seats)",
+    "city": "Murray",
+    "state": "UT",
+    "address": "4651 S, 500 West, Murray, UT, 84123",
+    "phone": "+1-801-265-0991",
+    "website": "https://theseatcovercompany.com/",
+    "google_maps_link": "https://www.google.com/maps?q=40.671479,-111.905442",
+    "tags": [
+      "upholstery",
+      "interior"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5625565080",
+    "lat": 40.6714794,
+    "lon": -111.9054419
+  },
+  {
+    "business_id": "vertex-offroad-ut",
+    "name": "Vertex Offroad",
+    "category": "Upholstery and Interior (Headliners, Seats)",
+    "city": "Logan",
+    "state": "UT",
+    "address": "1815, North Main Street, Logan, UT, 84341",
+    "phone": "+1 435-774-9300",
+    "website": "https://vertexoffroad.com/",
+    "google_maps_link": "https://www.google.com/maps?q=41.765403,-111.835021",
+    "tags": [
+      "upholstery",
+      "interior",
+      "4x4"
+    ],
+    "jeep_note": "4x4 focused",
+    "source": "OSM",
+    "osm_id": "node/9858498531",
+    "lat": 41.7654035,
+    "lon": -111.8350214
+  }
+]

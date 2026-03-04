@@ -1,0 +1,150 @@
+[
+  {
+    "business_id": "american-differential-and-drive-train-co",
+    "name": "American Differential and Drive Train",
+    "category": "Drivetrain Specialists (Axles, Gears, Driveshafts)",
+    "city": "Commerce City",
+    "state": "CO",
+    "address": "7270, Locust Street, Commerce City, CO, 80022",
+    "phone": "+1 303 227 0121",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=39.828638,-104.912996",
+    "tags": [
+      "drivetrain",
+      "axle",
+      "gears"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/263590955",
+    "lat": 39.8286384,
+    "lon": -104.9129962
+  },
+  {
+    "business_id": "blacksheep-auto-repair-co",
+    "name": "Blacksheep Auto Repair",
+    "category": "Drivetrain Specialists (Axles, Gears, Driveshafts)",
+    "city": "Grand Junction",
+    "state": "CO",
+    "address": "587, 25 Road, Grand Junction, CO, 81505",
+    "phone": "+1-970-256-7625",
+    "website": "http://www.rockstarkustomz.com",
+    "google_maps_link": "https://www.google.com/maps?q=39.089742,-108.589981",
+    "tags": [
+      "drivetrain",
+      "axle",
+      "gears",
+      "4x4"
+    ],
+    "jeep_note": "4x4 focused",
+    "source": "OSM",
+    "osm_id": "node/5820498247",
+    "lat": 39.0897419,
+    "lon": -108.5899813
+  },
+  {
+    "business_id": "get-it-in-gear-ga",
+    "name": "Get It In Gear",
+    "category": "Drivetrain Specialists (Axles, Gears, Driveshafts)",
+    "city": "Fort Oglethorpe",
+    "state": "GA",
+    "address": "2224, Lafayette Road, Fort Oglethorpe, GA, 30742-3753",
+    "phone": "+1 706 419 8841",
+    "website": "https://www.getitingeartransmission.com/",
+    "google_maps_link": "https://www.google.com/maps?q=34.957169,-85.259023",
+    "tags": [
+      "drivetrain",
+      "axle",
+      "gears"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/988905379",
+    "lat": 34.957169,
+    "lon": -85.2590235
+  },
+  {
+    "business_id": "greasy-axle-lube-nc",
+    "name": "Greasy Axle & Lube",
+    "category": "Drivetrain Specialists (Axles, Gears, Driveshafts)",
+    "city": "Charlotte",
+    "state": "NC",
+    "address": "6230, Albemarle Road, Charlotte, NC, 28212",
+    "phone": "",
+    "website": "http://www.greasyaxle.com",
+    "google_maps_link": "https://www.google.com/maps?q=35.202610,-80.739148",
+    "tags": [
+      "drivetrain",
+      "axle",
+      "gears"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/324592342",
+    "lat": 35.2026099,
+    "lon": -80.7391482
+  },
+  {
+    "business_id": "hoyle-s-tire-axle-nc",
+    "name": "Hoyle's Tire & Axle",
+    "category": "Drivetrain Specialists (Axles, Gears, Driveshafts)",
+    "city": "",
+    "state": "NC",
+    "address": "175, Bear Pond Road, NC, 27537",
+    "phone": "+1-252-438-2818",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=36.278536,-78.402904",
+    "tags": [
+      "drivetrain",
+      "axle",
+      "gears"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10269848909",
+    "lat": 36.2785363,
+    "lon": -78.4029044
+  },
+  {
+    "business_id": "gear-automotive-pa",
+    "name": "GEAR Automotive",
+    "category": "Drivetrain Specialists (Axles, Gears, Driveshafts)",
+    "city": "Coplay",
+    "state": "PA",
+    "address": "4111, Mauch Chunk Road, Coplay, PA, 18037",
+    "phone": "+16107995561",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=40.669441,-75.566675",
+    "tags": [
+      "drivetrain",
+      "axle",
+      "gears"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1311833841",
+    "lat": 40.6694414,
+    "lon": -75.5666752
+  },
+  {
+    "business_id": "top-gear-auto-service-ut",
+    "name": "Top Gear Auto Service",
+    "category": "Drivetrain Specialists (Axles, Gears, Driveshafts)",
+    "city": "Orem",
+    "state": "UT",
+    "address": "225, State Street, Orem, UT, 84058",
+    "phone": "+1-385-221-4308",
+    "website": "https://topgearautoservice.io/",
+    "google_maps_link": "https://www.google.com/maps?q=40.292828,-111.692322",
+    "tags": [
+      "drivetrain",
+      "axle",
+      "gears"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12941664054",
+    "lat": 40.2928281,
+    "lon": -111.6923219
+  }
+]

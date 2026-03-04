@@ -1,0 +1,65 @@
+[
+  {
+    "business_id": "california-pontiac-restoration-parts-ca",
+    "name": "California Pontiac Restoration Parts",
+    "category": "Rust Repair and Body (Welding Focus)",
+    "city": "Santa Ana",
+    "state": "CA",
+    "address": "1520, East Edinger Avenue, Santa Ana, CA, 92705",
+    "phone": "+1-714-245-9800",
+    "website": "https://pontiacparts.net",
+    "google_maps_link": "https://www.google.com/maps?q=33.725108,-117.849429",
+    "tags": [
+      "rust-repair",
+      "bodywork",
+      "welding"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10804403140",
+    "lat": 33.7251077,
+    "lon": -117.8494288
+  },
+  {
+    "business_id": "charlie-s-auto-restoration-service-ca",
+    "name": "Charlie's auto Restoration Service",
+    "category": "Rust Repair and Body (Welding Focus)",
+    "city": "Torrance",
+    "state": "CA",
+    "address": "24406, Crenshaw Boulevard, Torrance, CA, 90505",
+    "phone": "+1-310-325-3504",
+    "website": "https://www.charliecool.com/",
+    "google_maps_link": "https://www.google.com/maps?q=33.803954,-118.327647",
+    "tags": [
+      "rust-repair",
+      "bodywork",
+      "welding"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/297204322",
+    "lat": 33.8039539,
+    "lon": -118.3276471
+  },
+  {
+    "business_id": "restoration-station-ca",
+    "name": "Restoration Station",
+    "category": "Rust Repair and Body (Welding Focus)",
+    "city": "Turlock",
+    "state": "CA",
+    "address": "501B, South Center Street, Turlock, CA, 95380",
+    "phone": "+1 209 652 5627",
+    "website": "https://restoration911.com/",
+    "google_maps_link": "https://www.google.com/maps?q=37.491703,-120.840789",
+    "tags": [
+      "rust-repair",
+      "bodywork",
+      "welding"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13127047091",
+    "lat": 37.491703,
+    "lon": -120.8407889
+  }
+]

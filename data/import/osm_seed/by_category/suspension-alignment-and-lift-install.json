@@ -1,0 +1,86 @@
+[
+  {
+    "business_id": "clarence-brown-alignment-ca",
+    "name": "Clarence Brown Alignment",
+    "category": "Suspension, Alignment, and Lift Install",
+    "city": "San Diego",
+    "state": "CA",
+    "address": "7996, Armour Street, San Diego, CA, 92111",
+    "phone": "+1-858-565-2981",
+    "website": "https://sandiegowheelalignment.com",
+    "google_maps_link": "https://www.google.com/maps?q=32.820169,-117.151287",
+    "tags": [
+      "suspension",
+      "alignment",
+      "lift"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11709366625",
+    "lat": 32.8201693,
+    "lon": -117.151287
+  },
+  {
+    "business_id": "frausto-s-alignment-2-ca",
+    "name": "Frausto\u2019s Alignment 2",
+    "category": "Suspension, Alignment, and Lift Install",
+    "city": "",
+    "state": "CA",
+    "address": "1430, North Wilmington Boulevard, CA, 90744",
+    "phone": "+1-310-549-3470",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=33.791562,-118.274637",
+    "tags": [
+      "suspension",
+      "alignment",
+      "lift"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13272815504",
+    "lat": 33.791562,
+    "lon": -118.2746367
+  },
+  {
+    "business_id": "suspension-plus-ca",
+    "name": "Suspension Plus",
+    "category": "Suspension, Alignment, and Lift Install",
+    "city": "Laguna Niguel",
+    "state": "CA",
+    "address": "27972, Forbes Road, Laguna Niguel, CA, 92677",
+    "phone": "+1-949-365-1070",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=33.556299,-117.675314",
+    "tags": [
+      "suspension",
+      "alignment",
+      "lift"
+    ],
+    "jeep_note": "Lift installs",
+    "source": "OSM",
+    "osm_id": "node/8258962803",
+    "lat": 33.556299,
+    "lon": -117.6753139
+  },
+  {
+    "business_id": "big-john-s-brake-and-alignment-service-fl",
+    "name": "Big John's Brake and Alignment Service",
+    "category": "Suspension, Alignment, and Lift Install",
+    "city": "",
+    "state": "FL",
+    "address": "1210, 1st Avenue North, FL",
+    "phone": "+1-727-822-3108",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.771794,-82.650986",
+    "tags": [
+      "suspension",
+      "alignment",
+      "lift"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6925540985",
+    "lat": 27.7717936,
+    "lon": -82.6509858
+  }
+]

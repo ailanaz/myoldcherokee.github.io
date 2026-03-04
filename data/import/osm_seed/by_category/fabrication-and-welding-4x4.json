@@ -1,0 +1,65 @@
+[
+  {
+    "business_id": "mobile-dent-bumper-repair-ca",
+    "name": "Mobile Dent & Bumper Repair",
+    "category": "Fabrication and Welding (4x4)",
+    "city": "Covina",
+    "state": "CA",
+    "address": "402, East Badillo Street, Covina, CA, 91723",
+    "phone": "+1-626-479-9017",
+    "website": "https://bodyworkcovina.com",
+    "google_maps_link": "https://www.google.com/maps?q=34.085941,-117.883372",
+    "tags": [
+      "fabrication",
+      "welding",
+      "4x4"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11142931006",
+    "lat": 34.0859411,
+    "lon": -117.883372
+  },
+  {
+    "business_id": "santini-iron-works-ca",
+    "name": "Santini Iron Works",
+    "category": "Fabrication and Welding (4x4)",
+    "city": "",
+    "state": "CA",
+    "address": "CA",
+    "phone": "+1 310 390-4147",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=33.984222,-118.402824",
+    "tags": [
+      "fabrication",
+      "welding",
+      "4x4"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12139157748",
+    "lat": 33.9842224,
+    "lon": -118.4028242
+  },
+  {
+    "business_id": "lizotte-s-welding-fl",
+    "name": "Lizotte's Welding",
+    "category": "Fabrication and Welding (4x4)",
+    "city": "",
+    "state": "FL",
+    "address": "3303, Tyrone Boulevard North, FL",
+    "phone": "+1-727-343-7690",
+    "website": "http://www.lizottewelding.net/",
+    "google_maps_link": "https://www.google.com/maps?q=27.802256,-82.741798",
+    "tags": [
+      "fabrication",
+      "welding",
+      "4x4"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/228264526",
+    "lat": 27.8022565,
+    "lon": -82.7417976
+  }
+]

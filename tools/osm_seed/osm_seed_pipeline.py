@@ -14,6 +14,7 @@ import json
 import math
 import re
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from collections import defaultdict
@@ -245,11 +246,23 @@ out center tags;
 """.strip()
 
 
-def overpass_fetch(overpass_url: str, query: str) -> Dict:
+def overpass_fetch(overpass_urls: List[str], query: str, retries_per_url: int = 2) -> Dict:
     data = urllib.parse.urlencode({"data": query}).encode("utf-8")
-    req = urllib.request.Request(overpass_url, data=data, headers={"User-Agent": "oldxjs-osm-seed/1.0"})
-    with urllib.request.urlopen(req, timeout=240) as resp:
-        return json.loads(resp.read().decode("utf-8"))
+    last_err: Optional[Exception] = None
+    for url in overpass_urls:
+        for attempt in range(1, retries_per_url + 1):
+            try:
+                req = urllib.request.Request(url, data=data, headers={"User-Agent": "oldxjs-osm-seed/1.0"})
+                with urllib.request.urlopen(req, timeout=240) as resp:
+                    return json.loads(resp.read().decode("utf-8"))
+            except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as err:
+                last_err = err
+                print(f"WARN overpass fetch failed url={url} attempt={attempt}/{retries_per_url}: {err}")
+                time.sleep(2.0 * attempt)
+                continue
+    if last_err:
+        raise last_err
+    raise RuntimeError("Overpass fetch failed without error")
 
 
 def quality_score(rec: Dict) -> int:
@@ -379,6 +392,11 @@ def extract_record(state: str, el: Dict) -> Optional[Dict]:
         return None
 
     city = best_tag(tags, "addr:city", "addr:town", "addr:village")
+    house_no = best_tag(tags, "addr:housenumber")
+    street = best_tag(tags, "addr:street")
+    postcode = best_tag(tags, "addr:postcode")
+    address_parts = [p for p in [house_no, street, city, state, postcode] if p]
+    address = ", ".join(address_parts) if address_parts else ""
     phone = best_tag(tags, "phone", "contact:phone")
     website = best_tag(tags, "website", "contact:website", "url")
     rec = {
@@ -387,6 +405,7 @@ def extract_record(state: str, el: Dict) -> Optional[Dict]:
         "category": category,
         "city": city,
         "state": state,
+        "address": address,
         "phone": phone,
         "website": website,
         "google_maps_link": f"https://www.google.com/maps?q={lat:.6f},{lon:.6f}",
@@ -426,6 +445,7 @@ def write_csv(path: Path, rows: List[Dict]) -> None:
         "category",
         "city",
         "state",
+        "address",
         "phone",
         "website",
         "google_maps_link",
@@ -452,8 +472,13 @@ def run(args: argparse.Namespace) -> int:
     if not states:
         raise SystemExit("No states to process after exclusions.")
 
+    overpass_urls = [u.strip() for u in args.overpass_urls.split(",") if u.strip()]
+    if not overpass_urls:
+        raise SystemExit("No Overpass URLs configured.")
+
     all_rows: List[Dict] = []
     jobs = state_jobs(states)
+    failed_jobs: List[Dict[str, str]] = []
     for idx, (state, kind, bbox) in enumerate(jobs, start=1):
         if kind == "area":
             query = overpass_query_for_area(state)
@@ -462,11 +487,15 @@ def run(args: argparse.Namespace) -> int:
             query = overpass_query_for_bbox(bbox)  # type: ignore[arg-type]
             geo = f"bbox={bbox}"
         print(f"[{idx}/{len(jobs)}] Fetch {state} via {geo}")
-        payload = overpass_fetch(args.overpass_url, query)
-        for el in payload.get("elements", []):
-            rec = extract_record(state, el)
-            if rec:
-                all_rows.append(rec)
+        try:
+            payload = overpass_fetch(overpass_urls, query, retries_per_url=args.retries_per_url)
+            for el in payload.get("elements", []):
+                rec = extract_record(state, el)
+                if rec:
+                    all_rows.append(rec)
+        except Exception as err:  # noqa: BLE001
+            print(f"ERROR skipping job state={state} geo={geo}: {err}")
+            failed_jobs.append({"state": state, "geo": geo, "error": str(err)})
         time.sleep(args.sleep_seconds)
 
     raw_count = len(all_rows)
@@ -500,7 +529,8 @@ def run(args: argparse.Namespace) -> int:
         "records_raw": raw_count,
         "records_after_dedupe": len(deduped),
         "records_final": len(curated),
-        "overpass_url": args.overpass_url,
+        "overpass_urls": overpass_urls,
+        "failed_jobs": failed_jobs,
         "generated_at_epoch": int(time.time()),
     }
     write_json(out_dir / "run_manifest.json", [manifest])
@@ -519,9 +549,14 @@ def parse_args() -> argparse.Namespace:
         default=",".join(DEFAULT_STATES),
         help="Comma-separated state codes to process (TX/TN are automatically excluded).",
     )
-    p.add_argument("--overpass-url", default="https://overpass-api.de/api/interpreter")
+    p.add_argument(
+        "--overpass-urls",
+        default="https://overpass-api.de/api/interpreter,https://overpass.kumi.systems/api/interpreter,https://lz4.overpass-api.de/api/interpreter",
+        help="Comma-separated Overpass interpreter endpoints used as fallback chain.",
+    )
     p.add_argument("--out-dir", default="data/import/osm_seed")
     p.add_argument("--sleep-seconds", type=float, default=1.2)
+    p.add_argument("--retries-per-url", type=int, default=2)
     p.add_argument("--min-total", type=int, default=500)
     return p.parse_args()
 

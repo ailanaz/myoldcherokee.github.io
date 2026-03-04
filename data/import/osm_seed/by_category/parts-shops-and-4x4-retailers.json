@@ -1,0 +1,4774 @@
+[
+  {
+    "business_id": "4-wheel-pars-fresno-ca",
+    "name": "4 Wheel Pars Fresno",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Fresno",
+    "state": "CA",
+    "address": "4326, North Blackstone Avenue, Fresno, CA, 93726",
+    "phone": "+1-559-221-0510",
+    "website": "https://www.4wheelparts.com/articles/4wp-fresno-ca-4326-n-blackstone-ave?utm_medium=organic&utm_source=gmb",
+    "google_maps_link": "https://www.google.com/maps?q=36.796417,-119.789717",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13246286631",
+    "lat": 36.7964171,
+    "lon": -119.7897174
+  },
+  {
+    "business_id": "aaa-automobile-club-of-southern-california-ca",
+    "name": "AAA Automobile Club of Southern California",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "West Hollywood",
+    "state": "CA",
+    "address": "8761, Santa Monica Boulevard, West Hollywood, CA, 90069",
+    "phone": "+1-800-931-0314",
+    "website": "https://www.aaa.com/",
+    "google_maps_link": "https://www.google.com/maps?q=34.086759,-118.381837",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5211100089",
+    "lat": 34.0867587,
+    "lon": -118.3818371
+  },
+  {
+    "business_id": "advance-auto-parts-ca",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Simi Valley",
+    "state": "CA",
+    "address": "660, East Los Angeles Avenue, Simi Valley, CA, 93065",
+    "phone": "+1 805-416-5331",
+    "website": "https://stores.advanceautoparts.com/ca/simi-valley/660-e-los-angeles-ave",
+    "google_maps_link": "https://www.google.com/maps?q=34.270440,-118.786500",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11772651328",
+    "lat": 34.27044,
+    "lon": -118.7865
+  },
+  {
+    "business_id": "advance-auto-parts-ca-3",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Lake Forest",
+    "state": "CA",
+    "address": "22671, Lake Forest Drive, Lake Forest, CA, 92630",
+    "phone": "+1 949-523-6176",
+    "website": "https://stores.advanceautoparts.com/ca/lake-forest/22671-lake-forest-dr",
+    "google_maps_link": "https://www.google.com/maps?q=33.633798,-117.712228",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1358445151",
+    "lat": 33.6337977,
+    "lon": -117.7122284
+  },
+  {
+    "business_id": "advance-auto-parts-ca-2",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "CA",
+    "address": "CA",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/ca/los-angeles/10644-w-pico-blvd",
+    "google_maps_link": "https://www.google.com/maps?q=34.042504,-118.423340",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9912854543",
+    "lat": 34.0425044,
+    "lon": -118.4233396
+  },
+  {
+    "business_id": "all-car-parts-ltd-ca",
+    "name": "All Car Parts Ltd.",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Canoga Park",
+    "state": "CA",
+    "address": "21407, Vanowen Street, Canoga Park, CA, 91303",
+    "phone": "+1-818-884-7111",
+    "website": "https://www.allcarparts.org/",
+    "google_maps_link": "https://www.google.com/maps?q=34.194119,-118.598189",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/933354406",
+    "lat": 34.1941192,
+    "lon": -118.5981886
+  },
+  {
+    "business_id": "america-s-tire-ca",
+    "name": "America\u2019s Tire",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Pasadena",
+    "state": "CA",
+    "address": "1917, East Colorado Boulevard, Pasadena, CA, 91107",
+    "phone": "+1 626-584-6770",
+    "website": "https://www.americastire.com/store/in/store/s/1047",
+    "google_maps_link": "https://www.google.com/maps?q=34.146323,-118.111025",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5198385621",
+    "lat": 34.146323,
+    "lon": -118.1110251
+  },
+  {
+    "business_id": "araparts-ca",
+    "name": "Araparts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Elk Grove",
+    "state": "CA",
+    "address": "9090, Union Park Way, Elk Grove, CA, 95624",
+    "phone": "",
+    "website": "https://www.araparts.com/",
+    "google_maps_link": "https://www.google.com/maps?q=38.385981,-121.362506",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10213297839",
+    "lat": 38.3859808,
+    "lon": -121.3625061
+  },
+  {
+    "business_id": "auto-parts-4ever-ca",
+    "name": "Auto Parts 4ever",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "CA",
+    "address": "11719, Saticoy Street, CA",
+    "phone": "+1 818-927-4301",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=34.208705,-118.388275",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11753863045",
+    "lat": 34.2087048,
+    "lon": -118.3882752
+  },
+  {
+    "business_id": "autozone-ca-13",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Yorba Linda",
+    "state": "CA",
+    "address": "18528, Yorba Linda Boulevard, Yorba Linda, CA, 92886",
+    "phone": "+1-714-970-8933",
+    "website": "https://www.autozone.com/locations/ca/yorba-linda/18528-yorba-linda.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.888019,-117.810465",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/7523617717",
+    "lat": 33.888019,
+    "lon": -117.8104647
+  },
+  {
+    "business_id": "autozone-ca-15",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "648, West Century Boulevard, Los Angeles, CA, 90044",
+    "phone": "+1-323-777-2691",
+    "website": "https://www.autozone.com/locations/ca/los-angeles/648-w-century-blvd.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.945135,-118.286639",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9626689377",
+    "lat": 33.9451349,
+    "lon": -118.2866387
+  },
+  {
+    "business_id": "autozone-ca-16",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Whitter",
+    "state": "CA",
+    "address": "14153, Whittier Boulevard, Whitter, CA, 90605",
+    "phone": "+1-562-968-1093",
+    "website": "https://www.autozone.com/locations/ca/whittier/14153-whittier-blvd.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.956957,-118.020648",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9856889352",
+    "lat": 33.9569571,
+    "lon": -118.0206483
+  },
+  {
+    "business_id": "autozone-ca",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Pasadena",
+    "state": "CA",
+    "address": "550, North Lake Avenue, Pasadena, CA, 91101",
+    "phone": "+1-626-798-6745",
+    "website": "https://www.autozone.com/locations/ca/pasadena/550-n-lake-ave.html",
+    "google_maps_link": "https://www.google.com/maps?q=34.155287,-118.132177",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10815277110",
+    "lat": 34.1552874,
+    "lon": -118.132177
+  },
+  {
+    "business_id": "autozone-ca-4",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Simi Valley",
+    "state": "CA",
+    "address": "501, East Los Angeles Avenue, Simi Valley, CA, 93065",
+    "phone": "+1 805-426-2078",
+    "website": "https://www.autozone.com/locations/ca/simi-valley/501-e-los-angeles-ave.html",
+    "google_maps_link": "https://www.google.com/maps?q=34.272220,-118.787190",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11783492203",
+    "lat": 34.27222,
+    "lon": -118.78719
+  },
+  {
+    "business_id": "autozone-ca-34",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Long Beach",
+    "state": "CA",
+    "address": "3605, South Street, Long Beach, CA, 90805",
+    "phone": "+1-562-295-3680",
+    "website": "https://www.autozone.com/locations/ca/long-beach/3605-south-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.860701,-118.149064",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/689565712",
+    "lat": 33.8607006,
+    "lon": -118.1490637
+  },
+  {
+    "business_id": "autozone-ca-7",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Oceanside",
+    "state": "CA",
+    "address": "3513, Cannon Road, Oceanside, CA, 92056",
+    "phone": "+1-760-806-4821",
+    "website": "https://www.autozone.com/locations/ca/oceanside/3513-cannon-rd.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.171919,-117.252786",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/2718534579",
+    "lat": 33.1719193,
+    "lon": -117.2527864
+  },
+  {
+    "business_id": "autozone-ca-14",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Spring Valley",
+    "state": "CA",
+    "address": "699, Sweetwater Road, Spring Valley, CA, 91977",
+    "phone": "+-1619-463-1185",
+    "website": "https://www.autozone.com/locations/ca/spring-valley/699-sweetwater-rd.html",
+    "google_maps_link": "https://www.google.com/maps?q=32.708909,-117.011184",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9206559779",
+    "lat": 32.7089094,
+    "lon": -117.0111845
+  },
+  {
+    "business_id": "autozone-ca-35",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "San Diego",
+    "state": "CA",
+    "address": "3321, Palm Avenue, San Diego, CA, 92154",
+    "phone": "+1 619-575-2258",
+    "website": "https://www.autozone.com/locations/ca/san-diego/3321-palm-ave.html",
+    "google_maps_link": "https://www.google.com/maps?q=32.583526,-117.061014",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/706240499",
+    "lat": 32.5835264,
+    "lon": -117.0610135
+  },
+  {
+    "business_id": "autozone-ca-42",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Santee",
+    "state": "CA",
+    "address": "285, Town Center Parkway, Santee, CA, 92071",
+    "phone": "+1-619-448-0625",
+    "website": "https://www.autozone.com/locations/ca/santee/285-town-center-pkwy.html",
+    "google_maps_link": "https://www.google.com/maps?q=32.842561,-116.984250",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/933451478",
+    "lat": 32.8425608,
+    "lon": -116.9842502
+  },
+  {
+    "business_id": "autozone-ca-43",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "El Cajon",
+    "state": "CA",
+    "address": "1080, East Main Street, El Cajon, CA, 92020",
+    "phone": "+1-619-441-1888",
+    "website": "https://www.autozone.com/locations/ca/el-cajon/1080-e-main-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=32.795375,-116.945600",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/957710409",
+    "lat": 32.795375,
+    "lon": -116.9456001
+  },
+  {
+    "business_id": "autozone-ca-44",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Chula Vista",
+    "state": "CA",
+    "address": "885, East H Street, Chula Vista, CA, 91910",
+    "phone": "+1-619-421-8477",
+    "website": "https://www.autozone.com/locations/ca/chula-vista/885-e-h-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=32.636308,-117.023729",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/959866428",
+    "lat": 32.6363078,
+    "lon": -117.0237288
+  },
+  {
+    "business_id": "autozone-ca-22",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Vista",
+    "state": "CA",
+    "address": "950, South Santa Fe Avenue, Vista, CA, 92084",
+    "phone": "+1-760-639-5364",
+    "website": "https://www.autozone.com/locations/ca/vista/950-s-santa-fe-ave.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.193402,-117.232523",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1324216295",
+    "lat": 33.1934019,
+    "lon": -117.2325228
+  },
+  {
+    "business_id": "autozone-ca-5",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Fresno",
+    "state": "CA",
+    "address": "4490, West Shaw Avenue, Fresno, CA, 93722",
+    "phone": "+1-559-500-7810",
+    "website": "https://www.autozone.com/locations/ca/fresno/4490-w-shaw-ave.html",
+    "google_maps_link": "https://www.google.com/maps?q=36.808490,-119.873621",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13115327217",
+    "lat": 36.8084905,
+    "lon": -119.8736209
+  },
+  {
+    "business_id": "autozone-ca-41",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Madera",
+    "state": "CA",
+    "address": "211, North Gateway Drive, Madera, CA",
+    "phone": "+1-559-674-8198",
+    "website": "https://www.autozone.com/locations/ca/madera/211-n-gateway-dr.html",
+    "google_maps_link": "https://www.google.com/maps?q=36.962761,-120.061477",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/926253130",
+    "lat": 36.9627614,
+    "lon": -120.0614772
+  },
+  {
+    "business_id": "autozone-ca-19",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Turlock",
+    "state": "CA",
+    "address": "1272, Geer Road, Turlock, CA, 95380-3202",
+    "phone": "+1 209 669 8322",
+    "website": "https://www.autozone.com/locations/ca/turlock/1272-geer-rd.html",
+    "google_maps_link": "https://www.google.com/maps?q=37.505485,-120.848527",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1146185019",
+    "lat": 37.5054848,
+    "lon": -120.848527
+  },
+  {
+    "business_id": "autozone-ca-2",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Antelope",
+    "state": "CA",
+    "address": "4408, Elverta Road, Antelope, CA, 95843",
+    "phone": "+1-916-722-1051",
+    "website": "https://www.autozone.com/locations/ca/antelope/4408-elverta-rd--ste-220.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.712746,-121.361534",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11103305582",
+    "lat": 38.7127456,
+    "lon": -121.3615339
+  },
+  {
+    "business_id": "autozone-ca-3",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Elk Grove",
+    "state": "CA",
+    "address": "10047, Bruceville Road, Elk Grove, CA, 95757",
+    "phone": "+1-916-897-5081",
+    "website": "https://www.autozone.com/locations/ca/elk-grove/10047-bruceville-rd.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.393800,-121.416570",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11181690338",
+    "lat": 38.3938001,
+    "lon": -121.4165703
+  },
+  {
+    "business_id": "autozone-ca-46",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Clearlake",
+    "state": "CA",
+    "address": "15125, Lakeshore Drive, Clearlake, CA, 95422",
+    "phone": "+1-707-995-2130",
+    "website": "https://www.autozone.com/locations/ca/clearlake/15125-lakeshore-dr.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.949487,-122.630063",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/977737105",
+    "lat": 38.9494871,
+    "lon": -122.6300629
+  },
+  {
+    "business_id": "autozone-ca-10",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "CA",
+    "address": "14103, Ramona Parkway, CA, 91706",
+    "phone": "+1-626-813-0463",
+    "website": "https://www.autozone.com/locations/ca/baldwin-park/14103-ramona-blvd.html",
+    "google_maps_link": "https://www.google.com/maps?q=34.086450,-117.966643",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4213801589",
+    "lat": 34.08645,
+    "lon": -117.9666428
+  },
+  {
+    "business_id": "autozone-ca-9",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Gardena",
+    "state": "CA",
+    "address": "1361, West 190th Street, Gardena, CA",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/gardena/1361-w-190th-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.858738,-118.302221",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4116043300",
+    "lat": 33.858738,
+    "lon": -118.3022205
+  },
+  {
+    "business_id": "autozone-ca-11",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Santa Ana",
+    "state": "CA",
+    "address": "430, West 17th Street, Santa Ana, CA, 82706",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/santa-ana/430-w-17th-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.759399,-117.872179",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5970052161",
+    "lat": 33.7593991,
+    "lon": -117.8721788
+  },
+  {
+    "business_id": "autozone-ca-24",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Orange",
+    "state": "CA",
+    "address": "North Tustin Street, Orange, CA",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/orange/655-n-tustin-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.797542,-117.835151",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/228735120",
+    "lat": 33.797542,
+    "lon": -117.8351511
+  },
+  {
+    "business_id": "autozone-ca-27",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Lake Forest",
+    "state": "CA",
+    "address": "24361, Muirlands Boulevard, Lake Forest, CA, 92630",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/lake-forest/24361-muirlands-blvd.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.628951,-117.705061",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/346945250",
+    "lat": 33.6289513,
+    "lon": -117.7050613
+  },
+  {
+    "business_id": "autozone-ca-28",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Lomita",
+    "state": "CA",
+    "address": "1973, Lomita Boulevard, Lomita, CA",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/lomita/1973-lomita-blvd.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.800210,-118.313994",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/407988984",
+    "lat": 33.8002098,
+    "lon": -118.3139937
+  },
+  {
+    "business_id": "autozone-ca-29",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "La Mirada",
+    "state": "CA",
+    "address": "La Mirada Boulevard, La Mirada, CA",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/la-mirada/12320-la-mirada-blvd.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.917845,-118.011491",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/450482388",
+    "lat": 33.9178453,
+    "lon": -118.011491
+  },
+  {
+    "business_id": "autozone-ca-30",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Cudahy",
+    "state": "CA",
+    "address": "East Florence Avenue, Cudahy, CA",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/cudahy/7210-atlantic-ave.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.969964,-118.187418",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/451423545",
+    "lat": 33.9699638,
+    "lon": -118.1874177
+  },
+  {
+    "business_id": "autozone-ca-31",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "La Verne",
+    "state": "CA",
+    "address": "1410, Foothill Boulevard, La Verne, CA, 91750",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/la-verne/1410-foothill-blvd.html",
+    "google_maps_link": "https://www.google.com/maps?q=34.115626,-117.776095",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/470265833",
+    "lat": 34.1156262,
+    "lon": -117.7760951
+  },
+  {
+    "business_id": "autozone-ca-36",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Mission Viejo",
+    "state": "CA",
+    "address": "22942, Los Alisos Boulevard, Mission Viejo, CA, 92691",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/mission-viejo/22942-los-alisos.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.629047,-117.664687",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/728915650",
+    "lat": 33.6290471,
+    "lon": -117.6646875
+  },
+  {
+    "business_id": "autozone-ca-39",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Glendora",
+    "state": "CA",
+    "address": "220, West Alosta Avenue, Glendora, CA, 91740",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/glendora/220-w-rte-66.html",
+    "google_maps_link": "https://www.google.com/maps?q=34.128524,-117.867111",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/843989340",
+    "lat": 34.1285238,
+    "lon": -117.8671112
+  },
+  {
+    "business_id": "autozone-ca-40",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "North Hills",
+    "state": "CA",
+    "address": "16120, Nordhoff Street, North Hills, CA, 91343",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/north-hills/16102-nordhoff-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=34.235295,-118.483091",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/849394577",
+    "lat": 34.2352951,
+    "lon": -118.4830908
+  },
+  {
+    "business_id": "autozone-ca-45",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Lynwood",
+    "state": "CA",
+    "address": "10917, Long Beach Boulevard;long Beach blvd, Lynwood, CA, 90262",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/lynwood/10917-long-beach-blvd.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.933473,-118.212923",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/965739001",
+    "lat": 33.9334729,
+    "lon": -118.2129227
+  },
+  {
+    "business_id": "autozone-ca-17",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Costa Mesa",
+    "state": "CA",
+    "address": "744, West 19th Street, Costa Mesa, CA, 92627",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/costa-mesa/744-w-19th-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.643651,-117.929533",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1056489019",
+    "lat": 33.6436514,
+    "lon": -117.9295331
+  },
+  {
+    "business_id": "autozone-ca-18",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "San Fernando",
+    "state": "CA",
+    "address": "55, Maclay Street, San Fernando, CA, 91340",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/san-fernando/55-n-maclay-ave.html",
+    "google_maps_link": "https://www.google.com/maps?q=34.284609,-118.440764",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1067814583",
+    "lat": 34.2846094,
+    "lon": -118.4407642
+  },
+  {
+    "business_id": "autozone-ca-8",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "San Marcos",
+    "state": "CA",
+    "address": "195, South Rancho Santa Fe Road, San Marcos, CA, 92078",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/san-marcos/195-rancho-santa-fe-rd.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.146299,-117.199739",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4043005669",
+    "lat": 33.1462991,
+    "lon": -117.1997393
+  },
+  {
+    "business_id": "autozone-ca-32",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Escondido",
+    "state": "CA",
+    "address": "440, West Felicita Avenue, Escondido, CA, 92025",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/escondido/440-w-felicita-ave--1.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.104215,-117.075152",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/65596287",
+    "lat": 33.1042154,
+    "lon": -117.0751523
+  },
+  {
+    "business_id": "autozone-ca-21",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Lakeside",
+    "state": "CA",
+    "address": "12421, Woodside Avenue, Lakeside, CA, 92040",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/lakeside/12421-woodside-ave.html",
+    "google_maps_link": "https://www.google.com/maps?q=32.856039,-116.923879",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/132264300",
+    "lat": 32.8560388,
+    "lon": -116.9238785
+  },
+  {
+    "business_id": "autozone-ca-25",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Atwater",
+    "state": "CA",
+    "address": "450, West Bellevue Road, Atwater, CA, 95301",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/atwater/470-bellevue-rd.html",
+    "google_maps_link": "https://www.google.com/maps?q=37.360005,-120.597512",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/311706956",
+    "lat": 37.3600055,
+    "lon": -120.5975125
+  },
+  {
+    "business_id": "autozone-ca-26",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Los Banos",
+    "state": "CA",
+    "address": "665, West Pacheco Boulevard, Los Banos, CA, 93635",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/los-banos/665-pacheco-blvd.html",
+    "google_maps_link": "https://www.google.com/maps?q=37.056529,-120.848130",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/311709045",
+    "lat": 37.0565293,
+    "lon": -120.8481296
+  },
+  {
+    "business_id": "autozone-ca-37",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Dos Palos",
+    "state": "CA",
+    "address": "1249, Elgin Avenue, Dos Palos, CA, 93620",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/dos-palos/1249-elgin-ave.html",
+    "google_maps_link": "https://www.google.com/maps?q=36.989450,-120.634895",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/737716388",
+    "lat": 36.9894497,
+    "lon": -120.634895
+  },
+  {
+    "business_id": "autozone-ca-6",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Sacramento",
+    "state": "CA",
+    "address": "3000, Northgate Boulevard, Sacramento, CA, 95833",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/sacramento/3000-northgate-blvd.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.619788,-121.475076",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/1406120995",
+    "lat": 38.6197877,
+    "lon": -121.475076
+  },
+  {
+    "business_id": "autozone-ca-12",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Orangevale",
+    "state": "CA",
+    "address": "8895, Greenback Lane, Orangevale, CA, 95662",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/orangevale/8895-greenback-ln.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.678850,-121.226422",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6538663586",
+    "lat": 38.6788504,
+    "lon": -121.2264223
+  },
+  {
+    "business_id": "autozone-ca-20",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "West Sacramento",
+    "state": "CA",
+    "address": "1400, West Capitol Avenue, West Sacramento, CA, 95691",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/west-sacramento/1400-w-capitol-ave.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.581126,-121.527100",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/120651955",
+    "lat": 38.5811263,
+    "lon": -121.5271001
+  },
+  {
+    "business_id": "autozone-ca-23",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Petaluma",
+    "state": "CA",
+    "address": "101, East Washington Street, Petaluma, CA",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/petaluma/101-e-washington-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.236898,-122.638516",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/195463470",
+    "lat": 38.2368977,
+    "lon": -122.638516
+  },
+  {
+    "business_id": "autozone-ca-33",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Vacaville",
+    "state": "CA",
+    "address": "779, East Monte Vista Avenue, Vacaville, CA, 95688",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/vacaville/779-e-monte-vista-ave.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.360063,-121.982118",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/688784408",
+    "lat": 38.3600628,
+    "lon": -121.9821183
+  },
+  {
+    "business_id": "autozone-ca-38",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Fairfield",
+    "state": "CA",
+    "address": "1440, West Texas Street, Fairfield, CA, 94533",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/ca/fairfield/1440-w-texas-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.249673,-122.053830",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/779802967",
+    "lat": 38.2496727,
+    "lon": -122.05383
+  },
+  {
+    "business_id": "battery-specialist-ca",
+    "name": "Battery Specialist",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "El Cajon",
+    "state": "CA",
+    "address": "1070, East Main Street, El Cajon, CA, 92020",
+    "phone": "+1-619-588-2286",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=32.795227,-116.945972",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1005482842",
+    "lat": 32.7952271,
+    "lon": -116.9459719
+  },
+  {
+    "business_id": "bedliner-warehouse-ca",
+    "name": "Bedliner Warehouse",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "CA",
+    "address": "5555, Santa Fe Street, CA",
+    "phone": "+1 858 888 5338",
+    "website": "https://www.bedlinerwarehouse.com/",
+    "google_maps_link": "https://www.google.com/maps?q=32.824953,-117.230902",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9251043174",
+    "lat": 32.8249526,
+    "lon": -117.2309018
+  },
+  {
+    "business_id": "c-w-moss-auto-parts-ca",
+    "name": "C W Moss Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Orange",
+    "state": "CA",
+    "address": "402, West Chapman Avenue, Orange, CA",
+    "phone": "+1-714-639-3083",
+    "website": "https://cwmoss.com/",
+    "google_maps_link": "https://www.google.com/maps?q=33.787749,-117.856571",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/3194241887",
+    "lat": 33.7877495,
+    "lon": -117.8565705
+  },
+  {
+    "business_id": "ca-bumpers-and-body-parts-ca",
+    "name": "Ca Bumpers and Body Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "CA",
+    "address": "9165, San Fernando Road, CA, 91352",
+    "phone": "+1-818-767-9900",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=34.235303,-118.390218",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10733348108",
+    "lat": 34.2353031,
+    "lon": -118.3902181
+  },
+  {
+    "business_id": "california-mustang-ca",
+    "name": "California Mustang",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Industry",
+    "state": "CA",
+    "address": "19400, San Jose Avenue, Industry, CA, 91748",
+    "phone": "+1 800 775 0101",
+    "website": "http://www.cal-mustang.com/",
+    "google_maps_link": "https://www.google.com/maps?q=33.998505,-117.879144",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/377193759",
+    "lat": 33.9985046,
+    "lon": -117.8791439
+  },
+  {
+    "business_id": "carquest-ca-3",
+    "name": "Carquest",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "El Cajon",
+    "state": "CA",
+    "address": "391, North 2nd Street, El Cajon, CA, 92021",
+    "phone": "+1-619-402-1322",
+    "website": "https://local.firestonecompleteautocare.com/california/el-cajon/435-n-2nd-st/",
+    "google_maps_link": "https://www.google.com/maps?q=32.799295,-116.935185",
+    "tags": [
+      "parts",
+      "retail",
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/959567833",
+    "lat": 32.7992955,
+    "lon": -116.9351852
+  },
+  {
+    "business_id": "carquest-ca-4",
+    "name": "Carquest",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Spring Valley",
+    "state": "CA",
+    "address": "9748, Campo Road, Spring Valley, CA, 91977",
+    "phone": "+1-619-589-2300",
+    "website": "https://www.carquest.com/stores/ca/spring-valley/11108",
+    "google_maps_link": "https://www.google.com/maps?q=32.748484,-116.985767",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/993521751",
+    "lat": 32.7484842,
+    "lon": -116.985767
+  },
+  {
+    "business_id": "carquest-ca",
+    "name": "Carquest",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "CA",
+    "address": "CA",
+    "phone": "+1 949-446-9300",
+    "website": "https://www.carquest.com/stores/ca/lake-forest/15484",
+    "google_maps_link": "https://www.google.com/maps?q=33.666353,-117.662765",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11013075152",
+    "lat": 33.6663532,
+    "lon": -117.662765
+  },
+  {
+    "business_id": "carquest-ca-2",
+    "name": "Carquest",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Escondido",
+    "state": "CA",
+    "address": "351, East Pennsylvania Avenue, Escondido, CA, 92025",
+    "phone": "",
+    "website": "https://www.carquest.com/",
+    "google_maps_link": "https://www.google.com/maps?q=33.125120,-117.078929",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/100533179",
+    "lat": 33.1251203,
+    "lon": -117.0789293
+  },
+  {
+    "business_id": "clairemont-cycle-supply-ca",
+    "name": "Clairemont Cycle Supply",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "San Diego",
+    "state": "CA",
+    "address": "7843, Clairemont Mesa Boulevard, San Diego, CA, 92111",
+    "phone": "+1-858-571-5531",
+    "website": "https://www.clairemontcyclesupply.com/",
+    "google_maps_link": "https://www.google.com/maps?q=32.832448,-117.152540",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9546485885",
+    "lat": 32.8324481,
+    "lon": -117.1525399
+  },
+  {
+    "business_id": "coastline-motorsport-ca",
+    "name": "Coastline Motorsport",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Woodland Hills",
+    "state": "CA",
+    "address": "22836, Ventura Boulevard, Woodland Hills, CA, 91364",
+    "phone": "+1 818 222 8881",
+    "website": "http://www.coastlinemotorsport.net/",
+    "google_maps_link": "https://www.google.com/maps?q=34.165329,-118.624478",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/318831257",
+    "lat": 34.1653285,
+    "lon": -118.624478
+  },
+  {
+    "business_id": "completes-plus-auto-parts-ca",
+    "name": "Completes Plus Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "10713, Venice Boulevard, Los Angeles, CA, 90232",
+    "phone": "+1-310-842-8777",
+    "website": "https://completesplus.com",
+    "google_maps_link": "https://www.google.com/maps?q=34.018754,-118.407553",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9791703861",
+    "lat": 34.018754,
+    "lon": -118.4075526
+  },
+  {
+    "business_id": "detail-garage-ca",
+    "name": "Detail Garage",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Lake Forest",
+    "state": "CA",
+    "address": "23615, El Toro Road, Lake Forest, CA, 92630",
+    "phone": "+1 949-328-9990",
+    "website": "https://www.detailgarage.com/ca_lake_forest.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.620855,-117.703056",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10791231118",
+    "lat": 33.620855,
+    "lon": -117.7030563
+  },
+  {
+    "business_id": "e-m-auto-parts-ca",
+    "name": "E & M Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "El Cajon",
+    "state": "CA",
+    "address": "1647, East Main Street, El Cajon, CA, 92021",
+    "phone": "+1-619-444-3118",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=32.809953,-116.919760",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/961427382",
+    "lat": 32.8099529,
+    "lon": -116.9197596
+  },
+  {
+    "business_id": "elite-auto-parts-ca",
+    "name": "Elite Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Sun Valley",
+    "state": "CA",
+    "address": "9944, Glenoaks Boulevard, Sun Valley, CA, 91352",
+    "phone": "+1-818-767-0445",
+    "website": "https://www.eliteautopartsinc.com/",
+    "google_maps_link": "https://www.google.com/maps?q=34.250865,-118.388253",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/2448971328",
+    "lat": 34.2508649,
+    "lon": -118.3882533
+  },
+  {
+    "business_id": "fumoto-ca",
+    "name": "Fumoto",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "address": "3330, Industrial Drive, Santa Rosa, CA, 95403",
+    "phone": "+1 877 350 5584",
+    "website": "https://www.fumotousa.com",
+    "google_maps_link": "https://www.google.com/maps?q=38.476066,-122.739877",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/8413935279",
+    "lat": 38.4760658,
+    "lon": -122.7398767
+  },
+  {
+    "business_id": "hawaii-racing-ca",
+    "name": "Hawaii Racing",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Simi Valley",
+    "state": "CA",
+    "address": "780, East Easy Street, Simi Valley, CA, 93065",
+    "phone": "+1 805-583-8880",
+    "website": "https://hawaiiracing.com",
+    "google_maps_link": "https://www.google.com/maps?q=34.273250,-118.782550",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11906877491",
+    "lat": 34.27325,
+    "lon": -118.78255
+  },
+  {
+    "business_id": "htw-motorsports-ca",
+    "name": "HTW Motorsports",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "CA",
+    "address": "CA",
+    "phone": "+1 909-946-3338",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=34.106746,-117.645987",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9153461792",
+    "lat": 34.1067457,
+    "lon": -117.6459866
+  },
+  {
+    "business_id": "hyper-sound-ca",
+    "name": "Hyper Sound",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "CA",
+    "address": "CA",
+    "phone": "+526643168139",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=32.511052,-116.986010",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11625258308",
+    "lat": 32.5110525,
+    "lon": -116.98601
+  },
+  {
+    "business_id": "import-parts-only-ca",
+    "name": "Import Parts Only",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "CA",
+    "address": "9337, San Fernando Road, CA, 91352",
+    "phone": "+1-818-768-6608",
+    "website": "https://ipartsonly.com/",
+    "google_maps_link": "https://www.google.com/maps?q=34.238388,-118.393239",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10731714811",
+    "lat": 34.2383879,
+    "lon": -118.3932391
+  },
+  {
+    "business_id": "interstate-batteries-ca",
+    "name": "Interstate Batteries",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "San Gabriel",
+    "state": "CA",
+    "address": "460, Madera Street, San Gabriel, CA, 91776",
+    "phone": "+1 626-282-0363",
+    "website": "https://www.interstatebatteries.com/locations/all-battery-center-san-gabriel-ca",
+    "google_maps_link": "https://www.google.com/maps?q=34.095925,-118.103252",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13363977029",
+    "lat": 34.0959254,
+    "lon": -118.1032525
+  },
+  {
+    "business_id": "invasion-automotive-products-ca",
+    "name": "Invasion Automotive Products",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "North Hollywood",
+    "state": "CA",
+    "address": "6250, Lankershim Boulevard, North Hollywood, CA, 91606",
+    "phone": "+1-818-506-8005",
+    "website": "https://invasionautoproducts.com",
+    "google_maps_link": "https://www.google.com/maps?q=34.184582,-118.386211",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11367955691",
+    "lat": 34.1845815,
+    "lon": -118.3862113
+  },
+  {
+    "business_id": "jdm-carboy-ca",
+    "name": "JDM Carboy",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Pico Rivera",
+    "state": "CA",
+    "address": "9501, Slauson Avenue, Pico Rivera, CA, 90660-4749",
+    "phone": "+1-562-366-4516",
+    "website": "https://jdmcarboy.myshopify.com/",
+    "google_maps_link": "https://www.google.com/maps?q=33.968088,-118.094503",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13596773656",
+    "lat": 33.9680882,
+    "lon": -118.0945027
+  },
+  {
+    "business_id": "karl-s-auto-machine-ca",
+    "name": "Karl's Auto Machine",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Corona",
+    "state": "CA",
+    "address": "410, Princeland Court, Corona, CA, 92879",
+    "phone": "+1-951-272-4540",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=33.884823,-117.562408",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13362929733",
+    "lat": 33.8848229,
+    "lon": -117.5624079
+  },
+  {
+    "business_id": "la-bodega-de-autopartes-ca",
+    "name": "La Bodega de Autopartes",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Tijuana",
+    "state": "CA",
+    "address": "13231, Calle Jos\u00e9 Gallego Lugo, Tijuana, CA, 22015",
+    "phone": "+52 664 608 0449;+52 664 608 0691",
+    "website": "https://yonkeelchore.com/",
+    "google_maps_link": "https://www.google.com/maps?q=32.510199,-116.983666",
+    "tags": [
+      "parts",
+      "retail",
+      "salvage",
+      "junkyard",
+      "used-parts"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1045088004",
+    "lat": 32.5101989,
+    "lon": -116.9836662
+  },
+  {
+    "business_id": "machine-shop-ca",
+    "name": "Machine shop",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "CA",
+    "address": "CA",
+    "phone": "+1-818-767-6603",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=34.219639,-118.368214",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/8593476719",
+    "lat": 34.2196394,
+    "lon": -118.3682141
+  },
+  {
+    "business_id": "mustang-parts-direct-ca",
+    "name": "Mustang Parts Direct",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "CA",
+    "address": "CA",
+    "phone": "+1 909-608-7700",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=34.102981,-117.681243",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9166423810",
+    "lat": 34.1029815,
+    "lon": -117.6812435
+  },
+  {
+    "business_id": "napa-auto-parts-ca",
+    "name": "NAPA Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Simi Valley",
+    "state": "CA",
+    "address": "1717, East Los Angeles Avenue, Simi Valley, CA, 93065",
+    "phone": "+1 805-527-3131",
+    "website": "https://www.napaonline.com/en/ca/simi-valley/store/25065",
+    "google_maps_link": "https://www.google.com/maps?q=34.272180,-118.765670",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11805854884",
+    "lat": 34.27218,
+    "lon": -118.76567
+  },
+  {
+    "business_id": "napa-auto-parts-ca-6",
+    "name": "NAPA Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "El Cajon",
+    "state": "CA",
+    "address": "1235, Broadway, El Cajon, CA, 92021",
+    "phone": "+1-619-442-0461",
+    "website": "https://www.napaonline.com/stores/ca/el-cajon/1235-broadway",
+    "google_maps_link": "https://www.google.com/maps?q=32.807367,-116.938525",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/995061661",
+    "lat": 32.8073671,
+    "lon": -116.9385247
+  },
+  {
+    "business_id": "napa-auto-parts-ca-3",
+    "name": "NAPA Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Fresno",
+    "state": "CA",
+    "address": "4661, North Blackstone Avenue, Fresno, CA, 93726",
+    "phone": "+1-559-490-0198",
+    "website": "https://www.napaonline.com/en/CA/Fresno/store/31258",
+    "google_maps_link": "https://www.google.com/maps?q=36.802515,-119.791116",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1284574541",
+    "lat": 36.8025146,
+    "lon": -119.7911163
+  },
+  {
+    "business_id": "napa-auto-parts-ca-4",
+    "name": "NAPA Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Madera",
+    "state": "CA",
+    "address": "509, South Gateway Drive, Madera, CA",
+    "phone": "+1-559-674-2451",
+    "website": "https://www.napaonline.com/en/ca/madera/store/25260",
+    "google_maps_link": "https://www.google.com/maps?q=36.956860,-120.055549",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1301785349",
+    "lat": 36.9568602,
+    "lon": -120.0555491
+  },
+  {
+    "business_id": "napa-auto-parts-ca-5",
+    "name": "NAPA Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Sonoma",
+    "state": "CA",
+    "address": "19425, Sonoma Highway, Sonoma, CA, 95476",
+    "phone": "+1-707-996-8424",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=38.294996,-122.476025",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/283725386",
+    "lat": 38.294996,
+    "lon": -122.4760247
+  },
+  {
+    "business_id": "napa-auto-parts-ca-2",
+    "name": "NAPA Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "CA",
+    "address": "560, West Mission Road, CA",
+    "phone": "+1-559-683-7440",
+    "website": "http://napaonline.com/",
+    "google_maps_link": "https://www.google.com/maps?q=33.145742,-117.173212",
+    "tags": [
+      "parts",
+      "retail",
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/596832636",
+    "lat": 33.1457423,
+    "lon": -117.1732116
+  },
+  {
+    "business_id": "national-auto-parts-ca",
+    "name": "National Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "South Gate",
+    "state": "CA",
+    "address": "2781, Firestone Boulevard, South Gate, CA",
+    "phone": "+1-323-564-9593",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=33.956124,-118.221922",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/440831931",
+    "lat": 33.9561242,
+    "lon": -118.2219222
+  },
+  {
+    "business_id": "nobile-brothers-truck-accessory-centers-ca",
+    "name": "Nobile Brothers Truck Accessory Centers",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Fresno",
+    "state": "CA",
+    "address": "6291, North Blackstone Avenue, Fresno, CA, 93710",
+    "phone": "+1-559-437-1715",
+    "website": "https://nobiletruck.com/",
+    "google_maps_link": "https://www.google.com/maps?q=36.828103,-119.790617",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13236951366",
+    "lat": 36.8281032,
+    "lon": -119.7906174
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-21",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Lake Forest",
+    "state": "CA",
+    "address": "24601, Raymond Way, Lake Forest, CA, 92630",
+    "phone": "+1 949-829-8292",
+    "website": "https://locations.oreillyauto.com/ca/lakeforest/autoparts-2940.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.621548,-117.700156",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/793835058",
+    "lat": 33.621548,
+    "lon": -117.7001558
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-23",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "12420, Venice Boulevard, Los Angeles, CA, 90066",
+    "phone": "+1-310-397-1693",
+    "website": "https://locations.oreillyauto.com/ca/losangeles/autoparts-3010.html",
+    "google_maps_link": "https://www.google.com/maps?q=34.003051,-118.433808",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/8756227827",
+    "lat": 34.0030512,
+    "lon": -118.433808
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-6",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Simi Valley",
+    "state": "CA",
+    "address": "2780, East Los Angeles Avenue, Simi Valley, CA, 93065",
+    "phone": "+1 805-520-2455",
+    "website": "https://locations.oreillyauto.com/ca/simivalley/autoparts-3054.html",
+    "google_maps_link": "https://www.google.com/maps?q=34.270820,-118.741940",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11822276878",
+    "lat": 34.27082,
+    "lon": -118.74194
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-7",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Downey",
+    "state": "CA",
+    "address": "7839, Firestone Boulevard, Downey, CA, 90241",
+    "phone": "+1-562-861-9971",
+    "website": "https://locations.oreillyauto.com/ca/downey/autoparts-3045.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.944873,-118.141086",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11905579255",
+    "lat": 33.9448733,
+    "lon": -118.1410855
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-37",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "South Gate",
+    "state": "CA",
+    "address": "9775, Otis Street, South Gate, CA, 90280",
+    "phone": "+1-323-249-1333",
+    "website": "https://locations.oreillyauto.com/ca/southgate/autoparts-3063.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.944910,-118.198119",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/451424955",
+    "lat": 33.9449101,
+    "lon": -118.198119
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-40",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Covina",
+    "state": "CA",
+    "address": "501, North Azusa Avenue, Covina, CA, 91722",
+    "phone": "+1-626-339-5888",
+    "website": "https://locations.oreillyauto.com/ca/covina/autoparts-2983.html",
+    "google_maps_link": "https://www.google.com/maps?q=34.089319,-117.908347",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/471412423",
+    "lat": 34.0893193,
+    "lon": -117.9083466
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-16",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Lemon Grove",
+    "state": "CA",
+    "address": "6925, Federal Boulevard, Lemon Grove, CA, 91945",
+    "phone": "+1-619-697-2467",
+    "website": "https://locations.oreillyauto.com/ca/lemongrove/autoparts-2668.html",
+    "google_maps_link": "https://www.google.com/maps?q=32.741201,-117.048595",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/596070498",
+    "lat": 32.7412011,
+    "lon": -117.048595
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-12",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Encinitas",
+    "state": "CA",
+    "address": "180, North El Camino Real, Encinitas, CA, 92024",
+    "phone": "+1-760-753-4911",
+    "website": "https://locations.oreillyauto.com/ca/encinitas/autoparts-3154.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.048248,-117.260391",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/2847477634",
+    "lat": 33.0482475,
+    "lon": -117.2603911
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-22",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "San Diego",
+    "state": "CA",
+    "address": "2965, Beyer Boulevard, San Diego, CA, 92154",
+    "phone": "+1-619-429-9495",
+    "website": "https://locations.oreillyauto.com/ca/sandiego/autoparts-2798.html",
+    "google_maps_link": "https://www.google.com/maps?q=32.574820,-117.067594",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/8715265928",
+    "lat": 32.5748199,
+    "lon": -117.0675935
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-45",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "El Cajon",
+    "state": "CA",
+    "address": "101, South Mollison Avenue, El Cajon, CA, 92020",
+    "phone": "+1-619-579-3267",
+    "website": "https://locations.oreillyauto.com/ca/elcajon/autoparts-2792.html",
+    "google_maps_link": "https://www.google.com/maps?q=32.794583,-116.950530",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/993796382",
+    "lat": 32.7945834,
+    "lon": -116.9505296
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-46",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Spring Valley",
+    "state": "CA",
+    "address": "8375, Paradise Valley Road, Spring Valley, CA, 91977",
+    "phone": "+1-619-479-0198",
+    "website": "https://locations.oreillyauto.com/ca/springvalley/autoparts-2647.html",
+    "google_maps_link": "https://www.google.com/maps?q=32.696685,-117.018700",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/997050966",
+    "lat": 32.6966849,
+    "lon": -117.0187003
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-24",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Dinuba",
+    "state": "CA",
+    "address": "1401, West El Monte Way, Dinuba, CA, 93618",
+    "phone": "+1-559-595-9140",
+    "website": "https://locations.oreillyauto.com/ca/dinuba/autoparts-3641.html",
+    "google_maps_link": "https://www.google.com/maps?q=36.546705,-119.411636",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9852455195",
+    "lat": 36.5467046,
+    "lon": -119.4116363
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-5",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Turlock",
+    "state": "CA",
+    "address": "2200, West Monte Vista Avenue, Turlock, CA, 95382",
+    "phone": "+1 209 632 6065",
+    "website": "https://locations.oreillyauto.com/ca/turlock/autoparts-3585.html",
+    "google_maps_link": "https://www.google.com/maps?q=37.521280,-120.873952",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11738040245",
+    "lat": 37.5212799,
+    "lon": -120.8739524
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-42",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Clovis",
+    "state": "CA",
+    "address": "1375, North Willow Avenue, Clovis, CA, 93619",
+    "phone": "+1-559-323-1298",
+    "website": "https://locations.oreillyauto.com/ca/clovis/autoparts-3637.html",
+    "google_maps_link": "https://www.google.com/maps?q=36.854200,-119.729364",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/533303697",
+    "lat": 36.8541995,
+    "lon": -119.7293635
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-28",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Fresno",
+    "state": "CA",
+    "address": "4158, North West Avenue, Fresno, CA, 93705",
+    "phone": "+1-559-230-0993",
+    "website": "https://locations.oreillyauto.com/ca/fresno/autoparts-3557.html",
+    "google_maps_link": "https://www.google.com/maps?q=36.792894,-119.825084",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1275944034",
+    "lat": 36.7928942,
+    "lon": -119.8250838
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-29",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Madera",
+    "state": "CA",
+    "address": "301, West Olive Avenue, Madera, CA",
+    "phone": "+1-559-662-8990",
+    "website": "https://locations.oreillyauto.com/ca/madera/autoparts-3003.html",
+    "google_maps_link": "https://www.google.com/maps?q=36.953378,-120.058227",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1301595566",
+    "lat": 36.9533783,
+    "lon": -120.058227
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-20",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Elk Grove",
+    "state": "CA",
+    "address": "6628, Laguna Boulevard, Elk Grove, CA, 95758",
+    "phone": "+1 916-691-3302",
+    "website": "https://locations.oreillyauto.com/ca/elkgrove/autoparts-3179.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.422661,-121.425587",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6659495684",
+    "lat": 38.4226612,
+    "lon": -121.4255866
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-8",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Sacramento",
+    "state": "CA",
+    "address": "2560, Cottage Way, Sacramento, CA, 95825",
+    "phone": "+1-916-483-4942",
+    "website": "https://oreillyauto.com",
+    "google_maps_link": "https://www.google.com/maps?q=38.603067,-121.401892",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12798759087",
+    "lat": 38.6030671,
+    "lon": -121.4018922
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-32",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Sonoma",
+    "state": "CA",
+    "address": "289, West Napa Street, Sonoma, CA, 95476",
+    "phone": "+1-707-938-5093",
+    "website": "https://locations.oreillyauto.com/ca/sonoma/autoparts-2599.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.292178,-122.463278",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/282732192",
+    "lat": 38.2921778,
+    "lon": -122.4632782
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-38",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Clearlake",
+    "state": "CA",
+    "address": "14993, Lakeshore Drive, Clearlake, CA, 95422",
+    "phone": "+1-707-995-9295",
+    "website": "https://locations.oreillyauto.com/ca/clearlake/autoparts-3200.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.949575,-122.631945",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/458946614",
+    "lat": 38.9495747,
+    "lon": -122.6319452
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-13",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "CA",
+    "address": "14503, Ramona Parkway, CA",
+    "phone": "+1-626-962-7155",
+    "website": "https://locations.oreillyauto.com/ca/baldwinpark/autoparts-3052.html",
+    "google_maps_link": "https://www.google.com/maps?q=34.088377,-117.958078",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4204837026",
+    "lat": 34.0883771,
+    "lon": -117.9580784
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-14",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Anaheim",
+    "state": "CA",
+    "address": "2960, West Ball Road, Anaheim, CA, 92804",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/anaheim/autoparts-4396.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.816781,-117.992155",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4495388471",
+    "lat": 33.8167811,
+    "lon": -117.992155
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-17",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Pomona",
+    "state": "CA",
+    "address": "3298, North Garey Avenue, Pomona, CA, 91767",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/pomona/autoparts-3167.html",
+    "google_maps_link": "https://www.google.com/maps?q=34.106986,-117.746965",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6195650651",
+    "lat": 34.1069856,
+    "lon": -117.746965
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-9",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "San Gabriel",
+    "state": "CA",
+    "address": "965, East Las Tunas Drive, San Gabriel, CA, 91776",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/en-us/ca/sangabriel/autoparts-3153.html",
+    "google_maps_link": "https://www.google.com/maps?q=34.103734,-118.086429",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13417356206",
+    "lat": 34.1037341,
+    "lon": -118.0864294
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-10",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Pasadena",
+    "state": "CA",
+    "address": "1860, East Colorado Boulevard, Pasadena, CA, 91107",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/en-us/ca/pasadena/autoparts-3519.html",
+    "google_maps_link": "https://www.google.com/maps?q=34.145808,-118.112113",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13423292025",
+    "lat": 34.1458079,
+    "lon": -118.1121127
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-31",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Norco",
+    "state": "CA",
+    "address": "1050, Hamner Avenue, Norco, CA, 92860",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/norco/autoparts-3095.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.898519,-117.564035",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/282239047",
+    "lat": 33.8985188,
+    "lon": -117.5640346
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-35",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "San Fernando",
+    "state": "CA",
+    "address": "Pico Street, San Fernando, CA, 91340",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/sanfernando/autoparts-4605.html",
+    "google_maps_link": "https://www.google.com/maps?q=34.282471,-118.444112",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/438411413",
+    "lat": 34.2824711,
+    "lon": -118.4441123
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-36",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Compton",
+    "state": "CA",
+    "address": "100, East Compton Boulevard, Compton, CA",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/compton/autoparts-3079.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.895667,-118.223787",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/449994438",
+    "lat": 33.8956666,
+    "lon": -118.2237865
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-41",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Santa Clarita",
+    "state": "CA",
+    "address": "23323, Lyons Avenue, Santa Clarita, CA, 91355",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/santaclarita/autoparts-2822.html",
+    "google_maps_link": "https://www.google.com/maps?q=34.380125,-118.541432",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/472539321",
+    "lat": 34.3801249,
+    "lon": -118.5414325
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-43",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Ontario",
+    "state": "CA",
+    "address": "221, East Riverside Drive, Ontario, CA, 91761",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/ontario/autoparts-2649.html",
+    "google_maps_link": "https://www.google.com/maps?q=34.019843,-117.648997",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/733412042",
+    "lat": 34.0198433,
+    "lon": -117.6489969
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-44",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Santa Ana",
+    "state": "CA",
+    "address": "2801, South Bristol Street, Santa Ana, CA, 92704",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/santaana/autoparts-4666.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.709611,-117.884956",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/784943911",
+    "lat": 33.7096114,
+    "lon": -117.8849556
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Lakeside",
+    "state": "CA",
+    "address": "9732, Woodside Avenue, Lakeside, CA, 92040",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/lakeside/autoparts-2595.html",
+    "google_maps_link": "https://www.google.com/maps?q=32.855155,-116.932261",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10935298087",
+    "lat": 32.855155,
+    "lon": -116.9322606
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-26",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Escondido",
+    "state": "CA",
+    "address": "910, East Valley Parkway, Escondido, CA, 92025",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/escondido/autoparts-2936.html",
+    "google_maps_link": "https://www.google.com/maps?q=33.129089,-117.071036",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/100403814",
+    "lat": 33.1290895,
+    "lon": -117.071036
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-27",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "La Mesa",
+    "state": "CA",
+    "address": "5350, Jackson Drive, La Mesa, CA, 91942",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/lamesa/autoparts-2686.html",
+    "google_maps_link": "https://www.google.com/maps?q=32.776266,-117.017444",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1015115069",
+    "lat": 32.7762662,
+    "lon": -117.0174439
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-33",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Livingston",
+    "state": "CA",
+    "address": "497, Winton PKWY, Livingston, CA, 95334",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/livingston/autoparts-3654.html",
+    "google_maps_link": "https://www.google.com/maps?q=37.386230,-120.737912",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/311711206",
+    "lat": 37.3862298,
+    "lon": -120.7379124
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-34",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Atwater",
+    "state": "CA",
+    "address": "1620, Bell Lane, Atwater, CA, 95301",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/atwater/autoparts-3971.html",
+    "google_maps_link": "https://www.google.com/maps?q=37.344270,-120.615452",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/311711490",
+    "lat": 37.3442701,
+    "lon": -120.6154519
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-11",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "West Sacramento",
+    "state": "CA",
+    "address": "709, Jefferson Boulevard, West Sacramento, CA, 95691",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/westsacramento/autoparts-2584.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.581475,-121.526094",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/2120463607",
+    "lat": 38.5814753,
+    "lon": -121.5260935
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-15",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Davis",
+    "state": "CA",
+    "address": "1681, Research Park Drive, Davis, CA, 95618",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/davis/autoparts-3218.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.541256,-121.731788",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5300376125",
+    "lat": 38.5412564,
+    "lon": -121.7317883
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-18",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Citrus Heights",
+    "state": "CA",
+    "address": "6425, Antelope Road, Citrus Heights, CA, 95621",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/citrusheights/autoparts-2350.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.707894,-121.314421",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6567050736",
+    "lat": 38.7078936,
+    "lon": -121.3144211
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-19",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Roseville",
+    "state": "CA",
+    "address": "106, Harding Boulevard, Roseville, CA, 95678",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/roseville/autoparts-3461.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.744782,-121.273451",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/6568934223",
+    "lat": 38.7447821,
+    "lon": -121.2734514
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-25",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Carmichael",
+    "state": "CA",
+    "address": "6608, Fair Oaks Boulevard, Carmichael, CA, 95608",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/carmichael/autoparts-3006.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.620897,-121.328068",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9987584324",
+    "lat": 38.620897,
+    "lon": -121.3280681
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-2",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Petaluma",
+    "state": "CA",
+    "address": "361, East Washington Street, Petaluma, CA, 94952",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/petaluma/autoparts-3508.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.237683,-122.637032",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10940414508",
+    "lat": 38.2376829,
+    "lon": -122.6370323
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-3",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Antelope",
+    "state": "CA",
+    "address": "7933, Watt Avenue, Antelope, CA, 95843",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/antelope/autoparts-3558.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.713830,-121.394635",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11105501064",
+    "lat": 38.7138304,
+    "lon": -121.3946347
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-4",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "North Highlands",
+    "state": "CA",
+    "address": "6150, Watt Avenue, North Highlands, CA, 95660",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/northhighlands/autoparts-3465.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.677946,-121.382291",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11105808313",
+    "lat": 38.6779459,
+    "lon": -121.3822907
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-30",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Lincoln",
+    "state": "CA",
+    "address": "900, Groveland Lane, Lincoln, CA, 95648",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/lincoln/autoparts-3683.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.871546,-121.303203",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/259003491",
+    "lat": 38.871546,
+    "lon": -121.3032034
+  },
+  {
+    "business_id": "o-reilly-auto-parts-ca-39",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Vacaville",
+    "state": "CA",
+    "address": "181, Depot Street, Vacaville, CA, 95688",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/ca/vacaville/autoparts-2871.html",
+    "google_maps_link": "https://www.google.com/maps?q=38.358078,-121.980790",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/470508586",
+    "lat": 38.3580783,
+    "lon": -121.98079
+  },
+  {
+    "business_id": "pacific-equipment-company-ca",
+    "name": "Pacific Equipment Company",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Commerce",
+    "state": "CA",
+    "address": "2559, South Eastern Avenue, Commerce, CA, 90040",
+    "phone": "+1-323-720-5100",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=33.999753,-118.160394",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/451458984",
+    "lat": 33.9997535,
+    "lon": -118.1603945
+  },
+  {
+    "business_id": "parts-source-ca",
+    "name": "Parts Source",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "CA",
+    "address": "3311 Hamner Ave Norco, CA 92860 United States, CA, 92860",
+    "phone": "+1-951-734-1000",
+    "website": "http://partssource.biz",
+    "google_maps_link": "https://www.google.com/maps?q=33.929871,-117.557500",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9008674417",
+    "lat": 33.9298713,
+    "lon": -117.5575004
+  },
+  {
+    "business_id": "pick-em-up-truck-store-ca",
+    "name": "Pick-Em Up Truck Store",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Fresno",
+    "state": "CA",
+    "address": "3992, North Blackstone Avenue, Fresno, CA, 93726",
+    "phone": "+1-559-222-2611",
+    "website": "https://pickemuptruckstore.com/",
+    "google_maps_link": "https://www.google.com/maps?q=36.790273,-119.789872",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13246569801",
+    "lat": 36.7902729,
+    "lon": -119.7898721
+  },
+  {
+    "business_id": "pick-n-pull-ca",
+    "name": "Pick-n-Pull",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Sacramento",
+    "state": "CA",
+    "address": "4075, Happy Lane, Sacramento, CA, 95827",
+    "phone": "+1-916-503-9473",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=38.549101,-121.321273",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12810729698",
+    "lat": 38.549101,
+    "lon": -121.3212729
+  },
+  {
+    "business_id": "pioneer-auto-wreckers-ca",
+    "name": "Pioneer Auto Wreckers",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "El Cajon",
+    "state": "CA",
+    "address": "1416, Pioneer Way, El Cajon, CA, 92020",
+    "phone": "+1-619-401-0701",
+    "website": "https://www.pioneerautowreckers.com/",
+    "google_maps_link": "https://www.google.com/maps?q=32.814355,-116.968943",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9484318623",
+    "lat": 32.8143546,
+    "lon": -116.9689431
+  },
+  {
+    "business_id": "pst-auto-parts-ca",
+    "name": "PST Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "CA",
+    "address": "2032, Santa Fe Ave, CA",
+    "phone": "+1-310-554-4401",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=33.911185,-118.216030",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9018347664",
+    "lat": 33.9111849,
+    "lon": -118.2160299
+  },
+  {
+    "business_id": "quality-auto-part-and-wrecking-ca",
+    "name": "Quality Auto Part and Wrecking",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Rancho Cordova",
+    "state": "CA",
+    "address": "3761, Recycle Road, Rancho Cordova, CA, 95742",
+    "phone": "+1 916-638-3838",
+    "website": "https://www.qualityautopartsandwrecking.com/",
+    "google_maps_link": "https://www.google.com/maps?q=38.566802,-121.252358",
+    "tags": [
+      "parts",
+      "retail",
+      "salvage"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13339865776",
+    "lat": 38.5668021,
+    "lon": -121.2523576
+  },
+  {
+    "business_id": "san-pedro-auto-parts-ca",
+    "name": "San Pedro Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "San Pedro",
+    "state": "CA",
+    "address": "922, South Pacific Avenue, San Pedro, CA, 90731",
+    "phone": "+1-310-832-4294",
+    "website": "https://www.sanpedroautoparts.com/",
+    "google_maps_link": "https://www.google.com/maps?q=33.735502,-118.287703",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9696683798",
+    "lat": 33.7355016,
+    "lon": -118.287703
+  },
+  {
+    "business_id": "shell-land-ca",
+    "name": "Shell Land",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Norwalk",
+    "state": "CA",
+    "address": "10707, Firestone Boulevard, Norwalk, CA, 90650",
+    "phone": "+1-562-358-5031",
+    "website": "https://www.norwalkshellland.com/",
+    "google_maps_link": "https://www.google.com/maps?q=33.925739,-118.104986",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1245987343",
+    "lat": 33.9257391,
+    "lon": -118.1049857
+  },
+  {
+    "business_id": "singh-auto-parts-ca",
+    "name": "Singh Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Simi Valley",
+    "state": "CA",
+    "address": "3350, East Los Angeles Avenue, Simi Valley, CA, 93063",
+    "phone": "+1 805-855-0280",
+    "website": "https://www.singhautoparts.com",
+    "google_maps_link": "https://www.google.com/maps?q=34.271420,-118.731395",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12072204733",
+    "lat": 34.2714196,
+    "lon": -118.7313952
+  },
+  {
+    "business_id": "stadium-nissan-s-parts-department-ca",
+    "name": "Stadium Nissan's Parts Department",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Orange",
+    "state": "CA",
+    "address": "1140, West Katella Avenue, Orange, CA, 92867",
+    "phone": "",
+    "website": "https://www.stadiumnissanoc.com/parts",
+    "google_maps_link": "https://www.google.com/maps?q=33.808633,-117.864998",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12095918873",
+    "lat": 33.808633,
+    "lon": -117.8649977
+  },
+  {
+    "business_id": "stereo-pros-ca",
+    "name": "Stereo Pros",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Corona",
+    "state": "CA",
+    "address": "1441, West 6th Street, Corona, CA, 92882",
+    "phone": "+1-951-808-1232",
+    "website": "stereopros24.com",
+    "google_maps_link": "https://www.google.com/maps?q=33.878645,-117.593537",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13585960307",
+    "lat": 33.8786445,
+    "lon": -117.5935368
+  },
+  {
+    "business_id": "supreme-wraps-orange-county-ca",
+    "name": "Supreme Wraps Orange County",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Laguna Hills",
+    "state": "CA",
+    "address": "23151, Alcalde Drive, Laguna Hills, CA, 92653",
+    "phone": "+1-949-484-8550",
+    "website": "https://www.supreme-wraps.com/locations/supreme-wraps-newport-beach-laguna-hills",
+    "google_maps_link": "https://www.google.com/maps?q=33.623424,-117.725970",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10877881734",
+    "lat": 33.6234245,
+    "lon": -117.72597
+  },
+  {
+    "business_id": "torres-auto-accessories-ca",
+    "name": "Torres Auto Accessories",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Los Angeles",
+    "state": "CA",
+    "address": "633, West Manchester Avenue, Los Angeles, CA, 90044",
+    "phone": "+1-323-952-0811",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=33.960257,-118.285110",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9662746279",
+    "lat": 33.960257,
+    "lon": -118.2851098
+  },
+  {
+    "business_id": "unleashed-motorsports-ca",
+    "name": "Unleashed Motorsports",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Fresno",
+    "state": "CA",
+    "address": "6649, North Blackstone Avenue, Fresno, CA, 93710",
+    "phone": "+1-559-515-6900",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=36.834602,-119.790684",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13235256798",
+    "lat": 36.8346023,
+    "lon": -119.790684
+  },
+  {
+    "business_id": "villa-ford-of-orange-parts-center-ca",
+    "name": "Villa Ford of Orange Parts Center",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Orange",
+    "state": "CA",
+    "address": "2550, North Tustin Street, Orange, CA, 92865",
+    "phone": "+1-714-602-1013",
+    "website": "https://www.villaford.com/parts/",
+    "google_maps_link": "https://www.google.com/maps?q=33.831491,-117.836832",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12955686322",
+    "lat": 33.8314915,
+    "lon": -117.8368322
+  },
+  {
+    "business_id": "west-coast-car-audio-ca",
+    "name": "West Coast Car Audio",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "CA",
+    "address": "2409, Arden Way, CA",
+    "phone": "+1-916-564-3695",
+    "website": "https://www.westcoastcaraudio.com",
+    "google_maps_link": "https://www.google.com/maps?q=38.596345,-121.405737",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/7351549481",
+    "lat": 38.5963455,
+    "lon": -121.405737
+  },
+  {
+    "business_id": "wetmores-ca",
+    "name": "Wetmores",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "El Cajon",
+    "state": "CA",
+    "address": "1532, North Johnson Avenue, El Cajon, CA, 92020",
+    "phone": "+1-619-270-7160",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=32.815851,-116.971479",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1028735804",
+    "lat": 32.8158507,
+    "lon": -116.9714793
+  },
+  {
+    "business_id": "aaa-million-auto-parts-fl",
+    "name": "AAA Million Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Miami",
+    "state": "FL",
+    "address": "311, Southwest 22nd Avenue, Miami, FL, 33135",
+    "phone": "",
+    "website": "https://www.aaamillion.com/",
+    "google_maps_link": "https://www.google.com/maps?q=25.769395,-80.230461",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/435739811",
+    "lat": 25.7693947,
+    "lon": -80.2304611
+  },
+  {
+    "business_id": "advance-auto-parts-fl-7",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Margate",
+    "state": "FL",
+    "address": "7912, West Sample Road, Margate, FL, 33065",
+    "phone": "+1 954-752-4702",
+    "website": "https://stores.advanceautoparts.com/fl/margate/7912-w-sample-rd",
+    "google_maps_link": "https://www.google.com/maps?q=26.271731,-80.231542",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4741640771",
+    "lat": 26.2717306,
+    "lon": -80.2315416
+  },
+  {
+    "business_id": "advance-auto-parts-fl-8",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Pembroke Park",
+    "state": "FL",
+    "address": "3000, West Hallandale Bouleva, Pembroke Park, FL, 33009",
+    "phone": "+1-954-455-0042",
+    "website": "https://stores.advanceautoparts.com/fl/pembroke-park/3000-west-hallandale-boulevard",
+    "google_maps_link": "https://www.google.com/maps?q=25.984337,-80.166355",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5700682171",
+    "lat": 25.9843372,
+    "lon": -80.1663553
+  },
+  {
+    "business_id": "advance-auto-parts-fl-3",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Boca Raton",
+    "state": "FL",
+    "address": "21775, State Road 7, Boca Raton, FL, 33428",
+    "phone": "+1 561-487-5309",
+    "website": "https://stores.advanceautoparts.com/fl/boca-raton/21775-state-road-7",
+    "google_maps_link": "https://www.google.com/maps?q=26.352210,-80.203953",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12623342388",
+    "lat": 26.3522095,
+    "lon": -80.203953
+  },
+  {
+    "business_id": "advance-auto-parts-fl-5",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "North Miami Beach",
+    "state": "FL",
+    "address": "295, Northeast 167th Street, North Miami Beach, FL, 33162",
+    "phone": "+1-786-654-5511",
+    "website": "https://stores.advanceautoparts.com/fl/north-miami-beach/295-ne-167th-st",
+    "google_maps_link": "https://www.google.com/maps?q=25.928878,-80.194909",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13188032577",
+    "lat": 25.9288785,
+    "lon": -80.1949088
+  },
+  {
+    "business_id": "advance-auto-parts-fl-19",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Miami",
+    "state": "FL",
+    "address": "12120, Southwest 117th Avenue, Miami, FL, 33186",
+    "phone": "+1-305-251-0452",
+    "website": "https://stores.advanceautoparts.com/fl/miami/12120-sw-117th-ave",
+    "google_maps_link": "https://www.google.com/maps?q=25.656025,-80.384031",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/286204168",
+    "lat": 25.6560248,
+    "lon": -80.3840306
+  },
+  {
+    "business_id": "advance-auto-parts-fl-10",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Valrico",
+    "state": "FL",
+    "address": "1029, Bloomingdale Avenue, Valrico, FL, 33594",
+    "phone": "+1-813-643-2196",
+    "website": "https://stores.advanceautoparts.com/fl/valrico/1029-bloomingdale-ave",
+    "google_maps_link": "https://www.google.com/maps?q=27.893238,-82.267276",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5700922951",
+    "lat": 27.8932377,
+    "lon": -82.2672756
+  },
+  {
+    "business_id": "advance-auto-parts-fl-9",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Winter Springs",
+    "state": "FL",
+    "address": "380, East State Hwy 434, Winter Springs, FL, 32708",
+    "phone": "+1-407-327-6169",
+    "website": "https://stores.advanceautoparts.com/fl/winter-springs/380-e-state-road-434",
+    "google_maps_link": "https://www.google.com/maps?q=28.699485,-81.301484",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5700835887",
+    "lat": 28.699485,
+    "lon": -81.301484
+  },
+  {
+    "business_id": "advance-auto-parts-fl",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Orlando",
+    "state": "FL",
+    "address": "1479 East, Michigan Street, Orlando, FL, 32806",
+    "phone": "+1-407-895-9527",
+    "website": "https://stores.advanceautoparts.com/fl/orlando/1479-e-michigan-st",
+    "google_maps_link": "https://www.google.com/maps?q=28.513374,-81.361216",
+    "tags": [
+      "parts",
+      "retail",
+      "4x4"
+    ],
+    "jeep_note": "4x4 focused",
+    "source": "OSM",
+    "osm_id": "node/10798810360",
+    "lat": 28.5133742,
+    "lon": -81.3612165
+  },
+  {
+    "business_id": "advance-auto-parts-fl-29",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Jacksonville",
+    "state": "FL",
+    "address": "2676, Race Track Road, Jacksonville, FL, 32259",
+    "phone": "+1-904-900-7272",
+    "website": "https://stores.advanceautoparts.com/fl/jacksonville/2676-race-track-rd",
+    "google_maps_link": "https://www.google.com/maps?q=30.114102,-81.592942",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/971742380",
+    "lat": 30.1141016,
+    "lon": -81.5929418
+  },
+  {
+    "business_id": "advance-auto-parts-fl-20",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Fort Myers",
+    "state": "FL",
+    "address": "11591, Gladiolus Drive, Fort Myers, FL, 33908",
+    "phone": "+1-239-437-7065",
+    "website": "https://stores.advanceautoparts.com/fl/fort-myers/11591-gladiolus-dr",
+    "google_maps_link": "https://www.google.com/maps?q=26.515454,-81.942424",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/288427785",
+    "lat": 26.5154536,
+    "lon": -81.9424241
+  },
+  {
+    "business_id": "advance-auto-parts-fl-22",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "FL",
+    "address": "12114, US 301 (FL), FL, 33592",
+    "phone": "+1-813-982-2283",
+    "website": "http://www.advanceautoparts.com/",
+    "google_maps_link": "https://www.google.com/maps?q=28.064976,-82.306502",
+    "tags": [
+      "parts",
+      "retail",
+      "4x4"
+    ],
+    "jeep_note": "4x4 focused",
+    "source": "OSM",
+    "osm_id": "way/401323059",
+    "lat": 28.0649758,
+    "lon": -82.3065017
+  },
+  {
+    "business_id": "advance-auto-parts-fl-11",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "West Miami",
+    "state": "FL",
+    "address": "6520, Southwest 8th Street, West Miami, FL, 33144",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/west-miami/6520-sw-8th-st",
+    "google_maps_link": "https://www.google.com/maps?q=25.762769,-80.302336",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/7389740903",
+    "lat": 25.7627693,
+    "lon": -80.3023356
+  },
+  {
+    "business_id": "advance-auto-parts-fl-2",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Fort Lauderdale",
+    "state": "FL",
+    "address": "821, West Broward Boulevard, Fort Lauderdale, FL, 33312",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/fort-lauderdale/821-w-broward-blvd",
+    "google_maps_link": "https://www.google.com/maps?q=26.122342,-80.153060",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11059909552",
+    "lat": 26.1223424,
+    "lon": -80.1530605
+  },
+  {
+    "business_id": "advance-auto-parts-fl-21",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Hialeah",
+    "state": "FL",
+    "address": "7500, Northwest 186th Street, Hialeah, FL, 33015",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/miami-gardens/7500-nw-186th-st",
+    "google_maps_link": "https://www.google.com/maps?q=25.941613,-80.321559",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/295111272",
+    "lat": 25.9416126,
+    "lon": -80.3215594
+  },
+  {
+    "business_id": "advance-auto-parts-fl-23",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Hallandale Beach",
+    "state": "FL",
+    "address": "117, Federal Highway, Hallandale Beach, FL, 33009",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/hallandale-beach/117-n-federal-hwy",
+    "google_maps_link": "https://www.google.com/maps?q=25.987476,-80.142856",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/435144550",
+    "lat": 25.987476,
+    "lon": -80.1428562
+  },
+  {
+    "business_id": "advance-auto-parts-fl-24",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Miami Springs",
+    "state": "FL",
+    "address": "4100, Northwest 72nd Avenue, Miami Springs, FL, 33166",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/miami/4100-nw-72nd-ave",
+    "google_maps_link": "https://www.google.com/maps?q=25.811977,-80.313724",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/435520631",
+    "lat": 25.8119773,
+    "lon": -80.3137237
+  },
+  {
+    "business_id": "advance-auto-parts-fl-25",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "North Miami",
+    "state": "FL",
+    "address": "14301, West Dixie Highway, North Miami, FL, 33161",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/north-miami/14301-w-dixie-hwy",
+    "google_maps_link": "https://www.google.com/maps?q=25.907701,-80.170200",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/436040668",
+    "lat": 25.9077008,
+    "lon": -80.1702
+  },
+  {
+    "business_id": "advance-auto-parts-fl-27",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Dania Beach",
+    "state": "FL",
+    "address": "1750, Stirling Road, Dania Beach, FL, 33004",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/dania-beach/1750-stirling-rd",
+    "google_maps_link": "https://www.google.com/maps?q=26.048802,-80.157173",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/661162172",
+    "lat": 26.0488023,
+    "lon": -80.1571728
+  },
+  {
+    "business_id": "advance-auto-parts-fl-28",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Pembroke Pines",
+    "state": "FL",
+    "address": "303, North University Drive, Pembroke Pines, FL, 33024",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/pembroke-pines/303-n-university-dr",
+    "google_maps_link": "https://www.google.com/maps?q=26.012910,-80.247473",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/957900659",
+    "lat": 26.0129096,
+    "lon": -80.2474735
+  },
+  {
+    "business_id": "advance-auto-parts-fl-12",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "North Lauderdale",
+    "state": "FL",
+    "address": "7522, Southgate Boulevard, North Lauderdale, FL, 33068",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/north-lauderdale/7522-southgate-blvd",
+    "google_maps_link": "https://www.google.com/maps?q=26.227703,-80.226130",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1097381453",
+    "lat": 26.2277027,
+    "lon": -80.2261297
+  },
+  {
+    "business_id": "advance-auto-parts-fl-13",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Miami Beach",
+    "state": "FL",
+    "address": "957, Normandy Drive, Miami Beach, FL, 33141",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/miami-beach/957-normandy-dr",
+    "google_maps_link": "https://www.google.com/maps?q=25.856044,-80.129295",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1305549327",
+    "lat": 25.8560436,
+    "lon": -80.1292953
+  },
+  {
+    "business_id": "advance-auto-parts-fl-6",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Largo",
+    "state": "FL",
+    "address": "10500, Seminole Blvd, Largo, FL, 33778",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/largo/13015-seminole-blvd",
+    "google_maps_link": "https://www.google.com/maps?q=27.891723,-82.786647",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/2027063800",
+    "lat": 27.8917231,
+    "lon": -82.7866465
+  },
+  {
+    "business_id": "advance-auto-parts-fl-4",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "8427, west hillsborough avenue, Tampa, FL, 33615",
+    "phone": "+1-813-886-4139",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.997204,-82.579131",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12713784913",
+    "lat": 27.9972041,
+    "lon": -82.5791306
+  },
+  {
+    "business_id": "advance-auto-parts-fl-14",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Saint Petersburg",
+    "state": "FL",
+    "address": "5601, 34th Street North, Saint Petersburg, FL",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/saint-petersburg/5601-34th-st-n",
+    "google_maps_link": "https://www.google.com/maps?q=27.823224,-82.679022",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/162042311",
+    "lat": 27.823224,
+    "lon": -82.6790217
+  },
+  {
+    "business_id": "advance-auto-parts-fl-15",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Dunedin",
+    "state": "FL",
+    "address": "Main St, Dunedin, FL, 33761",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/dunedin/1915-main-st",
+    "google_maps_link": "https://www.google.com/maps?q=28.018848,-82.754388",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/173664476",
+    "lat": 28.0188477,
+    "lon": -82.7543879
+  },
+  {
+    "business_id": "advance-auto-parts-fl-16",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Pinellas Park",
+    "state": "FL",
+    "address": "Park Boulevard, Pinellas Park, FL",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/pinellas-park/6301-park-blvd-n",
+    "google_maps_link": "https://www.google.com/maps?q=27.839606,-82.722962",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/192508207",
+    "lat": 27.8396063,
+    "lon": -82.722962
+  },
+  {
+    "business_id": "advance-auto-parts-fl-17",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Clearwater",
+    "state": "FL",
+    "address": "22991, US 19 Northbound Frontage Road, Clearwater, FL, 33765",
+    "phone": "+1-727-443-4564",
+    "website": "https://stores.advanceautoparts.com/fl/clearwater/22991-us-highway-19-n",
+    "google_maps_link": "https://www.google.com/maps?q=27.981741,-82.729023",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/192575567",
+    "lat": 27.9817412,
+    "lon": -82.7290229
+  },
+  {
+    "business_id": "advance-auto-parts-fl-18",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Seminole",
+    "state": "FL",
+    "address": "7399, Seminole Boulevard, Seminole, FL, 33772",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/seminole/7399-seminole-blvd",
+    "google_maps_link": "https://www.google.com/maps?q=27.839233,-82.786659",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/227003464",
+    "lat": 27.8392335,
+    "lon": -82.7866592
+  },
+  {
+    "business_id": "advance-auto-parts-fl-26",
+    "name": "Advance Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Apopka",
+    "state": "FL",
+    "address": "1400, Rock Springs Road, Apopka, FL, 32712",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/apopka/1400-rock-springs-rd",
+    "google_maps_link": "https://www.google.com/maps?q=28.703780,-81.509832",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/611669269",
+    "lat": 28.70378,
+    "lon": -81.5098317
+  },
+  {
+    "business_id": "advanced-auto-parts-fl",
+    "name": "Advanced Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "FL",
+    "address": "12731, Trade Center Drive, FL, 34135",
+    "phone": "+1 239-390-1048",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=26.330792,-81.743282",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12200477604",
+    "lat": 26.3307918,
+    "lon": -81.7432824
+  },
+  {
+    "business_id": "advanced-discount-auto-parts-fl",
+    "name": "Advanced Discount Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/tampa/3402-e-hillsborough-ave",
+    "google_maps_link": "https://www.google.com/maps?q=27.996490,-82.421939",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/1669573793",
+    "lat": 27.9964904,
+    "lon": -82.4219392
+  },
+  {
+    "business_id": "arrow-toppers-fl",
+    "name": "Arrow Toppers",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Pinellas Park",
+    "state": "FL",
+    "address": "102nd Ave N, Pinellas Park, FL, 33782",
+    "phone": "+1-727-573-1800",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.864230,-82.699417",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/1770044181",
+    "lat": 27.86423,
+    "lon": -82.699417
+  },
+  {
+    "business_id": "autozone-fl-6",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Miami",
+    "state": "FL",
+    "address": "59, Northeast 79th Street, Miami, FL, 33138",
+    "phone": "+13057574866",
+    "website": "https://www.autozone.com/locations/fl/miami/59-ne-79th-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=25.847874,-80.195881",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/358728152",
+    "lat": 25.8478742,
+    "lon": -80.1958809
+  },
+  {
+    "business_id": "autozone-fl-7",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "West Miami",
+    "state": "FL",
+    "address": "6010, Southwest 8th Street, West Miami, FL, 33144",
+    "phone": "+1-305-267-6747",
+    "website": "https://www.autozone.com/locations/fl/west-miami/6010-sw-8th-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=25.762916,-80.293620",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/7524329314",
+    "lat": 25.7629156,
+    "lon": -80.2936201
+  },
+  {
+    "business_id": "autozone-fl-3",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "North Miami",
+    "state": "FL",
+    "address": "13903, West Dixie Highway, North Miami, FL, 33161",
+    "phone": "+13058918004",
+    "website": "https://www.autozone.com/locations/fl/north-miami/13903-w-dixie-hwy.html",
+    "google_maps_link": "https://www.google.com/maps?q=25.904005,-80.173749",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13577882569",
+    "lat": 25.904005,
+    "lon": -80.173749
+  },
+  {
+    "business_id": "autozone-fl-17",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Sunrise",
+    "state": "FL",
+    "address": "3001, North University Drive, Sunrise, FL, 33322",
+    "phone": "+1 954 742 3814",
+    "website": "https://www.autozone.com/locations/fl/sunrise/3001-n-university-dr.html",
+    "google_maps_link": "https://www.google.com/maps?q=26.162577,-80.257765",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/385897742",
+    "lat": 26.1625772,
+    "lon": -80.2577648
+  },
+  {
+    "business_id": "autozone-fl-18",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Cutler Bay",
+    "state": "FL",
+    "address": "19525, South Dixie Highway, Cutler Bay, FL, 33157",
+    "phone": "+1-786-732-8305",
+    "website": "https://www.autozone.com/locations/fl/cutler-bay/19525-s-dixie-hwy.html",
+    "google_maps_link": "https://www.google.com/maps?q=25.586179,-80.361552",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/435540598",
+    "lat": 25.5861789,
+    "lon": -80.3615516
+  },
+  {
+    "business_id": "autozone-fl-21",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Plantation",
+    "state": "FL",
+    "address": "801, State Road 7, Plantation, FL, 33317",
+    "phone": "+1-954-583-8717",
+    "website": "https://www.autozone.com/locations/fl/plantation/801-s-state-rd-7.html",
+    "google_maps_link": "https://www.google.com/maps?q=26.111091,-80.202223",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/638304684",
+    "lat": 26.1110913,
+    "lon": -80.2022232
+  },
+  {
+    "business_id": "autozone-fl-15",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Clearwater",
+    "state": "FL",
+    "address": "1675, Gulf to Bay Boulevard, Clearwater, FL, 33755",
+    "phone": "+1-727-443-4882",
+    "website": "https://www.autozone.com/locations/fl/clearwater/1675-gulf-to-bay-blvd.html",
+    "google_maps_link": "https://www.google.com/maps?q=27.960136,-82.767427",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/236786302",
+    "lat": 27.9601362,
+    "lon": -82.7674272
+  },
+  {
+    "business_id": "autozone-fl-19",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Largo",
+    "state": "FL",
+    "address": "200, Starkey Road, Largo, FL, 33771",
+    "phone": "+1-727-518-0161",
+    "website": "https://www.autozone.com/locations/fl/largo/200-starkey-rd.html",
+    "google_maps_link": "https://www.google.com/maps?q=27.915266,-82.763051",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/525012109",
+    "lat": 27.9152661,
+    "lon": -82.763051
+  },
+  {
+    "business_id": "autozone-fl-9",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Kissimmee",
+    "state": "FL",
+    "address": "3294, John Young Parkway, Kissimmee, FL, 34746",
+    "phone": "+1-407-552-0355",
+    "website": "https://www.autozone.com/locations/fl/kissimmee/3294-s-john-young-pkwy.html",
+    "google_maps_link": "https://www.google.com/maps?q=28.260473,-81.435183",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/8604462369",
+    "lat": 28.260473,
+    "lon": -81.4351832
+  },
+  {
+    "business_id": "autozone-fl",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Orlando",
+    "state": "FL",
+    "address": "8103, Lee Vista Boulevard, Orlando, FL, 32829",
+    "phone": "+1-407-533-6532",
+    "website": "https://www.autozone.com/locations/fl/orlando/8103-lee-vista.html",
+    "google_maps_link": "https://www.google.com/maps?q=28.466593,-81.274988",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/10981503346",
+    "lat": 28.4665933,
+    "lon": -81.2749883
+  },
+  {
+    "business_id": "autozone-fl-10",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Jacksonville",
+    "state": "FL",
+    "address": "300, Bartram Market Drive, Jacksonville, FL, 32259",
+    "phone": "+1-904-417-9073",
+    "website": "https://www.autozone.com/locations/fl/saint-johns/300-bartram-market-drive.html",
+    "google_maps_link": "https://www.google.com/maps?q=30.102116,-81.520290",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1025572952",
+    "lat": 30.1021159,
+    "lon": -81.5202898
+  },
+  {
+    "business_id": "autozone-fl-4",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Miami Gardens",
+    "state": "FL",
+    "address": "200, Northwest 191st Street, Miami Gardens, FL, 33169",
+    "phone": "+13052497990",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=25.949499,-80.205953",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13600659602",
+    "lat": 25.9494989,
+    "lon": -80.2059533
+  },
+  {
+    "business_id": "autozone-fl-16",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Hialeah",
+    "state": "FL",
+    "address": "5751, Northwest 183rd Street, Hialeah, FL, 33015",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/fl/hialeah/5751-nw-183rd-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=25.939860,-80.295434",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/287993116",
+    "lat": 25.9398601,
+    "lon": -80.2954338
+  },
+  {
+    "business_id": "autozone-fl-5",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "West Hillsborough Avenue, Tampa, FL, 33614",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/fl/tampa/1775-w-hillsborough-ave.html",
+    "google_maps_link": "https://www.google.com/maps?q=27.996390,-82.478757",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/1954798818",
+    "lat": 27.9963902,
+    "lon": -82.478757
+  },
+  {
+    "business_id": "autozone-fl-14",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Pinellas Park",
+    "state": "FL",
+    "address": "6465, Park Boulevard, Pinellas Park, FL, 33781",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/fl/pinellas-park/6465-park-blvd.html",
+    "google_maps_link": "https://www.google.com/maps?q=27.839603,-82.725440",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/192508094",
+    "lat": 27.8396027,
+    "lon": -82.72544
+  },
+  {
+    "business_id": "autozone-fl-20",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Seminole",
+    "state": "FL",
+    "address": "10890, Park Boulevard, Seminole, FL",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/fl/seminole/10890-park-blvd.html",
+    "google_maps_link": "https://www.google.com/maps?q=27.839154,-82.789487",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/525780217",
+    "lat": 27.8391545,
+    "lon": -82.7894866
+  },
+  {
+    "business_id": "autozone-fl-11",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Zephyrhills",
+    "state": "FL",
+    "address": "5350, Gall Boulevard, Zephyrhills, FL, 33542",
+    "phone": "+1-813-783-9228",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=28.235740,-82.182321",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1026505732",
+    "lat": 28.2357404,
+    "lon": -82.1823208
+  },
+  {
+    "business_id": "autozone-fl-12",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "New Port Richey",
+    "state": "FL",
+    "address": "6136, Ridge Road, New Port Richey, FL, 34668",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/fl/port-richey/6136-ridge-rd.html",
+    "google_maps_link": "https://www.google.com/maps?q=28.279942,-82.712464",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1059426614",
+    "lat": 28.2799423,
+    "lon": -82.712464
+  },
+  {
+    "business_id": "autozone-fl-23",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Saint Cloud",
+    "state": "FL",
+    "address": "4841, Bronson Highway, Saint Cloud, FL, 34771",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/fl/saint-cloud/4841-e-irlo-bronson-memorial.html",
+    "google_maps_link": "https://www.google.com/maps?q=28.246772,-81.246188",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/891528917",
+    "lat": 28.2467715,
+    "lon": -81.2461884
+  },
+  {
+    "business_id": "autozone-fl-13",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Davenport",
+    "state": "FL",
+    "address": "1001, Champions Drive, Davenport, FL, 33897",
+    "phone": "+1-863-256-1144",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=28.272221,-81.660706",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1342729799",
+    "lat": 28.2722207,
+    "lon": -81.6607057
+  },
+  {
+    "business_id": "autozone-fl-22",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Saint Augustine",
+    "state": "FL",
+    "address": "5465, FL 16, Saint Augustine, FL, 32092",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/fl/st-augustine/5465-state-road-16.html",
+    "google_maps_link": "https://www.google.com/maps?q=29.963118,-81.493559",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/769502574",
+    "lat": 29.9631184,
+    "lon": -81.4935585
+  },
+  {
+    "business_id": "autozone-fl-2",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Fort Myers",
+    "state": "FL",
+    "address": "8750, Gladiolus Drive, Fort Myers, FL, 33908",
+    "phone": "",
+    "website": "https://stores.advanceautoparts.com/fl/fort-myers/8750-gladiolus-dr",
+    "google_maps_link": "https://www.google.com/maps?q=26.521500,-81.900002",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11502239953",
+    "lat": 26.5214995,
+    "lon": -81.9000024
+  },
+  {
+    "business_id": "autozone-fl-8",
+    "name": "AutoZone",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "",
+    "website": "https://www.autozone.com/locations/fl/delray-beach/1545-s-congress-st.html",
+    "google_maps_link": "https://www.google.com/maps?q=26.440696,-80.091326",
+    "tags": [
+      "parts",
+      "retail",
+      "repair",
+      "mechanic"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/7667473784",
+    "lat": 26.4406959,
+    "lon": -80.0913261
+  },
+  {
+    "business_id": "electro-battery-inc-fl",
+    "name": "Electro Battery Inc.",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Saint Petersburg",
+    "state": "FL",
+    "address": "3138, 23rd Avenue North, Saint Petersburg, FL, 33713",
+    "phone": "",
+    "website": "https://www.electrobatteryinc.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.792502,-82.676286",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/7066869655",
+    "lat": 27.7925015,
+    "lon": -82.6762859
+  },
+  {
+    "business_id": "glenn-joiner-son-auto-parts-fl",
+    "name": "Glenn Joiner & Son Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Apopka",
+    "state": "FL",
+    "address": "250, East Third Street;East 3rd Street, Apopka, FL, 32703",
+    "phone": "+1-407-889-5222",
+    "website": "https://www.napaonline.com/en/fl/apopka/store/30685?sdref=modal",
+    "google_maps_link": "https://www.google.com/maps?q=28.673916,-81.506045",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/8423289708",
+    "lat": 28.6739164,
+    "lon": -81.5060453
+  },
+  {
+    "business_id": "glenn-joiner-son-automotive-supplies-fl",
+    "name": "Glenn Joiner & Son Automotive Supplies",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Winter Garden",
+    "state": "FL",
+    "address": "13202, West Colonial Drive, Winter Garden, FL, 34787",
+    "phone": "+1-407-656-4141",
+    "website": "https://www.napaonline.com/en/fl/winter-garden/store/24937?sdref=modal",
+    "google_maps_link": "https://www.google.com/maps?q=28.550418,-81.579025",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/8423283437",
+    "lat": 28.5504185,
+    "lon": -81.5790252
+  },
+  {
+    "business_id": "hobby-shop-garage-fl",
+    "name": "Hobby Shop Garage",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Lighthouse Point",
+    "state": "FL",
+    "address": "1941, Northeast 34th Court, Lighthouse Point, FL, 33064",
+    "phone": "+1-866-800-1941",
+    "website": "https://www.hobbyshopgarage.com/",
+    "google_maps_link": "https://www.google.com/maps?q=26.273298,-80.097033",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11381966078",
+    "lat": 26.2732979,
+    "lon": -80.0970334
+  },
+  {
+    "business_id": "hornblasters-inc-fl",
+    "name": "HornBlasters, Inc.",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Tampa",
+    "state": "FL",
+    "address": "6511, North 54th Street, Tampa, FL, 33610",
+    "phone": "+1-877-209-8179",
+    "website": "https://hornblasters.com/",
+    "google_maps_link": "https://www.google.com/maps?q=28.008580,-82.395197",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/9395888852",
+    "lat": 28.0085796,
+    "lon": -82.3951968
+  },
+  {
+    "business_id": "j-n-b-auto-parts-fl",
+    "name": "J n B Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "+1-407-568-2131",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=28.560774,-81.126790",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/388362389",
+    "lat": 28.5607742,
+    "lon": -81.1267902
+  },
+  {
+    "business_id": "just-brakes-fl",
+    "name": "Just Brakes",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Pinellas Park",
+    "state": "FL",
+    "address": "6790, US Highway 19 N, Pinellas Park, FL, 33781",
+    "phone": "+1-727-522-5188",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.833586,-82.680890",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/128965446",
+    "lat": 27.8335865,
+    "lon": -82.6808899
+  },
+  {
+    "business_id": "mercantile-europarts-inc-fl",
+    "name": "Mercantile Europarts, Inc.",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Miami",
+    "state": "FL",
+    "address": "6747, Southwest 8th Street, Miami, FL, 33144",
+    "phone": "+1-305-266-0507",
+    "website": "http://meuroparts.com",
+    "google_maps_link": "https://www.google.com/maps?q=25.763334,-80.304815",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/4454912674",
+    "lat": 25.7633339,
+    "lon": -80.3048146
+  },
+  {
+    "business_id": "napa-auto-parts-fl-2",
+    "name": "NAPA Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Orlando",
+    "state": "FL",
+    "address": "1140, South Rio Grande Avenue, Orlando, FL, 32805",
+    "phone": "+1-407-246-0684",
+    "website": "https://www.napaonline.com/stores/fl/orlando/1140-s-rio-grande-ave?sdref=modal",
+    "google_maps_link": "https://www.google.com/maps?q=28.527614,-81.401726",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/8423239505",
+    "lat": 28.527614,
+    "lon": -81.4017263
+  },
+  {
+    "business_id": "napa-auto-parts-fl-3",
+    "name": "NAPA Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Oviedo",
+    "state": "FL",
+    "address": "174A, East Mitchell Hammock Road, Oviedo, FL, 32765",
+    "phone": "+1-407-971-3061",
+    "website": "https://www.napaonline.com/en/fl/oviedo/store/30175?sdref=modal",
+    "google_maps_link": "https://www.google.com/maps?q=28.655304,-81.206515",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/8423479138",
+    "lat": 28.6553037,
+    "lon": -81.2065153
+  },
+  {
+    "business_id": "napa-auto-parts-fl",
+    "name": "NAPA Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Saint Petersburg",
+    "state": "FL",
+    "address": "2675, 54th Avenue North, Saint Petersburg, FL, 33714",
+    "phone": "+1-727-527-2181",
+    "website": "",
+    "google_maps_link": "https://www.google.com/maps?q=27.821609,-82.669759",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/1739872463",
+    "lat": 27.821609,
+    "lon": -82.669759
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl-3",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Miami",
+    "state": "FL",
+    "address": "14701, West Dixie Highway, Miami, FL, 33181",
+    "phone": "+17865283014",
+    "website": "https://locations.oreillyauto.com/en-us/fl/miami/autoparts-6503.html",
+    "google_maps_link": "https://www.google.com/maps?q=25.911276,-80.166560",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/13577882570",
+    "lat": 25.9112758,
+    "lon": -80.1665598
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl-5",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Lauderhill",
+    "state": "FL",
+    "address": "7940, West Commercial Boulevard, Lauderhill, FL, 33351",
+    "phone": "+1-954-947-0228",
+    "website": "https://locations.oreillyauto.com/fl/lauderhill/autoparts-5315.html",
+    "google_maps_link": "https://www.google.com/maps?q=26.193250,-80.257387",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/1095774454",
+    "lat": 26.1932497,
+    "lon": -80.2573874
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl-8",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Clearwater",
+    "state": "FL",
+    "address": "2355, Gulf to Bay Boulevard, Clearwater, FL, 33765",
+    "phone": "+1-727-725-2363",
+    "website": "https://locations.oreillyauto.com/en-us/fl/clearwater/autoparts-4626.html",
+    "google_maps_link": "https://www.google.com/maps?q=27.960007,-82.740082",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/524969694",
+    "lat": 27.9600071,
+    "lon": -82.7400818
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl-9",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Largo",
+    "state": "FL",
+    "address": "8651, Ulmerton Road, Largo, FL, 33771",
+    "phone": "+1-727-531-3081",
+    "website": "https://locations.oreillyauto.com/fl/largo/autoparts-4413.html",
+    "google_maps_link": "https://www.google.com/maps?q=27.895083,-82.758619",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/525258251",
+    "lat": 27.8950829,
+    "lon": -82.7586189
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Orlando",
+    "state": "FL",
+    "address": "2512, South Orange Blossom Trail, Orlando, FL, 32805",
+    "phone": "+1-407-284-1900",
+    "website": "https://locations.oreillyauto.com/fl/orlando/autoparts-4862.html",
+    "google_maps_link": "https://www.google.com/maps?q=28.516134,-81.397240",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/11534230951",
+    "lat": 28.5161338,
+    "lon": -81.3972403
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl-10",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "jac",
+    "state": "FL",
+    "address": "12510, san j, jac, FL, 32223",
+    "phone": "+1-904-292-1863",
+    "website": "https://locations.oreillyauto.com/fl/jacksonville/autoparts-4586.html",
+    "google_maps_link": "https://www.google.com/maps?q=30.141329,-81.633230",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/608444580",
+    "lat": 30.1413286,
+    "lon": -81.6332302
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl-7",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Fort Myers",
+    "state": "FL",
+    "address": "15681, San Carlos Boulevard, Fort Myers, FL, 33908",
+    "phone": "+1-239-215-1436",
+    "website": "https://locations.oreillyauto.com/fl/fortmyers/autoparts-5035.html",
+    "google_maps_link": "https://www.google.com/maps?q=26.512635,-81.943196",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/523139215",
+    "lat": 26.5126346,
+    "lon": -81.9431955
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl-2",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Boca Raton",
+    "state": "FL",
+    "address": "4040, North Dixie Highway, Boca Raton, FL, 33431",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/fl/bocaraton/autoparts-5440.html",
+    "google_maps_link": "https://www.google.com/maps?q=26.386741,-80.081000",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/12070138946",
+    "lat": 26.3867408,
+    "lon": -80.0809999
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl-6",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Saint Petersburg",
+    "state": "FL",
+    "address": "6398, 9th Street North, Saint Petersburg, FL, 33703",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/fl/stpetersburg/autoparts-5418.html",
+    "google_maps_link": "https://www.google.com/maps?q=27.829891,-82.647331",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/43877603",
+    "lat": 27.8298911,
+    "lon": -82.6473309
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl-11",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Jacksonville",
+    "state": "FL",
+    "address": "3842, Sunbeam Road, Jacksonville, FL, 32257",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/fl/jacksonville/autoparts-2349.html",
+    "google_maps_link": "https://www.google.com/maps?q=30.205172,-81.615484",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/814019729",
+    "lat": 30.2051725,
+    "lon": -81.6154837
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl-12",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Lehigh Acres",
+    "state": "FL",
+    "address": "5003, Lee Boulevard, Lehigh Acres, FL, 33971",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/fl/lehighacres/autoparts-5312.html",
+    "google_maps_link": "https://www.google.com/maps?q=26.617666,-81.731096",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/904582276",
+    "lat": 26.6176655,
+    "lon": -81.7310964
+  },
+  {
+    "business_id": "o-reilly-auto-parts-fl-4",
+    "name": "O'Reilly Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "",
+    "state": "FL",
+    "address": "FL",
+    "phone": "",
+    "website": "https://locations.oreillyauto.com/fl/delraybeach/autoparts-5446.html",
+    "google_maps_link": "https://www.google.com/maps?q=26.458841,-80.093273",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/7671664496",
+    "lat": 26.4588406,
+    "lon": -80.0932732
+  },
+  {
+    "business_id": "persons-auto-parts-fl",
+    "name": "Persons Auto Parts",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Saint Cloud",
+    "state": "FL",
+    "address": "1320, Kentucky Avenue, Saint Cloud, FL, 34769",
+    "phone": "+1-407-892-6000",
+    "website": "https://www.napaonline.com/en/fl/saint-cloud/store/25020?sdref=modal",
+    "google_maps_link": "https://www.google.com/maps?q=28.245397,-81.286136",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "way/907103953",
+    "lat": 28.2453975,
+    "lon": -81.2861362
+  },
+  {
+    "business_id": "persons-auto-parts-inc-fl",
+    "name": "Persons Auto Parts Inc",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Kissimmee",
+    "state": "FL",
+    "address": "2213, North Main Street, Kissimmee, FL, 34744",
+    "phone": "+1-407-847-2851",
+    "website": "https://www.napaonline.com/en/fl/kissimmee/store/24958?sdref=modal",
+    "google_maps_link": "https://www.google.com/maps?q=28.311242,-81.403193",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/8423180224",
+    "lat": 28.3112425,
+    "lon": -81.4031932
+  },
+  {
+    "business_id": "s-m-truck-world-fl",
+    "name": "S&M Truck World",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Clearwater",
+    "state": "FL",
+    "address": "2868, Gulf to Bay Boulevard, Clearwater, FL, 33759",
+    "phone": "+1-727-724-3437",
+    "website": "https://www.smtruckworld.com/",
+    "google_maps_link": "https://www.google.com/maps?q=27.960894,-82.718659",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/1994058888",
+    "lat": 27.960894,
+    "lon": -82.718659
+  },
+  {
+    "business_id": "sanford-auto-truck-fl",
+    "name": "Sanford Auto & Truck",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Sanford",
+    "state": "FL",
+    "address": "2913, South Orlando Dr, Sanford, FL, 32773",
+    "phone": "+1-407-322-5651",
+    "website": "https://www.napaonline.com/en/fl/sanford/store/25262?sdref=modal",
+    "google_maps_link": "https://www.google.com/maps?q=28.773638,-81.277801",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/8423510954",
+    "lat": 28.773638,
+    "lon": -81.2778015
+  },
+  {
+    "business_id": "superior-sound-auto-accessories-fl",
+    "name": "Superior Sound & Auto Accessories",
+    "category": "Parts Shops and 4x4 Retailers",
+    "city": "Hialeah",
+    "state": "FL",
+    "address": "5990, West 20th Avenue, Hialeah, FL, 33016",
+    "phone": "+1-305-698-2854",
+    "website": "http://superiorsoundandauto.com",
+    "google_maps_link": "https://www.google.com/maps?q=25.876871,-80.326366",
+    "tags": [
+      "parts",
+      "retail"
+    ],
+    "jeep_note": "",
+    "source": "OSM",
+    "osm_id": "node/5765799457",
+    "lat": 25.8768712,
+    "lon": -80.3263658
+  }
+]

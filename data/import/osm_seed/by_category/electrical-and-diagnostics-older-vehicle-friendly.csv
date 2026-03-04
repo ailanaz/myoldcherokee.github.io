@@ -1,0 +1,2 @@
+business_id,name,category,city,state,address,phone,website,google_maps_link,tags,jeep_note,source,osm_id,lat,lon
+rick-s-automotive-diagnostics-ca,Rick's Automotive & Diagnostics,Electrical and Diagnostics (Older Vehicle Friendly),Northridge,CA,"8802, Reseda Boulevard, Northridge, CA, 91324",+1-818-734-9005,,"https://www.google.com/maps?q=34.230925,-118.535705","electrical, diagnostics",,OSM,way/1174211788,34.2309253,-118.5357046

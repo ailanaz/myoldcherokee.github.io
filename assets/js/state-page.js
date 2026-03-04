@@ -184,9 +184,9 @@ async function initStatePage() {
       return x.is_active === true || String(x.status || '').toLowerCase() === 'active';
     });
 
-    // Only show directory businesses with a confirmed jeep_friendly_blurb
+    // Show all directory businesses for the state (free cards may have limited fields).
     var directory = dirAll.filter(function(x) {
-      return (x.state || '').toUpperCase() === stateCode && x.jeep_friendly_blurb;
+      return (x.state || '').toUpperCase() === stateCode;
     });
 
     var buySellGroups = groupBy(activeBuySell, 'category');
