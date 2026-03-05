@@ -213,6 +213,7 @@ async function initStatePage() {
       'Rust Repair and Body (Welding Focus)',
       'Upholstery and Interior (Headliners, Seats)',
       'Towing and Recovery (4x4 capable)',
+      'Specialty Services',
       'Salvage Yards and Junkyards (Used Jeep Parts)',
       'Parts Shops and 4x4 Retailers',
       'Body Shops',
