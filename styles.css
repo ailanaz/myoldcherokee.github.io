@@ -541,6 +541,24 @@ img { max-width: 100%; display: block; }
 .featured-verified { font-size: 0.75rem; color: var(--green); font-weight: 600; display: flex; align-items: center; gap: 0.3rem; margin-top: 0.3rem; }
 .featured-verified::before { content: '★'; color: var(--amber); }
 
+/* Keep active featured cards visually consistent in height/content density */
+#featured-grid .featured-biz-card[data-cat] .featured-biz-desc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  min-height: calc(0.88rem * 1.6 * 4);
+}
+
+/* Banker map button should be compact, not full-width */
+#featured-grid .featured-biz-card[data-business-id="banker-automotive-tx"] .featured-biz-actions .banker-map-btn {
+  flex: 0 0 auto;
+  min-width: 56px;
+  height: 30px;
+  padding: 0 0.55rem;
+  font-size: 0.72rem;
+}
+
 /* ── INACTIVE FEATURED CARD ────────────────────────────────────────────────── */
 .featured-biz-card--inactive { border-color: var(--line-mid); border-style: dashed; background: var(--off); box-shadow: none; }
 .featured-biz-card--inactive:hover { transform: none; box-shadow: none; }
