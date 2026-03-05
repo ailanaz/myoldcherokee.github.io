@@ -43,46 +43,6 @@
       border-color: #fff;
       color: #fff;
     }
-    .clubs-filters-wrap {
-      background: #fff;
-      border: 1.5px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-xs);
-      padding: 1rem;
-      margin-top: 1rem;
-    }
-    .clubs-filters-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 0.75rem;
-    }
-    .clubs-filter-group label {
-      display: block;
-      font-size: 0.78rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--text-mid);
-      margin-bottom: 0.35rem;
-    }
-    .clubs-filter-group input,
-    .clubs-filter-group select {
-      width: 100%;
-      height: 42px;
-      border: 1.5px solid var(--line-mid);
-      border-radius: var(--radius-sm);
-      padding: 0 0.75rem;
-      font-family: "DM Sans", sans-serif;
-      font-size: 0.92rem;
-      color: var(--text);
-      background: #fff;
-      outline: none;
-    }
-    .clubs-filter-group input:focus,
-    .clubs-filter-group select:focus {
-      border-color: var(--red);
-      box-shadow: 0 0 0 2px rgba(107,18,40,0.08);
-    }
 
     .clubs-section-title {
       margin: 2rem 0 1rem;
@@ -155,11 +115,7 @@
       margin-top: 0.75rem;
     }
 
-    @media (max-width: 1024px) {
-      .clubs-filters-grid { grid-template-columns: 1fr 1fr; }
-    }
     @media (max-width: 700px) {
-      .clubs-filters-grid { grid-template-columns: 1fr; }
       .online-row { flex-direction: column; align-items: flex-start; }
       .online-issue { margin-left: 0; white-space: normal; }
     }
@@ -221,21 +177,6 @@
 
 <section class="section">
   <div class="container">
-
-    <div class="clubs-filters-wrap" aria-label="Clubs filters">
-      <div class="clubs-filters-grid">
-        <div class="clubs-filter-group">
-          <label for="clubs-search">Search</label>
-          <input id="clubs-search" type="search" placeholder="Search club name, city, state, info, tags..." />
-        </div>
-        <div class="clubs-filter-group">
-          <label for="clubs-state">State</label>
-          <select id="clubs-state" aria-label="Filter by state">
-            <option value="all">All states</option>
-          </select>
-        </div>
-      </div>
-    </div>
 
     <h2 class="clubs-section-title">USA Jeep Clubs</h2>
     <div id="clubs-results" class="online-list"></div>
@@ -325,34 +266,8 @@
     return (v || "").toString().trim();
   }
 
-  function textBlob(club) {
-    return [
-      safe(club.name),
-      safe(club.info),
-      safe(club.city),
-      safe(club.state)
-    ].join(" ").toLowerCase();
-  }
-
-  function filterClubs() {
-    const search = safe(document.getElementById("clubs-search").value).toLowerCase();
-    const state = safe(document.getElementById("clubs-state").value).toUpperCase();
-
-    return clubs.filter((club) => {
-      if (state !== "ALL") {
-        if ((safe(club.state).toUpperCase() || "") !== state) return false;
-      }
-
-      if (search) {
-        if (!textBlob(club).includes(search)) return false;
-      }
-
-      return true;
-    });
-  }
-
   function render() {
-    const rows = filterClubs().sort((a, b) => safe(a.name).localeCompare(safe(b.name)));
+    const rows = clubs.slice().sort((a, b) => safe(a.name).localeCompare(safe(b.name)));
     const clubsWrap = document.getElementById("clubs-results");
     const clubsEmpty = document.getElementById("clubs-empty");
     clubsWrap.innerHTML = "";
@@ -381,18 +296,6 @@
     });
   }
 
-  function initStateFilter() {
-    const select = document.getElementById("clubs-state");
-    const states = Array.from(new Set(clubs.map((c) => safe(c.state).toUpperCase()).filter(Boolean))).sort();
-
-    states.forEach((s) => {
-      const opt = document.createElement("option");
-      opt.value = s;
-      opt.textContent = s;
-      select.appendChild(opt);
-    });
-  }
-
   function initSubmitFallback() {
     const btn = document.getElementById("submit-club-btn");
     fetch("submit-club.html", { method: "HEAD" })
@@ -405,14 +308,8 @@
   }
 
   document.addEventListener("DOMContentLoaded", function() {
-    initStateFilter();
     initSubmitFallback();
     document.getElementById("yr").textContent = new Date().getFullYear();
-
-    ["clubs-search", "clubs-state"].forEach((id) => {
-      document.getElementById(id).addEventListener("input", render);
-      document.getElementById(id).addEventListener("change", render);
-    });
 
     render();
   });
