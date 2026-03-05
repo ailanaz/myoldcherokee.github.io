@@ -2159,7 +2159,9 @@
         return String(a.name || '').localeCompare(String(b.name || ''), 'en', { sensitivity: 'base' });
       });
       initFilters(allRows);
-      filteredRows = allRows.slice();
+      filteredRows = allRows.filter(function(it) {
+        return !isChainFranchiseName(it.name || '');
+      });
       render();
     })
     .catch(function() {
