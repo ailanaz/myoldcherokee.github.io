@@ -550,15 +550,6 @@ img { max-width: 100%; display: block; }
   min-height: calc(0.88rem * 1.6 * 4);
 }
 
-/* Banker map button should be compact, not full-width */
-#featured-grid .featured-biz-card[data-business-id="banker-automotive-tx"] .featured-biz-actions .banker-map-btn {
-  flex: 0 0 auto;
-  min-width: 56px;
-  height: 30px;
-  padding: 0 0.55rem;
-  font-size: 0.72rem;
-}
-
 /* ── INACTIVE FEATURED CARD ────────────────────────────────────────────────── */
 .featured-biz-card--inactive { border-color: var(--line-mid); border-style: dashed; background: var(--off); box-shadow: none; }
 .featured-biz-card--inactive:hover { transform: none; box-shadow: none; }
