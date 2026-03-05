@@ -2045,6 +2045,15 @@
       if (st) states[st] = true;
       if (tp) types[tp] = true;
     });
+
+    // Keep Featured visible in the type search dropdown even if data types change.
+    if (!typeSel.querySelector('option[value="featured"]')) {
+      var f = document.createElement('option');
+      f.value = 'featured';
+      f.textContent = 'Featured';
+      typeSel.appendChild(f);
+    }
+
     Object.keys(states).sort().forEach(function(st) {
       var o = document.createElement('option');
       o.value = st;
