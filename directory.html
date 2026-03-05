@@ -121,23 +121,6 @@
   </div>
 </section>
 
-<div class="dir-filter-bar">
-  <div class="container dir-filter-inner">
-    <div class="clubs-style-field-wrap">
-      <select id="dir-cat" class="filter-select" onchange="filterDirectory()" aria-label="Filter directory sections">
-        <option value="all">What do you need?</option>
-        <option value="featured">Featured Businesses</option>
-        <option value="repair-shops">Repair Shops</option>
-        <option value="junkyards">Salvage &amp; Junk Yards</option>
-        <option value="shop-parts">Shop for Parts</option>
-        <option value="tires-wheels">Tires &amp; Wheels</option>
-        <option value="body-shop">Body Shops</option>
-        <option value="fabrication">Fabrication &amp; Welding (4x4)</option>
-      </select>
-    </div>
-  </div>
-</div>
-
 <section class="home-section" style="padding-top:1.5rem;padding-bottom:1.5rem;border-top:none;">
   <div class="container">
     <div class="home-section-head" style="margin-bottom:1rem;">
@@ -2056,6 +2039,10 @@
     return 'Website';
   }
 
+  function cleanTypeLabel(type) {
+    return String(type || '').replace(/\s*\(XJ\/Jeep-Friendly\)\s*/gi, '').trim();
+  }
+
   function initFilters(rows) {
     var states = {};
     var types = {};
@@ -2074,7 +2061,7 @@
     Object.keys(types).sort().forEach(function(tp) {
       var o = document.createElement('option');
       o.value = tp;
-      o.textContent = tp;
+      o.textContent = cleanTypeLabel(tp);
       typeSel.appendChild(o);
     });
   }
@@ -2129,7 +2116,7 @@
       card.innerHTML =
         '<div class="biz-logo-wrap"><div class="biz-logo">' + initials + '</div></div>' +
         '<div class="biz-body">' +
-          '<span class="biz-type">' + esc(it.type || 'Business') + '</span>' +
+          '<span class="biz-type">' + esc(cleanTypeLabel(it.type || 'Business')) + '</span>' +
           '<div class="biz-name">' + esc(it.name || 'Business') + '</div>' +
           '<div class="biz-loc">' + (cityState || 'Location not set') + '</div>' +
           addr +
