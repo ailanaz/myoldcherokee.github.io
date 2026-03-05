@@ -218,7 +218,6 @@
             </div>
             <div class="featured-verified">Submitter verified location, hours &amp; contact</div>
             <div class="state-feat-actions">
-              <span style="font-size:0.85rem;color:var(--text-mid);">📞 (512) 280-0877</span>
               <a href="https://www.facebook.com/profile.php?id=100064968071056" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Facebook</a>
               <a href="https://www.google.com/maps/search/Banker+Automotive,+10404+Slaughter+Creek+Dr,+Austin,+TX+78748" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">Map</a>
             </div>
@@ -1877,7 +1876,8 @@
     var n = String(name || '').trim();
     var nLower = n.toLowerCase();
     if (!n) return false;
-    if (/^\d/.test(n)) return true;
+    var lead = n.replace(/^[^a-z0-9]+/i, "");
+    if (/^[12356789]/.test(lead)) return true;
     if (/\blube\b/i.test(n)) return true;
     if (/^(1\s*way\s*auto\s*clinic|10\s*minute\s*lube\s*'?n\s*oil|10\s*minute\s*oil\s*change|101\s*auto\s*care|110\s*auto\s*care|1329\s*collision)$/i.test(n)) return true;
     return /\b(autozone|advance\s+auto(\s+parts?)?|car\s*quest|o['’]?reilly|napa|pep\s*boys|firestone|express\s+oil\s+change|mavis|performance\s+tire|precision\s+tune|southern\s+armature\s+works|lamb\s+motors|discount\s+tire|les\s+schwab|meineke|midas|jiffy\s+lube|valvoline|walmart|take\s*5|aaa|caliber|gerber|safelite|lkq|pull[- ]?a[- ]?part)\b/i.test(nLower);
