@@ -2046,13 +2046,12 @@
       if (tp) types[tp] = true;
     });
 
-    // Keep Featured visible in the type search dropdown even if data types change.
-    if (!typeSel.querySelector('option[value="featured"]')) {
-      var f = document.createElement('option');
-      f.value = 'featured';
-      f.textContent = 'Featured';
-      typeSel.appendChild(f);
-    }
+    // Rebuild type options so "Featured" is always pinned right under "All types".
+    while (typeSel.options.length > 1) typeSel.remove(1);
+    var featuredOpt = document.createElement('option');
+    featuredOpt.value = 'featured';
+    featuredOpt.textContent = 'Featured';
+    typeSel.appendChild(featuredOpt);
 
     Object.keys(states).sort().forEach(function(st) {
       var o = document.createElement('option');
@@ -2060,10 +2059,16 @@
       o.textContent = st;
       stateSel.appendChild(o);
     });
+    var seenTypeLabels = {};
     Object.keys(types).sort().forEach(function(tp) {
+      if (String(tp || '').toLowerCase() === 'featured') return;
+      var label = cleanTypeLabel(tp);
+      var key = label.toLowerCase();
+      if (!label || seenTypeLabels[key]) return;
+      seenTypeLabels[key] = true;
       var o = document.createElement('option');
       o.value = tp;
-      o.textContent = cleanTypeLabel(tp);
+      o.textContent = label;
       typeSel.appendChild(o);
     });
   }
