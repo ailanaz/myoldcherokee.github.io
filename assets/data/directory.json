@@ -10715,25 +10715,6 @@
     "lon": -121.3212729
   },
   {
-    "name": "PIDPLATES",
-    "type": "Parts Shops and 4x4 Retailers",
-    "state": "CA",
-    "city": "Redondo Beach",
-    "address": "Redondo Beach, CA 90278",
-    "phone": "(310) 372-2168",
-    "website": "https://www.pidplates.us/pidplates-logo/",
-    "summary": "Custom emblems, badges, and decals for enthusiast vehicles. Known for custom logo work supporting Jeep clubs including Midwest Krawlers.",
-    "categories": [
-      "Custom Badges",
-      "Decals",
-      "Club Support",
-      "Jeep Accessories"
-    ],
-    "source": "Website",
-    "business_id": "pidplates-ca",
-    "google_maps_link": "https://www.google.com/maps/search/PIDPLATES,+Redondo+Beach,+CA+90278"
-  },
-  {
     "name": "Pioneer Auto Wreckers",
     "type": "Parts Shops and 4x4 Retailers",
     "state": "CA",
@@ -19766,6 +19747,26 @@
     "google_maps_link": "https://www.google.com/maps?q=36.672575,-119.722330",
     "lat": 36.6725754,
     "lon": -119.7223302
+  },
+  {
+    "name": "PIDPLATES",
+    "type": "Specialty Services",
+    "state": "CA",
+    "city": "Redondo Beach",
+    "address": "Redondo Beach, CA 90278",
+    "phone": "(310) 372-2168",
+    "website": "https://www.pidplates.us/pidplates-logo/",
+    "summary": "Custom emblems, badges, and decals for enthusiast vehicles. Known for custom logo work supporting Jeep clubs including Midwest Krawlers.",
+    "categories": [
+      "Specialty Services",
+      "Custom Badges",
+      "Decals",
+      "Club Support",
+      "Jeep Accessories"
+    ],
+    "source": "Website",
+    "business_id": "pidplates-ca",
+    "google_maps_link": "https://www.google.com/maps/search/PIDPLATES,+Redondo+Beach,+CA+90278"
   },
   {
     "name": "Clarence Brown Alignment",
