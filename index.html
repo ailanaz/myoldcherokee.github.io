@@ -561,8 +561,14 @@
       });
     });
 
-    document.addEventListener('click', function(e) {
+    function closeIfOutside(e) {
       if (!e.target.closest('.search-wrap')) hideDropdown();
+    }
+
+    document.addEventListener('click', closeIfOutside);
+    document.addEventListener('touchstart', closeIfOutside, { passive: true });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') hideDropdown();
     });
   })();
 </script>
