@@ -50,8 +50,14 @@
   </url>
   <url>
     <loc>https://oldxjs.com/blog/index.html</loc>
-    <lastmod>2026-03-01</lastmod>
+    <lastmod>2026-03-05</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://oldxjs.com/blog/xj-transfer-case-trail-guide.html</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
