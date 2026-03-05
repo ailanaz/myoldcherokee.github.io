@@ -1980,6 +1980,7 @@
     'banker-automotive-tx': true,
     'pidplates-ca': true
   };
+  var featuredNameSignals = ['banker automotive', 'pidplates'];
   var typeAlias = {
     'Repair Shops': 'Repair Shops (XJ/Jeep-Friendly)',
     'Salvage and Junk Yards': 'Salvage Yards and Junkyards (Used Jeep Parts)',
@@ -2037,19 +2038,31 @@
     });
   }
 
+  function isFeaturedBusiness(it) {
+    var bid = String((it && it.business_id) || '').toLowerCase().trim();
+    if (bid && featuredIds[bid]) return true;
+    var name = String((it && it.name) || '').toLowerCase();
+    for (var i = 0; i < featuredNameSignals.length; i++) {
+      if (name.indexOf(featuredNameSignals[i]) !== -1) return true;
+    }
+    return false;
+  }
+
   function applyFilters() {
     var state = stateSel.value || 'all';
     var type = typeSel.value || 'all';
     var q = (searchEl.value || '').toLowerCase().trim();
+    var featuredKeyword = /^featured?$/.test(q);
+    var featuredMode = (type === 'featured') || (type === 'all' && featuredKeyword);
 
     filteredRows = allRows.filter(function(it) {
       if (state !== 'all' && (it.state || '').toUpperCase() !== state) return false;
-      if (type === 'featured') {
-        if (!featuredIds[(it.business_id || '').toLowerCase()]) return false;
+      if (featuredMode) {
+        if (!isFeaturedBusiness(it)) return false;
       } else if (type !== 'all' && (it.type || '') !== type) {
         return false;
       }
-      if (!q) return true;
+      if (!q || featuredKeyword) return true;
       var tags = Array.isArray(it.categories) ? it.categories.join(' ') : '';
       var hay = [it.name || '', it.city || '', it.state || '', it.type || '', tags].join(' ').toLowerCase();
       return hay.indexOf(q) !== -1;
