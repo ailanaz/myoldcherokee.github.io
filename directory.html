@@ -134,6 +134,7 @@
           <label for="live-type">Business Type</label>
           <select id="live-type" aria-label="Filter by type">
             <option value="all">All types</option>
+            <option value="featured">Featured</option>
           </select>
         </div>
         <div class="clubs-filter-group">
@@ -1943,6 +1944,10 @@
   var filteredRows = [];
   var pageSize = 36;
   var shown = pageSize;
+  var featuredIds = {
+    'banker-automotive-tx': true,
+    'pidplates-ca': true
+  };
   var typeAlias = {
     'Repair Shops': 'Repair Shops (XJ/Jeep-Friendly)',
     'Salvage and Junk Yards': 'Salvage Yards and Junkyards (Used Jeep Parts)',
@@ -2000,7 +2005,11 @@
 
     filteredRows = allRows.filter(function(it) {
       if (state !== 'all' && (it.state || '').toUpperCase() !== state) return false;
-      if (type !== 'all' && (it.type || '') !== type) return false;
+      if (type === 'featured') {
+        if (!featuredIds[(it.business_id || '').toLowerCase()]) return false;
+      } else if (type !== 'all' && (it.type || '') !== type) {
+        return false;
+      }
       if (!q) return true;
       var tags = Array.isArray(it.categories) ? it.categories.join(' ') : '';
       var hay = [it.name || '', it.city || '', it.state || '', it.type || '', tags].join(' ').toLowerCase();
