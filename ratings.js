@@ -67,8 +67,18 @@
     var actions = body.querySelector('.biz-actions') ||
       body.querySelector('.featured-biz-actions') ||
       body.querySelector('.state-feat-actions');
-    if (actions) body.insertBefore(wrap, actions);
-    else body.appendChild(wrap);
+    var isDirectoryPage = /(^|\/)directory\.html$/i.test(window.location.pathname || '');
+    if (actions && isDirectoryPage && actions.classList && actions.classList.contains('biz-actions')) {
+      actions.classList.add('biz-actions--rate-left');
+      actions.insertBefore(wrap, actions.firstChild);
+      Array.prototype.slice.call(actions.querySelectorAll('a.btn, button.btn, span.btn')).forEach(function(btn) {
+        if (!btn.closest('.biz-rating-wrap')) btn.classList.add('biz-cta-btn');
+      });
+    } else if (actions) {
+      body.insertBefore(wrap, actions);
+    } else {
+      body.appendChild(wrap);
+    }
   }
 
   /* ── update display after a successful submit ─────────── */
