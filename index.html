@@ -65,12 +65,12 @@
   </div>
 </header>
 
-<section style="background:#fff;padding:1.25rem 0 0.75rem;">
-  <div class="container" style="text-align:center;max-width:980px;">
-    <p style="margin:0;font-family:'Source Serif 4',serif;font-size:1.06rem;line-height:1.6;color:var(--text);">
+<section class="home-welcome">
+  <div class="container home-welcome-inner">
+    <p class="home-welcome-copy">
       Welcome to our growing resource hub for XJ owners.<br>
-      Buy and sell XJs, parts, and more in the community marketplace.<br>
-      Discover trusted shops, helpful guides, and be part of the best community on the road.
+      Look around and discover trusted shops, helpful guides, and more.<br class="home-welcome-break">
+      You can also buy or sell an old XJ or parts in the community marketplace and be part of the best community on the road.
     </p>
   </div>
 </section>
@@ -106,6 +106,25 @@
 
 <style>
   :root { --search-row-height: 72px; }
+
+  .home-welcome {
+    background: #fff;
+    padding: 1.25rem 0 0.75rem;
+  }
+
+  .home-welcome-inner {
+    text-align: center;
+    max-width: 980px;
+  }
+
+  .home-welcome-copy {
+    margin: 0;
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.04rem;
+    line-height: 1.58;
+    color: var(--text);
+    text-wrap: balance;
+  }
 
   .hero-stage {
     height: calc(var(--search-row-height) * 3);
@@ -152,6 +171,16 @@
     border-color: var(--red);
     box-shadow: 0 0 0 2px rgba(107,18,40,0.08);
   }
+
+  @media (max-width: 800px) {
+    .home-welcome-copy {
+      font-size: 0.95rem;
+      line-height: 1.52;
+    }
+    .home-welcome-break {
+      display: none;
+    }
+  }
 </style>
 
 <!-- FEATURED SHOPS & SERVICES CAROUSEL -->
@@ -196,8 +225,8 @@
 
           <!-- PIDPLATES — second card, active listing -->
           <div class="featured-biz-card" data-business-id="pidplates-ca">
-            <div class="featured-biz-img" style="display:flex;align-items:center;justify-content:center;background:#0f1119;color:#fff;">
-              <img src="PP%20Decals.png" alt="PIDPLATES logo" style="max-width:90%;max-height:84%;object-fit:contain;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';" />
+            <div class="featured-biz-img" style="display:flex;align-items:center;justify-content:center;background:var(--red);color:#fff;">
+              <img src="PidPlates.png" alt="PIDPLATES logo" style="max-width:90%;max-height:84%;object-fit:contain;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';" />
               <span style="display:none;font-family:'Oswald',sans-serif;font-size:1.4rem;letter-spacing:0.08em;">PIDPLATES</span>
             </div>
             <div class="featured-biz-body">
