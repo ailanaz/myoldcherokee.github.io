@@ -121,22 +121,37 @@
   </div>
 </section>
 
+<div class="dir-filter-bar">
+  <div class="container dir-filter-inner">
+    <div class="clubs-style-field-wrap">
+      <select id="dir-cat" class="filter-select" onchange="filterDirectory()" aria-label="Filter directory sections">
+        <option value="all">What do you need?</option>
+        <option value="featured">Featured Businesses</option>
+        <option value="repair-shops">Repair Shops</option>
+        <option value="junkyards">Salvage &amp; Junk Yards</option>
+        <option value="shop-parts">Shop for Parts</option>
+        <option value="tires-wheels">Tires &amp; Wheels</option>
+        <option value="body-shop">Body Shops</option>
+        <option value="fabrication">Fabrication &amp; Welding (4x4)</option>
+      </select>
+    </div>
+  </div>
+</div>
+
 <section class="home-section" style="padding-top:1.5rem;padding-bottom:1.5rem;border-top:none;">
   <div class="container">
     <div class="home-section-head" style="margin-bottom:1rem;">
       <div>
-        <h2 class="home-section-title">Businesses</h2>
+        <h2 class="home-section-title">All Businesses (Live Directory Data)</h2>
+        <p class="home-section-desc">Showing statewide directory entries pulled into one searchable view.</p>
       </div>
     </div>
 
     <div class="clubs-filters-wrap" style="margin-top:0;">
-      <div class="clubs-filters-grid" style="grid-template-columns:1fr 1fr 2fr;">
+      <div class="clubs-filters-grid" style="grid-template-columns:2fr 1fr 1fr;">
         <div class="clubs-filter-group">
-          <label for="live-type">Business Type</label>
-          <select id="live-type" aria-label="Filter by type">
-            <option value="all">All types</option>
-            <option value="featured">Featured</option>
-          </select>
+          <label for="live-search">Search</label>
+          <input id="live-search" type="search" placeholder="Search name, city, state, tags..." />
         </div>
         <div class="clubs-filter-group">
           <label for="live-state">State</label>
@@ -145,8 +160,10 @@
           </select>
         </div>
         <div class="clubs-filter-group">
-          <label for="live-search">Search</label>
-          <input id="live-search" type="search" placeholder="Search name, city, state, tags..." />
+          <label for="live-type">Business Type</label>
+          <select id="live-type" aria-label="Filter by type">
+            <option value="all">All types</option>
+          </select>
         </div>
       </div>
     </div>
@@ -208,33 +225,15 @@
           </div>
         </div>
 
-        <!-- Card 2: PIDPLATES (active) -->
-        <div class="state-feat-card" data-business-id="pidplates-ca">
-          <div class="state-feat-img" style="display:flex;align-items:center;justify-content:center;background:var(--red);color:#fff;">
-            <img src="PP%20Decals.png?v=20260304-5" alt="PIDPLATES logo" style="max-width:90%;max-height:84%;object-fit:contain;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';" />
-            <span style="display:none;font-family:'Oswald',sans-serif;font-size:1.15rem;letter-spacing:0.08em;">PIDPLATES</span>
+        <!-- Card 2: Placeholder -->
+        <a href="submit-featured.html" class="state-feat-card state-feat-card--inactive">
+          <div class="state-feat-img--empty">+</div>
+          <div class="state-feat-placeholder-body">
+            <div class="state-feat-placeholder-title">Get Featured Here</div>
+            <p class="state-feat-placeholder-sub">Repair shop, parts seller, or salvage yard? Get your business in front of XJ owners.</p>
+            <span class="btn btn-red btn-sm">Learn More &rarr;</span>
           </div>
-          <div class="state-feat-body">
-            <div class="state-feat-badges">
-              <span class="featured-badge" style="width:2rem;height:2rem;justify-content:center;font-size:1.15rem;padding:0;border-radius:50%;letter-spacing:0;">★</span>
-              <span class="featured-biz-type">Specialty Services</span>
-            </div>
-            <div class="state-feat-name">PIDPLATES</div>
-            <div class="state-feat-loc">📍 Redondo Beach, CA &nbsp;·&nbsp; 90278</div>
-            <p class="state-feat-desc">Custom emblems, badges, and decals for enthusiast vehicles. Built custom logo work tied to the Midwest Krawlers club community.</p>
-            <div class="featured-biz-tags" style="margin-bottom:0.5rem;">
-              <span class="featured-biz-tag">Custom Badges</span>
-              <span class="featured-biz-tag">Decals</span>
-              <span class="featured-biz-tag">Club Support</span>
-            </div>
-            <div class="featured-verified">Business website, contact info, and location verified</div>
-            <div class="state-feat-actions">
-              <span style="font-size:0.85rem;color:var(--text-mid);">📞 (310) 372-2168</span>
-              <a href="https://www.pidplates.us/pidplates-logo/" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">Website</a>
-              <a href="https://www.google.com/maps/search/PIDPLATES,+Redondo+Beach,+CA+90278" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">📍 Map</a>
-            </div>
-          </div>
-        </div>
+        </a>
 
         <!-- Card 3: Placeholder -->
         <a href="submit-featured.html" class="state-feat-card state-feat-card--inactive">
@@ -1889,36 +1888,97 @@
   }
   hideChainCardsInDirectoryPage();
 
-  function convertStaticCardsToInactive() {
-    // Convert legacy hardcoded cards to inactive placeholders.
-    // Keep featured strip cards and keep already-inactive placeholders unchanged.
-    document.querySelectorAll('.cat-section .grid .biz-card').forEach(function(card) {
-      var nameEl = card.querySelector('.biz-name');
-      var name = nameEl ? (nameEl.textContent || '').trim() : '';
-      if (!name || /your business here/i.test(name)) return;
+  function normalizeBizName(name) {
+    return String(name || '')
+      .toLowerCase()
+      .replace(/^[^a-z0-9]+/, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
 
-      card.style.borderStyle = 'dashed';
-      card.style.opacity = '0.7';
+  function isInactiveBizCard(card) {
+    if (!card) return false;
+    var href = (card.getAttribute('href') || '').toLowerCase();
+    var style = (card.getAttribute('style') || '').toLowerCase();
+    var name = ((card.querySelector('.biz-name') || {}).textContent || '').toLowerCase();
+    return href.indexOf('submit-featured') !== -1 ||
+      style.indexOf('border-style:dashed') !== -1 ||
+      name.indexOf('your business here') !== -1;
+  }
 
-      var logo = card.querySelector('.biz-logo');
-      if (logo) {
-        logo.textContent = '+';
-        logo.style.background = 'var(--off-2)';
-        logo.style.color = 'var(--text-lite)';
-        logo.style.fontSize = '1.4rem';
-      }
+  function sortStaticDirectoryListingsAZ() {
+    document.querySelectorAll('.cat-section .grid.g3').forEach(function(grid) {
+      var cards = Array.from(grid.children).filter(function(el) {
+        return el.classList && el.classList.contains('biz-card');
+      });
+      if (cards.length < 2) return;
 
-      var body = card.querySelector('.biz-body');
-      if (!body) return;
-      body.innerHTML =
-        '<span class="biz-type">Open Listing</span>' +
-        '<div class="biz-name" style="color:var(--text-lite);">Your Business Here</div>' +
-        '<div class="biz-loc" style="color:var(--text-lite);">Cherokee owners near you are searching</div>' +
-        '<p class="biz-desc">This listing is currently inactive. Submit your business to appear here.</p>' +
-        '<div class="biz-actions"><span class="btn btn-red btn-sm">Get Featured &rarr;</span></div>';
+      cards.sort(function(a, b) {
+        var aInactive = isInactiveBizCard(a);
+        var bInactive = isInactiveBizCard(b);
+        if (aInactive !== bInactive) return aInactive ? 1 : -1;
+        var aName = normalizeBizName(((a.querySelector('.biz-name') || {}).textContent || ''));
+        var bName = normalizeBizName(((b.querySelector('.biz-name') || {}).textContent || ''));
+        return aName.localeCompare(bName, 'en', { sensitivity: 'base' });
+      });
+
+      cards.forEach(function(card) { grid.appendChild(card); });
     });
   }
-  convertStaticCardsToInactive();
+  sortStaticDirectoryListingsAZ();
+
+  function featuredBusinessIds() {
+    var ids = {};
+    document.querySelectorAll('.state-featured-section [data-business-id]').forEach(function(el) {
+      var id = (el.getAttribute('data-business-id') || '').trim();
+      if (id) ids[id] = true;
+    });
+    return ids;
+  }
+
+  function enforceSingleActionButtonsAndFeaturedStars() {
+    var featuredIds = featuredBusinessIds();
+    document.querySelectorAll('.cat-section .biz-card').forEach(function(card) {
+      if (card.closest('.state-featured-section')) return;
+      if (isInactiveBizCard(card)) return;
+
+      var id = (card.getAttribute('data-business-id') || '').trim();
+      var isFeatured = !!(id && featuredIds[id]);
+
+      var bizType = card.querySelector('.biz-type');
+      if (isFeatured && bizType && !card.querySelector('.dir-featured-star')) {
+        var star = document.createElement('span');
+        star.className = 'dir-featured-star';
+        star.textContent = '★ Featured';
+        star.style.cssText = 'display:inline-flex;align-items:center;justify-content:center;background:var(--red);color:#fff;border-radius:999px;padding:0.1rem 0.45rem;margin-right:0.35rem;font-size:0.68rem;font-weight:700;letter-spacing:0.02em;vertical-align:middle;';
+        bizType.parentNode.insertBefore(star, bizType);
+      }
+
+      if (isFeatured) return;
+
+      var actions = card.querySelector('.biz-actions');
+      if (!actions) return;
+      var links = Array.from(actions.querySelectorAll('a[href]'));
+      if (!links.length) return;
+
+      var preferred = links.find(function(a) {
+        var href = (a.getAttribute('href') || '').toLowerCase();
+        return href &&
+          href.indexOf('google.com/maps') === -1 &&
+          href.indexOf('maps.app.goo.gl') === -1;
+      }) || links[0];
+
+      var single = preferred.cloneNode(true);
+      var hrefLower = (single.getAttribute('href') || '').toLowerCase();
+      var isMap = hrefLower.indexOf('google.com/maps') !== -1 || hrefLower.indexOf('maps.app.goo.gl') !== -1;
+      single.textContent = isMap ? 'Map' : 'Website';
+      single.className = isMap ? 'btn btn-outline btn-sm' : 'btn btn-red btn-sm';
+
+      actions.innerHTML = '';
+      actions.appendChild(single);
+    });
+  }
+  enforceSingleActionButtonsAndFeaturedStars();
 
   function setFilterDropdown() {
     var cat = (document.getElementById('shops-cat') || {}).value || 'all';
@@ -1939,9 +1999,7 @@
   function filterDirectory() {
     var cat = (document.getElementById('dir-cat') || {}).value || 'all';
     if (cat === 'featured') {
-      document.querySelectorAll('.cat-section').forEach(function(s) {
-        s.classList.toggle('hidden', s.id !== 'repair-shops');
-      });
+      window.location.href = 'featured.html';
       return;
     }
     document.querySelectorAll('.cat-section').forEach(function(s) {
@@ -1977,16 +2035,6 @@
   var filteredRows = [];
   var pageSize = 36;
   var shown = pageSize;
-  var featuredIds = {
-    'banker-automotive-tx': true,
-    'pidplates-ca': true
-  };
-  var featuredNameSignals = ['banker automotive', 'pidplates'];
-  var typeAlias = {
-    'Repair Shops': 'Repair Shops (XJ/Jeep-Friendly)',
-    'Salvage and Junk Yards': 'Salvage Yards and Junkyards (Used Jeep Parts)',
-    'Shop for Parts and More': 'Parts Shops and 4x4 Retailers'
-  };
 
   function mapUrl(it) {
     if (it.google_maps_link) return it.google_maps_link;
@@ -1995,9 +2043,10 @@
   }
 
   function websiteLabel(url) {
-    var u = String(url || '');
-    if (/yelp\.com/i.test(u)) return 'Yelp';
-    if (/google\.[^/]+\/maps/i.test(u)) return 'Google';
+    var u = String(url || '').toLowerCase();
+    if (!u) return 'Website';
+    if (u.indexOf('yelp.com') !== -1) return 'Yelp';
+    if (u.indexOf('google.com/maps') !== -1 || u.indexOf('maps.app.goo.gl') !== -1) return 'Google';
     return 'Website';
   }
 
@@ -2006,7 +2055,7 @@
     var types = {};
     rows.forEach(function(r) {
       var st = (r.state || '').toUpperCase();
-      var tp = (typeAlias[(r.type || '').trim()] || (r.type || '').trim());
+      var tp = (r.type || '').trim();
       if (st) states[st] = true;
       if (tp) types[tp] = true;
     });
@@ -2024,51 +2073,22 @@
     });
   }
 
-  function sortRows(rows) {
-    return rows.slice().sort(function(a, b) {
-      var as = String(a.state || '').toUpperCase();
-      var bs = String(b.state || '').toUpperCase();
-      if (as !== bs) return as < bs ? -1 : 1;
-      var at = String(a.type || '').toLowerCase();
-      var bt = String(b.type || '').toLowerCase();
-      if (at !== bt) return at < bt ? -1 : 1;
-      var an = String(a.name || '').toLowerCase();
-      var bn = String(b.name || '').toLowerCase();
-      if (an !== bn) return an < bn ? -1 : 1;
-      return 0;
-    });
-  }
-
-  function isFeaturedBusiness(it) {
-    var bid = String((it && it.business_id) || '').toLowerCase().trim();
-    if (bid && featuredIds[bid]) return true;
-    var name = String((it && it.name) || '').toLowerCase();
-    for (var i = 0; i < featuredNameSignals.length; i++) {
-      if (name.indexOf(featuredNameSignals[i]) !== -1) return true;
-    }
-    return false;
-  }
-
   function applyFilters() {
     var state = stateSel.value || 'all';
     var type = typeSel.value || 'all';
     var q = (searchEl.value || '').toLowerCase().trim();
-    var featuredKeyword = /^featured?$/.test(q);
-    var featuredMode = (type === 'featured') || (type === 'all' && featuredKeyword);
 
     filteredRows = allRows.filter(function(it) {
       if (state !== 'all' && (it.state || '').toUpperCase() !== state) return false;
-      if (featuredMode) {
-        if (!isFeaturedBusiness(it)) return false;
-      } else if (type !== 'all' && (it.type || '') !== type) {
-        return false;
-      }
-      if (!q || featuredKeyword) return true;
+      if (type !== 'all' && (it.type || '') !== type) return false;
+      if (!q) return true;
       var tags = Array.isArray(it.categories) ? it.categories.join(' ') : '';
       var hay = [it.name || '', it.city || '', it.state || '', it.type || '', tags].join(' ').toLowerCase();
       return hay.indexOf(q) !== -1;
     });
-    filteredRows = sortRows(filteredRows);
+    filteredRows.sort(function(a, b) {
+      return String(a.name || '').localeCompare(String(b.name || ''), 'en', { sensitivity: 'base' });
+    });
     shown = pageSize;
     render();
   }
@@ -2090,8 +2110,9 @@
       var addr = it.address ? '<div class="biz-loc" style="margin-top:0.15rem;">&#128205; ' + esc(it.address) + '</div>' : '';
       var phone = it.phone ? '<div class="biz-loc" style="margin-top:0.15rem;">&#128222; ' + esc(it.phone) + '</div>' : '';
       var map = mapUrl(it);
-      var webBtn = it.website ? '<a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel(it.website) + '</a>' : '';
-      var mapBtn = '<a href="' + esc(map) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>';
+      var singleBtn = it.website
+        ? '<a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel(it.website) + '</a>'
+        : '<a href="' + esc(map) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>';
       var bid = it.business_id ? esc(it.business_id) : '';
 
       var card = document.createElement('div');
@@ -2106,7 +2127,7 @@
           '<div class="biz-loc">' + (cityState || 'Location not set') + '</div>' +
           addr +
           phone +
-          '<div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">' + webBtn + mapBtn + '</div>' +
+          '<div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">' + singleBtn + '</div>' +
         '</div>';
       grid.appendChild(card);
     });
@@ -2126,13 +2147,10 @@
   fetch('assets/data/directory.json')
     .then(function(res) { if (!res.ok) throw new Error('load failed'); return res.json(); })
     .then(function(rows) {
-      allRows = Array.isArray(rows) ? rows.map(function(r) {
-        var t = (r.type || '').trim();
-        if (typeAlias[t]) r.type = typeAlias[t];
-        if (r.state) r.state = String(r.state).toUpperCase();
-        return r;
-      }) : [];
-      allRows = sortRows(allRows);
+      allRows = Array.isArray(rows) ? rows : [];
+      allRows.sort(function(a, b) {
+        return String(a.name || '').localeCompare(String(b.name || ''), 'en', { sensitivity: 'base' });
+      });
       initFilters(allRows);
       filteredRows = allRows.slice();
       render();
