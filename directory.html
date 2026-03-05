@@ -125,6 +125,7 @@
     <div class="clubs-style-field-wrap">
       <select id="dir-cat" class="filter-select" onchange="filterDirectory()" aria-label="Filter directory sections">
         <option value="all">What do you need?</option>
+        <option value="featured">Featured</option>
         <option value="repair-shops">Repair Shops</option>
         <option value="junkyards">Salvage &amp; Junk Yards</option>
         <option value="shop-parts">Shop for Parts</option>
@@ -1921,6 +1922,12 @@
 
   function filterDirectory() {
     var cat = (document.getElementById('dir-cat') || {}).value || 'all';
+    if (cat === 'featured') {
+      document.querySelectorAll('.cat-section').forEach(function(s) {
+        s.classList.toggle('hidden', s.id !== 'repair-shops');
+      });
+      return;
+    }
     document.querySelectorAll('.cat-section').forEach(function(s) {
       if (cat === 'all') {
         s.classList.remove('hidden');
