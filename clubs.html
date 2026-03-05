@@ -377,131 +377,51 @@
   const clubs = [
     {
       type: "local",
-      name: "Central Texas XJ Collective",
-      info: "Weekend trail runs, wrench nights, and recovery practice for old-school XJ owners in the Austin area.",
-      contact: "Contact: Jamie R. | (512) 555-0184 | ctxjcollective@email.com",
-      city: "Austin",
-      state: "TX",
-      links: {
-        website: "https://example.com/ctxjcollective",
-        facebook: "https://facebook.com/groups/ctxjcollective",
-        instagram: "https://instagram.com/ctxjcollective",
-        discord: "",
-        forum: ""
-      },
-      tags: ["xj", "trail rides", "austin", "wrench night", "4x4"]
-    },
-    {
-      type: "local",
-      name: "North Texas Jeep & XJ Riders",
-      info: "Dallas/Fort Worth meetups focused on beginner-friendly trails, suspension setup help, and camp weekends.",
-      contact: "Contact: Chris M. | (214) 555-0197",
-      city: "Dallas",
+      name: "Example Club Listing - Event Post",
+      info: "Use this format for event posts: one sentence with trail type, event date, meetup time, and skill level.",
+      contact: "Contact: Add organizer name, email, and phone",
+      city: "Your City",
       state: "TX",
       links: {
         website: "",
-        facebook: "https://facebook.com/groups/ntxjeepxj",
-        instagram: "",
-        discord: "https://discord.gg/example-ntx",
-        forum: ""
-      },
-      tags: ["dfw", "xj", "lift installs", "off-road"]
-    },
-    {
-      type: "local",
-      name: "Houston Backroads Jeep Club",
-      info: "Monthly social meetup and quarterly off-road trips with a strong Cherokee and classic Jeep turnout.",
-      contact: "Contact: hbjeepclub@email.com",
-      city: "Houston",
-      state: "TX",
-      links: {
-        website: "https://example.com/houstonbackroads",
-        facebook: "https://facebook.com/houstonbackroadsjeep",
-        instagram: "https://instagram.com/houstonbackroadsjeep",
-        discord: "",
-        forum: ""
-      },
-      tags: ["houston", "meetups", "xj owners", "trail builds"]
-    },
-    {
-      type: "local",
-      name: "West TN Cherokee Crew",
-      info: "Memphis-area Cherokee group running local trails and helping members source parts for 84–01 builds.",
-      contact: "Contact: Dana P. | (901) 555-0102",
-      city: "Memphis",
-      state: "TN",
-      links: {
-        website: "",
-        facebook: "https://facebook.com/groups/westtncherokeecrew",
+        facebook: "",
         instagram: "",
         discord: "",
         forum: ""
       },
-      tags: ["memphis", "parts leads", "xj", "west tennessee"]
+      tags: ["example", "events", "trail ride", "template"]
     },
     {
       type: "local",
-      name: "Middle Tennessee Jeep Trail Society",
-      info: "Nashville-based local club with monthly ride calendar, family-friendly trail days, and convoy meetups.",
-      contact: "Contact: mtjtrailsociety@email.com | (615) 555-0136",
-      city: "Nashville",
-      state: "TN",
-      links: {
-        website: "https://example.com/mtjtrail",
-        facebook: "https://facebook.com/mtjtrail",
-        instagram: "https://instagram.com/mtjtrail",
-        discord: "https://discord.gg/example-mtj",
-        forum: ""
-      },
-      tags: ["nashville", "trail rides", "family", "xj"]
-    },
-    {
-      type: "local",
-      name: "Knoxville XJ Garage Group",
-      info: "Garage-first group focused on diagnostics, drivetrain swaps, and keeping high-mileage Cherokees alive.",
-      contact: "Contact: Mike T. | knoxxjgarage@email.com",
-      city: "Knoxville",
+      name: "Example Club Listing - Featured Position",
+      info: "Use this featured format to highlight your club mission, member focus, and what new members can expect.",
+      contact: "Contact: Add primary organizer info",
+      city: "Your City",
       state: "TN",
       links: {
         website: "",
-        facebook: "https://facebook.com/groups/knoxxjgarage",
-        instagram: "",
-        discord: "https://discord.gg/example-knox",
-        forum: "https://forum.example.com/knoxxjgarage"
-      },
-      tags: ["knoxville", "diagnostics", "drivetrain", "xj tech"]
-    },
-    {
-      type: "local",
-      name: "East Texas Jeep Recon",
-      info: "Smaller local crew around Tyler/Longview focused on trail prep checklists and overland-style runs.",
-      contact: "Contact: (903) 555-0119",
-      city: "Tyler",
-      state: "TX",
-      links: {
-        website: "",
-        facebook: "https://facebook.com/groups/easttxjeeprecon",
-        instagram: "https://instagram.com/easttxjeeprecon",
-        discord: "",
-        forum: ""
-      },
-      tags: ["east texas", "trail prep", "xj", "recovery"]
-    },
-    {
-      type: "local",
-      name: "Chattanooga Jeep & XJ Meetup",
-      info: "Local Chattanooga club organizing Saturday meetups, parts swaps, and scenic ridge trail rides.",
-      contact: "Contact: chattxjmeetup@email.com",
-      city: "Chattanooga",
-      state: "TN",
-      links: {
-        website: "https://example.com/chattxj",
-        facebook: "https://facebook.com/chattxjmeetup",
+        facebook: "",
         instagram: "",
         discord: "",
         forum: ""
       },
-      tags: ["chattanooga", "parts swap", "xj owners", "tennessee"]
+      tags: ["example", "featured", "club profile", "template"]
+    },
+    {
+      type: "local",
+      name: "Midwest Krawlers",
+      info: "Kansas City metro off-road club with year-round trail rides, classes, social events, and community support programs.",
+      contact: "Contact: Use the Midwest Krawlers website contact form",
+      city: "Kansas City Metro",
+      state: "MO",
+      links: {
+        website: "https://www.midwestkrawlers.com/about-us/",
+        facebook: "",
+        instagram: "",
+        discord: "",
+        forum: ""
+      },
+      tags: ["midwest", "kansas city", "off-road", "events"]
     },
 
     {
@@ -752,8 +672,12 @@
 
   function render() {
     const filtered = filterClubs();
-    const local = filtered.filter((c) => c.type === "local");
-    const online = filtered.filter((c) => c.type === "online");
+    const local = filtered
+      .filter((c) => c.type === "local")
+      .sort((a, b) => safe(a.name).localeCompare(safe(b.name)));
+    const online = filtered
+      .filter((c) => c.type === "online")
+      .sort((a, b) => safe(a.name).localeCompare(safe(b.name)));
 
     const localWrap = document.getElementById("local-results");
     const localEmpty = document.getElementById("local-empty");
