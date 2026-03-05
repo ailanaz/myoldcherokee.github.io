@@ -1991,6 +1991,13 @@
     return 'https://www.google.com/maps/search/' + encodeURIComponent(q);
   }
 
+  function websiteLabel(url) {
+    var u = String(url || '');
+    if (/yelp\.com/i.test(u)) return 'Yelp';
+    if (/google\.[^/]+\/maps/i.test(u)) return 'Google';
+    return 'Website';
+  }
+
   function initFilters(rows) {
     var states = {};
     var types = {};
@@ -2068,7 +2075,7 @@
       var addr = it.address ? '<div class="biz-loc" style="margin-top:0.15rem;">&#128205; ' + esc(it.address) + '</div>' : '';
       var phone = it.phone ? '<div class="biz-loc" style="margin-top:0.15rem;">&#128222; ' + esc(it.phone) + '</div>' : '';
       var map = mapUrl(it);
-      var webBtn = it.website ? '<a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">Website</a>' : '';
+      var webBtn = it.website ? '<a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel(it.website) + '</a>' : '';
       var mapBtn = '<a href="' + esc(map) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>';
       var bid = it.business_id ? esc(it.business_id) : '';
 

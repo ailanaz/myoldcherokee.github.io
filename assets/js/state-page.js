@@ -70,8 +70,22 @@ function renderGroup(container, title, items) {
       ? '<div style="font-size:0.82rem;color:var(--text-mid);margin-top:0.22rem;">\u{1F4CD} ' + esc(it.address) + '</div>'
       : '';
 
-    var website = it.website
-      ? '<div style="margin-top:0.35rem;"><a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" style="font-size:0.82rem;">' + esc(it.website) + '</a></div>'
+    var mapHref = it.google_maps_link
+      ? it.google_maps_link
+      : ('https://www.google.com/maps/search/' + encodeURIComponent([it.name || it.title || '', it.address || '', it.city || '', it.state || ''].join(' ').trim()));
+    var websiteLabel = 'Website';
+    var websiteHref = (it.website || '').trim();
+    if (/yelp\.com/i.test(websiteHref)) websiteLabel = 'Yelp';
+    if (/google\.[^/]+\/maps/i.test(websiteHref)) websiteLabel = 'Google';
+    var links = [];
+    if (websiteHref) {
+      links.push('<a href="' + esc(websiteHref) + '" target="_blank" rel="noopener noreferrer" style="font-size:0.82rem;">' + websiteLabel + '</a>');
+    }
+    if (mapHref) {
+      links.push('<a href="' + esc(mapHref) + '" target="_blank" rel="noopener noreferrer" style="font-size:0.82rem;">Map</a>');
+    }
+    var linkLine = links.length
+      ? '<div style="margin-top:0.35rem;display:flex;gap:0.55rem;flex-wrap:wrap;">' + links.join('') + '</div>'
       : '';
 
     var phone = it.phone
@@ -82,7 +96,7 @@ function renderGroup(container, title, items) {
       ? '<p style="margin:0.35rem 0 0;font-size:0.87rem;color:var(--text-mid);line-height:1.5;">' + esc(it.summary) + '</p>'
       : '';
 
-    li.innerHTML = '<strong>' + name + '</strong>' + city + price + address + website + phone + summary;
+    li.innerHTML = '<strong>' + name + '</strong>' + city + price + address + linkLine + phone + summary;
     ul.appendChild(li);
   }
 
