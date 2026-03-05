@@ -122,20 +122,13 @@
 </section>
 
 <section class="home-section" style="padding-top:1.5rem;padding-bottom:1.5rem;border-top:none;">
-  <div class="container">
-    <div class="home-section-head" style="margin-bottom:1rem;">
-      <div>
-        <h2 class="home-section-title">All Businesses (Live Directory Data)</h2>
-        <p class="home-section-desc">Showing statewide directory entries pulled into one searchable view.</p>
-      </div>
-    </div>
-
-    <div class="clubs-filters-wrap" style="margin-top:0;">
+  <div class="container"><div class="clubs-filters-wrap" style="margin-top:0;">
       <div class="clubs-filters-grid" style="grid-template-columns:1fr 1fr 2fr;">
         <div class="clubs-filter-group">
           <label for="live-type">Business Type</label>
           <select id="live-type" aria-label="Filter by type">
             <option value="all">All types</option>
+            <option value="featured">Featured</option>
           </select>
         </div>
         <div class="clubs-filter-group">
@@ -2070,11 +2063,16 @@
     var state = stateSel.value || 'all';
     var type = typeSel.value || 'all';
     var q = (searchEl.value || '').toLowerCase().trim();
+    var featuredIds = featuredBusinessIds();
 
     filteredRows = allRows.filter(function(it) {
       if (isChainFranchiseName(it.name || '')) return false;
       if (state !== 'all' && (it.state || '').toUpperCase() !== state) return false;
-      if (type !== 'all' && (it.type || '') !== type) return false;
+      if (type === 'featured') {
+        if (!featuredIds[String(it.business_id || '').trim()]) return false;
+      } else if (type !== 'all' && (it.type || '') !== type) {
+        return false;
+      }
       if (!q) return true;
       var tags = Array.isArray(it.categories) ? it.categories.join(' ') : '';
       var hay = [it.name || '', it.city || '', it.state || '', it.type || '', tags].join(' ').toLowerCase();
