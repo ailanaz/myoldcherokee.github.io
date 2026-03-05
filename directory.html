@@ -148,10 +148,12 @@
     </div>
 
     <div class="clubs-filters-wrap" style="margin-top:0;">
-      <div class="clubs-filters-grid" style="grid-template-columns:2fr 1fr 1fr;">
+      <div class="clubs-filters-grid" style="grid-template-columns:1fr 1fr 2fr;">
         <div class="clubs-filter-group">
-          <label for="live-search">Search</label>
-          <input id="live-search" type="search" placeholder="Search name, city, state, tags..." />
+          <label for="live-type">Business Type</label>
+          <select id="live-type" aria-label="Filter by type">
+            <option value="all">All types</option>
+          </select>
         </div>
         <div class="clubs-filter-group">
           <label for="live-state">State</label>
@@ -160,10 +162,8 @@
           </select>
         </div>
         <div class="clubs-filter-group">
-          <label for="live-type">Business Type</label>
-          <select id="live-type" aria-label="Filter by type">
-            <option value="all">All types</option>
-          </select>
+          <label for="live-search">Search</label>
+          <input id="live-search" type="search" placeholder="Search name, city, state, tags..." />
         </div>
       </div>
     </div>
