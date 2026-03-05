@@ -1887,6 +1887,37 @@
   }
   hideChainCardsInDirectoryPage();
 
+  function convertStaticCardsToInactive() {
+    // Convert legacy hardcoded cards to inactive placeholders.
+    // Keep featured strip cards and keep already-inactive placeholders unchanged.
+    document.querySelectorAll('.cat-section .grid .biz-card').forEach(function(card) {
+      var nameEl = card.querySelector('.biz-name');
+      var name = nameEl ? (nameEl.textContent || '').trim() : '';
+      if (!name || /your business here/i.test(name)) return;
+
+      card.style.borderStyle = 'dashed';
+      card.style.opacity = '0.7';
+
+      var logo = card.querySelector('.biz-logo');
+      if (logo) {
+        logo.textContent = '+';
+        logo.style.background = 'var(--off-2)';
+        logo.style.color = 'var(--text-lite)';
+        logo.style.fontSize = '1.4rem';
+      }
+
+      var body = card.querySelector('.biz-body');
+      if (!body) return;
+      body.innerHTML =
+        '<span class="biz-type">Open Listing</span>' +
+        '<div class="biz-name" style="color:var(--text-lite);">Your Business Here</div>' +
+        '<div class="biz-loc" style="color:var(--text-lite);">Cherokee owners near you are searching</div>' +
+        '<p class="biz-desc">This listing is currently inactive. Submit your business to appear here.</p>' +
+        '<div class="biz-actions"><span class="btn btn-red btn-sm">Get Featured &rarr;</span></div>';
+    });
+  }
+  convertStaticCardsToInactive();
+
   function setFilterDropdown() {
     var cat = (document.getElementById('shops-cat') || {}).value || 'all';
     var query = ((document.getElementById('shops-search') || {}).value || '').toLowerCase().trim();
