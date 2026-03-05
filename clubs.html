@@ -43,7 +43,7 @@
     }
     .clubs-filters-grid {
       display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr;
       gap: 0.75rem;
     }
     .clubs-filter-group label {
@@ -85,74 +85,6 @@
       padding-bottom: 0.45rem;
     }
 
-    .clubs-local-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
-    }
-    .club-card {
-      background: #fff;
-      border: 1.5px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-xs);
-      padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      min-height: 220px;
-    }
-    .club-name {
-      font-family: "Oswald", sans-serif;
-      font-size: 1.1rem;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-      text-transform: uppercase;
-      margin-bottom: 0.4rem;
-      color: var(--text);
-    }
-    .club-info {
-      color: var(--text-mid);
-      font-size: 0.9rem;
-      line-height: 1.45;
-      margin-bottom: 0.6rem;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      min-height: 2.6em;
-    }
-    .club-contact,
-    .club-location {
-      font-size: 0.86rem;
-      color: var(--text-mid);
-      margin-bottom: 0.35rem;
-    }
-    .club-contact strong,
-    .club-location strong {
-      color: var(--text);
-      font-weight: 700;
-    }
-    .club-links {
-      margin-top: 0.5rem;
-      display: flex;
-      gap: 0.4rem;
-      flex-wrap: wrap;
-    }
-    .club-links .btn {
-      height: 30px;
-      padding: 0 0.7rem;
-      font-size: 0.76rem;
-    }
-    .club-report {
-      margin-top: auto;
-      font-size: 0.79rem;
-      color: var(--text-lite);
-      padding-top: 0.65rem;
-    }
-    .club-report a {
-      color: var(--red);
-      text-decoration: underline;
-    }
-
     .online-list {
       background: #fff;
       border: 1.5px solid var(--line);
@@ -179,13 +111,6 @@
     .online-info {
       color: var(--text-mid);
       font-size: 0.88rem;
-    }
-    .online-platform {
-      font-size: 0.75rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      color: var(--amber);
     }
     .online-links {
       display: inline-flex;
@@ -222,11 +147,9 @@
 
     @media (max-width: 1024px) {
       .clubs-filters-grid { grid-template-columns: 1fr 1fr; }
-      .clubs-local-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
     @media (max-width: 700px) {
       .clubs-filters-grid { grid-template-columns: 1fr; }
-      .clubs-local-grid { grid-template-columns: 1fr; }
       .online-row { flex-direction: column; align-items: flex-start; }
       .online-issue { margin-left: 0; white-space: normal; }
     }
@@ -302,35 +225,12 @@
             <option value="all">All states</option>
           </select>
         </div>
-        <div class="clubs-filter-group">
-          <label for="clubs-type">Type</label>
-          <select id="clubs-type" aria-label="Filter by type">
-            <option value="all">All</option>
-            <option value="local">Local only</option>
-            <option value="online">Online only</option>
-          </select>
-        </div>
-        <div class="clubs-filter-group">
-          <label for="clubs-platform">Platform</label>
-          <select id="clubs-platform" aria-label="Filter by platform">
-            <option value="all">All</option>
-            <option value="website">Website</option>
-            <option value="facebook">Facebook</option>
-            <option value="instagram">Instagram</option>
-            <option value="discord">Discord</option>
-            <option value="forum">Forum</option>
-          </select>
-        </div>
       </div>
     </div>
 
-    <h2 class="clubs-section-title">Local Clubs</h2>
-    <div id="local-results" class="clubs-local-grid"></div>
-    <div id="local-empty" class="clubs-empty" style="display:none;">No local clubs match your current filters.</div>
-
-    <h2 class="clubs-section-title">Online Clubs</h2>
-    <div id="online-results" class="online-list"></div>
-    <div id="online-empty" class="clubs-empty" style="display:none;">No online clubs match your current filters.</div>
+    <h2 class="clubs-section-title">USA Jeep Clubs</h2>
+    <div id="clubs-results" class="online-list"></div>
+    <div id="clubs-empty" class="clubs-empty" style="display:none;">No clubs match your current filters.</div>
   </div>
 </section>
 
@@ -376,223 +276,39 @@
 <script>
   const clubs = [
     {
-      type: "local",
-      name: "Example Club Listing - Event Post",
-      info: "Use this format for event posts: one sentence with trail type, event date, meetup time, and skill level.",
-      contact: "Contact: Add organizer name, email, and phone",
-      city: "Your City",
+      name: "Austin Jeep Exclusive",
+      info: "Central Texas nonprofit Jeep club with monthly off-road outings and member meetups.",
+      city: "Austin",
       state: "TX",
-      links: {
-        website: "",
-        facebook: "",
-        instagram: "",
-        discord: "",
-        forum: ""
-      },
-      tags: ["example", "events", "trail ride", "template"]
+      link: "https://austinjeepexclusive.org/"
     },
     {
-      type: "local",
-      name: "Example Club Listing - Featured Position",
-      info: "Use this featured format to highlight your club mission, member focus, and what new members can expect.",
-      contact: "Contact: Add primary organizer info",
-      city: "Your City",
-      state: "TN",
-      links: {
-        website: "",
-        facebook: "",
-        instagram: "",
-        discord: "",
-        forum: ""
-      },
-      tags: ["example", "featured", "club profile", "template"]
+      name: "Inland Jeep Freeks",
+      info: "Southern California off-road Jeep club running trail events and monthly community meetups.",
+      city: "Inland Empire",
+      state: "CA",
+      link: "https://inlandjeepfreeks.org/"
     },
     {
-      type: "local",
       name: "Midwest Krawlers",
-      info: "Kansas City metro off-road club with year-round trail rides, classes, social events, and community support programs.",
-      contact: "Contact: Use the Midwest Krawlers website contact form",
+      info: "Kansas City metro off-road club with trail rides, classes, and organized community events.",
       city: "Kansas City Metro",
       state: "MO",
-      links: {
-        website: "https://www.midwestkrawlers.com/about-us/",
-        facebook: "",
-        instagram: "",
-        discord: "",
-        forum: ""
-      },
-      tags: ["midwest", "kansas city", "off-road", "events"]
-    },
-
-    {
-      type: "online",
-      name: "Old XJ Owners Hub",
-      info: "General online group for 84–01 Cherokee owners, with tech threads and buy/sell leads.",
-      contact: "",
-      city: "",
-      state: "",
-      links: {
-        website: "https://example.com/oldxjhub",
-        facebook: "https://facebook.com/groups/oldxjhub",
-        instagram: "",
-        discord: "",
-        forum: ""
-      },
-      platform_label: "Facebook group",
-      tags: ["xj", "online", "tech help"]
+      link: "https://www.midwestkrawlers.com/about-us/"
     },
     {
-      type: "online",
-      name: "XJ Troubleshooting Forum",
-      info: "Archived and active troubleshooting topics for common 4.0L and AW4 issues.",
-      contact: "",
-      city: "",
-      state: "",
-      links: {
-        website: "",
-        facebook: "",
-        instagram: "",
-        discord: "",
-        forum: "https://forum.example.com/xj-troubleshooting"
-      },
-      platform_label: "Forum",
-      tags: ["forum", "diagnostics", "xj"]
+      name: "Mile-Hi Jeep Club",
+      info: "Long-running Colorado Jeep club focused on responsible four-wheeling, events, and trail stewardship.",
+      city: "Denver",
+      state: "CO",
+      link: "https://mhjc.clubexpress.com/"
     },
     {
-      type: "online",
-      name: "Cherokee Trail Planning Discord",
-      info: "Trip planning channels, map pins, and convoy scheduling across regions.",
-      contact: "",
-      city: "",
-      state: "",
-      links: {
-        website: "",
-        facebook: "",
-        instagram: "",
-        discord: "https://discord.gg/example-trail",
-        forum: ""
-      },
-      platform_label: "Discord",
-      tags: ["discord", "trail rides", "planning"]
-    },
-    {
-      type: "online",
-      name: "Classic XJ Build Journal Community",
-      info: "Build threads, before/after galleries, and long-term project documentation.",
-      contact: "",
-      city: "",
-      state: "",
-      links: {
-        website: "https://example.com/xjbuildjournal",
-        facebook: "",
-        instagram: "https://instagram.com/xjbuildjournal",
-        discord: "",
-        forum: "https://forum.example.com/buildjournal"
-      },
-      platform_label: "Forum",
-      tags: ["builds", "project cherokee", "xj"]
-    },
-    {
-      type: "online",
-      name: "XJ Parts Locator Network",
-      info: "Members post hard-to-find parts leads and salvage yard finds.",
-      contact: "",
-      city: "",
-      state: "",
-      links: {
-        website: "",
-        facebook: "https://facebook.com/groups/xjpartslocator",
-        instagram: "",
-        discord: "",
-        forum: ""
-      },
-      platform_label: "Facebook group",
-      tags: ["parts", "salvage", "xj parts"]
-    },
-    {
-      type: "online",
-      name: "Jeep Cherokee Tech Talk Live",
-      info: "Weekly livestream discussion and Q&A with archived notes.",
-      contact: "",
-      city: "",
-      state: "",
-      links: {
-        website: "https://example.com/xjtechtalk",
-        facebook: "https://facebook.com/xjtechtalk",
-        instagram: "https://instagram.com/xjtechtalk",
-        discord: "",
-        forum: ""
-      },
-      platform_label: "Website",
-      tags: ["tech talk", "maintenance", "xj"]
-    },
-    {
-      type: "online",
-      name: "Trail Build Sheet Exchange",
-      info: "Suspension setup templates, tire fitment notes, and ride reports.",
-      contact: "",
-      city: "",
-      state: "",
-      links: {
-        website: "",
-        facebook: "",
-        instagram: "",
-        discord: "https://discord.gg/example-buildsheet",
-        forum: "https://forum.example.com/buildsheet"
-      },
-      platform_label: "Discord",
-      tags: ["lift installs", "trail builds", "setup"]
-    },
-    {
-      type: "online",
-      name: "XJ Daily Driver Owners Group",
-      info: "Focused on reliability, commuting setups, and practical maintenance.",
-      contact: "",
-      city: "",
-      state: "",
-      links: {
-        website: "",
-        facebook: "https://facebook.com/groups/xjdailydriver",
-        instagram: "https://instagram.com/xjdailydriver",
-        discord: "",
-        forum: ""
-      },
-      platform_label: "Facebook group",
-      tags: ["daily driver", "maintenance", "xj owners"]
-    },
-    {
-      type: "online",
-      name: "Cherokee Recovery & Winch Community",
-      info: "Recovery gear recommendations, safe strap technique, and trail extraction tips.",
-      contact: "",
-      city: "",
-      state: "",
-      links: {
-        website: "https://example.com/xjrecovery",
-        facebook: "",
-        instagram: "",
-        discord: "https://discord.gg/example-recovery",
-        forum: ""
-      },
-      platform_label: "Discord",
-      tags: ["recovery", "winch", "off-road"]
-    },
-    {
-      type: "online",
-      name: "OldXJ Forum Classifieds Circle",
-      info: "Community classifieds for Cherokee projects, parts, and wanted posts.",
-      contact: "",
-      city: "",
-      state: "",
-      links: {
-        website: "",
-        facebook: "",
-        instagram: "",
-        discord: "",
-        forum: "https://forum.example.com/oldxj-classifieds"
-      },
-      platform_label: "Forum",
-      tags: ["classifieds", "buy sell", "wanted"]
+      name: "South Florida Jeep Club",
+      info: "Family-friendly Florida Jeep club organizing wheeling trips, events, and charity involvement.",
+      city: "Fort Lauderdale",
+      state: "FL",
+      link: "https://sfjc.wordpress.com/"
     }
   ];
 
@@ -600,67 +316,23 @@
     return (v || "").toString().trim();
   }
 
-  function issueMailto(clubName) {
-    return "mailto:contact@oldxjs.com?subject=" + encodeURIComponent("Report issue - " + clubName);
-  }
-
-  function linkButtons(links, compact) {
-    const labels = [
-      ["website", "Website"],
-      ["facebook", "Facebook"],
-      ["instagram", "Instagram"],
-      ["discord", "Discord"],
-      ["forum", "Forum"]
-    ];
-    const parts = [];
-
-    labels.forEach(([key, label]) => {
-      const href = safe(links && links[key]);
-      if (!href) return;
-      if (compact) {
-        parts.push('<a href="' + href + '" target="_blank" rel="noopener noreferrer">' + label + "</a>");
-      } else {
-        parts.push('<a href="' + href + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">' + label + "</a>");
-      }
-    });
-
-    return parts.join(compact ? " | " : "");
-  }
-
-  function platformHit(club, platform) {
-    if (platform === "all") return true;
-    return !!safe(club.links && club.links[platform]);
-  }
-
   function textBlob(club) {
     return [
       safe(club.name),
       safe(club.info),
-      safe(club.contact),
       safe(club.city),
-      safe(club.state),
-      Array.isArray(club.tags) ? club.tags.join(" ") : ""
+      safe(club.state)
     ].join(" ").toLowerCase();
   }
 
   function filterClubs() {
     const search = safe(document.getElementById("clubs-search").value).toLowerCase();
     const state = safe(document.getElementById("clubs-state").value).toUpperCase();
-    const type = safe(document.getElementById("clubs-type").value);
-    const platform = safe(document.getElementById("clubs-platform").value);
 
     return clubs.filter((club) => {
-      if (type !== "all" && club.type !== type) return false;
-
       if (state !== "ALL") {
-        if (club.type === "local") {
-          if ((safe(club.state).toUpperCase() || "") !== state) return false;
-        } else {
-          return false;
-        }
+        if ((safe(club.state).toUpperCase() || "") !== state) return false;
       }
-
-      if (!platformHit(club, platform)) return false;
 
       if (search) {
         if (!textBlob(club).includes(search)) return false;
@@ -671,79 +343,38 @@
   }
 
   function render() {
-    const filtered = filterClubs();
-    const local = filtered
-      .filter((c) => c.type === "local")
-      .sort((a, b) => safe(a.name).localeCompare(safe(b.name)));
-    const online = filtered
-      .filter((c) => c.type === "online")
-      .sort((a, b) => safe(a.name).localeCompare(safe(b.name)));
+    const rows = filterClubs().sort((a, b) => safe(a.name).localeCompare(safe(b.name)));
+    const clubsWrap = document.getElementById("clubs-results");
+    const clubsEmpty = document.getElementById("clubs-empty");
+    clubsWrap.innerHTML = "";
 
-    const localWrap = document.getElementById("local-results");
-    const localEmpty = document.getElementById("local-empty");
-    const onlineWrap = document.getElementById("online-results");
-    const onlineEmpty = document.getElementById("online-empty");
-
-    localWrap.innerHTML = "";
-    onlineWrap.innerHTML = "";
-
-    if (!local.length) {
-      localEmpty.style.display = "";
-    } else {
-      localEmpty.style.display = "none";
-      local.forEach((club) => {
-        const card = document.createElement("article");
-        card.className = "club-card";
-
-        const clubName = safe(club.name);
-        const info = safe(club.info);
-        const contact = safe(club.contact) || "Contact details coming soon";
-        const cityState = [safe(club.city), safe(club.state)].filter(Boolean).join(", ");
-
-        card.innerHTML =
-          '<div class="club-name">' + clubName + "</div>" +
-          '<div class="club-info">' + info + "</div>" +
-          '<div class="club-contact"><strong>Contact:</strong> ' + contact + "</div>" +
-          '<div class="club-location"><strong>City / State:</strong> ' + cityState + "</div>" +
-          '<div class="club-links">' + linkButtons(club.links || {}, false) + "</div>" +
-          '<div class="club-report"><a href="' + issueMailto(clubName) + '">Report an issue</a></div>';
-
-        localWrap.appendChild(card);
-      });
+    if (!rows.length) {
+      clubsEmpty.style.display = "";
+      return;
     }
 
-    if (!online.length) {
-      onlineEmpty.style.display = "";
-    } else {
-      onlineEmpty.style.display = "none";
-      online.forEach((club) => {
-        const row = document.createElement("div");
-        row.className = "online-row";
-        const clubName = safe(club.name);
-        const info = safe(club.info);
-        const platformLabel = safe(club.platform_label);
+    clubsEmpty.style.display = "none";
+    rows.forEach((club) => {
+      const row = document.createElement("div");
+      row.className = "online-row";
+      const clubName = safe(club.name);
+      const info = safe(club.info);
+      const cityState = [safe(club.city), safe(club.state)].filter(Boolean).join(", ");
+      const link = safe(club.link);
 
-        row.innerHTML =
-          '<span class="online-name">' + clubName + "</span>" +
-          (info ? '<span class="online-info">' + info + "</span>" : "") +
-          (platformLabel ? '<span class="online-platform">' + platformLabel + "</span>" : "") +
-          '<span class="online-links">' + linkButtons(club.links || {}, true) + "</span>" +
-          '<span class="online-issue"><a href="' + issueMailto(clubName) + '">Report an issue</a></span>';
+      row.innerHTML =
+        '<span class="online-name">' + clubName + "</span>" +
+        (info ? '<span class="online-info">' + info + "</span>" : "") +
+        (cityState ? '<span class="online-info">' + cityState + "</span>" : "") +
+        (link ? '<span class="online-links"><a href="' + link + '" target="_blank" rel="noopener noreferrer">Website</a></span>' : "");
 
-        onlineWrap.appendChild(row);
-      });
-    }
+      clubsWrap.appendChild(row);
+    });
   }
 
   function initStateFilter() {
     const select = document.getElementById("clubs-state");
-    const states = [
-      "AL","AK","AZ","AR","CA","CO","CT","DE","FL","GA",
-      "HI","ID","IL","IN","IA","KS","KY","LA","ME","MD",
-      "MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ",
-      "NM","NY","NC","ND","OH","OK","OR","PA","RI","SC",
-      "SD","TN","TX","UT","VT","VA","WA","WV","WI","WY"
-    ];
+    const states = Array.from(new Set(clubs.map((c) => safe(c.state).toUpperCase()).filter(Boolean))).sort();
 
     states.forEach((s) => {
       const opt = document.createElement("option");
@@ -769,7 +400,7 @@
     initSubmitFallback();
     document.getElementById("yr").textContent = new Date().getFullYear();
 
-    ["clubs-search", "clubs-state", "clubs-type", "clubs-platform"].forEach((id) => {
+    ["clubs-search", "clubs-state"].forEach((id) => {
       document.getElementById(id).addEventListener("input", render);
       document.getElementById(id).addEventListener("change", render);
     });
