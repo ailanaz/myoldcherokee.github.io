@@ -9892,26 +9892,6 @@
     "lon": -118.4028242
   },
   {
-    "name": "4 Wheel Pars Fresno",
-    "type": "Parts Shops and 4x4 Retailers",
-    "state": "CA",
-    "city": "Fresno",
-    "address": "4326, North Blackstone Avenue, Fresno, CA, 93726",
-    "phone": "+1-559-221-0510",
-    "website": "https://www.4wheelparts.com/articles/4wp-fresno-ca-4326-n-blackstone-ave?utm_medium=organic&utm_source=gmb",
-    "summary": "",
-    "categories": [
-      "parts",
-      "retail"
-    ],
-    "source": "OSM",
-    "osm_id": "node/13246286631",
-    "business_id": "4-wheel-pars-fresno-ca",
-    "google_maps_link": "https://www.google.com/maps?q=36.796417,-119.789717",
-    "lat": 36.7964171,
-    "lon": -119.7897174
-  },
-  {
     "name": "All Car Parts Ltd.",
     "type": "Parts Shops and 4x4 Retailers",
     "state": "CA",
@@ -20374,26 +20354,6 @@
     "google_maps_link": "https://www.google.com/maps?q=39.065494,-108.544860",
     "lat": 39.0654943,
     "lon": -108.5448598
-  },
-  {
-    "name": "4 Wheel Parts",
-    "type": "Parts Shops and 4x4 Retailers",
-    "state": "CO",
-    "city": "Loveland",
-    "address": "3686, Draft Horse Drive, Loveland, CO, 80538",
-    "phone": "",
-    "website": "http://www.4wheelparts.com/",
-    "summary": "",
-    "categories": [
-      "parts",
-      "retail"
-    ],
-    "source": "OSM",
-    "osm_id": "node/4457155337",
-    "business_id": "4-wheel-parts-co",
-    "google_maps_link": "https://www.google.com/maps?q=40.429997,-104.988420",
-    "lat": 40.4299972,
-    "lon": -104.9884199
   },
   {
     "name": "A&A Topper Sales & Truck Accessories",
@@ -57592,46 +57552,6 @@
     "jeep_friendly_source_label": "Jeep service page"
   },
   {
-    "name": "42 Collision Center",
-    "type": "Repair Shops (XJ/Jeep-Friendly)",
-    "state": "NC",
-    "city": "Clayton",
-    "address": "148, State Avenue, Clayton, NC, 27520",
-    "phone": "+1-919-550-2142",
-    "website": "",
-    "summary": "",
-    "categories": [
-      "repair",
-      "mechanic"
-    ],
-    "source": "OSM",
-    "osm_id": "way/221395669",
-    "business_id": "42-collision-center-nc",
-    "google_maps_link": "https://www.google.com/maps?q=35.639714,-78.481190",
-    "lat": 35.6397136,
-    "lon": -78.4811898
-  },
-  {
-    "name": "421 Auto Service",
-    "type": "Repair Shops (XJ/Jeep-Friendly)",
-    "state": "NC",
-    "city": "Boone",
-    "address": "2250, Old US-421 South, Boone, NC, 28607",
-    "phone": "+18282646660",
-    "website": "",
-    "summary": "",
-    "categories": [
-      "repair",
-      "mechanic"
-    ],
-    "source": "OSM",
-    "osm_id": "node/10567914082",
-    "business_id": "421-auto-service-nc",
-    "google_maps_link": "https://www.google.com/maps?q=36.225040,-81.603675",
-    "lat": 36.22504,
-    "lon": -81.603675
-  },
-  {
     "name": "A & L Body Shop Inc",
     "type": "Repair Shops (XJ/Jeep-Friendly)",
     "state": "NC",
@@ -69131,27 +69051,6 @@
     "lon": -81.9373933
   },
   {
-    "name": "4-H Auto Salvage",
-    "type": "Parts Shops and 4x4 Retailers",
-    "state": "OH",
-    "city": "Mansfield",
-    "address": "501, Cairns Road, Mansfield, OH, 44903",
-    "phone": "+1-419-524-1566",
-    "website": "https://4-h-auto-salvage.jany.io/",
-    "summary": "",
-    "categories": [
-      "parts",
-      "retail",
-      "salvage"
-    ],
-    "source": "OSM",
-    "osm_id": "way/896014667",
-    "business_id": "4-h-auto-salvage-oh",
-    "google_maps_link": "https://www.google.com/maps?q=40.805685,-82.531719",
-    "lat": 40.8056848,
-    "lon": -82.5317187
-  },
-  {
     "name": "Ace Truck Equipment",
     "type": "Parts Shops and 4x4 Retailers",
     "state": "OH",
@@ -69976,26 +69875,6 @@
     "google_maps_link": "https://www.google.com/maps?q=39.914139,-82.013879",
     "lat": 39.9141392,
     "lon": -82.0138788
-  },
-  {
-    "name": "430 Auto Body",
-    "type": "Repair Shops (XJ/Jeep-Friendly)",
-    "state": "OH",
-    "city": "Mansfield",
-    "address": "750, Park Avenue East, Mansfield, OH, 44905",
-    "phone": "+1-419-564-9650",
-    "website": "",
-    "summary": "",
-    "categories": [
-      "repair",
-      "mechanic"
-    ],
-    "source": "OSM",
-    "osm_id": "way/953734136",
-    "business_id": "430-auto-body-oh",
-    "google_maps_link": "https://www.google.com/maps?q=40.758041,-82.488495",
-    "lat": 40.7580409,
-    "lon": -82.4884948
   },
   {
     "name": "A 2 Z Automotive and Tire",
@@ -77063,27 +76942,6 @@
     "lon": -84.064047
   },
   {
-    "name": "422 Wrecker",
-    "type": "Salvage Yards and Junkyards (Used Jeep Parts)",
-    "state": "OH",
-    "city": "",
-    "address": "OH",
-    "phone": "",
-    "website": "",
-    "summary": "",
-    "categories": [
-      "salvage",
-      "junkyard",
-      "used-parts"
-    ],
-    "source": "OSM",
-    "osm_id": "way/1159667967",
-    "business_id": "422-wrecker-oh",
-    "google_maps_link": "https://www.google.com/maps?q=41.267656,-80.880661",
-    "lat": 41.267656,
-    "lon": -80.8806606
-  },
-  {
     "name": "A1 Auto & Cycle Salvage",
     "type": "Salvage Yards and Junkyards (Used Jeep Parts)",
     "state": "OH",
@@ -78448,26 +78306,6 @@
     "google_maps_link": "https://www.google.com/maps?q=36.056988,-95.809468",
     "lat": 36.0569876,
     "lon": -95.8094682
-  },
-  {
-    "name": "4M Collision",
-    "type": "Repair Shops (XJ/Jeep-Friendly)",
-    "state": "OK",
-    "city": "Cushing",
-    "address": "1117, East Main Street, Cushing, OK, 74023",
-    "phone": "+1 405 441 1425",
-    "website": "https://4mcollisioncushing.com",
-    "summary": "",
-    "categories": [
-      "repair",
-      "mechanic"
-    ],
-    "source": "OSM",
-    "osm_id": "way/1296412928",
-    "business_id": "4m-collision-ok",
-    "google_maps_link": "https://www.google.com/maps?q=35.985401,-96.751749",
-    "lat": 35.9854011,
-    "lon": -96.7517491
   },
   {
     "name": "AllState Towing",
@@ -81544,26 +81382,6 @@
     "google_maps_link": "https://www.google.com/maps?q=40.321963,-75.615635",
     "lat": 40.3219634,
     "lon": -75.615635
-  },
-  {
-    "name": "412 Motoring",
-    "type": "Parts Shops and 4x4 Retailers",
-    "state": "PA",
-    "city": "",
-    "address": "3908, Penn Avenue, PA",
-    "phone": "+1-412-621-8701",
-    "website": "http://412motoring.lxsite.com/",
-    "summary": "",
-    "categories": [
-      "parts",
-      "retail"
-    ],
-    "source": "OSM",
-    "osm_id": "node/6076816514",
-    "business_id": "412-motoring-pa",
-    "google_maps_link": "https://www.google.com/maps?q=40.464760,-79.959516",
-    "lat": 40.4647599,
-    "lon": -79.9595156
   },
   {
     "name": "A-Plus Collision Center",
@@ -100777,25 +100595,6 @@
     "jeep_friendly_source_label": "Wrench-A-Part website"
   },
   {
-    "name": "4 Wheel Parts (TX)",
-    "type": "Tires and Wheels",
-    "state": "TX",
-    "city": "Multiple Locations",
-    "address": "Multiple TX Locations",
-    "phone": null,
-    "website": "https://www.4wheelparts.com",
-    "categories": [
-      "tires",
-      "wheels",
-      "suspension",
-      "4x4"
-    ],
-    "summary": "National off-road retailer with Texas locations. XJ-compatible tires, wheels, and lift kits. In-store installation available.",
-    "jeep_friendly_blurb": "Texas off-road retailer with XJ-compatible tires and wheels in stock. In-store installation makes it convenient for Cherokee owners.",
-    "jeep_friendly_source_url": "https://www.4wheelparts.com",
-    "jeep_friendly_source_label": "4 Wheel Parts website"
-  },
-  {
     "name": "AWT Offroad",
     "type": "Tires and Wheels",
     "state": "TX",
@@ -100952,26 +100751,6 @@
     "google_maps_link": "https://www.google.com/maps?q=40.292828,-111.692322",
     "lat": 40.2928281,
     "lon": -111.6923219
-  },
-  {
-    "name": "4-Wheel Parts",
-    "type": "Parts Shops and 4x4 Retailers",
-    "state": "UT",
-    "city": "Salt Lake City",
-    "address": "1789 S, Redwood Road, Salt Lake City, UT, 84104",
-    "phone": "+1-801-954-8826",
-    "website": "",
-    "summary": "",
-    "categories": [
-      "parts",
-      "retail"
-    ],
-    "source": "OSM",
-    "osm_id": "way/298890174",
-    "business_id": "4-wheel-parts-ut",
-    "google_maps_link": "https://www.google.com/maps?q=40.730967,-111.938264",
-    "lat": 40.7309665,
-    "lon": -111.9382641
   },
   {
     "name": "Best Deal Spring & Truck Parts",
