@@ -67,9 +67,17 @@
     var actions = body.querySelector('.biz-actions') ||
       body.querySelector('.featured-biz-actions') ||
       body.querySelector('.state-feat-actions');
-    var isDirectoryPage = /(^|\/)directory\.html$/i.test(window.location.pathname || '');
-    if (actions && isDirectoryPage && actions.classList && actions.classList.contains('biz-actions')) {
+    var path = window.location.pathname || '';
+    var isDirectoryPage = /(^|\/)directory\.html$/i.test(path);
+    var isStatePage = /(^|\/)state\//i.test(path);
+    if (actions && actions.classList && actions.classList.contains('biz-actions') && isDirectoryPage) {
       actions.classList.add('biz-actions--rate-left');
+      actions.insertBefore(wrap, actions.firstChild);
+      Array.prototype.slice.call(actions.querySelectorAll('a.btn, button.btn, span.btn')).forEach(function(btn) {
+        if (!btn.closest('.biz-rating-wrap')) btn.classList.add('biz-cta-btn');
+      });
+    } else if (actions && actions.classList && actions.classList.contains('state-feat-actions') && isStatePage) {
+      actions.classList.add('state-feat-actions--rate-left');
       actions.insertBefore(wrap, actions.firstChild);
       Array.prototype.slice.call(actions.querySelectorAll('a.btn, button.btn, span.btn')).forEach(function(btn) {
         if (!btn.closest('.biz-rating-wrap')) btn.classList.add('biz-cta-btn');
