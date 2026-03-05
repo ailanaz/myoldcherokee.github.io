@@ -674,6 +674,28 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 0 0 2px rgba(107,18,40,0.08);
 }
 
+/* Shared multi-field filter/search container */
+.clubs-filters-wrap {
+  background: #fff;
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-xs);
+  padding: 1rem;
+}
+.clubs-filters-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+.clubs-filter-group label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-mid);
+  margin-bottom: 0.35rem;
+}
+
 /* ── GET FEATURED NUDGE ───────────────────────────────────────────────────── */
 .get-featured-nudge { background: var(--off); border: 1.5px dashed var(--amber); border-radius: var(--radius); padding: 0.85rem 1.1rem; font-size: 0.86rem; color: var(--text-mid); display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem; }
 .get-featured-nudge strong { color: var(--text); }

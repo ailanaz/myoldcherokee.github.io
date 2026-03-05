@@ -75,17 +75,24 @@
 <!-- FILTER -->
 <section class="home-section" style="padding-top:2rem;padding-bottom:0;">
   <div class="container">
-    <div class="page-filter-hero" style="margin-top:0;margin-bottom:1.75rem;">
-      <div class="page-filter-hero-box">
-        <select id="featured-cat" class="filter-select" aria-label="Filter by category" onchange="applyFeaturedFilter()">
-          <option value="all">All Business Types</option>
-          <option value="repair">Repair Shops</option>
-          <option value="parts">Parts Suppliers</option>
-          <option value="specialty">Specialty Services</option>
-          <option value="salvage">Salvage Yards</option>
-          <option value="rust">Rust Repair</option>
-          <option value="fabrication">Fabrication</option>
-        </select>
+    <div class="clubs-filters-wrap" style="margin-top:0;margin-bottom:1.75rem;">
+      <div class="clubs-filters-grid" style="grid-template-columns:1fr 2fr;">
+        <div class="clubs-filter-group">
+          <label for="featured-cat">Business Type</label>
+          <select id="featured-cat" class="filter-select" aria-label="Filter by category" onchange="applyFeaturedFilter()">
+            <option value="all">All Business Types</option>
+            <option value="repair">Repair Shops</option>
+            <option value="parts">Parts Suppliers</option>
+            <option value="specialty">Specialty Services</option>
+            <option value="salvage">Salvage Yards</option>
+            <option value="rust">Rust Repair</option>
+            <option value="fabrication">Fabrication</option>
+          </select>
+        </div>
+        <div class="clubs-filter-group">
+          <label for="featured-search">Search</label>
+          <input id="featured-search" class="filter-search-input" type="search" placeholder="Search featured businesses..." aria-label="Search featured businesses" />
+        </div>
       </div>
     </div>
   </div>
@@ -283,22 +290,29 @@
     var grid = document.getElementById('featured-grid');
     var empty = document.getElementById('featured-empty');
     var catSelect = document.getElementById('featured-cat');
+    var searchInput = document.getElementById('featured-search');
     if (!grid) return;
 
     function applyFilters() {
       var cat = catSelect.value;
+      var q = (searchInput && searchInput.value ? searchInput.value : '').toLowerCase().trim();
       var cards = grid.querySelectorAll('.featured-biz-card[data-cat]');
       var visible = 0;
       cards.forEach(function(card) {
         var matchCat = (cat === 'all') || (card.getAttribute('data-cat') === cat);
-        card.style.display = matchCat ? '' : 'none';
-        if (matchCat) visible++;
+        var hay = (card.getAttribute('data-name') || card.textContent || '').toLowerCase();
+        var matchSearch = !q || hay.indexOf(q) !== -1;
+        var show = matchCat && matchSearch;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
       });
       if (empty) empty.style.display = (visible === 0) ? '' : 'none';
     }
 
     catSelect.addEventListener('change', applyFilters);
+    if (searchInput) searchInput.addEventListener('input', applyFilters);
     window.applyFeaturedFilter = applyFilters;
+    applyFilters();
   })();
 </script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
