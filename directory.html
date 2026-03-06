@@ -141,6 +141,7 @@
         <select id="live-type" class="filter-select" aria-label="Filter by type">
           <option value="" disabled selected>Business Type</option>
           <option value="all">All types</option>
+          <option value="shop-parts-nav">Shop for Parts</option>
         </select>
       </div>
       <div class="clubs-filter-group">
@@ -2124,7 +2125,7 @@
       }
     });
 
-    while (typeSel.options.length > 2) typeSel.remove(2);
+    while (typeSel.options.length > 3) typeSel.remove(3);
     var featuredOpt = document.createElement('option');
     featuredOpt.value = 'featured';
     featuredOpt.textContent = '★ Featured';
@@ -2169,6 +2170,14 @@
     var type = typeSel.value || 'all';
     var tag = (tagSel.value || 'all').toLowerCase();
     var featuredIds = featuredBusinessIds();
+    if (type === 'shop-parts-nav') {
+      var partsSection = document.getElementById('shop-parts');
+      if (partsSection && typeof partsSection.scrollIntoView === 'function') {
+        partsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      typeSel.value = 'all';
+      type = 'all';
+    }
     if (type === 'featured') state = 'all';
 
     filteredRows = allRows.filter(function(it) {
@@ -2454,6 +2463,7 @@
       '</div>' +
       '<div class="clubs-filter-group parts-tag-group">' +
         '<select id="parts-tag-select" class="filter-select" aria-label="Filter parts by tag">' +
+          '<option value=\"businesses-nav\">Businesses</option>' +
           '<option value=\"all\">All tags</option>' +
         '</select>' +
       '</div>' +
@@ -2518,6 +2528,14 @@
 
   select.addEventListener('change', function() {
     activeTag = select.value || 'all';
+    if (activeTag === 'businesses-nav') {
+      var topAnchor = document.getElementById('live-type');
+      if (topAnchor && typeof topAnchor.scrollIntoView === 'function') {
+        topAnchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      select.value = 'all';
+      activeTag = 'all';
+    }
     applyPartsFilters();
   });
   searchInput.addEventListener('input', applyPartsFilters);
