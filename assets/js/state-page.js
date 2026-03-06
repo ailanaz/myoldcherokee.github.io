@@ -37,6 +37,182 @@ function isFeaturedEntry(it) {
   return false;
 }
 
+function getWebsiteLabel(websiteHref) {
+  var href = String(websiteHref || '');
+  if (!href) return 'Website';
+  if (/facebook\.com/i.test(href)) return 'Facebook';
+  if (/yelp\.com/i.test(href)) return 'Yelp';
+  if (/google\.[^/]+\/maps/i.test(href)) return 'Google';
+  return 'Website';
+}
+
+function buildMapHref(it) {
+  if (it.google_maps_link) return it.google_maps_link;
+  return 'https://www.google.com/maps/search/' + encodeURIComponent([
+    it.name || it.title || '',
+    it.address || '',
+    it.city || '',
+    it.state || ''
+  ].join(' ').trim());
+}
+
+function renderFeaturedSection(root, stateName, featuredItems) {
+  if (!root) return;
+  var section = root.querySelector('.state-featured-section');
+  if (!section) {
+    section = document.createElement('div');
+    section.className = 'state-featured-section';
+    section.innerHTML = '<div class="state-featured-label"></div><div class="state-featured-track"></div>';
+    var anchor = root.querySelector('#state-page');
+    if (anchor && anchor.nextSibling) root.insertBefore(section, anchor.nextSibling);
+    else if (anchor) root.appendChild(section);
+  }
+
+  var label = section.querySelector('.state-featured-label');
+  if (label) label.textContent = 'Featured in ' + stateName;
+  var track = section.querySelector('.state-featured-track');
+  if (!track) return;
+  track.innerHTML = '';
+
+  var imgMap = {
+    'banker-automotive-tx': '../assets/images/banker-automotive.png',
+    'forged-concepts-ar': '../assets/images/forged-concepts-logo.jpg',
+    'pidplates-ca': '../PP%20Decals.png?v=20260304-5'
+  };
+  var imgBgMap = {
+    'banker-automotive-tx': '#fff',
+    'forged-concepts-ar': '#fff',
+    'pidplates-ca': '#c01616'
+  };
+
+  var active = (featuredItems || []).slice(0, 3);
+  active.forEach(function(it) {
+    var card = document.createElement('div');
+    card.className = 'state-feat-card';
+    card.setAttribute('data-business-id', it.business_id || '');
+
+    var website = (it.website || '').trim();
+    var mapHref = buildMapHref(it);
+    var websiteLabel = getWebsiteLabel(website);
+    var tags = Array.isArray(it.categories) ? it.categories.slice(0, 3) : [];
+    var tagHtml = tags.length
+      ? '<div class="featured-biz-tags" style="margin-bottom:0.6rem;">' + tags.map(function(t) {
+          return '<span class="featured-biz-tag">' + esc(String(t).replace(/-/g, ' ')) + '</span>';
+        }).join('') + '</div>'
+      : '';
+    var type = esc(it.type || 'Business');
+    var name = esc(it.name || 'Featured Business');
+    var cityState = [it.city, it.state].filter(Boolean).join(', ');
+    var loc = cityState ? '📍 ' + esc(cityState) : '';
+    var desc = esc(it.summary || 'Featured listing for XJ owners.');
+    var imgSrc = imgMap[it.business_id] || '';
+    var imgBg = imgBgMap[it.business_id] || '#fff';
+
+    card.innerHTML =
+      '<div class="state-feat-img" style="display:flex;align-items:center;justify-content:center;background:' + imgBg + ';">' +
+        (imgSrc
+          ? '<img src="' + imgSrc + '" alt="' + name + ' logo" style="max-width:92%;max-height:86%;object-fit:contain;" />'
+          : '<span style="font-family:\'Oswald\',sans-serif;font-size:1.35rem;letter-spacing:0.06em;">' + name + '</span>') +
+      '</div>' +
+      '<div class="state-feat-body">' +
+        '<div class="state-feat-badges">' +
+          '<span class="featured-badge">Featured</span>' +
+          '<span class="featured-biz-type">' + type + '</span>' +
+        '</div>' +
+        '<div class="state-feat-name">' + name + '</div>' +
+        '<div class="state-feat-loc">' + loc + '</div>' +
+        '<p class="state-feat-desc">' + desc + '</p>' +
+        tagHtml +
+        '<div class="featured-verified">Business website and service details verified</div>' +
+        '<div class="state-feat-actions">' +
+          (website ? '<a href="' + esc(website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel + '</a>' : '') +
+          '<a href="' + esc(mapHref) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>' +
+        '</div>' +
+      '</div>';
+    track.appendChild(card);
+  });
+
+  while (track.children.length < 3) {
+    var inactive = document.createElement('a');
+    inactive.href = '../featured.html#get-featured';
+    inactive.className = 'state-feat-card state-feat-card--inactive';
+    inactive.innerHTML =
+      '<div class="state-feat-img--empty">+</div>' +
+      '<div class="state-feat-placeholder-body">' +
+        '<div class="state-feat-placeholder-title">Get Featured Here</div>' +
+        '<p class="state-feat-placeholder-sub">Repair shop, parts seller, or service business in ' + esc(stateName) + '? Get your business in front of XJ owners.</p>' +
+        '<span class="btn btn-red btn-sm">Learn More &rarr;</span>' +
+      '</div>';
+    track.appendChild(inactive);
+  }
+}
+
+function renderDirectoryRunningList(container, items) {
+  if (!container) return;
+  container.innerHTML = '';
+
+  var heading = document.createElement('h2');
+  heading.style.cssText = 'margin:2rem 0 0;font-family:\'Oswald\',sans-serif;font-size:1.3rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;border-bottom:2px solid var(--line);padding-bottom:0.5rem;';
+  heading.textContent = 'Directory';
+  container.appendChild(heading);
+
+  var wrap = document.createElement('div');
+  wrap.className = 'card';
+  wrap.style.cssText = 'padding:16px;margin-top:16px;border-radius:10px;';
+  container.appendChild(wrap);
+
+  if (!items.length) {
+    wrap.innerHTML = '<p style="margin:0;color:var(--text-mid);">No active directory listings yet for this state.</p>';
+    return;
+  }
+
+  var ul = document.createElement('ul');
+  ul.style.cssText = 'list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.75rem;';
+
+  items.slice().sort(function(a, b) {
+    return String(a.name || '').toLowerCase().localeCompare(String(b.name || '').toLowerCase());
+  }).forEach(function(it) {
+    var li = document.createElement('li');
+    li.className = 'card';
+    li.setAttribute('data-business-id', it.business_id || '');
+    li.style.cssText = 'padding:0.8rem 0.95rem;background:var(--off);border:1px solid var(--line);';
+
+    var website = (it.website || '').trim();
+    var mapHref = buildMapHref(it);
+    var websiteLabel = getWebsiteLabel(website);
+    var type = esc(it.type || 'Business');
+    var name = esc(it.name || 'Listing');
+    var cityState = [it.city, it.state].filter(Boolean).join(', ');
+    var address = it.address ? '<div style="font-size:0.82rem;color:var(--text-mid);margin-top:0.2rem;">📍 ' + esc(it.address) + '</div>' : '';
+
+    var tags = Array.isArray(it.categories) ? it.categories.filter(function(t){ return String(t).toLowerCase() !== 'featured'; }).slice(0, 3) : [];
+    var tagsHtml = tags.length
+      ? '<div style="display:flex;gap:0.35rem;flex-wrap:wrap;margin-top:0.35rem;">' + tags.map(function(t){
+          return '<span class="featured-biz-tag">' + esc(String(t).replace(/-/g, ' ')) + '</span>';
+        }).join('') + '</div>'
+      : '';
+
+    li.innerHTML =
+      '<div class="biz-body">' +
+        '<div style="display:flex;justify-content:space-between;gap:0.75rem;flex-wrap:wrap;align-items:flex-start;">' +
+          '<div>' +
+            '<div style="font-family:\'Oswald\',sans-serif;font-size:1rem;font-weight:700;letter-spacing:0.02em;">' + name + '</div>' +
+            '<div style="font-size:0.84rem;color:var(--text-mid);">' + esc(cityState) + (cityState ? ' · ' : '') + type + '</div>' +
+            address +
+            tagsHtml +
+          '</div>' +
+          '<div class="biz-actions" style="display:flex;gap:0.45rem;flex-wrap:wrap;justify-content:flex-end;">' +
+            (website ? '<a href="' + esc(website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel + '</a>' : '') +
+            '<a href="' + esc(mapHref) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+    ul.appendChild(li);
+  });
+
+  wrap.appendChild(ul);
+}
+
 function renderGroup(container, title, items) {
   var sortedItems = (items || []).slice().sort(function(a, b) {
     var an = String(a.name || a.title || '').toLowerCase();
@@ -228,31 +404,18 @@ async function initStatePage() {
     var directory = dirAll.filter(function(x) {
       return (x.state || '').toUpperCase() === stateCode;
     });
+    var activeDirectory = directory.filter(function(x) {
+      return x.is_active === true || String(x.status || '').toLowerCase() === 'active';
+    });
+    var featuredDirectory = activeDirectory.filter(isFeaturedEntry);
+    var runningDirectory = activeDirectory.filter(function(x) { return !isFeaturedEntry(x); });
 
     var buySellGroups = groupBy(activeBuySell, 'category');
-    var dirGroups = groupBy(directory, 'type');
-
-    var dirOrder = [
-      'Repair Shops (XJ/Jeep-Friendly)',
-      'Suspension, Alignment, and Lift Install',
-      'Drivetrain Specialists (Axles, Gears, Driveshafts)',
-      'Electrical and Diagnostics (Older Vehicle Friendly)',
-      'Radiator and Cooling Specialists',
-      'Auto Glass and Windshield',
-      'Fabrication and Welding (4x4)',
-      'Rust Repair and Body (Welding Focus)',
-      'Upholstery and Interior (Headliners, Seats)',
-      'Towing and Recovery (4x4 capable)',
-      'Specialty Services',
-      'Salvage Yards and Junkyards (Used Jeep Parts)',
-      'Parts Shops and 4x4 Retailers',
-      'Body Shops',
-      'Tires and Wheels',
-      'Other'
-    ];
+    var sectionRoot = root.parentElement || document;
+    renderFeaturedSection(sectionRoot, stateName, featuredDirectory);
 
     renderSection(bsContainer, 'Buy and Sell', buySellGroups, null);
-    renderSection(dirContainer, 'Directory', dirGroups, dirOrder);
+    renderDirectoryRunningList(dirContainer, runningDirectory);
 
   } catch (err) {
     if (bsContainer) bsContainer.innerHTML = '<p style="color:var(--text-mid);padding:1rem 0;">Listings could not load. Please refresh the page.</p>';
