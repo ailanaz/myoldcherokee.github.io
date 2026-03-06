@@ -99680,42 +99680,6 @@
     "lon": -81.0114844
   },
   {
-    "name": "Dalton Collision",
-    "type": "Body Shops",
-    "state": "TN",
-    "city": "Knoxville",
-    "address": "Knoxville, TN",
-    "phone": null,
-    "website": "https://daltoncollision.com",
-    "categories": [
-      "body",
-      "collision",
-      "paint"
-    ],
-    "summary": "I-CAR Gold Class since 1998 — longest-tenured Gold Class shop in Tennessee. Expert Cherokee collision repair in Knoxville.",
-    "jeep_friendly_blurb": "Knoxville body shop with I-CAR Gold Class certification since 1998. Highly experienced collision repair for Cherokee models.",
-    "jeep_friendly_source_url": "https://daltoncollision.com",
-    "jeep_friendly_source_label": "Dalton Collision website"
-  },
-  {
-    "name": "Harper Collision Center",
-    "type": "Body Shops",
-    "state": "TN",
-    "city": "Knoxville",
-    "address": "Knoxville, TN",
-    "phone": null,
-    "website": "https://www.harpercollision.com",
-    "categories": [
-      "body",
-      "collision",
-      "paint"
-    ],
-    "summary": "Premier collision repair and refinishing in Greater Knoxville. State-of-the-art equipment for factory-quality Cherokee restoration.",
-    "jeep_friendly_blurb": "Knoxville premier collision shop with state-of-the-art equipment. Factory-quality restoration work for Cherokee models.",
-    "jeep_friendly_source_url": "https://www.harpercollision.com",
-    "jeep_friendly_source_label": "Harper Collision website"
-  },
-  {
     "name": "All Terrain Auto Care",
     "type": "Repair Shops",
     "state": "TN",
@@ -100024,60 +99988,6 @@
     "jeep_friendly_blurb": "Austin Jeep-certified collision center offering OEM-spec body repair for Cherokee models. Rental car pickup on-site.",
     "jeep_friendly_source_url": "https://www.nylemaxwellcdjr.com",
     "jeep_friendly_source_label": "Nyle Maxwell website"
-  },
-  {
-    "name": "Race Track Auto Center",
-    "type": "Body Shops",
-    "state": "TX",
-    "city": "Houston",
-    "address": "9840 Westpark Dr, Houston, TX",
-    "phone": null,
-    "website": "https://racetrackautocenter.com",
-    "categories": [
-      "body",
-      "collision",
-      "paint"
-    ],
-    "summary": "Insurance-approved Jeep body shop in Houston. Specializes in restoring Cherokees to factory specs. Lifetime warranty on body and paint.",
-    "jeep_friendly_blurb": "Houston body shop specializing in restoring Jeep Cherokees to factory specs. Lifetime warranty on all body and paint work.",
-    "jeep_friendly_source_url": "https://racetrackautocenter.com",
-    "jeep_friendly_source_label": "Race Track Auto Center website"
-  },
-  {
-    "name": "River Oaks Paint & Body",
-    "type": "Body Shops",
-    "state": "TX",
-    "city": "Houston",
-    "address": "Houston, TX",
-    "phone": null,
-    "website": "https://www.riveroakspaintandbody.net",
-    "categories": [
-      "body",
-      "collision",
-      "paint"
-    ],
-    "summary": "Top-rated Jeep collision center in Houston. Insurance claims handled in-house. Factory-quality finishes for all Jeep models.",
-    "jeep_friendly_blurb": "Houston Jeep collision repair with in-house insurance handling. Factory-quality paint and body finishes for Cherokee models.",
-    "jeep_friendly_source_url": "https://www.riveroakspaintandbody.net",
-    "jeep_friendly_source_label": "River Oaks Paint & Body website"
-  },
-  {
-    "name": "Texas Body Works",
-    "type": "Body Shops",
-    "state": "TX",
-    "city": "Dallas",
-    "address": "Dallas, TX",
-    "phone": "(972) 250-6722",
-    "website": "https://www.texasbodyworks.com",
-    "categories": [
-      "body",
-      "collision",
-      "paint"
-    ],
-    "summary": "32+ years of North Texas collision and auto body repair. Advanced paint matching. Jeep Cherokee collision repair.",
-    "jeep_friendly_blurb": "Dallas body shop with 32+ years of experience and advanced paint matching for exact color restoration on Cherokee models.",
-    "jeep_friendly_source_url": "https://www.texasbodyworks.com",
-    "jeep_friendly_source_label": "Texas Body Works website"
   },
   {
     "name": "Banker Automotive",
