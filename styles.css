@@ -532,20 +532,20 @@ img { max-width: 100%; display: block; }
 .state-featured-label { font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: var(--red); margin-bottom: 0.85rem; display: flex; align-items: center; gap: 0.75rem; }
 .state-featured-label::after { content: ''; flex: 1; height: 1px; background: var(--line); }
 .state-featured-track { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-.state-feat-card { display: flex; flex-direction: column; background: #fff; border: 1.5px solid #e5e5e5; border-radius: 10px; overflow: hidden; text-decoration: none; color: inherit; transition: box-shadow 0.2s, transform 0.18s; }
-.state-feat-card:hover { box-shadow: 0 4px 18px rgba(0,0,0,0.1); transform: translateY(-2px); }
-.state-feat-img { height: 160px; overflow: hidden; }
+.state-feat-card { display: flex; flex-direction: column; background: var(--white); border: 2px solid var(--amber); border-radius: var(--radius-lg); overflow: hidden; text-decoration: none; color: inherit; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 2px 10px rgba(200,112,32,0.1); }
+.state-feat-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+.state-feat-img { height: 140px; background: var(--off-2); overflow: hidden; display: flex; align-items: center; justify-content: center; }
 .state-feat-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.state-feat-img--empty { height: 160px; background: var(--off-2); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: var(--line-mid); }
-.state-feat-card--inactive { border: 1.5px dashed var(--line-mid); background: var(--off); }
+.state-feat-img--empty { height: 140px; background: var(--off-2); display: flex; align-items: center; justify-content: center; font-size: 2.5rem; color: var(--line-mid); }
+.state-feat-card--inactive { border: 2px dashed var(--line-mid); background: var(--off); box-shadow: none; }
 .state-feat-card--inactive:hover { box-shadow: none; transform: none; }
-.state-feat-body { padding: 1rem; flex: 1; display: flex; flex-direction: column; }
-.state-feat-badges { display: flex; gap: 0.4rem; align-items: center; flex-wrap: wrap; margin-bottom: 0.4rem; }
-.state-feat-name { font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; color: var(--text); margin-bottom: 0.2rem; }
+.state-feat-body { padding: 1.25rem; flex: 1; display: flex; flex-direction: column; gap: 0.4rem; }
+.state-feat-badges { display: flex; gap: 0.4rem; align-items: center; flex-wrap: wrap; margin-bottom: 0.2rem; }
+.state-feat-name { font-family: 'Oswald', sans-serif; font-size: 1.05rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; color: var(--text); margin-bottom: 0.2rem; }
 .state-feat-loc { font-size: 0.84rem; color: var(--text-lite); margin-bottom: 0.5rem; }
-.state-feat-desc { font-family: 'Source Serif 4', serif; font-size: 0.84rem; color: var(--text-mid); line-height: 1.55; flex: 1; margin-bottom: 0.6rem; }
+.state-feat-desc { font-family: 'Source Serif 4', serif; font-size: 0.88rem; color: var(--text-mid); line-height: 1.6; flex: 1; margin-bottom: 0.6rem; }
 .state-feat-actions { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: auto; }
-.state-feat-actions .btn { font-size: 0.78rem; height: 34px; padding: 0 0.75rem; }
+.state-feat-actions .btn { flex: 1; min-width: 80px; font-size: 0.78rem; height: 34px; padding: 0 0.75rem; }
 .state-feat-placeholder-body { padding: 1.25rem; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 0.6rem; }
 .state-feat-placeholder-title { font-family: 'Oswald', sans-serif; font-size: 0.95rem; font-weight: 700; text-transform: uppercase; color: var(--text-mid); }
 .state-feat-placeholder-sub { font-size: 0.82rem; color: var(--text-lite); line-height: 1.5; }
