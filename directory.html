@@ -146,6 +146,7 @@
           <option value="" disabled selected>Business Type</option>
           <option value="all">All types</option>
           <option value="shop-parts-nav">Shop for Parts</option>
+          <option value="business-queue-nav">Business Queue</option>
         </select>
       </div>
       <div class="clubs-filter-group">
@@ -2112,16 +2113,27 @@
       });
   }
 
-  function ensureShopPartsOption() {
+  function ensureNavOptions() {
     var hasOption = Array.prototype.some.call(typeSel.options, function(opt) {
       return opt && opt.value === 'shop-parts-nav';
     });
-    if (hasOption) return;
-    var opt = document.createElement('option');
-    opt.value = 'shop-parts-nav';
-    opt.textContent = 'Shop for Parts';
-    if (typeSel.options.length > 2) typeSel.insertBefore(opt, typeSel.options[2]);
-    else typeSel.appendChild(opt);
+    if (!hasOption) {
+      var opt = document.createElement('option');
+      opt.value = 'shop-parts-nav';
+      opt.textContent = 'Shop for Parts';
+      if (typeSel.options.length > 2) typeSel.insertBefore(opt, typeSel.options[2]);
+      else typeSel.appendChild(opt);
+    }
+    var hasQueueOption = Array.prototype.some.call(typeSel.options, function(opt) {
+      return opt && opt.value === 'business-queue-nav';
+    });
+    if (!hasQueueOption) {
+      var qOpt = document.createElement('option');
+      qOpt.value = 'business-queue-nav';
+      qOpt.textContent = 'Business Queue';
+      if (typeSel.options.length > 3) typeSel.insertBefore(qOpt, typeSel.options[3]);
+      else typeSel.appendChild(qOpt);
+    }
   }
 
   function initFilters(rows) {
@@ -2141,8 +2153,8 @@
       }
     });
 
-    while (typeSel.options.length > 3) typeSel.remove(3);
-    ensureShopPartsOption();
+    while (typeSel.options.length > 4) typeSel.remove(4);
+    ensureNavOptions();
     var featuredOpt = document.createElement('option');
     featuredOpt.value = 'featured';
     featuredOpt.textContent = '★ Featured';
@@ -2191,6 +2203,14 @@
       var partsSection = document.getElementById('shop-parts');
       if (partsSection && typeof partsSection.scrollIntoView === 'function') {
         partsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      typeSel.value = 'all';
+      type = 'all';
+    }
+    if (type === 'business-queue-nav') {
+      var queueSection = document.getElementById('community-review-queue');
+      if (queueSection && typeof queueSection.scrollIntoView === 'function') {
+        queueSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
       typeSel.value = 'all';
       type = 'all';
@@ -2489,7 +2509,12 @@
     tabsRow.appendChild(btn);
   });
 
-  // Add red back-to-top tag at end of tabs row.
+  // Add queue and back-to-top tags at end of tabs row.
+  var queueTop = document.createElement('a');
+  queueTop.className = 'parts-tag parts-back-top';
+  queueTop.href = '#community-review-queue';
+  queueTop.textContent = 'Business Queue';
+  tabsRow.appendChild(queueTop);
   var backTop = document.createElement('a');
   backTop.className = 'parts-tag parts-back-top';
   backTop.href = '#live-type';
@@ -2509,8 +2534,9 @@
   if (cta && cta.parentNode === section) section.insertBefore(unifiedGrid, cta);
   else section.appendChild(unifiedGrid);
 
-  // Apply color coding to card tags.
-  section.querySelectorAll('.parts-tag').forEach(function(el) {
+  // Apply color coding to content/filter tags only (keep nav tags theme red).
+  section.querySelectorAll('.parts-card .parts-tag, .parts-filter-pill').forEach(function(el) {
+    if (el.classList.contains('parts-back-top')) return;
     el.classList.add(tagTone(el.textContent));
   });
 
