@@ -22,7 +22,7 @@
   }
 
   /* ── build the inner HTML for a .biz-rating-wrap ─────── */
-  function buildInner(bid, data) {
+  function buildInner(bid, data, allowRating) {
     var rated = hasRated(bid);
 
     /* display line */
@@ -32,12 +32,15 @@
       : '<span class="biz-rating-none">No ratings yet</span>';
 
     /* action */
-    var actionHtml = rated
-      ? '\u00a0<span class="rating-already">· Rated \u2713</span>'
-      : '\u00a0<button class="btn btn-outline btn-sm rating-open-btn" data-bid="' + bid + '" aria-expanded="false">Rate</button>';
+    var actionHtml = '';
+    if (allowRating) {
+      actionHtml = rated
+        ? '\u00a0<span class="rating-already">· Rated \u2713</span>'
+        : '\u00a0<button class="btn btn-outline btn-sm rating-open-btn" data-bid="' + bid + '" aria-expanded="false">Rate</button>';
+    }
 
     /* star form (omitted if already rated) */
-    var formHtml = rated ? '' :
+    var formHtml = (!allowRating || rated) ? '' :
       '<div class="rating-form" aria-hidden="true">' +
         '<div class="star-picker" data-bid="' + bid + '" data-selected="0">' +
           [1, 2, 3, 4, 5].map(function (v) {
@@ -59,17 +62,18 @@
     if (!body) return;
     if (body.querySelector('.biz-rating-wrap')) return; // already injected
 
-    var wrap = document.createElement('div');
-    wrap.className = 'biz-rating-wrap';
-    wrap.setAttribute('data-bid', bid);
-    wrap.innerHTML = buildInner(bid, data);
-
     var actions = body.querySelector('.biz-actions') ||
       body.querySelector('.featured-biz-actions') ||
       body.querySelector('.state-feat-actions');
     var path = window.location.pathname || '';
     var isDirectoryPage = /(^|\/)directory\.html$/i.test(path);
     var isStatePage = /(^|\/)state\//i.test(path);
+    var allowRating = isDirectoryPage;
+
+    var wrap = document.createElement('div');
+    wrap.className = 'biz-rating-wrap';
+    wrap.setAttribute('data-bid', bid);
+    wrap.innerHTML = buildInner(bid, data, allowRating);
     if (actions && actions.classList && actions.classList.contains('biz-actions') && isDirectoryPage) {
       actions.classList.add('biz-actions--rate-left');
       actions.insertBefore(wrap, actions.firstChild);
