@@ -4847,18 +4847,6 @@
     "lon": -111.8247831
   },
   {
-    "name": "Desert Iron 4x4",
-    "type": "Repair Shops",
-    "state": "AZ",
-    "city": "Tucson",
-    "categories": [
-      "4x4",
-      "suspension",
-      "general"
-    ],
-    "summary": "Lift installs, axle work, and general XJ repairs. Owner has run Cherokees for 20+ years."
-  },
-  {
     "name": "Garrigan's Auto Repair",
     "type": "Repair Shops",
     "state": "AZ",
@@ -9522,13 +9510,6 @@
     "lon": -112.0941658
   },
   {
-    "name": "Desert Southwest Salvage",
-    "type": "Salvage and Junk Yards",
-    "state": "AZ",
-    "city": "Phoenix",
-    "summary": "Dry climate means rust-free parts. Strong Cherokee XJ inventory. Open most weekends."
-  },
-  {
     "name": "American Spring & Alignment",
     "type": "Suspension, Alignment, and Lift Install",
     "state": "AZ",
@@ -10832,18 +10813,6 @@
     "jeep_friendly_blurb": "Corona shop that calls out Jeep repair and claims Jeep enthusiasm. Good for Cherokee owners who want a shop that openly welcomes Jeep work.",
     "jeep_friendly_source_url": "https://harveysautotech.com/make-Jeep-repair.html",
     "jeep_friendly_source_label": "Jeep repair page"
-  },
-  {
-    "name": "Northern Cal Cherokee Works",
-    "type": "Repair Shops",
-    "state": "CA",
-    "city": "Fresno",
-    "categories": [
-      "general",
-      "electrical",
-      "cooling"
-    ],
-    "summary": "General repair with solid electrical troubleshooting. Has Cherokee-specific diagnostic experience."
   },
   {
     "name": "A & R Auto Services",
@@ -20939,17 +20908,6 @@
     "jeep_friendly_source_label": "Jeep service page"
   },
   {
-    "name": "High Country 4x4 & Offroad",
-    "type": "Repair Shops",
-    "state": "CO",
-    "city": "Denver",
-    "categories": [
-      "4x4",
-      "suspension"
-    ],
-    "summary": "4x4 and suspension specialists. Lifts, axle rebuilds, and Cherokee-specific work. Call ahead for Cherokee appointments."
-  },
-  {
     "name": "A & B Import Auto",
     "type": "Repair Shops (XJ/Jeep-Friendly)",
     "state": "CO",
@@ -29684,13 +29642,6 @@
     "lon": -104.873226
   },
   {
-    "name": "Rocky Mountain Salvage",
-    "type": "Salvage and Junk Yards",
-    "state": "CO",
-    "city": "Colorado Springs",
-    "summary": "Large inventory of XJ and ZJ parts. Call ahead to check Cherokee availability before making the trip."
-  },
-  {
     "name": "Full Tilt Street Rods",
     "type": "Suspension, Alignment, and Lift Install",
     "state": "CO",
@@ -30071,18 +30022,6 @@
     "google_maps_link": "https://www.google.com/maps?q=25.876871,-80.326366",
     "lat": 25.8768712,
     "lon": -80.3263658
-  },
-  {
-    "name": "Sun State Cherokee Shop",
-    "type": "Repair Shops",
-    "state": "FL",
-    "city": "Orlando",
-    "categories": [
-      "general",
-      "cooling",
-      "electrical"
-    ],
-    "summary": "Cooling system and electrical specialists. Familiar with the overheating problems common on Florida-heat Cherokees."
   },
   {
     "name": "Suncoast Auto Repair Inc",
@@ -33454,30 +33393,6 @@
     "google_maps_link": "https://www.google.com/maps?q=33.686169,-84.348245",
     "lat": 33.6861685,
     "lon": -84.3482447
-  },
-  {
-    "name": "Appalachian Offroad & Repair",
-    "type": "Repair Shops",
-    "state": "GA",
-    "city": "Dalton",
-    "categories": [
-      "4x4",
-      "suspension",
-      "general"
-    ],
-    "summary": "Full 4x4 repair shop with Cherokee experience. Lift installs, steering, and general service."
-  },
-  {
-    "name": "Peach State Jeep Works",
-    "type": "Repair Shops",
-    "state": "GA",
-    "city": "Macon",
-    "categories": [
-      "general",
-      "driveline",
-      "diagnostics"
-    ],
-    "summary": "Honest general shop that handles Cherokee driveline and diagnostics. Long wait times but solid work."
   },
   {
     "name": "Snellville Auto Center",
@@ -43208,26 +43123,6 @@
     "google_maps_link": "https://www.google.com/maps?q=42.226700,-83.206277",
     "lat": 42.2267005,
     "lon": -83.2062775
-  },
-  {
-    "name": "Downriver Car Care (Coming Soon)",
-    "type": "Repair Shops (XJ/Jeep-Friendly)",
-    "state": "MI",
-    "city": "Southgate",
-    "address": "13160, Fort Street, Southgate, MI, 48195",
-    "phone": "+1-734-210-1010",
-    "website": "",
-    "summary": "",
-    "categories": [
-      "repair",
-      "mechanic"
-    ],
-    "source": "OSM",
-    "osm_id": "way/678162445",
-    "business_id": "downriver-car-care-coming-soon-mi",
-    "google_maps_link": "https://www.google.com/maps?q=42.212404,-83.181526",
-    "lat": 42.2124042,
-    "lon": -83.1815261
   },
   {
     "name": "Downtown Union 76",
@@ -57400,18 +57295,6 @@
     "google_maps_link": "https://www.google.com/maps?q=36.439811,-77.648283",
     "lat": 36.4398105,
     "lon": -77.6482828
-  },
-  {
-    "name": "Coastal Cherokee Clinic",
-    "type": "Repair Shops",
-    "state": "NC",
-    "city": "Fayetteville",
-    "categories": [
-      "general",
-      "electrical",
-      "diagnostics"
-    ],
-    "summary": "Good general shop that handles Cherokee electrical issues well. Clean work and fair pricing."
   },
   {
     "name": "The Organic Mechanic",
@@ -77896,13 +77779,6 @@
     "google_maps_link": "https://www.google.com/maps?q=38.736492,-82.972170",
     "lat": 38.7364925,
     "lon": -82.9721696
-  },
-  {
-    "name": "Four Wheel Drive Hardware",
-    "type": "Shop for Parts and More",
-    "state": "OH",
-    "city": "Columbiana",
-    "summary": "Mail-order and online parts retailer specializing in Jeep parts including XJ and ZJ components."
   },
   {
     "name": "Esterkamp Automotive & Alignment",
@@ -99716,17 +99592,6 @@
     "jeep_friendly_source_label": "AutoXtend website"
   },
   {
-    "name": "Cherokee Country Repair",
-    "type": "Repair Shops",
-    "state": "TN",
-    "city": "Nashville",
-    "categories": [
-      "general",
-      "diagnostics"
-    ],
-    "summary": "General Cherokee and Jeep repair. Known for accurate diagnostics on the 4.0L. Locally owned."
-  },
-  {
     "name": "Fox Plaza Automotive",
     "type": "Repair Shops",
     "state": "TN",
@@ -99882,20 +99747,6 @@
     "jeep_friendly_blurb": "Memphis Jeep-focused salvage yard that breaks down and sells Cherokee, Wrangler, and Grand Cherokee parts.",
     "jeep_friendly_source_url": "https://creepersjeepers.com",
     "jeep_friendly_source_label": "Mr. Complete website"
-  },
-  {
-    "name": "Volunteer State Auto Parts",
-    "type": "Salvage and Junk Yards",
-    "state": "TN",
-    "city": "Knoxville",
-    "summary": "Pull-a-part and full-service options. Regular Cherokee turnover. Check inventory online before the drive."
-  },
-  {
-    "name": "Cherokee Parts Direct",
-    "type": "Shop for Parts and More",
-    "state": "TN",
-    "city": "Nashville",
-    "summary": "Online and local Cherokee-specific parts supplier. New and used XJ components. Ships nationwide."
   },
   {
     "name": "Gary's Off Road Center",
@@ -100184,18 +100035,6 @@
     "jeep_friendly_source_label": "Silva Family Automotive website"
   },
   {
-    "name": "South TX Offroad Works",
-    "type": "Repair Shops",
-    "state": "TX",
-    "city": "San Antonio",
-    "categories": [
-      "4x4",
-      "suspension",
-      "driveline"
-    ],
-    "summary": "Lifts, axle swaps, and driveline work on XJs and ZJs. Shop rate competitive. Work backs up fast so book early."
-  },
-  {
     "name": "West Ave Automotive & Transmissions",
     "type": "Repair Shops",
     "state": "TX",
@@ -100264,13 +100103,6 @@
     "jeep_friendly_blurb": "DFW Jeep-only salvage yard with a strong XJ Cherokee inventory. One of the best specialty yards in Texas for Cherokee parts.",
     "jeep_friendly_source_url": "https://www.google.com/maps/search/Collins+Bros+Jeep+Wylie+TX",
     "jeep_friendly_source_label": "Google Maps listing"
-  },
-  {
-    "name": "Texas Auto Recyclers",
-    "type": "Salvage and Junk Yards",
-    "state": "TX",
-    "city": "Houston",
-    "summary": "Full-service salvage with a large inventory. Cherokee parts available. Shipping options on major components."
   },
   {
     "name": "U-Pull-&-Pay",
@@ -104282,18 +104114,6 @@
     "lon": -111.8350214
   },
   {
-    "name": "Blue Ridge Jeep & 4x4",
-    "type": "Repair Shops",
-    "state": "VA",
-    "city": "Roanoke",
-    "categories": [
-      "general",
-      "4x4",
-      "cooling"
-    ],
-    "summary": "XJ and ZJ specialists. Full general repair plus overheating and cooling system fixes. Reasonable rates."
-  },
-  {
     "name": "Davis AutoSports",
     "type": "Repair Shops",
     "state": "VA",
@@ -104312,18 +104132,6 @@
     "jeep_friendly_source_label": "Cherokee XJ build page"
   },
   {
-    "name": "Pacific Trail Garage",
-    "type": "Repair Shops",
-    "state": "WA",
-    "city": "Tacoma",
-    "categories": [
-      "general",
-      "suspension",
-      "4x4"
-    ],
-    "summary": "Full-service shop with a focus on older 4x4s. Familiar with XJ quirks. Honest diagnostics before any work starts."
-  },
-  {
     "name": "The Garage in Renton",
     "type": "Repair Shops",
     "state": "WA",
@@ -104340,13 +104148,6 @@
     "jeep_friendly_blurb": "Renton shop that openly services Jeep models including Cherokee. Good for Cherokee owners who want a normal repair shop that still calls out Jeep service directly.",
     "jeep_friendly_source_url": "https://www.thegarageinrenton.com/vehicles/jeep",
     "jeep_friendly_source_label": "Jeep service page"
-  },
-  {
-    "name": "Pacific Northwest Jeep Salvage",
-    "type": "Salvage and Junk Yards",
-    "state": "WA",
-    "city": "Olympia",
-    "summary": "XJ and ZJ specialist salvage. Good rust-free inventory due to dry storage. Call before visiting."
   },
   {
     "business_id": "banker-automotive-tx",
