@@ -2651,26 +2651,6 @@
     "lon": -92.044571
   },
   {
-    "name": "A & E Auto Repair",
-    "type": "Repair Shops (XJ/Jeep-Friendly)",
-    "state": "AR",
-    "city": "",
-    "address": "AR",
-    "phone": "+1-479-996-2331",
-    "website": "",
-    "summary": "",
-    "categories": [
-      "repair",
-      "mechanic"
-    ],
-    "source": "OSM",
-    "osm_id": "way/125113741",
-    "business_id": "a-e-auto-repair-ar",
-    "google_maps_link": "https://www.google.com/maps?q=35.219167,-94.273445",
-    "lat": 35.2191675,
-    "lon": -94.2734449
-  },
-  {
     "name": "A2Z Collision And Custom Coatings",
     "type": "Repair Shops (XJ/Jeep-Friendly)",
     "state": "AR",
@@ -10864,46 +10844,6 @@
       "cooling"
     ],
     "summary": "General repair with solid electrical troubleshooting. Has Cherokee-specific diagnostic experience."
-  },
-  {
-    "name": "A & E Auto Repair",
-    "type": "Repair Shops (XJ/Jeep-Friendly)",
-    "state": "CA",
-    "city": "Corona",
-    "address": "1101, East 6th Street, Corona, CA, 92879",
-    "phone": "+1-951-371-8201",
-    "website": "",
-    "summary": "",
-    "categories": [
-      "repair",
-      "mechanic"
-    ],
-    "source": "OSM",
-    "osm_id": "way/1461693010",
-    "business_id": "a-e-auto-repair-ca",
-    "google_maps_link": "https://www.google.com/maps?q=33.874782,-117.552202",
-    "lat": 33.8747817,
-    "lon": -117.5522017
-  },
-  {
-    "name": "A & H Auto",
-    "type": "Repair Shops (XJ/Jeep-Friendly)",
-    "state": "CA",
-    "city": "Fresno",
-    "address": "4051, North Valentine Avenue, Fresno, CA, 93722",
-    "phone": "+1 559-903-4238",
-    "website": "",
-    "summary": "",
-    "categories": [
-      "repair",
-      "mechanic"
-    ],
-    "source": "OSM",
-    "osm_id": "node/13116766362",
-    "business_id": "a-h-auto-ca",
-    "google_maps_link": "https://www.google.com/maps?q=36.795752,-119.854469",
-    "lat": 36.795752,
-    "lon": -119.8544687
   },
   {
     "name": "A & R Auto Services",
@@ -33555,26 +33495,6 @@
     "jeep_friendly_blurb": "Snellville shop that specifically advertises Jeep repairs. Good general repair option for Cherokee owners in the Atlanta metro area.",
     "jeep_friendly_source_url": "https://snellvilleautocenter.com/make-Jeep-repair.html",
     "jeep_friendly_source_label": "Jeep repair page"
-  },
-  {
-    "name": "A & A Auto Care",
-    "type": "Repair Shops (XJ/Jeep-Friendly)",
-    "state": "GA",
-    "city": "",
-    "address": "2610, Dobbs Drive, GA",
-    "phone": "+1-770-628-1246",
-    "website": "https://autoservicekennesaw.com/",
-    "summary": "",
-    "categories": [
-      "repair",
-      "mechanic"
-    ],
-    "source": "OSM",
-    "osm_id": "way/283272408",
-    "business_id": "a-a-auto-care-ga",
-    "google_maps_link": "https://www.google.com/maps?q=34.017094,-84.618899",
-    "lat": 34.0170945,
-    "lon": -84.6188987
   },
   {
     "name": "A to Z Auto Service",
@@ -69837,26 +69757,6 @@
     "lon": -82.0138788
   },
   {
-    "name": "A 2 Z Automotive and Tire",
-    "type": "Repair Shops (XJ/Jeep-Friendly)",
-    "state": "OH",
-    "city": "Zanesville",
-    "address": "1021, West Main Street, Zanesville, OH, 43701",
-    "phone": "+1 740-868-4062",
-    "website": "",
-    "summary": "",
-    "categories": [
-      "repair",
-      "mechanic"
-    ],
-    "source": "OSM",
-    "osm_id": "way/1081004819",
-    "business_id": "a-2-z-automotive-and-tire-oh",
-    "google_maps_link": "https://www.google.com/maps?q=39.939561,-82.018321",
-    "lat": 39.939561,
-    "lon": -82.0183205
-  },
-  {
     "name": "A Auto",
     "type": "Repair Shops (XJ/Jeep-Friendly)",
     "state": "OH",
@@ -82509,26 +82409,6 @@
     "google_maps_link": "https://www.google.com/maps?q=40.249500,-75.665680",
     "lat": 40.2494997,
     "lon": -75.6656796
-  },
-  {
-    "name": "A & M Service Center",
-    "type": "Repair Shops (XJ/Jeep-Friendly)",
-    "state": "PA",
-    "city": "Northampton",
-    "address": "624, Lincoln Avenue, Northampton, PA, 18067",
-    "phone": "+16104402252",
-    "website": "",
-    "summary": "",
-    "categories": [
-      "repair",
-      "mechanic"
-    ],
-    "source": "OSM",
-    "osm_id": "way/1157144017",
-    "business_id": "a-m-service-center-pa",
-    "google_maps_link": "https://www.google.com/maps?q=40.675561,-75.483627",
-    "lat": 40.6755614,
-    "lon": -75.4836266
   },
   {
     "name": "A to Z Automotive Services and Repair",
