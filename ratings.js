@@ -9,6 +9,10 @@
   var THROTTLE_MS   = 30 * 24 * 60 * 60 * 1000; // 30 days
   var LS_PREFIX     = 'moc_rated_';
 
+  function isDirectoryPath(path) {
+    return /(^|\/)directory(\.html)?\/?$/i.test(path || '');
+  }
+
   /* ── localStorage throttle ───────────────────────────── */
   function hasRated(bid) {
     try {
@@ -65,7 +69,7 @@
       body.querySelector('.featured-biz-actions') ||
       body.querySelector('.state-feat-actions');
     var path = window.location.pathname || '';
-    var isDirectoryPage = /(^|\/)directory\.html$/i.test(path);
+    var isDirectoryPage = isDirectoryPath(path);
     var isStatePage = /(^|\/)state\//i.test(path);
     var allowRating = isDirectoryPage;
 
@@ -103,7 +107,7 @@
         '\u00a0<span class="biz-rating-count">(' + data.rating_count + ')</span>'
       : '<span class="biz-rating-none">No ratings yet</span>';
     var path = window.location.pathname || '';
-    var isDirectoryPage = /(^|\/)directory\.html$/i.test(path);
+    var isDirectoryPage = isDirectoryPath(path);
     wraps.forEach(function (wrap) {
       var row = wrap.querySelector('.biz-rating-row');
       if (!row) return;
