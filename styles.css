@@ -625,7 +625,7 @@ img { max-width: 100%; display: block; }
 .clubs-style-field-wrap .filter-select {
   height: 42px !important;
   border-radius: var(--radius-sm) !important;
-  border: 1.5px solid var(--line-mid) !important;
+  border: 1.5px solid var(--red) !important;
   background: #fff !important;
   color: var(--text) !important;
   font-family: 'DM Sans', sans-serif !important;
