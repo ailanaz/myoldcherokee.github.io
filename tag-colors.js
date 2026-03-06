@@ -205,6 +205,20 @@
   /* Also expose for pages that render cards dynamically (Supabase) */
   window.applyTagColors = run;
 
+  var rerunTimer = null;
+  function scheduleRun() {
+    if (rerunTimer) return;
+    rerunTimer = setTimeout(function() {
+      rerunTimer = null;
+      run();
+    }, 60);
+  }
+
+  if (typeof MutationObserver !== 'undefined') {
+    var mo = new MutationObserver(scheduleRun);
+    mo.observe(document.documentElement || document.body, { childList: true, subtree: true });
+  }
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', run);
   } else {

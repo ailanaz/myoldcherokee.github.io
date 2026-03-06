@@ -73,19 +73,6 @@
   </div>
 </section>
 
-<!-- SEARCH -->
-<section class="home-section" style="padding-top:1.3rem;padding-bottom:0;">
-  <div class="container">
-    <div class="hero-search-below" style="padding:0;">
-      <div class="search-wrap" style="max-width:none;">
-        <div class="hero-search-box">
-          <input type="search" id="featured-search" autocomplete="off" placeholder="Choose your path" aria-label="Search featured businesses" />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- FEATURED BUSINESSES -->
 <section class="home-section" style="padding-top:0.5rem;">
   <div class="container">
@@ -231,27 +218,24 @@
   (function() {
     var grid = document.getElementById('featured-grid');
     var empty = document.getElementById('featured-empty');
-    var searchInput = document.getElementById('featured-search');
     if (!grid) return;
 
     function applyFilters() {
-      var q = ((searchInput && searchInput.value) || '').toLowerCase().trim();
       var cards = grid.querySelectorAll('.featured-biz-card[data-cat]');
       var visible = 0;
       cards.forEach(function(card) {
-        var hay = (card.getAttribute('data-name') || '') + ' ' + (card.getAttribute('data-cat') || '') + ' ' + (card.textContent || '');
-        var match = !q || hay.toLowerCase().indexOf(q) !== -1;
-        card.style.display = match ? '' : 'none';
-        if (match) visible++;
+        card.style.display = '';
+        visible++;
       });
       if (empty) empty.style.display = (visible === 0) ? '' : 'none';
     }
 
-    if (searchInput) searchInput.addEventListener('input', applyFilters);
+    applyFilters();
     window.applyFeaturedFilter = applyFilters;
   })();
 </script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <script src="ratings.js"></script>
+<script src="tag-colors.js"></script>
 </body>
 </html>
