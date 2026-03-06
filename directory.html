@@ -2133,6 +2133,9 @@
     var q = (searchEl.value || '').toLowerCase().trim();
     var featuredIds = featuredBusinessIds();
 
+    // Featured view is global: always show all featured businesses across states.
+    if (type === 'featured') state = 'all';
+
     filteredRows = allRows.filter(function(it) {
       if (isChainFranchiseName(it.name || '')) return false;
       if (state !== 'all' && (it.state || '').toUpperCase() !== state) return false;
@@ -2205,7 +2208,12 @@
   });
   searchEl.addEventListener('input', applyFilters);
   stateSel.addEventListener('change', applyFilters);
-  typeSel.addEventListener('change', applyFilters);
+  typeSel.addEventListener('change', function() {
+    if ((typeSel.value || '') === 'featured' && stateSel.value !== 'all') {
+      stateSel.value = 'all';
+    }
+    applyFilters();
+  });
 
   colorizeTypePills();
 
