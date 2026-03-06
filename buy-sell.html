@@ -415,24 +415,12 @@
   var CONTACT_FORM_ID = 'J928BY'; // single shared Tally form
 
   function openSellerContact(sellerEmail, listingTitle) {
-    if (typeof Tally !== 'undefined') {
-      Tally.openPopup(CONTACT_FORM_ID, {
-        layout: 'modal',
-        overlay: true,
-        hiddenFields: {
-          seller_email: sellerEmail,
-          listing_title: listingTitle
-        }
-      });
-    } else {
-      // Fallback if embed.js hasn't loaded yet
-      window.open(
-        'https://tally.so/r/' + CONTACT_FORM_ID +
-        '?seller_email=' + encodeURIComponent(sellerEmail) +
-        '&listing_title=' + encodeURIComponent(listingTitle),
-        '_blank'
-      );
-    }
+    // Direct same-tab navigation to avoid browser popups/new-tab blockers.
+    var formUrl =
+      'https://tally.so/r/' + CONTACT_FORM_ID +
+      '?seller_email=' + encodeURIComponent(sellerEmail) +
+      '&listing_title=' + encodeURIComponent(listingTitle);
+    window.location.href = formUrl;
   }
   // ────────────────────────────────────────────────────────────────────────────
 
