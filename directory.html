@@ -58,9 +58,27 @@
     .parts-tabs-row { display: flex; align-items: center; gap: 0.45rem; flex-wrap: wrap; margin: 0.25rem 0 1rem; }
     .parts-filter-pill { cursor: pointer; }
     .parts-filter-pill.is-active { outline: 2px solid var(--red); outline-offset: 1px; }
-    .parts-back-top { display: inline-flex; align-items: center; justify-content: center; gap: 0.35rem; margin: 0; background: var(--red); color: #fff; border: 1px solid var(--red); text-decoration: none; }
+    .parts-back-top {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.3rem;
+      margin: 0;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      line-height: 1.2;
+      background: var(--red);
+      color: #fff;
+      border: 1px solid var(--red);
+      text-decoration: none;
+    }
     .parts-back-top:hover { background: #6c0e2b; border-color: #6c0e2b; color: #fff; }
-    .parts-back-top .arrow { font-size: 0.95rem; line-height: 1; font-weight: 700; }
+    .parts-back-top .arrow { font-size: 0.8rem; line-height: 1; font-weight: 700; }
     @media (min-width: 781px) {
       .parts-queue-top {
         display: inline-block;
