@@ -2289,15 +2289,24 @@
         bid = 'review-' + String(it.name || 'business').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
       }
       var loc = [it.city || '', it.state || ''].filter(Boolean).join(', ');
-      var addr = String(it.address || '').trim();
+      var addr = String(it.address || it.street_address || '').trim();
+      var map = mapUrl(it);
+      var website = String(it.website || '').trim();
       var tags = Array.isArray(it.categories) ? it.categories.slice(0, 4) : [];
       var tagsHtml = tags.length
         ? '<div class="featured-biz-tags" style="margin-top:0.3rem;">' +
             tags.map(function(tag) {
-              return '<span class="featured-biz-tag">' + esc(niceTagLabel(tag)) + '</span>';
+              var label = niceTagLabel(tag);
+              return '<span class="featured-biz-tag" data-color-key="' + esc(label) + '">' + esc(label) + '</span>';
             }).join('') +
           '</div>'
         : '';
+      var linkHtml = '';
+      if (website) {
+        linkHtml += '<a href="' + esc(website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">Website</a>';
+      } else if (map) {
+        linkHtml += '<a href="' + esc(map) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>';
+      }
       html.push(
         '<div class="biz-card" data-business-id="' + esc(bid) + '" style="padding:0.55rem 0.75rem;">' +
           '<div class="biz-body" style="padding:0;">' +
@@ -2307,6 +2316,7 @@
             '</div>' +
             '<div class="biz-loc" style="margin-top:0.15rem;">' + esc(loc || 'Location not set') + '</div>' +
             (addr ? '<div class="biz-loc" style="margin-top:0.15rem;">&#128205; ' + esc(addr) + '</div>' : '') +
+            (linkHtml ? '<div class="biz-actions" style="margin-top:0.35rem;display:flex;gap:0.4rem;justify-content:flex-end;">' + linkHtml + '</div>' : '') +
             tagsHtml +
           '</div>' +
         '</div>'
@@ -2314,6 +2324,7 @@
     });
     html.push('</div>');
     candidateListEl.innerHTML = html.join('');
+    if (typeof window.applyTagColors === 'function') window.applyTagColors();
   }
 
   moreBtn.addEventListener('click', function() {
@@ -2349,6 +2360,17 @@
       countEl.textContent = '';
       moreBtn.style.display = 'none';
     });
+})();
+</script>
+
+<script>
+(function() {
+  var legacy = document.getElementById('legacy-directory-sections');
+  if (!legacy) return;
+  legacy.style.display = 'block';
+  legacy.querySelectorAll('.cat-section').forEach(function(section) {
+    section.style.display = (section.id === 'shop-parts') ? '' : 'none';
+  });
 })();
 </script>
 
