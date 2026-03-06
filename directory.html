@@ -61,6 +61,18 @@
     .parts-back-top { display: inline-flex; align-items: center; justify-content: center; gap: 0.35rem; margin: 0; background: var(--red); color: #fff; border: 1px solid var(--red); text-decoration: none; }
     .parts-back-top:hover { background: #6c0e2b; border-color: #6c0e2b; color: #fff; }
     .parts-back-top .arrow { font-size: 0.95rem; line-height: 1; font-weight: 700; }
+    @media (min-width: 781px) {
+      .parts-queue-top {
+        background: var(--amber-lite);
+        color: var(--amber);
+        border-color: #f0d4a8;
+      }
+      .parts-queue-top:hover {
+        background: #f6e6c9;
+        color: #9d5b00;
+        border-color: #e7c995;
+      }
+    }
     .affiliate-disclaimer { font-size: 0.78rem; color: var(--text-lite); font-style: italic; background: var(--off); border: 1px solid var(--line); border-radius: 8px; padding: 0.65rem 1rem; margin-bottom: 1.25rem; }
     .parts-card-img { display: block; background: #fff; border-radius: 8px; border: 1px solid var(--line); overflow: hidden; text-align: center; padding: 0.6rem; margin-bottom: 0.25rem; }
     .parts-card-img img { height: 140px; width: auto; max-width: 100%; object-fit: contain; display: inline-block; transition: opacity 0.2s; }
@@ -2525,7 +2537,7 @@
 
   // Add queue and back-to-top tags at end of tabs row.
   var queueTop = document.createElement('a');
-  queueTop.className = 'parts-tag parts-back-top';
+  queueTop.className = 'parts-tag parts-back-top parts-queue-top';
   queueTop.href = '#community-review-queue';
   queueTop.textContent = 'Business Queue';
   tabsRow.appendChild(queueTop);
