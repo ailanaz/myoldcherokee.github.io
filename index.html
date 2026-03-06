@@ -148,36 +148,70 @@
     transform: none !important;
     margin: 0 auto !important;
     margin-bottom: 0 !important;
-    width: min(530px, 85%);
+    width: min(1120px, 96%) !important;
   }
 
   .hero-search-below .hero-search-box {
-    background: #fff;
-    border: 1.5px solid var(--line) !important;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow-xs);
-    padding: 0.55rem;
+    position: relative;
+    background: #f6f6f6 !important;
+    border: 3px solid #bfc3c8 !important;
+    border-radius: 16px !important;
+    box-shadow: 0 2px 8px rgba(18, 22, 33, 0.08) !important;
+    padding: 0.8rem 1rem !important;
   }
 
   .hero-search-below .hero-search-box input {
-    height: 42px;
-    border: 1.5px solid var(--line-mid);
-    border-radius: var(--radius-sm);
-    padding: 0 0.75rem;
-    font-size: 0.92rem;
-    background: #fff;
+    height: 56px !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 0 3rem 0 1rem !important;
+    font-size: 2rem;
+    font-size: clamp(1.85rem, 2.2vw, 2.2rem) !important;
+    font-weight: 500 !important;
+    color: #1f2328 !important;
+    background: transparent !important;
     cursor: pointer;
   }
 
+  .hero-search-below .hero-search-box::after {
+    content: "\2304";
+    position: absolute;
+    right: 1.35rem;
+    top: 50%;
+    transform: translateY(-56%);
+    color: #1f2328;
+    font-size: 2rem;
+    line-height: 1;
+    pointer-events: none;
+  }
+
+  .hero-search-below .hero-search-box input::placeholder {
+    color: #1f2328 !important;
+    opacity: 1 !important;
+  }
+
   .hero-search-below .hero-search-box input:focus {
-    border-color: var(--red);
-    box-shadow: 0 0 0 2px rgba(107,18,40,0.08);
+    border: none !important;
+    box-shadow: none !important;
   }
 
   @media (max-width: 800px) {
     .home-welcome-copy {
       font-size: 0.95rem;
       line-height: 1.52;
+    }
+    .hero-search-below .hero-search-box {
+      border-width: 2px !important;
+      padding: 0.55rem 0.8rem !important;
+    }
+    .hero-search-below .hero-search-box input {
+      height: 46px !important;
+      font-size: clamp(1.2rem, 5.2vw, 1.5rem) !important;
+      padding-left: 0.7rem !important;
+    }
+    .hero-search-below .hero-search-box::after {
+      font-size: 1.45rem;
+      right: 1rem;
     }
   }
 </style>
