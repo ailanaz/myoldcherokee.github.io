@@ -13,10 +13,6 @@
   <meta property="og:description" content="Browse and post Cherokee vehicles, parts, project builds, and wanted listings. The buy and sell directory for older Cherokee models." />
   <meta property="og:image" content="https://oldxjs.com/og-default.jpg" />
   <meta property="og:site_name" content="OldXJS.com" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Buy &amp; Sell Cherokee Listings" />
-  <meta name="twitter:description" content="Browse and post Cherokee vehicles, parts, project builds, and wanted listings. The buy and sell directory for older Cherokee models." />
-  <meta name="twitter:image" content="https://oldxjs.com/og-default.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -44,11 +40,11 @@
       <a href="state-search.html">States</a>
       <a href="buy-sell.html">Buy &amp; Sell</a>
       <a href="directory.html">Directory</a>
-      <a href="featured.html">Featured</a>
       <a href="guides.html">Guides</a>
       <div class="nav-more">
         <button class="nav-more-btn" onclick="this.closest('.nav-more').classList.toggle('open')" aria-expanded="false">More &#9663;</button>
         <div class="nav-more-menu">
+          <a href="guides.html" class="guides-mobile">Guides</a>
           <a href="community.html">Chat</a>
           <a href="submit.html">Post</a>
           <a href="contact.html">Contact</a>
@@ -78,7 +74,7 @@
   </div>
 </section>
 
-<div class="clubs-style-sticky-bar no-sticky" data-grid="cherokees-grid">
+<div class="clubs-style-sticky-bar" data-grid="cherokees-grid">
   <div class="container clubs-style-sticky-inner">
     <div class="clubs-style-field-wrap">
       <select class="filter-select" onchange="filterDropdown('cherokees-grid')" aria-label="Filter listings">
@@ -246,7 +242,7 @@
           <span class="listing-state">—</span>
         </div>
         <div class="listing-body">
-          <div class="listing-cats"><span class="lcat lcat-parts lcat-engine">Engine</span></div>
+          <div class="listing-cats"><span class="lcat lcat-parts">Engine</span></div>
           <div class="listing-name">4.0L Long Block, 110k Miles, Good Compression</div>
           <div class="listing-loc">📍 Phoenix, AZ</div>
           <div class="listing-price">$1,800 <span class="listing-price-note">pickup only</span></div>
@@ -263,7 +259,7 @@
           <span class="listing-state">—</span>
         </div>
         <div class="listing-body">
-          <div class="listing-cats"><span class="lcat lcat-parts lcat-drivetrain">Drivetrain</span></div>
+          <div class="listing-cats"><span class="lcat lcat-parts">Drivetrain</span></div>
           <div class="listing-name">AW4 Automatic Transmission, Shifts Clean</div>
           <div class="listing-loc">📍 Dallas, TX</div>
           <div class="listing-price">$650 <span class="listing-price-note">OBO</span></div>
@@ -280,7 +276,7 @@
           <span class="listing-state">—</span>
         </div>
         <div class="listing-body">
-          <div class="listing-cats"><span class="lcat lcat-parts lcat-suspension">Suspension</span></div>
+          <div class="listing-cats"><span class="lcat lcat-parts">Suspension</span></div>
           <div class="listing-name">3.5" Lift Kit, Complete, Off a 2000 XJ</div>
           <div class="listing-loc">📍 Salt Lake City, UT</div>
           <div class="listing-price">$220 <span class="listing-price-note">all included</span></div>
@@ -297,7 +293,7 @@
           <span class="listing-state">—</span>
         </div>
         <div class="listing-body">
-          <div class="listing-cats"><span class="lcat lcat-parts lcat-body">Body &amp; Interior</span></div>
+          <div class="listing-cats"><span class="lcat lcat-parts">Body &amp; Interior</span></div>
           <div class="listing-name">XJ Front Clip, Hood, Fenders, Grille, Headlights</div>
           <div class="listing-loc">📍 Portland, OR</div>
           <div class="listing-price">$350 <span class="listing-price-note">local pickup</span></div>
@@ -314,7 +310,7 @@
           <span class="listing-state">—</span>
         </div>
         <div class="listing-body">
-          <div class="listing-cats"><span class="lcat lcat-parts lcat-electrical">Electrical</span></div>
+          <div class="listing-cats"><span class="lcat lcat-parts">Electrical</span></div>
           <div class="listing-name">PCM / ECU, 1999 XJ 4.0L, Tested Good</div>
           <div class="listing-loc">📍 Columbus, OH</div>
           <div class="listing-price">$120 <span class="listing-price-note">shipped</span></div>
@@ -443,6 +439,5 @@
     });
   }
 </script>
-<script src="tag-colors.js"></script>
 </body>
 </html>

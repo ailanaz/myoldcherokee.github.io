@@ -13,10 +13,6 @@
   <meta property="og:description" content="Find Cherokee vehicles, parts, repair shops, and salvage yards in New Mexico." />
   <meta property="og:image" content="https://oldxjs.com/og-default.jpg" />
   <meta property="og:site_name" content="OldXJS.com" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="New Mexico Cherokee Listings" />
-  <meta name="twitter:description" content="Find Cherokee vehicles, parts, repair shops, and salvage yards in New Mexico." />
-  <meta name="twitter:image" content="https://oldxjs.com/og-default.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -43,11 +39,11 @@
       <a href="../state-search.html">States</a>
       <a href="../buy-sell.html">Buy &amp; Sell</a>
       <a href="../directory.html">Directory</a>
-      <a href="../featured.html">Featured</a>
       <a href="../guides.html">Guides</a>
       <div class="nav-more">
         <button class="nav-more-btn" onclick="this.closest('.nav-more').classList.toggle('open')" aria-expanded="false">More &#9663;</button>
         <div class="nav-more-menu">
+          <a href="../guides.html" class="guides-mobile">Guides</a>
           <a href="../community.html">Chat</a>
           <a href="../submit.html">Post</a>
           <a href="../contact.html">Contact</a>
@@ -74,6 +70,7 @@
   <div class="container">
     <a href="../state-search.html" class="eyebrow">State Directory</a>
     <h1 id="state-title">New Mexico</h1>
+    <p class="hero-sub" id="state-hero-sub">Cherokee listings, shops, and salvage yards across New Mexico.</p>
   </div>
 </section>
 
@@ -143,6 +140,5 @@
   document.getElementById('yr').textContent = new Date().getFullYear();
 </script>
 <script src="../assets/js/state-page.js"></script>
-<script src="../tag-colors.js"></script>
 </body>
 </html>

@@ -13,17 +13,13 @@
   <meta property="og:description" content="The Cherokee directory for older Jeep Cherokee owners. Browse repair shops, salvage yards, and parts resources across the U.S." />
   <meta property="og:image" content="https://oldxjs.com/og-default.jpg" />
   <meta property="og:site_name" content="OldXJS.com" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="The Cherokee Directory  -  Shops, Salvage &amp; Parts" />
-  <meta name="twitter:description" content="The Cherokee directory for older Jeep Cherokee owners. Browse repair shops, salvage yards, and parts resources across the U.S." />
-  <meta name="twitter:image" content="https://oldxjs.com/og-default.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <style>
     /* DIRECTORY FILTER BAR */
-    .dir-filter-bar { background: var(--white); border-bottom: 2px solid var(--line); padding: 0.75rem 0; position: static; top: auto; z-index: 90; }
+    .dir-filter-bar { background: var(--white); border-bottom: 2px solid var(--line); padding: 0.75rem 0; position: sticky; top: 76px; z-index: 90; }
     .dir-filter-inner { display: flex; justify-content: center; align-items: center; }
     .clubs-filters-wrap { background: #fff; border: 1.5px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-xs); padding: 1rem; }
     .clubs-filters-grid { display: grid; gap: 0.75rem; }
@@ -91,11 +87,11 @@
       <a href="state-search.html">States</a>
       <a href="buy-sell.html">Buy &amp; Sell</a>
       <a href="directory.html">Directory</a>
-      <a href="featured.html">Featured</a>
       <a href="guides.html">Guides</a>
       <div class="nav-more">
         <button class="nav-more-btn" onclick="this.closest('.nav-more').classList.toggle('open')" aria-expanded="false">More &#9663;</button>
         <div class="nav-more-menu">
+          <a href="guides.html" class="guides-mobile">Guides</a>
           <a href="community.html">Chat</a>
           <a href="submit.html">Post</a>
           <a href="contact.html">Contact</a>
@@ -121,58 +117,50 @@
 <!-- PAGE HERO -->
 <section class="page-hero" style="padding-top:1.583%;padding-bottom:1.583%;">
   <div class="container">
-    <h1>Directory</h1>
+    <h1>Businesses</h1>
   </div>
 </section>
 
+<section class="home-section" style="padding-top:1.5rem;padding-bottom:1.5rem;border-top:none;">
+  <div class="container">
+    <div class="home-section-head" style="margin-bottom:1rem;">
+      <div>
+        <h2 class="home-section-title">Businesses</h2>
+      </div>
+    </div>
 
+    <div class="clubs-filters-wrap" style="margin-top:0;">
+      <div class="clubs-filters-grid" style="grid-template-columns:1fr 1fr 2fr;">
+        <div class="clubs-filter-group">
+          <label for="live-type">Business Type</label>
+          <select id="live-type" aria-label="Filter by type">
+            <option value="all">All types</option>
+            <option value="featured">Featured</option>
+          </select>
+        </div>
+        <div class="clubs-filter-group">
+          <label for="live-state">State</label>
+          <select id="live-state" aria-label="Filter by state">
+            <option value="all">All states</option>
+          </select>
+        </div>
+        <div class="clubs-filter-group">
+          <label for="live-search">Search</label>
+          <input id="live-search" type="search" placeholder="Search name, city, state, tags..." />
+        </div>
+      </div>
+    </div>
+
+    <p id="live-count" style="margin:0.85rem 0 1rem;color:var(--text-mid);font-size:0.88rem;"></p>
+    <div id="live-grid" class="grid g3"></div>
+    <div style="text-align:center;margin-top:1rem;">
+      <button id="live-more" class="btn btn-outline btn-sm" type="button" style="display:none;">Load More</button>
+    </div>
+  </div>
+</section>
 
 <div class="container">
 
-  <!-- Live directory filters (restored) -->
-  <div class="clubs-filters-wrap" style="margin:1rem 0 1.1rem;">
-    <div class="clubs-filters-grid" style="grid-template-columns:2fr 1fr 1fr;">
-      <div class="clubs-filter-group">
-        <label for="live-type">Business Type</label>
-        <select id="live-type" aria-label="Filter by type">
-          <option value="all">All types</option>
-          <option value="featured">★ Featured</option>
-        </select>
-      </div>
-      <div class="clubs-filter-group">
-        <label for="live-state">State</label>
-        <select id="live-state" aria-label="Filter by state">
-          <option value="all">All states</option>
-        </select>
-      </div>
-      <div class="clubs-filter-group">
-        <label for="live-search">Search</label>
-        <input id="live-search" type="search" placeholder="Search name, city, state, tags..." />
-      </div>
-    </div>
-  </div>
-
-  <div style="display:flex;align-items:center;justify-content:flex-end;gap:0.8rem;flex-wrap:wrap;margin:0 0 1rem;">
-    <div id="live-count" style="font-size:0.88rem;color:var(--text-mid);"></div>
-  </div>
-  <div class="grid g3" id="live-grid"></div>
-  <div style="margin-top:1rem;">
-    <button id="live-more" class="btn btn-outline btn-sm" type="button" style="display:none;">Load More</button>
-  </div>
-
-  <section class="home-section" style="padding-top:1.25rem;padding-bottom:0.5rem;">
-    <div class="container">
-      <div class="home-section-head" style="margin-bottom:0.6rem;">
-        <div>
-          <h2 class="home-section-title" style="margin:0;">Community Review Queue</h2>
-          <p class="home-section-desc" style="margin-top:0.35rem;">Do these belong in the directory? Please review and rate each one.</p>
-        </div>
-      </div>
-      <div id="candidate-review-list" class="card" style="padding:0.75rem 1rem;"></div>
-    </div>
-  </section>
-
-  <div id="legacy-directory-sections" style="display:none;">
   <!-- =============================== -->
   <!-- REPAIR SHOPS                    -->
   <!-- =============================== -->
@@ -213,35 +201,36 @@
             </div>
             <div class="featured-verified">Submitter verified location, hours &amp; contact</div>
             <div class="state-feat-actions">
-              <a href="https://www.facebook.com/profile.php?id=100064968071056" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Facebook</a>
-              <a href="https://www.google.com/maps/search/Banker+Automotive,+10404+Slaughter+Creek+Dr,+Austin,+TX+78748" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">Map</a>
+              <span style="font-size:0.85rem;color:var(--text-mid);">📞 (512) 280-0877</span>
+              <a href="https://www.google.com/maps/search/Banker+Automotive,+10404+Slaughter+Creek+Dr,+Austin,+TX+78748" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">📍 Map</a>
             </div>
           </div>
         </div>
 
-        <!-- Card 2: Forged Concepts (active) -->
-        <div class="state-feat-card" data-business-id="forged-concepts-ar">
-          <div class="state-feat-img" style="display:flex;align-items:center;justify-content:center;background:#111;color:#fff;">
-            <img src="assets/images/forged-concepts-logo.jpg" alt="Forged Concepts logo" style="max-width:90%;max-height:84%;object-fit:contain;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';" />
-            <span style="display:none;font-family:'Oswald',sans-serif;font-size:1.05rem;letter-spacing:0.08em;">FORGED CONCEPTS</span>
+        <!-- Card 2: PIDPLATES (active) -->
+        <div class="state-feat-card" data-business-id="pidplates-ca">
+          <div class="state-feat-img" style="display:flex;align-items:center;justify-content:center;background:var(--red);color:#fff;">
+            <img src="PP%20Decals.png?v=20260304-5" alt="PIDPLATES logo" style="max-width:90%;max-height:84%;object-fit:contain;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';" />
+            <span style="display:none;font-family:'Oswald',sans-serif;font-size:1.15rem;letter-spacing:0.08em;">PIDPLATES</span>
           </div>
           <div class="state-feat-body">
             <div class="state-feat-badges">
               <span class="featured-badge" style="width:2rem;height:2rem;justify-content:center;font-size:1.15rem;padding:0;border-radius:50%;letter-spacing:0;">★</span>
               <span class="featured-biz-type">Specialty Services</span>
             </div>
-            <div class="state-feat-name">Forged Concepts</div>
-            <div class="state-feat-loc">📍 Bentonville, AR</div>
-            <p class="state-feat-desc">Custom 3D badges, overlays, and emblem work for automotive builds. Jeep-focused brand support and custom project runs.</p>
+            <div class="state-feat-name">PIDPLATES</div>
+            <div class="state-feat-loc">📍 Redondo Beach, CA &nbsp;·&nbsp; 90278</div>
+            <p class="state-feat-desc">Custom emblems, badges, and decals for enthusiast vehicles. Built custom logo work tied to the Midwest Krawlers club community.</p>
             <div class="featured-biz-tags" style="margin-bottom:0.5rem;">
               <span class="featured-biz-tag">Custom Badges</span>
-              <span class="featured-biz-tag">Overlays</span>
-              <span class="featured-biz-tag">Jeep Friendly</span>
+              <span class="featured-biz-tag">Decals</span>
+              <span class="featured-biz-tag">Club Support</span>
             </div>
             <div class="featured-verified">Business website, contact info, and location verified</div>
             <div class="state-feat-actions">
-              <a href="https://www.forgedconcepts.org/" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Website</a>
-              <a href="https://www.google.com/maps/search/Forged+Concepts,+Bentonville,+AR" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">Map</a>
+              <span style="font-size:0.85rem;color:var(--text-mid);">📞 (310) 372-2168</span>
+              <a href="https://www.pidplates.us/pidplates-logo/" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">Website</a>
+              <a href="https://www.google.com/maps/search/PIDPLATES,+Redondo+Beach,+CA+90278" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">📍 Map</a>
             </div>
           </div>
         </div>
@@ -524,9 +513,9 @@
         </div>
         <div class="biz-body">
           <span class="biz-type">4x4 &amp; Off-Road · Suspension</span>
-          <div class="biz-name" style="color:var(--text-lite);">Featured Spot Open</div>
+          <div class="biz-name" style="color:var(--text-lite);">Your Business Here</div>
           <div class="biz-loc" style="color:var(--text-lite);">Cherokee owners near you are searching</div>
-          <p class="biz-desc">This is an inactive example card. Claim this position to showcase your suspension and 4x4 services.</p>
+          <p class="biz-desc">This spot is open. Be the go-to Cherokee suspension and 4x4 specialist in your area.</p>
           <div class="biz-actions">
             <span class="btn btn-red btn-sm">Get Featured &rarr;</span>
           </div>
@@ -538,9 +527,9 @@
         </div>
         <div class="biz-body">
           <span class="biz-type">Electrical · Diagnostics</span>
-          <div class="biz-name" style="color:var(--text-lite);">Featured Spot Open</div>
+          <div class="biz-name" style="color:var(--text-lite);">Your Business Here</div>
           <div class="biz-loc" style="color:var(--text-lite);">Cherokee owners near you are searching</div>
-          <p class="biz-desc">This is an inactive example card. Claim this position to highlight your electrical and diagnostic work.</p>
+          <p class="biz-desc">This listing is open. Get your electrical and diagnostic shop in front of Cherokee owners searching now.</p>
           <div class="biz-actions">
             <span class="btn btn-red btn-sm">Get Featured &rarr;</span>
           </div>
@@ -552,9 +541,9 @@
         </div>
         <div class="biz-body">
           <span class="biz-type">Cooling · Radiator</span>
-          <div class="biz-name" style="color:var(--text-lite);">Featured Spot Open</div>
+          <div class="biz-name" style="color:var(--text-lite);">Your Business Here</div>
           <div class="biz-loc" style="color:var(--text-lite);">Cherokee owners near you are searching</div>
-          <p class="biz-desc">This is an inactive example card. Claim this position if you specialize in radiator and cooling services.</p>
+          <p class="biz-desc">Cooling system specialists. If you handle overheating issues on older Cherokees, this spot is for you.</p>
           <div class="biz-actions">
             <span class="btn btn-red btn-sm">Get Featured &rarr;</span>
           </div>
@@ -1837,8 +1826,6 @@
 
   </section>
 
-  </div><!-- end #legacy-directory-sections -->
-
 </div><!-- end .container -->
 
 <footer class="site-footer">
@@ -1887,118 +1874,50 @@
   document.getElementById('yr').textContent = new Date().getFullYear();
 
   function isChainFranchiseName(name) {
-    var n = String(name || '').trim();
-    var nLower = n.toLowerCase();
-    if (!n) return false;
-    var lead = n.replace(/^[^a-z0-9]+/i, "");
-    if (/^[123456789]/.test(lead)) return true;
-    if (/\blube\b/i.test(n)) return true;
-    if (/^(1\s*way\s*auto\s*clinic|10\s*minute\s*lube\s*'?n\s*oil|10\s*minute\s*oil\s*change|101\s*auto\s*care|110\s*auto\s*care|1329\s*collision)$/i.test(n)) return true;
-    return /\b(autozone|advance\s+auto(\s+parts?)?|car\s*quest|o['’]?reilly|napa|pep\s*boys|firestone|express\s+oil\s+change|mavis|performance\s+tire|precision\s+tune|southern\s+armature\s+works|lamb\s+motors|discount\s+tire|les\s+schwab|meineke|midas|jiffy\s+lube|valvoline|walmart|take\s*5|aaa|caliber|gerber|safelite|lkq|pull[- ]?a[- ]?part)\b/i.test(nLower);
+    return /\b(autozone|advance\s+auto(\s+parts?)?|car\s*quest|o['’]?reilly|napa|pep\s*boys|firestone|express\s+oil\s+change|mavis|performance\s+tire|precision\s+tune|southern\s+armature\s+works|lamb\s+motors|discount\s+tire|les\s+schwab|meineke|midas|jiffy\s+lube|valvoline|walmart|take\s*5|aaa|caliber|gerber|safelite|lkq|pull[- ]?a[- ]?part)\b/i.test(name || '');
   }
 
   function hideChainCardsInDirectoryPage() {
     document.querySelectorAll('.biz-card').forEach(function(card) {
-      card.style.display = '';
+      var nameEl = card.querySelector('.biz-name');
+      var name = nameEl ? nameEl.textContent : '';
+      if (isChainFranchiseName(name)) {
+        card.style.display = 'none';
+      }
     });
   }
   hideChainCardsInDirectoryPage();
 
-  function normalizeBizName(name) {
-    return String(name || '')
-      .toLowerCase()
-      .replace(/^[^a-z0-9]+/, '')
-      .replace(/\s+/g, ' ')
-      .trim();
-  }
+  function convertStaticCardsToInactive() {
+    // Convert legacy hardcoded cards to inactive placeholders.
+    // Keep featured strip cards and keep already-inactive placeholders unchanged.
+    document.querySelectorAll('.cat-section .grid .biz-card').forEach(function(card) {
+      var nameEl = card.querySelector('.biz-name');
+      var name = nameEl ? (nameEl.textContent || '').trim() : '';
+      if (!name || /your business here/i.test(name)) return;
 
-  function isInactiveBizCard(card) {
-    if (!card) return false;
-    var href = (card.getAttribute('href') || '').toLowerCase();
-    var style = (card.getAttribute('style') || '').toLowerCase();
-    var name = ((card.querySelector('.biz-name') || {}).textContent || '').toLowerCase();
-    return href.indexOf('submit-featured') !== -1 ||
-      style.indexOf('border-style:dashed') !== -1 ||
-      name.indexOf('your business here') !== -1;
-  }
+      card.style.borderStyle = 'dashed';
+      card.style.opacity = '0.7';
 
-  function sortStaticDirectoryListingsAZ() {
-    document.querySelectorAll('.cat-section .grid.g3').forEach(function(grid) {
-      var cards = Array.from(grid.children).filter(function(el) {
-        return el.classList && el.classList.contains('biz-card');
-      });
-      if (cards.length < 2) return;
-
-      cards.sort(function(a, b) {
-        var aInactive = isInactiveBizCard(a);
-        var bInactive = isInactiveBizCard(b);
-        if (aInactive !== bInactive) return aInactive ? 1 : -1;
-        var aName = normalizeBizName(((a.querySelector('.biz-name') || {}).textContent || ''));
-        var bName = normalizeBizName(((b.querySelector('.biz-name') || {}).textContent || ''));
-        return aName.localeCompare(bName, 'en', { sensitivity: 'base' });
-      });
-
-      cards.forEach(function(card) { grid.appendChild(card); });
-    });
-  }
-  sortStaticDirectoryListingsAZ();
-
-  function featuredBusinessIds() {
-    var ids = {};
-    document.querySelectorAll('.state-featured-section [data-business-id]').forEach(function(el) {
-      var id = (el.getAttribute('data-business-id') || '').trim();
-      if (id) ids[id] = true;
-    });
-    var external = window.__featuredIdsExternal || {};
-    Object.keys(external).forEach(function(id) {
-      if (id) ids[id] = true;
-    });
-    return ids;
-  }
-
-  function enforceSingleActionButtonsAndFeaturedStars() {
-    var featuredIds = featuredBusinessIds();
-    document.querySelectorAll('.cat-section .biz-card').forEach(function(card) {
-      if (card.closest('.state-featured-section')) return;
-      if (isInactiveBizCard(card)) return;
-
-      var id = (card.getAttribute('data-business-id') || '').trim();
-      var isFeatured = !!(id && featuredIds[id]);
-
-      var bizType = card.querySelector('.biz-type');
-      if (isFeatured && bizType && !card.querySelector('.featured-badge')) {
-        var star = document.createElement('span');
-        star.className = 'featured-badge';
-        star.textContent = '★';
-        star.style.cssText = 'width:2rem;height:2rem;justify-content:center;font-size:1.15rem;padding:0;border-radius:50%;letter-spacing:0;margin-right:0.35rem;';
-        bizType.parentNode.insertBefore(star, bizType);
+      var logo = card.querySelector('.biz-logo');
+      if (logo) {
+        logo.textContent = '+';
+        logo.style.background = 'var(--off-2)';
+        logo.style.color = 'var(--text-lite)';
+        logo.style.fontSize = '1.4rem';
       }
 
-      if (isFeatured) return;
-
-      var actions = card.querySelector('.biz-actions');
-      if (!actions) return;
-      var links = Array.from(actions.querySelectorAll('a[href]'));
-      if (!links.length) return;
-
-      var preferred = links.find(function(a) {
-        var href = (a.getAttribute('href') || '').toLowerCase();
-        return href &&
-          href.indexOf('google.com/maps') === -1 &&
-          href.indexOf('maps.app.goo.gl') === -1;
-      }) || links[0];
-
-      var single = preferred.cloneNode(true);
-      var hrefLower = (single.getAttribute('href') || '').toLowerCase();
-      var isMap = hrefLower.indexOf('google.com/maps') !== -1 || hrefLower.indexOf('maps.app.goo.gl') !== -1;
-      single.textContent = isMap ? 'Map' : 'Website';
-      single.className = isMap ? 'btn btn-outline btn-sm' : 'btn btn-red btn-sm';
-
-      actions.innerHTML = '';
-      actions.appendChild(single);
+      var body = card.querySelector('.biz-body');
+      if (!body) return;
+      body.innerHTML =
+        '<span class="biz-type">Open Listing</span>' +
+        '<div class="biz-name" style="color:var(--text-lite);">Your Business Here</div>' +
+        '<div class="biz-loc" style="color:var(--text-lite);">Cherokee owners near you are searching</div>' +
+        '<p class="biz-desc">This listing is currently inactive. Submit your business to appear here.</p>' +
+        '<div class="biz-actions"><span class="btn btn-red btn-sm">Get Featured &rarr;</span></div>';
     });
   }
-  enforceSingleActionButtonsAndFeaturedStars();
+  convertStaticCardsToInactive();
 
   function setFilterDropdown() {
     var cat = (document.getElementById('shops-cat') || {}).value || 'all';
@@ -2008,6 +1927,10 @@
     grid.querySelectorAll('[data-cats]').forEach(function(card) {
       var matchCat = (cat === 'all') || ((card.getAttribute('data-cats') || '').split(' ').indexOf(cat) !== -1);
       var matchSearch = !query || card.textContent.toLowerCase().indexOf(query) !== -1;
+      if (isChainFranchiseName((card.querySelector('.biz-name') || {}).textContent || '')) {
+        card.style.display = 'none';
+        return;
+      }
       card.style.display = (matchCat && matchSearch) ? '' : 'none';
     });
   }
@@ -2015,7 +1938,9 @@
   function filterDirectory() {
     var cat = (document.getElementById('dir-cat') || {}).value || 'all';
     if (cat === 'featured') {
-      window.location.href = 'featured.html';
+      document.querySelectorAll('.cat-section').forEach(function(s) {
+        s.classList.toggle('hidden', s.id !== 'repair-shops');
+      });
       return;
     }
     document.querySelectorAll('.cat-section').forEach(function(s) {
@@ -2045,13 +1970,21 @@
   var searchEl = document.getElementById('live-search');
   var countEl = document.getElementById('live-count');
   var moreBtn = document.getElementById('live-more');
-  var candidateListEl = document.getElementById('candidate-review-list');
   if (!grid || !stateSel || !typeSel || !searchEl || !countEl || !moreBtn) return;
 
   var allRows = [];
   var filteredRows = [];
   var pageSize = 36;
   var shown = pageSize;
+  var featuredIds = {
+    'banker-automotive-tx': true,
+    'pidplates-ca': true
+  };
+  var typeAlias = {
+    'Repair Shops': 'Repair Shops (XJ/Jeep-Friendly)',
+    'Salvage and Junk Yards': 'Salvage Yards and Junkyards (Used Jeep Parts)',
+    'Shop for Parts and More': 'Parts Shops and 4x4 Retailers'
+  };
 
   function mapUrl(it) {
     if (it.google_maps_link) return it.google_maps_link;
@@ -2060,62 +1993,10 @@
   }
 
   function websiteLabel(url) {
-    var u = String(url || '').toLowerCase();
-    if (!u) return 'Website';
-    if (u.indexOf('facebook.com') !== -1) return 'Facebook';
-    if (u.indexOf('instagram.com') !== -1) return 'Instagram';
-    if (u.indexOf('discord.com') !== -1 || u.indexOf('discord.gg') !== -1) return 'Discord';
-    if (u.indexOf('yelp.com') !== -1) return 'Yelp';
-    if (u.indexOf('google.com/maps') !== -1 || u.indexOf('maps.app.goo.gl') !== -1) return 'Google';
+    var u = String(url || '');
+    if (/yelp\.com/i.test(u)) return 'Yelp';
+    if (/google\.[^/]+\/maps/i.test(u)) return 'Google';
     return 'Website';
-  }
-
-  function cleanTypeLabel(type) {
-    return String(type || '').replace(/\s*\(XJ\/Jeep-Friendly\)\s*/gi, '').trim();
-  }
-
-  function typeToneClass(label) {
-    var t = String(label || '').toLowerCase();
-    if (!t) return 'type-specialty';
-    if (t.indexOf('repair') !== -1) return 'type-repair';
-    if (t.indexOf('parts') !== -1) return 'type-parts';
-    if (t.indexOf('salvage') !== -1 || t.indexOf('junk') !== -1) return 'type-salvage';
-    if (t.indexOf('fabrication') !== -1 || t.indexOf('welding') !== -1) return 'type-fabrication';
-    if (t.indexOf('electrical') !== -1 || t.indexOf('diagnostic') !== -1) return 'type-electrical';
-    if (t.indexOf('cooling') !== -1 || t.indexOf('radiator') !== -1) return 'type-cooling';
-    if (t.indexOf('body') !== -1 || t.indexOf('glass') !== -1 || t.indexOf('upholstery') !== -1) return 'type-body';
-    return 'type-specialty';
-  }
-
-  function isMarkedFeatured(it) {
-    var t = String(it && it.type || '').toLowerCase();
-    if (t.indexOf('featured') !== -1) return true;
-    if (it && it.is_featured === true) return true;
-    if (Array.isArray(it && it.categories)) {
-      var cats = it.categories.map(function(c) { return String(c || '').toLowerCase(); });
-      if (cats.indexOf('featured') !== -1) return true;
-    }
-    return false;
-  }
-
-  function loadFeaturedIdsFromFeaturedPage() {
-    return fetch('featured.html?v=ids')
-      .then(function(res) { if (!res.ok) throw new Error('featured load failed'); return res.text(); })
-      .then(function(html) {
-        var ids = {};
-        var re = /data-business-id=\"([^\"]+)\"/g;
-        var m;
-        while ((m = re.exec(html)) !== null) {
-          var id = String(m[1] || '').trim();
-          if (id) ids[id] = true;
-        }
-        window.__featuredIdsExternal = ids;
-        return ids;
-      })
-      .catch(function() {
-        window.__featuredIdsExternal = window.__featuredIdsExternal || {};
-        return window.__featuredIdsExternal;
-      });
   }
 
   function initFilters(rows) {
@@ -2123,36 +2004,36 @@
     var types = {};
     rows.forEach(function(r) {
       var st = (r.state || '').toUpperCase();
-      var tp = (r.type || '').trim();
+      var tp = (typeAlias[(r.type || '').trim()] || (r.type || '').trim());
       if (st) states[st] = true;
       if (tp) types[tp] = true;
     });
-
-    while (typeSel.options.length > 1) typeSel.remove(1);
-    var featuredOpt = document.createElement('option');
-    featuredOpt.value = 'featured';
-    featuredOpt.textContent = '★ Featured';
-    typeSel.appendChild(featuredOpt);
-
-    while (stateSel.options.length > 1) stateSel.remove(1);
     Object.keys(states).sort().forEach(function(st) {
       var o = document.createElement('option');
       o.value = st;
       o.textContent = st;
       stateSel.appendChild(o);
     });
-
-    var seenTypeLabels = {};
     Object.keys(types).sort().forEach(function(tp) {
-      if (String(tp || '').toLowerCase() === 'featured') return;
-      var label = cleanTypeLabel(tp);
-      var key = label.toLowerCase();
-      if (!label || seenTypeLabels[key]) return;
-      seenTypeLabels[key] = true;
       var o = document.createElement('option');
       o.value = tp;
-      o.textContent = label;
+      o.textContent = tp;
       typeSel.appendChild(o);
+    });
+  }
+
+  function sortRows(rows) {
+    return rows.slice().sort(function(a, b) {
+      var as = String(a.state || '').toUpperCase();
+      var bs = String(b.state || '').toUpperCase();
+      if (as !== bs) return as < bs ? -1 : 1;
+      var at = String(a.type || '').toLowerCase();
+      var bt = String(b.type || '').toLowerCase();
+      if (at !== bt) return at < bt ? -1 : 1;
+      var an = String(a.name || '').toLowerCase();
+      var bn = String(b.name || '').toLowerCase();
+      if (an !== bn) return an < bn ? -1 : 1;
+      return 0;
     });
   }
 
@@ -2160,15 +2041,11 @@
     var state = stateSel.value || 'all';
     var type = typeSel.value || 'all';
     var q = (searchEl.value || '').toLowerCase().trim();
-    var featuredIds = featuredBusinessIds();
-    if (type === 'featured') state = 'all';
 
     filteredRows = allRows.filter(function(it) {
       if (state !== 'all' && (it.state || '').toUpperCase() !== state) return false;
       if (type === 'featured') {
-        var bid = String(it.business_id || '').trim();
-        var byId = !!(bid && featuredIds[bid]);
-        if (!byId && !isMarkedFeatured(it)) return false;
+        if (!featuredIds[(it.business_id || '').toLowerCase()]) return false;
       } else if (type !== 'all' && (it.type || '') !== type) {
         return false;
       }
@@ -2177,10 +2054,7 @@
       var hay = [it.name || '', it.city || '', it.state || '', it.type || '', tags].join(' ').toLowerCase();
       return hay.indexOf(q) !== -1;
     });
-
-    filteredRows.sort(function(a, b) {
-      return String(a.name || '').localeCompare(String(b.name || ''), 'en', { sensitivity: 'base' });
-    });
+    filteredRows = sortRows(filteredRows);
     shown = pageSize;
     render();
   }
@@ -2188,6 +2062,7 @@
   function render() {
     var rows = filteredRows.slice(0, shown);
     grid.innerHTML = '';
+
     if (!filteredRows.length) {
       grid.innerHTML = '<p style="color:var(--text-mid);padding:0.75rem 0;">No businesses match these filters.</p>';
       countEl.textContent = '0 results';
@@ -2195,47 +2070,29 @@
       return;
     }
 
-    var featuredIds = featuredBusinessIds();
     rows.forEach(function(it) {
       var initials = (it.name || 'B').split(/\s+/).map(function(w) { return w.charAt(0); }).slice(0, 2).join('').toUpperCase();
       var cityState = (it.city && it.state) ? esc(it.city) + ', ' + esc(it.state) : esc(it.state || '');
       var addr = it.address ? '<div class="biz-loc" style="margin-top:0.15rem;">&#128205; ' + esc(it.address) + '</div>' : '';
       var phone = it.phone ? '<div class="biz-loc" style="margin-top:0.15rem;">&#128222; ' + esc(it.phone) + '</div>' : '';
       var map = mapUrl(it);
+      var webBtn = it.website ? '<a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel(it.website) + '</a>' : '';
+      var mapBtn = '<a href="' + esc(map) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>';
       var bid = it.business_id ? esc(it.business_id) : '';
-      var featuredRow = !!((bid && featuredIds[bid]) || isMarkedFeatured(it));
-      var summaryText = String(it.summary || it.jeep_friendly_blurb || '').trim();
-      var summary = (featuredRow && summaryText)
-        ? '<p class="biz-desc" style="margin-top:0.3rem;">' + esc(summaryText) + '</p>'
-        : '';
-      var actionsHtml;
-      if (featuredRow) {
-        var links = [];
-        if (it.website) links.push('<a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel(it.website) + '</a>');
-        if (map) links.push('<a href="' + esc(map) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>');
-        actionsHtml = links.join('');
-      } else {
-        actionsHtml = it.website
-          ? '<a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel(it.website) + '</a>'
-          : '<a href="' + esc(map) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>';
-      }
-      var typeLabel = cleanTypeLabel(it.type || 'Business');
 
       var card = document.createElement('div');
       card.className = 'biz-card';
       card.setAttribute('data-cats', ((it.categories || []).join(' ')).toLowerCase());
       if (bid) card.setAttribute('data-business-id', bid);
-      var starHtml = featuredRow
-        ? '<span class="featured-badge" style="width:2rem;height:2rem;justify-content:center;font-size:1.15rem;padding:0;border-radius:50%;letter-spacing:0;margin-right:0.35rem;">★</span>'
-        : '';
       card.innerHTML =
         '<div class="biz-logo-wrap"><div class="biz-logo">' + initials + '</div></div>' +
         '<div class="biz-body">' +
-          '<div style="display:flex;align-items:center;gap:0.4rem;flex-wrap:wrap;">' + starHtml + '<span class="biz-type ' + typeToneClass(typeLabel) + '">' + esc(typeLabel) + '</span></div>' +
+          '<span class="biz-type">' + esc(it.type || 'Business') + '</span>' +
           '<div class="biz-name">' + esc(it.name || 'Business') + '</div>' +
           '<div class="biz-loc">' + (cityState || 'Location not set') + '</div>' +
-          addr + phone + summary +
-          '<div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">' + actionsHtml + '</div>' +
+          addr +
+          phone +
+          '<div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">' + webBtn + mapBtn + '</div>' +
         '</div>';
       grid.appendChild(card);
     });
@@ -2244,121 +2101,27 @@
     moreBtn.style.display = filteredRows.length > shown ? '' : 'none';
   }
 
-  function renderCandidateReviewList(archiveRows) {
-    if (!candidateListEl) return;
-    var currentIds = {};
-    allRows.forEach(function(it) {
-      var id = String(it.business_id || '').trim();
-      if (id) currentIds[id] = true;
-    });
-
-    var rows = (Array.isArray(archiveRows) ? archiveRows : []).filter(function(it) {
-      var bid = String(it.business_id || '').trim();
-      return !bid || !currentIds[bid];
-    });
-
-    rows.sort(function(a, b) {
-      return String(a.name || '').localeCompare(String(b.name || ''), 'en', { sensitivity: 'base' });
-    });
-
-    if (!rows.length) {
-      candidateListEl.innerHTML = '<p style="margin:0;color:var(--text-mid);">No additional businesses in the review queue.</p>';
-      return;
-    }
-
-    function candidateRatingHtml(bid) {
-      return (
-        '<div class="biz-rating-wrap" data-bid="' + esc(bid) + '" style="margin:0;">' +
-          '<div class="biz-rating-row">' +
-            '<span class="biz-rating-none">No ratings yet</span>' +
-            '&nbsp;<button class="btn btn-outline btn-sm rating-open-btn" data-bid="' + esc(bid) + '" aria-expanded="false">Rate</button>' +
-          '</div>' +
-          '<div class="rating-form" aria-hidden="true">' +
-            '<div class="star-picker" data-bid="' + esc(bid) + '" data-selected="0">' +
-              '<span class="sp-star" data-val="1" role="button" tabindex="0" aria-label="1 star">&#9733;</span>' +
-              '<span class="sp-star" data-val="2" role="button" tabindex="0" aria-label="2 stars">&#9733;</span>' +
-              '<span class="sp-star" data-val="3" role="button" tabindex="0" aria-label="3 stars">&#9733;</span>' +
-              '<span class="sp-star" data-val="4" role="button" tabindex="0" aria-label="4 stars">&#9733;</span>' +
-              '<span class="sp-star" data-val="5" role="button" tabindex="0" aria-label="5 stars">&#9733;</span>' +
-            '</div>' +
-            '<button class="btn btn-red btn-sm rating-submit-btn" data-bid="' + esc(bid) + '" disabled>Submit</button>' +
-            '<span class="rating-confirm" style="display:none;">Thanks! &#10003;</span>' +
-          '</div>' +
-        '</div>'
-      );
-    }
-
-    function niceTagLabel(tag) {
-      var t = String(tag || '').trim();
-      if (!t) return '';
-      return t
-        .replace(/[-_]+/g, ' ')
-        .replace(/\s+/g, ' ')
-        .trim()
-        .replace(/\b\w/g, function(ch) { return ch.toUpperCase(); });
-    }
-
-    var html = ['<div style="display:flex;flex-direction:column;gap:0.65rem;">'];
-    rows.forEach(function(it) {
-      var bid = String(it.business_id || '').trim();
-      if (!bid) {
-        bid = 'review-' + String(it.name || 'business').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-      }
-      var loc = [it.city || '', it.state || ''].filter(Boolean).join(', ');
-      var addr = String(it.address || '').trim();
-      var tags = Array.isArray(it.categories) ? it.categories.slice(0, 4) : [];
-      var tagsHtml = tags.length
-        ? '<div class="featured-biz-tags" style="margin-top:0.3rem;">' +
-            tags.map(function(tag) {
-              return '<span class="featured-biz-tag">' + esc(niceTagLabel(tag)) + '</span>';
-            }).join('') +
-          '</div>'
-        : '';
-      html.push(
-        '<div class="biz-card" data-business-id="' + esc(bid) + '" style="padding:0.55rem 0.75rem;">' +
-          '<div class="biz-body" style="padding:0;">' +
-            '<div style="display:flex;align-items:center;justify-content:space-between;gap:0.5rem;flex-wrap:wrap;">' +
-              '<div class="biz-name" style="margin:0;">' + esc(it.name || 'Business') + '</div>' +
-              '<div class="biz-actions" style="margin:0;display:flex;gap:0.4rem;align-items:center;">' + candidateRatingHtml(bid) + '</div>' +
-            '</div>' +
-            '<div class="biz-loc" style="margin-top:0.15rem;">' + esc(loc || 'Location not set') + '</div>' +
-            (addr ? '<div class="biz-loc" style="margin-top:0.15rem;">&#128205; ' + esc(addr) + '</div>' : '') +
-            tagsHtml +
-          '</div>' +
-        '</div>'
-      );
-    });
-    html.push('</div>');
-    candidateListEl.innerHTML = html.join('');
-  }
-
   moreBtn.addEventListener('click', function() {
     shown += pageSize;
     render();
   });
   searchEl.addEventListener('input', applyFilters);
   stateSel.addEventListener('change', applyFilters);
-  typeSel.addEventListener('change', function() {
-    if ((typeSel.value || '') === 'featured' && stateSel.value !== 'all') stateSel.value = 'all';
-    applyFilters();
-  });
+  typeSel.addEventListener('change', applyFilters);
 
-  Promise.all([
-    fetch('assets/data/directory.json').then(function(res) { if (!res.ok) throw new Error('load failed'); return res.json(); }),
-    loadFeaturedIdsFromFeaturedPage(),
-    fetch('assets/data/directory-locked-backup.json').then(function(res) { return res.ok ? res.json() : []; }).catch(function() { return []; })
-  ])
-    .then(function(payload) {
-      var rows = payload[0];
-      var archiveRows = payload[2];
-      allRows = Array.isArray(rows) ? rows : [];
-      allRows.sort(function(a, b) {
-        return String(a.name || '').localeCompare(String(b.name || ''), 'en', { sensitivity: 'base' });
-      });
+  fetch('assets/data/directory.json')
+    .then(function(res) { if (!res.ok) throw new Error('load failed'); return res.json(); })
+    .then(function(rows) {
+      allRows = Array.isArray(rows) ? rows.map(function(r) {
+        var t = (r.type || '').trim();
+        if (typeAlias[t]) r.type = typeAlias[t];
+        if (r.state) r.state = String(r.state).toUpperCase();
+        return r;
+      }) : [];
+      allRows = sortRows(allRows);
       initFilters(allRows);
       filteredRows = allRows.slice();
       render();
-      renderCandidateReviewList(archiveRows);
     })
     .catch(function() {
       grid.innerHTML = '<p style="color:var(--text-mid);padding:1rem 0;">Directory data could not load. Please refresh the page.</p>';
@@ -2367,30 +2130,7 @@
     });
 })();
 </script>
-
-<script>
-(function() {
-  function tagTone(label) {
-    var t = String(label || '').toLowerCase().trim();
-    if (!t) return 'parts-default';
-    if (t.indexOf('engine') !== -1) return 'parts-engine';
-    if (t.indexOf('cooling') !== -1 || t.indexOf('radiator') !== -1) return 'parts-cooling';
-    if (t.indexOf('suspension') !== -1 || t.indexOf('steering') !== -1 || t.indexOf('lift') !== -1) return 'parts-suspension';
-    if (t.indexOf('drivetrain') !== -1 || t.indexOf('axle') !== -1 || t.indexOf('transfer') !== -1) return 'parts-drivetrain';
-    if (t.indexOf('electrical') !== -1 || t.indexOf('wiring') !== -1 || t.indexOf('lighting') !== -1) return 'parts-electrical';
-    if (t.indexOf('armor') !== -1 || t.indexOf('bumper') !== -1 || t.indexOf('skid') !== -1 || t.indexOf('slider') !== -1 || t.indexOf('exterior') !== -1 || t.indexOf('interior') !== -1) return 'parts-body';
-    if (t.indexOf('reference') !== -1 || t.indexOf('manual') !== -1) return 'parts-reference';
-    if (t.indexOf('accessories') !== -1 || t.indexOf('gear') !== -1) return 'parts-accessories';
-    return 'parts-default';
-  }
-
-  document.querySelectorAll('.parts-card .parts-tag').forEach(function(el) {
-    el.classList.add(tagTone(el.textContent));
-  });
-})();
-</script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <script src="ratings.js"></script>
-<script src="tag-colors.js"></script>
 </body>
 </html>
