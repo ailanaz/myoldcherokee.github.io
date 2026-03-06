@@ -55,6 +55,8 @@
     .parts-card h4 { font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; color: var(--text); }
     .parts-card p { font-family: 'Source Serif 4', serif; font-size: 0.88rem; color: var(--text-mid); line-height: 1.55; flex: 1; }
     .parts-card .parts-tag { font-family: 'Oswald', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 4px; background: var(--amber-lite); color: var(--amber); border: 1px solid #f0d4a8; white-space: nowrap; flex-shrink: 0; }
+    .parts-back-top { display: inline-flex; align-items: center; justify-content: center; margin: 0.25rem 0 1rem; background: var(--red); color: #fff; border: 1px solid var(--red); text-decoration: none; }
+    .parts-back-top:hover { background: #6c0e2b; border-color: #6c0e2b; color: #fff; }
     .affiliate-disclaimer { font-size: 0.78rem; color: var(--text-lite); font-style: italic; background: var(--off); border: 1px solid var(--line); border-radius: 8px; padding: 0.65rem 1rem; margin-bottom: 1.25rem; }
     .parts-card-img { display: block; background: #fff; border-radius: 8px; border: 1px solid var(--line); overflow: hidden; text-align: center; padding: 0.6rem; margin-bottom: 0.25rem; }
     .parts-card-img img { height: 140px; width: auto; max-width: 100%; object-fit: contain; display: inline-block; transition: opacity 0.2s; }
@@ -69,10 +71,6 @@
     .tip-credit { font-size: 0.78rem; color: var(--text-lite); font-weight: 500; }
     @media (max-width: 780px) {
       .queue-grid-two { grid-template-columns: 1fr !important; }
-    }
-    @media (max-width: 700px) {
-      #shop-parts .parts-controls-wrap #parts-tag-pills { display: none !important; }
-      #shop-parts .parts-controls-wrap .clubs-filters-grid { grid-template-columns: 1fr !important; }
     }
   </style>
   <link rel="icon" href="favicon.png" type="image/png" />
@@ -2433,61 +2431,25 @@
   var cards = Array.prototype.slice.call(section.querySelectorAll('.parts-card'));
   if (!cards.length) return;
 
-  // Gather tags and sort cards alphabetically.
-  var tagsMap = {};
-  cards.forEach(function(card) {
-    var tagEl = card.querySelector('.parts-tag');
-    var tag = tagEl ? String(tagEl.textContent || '').trim() : '';
-    if (tag) tagsMap[tag] = true;
-  });
+  // Sort cards alphabetically.
   cards.sort(function(a, b) {
     var an = ((a.querySelector('h4') || {}).textContent || '').trim().toLowerCase();
     var bn = ((b.querySelector('h4') || {}).textContent || '').trim().toLowerCase();
     return an.localeCompare(bn, 'en', { sensitivity: 'base' });
   });
 
-  var tags = Object.keys(tagsMap).sort(function(a, b) {
-    return a.toLowerCase().localeCompare(b.toLowerCase(), 'en', { sensitivity: 'base' });
-  });
-
   // Remove old category subheaders and existing card grids.
   section.querySelectorAll('.subcat-header').forEach(function(el) { el.remove(); });
   section.querySelectorAll('.grid.g3').forEach(function(el) { el.remove(); });
 
-  // Build new unified search/filter UI.
-  var controlsWrap = document.createElement('div');
-  controlsWrap.className = 'clubs-filters-wrap parts-controls-wrap';
-  controlsWrap.style.margin = '0.25rem 0 1rem';
-  controlsWrap.innerHTML =
-    '<div class="clubs-filters-grid" style="grid-template-columns:1fr;">' +
-      '<div class="clubs-filter-group parts-tag-group">' +
-        '<select id="parts-tag-select" class="filter-select" aria-label="Filter parts by tag">' +
-          '<option value=\"businesses-nav\">Businesses</option>' +
-          '<option value=\"all\">All tags</option>' +
-        '</select>' +
-      '</div>' +
-    '</div>' +
-    '<div id="parts-tag-pills" style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-top:0.7rem;"></div>';
-
+  // Add red back-to-top tag for quick jump to directory filters.
+  var backTop = document.createElement('a');
+  backTop.className = 'parts-tag parts-back-top';
+  backTop.href = '#live-type';
+  backTop.textContent = 'Back to Top';
   var affiliate = section.querySelector('.affiliate-disclaimer');
-  if (affiliate && affiliate.nextSibling) section.insertBefore(controlsWrap, affiliate.nextSibling);
-  else section.insertBefore(controlsWrap, section.firstChild);
-
-  var select = controlsWrap.querySelector('#parts-tag-select');
-  var pills = controlsWrap.querySelector('#parts-tag-pills');
-  tags.forEach(function(tag) {
-    var o = document.createElement('option');
-    o.value = tag.toLowerCase();
-    o.textContent = tag;
-    select.appendChild(o);
-
-    var pill = document.createElement('button');
-    pill.type = 'button';
-    pill.className = 'parts-tag parts-filter-pill ' + tagTone(tag);
-    pill.setAttribute('data-tag', tag.toLowerCase());
-    pill.textContent = tag;
-    pills.appendChild(pill);
-  });
+  if (affiliate && affiliate.nextSibling) section.insertBefore(backTop, affiliate.nextSibling);
+  else section.insertBefore(backTop, section.firstChild);
 
   // Build one unified, alphabetized parts grid.
   var unifiedGrid = document.createElement('div');
@@ -2499,45 +2461,9 @@
   if (cta && cta.parentNode === section) section.insertBefore(unifiedGrid, cta);
   else section.appendChild(unifiedGrid);
 
-  // Apply color coding to card tags and pill tags.
+  // Apply color coding to card tags.
   section.querySelectorAll('.parts-tag').forEach(function(el) {
     el.classList.add(tagTone(el.textContent));
-  });
-
-  var activeTag = 'all';
-
-  function applyPartsFilters() {
-    var tag = String(activeTag || 'all').toLowerCase();
-    cards.forEach(function(card) {
-      var cardTag = (((card.querySelector('.parts-tag') || {}).textContent || '').toLowerCase()).trim();
-      var matchTag = (tag === 'all') || (cardTag === tag);
-      card.style.display = matchTag ? '' : 'none';
-    });
-    pills.querySelectorAll('.parts-filter-pill').forEach(function(btn) {
-      var on = (tag !== 'all') && (btn.getAttribute('data-tag') === tag);
-      btn.style.outline = on ? '2px solid var(--red)' : 'none';
-      btn.style.outlineOffset = on ? '1px' : '0';
-    });
-  }
-
-  select.addEventListener('change', function() {
-    activeTag = select.value || 'all';
-    if (activeTag === 'businesses-nav') {
-      var topAnchor = document.getElementById('live-type');
-      if (topAnchor && typeof topAnchor.scrollIntoView === 'function') {
-        topAnchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-      select.value = 'all';
-      activeTag = 'all';
-    }
-    applyPartsFilters();
-  });
-  pills.addEventListener('click', function(e) {
-    var btn = e.target.closest('.parts-filter-pill');
-    if (!btn) return;
-    activeTag = btn.getAttribute('data-tag') || 'all';
-    select.value = activeTag;
-    applyPartsFilters();
   });
 })();
 </script>
