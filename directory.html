@@ -55,8 +55,9 @@
     .parts-card h4 { font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; color: var(--text); }
     .parts-card p { font-family: 'Source Serif 4', serif; font-size: 0.88rem; color: var(--text-mid); line-height: 1.55; flex: 1; }
     .parts-card .parts-tag { font-family: 'Oswald', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 4px; background: var(--amber-lite); color: var(--amber); border: 1px solid #f0d4a8; white-space: nowrap; flex-shrink: 0; }
-    .parts-back-top { display: inline-flex; align-items: center; justify-content: center; margin: 0.25rem 0 1rem; background: var(--red); color: #fff; border: 1px solid var(--red); text-decoration: none; }
+    .parts-back-top { display: inline-flex; align-items: center; justify-content: center; gap: 0.35rem; margin: 0.25rem 0 1rem; background: var(--red); color: #fff; border: 1px solid var(--red); text-decoration: none; }
     .parts-back-top:hover { background: #6c0e2b; border-color: #6c0e2b; color: #fff; }
+    .parts-back-top .arrow { font-size: 0.95rem; line-height: 1; font-weight: 700; }
     .affiliate-disclaimer { font-size: 0.78rem; color: var(--text-lite); font-style: italic; background: var(--off); border: 1px solid var(--line); border-radius: 8px; padding: 0.65rem 1rem; margin-bottom: 1.25rem; }
     .parts-card-img { display: block; background: #fff; border-radius: 8px; border: 1px solid var(--line); overflow: hidden; text-align: center; padding: 0.6rem; margin-bottom: 0.25rem; }
     .parts-card-img img { height: 140px; width: auto; max-width: 100%; object-fit: contain; display: inline-block; transition: opacity 0.2s; }
@@ -2108,6 +2109,18 @@
       });
   }
 
+  function ensureShopPartsOption() {
+    var hasOption = Array.prototype.some.call(typeSel.options, function(opt) {
+      return opt && opt.value === 'shop-parts-nav';
+    });
+    if (hasOption) return;
+    var opt = document.createElement('option');
+    opt.value = 'shop-parts-nav';
+    opt.textContent = 'Shop for Parts';
+    if (typeSel.options.length > 2) typeSel.insertBefore(opt, typeSel.options[2]);
+    else typeSel.appendChild(opt);
+  }
+
   function initFilters(rows) {
     var states = {};
     var types = {};
@@ -2126,6 +2139,7 @@
     });
 
     while (typeSel.options.length > 3) typeSel.remove(3);
+    ensureShopPartsOption();
     var featuredOpt = document.createElement('option');
     featuredOpt.value = 'featured';
     featuredOpt.textContent = '★ Featured';
@@ -2446,7 +2460,7 @@
   var backTop = document.createElement('a');
   backTop.className = 'parts-tag parts-back-top';
   backTop.href = '#live-type';
-  backTop.textContent = 'Back to Top';
+  backTop.innerHTML = '<span class="arrow" aria-hidden="true">&#8593;</span><span>Back to Top</span>';
   var affiliate = section.querySelector('.affiliate-disclaimer');
   if (affiliate && affiliate.nextSibling) section.insertBefore(backTop, affiliate.nextSibling);
   else section.insertBefore(backTop, section.firstChild);
