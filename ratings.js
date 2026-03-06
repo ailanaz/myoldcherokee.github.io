@@ -34,9 +34,8 @@
     /* action */
     var actionHtml = '';
     if (allowRating) {
-      actionHtml = rated
-        ? '\u00a0<span class="rating-already">· Rated \u2713</span>'
-        : '\u00a0<button class="btn btn-outline btn-sm rating-open-btn" data-bid="' + bid + '" aria-expanded="false">Rate</button>';
+      actionHtml = '\u00a0<button class="btn btn-outline btn-sm rating-open-btn" data-bid="' + bid + '" aria-expanded="false">Rate</button>';
+      if (rated) actionHtml += '\u00a0<span class="rating-already">· Rated \u2713</span>';
     }
 
     /* star form (omitted if already rated) */
@@ -103,9 +102,18 @@
       ? '<span class="biz-rating-stars">\u2605 ' + data.avg_rating + '</span>' +
         '\u00a0<span class="biz-rating-count">(' + data.rating_count + ')</span>'
       : '<span class="biz-rating-none">No ratings yet</span>';
+    var path = window.location.pathname || '';
+    var isDirectoryPage = /(^|\/)directory\.html$/i.test(path);
     wraps.forEach(function (wrap) {
       var row = wrap.querySelector('.biz-rating-row');
-      if (row) row.innerHTML = dispHtml + '\u00a0<span class="rating-already">· Rated \u2713</span>';
+      if (!row) return;
+      if (isDirectoryPage) {
+        row.innerHTML = dispHtml +
+          '\u00a0<button class="btn btn-outline btn-sm rating-open-btn" data-bid="' + bid + '" aria-expanded="false">Rate</button>' +
+          '\u00a0<span class="rating-already">· Rated \u2713</span>';
+      } else {
+        row.innerHTML = dispHtml;
+      }
     });
   }
 
