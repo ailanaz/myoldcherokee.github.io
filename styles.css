@@ -612,6 +612,64 @@ img { max-width: 100%; display: block; }
 .filter-select { height: 42px; border-radius: var(--radius-full); border: 1.5px solid var(--line); background: var(--off); color: var(--text); padding: 0 2.25rem 0 1rem; font-family: 'DM Sans', sans-serif; font-size: 0.88rem; outline: none; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23909090' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 0.9rem center; cursor: pointer; transition: border-color 0.2s; }
 .filter-select:focus { border-color: var(--red); background-color: var(--white); box-shadow: 0 0 0 3px var(--red-lite); }
 
+/* Unified search/dropdown field style sitewide */
+.filter-search-input,
+.filter-select,
+.clubs-filter-group input[type="search"],
+.clubs-filter-group input[type="text"],
+.clubs-filter-group select,
+.dir-filters input[type="search"],
+.dir-filters select,
+.section-filter-box .filter-select,
+.clubs-style-field-wrap .filter-search-input,
+.clubs-style-field-wrap .filter-select {
+  height: 42px !important;
+  border-radius: var(--radius-full) !important;
+  border: 1.5px solid var(--line) !important;
+  background: var(--off) !important;
+  color: var(--text) !important;
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 0.9rem !important;
+  outline: none !important;
+}
+
+.filter-search-input,
+.clubs-filter-group input[type="search"],
+.clubs-filter-group input[type="text"],
+.dir-filters input[type="search"],
+.clubs-style-field-wrap .filter-search-input {
+  padding: 0 1rem !important;
+}
+
+.filter-select,
+.clubs-filter-group select,
+.dir-filters select,
+.section-filter-box .filter-select,
+.clubs-style-field-wrap .filter-select {
+  padding: 0 2.25rem 0 1rem !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23909090' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 0.9rem center !important;
+  cursor: pointer !important;
+}
+
+.filter-search-input:focus,
+.filter-select:focus,
+.clubs-filter-group input[type="search"]:focus,
+.clubs-filter-group input[type="text"]:focus,
+.clubs-filter-group select:focus,
+.dir-filters input[type="search"]:focus,
+.dir-filters select:focus,
+.section-filter-box .filter-select:focus,
+.clubs-style-field-wrap .filter-search-input:focus,
+.clubs-style-field-wrap .filter-select:focus {
+  border-color: var(--red) !important;
+  background-color: var(--white) !important;
+  box-shadow: 0 0 0 3px var(--red-lite) !important;
+}
+
 /* Clubs-style filter/search bars used across pages */
 .clubs-style-sticky-bar {
   background: var(--white);

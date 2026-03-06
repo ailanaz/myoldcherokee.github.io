@@ -28,8 +28,7 @@
     .clubs-filters-wrap { background: #fff; border: 1.5px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-xs); padding: 1rem; }
     .clubs-filters-grid { display: grid; gap: 0.75rem; }
     .clubs-filter-group label { display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-mid); margin-bottom: 0.35rem; }
-    .clubs-filter-group input, .clubs-filter-group select { width: 100%; height: 42px; border: 1.5px solid var(--line-mid); border-radius: var(--radius-sm); padding: 0 0.75rem; font-family: 'DM Sans', sans-serif; font-size: 0.92rem; color: var(--text); background: #fff; outline: none; }
-    .clubs-filter-group input:focus, .clubs-filter-group select:focus { border-color: var(--red); box-shadow: 0 0 0 2px rgba(107,18,40,0.08); }
+    .clubs-filter-group input, .clubs-filter-group select { width: 100%; }
     @media (max-width: 700px) {
       .clubs-filters-grid { grid-template-columns: 1fr !important; }
     }
@@ -135,20 +134,20 @@
     <div class="clubs-filters-grid" style="grid-template-columns:2fr 1fr 1fr;">
       <div class="clubs-filter-group">
         <label for="live-type">Business Type</label>
-        <select id="live-type" aria-label="Filter by type">
+        <select id="live-type" class="filter-select" aria-label="Filter by type">
           <option value="all">All types</option>
           <option value="featured">★ Featured</option>
         </select>
       </div>
       <div class="clubs-filter-group">
         <label for="live-state">State</label>
-        <select id="live-state" aria-label="Filter by state">
+        <select id="live-state" class="filter-select" aria-label="Filter by state">
           <option value="all">All states</option>
         </select>
       </div>
       <div class="clubs-filter-group">
         <label for="live-search">Search</label>
-        <input id="live-search" type="search" placeholder="Search name, city, state, tags..." />
+        <input id="live-search" class="filter-search-input" type="search" placeholder="Search name, city, state, tags..." />
       </div>
     </div>
   </div>
