@@ -83,6 +83,58 @@
     <!-- State data anchor — only data-state and data-state-name change per page -->
     <div id="state-page" data-state="CA" data-state-name="California"></div>
 
+    <!-- FEATURED BUSINESSES — California -->
+    <div class="state-featured-section">
+      <div class="state-featured-label">Featured in California</div>
+      <div class="state-featured-track">
+
+        <div class="state-feat-card" data-business-id="pidplates-ca">
+          <div class="state-feat-img" style="display:flex;align-items:center;justify-content:center;background:#c01616;">
+            <img src="../PP%20Decals.png?v=20260304-5" alt="PIDPLATES logo" style="max-width:90%;max-height:84%;object-fit:contain;" onerror="this.style.display='none';this.nextElementSibling.style.display='inline';" />
+            <span style="display:none;font-family:'Oswald',sans-serif;font-size:1.35rem;letter-spacing:0.08em;color:#fff;">PIDPLATES</span>
+          </div>
+          <div class="state-feat-body">
+            <div class="state-feat-badges">
+              <span class="featured-badge">Featured</span>
+              <span class="featured-biz-type">Specialty Services</span>
+            </div>
+            <div class="state-feat-name">PIDPLATES</div>
+            <div class="state-feat-loc">📍 Redondo Beach, CA</div>
+            <p class="state-feat-desc">Custom emblems, badges, and decal solutions for vehicle enthusiasts. Known for supporting Jeep communities and creating custom logo pieces for clubs, including Midwest Krawlers. Perfect for bulk orders.</p>
+            <div class="featured-biz-tags" style="margin-bottom:0.6rem;">
+              <span class="featured-biz-tag">Jeep Friendly</span>
+              <span class="featured-biz-tag">Custom Badges</span>
+              <span class="featured-biz-tag">Specialty Services</span>
+            </div>
+            <div class="featured-verified">Business website and service details verified</div>
+            <div class="state-feat-actions">
+              <a href="https://www.pidplates.us/pidplates-logo/" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">Website</a>
+              <a href="https://www.google.com/maps/search/PIDPLATES,+Redondo+Beach,+CA+90278" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="../featured.html#get-featured" class="state-feat-card state-feat-card--inactive">
+          <div class="state-feat-img--empty">+</div>
+          <div class="state-feat-placeholder-body">
+            <div class="state-feat-placeholder-title">Get Featured Here</div>
+            <p class="state-feat-placeholder-sub">Repair shop, parts seller, or service business in California? Get your business in front of XJ owners.</p>
+            <span class="btn btn-red btn-sm">Learn More &rarr;</span>
+          </div>
+        </a>
+
+        <a href="../featured.html#get-featured" class="state-feat-card state-feat-card--inactive">
+          <div class="state-feat-img--empty">+</div>
+          <div class="state-feat-placeholder-body">
+            <div class="state-feat-placeholder-title">Get Featured Here</div>
+            <p class="state-feat-placeholder-sub">Repair shop, parts seller, or service business in California? Get your business in front of XJ owners.</p>
+            <span class="btn btn-red btn-sm">Learn More &rarr;</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
     <!-- Buy and Sell listings render here -->
     <div id="state-buy-sell"></div>
 
@@ -140,6 +192,8 @@
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
 </script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="../ratings.js"></script>
 <script src="../assets/js/state-page.js"></script>
 <script src="../tag-colors.js"></script>
 </body>
