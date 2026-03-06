@@ -22,6 +22,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <style>
+    /* DIRECTORY FILTER BAR */
+    .dir-filter-bar { background: var(--white); border-bottom: 2px solid var(--line); padding: 0.75rem 0; position: static; top: auto; z-index: 90; }
+    .dir-filter-inner { display: flex; justify-content: center; align-items: center; }
+    .clubs-filters-wrap { background: #fff; border: 1.5px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow-xs); padding: 1rem; }
+    .clubs-filters-grid { display: grid; gap: 0.75rem; }
+    .clubs-filter-group label { display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-mid); margin-bottom: 0.35rem; }
+    .clubs-filter-group input, .clubs-filter-group select { width: 100%; height: 42px; border: 1.5px solid var(--line-mid); border-radius: var(--radius-sm); padding: 0 0.75rem; font-family: 'DM Sans', sans-serif; font-size: 0.92rem; color: var(--text); background: #fff; outline: none; }
+    .clubs-filter-group input:focus, .clubs-filter-group select:focus { border-color: var(--red); box-shadow: 0 0 0 2px rgba(107,18,40,0.08); }
+    @media (max-width: 700px) {
+      .clubs-filters-grid { grid-template-columns: 1fr !important; }
+    }
     .cat-section.hidden { display: none; }
 
     /* CATEGORY SECTION HEADERS */
@@ -1895,12 +1906,13 @@
       var id = (card.getAttribute('data-business-id') || '').trim();
       var isFeatured = !!(id && featuredIds[id]);
 
-      if (isFeatured && !card.querySelector('.biz-featured-badge')) {
-        var badge = document.createElement('div');
-        badge.className = 'biz-featured-badge';
-        badge.title = 'Featured Business';
-        badge.textContent = '★';
-        card.appendChild(badge);
+      var bizType = card.querySelector('.biz-type');
+      if (isFeatured && bizType && !card.querySelector('.dir-featured-star')) {
+        var star = document.createElement('span');
+        star.className = 'dir-featured-star';
+        star.textContent = '★ Featured';
+        star.style.cssText = 'display:inline-flex;align-items:center;justify-content:center;background:var(--red);color:#fff;border-radius:999px;padding:0.1rem 0.45rem;margin-right:0.35rem;font-size:0.68rem;font-weight:700;letter-spacing:0.02em;vertical-align:middle;';
+        bizType.parentNode.insertBefore(star, bizType);
       }
 
       if (isFeatured) return;
