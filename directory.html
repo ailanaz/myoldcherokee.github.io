@@ -133,21 +133,20 @@
   <div class="clubs-filters-wrap" style="margin:1rem 0 1.1rem;">
     <div class="clubs-filters-grid" style="grid-template-columns:2fr 1fr 1fr;">
       <div class="clubs-filter-group">
-        <label for="live-type">Business Type</label>
         <select id="live-type" class="filter-select" aria-label="Filter by type">
+          <option value="" disabled selected>Business Type</option>
           <option value="all">All types</option>
-          <option value="featured">★ Featured</option>
         </select>
       </div>
       <div class="clubs-filter-group">
-        <label for="live-state">State</label>
         <select id="live-state" class="filter-select" aria-label="Filter by state">
+          <option value="" disabled selected>State</option>
           <option value="all">All states</option>
         </select>
       </div>
       <div class="clubs-filter-group">
-        <label for="live-tag">Tags</label>
         <select id="live-tag" class="filter-select" aria-label="Filter by tag">
+          <option value="" disabled selected>Tag</option>
           <option value="all">All tags</option>
         </select>
       </div>
@@ -2120,13 +2119,13 @@
       }
     });
 
-    while (typeSel.options.length > 1) typeSel.remove(1);
+    while (typeSel.options.length > 2) typeSel.remove(2);
     var featuredOpt = document.createElement('option');
     featuredOpt.value = 'featured';
     featuredOpt.textContent = '★ Featured';
     typeSel.appendChild(featuredOpt);
 
-    while (stateSel.options.length > 1) stateSel.remove(1);
+    while (stateSel.options.length > 2) stateSel.remove(2);
     Object.keys(states).sort().forEach(function(st) {
       var o = document.createElement('option');
       o.value = st;
@@ -2134,7 +2133,7 @@
       stateSel.appendChild(o);
     });
 
-    while (tagSel.options.length > 1) tagSel.remove(1);
+    while (tagSel.options.length > 2) tagSel.remove(2);
     Object.keys(tags).sort().forEach(function(tag) {
       var o = document.createElement('option');
       o.value = tag;
