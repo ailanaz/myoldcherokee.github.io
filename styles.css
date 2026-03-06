@@ -700,11 +700,16 @@ img { max-width: 100%; display: block; }
   font-size: 0.74rem;
 }
 .state-feat-actions--rate-left .rating-open-btn {
-  height: 24px;
-  padding: 0 0.58rem;
+  height: 20px;
+  padding: 0 0.18rem !important;
   border-radius: var(--radius-full);
-  font-size: 0.7rem;
+  font-size: 0.56rem;
   font-weight: 700;
+  min-width: 0 !important;
+  width: auto !important;
+  flex: 0 0 auto !important;
+  line-height: 1;
+  letter-spacing: 0;
 }
 .state-feat-actions--rate-left .rating-open-btn { order: 1; }
 .state-feat-actions--rate-left .biz-rating-stars { order: 2; }
