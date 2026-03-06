@@ -1590,7 +1590,8 @@
     "business_id": "ace-auto-ut",
     "google_maps_link": "https://www.google.com/maps?q=40.598372,-111.972479",
     "lat": 40.598372,
-    "lon": -111.9724791
+    "lon": -111.9724791,
+    "locked": true
   },
   {
     "name": "Ace Auto Care and Fleet Repair",
@@ -3788,7 +3789,8 @@
     "business_id": "all-metals-welding-fabrication-company-co",
     "google_maps_link": "https://www.google.com/maps?q=39.065494,-108.544860",
     "lat": 39.0654943,
-    "lon": -108.5448598
+    "lon": -108.5448598,
+    "locked": true
   },
   {
     "name": "All Nations Autos",
@@ -5821,7 +5823,8 @@
     "business_id": "arizona-frame-and-fabrication-az",
     "google_maps_link": "https://www.google.com/maps?q=33.381243,-111.580380",
     "lat": 33.3812434,
-    "lon": -111.5803799
+    "lon": -111.5803799,
+    "locked": true
   },
   {
     "name": "Arizona Hot Rod & Upholstery",
@@ -8350,7 +8353,8 @@
     "business_id": "autonation-chrysler-dodge-jeep-ram-ga",
     "google_maps_link": "https://www.google.com/maps?q=32.551540,-84.942562",
     "lat": 32.5515404,
-    "lon": -84.9425616
+    "lon": -84.9425616,
+    "locked": true
   },
   {
     "name": "AUTOPARK Collision Center",
@@ -8671,7 +8675,8 @@
     "business_id": "aventura-chrysler-jeep-dodge-ram-service-parts-fl",
     "google_maps_link": "https://www.google.com/maps?q=25.923804,-80.156193",
     "lat": 25.9238036,
-    "lon": -80.1561932
+    "lon": -80.1561932,
+    "locked": true
   },
   {
     "name": "Avenue Expert",
@@ -10639,7 +10644,8 @@
     "business_id": "beatty-welding-pa",
     "google_maps_link": "https://www.google.com/maps?q=40.538116,-80.022698",
     "lat": 40.5381155,
-    "lon": -80.0226984
+    "lon": -80.0226984,
+    "locked": true
   },
   {
     "name": "Beaulieu Auto Center",
@@ -12575,7 +12581,8 @@
     "business_id": "blacksheep-auto-repair-co",
     "google_maps_link": "https://www.google.com/maps?q=39.089742,-108.589981",
     "lat": 39.0897419,
-    "lon": -108.5899813
+    "lon": -108.5899813,
+    "locked": true
   },
   {
     "name": "Blackstone Chevrolet Service & Parts",
@@ -14930,7 +14937,8 @@
     "business_id": "brock-s-welding-repair-service-oh",
     "google_maps_link": "https://www.google.com/maps?q=39.959405,-81.922566",
     "lat": 39.9594049,
-    "lon": -81.9225656
+    "lon": -81.9225656,
+    "locked": true
   },
   {
     "name": "Brocker's Body Shop",
@@ -15091,7 +15099,8 @@
     "business_id": "brown-motors-mi",
     "google_maps_link": "https://www.google.com/maps?q=45.400160,-84.880615",
     "lat": 45.4001597,
-    "lon": -84.8806148
+    "lon": -84.8806148,
+    "locked": true
   },
   {
     "name": "Brown's Aluminum & Catalytic Converters Recycling Center",
@@ -15734,7 +15743,8 @@
     "business_id": "bullhide-4x4-auto-accessories-co",
     "google_maps_link": "https://www.google.com/maps?q=40.538561,-105.079942",
     "lat": 40.5385608,
-    "lon": -105.079942
+    "lon": -105.079942,
+    "locked": true
   },
   {
     "name": "Bumper to Bumper",
@@ -21869,7 +21879,8 @@
     "business_id": "classic-2-current-fabrication-mi",
     "google_maps_link": "https://www.google.com/maps?q=42.381796,-83.380015",
     "lat": 42.3817959,
-    "lon": -83.3800152
+    "lon": -83.3800152,
+    "locked": true
   },
   {
     "name": "Classic Body Shop",
@@ -25570,7 +25581,8 @@
     "business_id": "custom-exhaust-shop-pa",
     "google_maps_link": "https://www.google.com/maps?q=40.384906,-76.287661",
     "lat": 40.3849064,
-    "lon": -76.2876606
+    "lon": -76.2876606,
+    "locked": true
   },
   {
     "name": "Custom Exhaust Systems",
@@ -27523,7 +27535,8 @@
     "business_id": "deer-trail-66-co",
     "google_maps_link": "https://www.google.com/maps?q=39.615709,-104.039946",
     "lat": 39.6157086,
-    "lon": -104.039946
+    "lon": -104.039946,
+    "locked": true
   },
   {
     "name": "Del Paso Auto Dismantlers",
@@ -30033,7 +30046,8 @@
     "business_id": "drw-off-road-warehouse-ga",
     "google_maps_link": "https://www.google.com/maps?q=33.972758,-84.543027",
     "lat": 33.9727577,
-    "lon": -84.5430274
+    "lon": -84.5430274,
+    "locked": true
   },
   {
     "name": "DS Diesall",
@@ -34100,7 +34114,8 @@
     "business_id": "expert-4wd-and-auto-incorporated-co",
     "google_maps_link": "https://www.google.com/maps?q=40.431630,-105.076922",
     "lat": 40.4316302,
-    "lon": -105.076922
+    "lon": -105.076922,
+    "locked": true
   },
   {
     "name": "Expert Auto Electric Co",
@@ -34401,7 +34416,8 @@
     "business_id": "ez-auto-spa-ga",
     "google_maps_link": "https://www.google.com/maps?q=33.962214,-84.131651",
     "lat": 33.9622141,
-    "lon": -84.1316512
+    "lon": -84.1316512,
+    "locked": true
   },
   {
     "name": "EZ Money Racing",
@@ -34584,7 +34600,8 @@
     "business_id": "facchiano-iron-works-pa",
     "google_maps_link": "https://www.google.com/maps?q=40.595982,-75.411610",
     "lat": 40.5959816,
-    "lon": -75.4116101
+    "lon": -75.4116101,
+    "locked": true
   },
   {
     "name": "Factory Motor Parts",
@@ -42756,7 +42773,8 @@
     "business_id": "heck-steel-equipment-mi",
     "google_maps_link": "https://www.google.com/maps?q=41.932412,-83.586390",
     "lat": 41.9324119,
-    "lon": -83.5863903
+    "lon": -83.5863903,
+    "locked": true
   },
   {
     "name": "Heilman Auto Service Center",
@@ -43420,7 +43438,8 @@
     "business_id": "high-country-performance-4x4-co",
     "google_maps_link": "https://www.google.com/maps?q=39.654668,-105.007498",
     "lat": 39.6546681,
-    "lon": -105.0074979
+    "lon": -105.0074979,
+    "locked": true
   },
   {
     "name": "High Country Sales, Service and Rentals",
@@ -43944,7 +43963,8 @@
     "business_id": "hmc-off-road-az",
     "google_maps_link": "https://www.google.com/maps?q=33.414762,-111.658261",
     "lat": 33.4147619,
-    "lon": -111.6582606
+    "lon": -111.6582606,
+    "locked": true
   },
   {
     "name": "HNN West Dearborn Auto Repair",
@@ -48053,7 +48073,8 @@
     "business_id": "jeephut-offroad-ga",
     "google_maps_link": "https://www.google.com/maps?q=34.472032,-84.457828",
     "lat": 34.4720325,
-    "lon": -84.4578279
+    "lon": -84.4578279,
+    "locked": true
   },
   {
     "name": "Jeff Barnes Auto Repair",
@@ -52093,7 +52114,8 @@
     "business_id": "kling-s-welding-service-mi",
     "google_maps_link": "https://www.google.com/maps?q=45.650238,-84.491517",
     "lat": 45.6502379,
-    "lon": -84.4915167
+    "lon": -84.4915167,
+    "locked": true
   },
   {
     "name": "Kmetz's Clate's Performance Inc.`",
@@ -54226,7 +54248,8 @@
     "business_id": "len-s-lift-truck-services-mi",
     "google_maps_link": "https://www.google.com/maps?q=45.068359,-83.418549",
     "lat": 45.0683591,
-    "lon": -83.4185492
+    "lon": -83.4185492,
+    "locked": true
   },
   {
     "name": "Lenny's Auto Repair",
@@ -54930,7 +54953,8 @@
     "business_id": "lizotte-s-welding-fl",
     "google_maps_link": "https://www.google.com/maps?q=27.802256,-82.741798",
     "lat": 27.8022565,
-    "lon": -82.7417976
+    "lon": -82.7417976,
+    "locked": true
   },
   {
     "name": "Llamas Auto Repair",
@@ -58224,7 +58248,8 @@
     "business_id": "matt-s-off-road-recovery-ut",
     "google_maps_link": "https://www.google.com/maps?q=37.182861,-113.330358",
     "lat": 37.1828612,
-    "lon": -113.3303575
+    "lon": -113.3303575,
+    "locked": true
   },
   {
     "name": "MATTGYVER Auto",
@@ -60019,7 +60044,8 @@
     "business_id": "midnight-4x4-ut",
     "google_maps_link": "https://www.google.com/maps?q=40.691205,-111.888679",
     "lat": 40.6912049,
-    "lon": -111.8886791
+    "lon": -111.8886791,
+    "locked": true
   },
   {
     "name": "Midnight Club Customs",
@@ -61223,7 +61249,8 @@
     "business_id": "mobile-dent-bumper-repair-ca",
     "google_maps_link": "https://www.google.com/maps?q=34.085941,-117.883372",
     "lat": 34.0859411,
-    "lon": -117.883372
+    "lon": -117.883372,
+    "locked": true
   },
   {
     "name": "Mobile Diesel Medic",
@@ -65200,7 +65227,8 @@
     "business_id": "off-road-mafia-ga",
     "google_maps_link": "https://www.google.com/maps?q=34.305910,-84.422473",
     "lat": 34.3059101,
-    "lon": -84.4224727
+    "lon": -84.4224727,
+    "locked": true
   },
   {
     "name": "Off-Road Performance Shop of Miami",
@@ -65221,7 +65249,8 @@
     "business_id": "off-road-performance-shop-of-miami-fl",
     "google_maps_link": "https://www.google.com/maps?q=25.637502,-80.423684",
     "lat": 25.6375018,
-    "lon": -80.4236844
+    "lon": -80.4236844,
+    "locked": true
   },
   {
     "name": "Offeys body Shop",
@@ -66468,7 +66497,8 @@
     "business_id": "palmetto-off-road-performance-sc",
     "google_maps_link": "https://www.google.com/maps?q=33.907509,-81.549153",
     "lat": 33.9075092,
-    "lon": -81.5491533
+    "lon": -81.5491533,
+    "locked": true
   },
   {
     "name": "Palmetto Off-Road Performance",
@@ -66489,7 +66519,8 @@
     "business_id": "palmetto-off-road-performance-sc-2",
     "google_maps_link": "https://www.google.com/maps?q=33.971362,-81.141089",
     "lat": 33.9713622,
-    "lon": -81.1410891
+    "lon": -81.1410891,
+    "locked": true
   },
   {
     "name": "Pane's Garage",
@@ -70023,7 +70054,8 @@
     "business_id": "precision-welding-installation-oh",
     "google_maps_link": "https://www.google.com/maps?q=39.987446,-81.937393",
     "lat": 39.9874456,
-    "lon": -81.9373933
+    "lon": -81.9373933,
+    "locked": true
   },
   {
     "name": "Premier Audio & Accessories",
@@ -73122,7 +73154,8 @@
     "business_id": "red-desert-off-road-ut",
     "google_maps_link": "https://www.google.com/maps?q=37.040465,-113.557132",
     "lat": 37.0404649,
-    "lon": -113.5571323
+    "lon": -113.5571323,
+    "locked": true
   },
   {
     "name": "Red Rock Collision Repair & Auto Painting",
@@ -77289,7 +77322,8 @@
     "business_id": "sam-s-4x4-ok",
     "google_maps_link": "https://www.google.com/maps?q=36.100208,-96.028639",
     "lat": 36.100208,
-    "lon": -96.0286391
+    "lon": -96.0286391,
+    "locked": true
   },
   {
     "name": "Sam's Auto",
@@ -77670,7 +77704,8 @@
     "business_id": "santini-iron-works-ca",
     "google_maps_link": "https://www.google.com/maps?q=33.984222,-118.402824",
     "lat": 33.9842224,
-    "lon": -118.4028242
+    "lon": -118.4028242,
+    "locked": true
   },
   {
     "name": "Sapienza's Service Station",
@@ -78012,7 +78047,8 @@
     "business_id": "schickling-automotive-fab-pa",
     "google_maps_link": "https://www.google.com/maps?q=40.321963,-75.615635",
     "lat": 40.3219634,
-    "lon": -75.615635
+    "lon": -75.615635,
+    "locked": true
   },
   {
     "name": "Schlafer Iron & Steel",
@@ -80110,7 +80146,8 @@
     "business_id": "slee-offroad-co",
     "google_maps_link": "https://www.google.com/maps?q=39.779184,-105.232497",
     "lat": 39.7791836,
-    "lon": -105.2324967
+    "lon": -105.2324967,
+    "locked": true
   },
   {
     "name": "Slippery Rock Salvage",
@@ -80314,7 +80351,8 @@
     "business_id": "smith-racing-offroad-oh",
     "google_maps_link": "https://www.google.com/maps?q=40.973910,-81.492502",
     "lat": 40.97391,
-    "lon": -81.492502
+    "lon": -81.492502,
+    "locked": true
   },
   {
     "name": "Smith Tractor & Equipment Co",
@@ -80575,7 +80613,8 @@
     "business_id": "snailbuilt-overland-and-offroad-nc",
     "google_maps_link": "https://www.google.com/maps?q=35.409065,-82.570549",
     "lat": 35.4090651,
-    "lon": -82.5705495
+    "lon": -82.5705495,
+    "locked": true
   },
   {
     "name": "Snap-a-Dent",
@@ -81239,7 +81278,8 @@
     "business_id": "southern-az-steel-supply-az",
     "google_maps_link": "https://www.google.com/maps?q=32.259465,-109.828161",
     "lat": 32.2594653,
-    "lon": -109.8281612
+    "lon": -109.8281612,
+    "locked": true
   },
   {
     "name": "Southern Brothers Automotive Restoration",
@@ -81301,7 +81341,8 @@
     "business_id": "southern-off-road-specialists-sors-ga",
     "google_maps_link": "https://www.google.com/maps?q=34.199791,-84.135144",
     "lat": 34.1997908,
-    "lon": -84.1351437
+    "lon": -84.1351437,
+    "locked": true
   },
   {
     "name": "Southern Shine",
@@ -82493,7 +82534,8 @@
     "business_id": "sterling-heights-dodge-chrysler-jeep-ram-mi",
     "google_maps_link": "https://www.google.com/maps?q=42.588206,-83.031618",
     "lat": 42.5882065,
-    "lon": -83.0316183
+    "lon": -83.0316183,
+    "locked": true
   },
   {
     "name": "Sterling Tire & Auto",
@@ -84945,7 +84987,8 @@
     "business_id": "t-r-truck-and-auto-repair-sc",
     "google_maps_link": "https://www.google.com/maps?q=33.663674,-78.996191",
     "lat": 33.6636735,
-    "lon": -78.9961911
+    "lon": -78.9961911,
+    "locked": true
   },
   {
     "name": "T&T Auto Repair",
@@ -85387,7 +85430,8 @@
     "business_id": "taylor-s-small-engines-sales-service-nc",
     "google_maps_link": "https://www.google.com/maps?q=35.368382,-81.942235",
     "lat": 35.3683817,
-    "lon": -81.9422349
+    "lon": -81.9422349,
+    "locked": true
   },
   {
     "name": "Taysom Tire Muffler & Auto Repair",
@@ -85428,7 +85472,8 @@
     "business_id": "tc-performance-offroad-nc",
     "google_maps_link": "https://www.google.com/maps?q=36.385931,-80.458102",
     "lat": 36.3859311,
-    "lon": -80.4581019
+    "lon": -80.4581019,
+    "locked": true
   },
   {
     "name": "Tca Auto Repair LLC",
@@ -88698,7 +88743,8 @@
     "business_id": "total-offroad-more-ga",
     "google_maps_link": "https://www.google.com/maps?q=34.012619,-84.573788",
     "lat": 34.0126192,
-    "lon": -84.5737881
+    "lon": -84.5737881,
+    "locked": true
   },
   {
     "name": "Total Performance Collision",
@@ -92244,7 +92290,8 @@
     "business_id": "vertex-offroad-ut",
     "google_maps_link": "https://www.google.com/maps?q=41.765403,-111.835021",
     "lat": 41.7654035,
-    "lon": -111.8350214
+    "lon": -111.8350214,
+    "locked": true
   },
   {
     "name": "Vestavia Auto Service",
@@ -93369,7 +93416,8 @@
     "business_id": "warren-s-welding-az",
     "google_maps_link": "https://www.google.com/maps?q=32.762366,-111.651509",
     "lat": 32.7623657,
-    "lon": -111.6515094
+    "lon": -111.6515094,
+    "locked": true
   },
   {
     "name": "Warrior Racing & Automotive",
