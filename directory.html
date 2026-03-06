@@ -2238,6 +2238,8 @@
 
     var rows = (Array.isArray(archiveRows) ? archiveRows : []).filter(function(it) {
       var bid = String(it.business_id || '').trim();
+      var name = String(it.name || '').toLowerCase().trim();
+      if (bid === 'banker-automotive-tx' || name === 'banker automotive inc.' || name === 'banker automotive inc') return false;
       return !bid || !currentIds[bid];
     });
 
