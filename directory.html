@@ -2405,8 +2405,123 @@
     return 'parts-default';
   }
 
-  document.querySelectorAll('.parts-card .parts-tag').forEach(function(el) {
+  var section = document.getElementById('shop-parts');
+  if (!section) return;
+
+  // Remove cart icon and old title text block in parts section.
+  var icon = section.querySelector('.cat-icon-lg');
+  if (icon) icon.remove();
+  var title = section.querySelector('.cat-title-block h2');
+  if (title) title.remove();
+
+  var cards = Array.prototype.slice.call(section.querySelectorAll('.parts-card'));
+  if (!cards.length) return;
+
+  // Gather tags and sort cards alphabetically.
+  var tagsMap = {};
+  cards.forEach(function(card) {
+    var tagEl = card.querySelector('.parts-tag');
+    var tag = tagEl ? String(tagEl.textContent || '').trim() : '';
+    if (tag) tagsMap[tag] = true;
+  });
+  cards.sort(function(a, b) {
+    var an = ((a.querySelector('h4') || {}).textContent || '').trim().toLowerCase();
+    var bn = ((b.querySelector('h4') || {}).textContent || '').trim().toLowerCase();
+    return an.localeCompare(bn, 'en', { sensitivity: 'base' });
+  });
+
+  var tags = Object.keys(tagsMap).sort(function(a, b) {
+    return a.toLowerCase().localeCompare(b.toLowerCase(), 'en', { sensitivity: 'base' });
+  });
+
+  // Remove old category subheaders and existing card grids.
+  section.querySelectorAll('.subcat-header').forEach(function(el) { el.remove(); });
+  section.querySelectorAll('.grid.g3').forEach(function(el) { el.remove(); });
+
+  // Build new unified search/filter UI.
+  var controlsWrap = document.createElement('div');
+  controlsWrap.className = 'clubs-filters-wrap';
+  controlsWrap.style.margin = '0.25rem 0 1rem';
+  controlsWrap.innerHTML =
+    '<div class="clubs-filters-grid" style="grid-template-columns:2fr 1fr;">' +
+      '<div class="clubs-filter-group">' +
+        '<input id="parts-search" class="filter-search-input" type="search" placeholder="Shop for Parts and More" aria-label="Search parts" />' +
+      '</div>' +
+      '<div class="clubs-filter-group">' +
+        '<select id="parts-tag-select" class="filter-select" aria-label="Filter parts by tag">' +
+          '<option value=\"all\">All tags</option>' +
+        '</select>' +
+      '</div>' +
+    '</div>' +
+    '<div id="parts-tag-pills" style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-top:0.7rem;"></div>';
+
+  var affiliate = section.querySelector('.affiliate-disclaimer');
+  if (affiliate && affiliate.nextSibling) section.insertBefore(controlsWrap, affiliate.nextSibling);
+  else section.insertBefore(controlsWrap, section.firstChild);
+
+  var select = controlsWrap.querySelector('#parts-tag-select');
+  var pills = controlsWrap.querySelector('#parts-tag-pills');
+  tags.forEach(function(tag) {
+    var o = document.createElement('option');
+    o.value = tag.toLowerCase();
+    o.textContent = tag;
+    select.appendChild(o);
+
+    var pill = document.createElement('button');
+    pill.type = 'button';
+    pill.className = 'parts-tag parts-filter-pill ' + tagTone(tag);
+    pill.setAttribute('data-tag', tag.toLowerCase());
+    pill.textContent = tag;
+    pills.appendChild(pill);
+  });
+
+  // Build one unified, alphabetized parts grid.
+  var unifiedGrid = document.createElement('div');
+  unifiedGrid.className = 'grid g3';
+  unifiedGrid.id = 'parts-all-grid';
+  cards.forEach(function(card) { unifiedGrid.appendChild(card); });
+
+  var cta = section.querySelector('div[style*="Know a source for Cherokee parts?"]') || section.lastElementChild;
+  if (cta && cta.parentNode === section) section.insertBefore(unifiedGrid, cta);
+  else section.appendChild(unifiedGrid);
+
+  // Apply color coding to card tags and pill tags.
+  section.querySelectorAll('.parts-tag').forEach(function(el) {
     el.classList.add(tagTone(el.textContent));
+  });
+
+  var searchInput = controlsWrap.querySelector('#parts-search');
+  var activeTag = 'all';
+
+  function applyPartsFilters() {
+    var q = String(searchInput.value || '').toLowerCase().trim();
+    var tag = String(activeTag || 'all').toLowerCase();
+    cards.forEach(function(card) {
+      var name = ((card.querySelector('h4') || {}).textContent || '').toLowerCase();
+      var desc = ((card.querySelector('p') || {}).textContent || '').toLowerCase();
+      var cardTag = (((card.querySelector('.parts-tag') || {}).textContent || '').toLowerCase()).trim();
+      var matchTag = (tag === 'all') || (cardTag === tag);
+      var matchText = !q || (name.indexOf(q) !== -1) || (desc.indexOf(q) !== -1) || (cardTag.indexOf(q) !== -1);
+      card.style.display = (matchTag && matchText) ? '' : 'none';
+    });
+    pills.querySelectorAll('.parts-filter-pill').forEach(function(btn) {
+      var on = (tag !== 'all') && (btn.getAttribute('data-tag') === tag);
+      btn.style.outline = on ? '2px solid var(--red)' : 'none';
+      btn.style.outlineOffset = on ? '1px' : '0';
+    });
+  }
+
+  select.addEventListener('change', function() {
+    activeTag = select.value || 'all';
+    applyPartsFilters();
+  });
+  searchInput.addEventListener('input', applyPartsFilters);
+  pills.addEventListener('click', function(e) {
+    var btn = e.target.closest('.parts-filter-pill');
+    if (!btn) return;
+    activeTag = btn.getAttribute('data-tag') || 'all';
+    select.value = activeTag;
+    applyPartsFilters();
   });
 })();
 </script>
