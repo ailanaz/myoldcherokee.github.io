@@ -2266,6 +2266,28 @@
       return;
     }
 
+    function candidateRatingHtml(bid) {
+      return (
+        '<div class="biz-rating-wrap" data-bid="' + esc(bid) + '" style="margin:0;">' +
+          '<div class="biz-rating-row">' +
+            '<span class="biz-rating-none">No ratings yet</span>' +
+            '&nbsp;<button class="btn btn-outline btn-sm rating-open-btn" data-bid="' + esc(bid) + '" aria-expanded="false">Rate</button>' +
+          '</div>' +
+          '<div class="rating-form" aria-hidden="true">' +
+            '<div class="star-picker" data-bid="' + esc(bid) + '" data-selected="0">' +
+              '<span class="sp-star" data-val="1" role="button" tabindex="0" aria-label="1 star">&#9733;</span>' +
+              '<span class="sp-star" data-val="2" role="button" tabindex="0" aria-label="2 stars">&#9733;</span>' +
+              '<span class="sp-star" data-val="3" role="button" tabindex="0" aria-label="3 stars">&#9733;</span>' +
+              '<span class="sp-star" data-val="4" role="button" tabindex="0" aria-label="4 stars">&#9733;</span>' +
+              '<span class="sp-star" data-val="5" role="button" tabindex="0" aria-label="5 stars">&#9733;</span>' +
+            '</div>' +
+            '<button class="btn btn-red btn-sm rating-submit-btn" data-bid="' + esc(bid) + '" disabled>Submit</button>' +
+            '<span class="rating-confirm" style="display:none;">Thanks! &#10003;</span>' +
+          '</div>' +
+        '</div>'
+      );
+    }
+
     var html = ['<div style="display:flex;flex-direction:column;gap:0.65rem;">'];
     rows.forEach(function(it) {
       var bid = String(it.business_id || '').trim();
@@ -2278,7 +2300,7 @@
           '<div class="biz-body" style="padding:0;">' +
             '<div style="display:flex;align-items:center;justify-content:space-between;gap:0.5rem;flex-wrap:wrap;">' +
               '<div class="biz-name" style="margin:0;">' + esc(it.name || 'Business') + '</div>' +
-              '<div class="biz-actions" style="margin:0;display:flex;gap:0.4rem;align-items:center;"></div>' +
+              '<div class="biz-actions" style="margin:0;display:flex;gap:0.4rem;align-items:center;">' + candidateRatingHtml(bid) + '</div>' +
             '</div>' +
             '<div class="biz-loc" style="margin-top:0.15rem;">' + esc(loc || 'Location not set') + '</div>' +
           '</div>' +

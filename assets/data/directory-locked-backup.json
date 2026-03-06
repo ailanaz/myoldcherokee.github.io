@@ -1177,5 +1177,26 @@
     "lat": 32.7623657,
     "lon": -111.6515094,
     "locked": true
+  },
+  {
+    "business_id": "dexjs-selmer-tn",
+    "name": "DeXJ's",
+    "type": "Salvage and Junk Yards",
+    "city": "Selmer",
+    "state": "TN",
+    "address": "Selmer, TN",
+    "phone": "",
+    "website": "https://www.dexjs.com",
+    "google_maps_link": "https://www.google.com/maps/search/DeXJ%27s+Selmer+TN",
+    "categories": [
+      "salvage",
+      "parts",
+      "4x4",
+      "jeep"
+    ],
+    "summary": "Jeep-focused salvage and used parts source serving Tennessee builders.",
+    "source": "manual",
+    "is_active": true,
+    "locked": true
   }
 ]
