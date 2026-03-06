@@ -1,23 +1,5 @@
 [
   {
-    "name": "Banker Automotive",
-    "type": "Repair Shops",
-    "state": "TX",
-    "city": "Austin",
-    "address": "10404 Slaughter Creek Dr, Austin, TX 78748",
-    "phone": "(512) 280-0877",
-    "website": "https://www.facebook.com/profile.php?id=100064968071056",
-    "google_maps_link": "https://www.google.com/maps/search/Banker+Automotive,+10404+Slaughter+Creek+Dr,+Austin,+TX+78748",
-    "categories": [
-      "general"
-    ],
-    "summary": "General repair shop in South Austin. Not a Jeep specialist but personally used by the site owner for their 1996 Jeep Cherokee with good results.",
-    "jeep_friendly_blurb": "General repair shop in Austin used by the site owner for their 1996 Jeep Cherokee. Not a Jeep specialist, but work quality was solid.",
-    "jeep_friendly_source_url": "https://www.yelp.com/biz/banker-automotive-austin",
-    "jeep_friendly_source_label": "Yelp listing",
-    "locked": true
-  },
-  {
     "business_id": "banker-automotive-tx",
     "name": "Banker Automotive Inc.",
     "type": "Repair Shops",
@@ -36,25 +18,6 @@
     ],
     "source": "manual",
     "is_active": true,
-    "locked": true
-  },
-  {
-    "name": "Collins Bros Jeep",
-    "type": "Salvage and Junk Yards",
-    "state": "TX",
-    "city": "Wylie",
-    "address": "Wylie, TX (DFW)",
-    "phone": null,
-    "website": null,
-    "categories": [
-      "salvage",
-      "parts",
-      "4x4"
-    ],
-    "summary": "DFW Jeep-specialist yard with large XJ Cherokee parts inventory. Knowledgeable staff dedicated to Jeep-only inventory.",
-    "jeep_friendly_blurb": "DFW Jeep-only salvage yard with a strong XJ Cherokee inventory. One of the best specialty yards in Texas for Cherokee parts.",
-    "jeep_friendly_source_url": "https://www.google.com/maps/search/Collins+Bros+Jeep+Wylie+TX",
-    "jeep_friendly_source_label": "Google Maps listing",
     "locked": true
   },
   {
@@ -97,25 +60,6 @@
     "source": "manual",
     "is_active": true,
     "summary": "Custom emblems, badges, and decal solutions for vehicle enthusiasts. Known for supporting Jeep communities and creating custom logo pieces for clubs, including Midwest Krawlers. Perfect for bulk orders.",
-    "locked": true
-  },
-  {
-    "name": "Tennessee Off Road, LLC",
-    "type": "Repair Shops",
-    "state": "TN",
-    "city": "Lebanon",
-    "address": "Lebanon, TN (near Nashville)",
-    "phone": "(615) 248-8638",
-    "website": null,
-    "categories": [
-      "4x4",
-      "driveline",
-      "suspension"
-    ],
-    "summary": "Recommended Jeep driveline repair shop near Nashville. Specializes in 4x4 drivetrain work for XJ and other Jeep platforms.",
-    "jeep_friendly_blurb": "Lebanon TN shop specializing in Jeep 4x4 driveline work near Nashville. Good for XJ owners needing drivetrain repairs.",
-    "jeep_friendly_source_url": "https://www.google.com/maps/search/Tennessee+Off+Road+LLC+Lebanon+TN",
-    "jeep_friendly_source_label": "Google Maps listing",
     "locked": true
   },
   {

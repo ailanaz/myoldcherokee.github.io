@@ -160,6 +160,18 @@
     <button id="live-more" class="btn btn-outline btn-sm" type="button" style="display:none;">Load More</button>
   </div>
 
+  <section class="home-section" style="padding-top:1.25rem;padding-bottom:0.5rem;">
+    <div class="container">
+      <div class="home-section-head" style="margin-bottom:0.6rem;">
+        <div>
+          <h2 class="home-section-title" style="margin:0;">Community Review Queue</h2>
+          <p class="home-section-desc" style="margin-top:0.35rem;">Do these belong in the directory? Please review and rate each one.</p>
+        </div>
+      </div>
+      <div id="candidate-review-list" class="card" style="padding:0.75rem 1rem;"></div>
+    </div>
+  </section>
+
   <div id="legacy-directory-sections" style="display:none;">
   <!-- =============================== -->
   <!-- REPAIR SHOPS                    -->
@@ -2033,6 +2045,7 @@
   var searchEl = document.getElementById('live-search');
   var countEl = document.getElementById('live-count');
   var moreBtn = document.getElementById('live-more');
+  var candidateListEl = document.getElementById('candidate-review-list');
   if (!grid || !stateSel || !typeSel || !searchEl || !countEl || !moreBtn) return;
 
   var allRows = [];
@@ -2231,6 +2244,51 @@
     moreBtn.style.display = filteredRows.length > shown ? '' : 'none';
   }
 
+  function renderCandidateReviewList(archiveRows) {
+    if (!candidateListEl) return;
+    var currentIds = {};
+    allRows.forEach(function(it) {
+      var id = String(it.business_id || '').trim();
+      if (id) currentIds[id] = true;
+    });
+
+    var rows = (Array.isArray(archiveRows) ? archiveRows : []).filter(function(it) {
+      var bid = String(it.business_id || '').trim();
+      return !bid || !currentIds[bid];
+    });
+
+    rows.sort(function(a, b) {
+      return String(a.name || '').localeCompare(String(b.name || ''), 'en', { sensitivity: 'base' });
+    });
+
+    if (!rows.length) {
+      candidateListEl.innerHTML = '<p style="margin:0;color:var(--text-mid);">No additional businesses in the review queue.</p>';
+      return;
+    }
+
+    var html = ['<div style="display:flex;flex-direction:column;gap:0.65rem;">'];
+    rows.forEach(function(it) {
+      var bid = String(it.business_id || '').trim();
+      if (!bid) {
+        bid = 'review-' + String(it.name || 'business').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+      }
+      var loc = [it.city || '', it.state || ''].filter(Boolean).join(', ');
+      html.push(
+        '<div class="biz-card" data-business-id="' + esc(bid) + '" style="padding:0.55rem 0.75rem;">' +
+          '<div class="biz-body" style="padding:0;">' +
+            '<div style="display:flex;align-items:center;justify-content:space-between;gap:0.5rem;flex-wrap:wrap;">' +
+              '<div class="biz-name" style="margin:0;">' + esc(it.name || 'Business') + '</div>' +
+              '<div class="biz-actions" style="margin:0;display:flex;gap:0.4rem;align-items:center;"></div>' +
+            '</div>' +
+            '<div class="biz-loc" style="margin-top:0.15rem;">' + esc(loc || 'Location not set') + '</div>' +
+          '</div>' +
+        '</div>'
+      );
+    });
+    html.push('</div>');
+    candidateListEl.innerHTML = html.join('');
+  }
+
   moreBtn.addEventListener('click', function() {
     shown += pageSize;
     render();
@@ -2244,10 +2302,12 @@
 
   Promise.all([
     fetch('assets/data/directory.json').then(function(res) { if (!res.ok) throw new Error('load failed'); return res.json(); }),
-    loadFeaturedIdsFromFeaturedPage()
+    loadFeaturedIdsFromFeaturedPage(),
+    fetch('assets/data/directory-locked-backup.json').then(function(res) { return res.ok ? res.json() : []; }).catch(function() { return []; })
   ])
     .then(function(payload) {
       var rows = payload[0];
+      var archiveRows = payload[2];
       allRows = Array.isArray(rows) ? rows : [];
       allRows.sort(function(a, b) {
         return String(a.name || '').localeCompare(String(b.name || ''), 'en', { sensitivity: 'base' });
@@ -2255,6 +2315,7 @@
       initFilters(allRows);
       filteredRows = allRows.slice();
       render();
+      renderCandidateReviewList(archiveRows);
     })
     .catch(function() {
       grid.innerHTML = '<p style="color:var(--text-mid);padding:1rem 0;">Directory data could not load. Please refresh the page.</p>';
