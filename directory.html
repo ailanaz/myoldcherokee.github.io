@@ -55,7 +55,10 @@
     .parts-card h4 { font-family: 'Oswald', sans-serif; font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; color: var(--text); }
     .parts-card p { font-family: 'Source Serif 4', serif; font-size: 0.88rem; color: var(--text-mid); line-height: 1.55; flex: 1; }
     .parts-card .parts-tag { font-family: 'Oswald', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 4px; background: var(--amber-lite); color: var(--amber); border: 1px solid #f0d4a8; white-space: nowrap; flex-shrink: 0; }
-    .parts-back-top { display: inline-flex; align-items: center; justify-content: center; gap: 0.35rem; margin: 0.25rem 0 1rem; background: var(--red); color: #fff; border: 1px solid var(--red); text-decoration: none; }
+    .parts-tabs-row { display: flex; align-items: center; gap: 0.45rem; flex-wrap: wrap; margin: 0.25rem 0 1rem; }
+    .parts-filter-pill { cursor: pointer; }
+    .parts-filter-pill.is-active { outline: 2px solid var(--red); outline-offset: 1px; }
+    .parts-back-top { display: inline-flex; align-items: center; justify-content: center; gap: 0.35rem; margin: 0; background: var(--red); color: #fff; border: 1px solid var(--red); text-decoration: none; }
     .parts-back-top:hover { background: #6c0e2b; border-color: #6c0e2b; color: #fff; }
     .parts-back-top .arrow { font-size: 0.95rem; line-height: 1; font-weight: 700; }
     .affiliate-disclaimer { font-size: 0.78rem; color: var(--text-lite); font-style: italic; background: var(--off); border: 1px solid var(--line); border-radius: 8px; padding: 0.65rem 1rem; margin-bottom: 1.25rem; }
@@ -168,7 +171,7 @@
     <button id="live-more" class="btn btn-outline btn-sm" type="button" style="display:none;">Load More</button>
   </div>
 
-  <section class="home-section" style="padding-top:1.25rem;padding-bottom:0.5rem;">
+  <section id="community-review-queue" class="home-section" style="padding-top:1.25rem;padding-bottom:0.5rem;">
     <div class="container">
       <div class="home-section-head" style="margin-bottom:0.6rem;">
         <div>
@@ -2414,6 +2417,10 @@
   legacy.querySelectorAll('.cat-section').forEach(function(section) {
     section.style.display = (section.id === 'shop-parts') ? '' : 'none';
   });
+  var queueSection = document.getElementById('community-review-queue');
+  if (queueSection && queueSection.parentNode === legacy.parentNode) {
+    legacy.parentNode.insertBefore(legacy, queueSection);
+  }
 })();
 </script>
 
@@ -2435,6 +2442,10 @@
 
   var section = document.getElementById('shop-parts');
   if (!section) return;
+  var queueSection = document.getElementById('community-review-queue');
+  if (queueSection && section.parentNode === queueSection.parentNode) {
+    section.parentNode.insertBefore(section, queueSection);
+  }
 
   // Remove cart icon and old title text block in parts section.
   var icon = section.querySelector('.cat-icon-lg');
@@ -2444,6 +2455,16 @@
 
   var cards = Array.prototype.slice.call(section.querySelectorAll('.parts-card'));
   if (!cards.length) return;
+
+  // Gather available tags for the tabs row.
+  var tagsMap = {};
+  cards.forEach(function(card) {
+    var tag = ((card.querySelector('.parts-tag') || {}).textContent || '').trim();
+    if (tag) tagsMap[tag] = true;
+  });
+  var tags = Object.keys(tagsMap).sort(function(a, b) {
+    return a.toLowerCase().localeCompare(b.toLowerCase(), 'en', { sensitivity: 'base' });
+  });
 
   // Sort cards alphabetically.
   cards.sort(function(a, b) {
@@ -2456,14 +2477,27 @@
   section.querySelectorAll('.subcat-header').forEach(function(el) { el.remove(); });
   section.querySelectorAll('.grid.g3').forEach(function(el) { el.remove(); });
 
-  // Add red back-to-top tag for quick jump to directory filters.
+  // Build color-coded tabs row.
+  var tabsRow = document.createElement('div');
+  tabsRow.className = 'parts-tabs-row';
+  tags.forEach(function(tag) {
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'parts-tag parts-filter-pill ' + tagTone(tag);
+    btn.setAttribute('data-tag', tag.toLowerCase());
+    btn.textContent = tag;
+    tabsRow.appendChild(btn);
+  });
+
+  // Add red back-to-top tag at end of tabs row.
   var backTop = document.createElement('a');
   backTop.className = 'parts-tag parts-back-top';
   backTop.href = '#live-type';
   backTop.innerHTML = '<span class="arrow" aria-hidden="true">&#8593;</span><span>Back to Top</span>';
+  tabsRow.appendChild(backTop);
   var affiliate = section.querySelector('.affiliate-disclaimer');
-  if (affiliate && affiliate.nextSibling) section.insertBefore(backTop, affiliate.nextSibling);
-  else section.insertBefore(backTop, section.firstChild);
+  if (affiliate && affiliate.nextSibling) section.insertBefore(tabsRow, affiliate.nextSibling);
+  else section.insertBefore(tabsRow, section.firstChild);
 
   // Build one unified, alphabetized parts grid.
   var unifiedGrid = document.createElement('div');
@@ -2478,6 +2512,24 @@
   // Apply color coding to card tags.
   section.querySelectorAll('.parts-tag').forEach(function(el) {
     el.classList.add(tagTone(el.textContent));
+  });
+
+  var activeTag = 'all';
+  function applyTagFilter() {
+    cards.forEach(function(card) {
+      var cardTag = (((card.querySelector('.parts-tag') || {}).textContent || '').toLowerCase()).trim();
+      card.style.display = (activeTag === 'all' || cardTag === activeTag) ? '' : 'none';
+    });
+    tabsRow.querySelectorAll('.parts-filter-pill').forEach(function(btn) {
+      btn.classList.toggle('is-active', btn.getAttribute('data-tag') === activeTag);
+    });
+  }
+  tabsRow.addEventListener('click', function(e) {
+    var btn = e.target.closest('.parts-filter-pill');
+    if (!btn) return;
+    var tag = btn.getAttribute('data-tag') || 'all';
+    activeTag = (activeTag === tag) ? 'all' : tag;
+    applyTagFilter();
   });
 })();
 </script>
