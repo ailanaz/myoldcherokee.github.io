@@ -711,6 +711,17 @@ img { max-width: 100%; display: block; }
   line-height: 1;
   letter-spacing: 0;
 }
+.state-feat-actions .biz-rating-row .rating-open-btn {
+  height: 20px !important;
+  padding: 0 0.18rem !important;
+  min-width: 0 !important;
+  width: auto !important;
+  max-width: 2.1rem !important;
+  flex: 0 0 auto !important;
+  font-size: 0.56rem !important;
+  line-height: 1 !important;
+  letter-spacing: 0 !important;
+}
 .state-feat-actions--rate-left .rating-open-btn { order: 1; }
 .state-feat-actions--rate-left .biz-rating-stars { order: 2; }
 .state-feat-actions--rate-left .biz-rating-count { order: 3; }
