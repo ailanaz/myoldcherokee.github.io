@@ -67,6 +67,11 @@
     .tip-card p { font-family: 'Source Serif 4', serif; font-size: 0.9rem; color: var(--text-mid); line-height: 1.6; }
     .tip-card-meta { display: flex; align-items: center; gap: 0.75rem; margin-top: 0.25rem; }
     .tip-credit { font-size: 0.78rem; color: var(--text-lite); font-weight: 500; }
+    @media (max-width: 700px) {
+      #shop-parts .parts-controls-wrap .parts-search-group,
+      #shop-parts .parts-controls-wrap #parts-tag-pills { display: none !important; }
+      #shop-parts .parts-controls-wrap .clubs-filters-grid { grid-template-columns: 1fr !important; }
+    }
   </style>
   <link rel="icon" href="favicon.png" type="image/png" />
   <!-- Google tag (gtag.js) -->
@@ -2440,14 +2445,14 @@
 
   // Build new unified search/filter UI.
   var controlsWrap = document.createElement('div');
-  controlsWrap.className = 'clubs-filters-wrap';
+  controlsWrap.className = 'clubs-filters-wrap parts-controls-wrap';
   controlsWrap.style.margin = '0.25rem 0 1rem';
   controlsWrap.innerHTML =
     '<div class="clubs-filters-grid" style="grid-template-columns:2fr 1fr;">' +
-      '<div class="clubs-filter-group">' +
+      '<div class="clubs-filter-group parts-search-group">' +
         '<input id="parts-search" class="filter-search-input" type="search" placeholder="Shop for Parts and More" aria-label="Search parts" />' +
       '</div>' +
-      '<div class="clubs-filter-group">' +
+      '<div class="clubs-filter-group parts-tag-group">' +
         '<select id="parts-tag-select" class="filter-select" aria-label="Filter parts by tag">' +
           '<option value=\"all\">All tags</option>' +
         '</select>' +
