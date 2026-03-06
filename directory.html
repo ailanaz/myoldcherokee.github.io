@@ -67,6 +67,9 @@
     .tip-card p { font-family: 'Source Serif 4', serif; font-size: 0.9rem; color: var(--text-mid); line-height: 1.6; }
     .tip-card-meta { display: flex; align-items: center; gap: 0.75rem; margin-top: 0.25rem; }
     .tip-credit { font-size: 0.78rem; color: var(--text-lite); font-weight: 500; }
+    @media (max-width: 780px) {
+      .queue-grid-two { grid-template-columns: 1fr !important; }
+    }
     @media (max-width: 700px) {
       #shop-parts .parts-controls-wrap #parts-tag-pills { display: none !important; }
       #shop-parts .parts-controls-wrap .clubs-filters-grid { grid-template-columns: 1fr !important; }
@@ -2317,7 +2320,7 @@
         .replace(/\b\w/g, function(ch) { return ch.toUpperCase(); });
     }
 
-    var html = ['<div style="display:flex;flex-direction:column;gap:0.65rem;">'];
+    var html = ['<div class="queue-grid-two" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0.65rem;">'];
     rows.forEach(function(it) {
       var bid = String(it.business_id || '').trim();
       if (!bid) {
