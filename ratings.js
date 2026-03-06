@@ -27,8 +27,6 @@
 
   /* ── build the inner HTML for a .biz-rating-wrap ─────── */
   function buildInner(bid, data, allowRating) {
-    var rated = hasRated(bid);
-
     /* display line */
     var dispHtml = (data && data.rating_count > 0)
       ? '<span class="biz-rating-stars">\u2605 ' + data.avg_rating + '</span>' +
@@ -36,14 +34,14 @@
       : '<span class="biz-rating-none">No ratings yet</span>';
 
     /* action */
-    var actionHtml = '';
+    var rowHtml = dispHtml;
     if (allowRating) {
-      actionHtml = '\u00a0<button class="btn btn-outline btn-sm rating-open-btn" data-bid="' + bid + '" aria-expanded="false">Rate</button>';
-      if (rated) actionHtml += '\u00a0<span class="rating-already">· Rated \u2713</span>';
+      rowHtml = '<button class="btn btn-outline btn-sm rating-open-btn" data-bid="' + bid + '" aria-expanded="false">Rate</button>' +
+        '\u00a0' + dispHtml;
     }
 
-    /* star form (omitted if already rated) */
-    var formHtml = (!allowRating || rated) ? '' :
+    /* star form (directory only) */
+    var formHtml = !allowRating ? '' :
       '<div class="rating-form" aria-hidden="true">' +
         '<div class="star-picker" data-bid="' + bid + '" data-selected="0">' +
           [1, 2, 3, 4, 5].map(function (v) {
@@ -54,7 +52,7 @@
         '<span class="rating-confirm" style="display:none;">Thanks! \u2713</span>' +
       '</div>';
 
-    return '<div class="biz-rating-row">' + dispHtml + actionHtml + '</div>' + formHtml;
+    return '<div class="biz-rating-row">' + rowHtml + '</div>' + formHtml;
   }
 
   /* ── inject wrap into a card ─────────────────────────── */
@@ -112,9 +110,7 @@
       var row = wrap.querySelector('.biz-rating-row');
       if (!row) return;
       if (isDirectoryPage) {
-        row.innerHTML = dispHtml +
-          '\u00a0<button class="btn btn-outline btn-sm rating-open-btn" data-bid="' + bid + '" aria-expanded="false">Rate</button>' +
-          '\u00a0<span class="rating-already">· Rated \u2713</span>';
+        row.innerHTML = '<button class="btn btn-outline btn-sm rating-open-btn" data-bid="' + bid + '" aria-expanded="false">Rate</button>\u00a0' + dispHtml;
       } else {
         row.innerHTML = dispHtml;
       }

@@ -735,6 +735,47 @@ img { max-width: 100%; display: block; }
   border-radius: var(--radius-full);
 }
 
+/* Directory cards: top row rating, bottom row CTA buttons */
+.biz-actions--rate-left {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem;
+  align-items: center;
+}
+.biz-actions--rate-left .biz-rating-wrap {
+  grid-column: 1 / -1;
+  margin: 0 0 0.2rem;
+}
+.biz-actions--rate-left .biz-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: nowrap;
+}
+.biz-actions--rate-left .biz-rating-row .rating-open-btn {
+  height: 24px;
+  padding: 0 0.55rem;
+  font-size: 0.72rem;
+  line-height: 1;
+  border-radius: var(--radius-full);
+  min-width: 0;
+  width: auto;
+  flex: 0 0 auto;
+}
+.biz-actions--rate-left .biz-rating-stars,
+.biz-actions--rate-left .biz-rating-none,
+.biz-actions--rate-left .biz-rating-count {
+  font-size: 0.78rem;
+}
+.biz-actions--rate-left .biz-cta-btn {
+  width: 100%;
+  min-width: 0;
+  justify-content: center;
+  height: 34px;
+  padding: 0 0.75rem;
+  border-radius: var(--radius-full);
+}
+
 /* ── RESPONSIVE ADDITIONS ─────────────────────────────────────────────────── */
 @media (max-width: 1024px) {
   .pricing-grid { grid-template-columns: 1fr 1fr; }
