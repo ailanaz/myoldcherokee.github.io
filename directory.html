@@ -128,7 +128,7 @@
           <label for="live-type">Business Type</label>
           <select id="live-type" aria-label="Filter by type">
             <option value="all">All types</option>
-            <option value="featured">Featured</option>
+            <option value="featured">★ Featured Businesses</option>
           </select>
         </div>
         <div class="clubs-filter-group">
@@ -2050,7 +2050,7 @@
     while (typeSel.options.length > 1) typeSel.remove(1);
     var featuredOpt = document.createElement('option');
     featuredOpt.value = 'featured';
-    featuredOpt.textContent = 'Featured';
+    featuredOpt.textContent = '★ Featured Businesses';
     typeSel.appendChild(featuredOpt);
 
     Object.keys(states).sort().forEach(function(st) {
