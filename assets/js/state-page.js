@@ -25,6 +25,18 @@ function esc(s) {
     .replace(/'/g, '&#39;');
 }
 
+function isFeaturedEntry(it) {
+  if (!it) return false;
+  if (it.is_featured === true) return true;
+  if (String(it.type || '').toLowerCase().indexOf('featured') !== -1) return true;
+  if (Array.isArray(it.categories)) {
+    for (var i = 0; i < it.categories.length; i++) {
+      if (String(it.categories[i] || '').toLowerCase() === 'featured') return true;
+    }
+  }
+  return false;
+}
+
 function renderGroup(container, title, items) {
   var sortedItems = (items || []).slice().sort(function(a, b) {
     var an = String(a.name || a.title || '').toLowerCase();
@@ -62,6 +74,7 @@ function renderGroup(container, title, items) {
     var li = document.createElement('li');
     li.style.cssText = 'border:1px solid var(--line);border-radius:8px;padding:0.75rem 1rem;background:var(--off);';
     var isDirectoryCard = !!it.type;
+    var isFeaturedCard = isDirectoryCard && isFeaturedEntry(it);
 
     var name = esc(it.title || it.name || 'Listing');
     var city = it.city ? ' <span style="color:var(--text-mid);font-size:0.88rem;">\u2014 ' + esc(it.city) + ', ' + esc(it.state || '') + '</span>' : '';
@@ -96,7 +109,10 @@ function renderGroup(container, title, items) {
       ? '<p style="margin:0.35rem 0 0;font-size:0.87rem;color:var(--text-mid);line-height:1.5;">' + esc(it.summary) + '</p>'
       : '';
 
-    li.innerHTML = '<strong>' + name + '</strong>' + city + price + address + linkLine + phone + summary;
+    var star = isFeaturedCard
+      ? '<span class="featured-badge" style="width:1.8rem;height:1.8rem;justify-content:center;font-size:1rem;padding:0;border-radius:50%;letter-spacing:0;margin-right:0.35rem;vertical-align:middle;">★</span>'
+      : '';
+    li.innerHTML = star + '<strong>' + name + '</strong>' + city + price + address + linkLine + phone + summary;
     ul.appendChild(li);
   }
 

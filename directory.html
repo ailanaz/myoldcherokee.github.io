@@ -1938,11 +1938,11 @@
       var isFeatured = !!(id && featuredIds[id]);
 
       var bizType = card.querySelector('.biz-type');
-      if (isFeatured && bizType && !card.querySelector('.dir-featured-star')) {
+      if (isFeatured && bizType && !card.querySelector('.featured-badge')) {
         var star = document.createElement('span');
-        star.className = 'dir-featured-star';
-        star.textContent = '★ Featured';
-        star.style.cssText = 'display:inline-flex;align-items:center;justify-content:center;background:var(--red);color:#fff;border-radius:999px;padding:0.1rem 0.45rem;margin-right:0.35rem;font-size:0.68rem;font-weight:700;letter-spacing:0.02em;vertical-align:middle;';
+        star.className = 'featured-badge';
+        star.textContent = '★';
+        star.style.cssText = 'width:2rem;height:2rem;justify-content:center;font-size:1.15rem;padding:0;border-radius:50%;letter-spacing:0;margin-right:0.35rem;';
         bizType.parentNode.insertBefore(star, bizType);
       }
 
@@ -2196,10 +2196,13 @@
       card.className = 'biz-card';
       card.setAttribute('data-cats', ((it.categories || []).join(' ')).toLowerCase());
       if (bid) card.setAttribute('data-business-id', bid);
+      var starHtml = featuredRow
+        ? '<span class="featured-badge" style="width:2rem;height:2rem;justify-content:center;font-size:1.15rem;padding:0;border-radius:50%;letter-spacing:0;margin-right:0.35rem;">★</span>'
+        : '';
       card.innerHTML =
         '<div class="biz-logo-wrap"><div class="biz-logo">' + initials + '</div></div>' +
         '<div class="biz-body">' +
-          '<span class="biz-type ' + typeToneClass(typeLabel) + '">' + esc(typeLabel) + '</span>' +
+          '<div style="display:flex;align-items:center;gap:0.4rem;flex-wrap:wrap;">' + starHtml + '<span class="biz-type ' + typeToneClass(typeLabel) + '">' + esc(typeLabel) + '</span></div>' +
           '<div class="biz-name">' + esc(it.name || 'Business') + '</div>' +
           '<div class="biz-loc">' + (cityState || 'Location not set') + '</div>' +
           addr + phone + summary +
