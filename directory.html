@@ -2036,6 +2036,25 @@
     return String(type || '').replace(/\s*\(XJ\/Jeep-Friendly\)\s*/gi, '').trim();
   }
 
+  function typeToneClass(label) {
+    var t = String(label || '').toLowerCase();
+    if (!t) return 'type-specialty';
+    if (t.indexOf('repair') !== -1) return 'type-repair';
+    if (t.indexOf('parts') !== -1) return 'type-parts';
+    if (t.indexOf('salvage') !== -1 || t.indexOf('junk') !== -1) return 'type-salvage';
+    if (t.indexOf('fabrication') !== -1 || t.indexOf('welding') !== -1) return 'type-fabrication';
+    if (t.indexOf('electrical') !== -1 || t.indexOf('diagnostic') !== -1) return 'type-electrical';
+    if (t.indexOf('cooling') !== -1 || t.indexOf('radiator') !== -1) return 'type-cooling';
+    if (t.indexOf('body') !== -1 || t.indexOf('glass') !== -1 || t.indexOf('upholstery') !== -1) return 'type-body';
+    return 'type-specialty';
+  }
+
+  function colorizeTypePills() {
+    document.querySelectorAll('.biz-type, .featured-biz-type').forEach(function(el) {
+      el.classList.add(typeToneClass(el.textContent));
+    });
+  }
+
   function initFilters(rows) {
     var states = {};
     var types = {};
@@ -2125,10 +2144,11 @@
       card.className = 'biz-card';
       card.setAttribute('data-cats', ((it.categories || []).join(' ')).toLowerCase());
       if (bid) card.setAttribute('data-business-id', bid);
+      var typeLabel = cleanTypeLabel(it.type || 'Business');
       card.innerHTML =
         '<div class="biz-logo-wrap"><div class="biz-logo">' + initials + '</div></div>' +
         '<div class="biz-body">' +
-          '<span class="biz-type">' + esc(cleanTypeLabel(it.type || 'Business')) + '</span>' +
+          '<span class="biz-type ' + typeToneClass(typeLabel) + '">' + esc(typeLabel) + '</span>' +
           '<div class="biz-name">' + esc(it.name || 'Business') + '</div>' +
           '<div class="biz-loc">' + (cityState || 'Location not set') + '</div>' +
           addr +
@@ -2149,6 +2169,8 @@
   searchEl.addEventListener('input', applyFilters);
   stateSel.addEventListener('change', applyFilters);
   typeSel.addEventListener('change', applyFilters);
+
+  colorizeTypePills();
 
   fetch('assets/data/directory.json')
     .then(function(res) { if (!res.ok) throw new Error('load failed'); return res.json(); })
