@@ -553,6 +553,24 @@ img { max-width: 100%; display: block; }
 .featured-biz-tag:nth-child(4n+2) { background: #eaf4ee; border-color: #c7dfd0; color: #1f6b3a; }
 .featured-biz-tag:nth-child(4n+3) { background: #edf3fb; border-color: #cbdaef; color: #174a86; }
 .featured-biz-tag:nth-child(4n+4) { background: #f8f0e8; border-color: #ead2b9; color: #7a4413; }
+.featured-biz-tag.tag-xj { background: #f0eaff; border-color: #d6c5f3; color: #4c2c8f; }
+.featured-biz-tag.tag-general-repair { background: #eaf4ee; border-color: #c7dfd0; color: #1f6b3a; }
+.featured-biz-tag.tag-location { background: #edf3fb; border-color: #cbdaef; color: #174a86; }
+.featured-biz-tag.tag-custom-badges { background: #fff1e8; border-color: #f1d7c3; color: #8a4a16; }
+.featured-biz-tag.tag-decals { background: #fef3e7; border-color: #efd6b4; color: #86530f; }
+.featured-biz-tag.tag-club-support { background: #f6ecee; border-color: #e7c7cf; color: #7f1732; }
+.featured-biz-tag.tag-specialty { background: #eef0f3; border-color: #d5dbe2; color: #3f4f63; }
+
+/* Parts/category pill colors (directory parts cards) */
+.parts-card .parts-tag.parts-engine { background: #f0eaff; border-color: #d6c5f3; color: #4c2c8f; }
+.parts-card .parts-tag.parts-cooling { background: #edf3fb; border-color: #cbdaef; color: #174a86; }
+.parts-card .parts-tag.parts-suspension { background: #e8f9ef; border-color: #cbe8d6; color: #1f6b3a; }
+.parts-card .parts-tag.parts-drivetrain { background: #e8f4ff; border-color: #c8def5; color: #1f4f84; }
+.parts-card .parts-tag.parts-electrical { background: #fff7e8; border-color: #efdcb8; color: #8a6116; }
+.parts-card .parts-tag.parts-body { background: #fff1e8; border-color: #f1d7c3; color: #8a4a16; }
+.parts-card .parts-tag.parts-reference { background: #f0f4f7; border-color: #d5dfe7; color: #43596f; }
+.parts-card .parts-tag.parts-accessories { background: #f8f0e8; border-color: #ead2b9; color: #7a4413; }
+.parts-card .parts-tag.parts-default { background: #f3f4f6; border-color: #d7dbe0; color: #4b5a6a; }
 
 /* Featured category pill colors by type */
 .featured-biz-card[data-cat="repair"] .featured-biz-type { background: #f6ecee; border: 1px solid #e7c7cf; color: #7f1732; }
