@@ -2295,6 +2295,7 @@
         bid = 'review-' + String(it.name || 'business').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
       }
       var loc = [it.city || '', it.state || ''].filter(Boolean).join(', ');
+      var addr = String(it.address || '').trim();
       html.push(
         '<div class="biz-card" data-business-id="' + esc(bid) + '" style="padding:0.55rem 0.75rem;">' +
           '<div class="biz-body" style="padding:0;">' +
@@ -2303,6 +2304,7 @@
               '<div class="biz-actions" style="margin:0;display:flex;gap:0.4rem;align-items:center;">' + candidateRatingHtml(bid) + '</div>' +
             '</div>' +
             '<div class="biz-loc" style="margin-top:0.15rem;">' + esc(loc || 'Location not set') + '</div>' +
+            (addr ? '<div class="biz-loc" style="margin-top:0.15rem;">&#128205; ' + esc(addr) + '</div>' : '') +
           '</div>' +
         '</div>'
       );
