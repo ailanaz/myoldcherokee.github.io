@@ -77,6 +77,11 @@
     wrap.innerHTML = buildInner(bid, data, allowRating);
     if (actions && actions.classList && actions.classList.contains('biz-actions') && isDirectoryPage) {
       actions.classList.add('biz-actions--rate-left');
+      actions.style.display = 'grid';
+      actions.style.gridTemplateColumns = 'repeat(2, minmax(0, 1fr))';
+      actions.style.gap = '0.45rem';
+      actions.style.alignItems = 'center';
+      actions.style.flexWrap = 'unset';
       actions.insertBefore(wrap, actions.firstChild);
       Array.prototype.slice.call(actions.querySelectorAll('a.btn, button.btn, span.btn')).forEach(function(btn) {
         if (!btn.closest('.biz-rating-wrap')) btn.classList.add('biz-cta-btn');
