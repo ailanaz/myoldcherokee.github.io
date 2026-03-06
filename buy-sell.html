@@ -86,7 +86,8 @@
   <div class="container clubs-style-sticky-inner">
     <div class="clubs-style-field-wrap">
       <select class="filter-select" onchange="filterDropdown('cherokees-grid')" aria-label="Filter listings">
-        <option value="all">XJS</option>
+        <option value="all">What are you looking for</option>
+      <option value="xjs">XJs</option>
       <option value="parts">Parts</option>
       </select>
     </div>
@@ -434,6 +435,13 @@
         partsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
       return;
+    }
+    if (gridId === 'cherokees-grid' && catVal === 'xjs') {
+      var ridesSection = document.getElementById('vehicles');
+      if (ridesSection && typeof ridesSection.scrollIntoView === 'function') {
+        ridesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      catVal = 'all';
     }
 
     document.querySelectorAll('#' + gridId + ' .listing-card').forEach(function(card) {
