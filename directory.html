@@ -2288,6 +2288,16 @@
       );
     }
 
+    function niceTagLabel(tag) {
+      var t = String(tag || '').trim();
+      if (!t) return '';
+      return t
+        .replace(/[-_]+/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .replace(/\b\w/g, function(ch) { return ch.toUpperCase(); });
+    }
+
     var html = ['<div style="display:flex;flex-direction:column;gap:0.65rem;">'];
     rows.forEach(function(it) {
       var bid = String(it.business_id || '').trim();
@@ -2296,6 +2306,14 @@
       }
       var loc = [it.city || '', it.state || ''].filter(Boolean).join(', ');
       var addr = String(it.address || '').trim();
+      var tags = Array.isArray(it.categories) ? it.categories.slice(0, 4) : [];
+      var tagsHtml = tags.length
+        ? '<div class="featured-biz-tags" style="margin-top:0.3rem;">' +
+            tags.map(function(tag) {
+              return '<span class="featured-biz-tag">' + esc(niceTagLabel(tag)) + '</span>';
+            }).join('') +
+          '</div>'
+        : '';
       html.push(
         '<div class="biz-card" data-business-id="' + esc(bid) + '" style="padding:0.55rem 0.75rem;">' +
           '<div class="biz-body" style="padding:0;">' +
@@ -2305,6 +2323,7 @@
             '</div>' +
             '<div class="biz-loc" style="margin-top:0.15rem;">' + esc(loc || 'Location not set') + '</div>' +
             (addr ? '<div class="biz-loc" style="margin-top:0.15rem;">&#128205; ' + esc(addr) + '</div>' : '') +
+            tagsHtml +
           '</div>' +
         '</div>'
       );
