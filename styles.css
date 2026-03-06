@@ -432,8 +432,8 @@ img { max-width: 100%; display: block; }
     margin-left: 0;
     justify-content: center;
   }
-  .topbar-links a { padding: 0.12rem 0.3rem; font-size: 0.66rem; line-height: 1.1; }
-  .nav-more-btn { padding: 0.1rem 0.34rem; font-size: 0.66rem; line-height: 1.1; border-width: 1px; }
+  .topbar-links a { padding: 0.14rem 0.36rem; font-size: 0.74rem; line-height: 1.12; }
+  .nav-more-btn { padding: 0.12rem 0.4rem; font-size: 0.74rem; line-height: 1.12; border-width: 1px; }
 
   /* On mobile: hide Guides from the top tab bar (it lives in the More menu instead) */
   .topbar-links > a[href*="guides.html"] { display: none !important; }

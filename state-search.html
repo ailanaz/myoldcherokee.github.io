@@ -30,6 +30,9 @@
     @media (max-width: 600px) {
       .map-container { display: none; }
       .live-state-list { display: block; }
+      .live-state-list .btn.btn-sm { font-size: 0.9rem !important; }
+      .live-state-list ul li:nth-child(odd) > a.btn { background: var(--red) !important; color: #fff !important; border-color: var(--red) !important; }
+      .live-state-list ul li:nth-child(even) > a.btn { background: transparent !important; color: var(--red) !important; border-color: var(--red) !important; }
     }
     .page-hero {
       padding-top: 2.5%;
