@@ -2068,6 +2068,7 @@
       var webBtn = it.website ? '<a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel(it.website) + '</a>' : '';
       var mapBtn = '<a href="' + esc(map) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>';
       var bid = it.business_id ? esc(it.business_id) : '';
+      var summary = it.summary ? '<p class="biz-desc">' + esc(it.summary) + '</p>' : '';
 
       var card = document.createElement('div');
       card.className = 'biz-card';
@@ -2081,6 +2082,7 @@
           '<div class="biz-loc">' + (cityState || 'Location not set') + '</div>' +
           addr +
           phone +
+          summary +
           '<div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">' + webBtn + mapBtn + '</div>' +
         '</div>';
       grid.appendChild(card);
