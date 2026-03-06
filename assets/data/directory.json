@@ -104347,5 +104347,44 @@
     "state": "WA",
     "city": "Olympia",
     "summary": "XJ and ZJ specialist salvage. Good rust-free inventory due to dry storage. Call before visiting."
+  },
+  {
+    "business_id": "banker-automotive-tx",
+    "name": "Banker Automotive Inc.",
+    "type": "Repair Shops",
+    "city": "Manchaca",
+    "state": "TX",
+    "address": "10404 Slaughter Creek Dr, Austin, TX 78748",
+    "phone": "(512) 280-0877",
+    "website": "https://www.facebook.com/profile.php?id=100064968071056",
+    "google_maps_link": "https://www.google.com/maps/search/Banker+Automotive,+10404+Slaughter+Creek+Dr,+Austin,+TX+78748",
+    "categories": [
+      "featured",
+      "repair",
+      "xj",
+      "general-repair"
+    ],
+    "source": "manual",
+    "is_active": true
+  },
+  {
+    "business_id": "pidplates-ca",
+    "name": "PIDPLATES",
+    "type": "Specialty Services",
+    "city": "Redondo Beach",
+    "state": "CA",
+    "address": "Redondo Beach, CA",
+    "phone": "",
+    "website": "https://www.pidplates.us/pidplates-logo/",
+    "google_maps_link": "https://www.google.com/maps/search/PIDPLATES+Redondo+Beach+CA",
+    "categories": [
+      "featured",
+      "specialty",
+      "custom-badges",
+      "decals",
+      "club-support"
+    ],
+    "source": "manual",
+    "is_active": true
   }
 ]

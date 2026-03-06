@@ -1915,6 +1915,10 @@
       var id = (el.getAttribute('data-business-id') || '').trim();
       if (id) ids[id] = true;
     });
+    var external = window.__featuredIdsExternal || {};
+    Object.keys(external).forEach(function(id) {
+      if (id) ids[id] = true;
+    });
     return ids;
   }
 
@@ -2018,6 +2022,37 @@
   var pageSize = 36;
   var shown = pageSize;
 
+  function isMarkedFeatured(it) {
+    var t = String(it && it.type || '').toLowerCase();
+    if (t.indexOf('featured') !== -1) return true;
+    if (it && it.is_featured === true) return true;
+    if (Array.isArray(it && it.categories)) {
+      var cats = it.categories.map(function(c) { return String(c || '').toLowerCase(); });
+      if (cats.indexOf('featured') !== -1) return true;
+    }
+    return false;
+  }
+
+  function loadFeaturedIdsFromFeaturedPage() {
+    return fetch('featured.html?v=ids')
+      .then(function(res) { if (!res.ok) throw new Error('featured load failed'); return res.text(); })
+      .then(function(html) {
+        var ids = {};
+        var re = /data-business-id=\"([^\"]+)\"/g;
+        var m;
+        while ((m = re.exec(html)) !== null) {
+          var id = String(m[1] || '').trim();
+          if (id) ids[id] = true;
+        }
+        window.__featuredIdsExternal = ids;
+        return ids;
+      })
+      .catch(function() {
+        window.__featuredIdsExternal = window.__featuredIdsExternal || {};
+        return window.__featuredIdsExternal;
+      });
+  }
+
   function mapUrl(it) {
     if (it.google_maps_link) return it.google_maps_link;
     var q = [it.name || '', it.address || '', it.city || '', it.state || ''].join(' ').trim();
@@ -2102,7 +2137,9 @@
       if (isChainFranchiseName(it.name || '')) return false;
       if (state !== 'all' && (it.state || '').toUpperCase() !== state) return false;
       if (type === 'featured') {
-        if (!featuredIds[String(it.business_id || '').trim()]) return false;
+        var bid = String(it.business_id || '').trim();
+        var byId = !!(bid && featuredIds[bid]);
+        if (!byId && !isMarkedFeatured(it)) return false;
       } else if (type !== 'all' && (it.type || '') !== type) {
         return false;
       }
@@ -2172,9 +2209,12 @@
 
   colorizeTypePills();
 
-  fetch('assets/data/directory.json')
-    .then(function(res) { if (!res.ok) throw new Error('load failed'); return res.json(); })
-    .then(function(rows) {
+  Promise.all([
+    fetch('assets/data/directory.json').then(function(res) { if (!res.ok) throw new Error('load failed'); return res.json(); }),
+    loadFeaturedIdsFromFeaturedPage()
+  ])
+    .then(function(payload) {
+      var rows = payload[0];
       allRows = Array.isArray(rows) ? rows : [];
       allRows.sort(function(a, b) {
         return String(a.name || '').localeCompare(String(b.name || ''), 'en', { sensitivity: 'base' });
