@@ -30,6 +30,13 @@
     .guides-filter-inner::-webkit-scrollbar { display: none; }
     .cat-section.hidden { display: none; }
     .card-tag { display:inline-block; font-family:'DM Sans',sans-serif; font-size:0.68rem; font-weight:600; letter-spacing:0.07em; text-transform:uppercase; color:var(--text-mid); background:var(--off); border:1px solid var(--line-mid); border-radius:4px; padding:0.15rem 0.5rem; margin-bottom:0.45rem; }
+    .card-tag.tag-start { background:#f0eaff; border-color:#d6c5f3; color:#4c2c8f; }
+    .card-tag.tag-overheat { background:#ffeceb; border-color:#efc8c6; color:#8a231f; }
+    .card-tag.tag-electrical { background:#fff7e8; border-color:#efdcb8; color:#8a6116; }
+    .card-tag.tag-suspension { background:#e8f9ef; border-color:#cbe8d6; color:#1f6b3a; }
+    .card-tag.tag-4wd { background:#e8f4ff; border-color:#c8def5; color:#1f4f84; }
+    .card-tag.tag-engine { background:#efe8ff; border-color:#d9c9ff; color:#4c2c8f; }
+    .card-tag.tag-default { background:#f3f4f6; border-color:#d7dbe0; color:#4b5a6a; }
   </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-E34BYWMN94"></script>
@@ -293,9 +300,21 @@
     return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
   }
 
+  function tagToneClass(tag) {
+    var t = String(tag || '').toLowerCase();
+    if (!t) return 'tag-default';
+    if (t.indexOf('start') !== -1 || t.indexOf('baseline') !== -1 || t.indexOf('common') !== -1) return 'tag-start';
+    if (t.indexOf('overheat') !== -1 || t.indexOf('cooling') !== -1 || t.indexOf('temp') !== -1) return 'tag-overheat';
+    if (t.indexOf('electrical') !== -1 || t.indexOf('battery') !== -1 || t.indexOf('fuse') !== -1 || t.indexOf('ground') !== -1) return 'tag-electrical';
+    if (t.indexOf('suspension') !== -1 || t.indexOf('steering') !== -1 || t.indexOf('wobble') !== -1 || t.indexOf('alignment') !== -1) return 'tag-suspension';
+    if (t.indexOf('4wd') !== -1 || t.indexOf('transfer') !== -1 || t.indexOf('np231') !== -1 || t.indexOf('np242') !== -1) return 'tag-4wd';
+    if (t.indexOf('engine') !== -1 || t.indexOf('idle') !== -1 || t.indexOf('start') !== -1 || t.indexOf('fuel') !== -1) return 'tag-engine';
+    return 'tag-default';
+  }
+
   function cardHtml(g) {
     var cfg = CAT_CONFIG[g.category] || { cls: '' };
-    var tagHtml = g.tag ? '<span class="card-tag">' + esc(g.tag) + '</span>' : '';
+    var tagHtml = g.tag ? '<span class="card-tag ' + tagToneClass(g.tag) + '">' + esc(g.tag) + '</span>' : '';
     return '<a href="guides/' + g.slug + '.html" class="article-card">'
       + '<div class="article-thumb ' + (cfg.cls || '') + '">'
       + '</div>'

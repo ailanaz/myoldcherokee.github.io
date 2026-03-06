@@ -2170,6 +2170,27 @@
     });
 })();
 </script>
+<script>
+(function() {
+  function tagTone(label) {
+    var t = String(label || '').toLowerCase().trim();
+    if (!t) return 'parts-default';
+    if (t.indexOf('engine') !== -1) return 'parts-engine';
+    if (t.indexOf('cooling') !== -1 || t.indexOf('radiator') !== -1) return 'parts-cooling';
+    if (t.indexOf('suspension') !== -1 || t.indexOf('steering') !== -1 || t.indexOf('lift') !== -1) return 'parts-suspension';
+    if (t.indexOf('drivetrain') !== -1 || t.indexOf('axle') !== -1 || t.indexOf('transfer') !== -1) return 'parts-drivetrain';
+    if (t.indexOf('electrical') !== -1 || t.indexOf('wiring') !== -1 || t.indexOf('lighting') !== -1) return 'parts-electrical';
+    if (t.indexOf('armor') !== -1 || t.indexOf('bumper') !== -1 || t.indexOf('skid') !== -1 || t.indexOf('slider') !== -1 || t.indexOf('exterior') !== -1 || t.indexOf('interior') !== -1) return 'parts-body';
+    if (t.indexOf('reference') !== -1 || t.indexOf('manual') !== -1) return 'parts-reference';
+    if (t.indexOf('accessories') !== -1 || t.indexOf('gear') !== -1) return 'parts-accessories';
+    return 'parts-default';
+  }
+
+  document.querySelectorAll('.parts-card .parts-tag').forEach(function(el) {
+    el.classList.add(tagTone(el.textContent));
+  });
+})();
+</script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <script src="ratings.js"></script>
 </body>
