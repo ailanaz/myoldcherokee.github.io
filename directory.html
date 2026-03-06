@@ -129,6 +129,39 @@
 
 <div class="container">
 
+  <!-- Live directory filters (restored) -->
+  <div class="clubs-filters-wrap" style="margin:1rem 0 1.1rem;">
+    <div class="clubs-filters-grid" style="grid-template-columns:2fr 1fr 1fr;">
+      <div class="clubs-filter-group">
+        <label for="live-type">Business Type</label>
+        <select id="live-type" aria-label="Filter by type">
+          <option value="all">All types</option>
+          <option value="featured">★ Featured</option>
+        </select>
+      </div>
+      <div class="clubs-filter-group">
+        <label for="live-state">State</label>
+        <select id="live-state" aria-label="Filter by state">
+          <option value="all">All states</option>
+        </select>
+      </div>
+      <div class="clubs-filter-group">
+        <label for="live-search">Search</label>
+        <input id="live-search" type="search" placeholder="Search name, city, state, tags..." />
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;align-items:center;justify-content:space-between;gap:0.8rem;flex-wrap:wrap;margin:0 0 1rem;">
+    <h2 class="home-section-title" style="margin:0;">Businesses</h2>
+    <div id="live-count" style="font-size:0.88rem;color:var(--text-mid);"></div>
+  </div>
+  <div class="grid g3" id="live-grid"></div>
+  <div style="margin-top:1rem;">
+    <button id="live-more" class="btn btn-outline btn-sm" type="button" style="display:none;">Load More</button>
+  </div>
+
+  <div id="legacy-directory-sections" style="display:none;">
   <!-- =============================== -->
   <!-- REPAIR SHOPS                    -->
   <!-- =============================== -->
@@ -1776,6 +1809,8 @@
 
   </section>
 
+  </div><!-- end #legacy-directory-sections -->
+
 </div><!-- end .container -->
 
 <footer class="site-footer">
@@ -1836,11 +1871,7 @@
 
   function hideChainCardsInDirectoryPage() {
     document.querySelectorAll('.biz-card').forEach(function(card) {
-      var nameEl = card.querySelector('.biz-name');
-      var name = nameEl ? nameEl.textContent : '';
-      if (isChainFranchiseName(name)) {
-        card.style.display = 'none';
-      }
+      card.style.display = '';
     });
   }
   hideChainCardsInDirectoryPage();
@@ -1949,10 +1980,6 @@
     grid.querySelectorAll('[data-cats]').forEach(function(card) {
       var matchCat = (cat === 'all') || ((card.getAttribute('data-cats') || '').split(' ').indexOf(cat) !== -1);
       var matchSearch = !query || card.textContent.toLowerCase().indexOf(query) !== -1;
-      if (isChainFranchiseName((card.querySelector('.biz-name') || {}).textContent || '')) {
-        card.style.display = 'none';
-        return;
-      }
       card.style.display = (matchCat && matchSearch) ? '' : 'none';
     });
   }
@@ -1971,6 +1998,251 @@
       }
     });
   }
+</script>
+
+<script>
+(function() {
+  function esc(s) {
+    return String(s || '')
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  var grid = document.getElementById('live-grid');
+  var stateSel = document.getElementById('live-state');
+  var typeSel = document.getElementById('live-type');
+  var searchEl = document.getElementById('live-search');
+  var countEl = document.getElementById('live-count');
+  var moreBtn = document.getElementById('live-more');
+  if (!grid || !stateSel || !typeSel || !searchEl || !countEl || !moreBtn) return;
+
+  var allRows = [];
+  var filteredRows = [];
+  var pageSize = 36;
+  var shown = pageSize;
+
+  function mapUrl(it) {
+    if (it.google_maps_link) return it.google_maps_link;
+    var q = [it.name || '', it.address || '', it.city || '', it.state || ''].join(' ').trim();
+    return 'https://www.google.com/maps/search/' + encodeURIComponent(q);
+  }
+
+  function websiteLabel(url) {
+    var u = String(url || '').toLowerCase();
+    if (!u) return 'Website';
+    if (u.indexOf('facebook.com') !== -1) return 'Facebook';
+    if (u.indexOf('instagram.com') !== -1) return 'Instagram';
+    if (u.indexOf('discord.com') !== -1 || u.indexOf('discord.gg') !== -1) return 'Discord';
+    if (u.indexOf('yelp.com') !== -1) return 'Yelp';
+    if (u.indexOf('google.com/maps') !== -1 || u.indexOf('maps.app.goo.gl') !== -1) return 'Google';
+    return 'Website';
+  }
+
+  function cleanTypeLabel(type) {
+    return String(type || '').replace(/\s*\(XJ\/Jeep-Friendly\)\s*/gi, '').trim();
+  }
+
+  function typeToneClass(label) {
+    var t = String(label || '').toLowerCase();
+    if (!t) return 'type-specialty';
+    if (t.indexOf('repair') !== -1) return 'type-repair';
+    if (t.indexOf('parts') !== -1) return 'type-parts';
+    if (t.indexOf('salvage') !== -1 || t.indexOf('junk') !== -1) return 'type-salvage';
+    if (t.indexOf('fabrication') !== -1 || t.indexOf('welding') !== -1) return 'type-fabrication';
+    if (t.indexOf('electrical') !== -1 || t.indexOf('diagnostic') !== -1) return 'type-electrical';
+    if (t.indexOf('cooling') !== -1 || t.indexOf('radiator') !== -1) return 'type-cooling';
+    if (t.indexOf('body') !== -1 || t.indexOf('glass') !== -1 || t.indexOf('upholstery') !== -1) return 'type-body';
+    return 'type-specialty';
+  }
+
+  function isMarkedFeatured(it) {
+    var t = String(it && it.type || '').toLowerCase();
+    if (t.indexOf('featured') !== -1) return true;
+    if (it && it.is_featured === true) return true;
+    if (Array.isArray(it && it.categories)) {
+      var cats = it.categories.map(function(c) { return String(c || '').toLowerCase(); });
+      if (cats.indexOf('featured') !== -1) return true;
+    }
+    return false;
+  }
+
+  function loadFeaturedIdsFromFeaturedPage() {
+    return fetch('featured.html?v=ids')
+      .then(function(res) { if (!res.ok) throw new Error('featured load failed'); return res.text(); })
+      .then(function(html) {
+        var ids = {};
+        var re = /data-business-id=\"([^\"]+)\"/g;
+        var m;
+        while ((m = re.exec(html)) !== null) {
+          var id = String(m[1] || '').trim();
+          if (id) ids[id] = true;
+        }
+        window.__featuredIdsExternal = ids;
+        return ids;
+      })
+      .catch(function() {
+        window.__featuredIdsExternal = window.__featuredIdsExternal || {};
+        return window.__featuredIdsExternal;
+      });
+  }
+
+  function initFilters(rows) {
+    var states = {};
+    var types = {};
+    rows.forEach(function(r) {
+      var st = (r.state || '').toUpperCase();
+      var tp = (r.type || '').trim();
+      if (st) states[st] = true;
+      if (tp) types[tp] = true;
+    });
+
+    while (typeSel.options.length > 1) typeSel.remove(1);
+    var featuredOpt = document.createElement('option');
+    featuredOpt.value = 'featured';
+    featuredOpt.textContent = '★ Featured';
+    typeSel.appendChild(featuredOpt);
+
+    while (stateSel.options.length > 1) stateSel.remove(1);
+    Object.keys(states).sort().forEach(function(st) {
+      var o = document.createElement('option');
+      o.value = st;
+      o.textContent = st;
+      stateSel.appendChild(o);
+    });
+
+    var seenTypeLabels = {};
+    Object.keys(types).sort().forEach(function(tp) {
+      if (String(tp || '').toLowerCase() === 'featured') return;
+      var label = cleanTypeLabel(tp);
+      var key = label.toLowerCase();
+      if (!label || seenTypeLabels[key]) return;
+      seenTypeLabels[key] = true;
+      var o = document.createElement('option');
+      o.value = tp;
+      o.textContent = label;
+      typeSel.appendChild(o);
+    });
+  }
+
+  function applyFilters() {
+    var state = stateSel.value || 'all';
+    var type = typeSel.value || 'all';
+    var q = (searchEl.value || '').toLowerCase().trim();
+    var featuredIds = featuredBusinessIds();
+    if (type === 'featured') state = 'all';
+
+    filteredRows = allRows.filter(function(it) {
+      if (state !== 'all' && (it.state || '').toUpperCase() !== state) return false;
+      if (type === 'featured') {
+        var bid = String(it.business_id || '').trim();
+        var byId = !!(bid && featuredIds[bid]);
+        if (!byId && !isMarkedFeatured(it)) return false;
+      } else if (type !== 'all' && (it.type || '') !== type) {
+        return false;
+      }
+      if (!q) return true;
+      var tags = Array.isArray(it.categories) ? it.categories.join(' ') : '';
+      var hay = [it.name || '', it.city || '', it.state || '', it.type || '', tags].join(' ').toLowerCase();
+      return hay.indexOf(q) !== -1;
+    });
+
+    filteredRows.sort(function(a, b) {
+      return String(a.name || '').localeCompare(String(b.name || ''), 'en', { sensitivity: 'base' });
+    });
+    shown = pageSize;
+    render();
+  }
+
+  function render() {
+    var rows = filteredRows.slice(0, shown);
+    grid.innerHTML = '';
+    if (!filteredRows.length) {
+      grid.innerHTML = '<p style="color:var(--text-mid);padding:0.75rem 0;">No businesses match these filters.</p>';
+      countEl.textContent = '0 results';
+      moreBtn.style.display = 'none';
+      return;
+    }
+
+    var featuredIds = featuredBusinessIds();
+    rows.forEach(function(it) {
+      var initials = (it.name || 'B').split(/\s+/).map(function(w) { return w.charAt(0); }).slice(0, 2).join('').toUpperCase();
+      var cityState = (it.city && it.state) ? esc(it.city) + ', ' + esc(it.state) : esc(it.state || '');
+      var addr = it.address ? '<div class="biz-loc" style="margin-top:0.15rem;">&#128205; ' + esc(it.address) + '</div>' : '';
+      var phone = it.phone ? '<div class="biz-loc" style="margin-top:0.15rem;">&#128222; ' + esc(it.phone) + '</div>' : '';
+      var map = mapUrl(it);
+      var bid = it.business_id ? esc(it.business_id) : '';
+      var featuredRow = !!((bid && featuredIds[bid]) || isMarkedFeatured(it));
+      var summaryText = String(it.summary || it.jeep_friendly_blurb || '').trim();
+      var summary = (featuredRow && summaryText)
+        ? '<p class="biz-desc" style="margin-top:0.3rem;">' + esc(summaryText) + '</p>'
+        : '';
+      var actionsHtml;
+      if (featuredRow) {
+        var links = [];
+        if (it.website) links.push('<a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel(it.website) + '</a>');
+        if (map) links.push('<a href="' + esc(map) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>');
+        actionsHtml = links.join('');
+      } else {
+        actionsHtml = it.website
+          ? '<a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel(it.website) + '</a>'
+          : '<a href="' + esc(map) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>';
+      }
+      var typeLabel = cleanTypeLabel(it.type || 'Business');
+
+      var card = document.createElement('div');
+      card.className = 'biz-card';
+      card.setAttribute('data-cats', ((it.categories || []).join(' ')).toLowerCase());
+      if (bid) card.setAttribute('data-business-id', bid);
+      card.innerHTML =
+        '<div class="biz-logo-wrap"><div class="biz-logo">' + initials + '</div></div>' +
+        '<div class="biz-body">' +
+          '<span class="biz-type ' + typeToneClass(typeLabel) + '">' + esc(typeLabel) + '</span>' +
+          '<div class="biz-name">' + esc(it.name || 'Business') + '</div>' +
+          '<div class="biz-loc">' + (cityState || 'Location not set') + '</div>' +
+          addr + phone + summary +
+          '<div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">' + actionsHtml + '</div>' +
+        '</div>';
+      grid.appendChild(card);
+    });
+
+    countEl.textContent = filteredRows.length.toLocaleString() + ' results';
+    moreBtn.style.display = filteredRows.length > shown ? '' : 'none';
+  }
+
+  moreBtn.addEventListener('click', function() {
+    shown += pageSize;
+    render();
+  });
+  searchEl.addEventListener('input', applyFilters);
+  stateSel.addEventListener('change', applyFilters);
+  typeSel.addEventListener('change', function() {
+    if ((typeSel.value || '') === 'featured' && stateSel.value !== 'all') stateSel.value = 'all';
+    applyFilters();
+  });
+
+  Promise.all([
+    fetch('assets/data/directory.json').then(function(res) { if (!res.ok) throw new Error('load failed'); return res.json(); }),
+    loadFeaturedIdsFromFeaturedPage()
+  ])
+    .then(function(payload) {
+      var rows = payload[0];
+      allRows = Array.isArray(rows) ? rows : [];
+      allRows.sort(function(a, b) {
+        return String(a.name || '').localeCompare(String(b.name || ''), 'en', { sensitivity: 'base' });
+      });
+      initFilters(allRows);
+      filteredRows = allRows.slice();
+      render();
+    })
+    .catch(function() {
+      grid.innerHTML = '<p style="color:var(--text-mid);padding:1rem 0;">Directory data could not load. Please refresh the page.</p>';
+      countEl.textContent = '';
+      moreBtn.style.display = 'none';
+    });
+})();
 </script>
 
 <script>
