@@ -258,23 +258,19 @@
   (function() {
     var grid = document.getElementById('featured-grid');
     var empty = document.getElementById('featured-empty');
-    var searchInput = document.getElementById('featured-search');
     if (!grid) return;
 
     function applyFilters() {
-      var q = (searchInput && searchInput.value ? searchInput.value : '').toLowerCase().trim();
       var cards = grid.querySelectorAll('.featured-biz-card[data-cat]');
       var visible = 0;
       cards.forEach(function(card) {
-        var hay = (card.getAttribute('data-name') || card.textContent || '').toLowerCase();
-        var show = !q || hay.indexOf(q) !== -1;
+        var show = true;
         card.style.display = show ? '' : 'none';
         if (show) visible++;
       });
       if (empty) empty.style.display = (visible === 0) ? '' : 'none';
     }
 
-    if (searchInput) searchInput.addEventListener('input', applyFilters);
     window.applyFeaturedFilter = applyFilters;
     applyFilters();
   })();
