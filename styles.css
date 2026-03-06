@@ -678,6 +678,43 @@ img { max-width: 100%; display: block; }
 .rating-form .rating-submit-btn { padding: 0.2rem 0.7rem; height: 28px; font-size: 0.75rem; }
 .rating-confirm { font-size: 0.8rem; color: var(--green); font-weight: 600; }
 
+/* State featured cards: top row rating, second row CTA buttons */
+.state-feat-actions--rate-left {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem;
+  align-items: center;
+}
+.state-feat-actions--rate-left .biz-rating-wrap {
+  grid-column: 1 / -1;
+  margin: 0 0 0.15rem;
+}
+.state-feat-actions--rate-left .biz-rating-row {
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.4rem;
+}
+.state-feat-actions--rate-left .biz-rating-none,
+.state-feat-actions--rate-left .biz-rating-stars,
+.state-feat-actions--rate-left .biz-rating-count {
+  font-size: 0.74rem;
+}
+.state-feat-actions--rate-left .rating-open-btn {
+  height: 32px;
+  padding: 0 0.95rem;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+.state-feat-actions--rate-left .biz-cta-btn {
+  width: 100%;
+  min-width: 0;
+  justify-content: center;
+  height: 34px;
+  padding: 0 0.8rem;
+  border-radius: var(--radius-full);
+}
+
 /* ── RESPONSIVE ADDITIONS ─────────────────────────────────────────────────── */
 @media (max-width: 1024px) {
   .pricing-grid { grid-template-columns: 1fr 1fr; }
