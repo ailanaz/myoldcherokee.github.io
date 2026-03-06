@@ -2256,7 +2256,7 @@
       render();
     })
     .catch(function() {
-      grid.innerHTML = '<p style="color:var(--text-mid);padding:1rem 0;">Directory data could not load. Please refresh the page.</p>';
+      grid.innerHTML = '';
       countEl.textContent = '';
       moreBtn.style.display = 'none';
     });
