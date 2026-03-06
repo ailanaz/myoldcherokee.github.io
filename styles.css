@@ -700,10 +700,10 @@ img { max-width: 100%; display: block; }
   font-size: 0.74rem;
 }
 .state-feat-actions--rate-left .rating-open-btn {
-  height: 32px;
-  padding: 0 0.95rem;
+  height: 28px;
+  padding: 0 0.72rem;
   border-radius: var(--radius-full);
-  font-size: 0.82rem;
+  font-size: 0.76rem;
   font-weight: 700;
 }
 .state-feat-actions--rate-left .biz-cta-btn {
