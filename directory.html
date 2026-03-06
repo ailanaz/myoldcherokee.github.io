@@ -167,7 +167,7 @@
       <div class="home-section-head" style="margin-bottom:0.6rem;">
         <div>
           <h2 class="home-section-title" style="margin:0;">Community Review Queue</h2>
-          <p class="home-section-desc" style="margin-top:0.35rem;">Do these belong in the directory? Please let us knwo wht you think by rating the one's you know.</p>
+          <p class="home-section-desc" style="margin-top:0.35rem;">Do these belong in the directory? Please let us know, by rating the one's you know.</p>
         </div>
       </div>
       <div id="candidate-review-list" class="card" style="padding:0.75rem 1rem;"></div>
@@ -2258,7 +2258,8 @@
     var rows = (Array.isArray(archiveRows) ? archiveRows : []).filter(function(it) {
       var bid = String(it.business_id || '').trim();
       var name = String(it.name || '').toLowerCase().trim();
-      if (bid === 'banker-automotive-tx' || name === 'banker automotive inc.' || name === 'banker automotive inc') return false;
+      if (bid === 'banker-automotive-tx') return false;
+      if (name.indexOf('banker automotive') !== -1) return false;
       return !bid || !currentIds[bid];
     });
 
