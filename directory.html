@@ -2062,6 +2062,9 @@
   function websiteLabel(url) {
     var u = String(url || '').toLowerCase();
     if (!u) return 'Website';
+    if (u.indexOf('facebook.com') !== -1) return 'Facebook';
+    if (u.indexOf('instagram.com') !== -1) return 'Instagram';
+    if (u.indexOf('discord.com') !== -1 || u.indexOf('discord.gg') !== -1) return 'Discord';
     if (u.indexOf('yelp.com') !== -1) return 'Yelp';
     if (u.indexOf('google.com/maps') !== -1 || u.indexOf('maps.app.goo.gl') !== -1) return 'Google';
     return 'Website';
@@ -2175,10 +2178,23 @@
       var addr = it.address ? '<div class="biz-loc" style="margin-top:0.15rem;">&#128205; ' + esc(it.address) + '</div>' : '';
       var phone = it.phone ? '<div class="biz-loc" style="margin-top:0.15rem;">&#128222; ' + esc(it.phone) + '</div>' : '';
       var map = mapUrl(it);
-      var singleBtn = it.website
-        ? '<a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel(it.website) + '</a>'
-        : '<a href="' + esc(map) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>';
       var bid = it.business_id ? esc(it.business_id) : '';
+      var featuredRow = !!((bid && featuredIds[bid]) || isMarkedFeatured(it));
+      var summaryText = String(it.summary || it.jeep_friendly_blurb || '').trim();
+      var summary = (featuredRow && summaryText)
+        ? '<p class="biz-desc" style="margin-top:0.3rem;">' + esc(summaryText) + '</p>'
+        : '';
+      var actionsHtml;
+      if (featuredRow) {
+        var links = [];
+        if (it.website) links.push('<a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel(it.website) + '</a>');
+        if (map) links.push('<a href="' + esc(map) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>');
+        actionsHtml = links.join('');
+      } else {
+        actionsHtml = it.website
+          ? '<a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel(it.website) + '</a>'
+          : '<a href="' + esc(map) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>';
+      }
 
       var card = document.createElement('div');
       card.className = 'biz-card';
@@ -2193,7 +2209,8 @@
           '<div class="biz-loc">' + (cityState || 'Location not set') + '</div>' +
           addr +
           phone +
-          '<div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">' + singleBtn + '</div>' +
+          summary +
+          '<div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">' + actionsHtml + '</div>' +
         '</div>';
       grid.appendChild(card);
     });
