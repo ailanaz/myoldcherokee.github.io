@@ -166,6 +166,7 @@
     padding: 0 0.75rem;
     font-size: 0.92rem;
     background: #fff;
+    cursor: pointer;
   }
 
   .hero-search-below .hero-search-box input:focus {
@@ -559,11 +560,22 @@
     var allItems = document.querySelectorAll('.search-suggestion');
     if (!input || !dropdown) return;
 
+    function isOpen() { return dropdown.style.display === 'block'; }
     function showDropdown() { dropdown.style.display = 'block'; }
     function hideDropdown() { dropdown.style.display = 'none'; }
+    function toggleDropdown() { isOpen() ? hideDropdown() : showDropdown(); }
 
-    input.addEventListener('focus', showDropdown);
-    input.addEventListener('click', showDropdown);
+    input.addEventListener('click', function(e) {
+      e.preventDefault();
+      toggleDropdown();
+    });
+
+    input.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggleDropdown();
+      }
+    });
 
     allItems.forEach(function(item) {
       item.addEventListener('mousedown', function(e) {
