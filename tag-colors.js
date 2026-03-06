@@ -20,6 +20,7 @@
     'repair · jeep specialist':        { bg:'#d8f0e1', border:'#56b06e', text:'#16582a' },
     'repair · off-road':               { bg:'#d5efde', border:'#50aa68', text:'#145426' },
     'club support':                    { bg:'#dff5e6', border:'#68c07e', text:'#1d6234' },
+    'jeep friendly':                   { bg:'#d8f5ea', border:'#35b88b', text:'#0f5a42' },
     'lift kits':                       { bg:'#dcf0e2', border:'#5eb676', text:'#186030' },
     'tires & wheels · lift kits':      { bg:'#dbf0e1', border:'#5cb474', text:'#175e2e' },
     'tires & wheels · off-road':       { bg:'#d8f0de', border:'#56b06c', text:'#145a28' },
