@@ -26,12 +26,22 @@
   }
 
   /* ── build the inner HTML for a .biz-rating-wrap ─────── */
+  function ratingDisplayHtml(data) {
+    var avg = 0.0;
+    var count = 0;
+    if (data && typeof data.avg_rating !== 'undefined' && data.avg_rating !== null) {
+      avg = Number(data.avg_rating) || 0;
+    }
+    if (data && typeof data.rating_count !== 'undefined' && data.rating_count !== null) {
+      count = Number(data.rating_count) || 0;
+    }
+    return '<span class="biz-rating-stars">\u2605 ' + avg.toFixed(1) + '</span>' +
+      '\u00a0<span class="biz-rating-count">(' + count + ')</span>';
+  }
+
   function buildInner(bid, data, allowRating) {
-    /* display line */
-    var dispHtml = (data && data.rating_count > 0)
-      ? '<span class="biz-rating-stars">\u2605 ' + data.avg_rating + '</span>' +
-        '\u00a0<span class="biz-rating-count">(' + data.rating_count + ')</span>'
-      : '<span class="biz-rating-none">No ratings yet</span>';
+    /* display line (locked sitewide format) */
+    var dispHtml = ratingDisplayHtml(data);
 
     /* action */
     var rowHtml = dispHtml;
@@ -105,10 +115,7 @@
       document.querySelectorAll('.biz-rating-wrap[data-bid="' + bid + '"]')
     );
     if (!wraps.length) return;
-    var dispHtml = (data && data.rating_count > 0)
-      ? '<span class="biz-rating-stars">\u2605 ' + data.avg_rating + '</span>' +
-        '\u00a0<span class="biz-rating-count">(' + data.rating_count + ')</span>'
-      : '<span class="biz-rating-none">No ratings yet</span>';
+    var dispHtml = ratingDisplayHtml(data);
     var path = window.location.pathname || '';
     var isDirectoryPage = isDirectoryPath(path);
     wraps.forEach(function (wrap) {
