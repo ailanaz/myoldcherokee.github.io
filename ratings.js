@@ -231,39 +231,67 @@
       return;
     }
 
-    var db    = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
-    var cards = Array.prototype.slice.call(
-      document.querySelectorAll(
-        '[data-business-id]:not(.featured-biz-card--inactive):not(.biz-card--inactive):not(.state-feat-card--inactive):not(.listing-card--inactive)'
-      )
-    );
-    if (!cards.length) return;
+    var db = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+    var summaryMap = {};
+    var hydrateTimer = null;
 
-    /* collect unique business_ids */
-    var bids = cards.reduce(function (acc, c) {
-      var b = c.getAttribute('data-business-id');
-      if (b && acc.indexOf(b) === -1) acc.push(b);
-      return acc;
-    }, []);
+    function getCards() {
+      return Array.prototype.slice.call(
+        document.querySelectorAll(
+          '[data-business-id]:not(.featured-biz-card--inactive):not(.biz-card--inactive):not(.state-feat-card--inactive):not(.listing-card--inactive)'
+        )
+      );
+    }
 
-    /* single batch fetch of all summaries */
-    db.from('business_rating_summary')
-      .select('business_id, avg_rating, rating_count')
-      .in('business_id', bids)
-      .then(function (res) {
-        var map = {};
-        if (res.data) res.data.forEach(function (r) { map[r.business_id] = r; });
-
-        cards.forEach(function (card) {
-          var bid = card.getAttribute('data-business-id');
-          inject(card, bid, map[bid] || null);
+    function fetchSummaries(bids) {
+      if (!bids.length) return Promise.resolve();
+      return db.from('business_rating_summary')
+        .select('business_id, avg_rating, rating_count')
+        .in('business_id', bids)
+        .then(function(res) {
+          if (res && res.data) {
+            res.data.forEach(function(r) { summaryMap[r.business_id] = r; });
+          }
+        })
+        .catch(function(err) {
+          console.warn('[ratings] fetch failed', err);
         });
+    }
 
-        wireEvents(db);
-      })
-      .catch(function (err) {
-        console.warn('[ratings] fetch failed', err);
+    function hydrateRatings() {
+      var cards = getCards();
+      if (!cards.length) return;
+
+      var missingCards = cards.filter(function(card) {
+        var body = card.querySelector('.biz-body') || card.querySelector('.featured-biz-body') || card.querySelector('.state-feat-body');
+        return !!body && !body.querySelector('.biz-rating-wrap');
       });
+      if (!missingCards.length) return;
+
+      var bids = missingCards.reduce(function(acc, c) {
+        var b = c.getAttribute('data-business-id');
+        if (b && acc.indexOf(b) === -1) acc.push(b);
+        return acc;
+      }, []);
+
+      fetchSummaries(bids).then(function() {
+        missingCards.forEach(function(card) {
+          var bid = card.getAttribute('data-business-id');
+          inject(card, bid, summaryMap[bid] || null);
+        });
+      });
+    }
+
+    wireEvents(db);
+    hydrateRatings();
+
+    if (typeof MutationObserver !== 'undefined') {
+      var observer = new MutationObserver(function() {
+        if (hydrateTimer) clearTimeout(hydrateTimer);
+        hydrateTimer = setTimeout(hydrateRatings, 120);
+      });
+      observer.observe(document.documentElement || document.body, { childList: true, subtree: true });
+    }
   }
 
   if (document.readyState === 'loading') {
