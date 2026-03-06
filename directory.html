@@ -146,8 +146,10 @@
         </select>
       </div>
       <div class="clubs-filter-group">
-        <label for="live-search">Search</label>
-        <input id="live-search" class="filter-search-input" type="search" placeholder="Search name, city, state, tags..." />
+        <label for="live-tag">Tags</label>
+        <select id="live-tag" class="filter-select" aria-label="Filter by tag">
+          <option value="all">All tags</option>
+        </select>
       </div>
     </div>
   </div>
@@ -2025,11 +2027,11 @@
   var grid = document.getElementById('live-grid');
   var stateSel = document.getElementById('live-state');
   var typeSel = document.getElementById('live-type');
-  var searchEl = document.getElementById('live-search');
+  var tagSel = document.getElementById('live-tag');
   var countEl = document.getElementById('live-count');
   var moreBtn = document.getElementById('live-more');
   var candidateListEl = document.getElementById('candidate-review-list');
-  if (!grid || !stateSel || !typeSel || !searchEl || !countEl || !moreBtn) return;
+  if (!grid || !stateSel || !typeSel || !tagSel || !countEl || !moreBtn) return;
 
   var allRows = [];
   var filteredRows = [];
@@ -2104,11 +2106,18 @@
   function initFilters(rows) {
     var states = {};
     var types = {};
+    var tags = {};
     rows.forEach(function(r) {
       var st = (r.state || '').toUpperCase();
       var tp = (r.type || '').trim();
       if (st) states[st] = true;
       if (tp) types[tp] = true;
+      if (Array.isArray(r.categories)) {
+        r.categories.forEach(function(tag) {
+          var t = String(tag || '').trim().toLowerCase();
+          if (t) tags[t] = true;
+        });
+      }
     });
 
     while (typeSel.options.length > 1) typeSel.remove(1);
@@ -2123,6 +2132,18 @@
       o.value = st;
       o.textContent = st;
       stateSel.appendChild(o);
+    });
+
+    while (tagSel.options.length > 1) tagSel.remove(1);
+    Object.keys(tags).sort().forEach(function(tag) {
+      var o = document.createElement('option');
+      o.value = tag;
+      o.textContent = tag
+        .replace(/[-_]+/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .replace(/\b\w/g, function(ch) { return ch.toUpperCase(); });
+      tagSel.appendChild(o);
     });
 
     var seenTypeLabels = {};
@@ -2142,7 +2163,7 @@
   function applyFilters() {
     var state = stateSel.value || 'all';
     var type = typeSel.value || 'all';
-    var q = (searchEl.value || '').toLowerCase().trim();
+    var tag = (tagSel.value || 'all').toLowerCase();
     var featuredIds = featuredBusinessIds();
     if (type === 'featured') state = 'all';
 
@@ -2155,10 +2176,9 @@
       } else if (type !== 'all' && (it.type || '') !== type) {
         return false;
       }
-      if (!q) return true;
-      var tags = Array.isArray(it.categories) ? it.categories.join(' ') : '';
-      var hay = [it.name || '', it.city || '', it.state || '', it.type || '', tags].join(' ').toLowerCase();
-      return hay.indexOf(q) !== -1;
+      if (tag === 'all') return true;
+      var cats = Array.isArray(it.categories) ? it.categories.map(function(c) { return String(c || '').toLowerCase(); }) : [];
+      return cats.indexOf(tag) !== -1;
     });
 
     filteredRows.sort(function(a, b) {
@@ -2332,7 +2352,7 @@
     shown += pageSize;
     render();
   });
-  searchEl.addEventListener('input', applyFilters);
+  tagSel.addEventListener('change', applyFilters);
   stateSel.addEventListener('change', applyFilters);
   typeSel.addEventListener('change', function() {
     if ((typeSel.value || '') === 'featured' && stateSel.value !== 'all') stateSel.value = 'all';
