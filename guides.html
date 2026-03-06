@@ -349,6 +349,7 @@
             ? list.map(cardHtml).join('')
             : '<p style="color:var(--text-mid);">No guides in this category yet.</p>';
         });
+        if (window.applyTagColors) window.applyTagColors();
       })
       .catch(function () {
         Object.keys(CAT_GRID).forEach(function (cat) {

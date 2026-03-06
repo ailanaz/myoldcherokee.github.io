@@ -2221,6 +2221,7 @@
 
     countEl.textContent = filteredRows.length.toLocaleString() + ' results';
     moreBtn.style.display = filteredRows.length > shown ? '' : 'none';
+    if (window.applyTagColors) window.applyTagColors();
   }
 
   moreBtn.addEventListener('click', function() {
