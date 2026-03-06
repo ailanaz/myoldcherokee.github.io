@@ -1935,13 +1935,12 @@
       var id = (card.getAttribute('data-business-id') || '').trim();
       var isFeatured = !!(id && featuredIds[id]);
 
-      var bizType = card.querySelector('.biz-type');
-      if (isFeatured && bizType && !card.querySelector('.dir-featured-star')) {
-        var star = document.createElement('span');
-        star.className = 'dir-featured-star';
-        star.textContent = '★ Featured';
-        star.style.cssText = 'display:inline-flex;align-items:center;justify-content:center;background:var(--red);color:#fff;border-radius:999px;padding:0.1rem 0.45rem;margin-right:0.35rem;font-size:0.68rem;font-weight:700;letter-spacing:0.02em;vertical-align:middle;';
-        bizType.parentNode.insertBefore(star, bizType);
+      if (isFeatured && !card.querySelector('.biz-featured-badge')) {
+        var badge = document.createElement('div');
+        badge.className = 'biz-featured-badge';
+        badge.title = 'Featured Business';
+        badge.textContent = '★';
+        card.appendChild(badge);
       }
 
       if (isFeatured) return;
@@ -2206,7 +2205,9 @@
       card.setAttribute('data-cats', ((it.categories || []).join(' ')).toLowerCase());
       if (bid) card.setAttribute('data-business-id', bid);
       var typeLabel = cleanTypeLabel(it.type || 'Business');
+      var featuredBadge = featuredRow ? '<div class="biz-featured-badge" title="Featured Business">★</div>' : '';
       card.innerHTML =
+        featuredBadge +
         '<div class="biz-logo-wrap"><div class="biz-logo">' + initials + '</div></div>' +
         '<div class="biz-body">' +
           '<span class="biz-type ' + typeToneClass(typeLabel) + '">' + esc(typeLabel) + '</span>' +

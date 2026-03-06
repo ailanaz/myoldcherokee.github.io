@@ -368,8 +368,9 @@ img { max-width: 100%; display: block; }
 .home-section-desc { font-family: 'Source Serif 4', serif; font-size: 0.93rem; color: var(--text-mid); }
 
 /* BUSINESS DIRECTORY CARDS */
-.biz-card { background: var(--white); border: var(--moc-outline) solid var(--moc-yellow); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; text-decoration: none; color: inherit; }
+.biz-card { position: relative; background: var(--white); border: var(--moc-outline) solid var(--moc-yellow); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; text-decoration: none; color: inherit; }
 .biz-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
+.biz-featured-badge { position: absolute; top: 0.55rem; right: 0.55rem; width: 2rem; height: 2rem; border-radius: 50%; background: var(--amber); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1rem; font-weight: 700; z-index: 2; box-shadow: 0 1px 5px rgba(0,0,0,0.25); pointer-events: none; }
 .biz-logo-wrap { padding: 1.25rem 1.25rem 0; }
 .biz-logo { width: 52px; height: 52px; border-radius: 50%; background: var(--red); display: flex; align-items: center; justify-content: center; font-family: 'Oswald', sans-serif; font-size: 1.1rem; font-weight: 700; color: #fff; letter-spacing: 0.04em; flex-shrink: 0; }
 .biz-body { padding: 0.9rem 1.25rem 1.25rem; flex: 1; display: flex; flex-direction: column; gap: 0.35rem; }
