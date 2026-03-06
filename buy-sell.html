@@ -86,10 +86,8 @@
   <div class="container clubs-style-sticky-inner">
     <div class="clubs-style-field-wrap">
       <select class="filter-select" onchange="filterDropdown('cherokees-grid')" aria-label="Filter listings">
-        <option value="all">What are you looking for?</option>
-      <option value="vehicle">For Sale</option>
-      <option value="wanted">Wanted</option>
-      <option value="project">Project</option>
+        <option value="all">XJS</option>
+      <option value="parts">Parts</option>
       </select>
     </div>
   </div>
@@ -428,6 +426,16 @@
     var bar = document.querySelector('[data-grid="' + gridId + '"]');
     var searchVal = ((bar && bar.querySelector('.filter-search-input') || {}).value || '').toLowerCase().trim();
     var catVal = (bar && bar.querySelector('.filter-select')) ? bar.querySelector('.filter-select').value : 'all';
+
+    // Top page switcher: XJS / Parts
+    if (gridId === 'cherokees-grid' && catVal === 'parts') {
+      var partsSection = document.getElementById('parts');
+      if (partsSection && typeof partsSection.scrollIntoView === 'function') {
+        partsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      return;
+    }
+
     document.querySelectorAll('#' + gridId + ' .listing-card').forEach(function(card) {
       var matchCat = (catVal === 'all') || (card.getAttribute('data-cat') === catVal);
       var matchSearch = !searchVal || card.textContent.toLowerCase().indexOf(searchVal) !== -1;
