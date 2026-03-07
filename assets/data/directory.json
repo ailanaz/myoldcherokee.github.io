@@ -101,5 +101,24 @@
     "is_active": true,
     "locked": true,
     "summary": "Rust-free used Jeep parts and accessories with nationwide shipping."
+  },
+  {
+    "business_id": "castle-automotive-ca",
+    "name": "Castle Automotive",
+    "type": "Repair Shops",
+    "city": "Van Nuys",
+    "state": "CA",
+    "address": "14101 Oxnard Street, Van Nuys, CA 91401",
+    "phone": "(818) 782-2335",
+    "website": "https://www.castleautomotive.com/",
+    "google_maps_link": "https://www.google.com/maps/search/14101+Oxnard+Street,+Van+Nuys,+CA+91401",
+    "categories": [
+      "repair",
+      "general-repair"
+    ],
+    "source": "manual",
+    "is_active": true,
+    "locked": true,
+    "summary": "Quick, honest automotive repair and maintenance service."
   }
 ]
