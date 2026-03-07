@@ -296,24 +296,57 @@ function renderSection(container, sectionTitle, groups, orderedKeys) {
   heading.textContent = sectionTitle;
   container.appendChild(heading);
 
-  // Render in specified order first
-  var rendered = {};
+  // Flatten all groups into one combined list - no per-category sub-headers
+  var allItems = [];
+  var keys = Object.keys(groups).sort();
   if (orderedKeys) {
-    for (var i = 0; i < orderedKeys.length; i++) {
-      var k = orderedKeys[i];
-      if (groups[k]) {
-        renderGroup(container, k, groups[k]);
-        rendered[k] = true;
-      }
-    }
+    orderedKeys.forEach(function(k) { if (groups[k]) allItems = allItems.concat(groups[k]); });
+    keys.forEach(function(k) { if (orderedKeys.indexOf(k) === -1 && groups[k]) allItems = allItems.concat(groups[k]); });
+  } else {
+    keys.forEach(function(k) { allItems = allItems.concat(groups[k]); });
   }
 
-  // Render any remaining keys alphabetically
-  var remaining = Object.keys(groups).sort();
-  for (var j = 0; j < remaining.length; j++) {
-    if (!rendered[remaining[j]]) {
-      renderGroup(container, remaining[j], groups[remaining[j]]);
-    }
+  if (allItems.length) {
+    var grid = document.createElement('div');
+    grid.className = 'grid g3';
+    grid.style.marginTop = '1rem';
+
+    allItems.forEach(function(it) {
+      var stateCode = (it.state || '-').toUpperCase();
+      var cityState = [it.city, it.state].filter(Boolean).join(', ');
+      var price = String(it.price || '');
+      var hasImage = !!it.image;
+      var imgSrc = it.image ? '../' + it.image : '';
+      var catClass = getCatClass(it.category);
+      var catLabel = esc(it.category || '');
+
+      var imageHtml = hasImage
+        ? '<div class="listing-image-wrap"><img src="' + esc(imgSrc) + '" alt="' + esc(it.title || '') + '" loading="lazy"><span class="listing-state">' + esc(stateCode) + '</span></div>'
+        : '<div class="listing-image-wrap listing-no-photo"><span class="listing-state">' + esc(stateCode) + '</span></div>';
+
+      var safeEmail = String(it.seller_email || '').replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+      var safeTitle = String(it.title || '').replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+      var contactBtn = it.seller_email
+        ? '<button class="btn btn-red btn-sm" onclick="openSellerContact(\'' + safeEmail + '\',\'' + safeTitle + '\')">Get in Touch</button>'
+        : '<a href="../submit.html" class="btn btn-outline btn-sm">Get Started</a>';
+
+      var card = document.createElement('div');
+      card.className = 'listing-card';
+      card.innerHTML =
+        imageHtml +
+        '<div class="listing-body">' +
+          '<div class="listing-cats"><span class="lcat ' + catClass + '">' + catLabel + '</span></div>' +
+          '<div class="listing-name">' + esc(it.title || it.name || 'Listing') + '</div>' +
+          (cityState ? '<div class="listing-loc">\uD83D\uDCCD ' + esc(cityState) + '</div>' : '') +
+          (price ? '<div class="listing-price">' + esc(price) + '</div>' : '') +
+          (it.summary ? '<p class="listing-summary">' + esc(it.summary) + '</p>' : '') +
+          '<div class="listing-actions">' + contactBtn + '</div>' +
+        '</div>';
+      grid.appendChild(card);
+    });
+
+    container.appendChild(grid);
+    return;
   }
 
   // If no groups at all, show a placeholder
