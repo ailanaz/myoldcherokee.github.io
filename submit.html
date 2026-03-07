@@ -47,7 +47,7 @@
         <div class="nav-more-menu">
           <a href="guides.html" class="guides-mobile">Guides</a>
           <a href="community.html">Chat</a>
-          <a href="submit.html">Post</a>
+          <a href="submit.html">Submit</a>
           <a href="contact.html">Contact</a>
           <a href="about.html">About</a>
           <a href="blog/index.html">Blog</a>
@@ -85,6 +85,7 @@
         <option value="">Select a listing type…</option>
         <option value="sell">Vehicle, Parts, or Wanted Listing</option>
         <option value="business">Repair Shop, Salvage Yard, or Business</option>
+        <option value="club">Submit Your Club</option>
       </select>
     </div>
 
@@ -103,6 +104,15 @@
   function showForm(val) {
     if (val === 'business') {
       window.location.href = 'submit-directory.html';
+      return;
+    }
+    if (val === 'club') {
+      if (window.Tally) {
+        Tally.openPopup('xXd0Ay', { layout: 'modal', overlay: true });
+      } else {
+        window.location.href = 'https://tally.so/r/xXd0Ay';
+      }
+      document.getElementById('form-picker').value = '';
       return;
     }
     document.getElementById('form-sell').style.display = val === 'sell' ? 'block' : 'none';
