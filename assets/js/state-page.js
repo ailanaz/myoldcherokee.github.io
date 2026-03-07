@@ -380,6 +380,9 @@ async function initStatePage() {
 
   var bsContainer = document.getElementById('state-buy-sell');
   var dirContainer = document.getElementById('state-directory');
+  if (bsContainer && dirContainer && bsContainer.parentNode === dirContainer.parentNode) {
+    bsContainer.parentNode.insertBefore(dirContainer, bsContainer);
+  }
 
   try {
     var data = await Promise.all([
