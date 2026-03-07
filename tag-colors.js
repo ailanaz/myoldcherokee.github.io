@@ -11,7 +11,7 @@
   ────────────────────────────────────────────────────────────── */
   var PALETTE = {
 
-    /* ── GREEN  — actionable / healthy ── */
+    /* ── GREEN  - actionable / healthy ── */
     'for sale':                        { bg:'#dff2e3', border:'#6ab97d', text:'#1a5c2e' },
     'wanted':                          { bg:'#d6f0e0', border:'#52b06a', text:'#155228' },
     'general repair':                  { bg:'#e0f2e8', border:'#64b87a', text:'#1c5e32' },
@@ -26,7 +26,7 @@
     'tires & wheels · off-road':       { bg:'#d8f0de', border:'#56b06c', text:'#145a28' },
     'tires & wheels · off-road parts': { bg:'#d5efdb', border:'#50aa66', text:'#125626' },
 
-    /* ── TEAL  — 4x4 / off-road / suspension ── */
+    /* ── TEAL  - 4x4 / off-road / suspension ── */
     'suspension':                      { bg:'#d6f0ed', border:'#3db8aa', text:'#0c4f46' },
     'steering / suspension':           { bg:'#d4eeeb', border:'#3ab4a6', text:'#0a4b42' },
     '4x4 & off-road · suspension':     { bg:'#d2ede9', border:'#38b0a2', text:'#08473e' },
@@ -35,7 +35,7 @@
     'know your vin':                   { bg:'#d8f0ec', border:'#42bca6', text:'#0e5347' },
     'tires & wheels · alignment':      { bg:'#d3ecea', border:'#3aaea4', text:'#094946' },
 
-    /* ── BLUE  — cooling / info / reference ── */
+    /* ── BLUE  - cooling / info / reference ── */
     'cooling':                         { bg:'#ddeaf7', border:'#5b9fd4', text:'#14437a' },
     'cooling · radiator':              { bg:'#dae8f7', border:'#579cd2', text:'#123f76' },
     'repair · ase certified':          { bg:'#dbe9f6', border:'#5899d0', text:'#133c72' },
@@ -48,7 +48,7 @@
     'manchaca tx':                     { bg:'#d8e8f6', border:'#5497d0', text:'#123a6e' },
     'your city tx':                    { bg:'#d5e6f4', border:'#4f92ca', text:'#0f3468' },
 
-    /* ── AMBER  — electrical / power / tools ── */
+    /* ── AMBER  - electrical / power / tools ── */
     'electrical':                      { bg:'#fef0cc', border:'#e8a820', text:'#7a4d00' },
     'electrical · diagnostics':        { bg:'#fdedc4', border:'#e4a01a', text:'#764800' },
     'lighting':                        { bg:'#fef2d0', border:'#eaad24', text:'#7c5200' },
@@ -56,20 +56,20 @@
     'featured placement':              { bg:'#feefca', border:'#e7a91c', text:'#7a4f00' },
     'body shop · i-car gold class':    { bg:'#feecc0', border:'#e2a014', text:'#724500' },
 
-    /* ── ORANGE  — project / urgent search ── */
+    /* ── ORANGE  - project / urgent search ── */
     'project':                         { bg:'#fde8d8', border:'#e8925a', text:'#7a3010' },
     'search first':                    { bg:'#fde4d0', border:'#e48a50', text:'#762a08' },
     'decals':                          { bg:'#fde2cc', border:'#e08848', text:'#743008' },
     'body protection':                 { bg:'#fce0c8', border:'#dc8440', text:'#703006' },
     'exterior':                        { bg:'#fce4d0', border:'#e08c4c', text:'#723208' },
 
-    /* ── RED  — warnings / damage / no-go ── */
+    /* ── RED  - warnings / damage / no-go ── */
     'not for sale':                    { bg:'#fde0e4', border:'#e0717f', text:'#7d1025' },
     'body shop · collision':           { bg:'#fcdde2', border:'#dc6a78', text:'#7a0e22' },
     'body shop · collision & refinish':{ bg:'#fcdae0', border:'#d8647a', text:'#770c20' },
     'body shop · paint & collision':   { bg:'#fbd8de', border:'#d45e74', text:'#740a1e' },
 
-    /* ── PURPLE  — xj brand / specialty / engine ── */
+    /* ── PURPLE  - xj brand / specialty / engine ── */
     'xj':                              { bg:'#ece3fa', border:'#9b72db', text:'#421d87' },
     'xj / zj / wj':                   { bg:'#ebe0fa', border:'#976ed8', text:'#401b84' },
     'engine':                          { bg:'#e9def8', border:'#9368d4', text:'#3d1880' },
@@ -80,12 +80,12 @@
     'accessories & gear':              { bg:'#eee5fa', border:'#a07edd', text:'#461f88' },
     'custom badges':                   { bg:'#ede2fa', border:'#9c76da', text:'#441f86' },
 
-    /* ── PINK/ROSE  — body / interior / cosmetic ── */
+    /* ── PINK/ROSE  - body / interior / cosmetic ── */
     'body & interior':                 { bg:'#fde0ee', border:'#e07aaa', text:'#7d1248' },
     'interior':                        { bg:'#fddaeb', border:'#dc6ea4', text:'#7a1044' },
     'armor':                           { bg:'#fcdaea', border:'#d86aa0', text:'#770e42' },
 
-    /* ── SLATE  — salvage / neutral / worn ── */
+    /* ── SLATE  - salvage / neutral / worn ── */
     'salvage · full-service':          { bg:'#e4eaef', border:'#8da8bb', text:'#2c4558' },
     'salvage · jeep & chrysler':       { bg:'#e2e8ed', border:'#8aa4b8', text:'#2a4254' },
     'salvage · self-service':          { bg:'#e0e7ec', border:'#88a0b5', text:'#283e50' },
@@ -95,7 +95,7 @@
     'parts':                           { bg:'#e5eaee', border:'#90a8ba', text:'#2c4658' },
     'repair shop':                     { bg:'#e1e8ed', border:'#8ca4b8', text:'#2a4254' },
 
-    /* ── BROWN/COPPER  — drivetrain / fabrication / grounds ── */
+    /* ── BROWN/COPPER  - drivetrain / fabrication / grounds ── */
     'drivetrain':                      { bg:'#f0e4d8', border:'#c09070', text:'#5c3010' },
     'repair · transmission & general': { bg:'#eee0d4', border:'#bc8a6c', text:'#5a2e0e' },
     'fabrication & welding (4x4)':     { bg:'#ecdcd0', border:'#b8846a', text:'#582c0c' },

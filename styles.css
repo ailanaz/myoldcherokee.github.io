@@ -56,7 +56,7 @@ img { max-width: 100%; display: block; }
 .guides-mobile { display: none !important; }
 
 
-/* MORE DROPDOWN (topbar — white button on red) */
+/* MORE DROPDOWN (topbar - white button on red) */
 .nav-more { position: relative; margin-left: 0.2rem; }
 .nav-more-btn { background: rgba(255,255,255,0.15); border: 1.5px solid rgba(255,255,255,0.35); border-radius: var(--radius-full); padding: 0.22rem 0.75rem; font-family: 'DM Sans', sans-serif; font-size: 0.8rem; font-weight: 600; color: #fff; cursor: pointer; white-space: nowrap; transition: background 0.15s, border-color 0.15s; }
 .nav-more-btn:hover, .nav-more.open .nav-more-btn { background: rgba(255,255,255,0.25); border-color: rgba(255,255,255,0.6); }
@@ -65,7 +65,7 @@ img { max-width: 100%; display: block; }
 .nav-more-menu a { display: block; padding: 0.6rem 1rem; font-family: 'DM Sans', sans-serif; font-size: 0.875rem; font-weight: 600; color: var(--text-mid); text-decoration: none; transition: background 0.12s, color 0.12s; }
 .nav-more-menu a:hover { background: var(--red-lite); color: var(--red); }
 
-/* HEADER — logo only, slightly thinner */
+/* HEADER - logo only, slightly thinner */
 .site-header { background: var(--white); border-bottom: 1px solid var(--line); position: relative !important; top: auto !important; z-index: 100; box-shadow: var(--shadow-sm); }
 .header-inner { display: flex; align-items: center; justify-content: flex-start; height: 54px; gap: 1.25rem; }
 .brand { display: flex; align-items: center; gap: 0.65rem; flex-shrink: 0; text-decoration: none; }
@@ -103,7 +103,7 @@ img { max-width: 100%; display: block; }
 .hero-photo { position: absolute; inset: 0; background: url("og-default.jpg") center/contain no-repeat; }
 .hero-content { position: relative; z-index: 2; padding: 5rem 0 4.5rem; max-width: 640px; margin-left: auto; margin-right: auto; }
 
-/* HERO STACK — license plate image above, search bar below */
+/* HERO STACK - license plate image above, search bar below */
 .hero--stack { flex-direction: column; justify-content: flex-end; align-items: stretch; min-height: 320px; }
 .hero--stack .hero-content { flex: 1; min-height: 260px; }
 .hero--stack .hero-search-below { position: relative; z-index: 2; background: #fff; padding: 1rem 0 1.5rem; }
@@ -328,7 +328,7 @@ img { max-width: 100%; display: block; }
 .guide-colorbar--suspension   { background: #5ac62b; }
 .guide-colorbar--engine       { background: #7adf3a; }
 .guide-colorbar--4wd          { background: #ff3b30; }
-/* Hide the old floating label — bar is too thin to show text */
+/* Hide the old floating label - bar is too thin to show text */
 .article-thumb-label { display: none; }
 .article-body { padding: 1.25rem; flex: 1; display: flex; flex-direction: column; gap: 0.6rem; }
 .article-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; }
@@ -475,7 +475,7 @@ img { max-width: 100%; display: block; }
 .footer-contact-btn { margin-top: 0.9rem; border-color: #fff; color: #fff; }
 .footer-contact-btn:hover { background: rgba(255,255,255,0.12); color:#fff; }
 
-/* category-outline overrides removed — border colors now set per card type */
+/* category-outline overrides removed - border colors now set per card type */
 
 .hero-title-image { width: min(920px, 100%); height: auto; display: block; margin: 0 auto 0.75rem; position: relative; z-index: 2; }
 
@@ -592,14 +592,14 @@ img { max-width: 100%; display: block; }
 .featured-vendor-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; }
 
 /* ── FILTER DROPDOWN BAR ──────────────────────────────────────────────────── */
-/* Centered page-level filter widget — placed inside .page-hero */
+/* Centered page-level filter widget - placed inside .page-hero */
 .page-filter-hero { max-width: 520px; margin: 1.75rem auto 0; text-align: center; }
 .page-filter-hero-label { font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 0.6rem; }
 .page-filter-hero-box { background: #fff; border-radius: var(--radius-full); padding: 0.3rem 0.5rem 0.3rem 1.4rem; display: flex; align-items: center; box-shadow: var(--shadow-lg); }
 .page-filter-hero-box .filter-select { flex: 1; border: none; background: transparent; box-shadow: none; height: 44px; font-size: 0.95rem; color: var(--text); padding-left: 0; }
 .page-filter-hero-box .filter-select:focus { box-shadow: none; border-color: transparent; }
 
-/* Centered section-level filter (not in hero — white background sections) */
+/* Centered section-level filter (not in hero - white background sections) */
 .section-filter-wrap { max-width: 520px; margin: 0 auto 1.75rem; text-align: center; }
 .section-filter-label { font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-lite); margin-bottom: 0.6rem; }
 .section-filter-box { background: #fff; border: 1.5px solid var(--line); border-radius: var(--radius); padding: 0.55rem; display: flex; align-items: center; box-shadow: var(--shadow-xs); }

@@ -1,5 +1,5 @@
-/* ratings.js — anonymous 1-5 star ratings via Supabase
-   OldXJS.com — static GitHub Pages
+/* ratings.js - anonymous 1-5 star ratings via Supabase
+   OldXJS.com - static GitHub Pages
    ─────────────────────────────────────────────────────── */
 (function () {
   'use strict';
@@ -184,7 +184,7 @@
           .then(function (res) {
             if (res.error) {
               console.error('[ratings] insert error', res.error);
-              subBtn.textContent = 'Error — retry';
+              subBtn.textContent = 'Error - retry';
               subBtn.disabled    = false;
               return;
             }

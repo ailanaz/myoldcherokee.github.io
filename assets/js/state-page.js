@@ -1,4 +1,4 @@
-/* state-page.js — shared renderer for all 50-state pages */
+/* state-page.js - shared renderer for all 50-state pages */
 
 async function fetchJson(url) {
   var res = await fetch(url);
@@ -330,7 +330,7 @@ function renderSection(container, sectionTitle, groups, orderedKeys) {
       inactiveWrap.innerHTML =
         '<div class="grid g4">' +
           '<a href="../submit.html" class="listing-card listing-card--inactive">' +
-            '<div class="listing-image-wrap listing-no-photo"><span class="listing-state">—</span></div>' +
+            '<div class="listing-image-wrap listing-no-photo"><span class="listing-state">-</span></div>' +
             '<div class="listing-body">' +
               '<div class="listing-cats"><span class="lcat lcat-wanted">Wanted</span></div>' +
               '<div class="listing-name">Looking for a Cherokee Part?</div>' +
@@ -339,7 +339,7 @@ function renderSection(container, sectionTitle, groups, orderedKeys) {
             '</div>' +
           '</a>' +
           '<a href="../submit.html" class="listing-card listing-card--inactive">' +
-            '<div class="listing-image-wrap listing-no-photo"><span class="listing-state">—</span></div>' +
+            '<div class="listing-image-wrap listing-no-photo"><span class="listing-state">-</span></div>' +
             '<div class="listing-body">' +
               '<div class="listing-cats"><span class="lcat lcat-parts">Parts</span></div>' +
               '<div class="listing-name">Used Cherokee Parts</div>' +
