@@ -110,5 +110,16 @@
     "city": "Sacramento",
     "price": "$4,500 OBO",
     "summary": "Classic trim with factory options. Clean interior, original paint in fair condition. Good daily with some minor work."
+  },
+  {
+    "title": "Door Panels from 97-01 XJ Limited in Agate (Dark Gray)",
+    "category": "Wanted",
+    "state": "CA",
+    "city": "",
+    "price": "Seeking",
+    "summary": "Looking for a pair of front door panels/trims from a late-model Limited - Agate (dark gray) color. Final parts needed to upgrade a Sport to Limited spec. If you can help, please reach out!",
+    "image": "door-panels-agate.jpg",
+    "seller_email": "brucesmann@gmail.com",
+    "is_active": true
   }
 ]

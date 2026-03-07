@@ -6,6 +6,30 @@ async function fetchJson(url) {
   return await res.json();
 }
 
+var CONTACT_FORM_ID = 'J928BY';
+function openSellerContact(sellerEmail, listingTitle) {
+  if (window.Tally) {
+    Tally.openPopup(CONTACT_FORM_ID, {
+      layout: 'modal',
+      overlay: true,
+      hiddenFields: { seller_email: sellerEmail, listing_title: listingTitle }
+    });
+  } else {
+    window.location.href = 'https://tally.so/r/' + CONTACT_FORM_ID +
+      '?seller_email=' + encodeURIComponent(sellerEmail) +
+      '&listing_title=' + encodeURIComponent(listingTitle);
+  }
+}
+
+function getCatClass(category) {
+  var c = String(category || '').toLowerCase();
+  if (c.indexOf('vehicle') !== -1) return 'lcat-vehicle';
+  if (c.indexOf('project') !== -1) return 'lcat-project';
+  if (c.indexOf('wanted') !== -1) return 'lcat-wanted';
+  if (c.indexOf('parts') !== -1) return 'lcat-parts';
+  return 'lcat-parts';
+}
+
 function groupBy(items, key) {
   var out = {};
   for (var i = 0; i < items.length; i++) {
@@ -151,8 +175,9 @@ function renderDirectoryRunningList(container, items) {
   if (!container) return;
   container.innerHTML = '';
 
-  var heading = document.createElement('h2');
-  heading.style.cssText = 'margin:2rem 0 0;font-family:\'Oswald\',sans-serif;font-size:1.3rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;border-bottom:2px solid var(--line);padding-bottom:0.5rem;';
+  var heading = document.createElement('div');
+  heading.className = 'state-featured-label';
+  heading.style.marginTop = '2rem';
   heading.textContent = 'Directory';
   container.appendChild(heading);
 
@@ -214,91 +239,60 @@ function renderDirectoryRunningList(container, items) {
 }
 
 function renderGroup(container, title, items) {
-  var sortedItems = (items || []).slice().sort(function(a, b) {
-    var an = String(a.name || a.title || '').toLowerCase();
-    var bn = String(b.name || b.title || '').toLowerCase();
-    if (an !== bn) return an < bn ? -1 : 1;
-    var ac = String(a.city || '').toLowerCase();
-    var bc = String(b.city || '').toLowerCase();
-    if (ac !== bc) return ac < bc ? -1 : 1;
-    return 0;
-  });
+  if (!items || !items.length) return;
 
   var wrap = document.createElement('div');
-  wrap.className = 'card';
-  wrap.style.cssText = 'padding:16px;margin-top:16px;border-radius:10px;';
+  wrap.style.cssText = 'margin-top:1.5rem;';
 
-  var h3 = document.createElement('h3');
-  h3.style.cssText = 'margin:0 0 0.75rem;font-family:\'Oswald\',sans-serif;font-size:1.05rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;';
-  h3.textContent = title;
-  wrap.appendChild(h3);
+  var label = document.createElement('div');
+  label.className = 'state-featured-label';
+  label.textContent = title;
+  wrap.appendChild(label);
 
-  if (!sortedItems.length) {
-    var none = document.createElement('p');
-    none.style.color = 'var(--text-mid)';
-    none.textContent = 'No listings yet for this state.';
-    wrap.appendChild(none);
-    container.appendChild(wrap);
-    return;
-  }
+  var grid = document.createElement('div');
+  grid.className = 'grid g3';
+  wrap.appendChild(grid);
 
-  var ul = document.createElement('ul');
-  ul.style.cssText = 'list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.6rem;';
+  items.forEach(function(it) {
+    var stateCode = (it.state || '-').toUpperCase();
+    var cityState = [it.city, it.state].filter(Boolean).join(', ');
+    var price = String(it.price || '');
+    var hasImage = !!it.image;
+    var imgSrc = it.image ? '../' + it.image : '';
+    var catClass = getCatClass(it.category);
 
-  for (var i = 0; i < sortedItems.length; i++) {
-    var it = sortedItems[i];
-    var li = document.createElement('li');
-    li.style.cssText = 'border:1px solid var(--line);border-radius:8px;padding:0.75rem 1rem;background:var(--off);';
-    var isDirectoryCard = !!it.type;
-    var isFeaturedCard = isDirectoryCard && isFeaturedEntry(it);
+    var imageHtml = hasImage
+      ? '<div class="listing-image-wrap"><img src="' + esc(imgSrc) + '" alt="' + esc(it.title || '') + '" loading="lazy"><span class="listing-state">' + esc(stateCode) + '</span></div>'
+      : '<div class="listing-image-wrap listing-no-photo"><span class="listing-state">' + esc(stateCode) + '</span></div>';
 
-    var name = esc(it.title || it.name || 'Listing');
-    var city = it.city ? ' <span style="color:var(--text-mid);font-size:0.88rem;">\u2014 ' + esc(it.city) + ', ' + esc(it.state || '') + '</span>' : '';
-    var price = it.price ? ' <span style="color:var(--text-mid);font-size:0.85rem;">(' + esc(it.price) + ')</span>' : '';
-    var address = it.address
-      ? '<div style="font-size:0.82rem;color:var(--text-mid);margin-top:0.22rem;">\u{1F4CD} ' + esc(it.address) + '</div>'
-      : '';
+    var safeEmail = String(it.seller_email || '').replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+    var safeTitle = String(it.title || '').replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+    var contactBtn = it.seller_email
+      ? '<button class="btn btn-red btn-sm" onclick="openSellerContact(\'' + safeEmail + '\',\'' + safeTitle + '\')">Get in Touch</button>'
+      : '<a href="../submit.html" class="btn btn-outline btn-sm">Get Started</a>';
 
-    var mapHref = it.google_maps_link
-      ? it.google_maps_link
-      : ('https://www.google.com/maps/search/' + encodeURIComponent([it.name || it.title || '', it.address || '', it.city || '', it.state || ''].join(' ').trim()));
-    var websiteLabel = 'Website';
-    var websiteHref = (it.website || '').trim();
-    if (/yelp\.com/i.test(websiteHref)) websiteLabel = 'Yelp';
-    if (/google\.[^/]+\/maps/i.test(websiteHref)) websiteLabel = 'Google';
-    var links = [];
-    if (websiteHref) {
-      links.push('<a href="' + esc(websiteHref) + '" target="_blank" rel="noopener noreferrer" style="font-size:0.82rem;">' + websiteLabel + '</a>');
-    }
-    if (mapHref) {
-      links.push('<a href="' + esc(mapHref) + '" target="_blank" rel="noopener noreferrer" style="font-size:0.82rem;">Map</a>');
-    }
-    var linkLine = links.length
-      ? '<div style="margin-top:0.35rem;display:flex;gap:0.55rem;flex-wrap:wrap;">' + links.join('') + '</div>'
-      : '';
+    var card = document.createElement('div');
+    card.className = 'listing-card';
+    card.innerHTML =
+      imageHtml +
+      '<div class="listing-body">' +
+        '<div class="listing-cats"><span class="lcat ' + catClass + '">' + esc(title) + '</span></div>' +
+        '<div class="listing-name">' + esc(it.title || it.name || 'Listing') + '</div>' +
+        (cityState ? '<div class="listing-loc">\uD83D\uDCCD ' + esc(cityState) + '</div>' : '') +
+        (price ? '<div class="listing-price">' + esc(price) + '</div>' : '') +
+        (it.summary ? '<p class="listing-summary">' + esc(it.summary) + '</p>' : '') +
+        '<div class="listing-actions">' + contactBtn + '</div>' +
+      '</div>';
+    grid.appendChild(card);
+  });
 
-    var phone = it.phone
-      ? '<div style="font-size:0.82rem;color:var(--text-mid);margin-top:0.2rem;">' + esc(it.phone) + '</div>'
-      : '';
-
-    var summary = (!isDirectoryCard && it.summary)
-      ? '<p style="margin:0.35rem 0 0;font-size:0.87rem;color:var(--text-mid);line-height:1.5;">' + esc(it.summary) + '</p>'
-      : '';
-
-    var star = isFeaturedCard
-      ? '<span class="featured-badge" style="width:1.8rem;height:1.8rem;justify-content:center;font-size:1rem;padding:0;border-radius:50%;letter-spacing:0;margin-right:0.35rem;vertical-align:middle;">★</span>'
-      : '';
-    li.innerHTML = star + '<strong>' + name + '</strong>' + city + price + address + linkLine + phone + summary;
-    ul.appendChild(li);
-  }
-
-  wrap.appendChild(ul);
   container.appendChild(wrap);
 }
 
 function renderSection(container, sectionTitle, groups, orderedKeys) {
-  var heading = document.createElement('h2');
-  heading.style.cssText = 'margin:2rem 0 0;font-family:\'Oswald\',sans-serif;font-size:1.3rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;border-bottom:2px solid var(--line);padding-bottom:0.5rem;';
+  var heading = document.createElement('div');
+  heading.className = 'state-featured-label';
+  heading.style.marginTop = '2rem';
   heading.textContent = sectionTitle;
   container.appendChild(heading);
 
@@ -324,11 +318,11 @@ function renderSection(container, sectionTitle, groups, orderedKeys) {
 
   // If no groups at all, show a placeholder
   if (!Object.keys(groups).length) {
-    if (sectionTitle === 'Buy and Sell') {
+    if (sectionTitle === 'Buy & Sell') {
       var inactiveWrap = document.createElement('div');
       inactiveWrap.style.cssText = 'margin-top:1rem;';
       inactiveWrap.innerHTML =
-        '<div class="grid g4">' +
+        '<div class="grid g3">' +
           '<a href="../submit.html" class="listing-card listing-card--inactive">' +
             '<div class="listing-image-wrap listing-no-photo"><span class="listing-state">-</span></div>' +
             '<div class="listing-body">' +
@@ -349,9 +343,9 @@ function renderSection(container, sectionTitle, groups, orderedKeys) {
           '</a>' +
           '<div class="listing-card-submit">' +
             '<div style="font-size:2.5rem;">📋</div>' +
-            '<h3>Selling Your Old Cherokee?</h3>' +
-            '<p>Post a vehicle, parts, project Cherokee, or wanted listing in this state.</p>' +
-            '<a href="../submit.html" class="btn btn-red btn-sm">List with Us</a>' +
+            '<h3>Post a Listing</h3>' +
+            '<p>Buying, selling, or looking for something specific? Submit a listing and connect with other Cherokee owners.</p>' +
+            '<a href="../submit.html" class="btn btn-red btn-sm">Get Started</a>' +
           '</div>' +
         '</div>';
       container.appendChild(inactiveWrap);
@@ -417,7 +411,7 @@ async function initStatePage() {
     var sectionRoot = root.parentElement || document;
     renderFeaturedSection(sectionRoot, stateName, featuredDirectory);
 
-    renderSection(bsContainer, 'Buy and Sell', buySellGroups, null);
+    renderSection(bsContainer, 'Buy & Sell', buySellGroups, null);
     renderDirectoryRunningList(dirContainer, runningDirectory);
 
   } catch (err) {
