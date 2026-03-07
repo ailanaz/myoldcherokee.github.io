@@ -89,33 +89,41 @@
       </select>
     </div>
 
-    <!-- Buy / Sell form -->
-    <div id="form-sell" style="display:none;">
-      <iframe data-tally-src="https://tally.so/r/7RdJdZ?transparentBackground=1&formEventsForwarding=1" loading="lazy" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0" title="Submit a Listing"></iframe>
-    </div>
-
-    <!-- Business / Directory form — opens as standalone full-page -->
-    <!-- Redirect handled in showForm() below -->
-
   </div>
 </section>
 
 <script>
+  var FORM_IDS = {
+    sell:     '7RdJdZ',
+    business: 'kdY05M',
+    club:     'xXd0Ay'
+  };
+
+  function openTallyPopup(formId) {
+    if (window.Tally) {
+      Tally.openPopup(formId, { layout: 'modal', overlay: true });
+    } else {
+      var attempts = 0;
+      var interval = setInterval(function () {
+        attempts++;
+        if (window.Tally) {
+          clearInterval(interval);
+          Tally.openPopup(formId, { layout: 'modal', overlay: true });
+        } else if (attempts > 30) {
+          clearInterval(interval);
+          window.location.href = 'https://tally.so/r/' + formId;
+        }
+      }, 100);
+    }
+  }
+
   function showForm(val) {
-    if (val === 'business') {
-      window.location.href = 'submit-directory.html';
-      return;
+    if (!val) return;
+    var formId = FORM_IDS[val];
+    if (formId) {
+      openTallyPopup(formId);
     }
-    if (val === 'club') {
-      if (window.Tally) {
-        Tally.openPopup('xXd0Ay', { layout: 'modal', overlay: true });
-      } else {
-        window.location.href = 'https://tally.so/r/xXd0Ay';
-      }
-      document.getElementById('form-picker').value = '';
-      return;
-    }
-    document.getElementById('form-sell').style.display = val === 'sell' ? 'block' : 'none';
+    document.getElementById('form-picker').value = '';
   }
 </script>
 
