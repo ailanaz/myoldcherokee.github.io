@@ -1,5 +1,9 @@
 /* state-page.js - shared renderer for all 50-state pages */
 
+/* ── Supabase config (same project as ratings.js) ─────── */
+var SUPABASE_URL = 'https://yrwegatjriewuhjyyokm.supabase.co';
+var SUPABASE_KEY = 'sb_publishable_JuN6TdSeWDJX8DlgqzbHwA_ZHt5hOLS';
+
 async function fetchJson(url) {
   var res = await fetch(url);
   if (!res.ok) throw new Error('Failed to load ' + url);
@@ -28,6 +32,16 @@ function getCatClass(category) {
   if (c.indexOf('wanted') !== -1) return 'lcat-wanted';
   if (c.indexOf('parts') !== -1) return 'lcat-parts';
   return 'lcat-parts';
+}
+
+/* Resolves an image URL from a listing record.
+   - Supabase Storage URLs (http/https) are used as-is.
+   - Legacy relative filenames get the ../ prefix for state pages. */
+function getImgSrc(it) {
+  var url = it.image_url || it.image || '';
+  if (!url) return '';
+  if (/^https?:\/\//i.test(url)) return url;
+  return '../' + url;
 }
 
 function groupBy(items, key) {
@@ -271,8 +285,8 @@ function renderGroup(container, title, items) {
     var stateCode = (it.state || '-').toUpperCase();
     var cityState = [it.city, it.state].filter(Boolean).join(', ');
     var price = String(it.price || '');
-    var hasImage = !!it.image;
-    var imgSrc = it.image ? '../' + it.image : '';
+    var imgSrc = getImgSrc(it);
+    var hasImage = !!imgSrc;
     var catClass = getCatClass(it.category);
 
     var imageHtml = hasImage
@@ -329,8 +343,8 @@ function renderSection(container, sectionTitle, groups, orderedKeys) {
       var stateCode = (it.state || '-').toUpperCase();
       var cityState = [it.city, it.state].filter(Boolean).join(', ');
       var price = String(it.price || '');
-      var hasImage = !!it.image;
-      var imgSrc = it.image ? '../' + it.image : '';
+      var imgSrc = getImgSrc(it);
+      var hasImage = !!imgSrc;
       var catClass = getCatClass(it.category);
       var catLabel = esc(it.category || '');
 
@@ -406,6 +420,38 @@ function renderSection(container, sectionTitle, groups, orderedKeys) {
   }
 }
 
+/* ── Fetch active listings for a state from Supabase ─── */
+async function fetchListingsForState(stateCode) {
+  if (!window.supabase || !window.supabase.createClient) {
+    // Supabase SDK not available - fall back to static JSON
+    var buySellAll = await fetchJson('../assets/data/buy-sell.json');
+    return buySellAll.filter(function(x) {
+      return (x.state || '').toUpperCase() === stateCode &&
+        (x.is_active === true || String(x.status || '').toLowerCase() === 'active');
+    });
+  }
+
+  var db = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+  var res = await db
+    .from('listings')
+    .select('id, title, category, state, city, price, summary, image_url, seller_email, created_at')
+    .eq('state', stateCode)
+    .eq('is_active', true)
+    .order('created_at', { ascending: false });
+
+  if (res.error) {
+    console.warn('[state-page] Supabase listings fetch failed, falling back to JSON', res.error);
+    // Fall back to static JSON
+    var buySellAll = await fetchJson('../assets/data/buy-sell.json');
+    return buySellAll.filter(function(x) {
+      return (x.state || '').toUpperCase() === stateCode &&
+        (x.is_active === true || String(x.status || '').toLowerCase() === 'active');
+    });
+  }
+
+  return res.data || [];
+}
+
 async function initStatePage() {
   var root = document.getElementById('state-page');
   if (!root) return;
@@ -426,23 +472,13 @@ async function initStatePage() {
   }
 
   try {
-    var data = await Promise.all([
-      fetchJson('../assets/data/buy-sell.json'),
+    var results = await Promise.all([
+      fetchListingsForState(stateCode),
       fetchJson('../assets/data/directory.json')
     ]);
 
-    var buySellAll = data[0];
-    var dirAll = data[1];
-
-    var buySell = buySellAll.filter(function(x) {
-      return (x.state || '').toUpperCase() === stateCode;
-    });
-
-    // Render only active buy/sell records on state pages.
-    // This prevents sample/fake seed listings from appearing.
-    var activeBuySell = buySell.filter(function(x) {
-      return x.is_active === true || String(x.status || '').toLowerCase() === 'active';
-    });
+    var activeBuySell = results[0];
+    var dirAll = results[1];
 
     // Show all directory businesses for the state (free cards may have limited fields).
     var directory = dirAll.filter(function(x) {
