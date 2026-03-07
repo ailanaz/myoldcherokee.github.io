@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="fo-verify" content="80ffc469-4c17-4e6f-967d-cd493410dc16" />
-  <title>Cherokee Chat | OldXJS.com</title>
-  <meta name="description" content="Share your Cherokee tips, fixes, photos, and stories with the OldXJS.com community. Ask questions and help other Cherokee XJ owners." />
+  <title>Conversation | OldXJS.com</title>
+  <meta name="description" content="Join the conversation with fellow XJ Cherokee owners. Ask questions, share tips, post your builds, and talk all things Cherokee." />
   <link rel="canonical" href="https://oldxjs.com/community.html" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://oldxjs.com/community.html" />
-  <meta property="og:title" content="Cherokee Chat" />
-  <meta property="og:description" content="Share your Cherokee tips, fixes, photos, and stories with the OldXJS.com community. Ask questions and help other Cherokee XJ owners." />
+  <meta property="og:title" content="Conversation | OldXJS.com" />
+  <meta property="og:description" content="Join the conversation with fellow XJ Cherokee owners. Ask questions, share tips, post your builds, and talk all things Cherokee." />
   <meta property="og:image" content="https://oldxjs.com/og-default.jpg" />
   <meta property="og:site_name" content="OldXJS.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,8 +29,6 @@
 </head>
 <body>
 
-
-
 <div class="topbar">
   <div class="container topbar-inner">
     <span class="topbar-tagline">Your one stop XJ hub</span>
@@ -45,7 +43,7 @@
         <button class="nav-more-btn" onclick="this.closest('.nav-more').classList.toggle('open')" aria-expanded="false">More &#9663;</button>
         <div class="nav-more-menu">
           <a href="guides.html" class="guides-mobile">Guides</a>
-          <a href="community.html">Chat</a>
+          <a href="community.html">Conversation</a>
           <a href="submit.html">Post</a>
           <a href="contact.html">Contact</a>
           <a href="about.html">About</a>
@@ -70,12 +68,12 @@
 <!-- PAGE HERO -->
 <section class="page-hero" style="padding-top:1.583%;padding-bottom:1.583%;">
   <div class="container">
-    <h1>Cherokee Chat</h1>
+    <h1>Conversation</h1>
   </div>
 </section>
 
 <!-- COMMUNITY GUIDELINES -->
-<section class="section">
+<section class="section" style="padding-bottom:0;">
   <div class="container">
     <div class="notice-amber">
       <strong>Community Guidelines</strong>
@@ -89,18 +87,19 @@
   </div>
 </section>
 
-<!-- HYVOR TALK COMMENTS -->
+<!-- FASTCOMMENTS THREAD -->
 <section class="section">
   <div class="container">
-    <hyvor-talk-comments
-      website-id="15083"
-      page-id="community-hub"
-    ></hyvor-talk-comments>
+    <script async src="https://cdn.fastcomments.com/js/embed-v2-async.min.js"></script>
+    <div id="fastcomments-widget"></div>
+    <script>
+      window.fcConfigs = [{
+        tenantId: "5VBG8dLqBzF",
+        urlId: "oldxjs-conversation"
+      }];
+    </script>
   </div>
 </section>
-
-<script type="module" src="https://talk.hyvor.com/embed/embed.js"></script>
-
 
 <footer class="site-footer">
   <div class="container">
@@ -117,7 +116,7 @@
           <li><a href="buy-sell.html">Buy &amp; Sell</a></li>
           <li><a href="directory.html">Directory</a></li>
           <li><a href="guides.html">Guides</a></li>
-          <li><a href="community.html">Community</a></li>
+          <li><a href="community.html">Conversation</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
         <div>
