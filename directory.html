@@ -230,6 +230,15 @@
   <div style="display:flex;align-items:center;justify-content:flex-end;gap:0.8rem;flex-wrap:wrap;margin:0 0 1rem;">
     <div id="live-count" style="font-size:0.88rem;color:var(--text-mid);"></div>
   </div>
+
+  <!-- Featured row - top -->
+  <div id="live-featured-section" style="display:none;">
+    <div class="state-featured-label" style="margin:0 0 0.75rem;">Featured</div>
+    <div class="grid g3" id="live-featured-grid" style="margin-bottom:2rem;"></div>
+  </div>
+
+  <!-- Main directory row -->
+  <div class="state-featured-label" id="live-dir-label" style="margin:0 0 0.75rem;display:none;">Directory</div>
   <div class="grid g3" id="live-grid"></div>
   <div style="margin-top:1rem;">
     <button id="live-more" class="btn btn-outline btn-sm" type="button" style="display:none;">Load More</button>
@@ -2087,6 +2096,9 @@
   }
 
   var grid = document.getElementById('live-grid');
+  var featuredGrid = document.getElementById('live-featured-grid');
+  var featuredSection = document.getElementById('live-featured-section');
+  var dirLabel = document.getElementById('live-dir-label');
   var stateSel = document.getElementById('live-state');
   var typeSel = document.getElementById('live-type');
   var tagSel = document.getElementById('live-tag');
@@ -2296,9 +2308,84 @@
     render();
   }
 
+  function makeCard(it, featuredIds) {
+    var initials = (it.name || 'B').split(/\s+/).map(function(w) { return w.charAt(0); }).slice(0, 2).join('').toUpperCase();
+    var cityState = (it.city && it.state) ? esc(it.city) + ', ' + esc(it.state) : esc(it.state || '');
+    var addr = it.address ? '<div class="biz-loc" style="margin-top:0.15rem;">&#128205; ' + esc(it.address) + '</div>' : '';
+    var phone = it.phone ? '<div class="biz-loc" style="margin-top:0.15rem;">&#128222; ' + esc(it.phone) + '</div>' : '';
+    var map = mapUrl(it);
+    var bid = it.business_id ? esc(it.business_id) : '';
+    var isFeat = !!((bid && featuredIds[bid]) || isMarkedFeatured(it));
+    var summaryText = String(it.summary || it.jeep_friendly_blurb || '').trim();
+    var summary = (isFeat && summaryText)
+      ? '<p class="biz-desc" style="margin-top:0.3rem;">' + esc(summaryText) + '</p>'
+      : '';
+    var actionsHtml;
+    if (isFeat) {
+      var links = [];
+      if (it.website) links.push('<a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel(it.website) + '</a>');
+      if (map) links.push('<a href="' + esc(map) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>');
+      actionsHtml = links.join('');
+    } else {
+      actionsHtml = it.website
+        ? '<a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel(it.website) + '</a>'
+        : '<a href="' + esc(map) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>';
+    }
+    var typeLabel = cleanTypeLabel(it.type || 'Business');
+    var starHtml = isFeat
+      ? '<span class="featured-badge" style="width:2rem;height:2rem;justify-content:center;font-size:1.15rem;padding:0;border-radius:50%;letter-spacing:0;margin-right:0.35rem;">★</span>'
+      : '';
+    var card = document.createElement('div');
+    card.className = 'biz-card';
+    card.setAttribute('data-cats', ((it.categories || []).join(' ')).toLowerCase());
+    if (bid) card.setAttribute('data-business-id', bid);
+    card.innerHTML =
+      '<div class="biz-logo-wrap"><div class="biz-logo">' + initials + '</div></div>' +
+      '<div class="biz-body">' +
+        '<div style="display:flex;align-items:center;gap:0.4rem;flex-wrap:wrap;">' + starHtml + '<span class="biz-type ' + typeToneClass(typeLabel) + '">' + esc(typeLabel) + '</span></div>' +
+        '<div class="biz-name">' + esc(it.name || 'Business') + '</div>' +
+        '<div class="biz-loc">' + (cityState || 'Location not set') + '</div>' +
+        addr + phone + summary +
+        '<div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">' + actionsHtml + '</div>' +
+      '</div>';
+    return card;
+  }
+
   function render() {
-    var rows = filteredRows.slice(0, shown);
+    var featuredIds = featuredBusinessIds();
+
+    // Split into featured and regular
+    var featuredItems = filteredRows.filter(function(it) {
+      var bid = String(it.business_id || '').trim();
+      return !!((bid && featuredIds[bid]) || isMarkedFeatured(it));
+    });
+    var regularItems = filteredRows.filter(function(it) {
+      var bid = String(it.business_id || '').trim();
+      return !((bid && featuredIds[bid]) || isMarkedFeatured(it));
+    });
+
+    // Featured top row - no pagination, always show all
+    if (featuredGrid && featuredSection) {
+      featuredGrid.innerHTML = '';
+      if (featuredItems.length) {
+        featuredSection.style.display = '';
+        featuredItems.forEach(function(it) {
+          featuredGrid.appendChild(makeCard(it, featuredIds));
+        });
+      } else {
+        featuredSection.style.display = 'none';
+      }
+    }
+
+    // "Directory" label only when both rows have content
+    if (dirLabel) {
+      dirLabel.style.display = (featuredItems.length && regularItems.length) ? '' : 'none';
+    }
+
+    // Main directory row - paginated regular items
+    var rows = regularItems.slice(0, shown);
     grid.innerHTML = '';
+
     if (!filteredRows.length) {
       grid.innerHTML = '<p style="color:var(--text-mid);padding:0.75rem 0;">No businesses match these filters.</p>';
       countEl.textContent = '0 results';
@@ -2306,53 +2393,12 @@
       return;
     }
 
-    var featuredIds = featuredBusinessIds();
     rows.forEach(function(it) {
-      var initials = (it.name || 'B').split(/\s+/).map(function(w) { return w.charAt(0); }).slice(0, 2).join('').toUpperCase();
-      var cityState = (it.city && it.state) ? esc(it.city) + ', ' + esc(it.state) : esc(it.state || '');
-      var addr = it.address ? '<div class="biz-loc" style="margin-top:0.15rem;">&#128205; ' + esc(it.address) + '</div>' : '';
-      var phone = it.phone ? '<div class="biz-loc" style="margin-top:0.15rem;">&#128222; ' + esc(it.phone) + '</div>' : '';
-      var map = mapUrl(it);
-      var bid = it.business_id ? esc(it.business_id) : '';
-      var featuredRow = !!((bid && featuredIds[bid]) || isMarkedFeatured(it));
-      var summaryText = String(it.summary || it.jeep_friendly_blurb || '').trim();
-      var summary = (featuredRow && summaryText)
-        ? '<p class="biz-desc" style="margin-top:0.3rem;">' + esc(summaryText) + '</p>'
-        : '';
-      var actionsHtml;
-      if (featuredRow) {
-        var links = [];
-        if (it.website) links.push('<a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel(it.website) + '</a>');
-        if (map) links.push('<a href="' + esc(map) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>');
-        actionsHtml = links.join('');
-      } else {
-        actionsHtml = it.website
-          ? '<a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel(it.website) + '</a>'
-          : '<a href="' + esc(map) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>';
-      }
-      var typeLabel = cleanTypeLabel(it.type || 'Business');
-
-      var card = document.createElement('div');
-      card.className = 'biz-card';
-      card.setAttribute('data-cats', ((it.categories || []).join(' ')).toLowerCase());
-      if (bid) card.setAttribute('data-business-id', bid);
-      var starHtml = featuredRow
-        ? '<span class="featured-badge" style="width:2rem;height:2rem;justify-content:center;font-size:1.15rem;padding:0;border-radius:50%;letter-spacing:0;margin-right:0.35rem;">★</span>'
-        : '';
-      card.innerHTML =
-        '<div class="biz-logo-wrap"><div class="biz-logo">' + initials + '</div></div>' +
-        '<div class="biz-body">' +
-          '<div style="display:flex;align-items:center;gap:0.4rem;flex-wrap:wrap;">' + starHtml + '<span class="biz-type ' + typeToneClass(typeLabel) + '">' + esc(typeLabel) + '</span></div>' +
-          '<div class="biz-name">' + esc(it.name || 'Business') + '</div>' +
-          '<div class="biz-loc">' + (cityState || 'Location not set') + '</div>' +
-          addr + phone + summary +
-          '<div class="biz-actions" style="margin-top:auto;display:flex;gap:0.4rem;flex-wrap:wrap;padding-top:0.75rem;">' + actionsHtml + '</div>' +
-        '</div>';
-      grid.appendChild(card);
+      grid.appendChild(makeCard(it, featuredIds));
     });
 
     countEl.textContent = filteredRows.length.toLocaleString() + ' results';
-    moreBtn.style.display = filteredRows.length > shown ? '' : 'none';
+    moreBtn.style.display = regularItems.length > shown ? '' : 'none';
   }
 
   function renderCandidateReviewList(archiveRows) {
