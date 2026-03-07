@@ -376,7 +376,7 @@ async function initStatePage() {
   if (titleEl) titleEl.textContent = stateName;
 
   var heroSubEl = document.getElementById('state-hero-sub');
-  if (heroSubEl) heroSubEl.textContent = 'Cherokee listings, shops, and salvage yards across ' + stateName + '.';
+  if (heroSubEl) heroSubEl.remove();
 
   var bsContainer = document.getElementById('state-buy-sell');
   var dirContainer = document.getElementById('state-directory');
