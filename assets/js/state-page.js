@@ -202,6 +202,7 @@ function renderDirectoryRunningList(container, items) {
     li.setAttribute('data-business-id', it.business_id || '');
     li.style.cssText = 'padding:0.8rem 0.95rem;background:var(--off);border:1px solid var(--line);';
 
+    var isFeat = isFeaturedEntry(it);
     var website = (it.website || '').trim();
     var mapHref = buildMapHref(it);
     var websiteLabel = getWebsiteLabel(website);
@@ -217,19 +218,31 @@ function renderDirectoryRunningList(container, items) {
         }).join('') + '</div>'
       : '';
 
+    var star = isFeat
+      ? '<span class="featured-badge" style="width:1.6rem;height:1.6rem;justify-content:center;font-size:0.9rem;padding:0;border-radius:50%;letter-spacing:0;margin-right:0.35rem;vertical-align:middle;flex-shrink:0;">&#9733;</span>'
+      : '';
+
+    var buttons = isFeat
+      ? (website ? '<a href="' + esc(website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel + '</a>' : '') +
+        '<a href="' + esc(mapHref) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>'
+      : (website
+          ? '<a href="' + esc(website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel + '</a>'
+          : '<a href="' + esc(mapHref) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>');
+
     li.innerHTML =
       '<div class="biz-body">' +
         '<div style="display:flex;justify-content:space-between;gap:0.75rem;flex-wrap:wrap;align-items:flex-start;">' +
-          '<div>' +
-            '<div style="font-family:\'Oswald\',sans-serif;font-size:1rem;font-weight:700;letter-spacing:0.02em;">' + name + '</div>' +
-            '<div style="font-size:0.84rem;color:var(--text-mid);">' + esc(cityState) + (cityState ? ' · ' : '') + type + '</div>' +
-            address +
-            tagsHtml +
+          '<div style="display:flex;align-items:flex-start;gap:0;">' +
+            star +
+            '<div>' +
+              '<div style="font-family:\'Oswald\',sans-serif;font-size:1rem;font-weight:700;letter-spacing:0.02em;">' + name + '</div>' +
+              '<div style="font-size:0.84rem;color:var(--text-mid);">' + esc(cityState) + (cityState ? ' · ' : '') + type + '</div>' +
+              address +
+              tagsHtml +
+            '</div>' +
           '</div>' +
           '<div class="biz-actions" style="display:flex;gap:0.45rem;flex-wrap:wrap;justify-content:flex-end;">' +
-            (website
-              ? '<a href="' + esc(website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel + '</a>'
-              : '<a href="' + esc(mapHref) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>') +
+            buttons +
           '</div>' +
         '</div>' +
       '</div>';
