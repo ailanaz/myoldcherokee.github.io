@@ -61,5 +61,25 @@
     "is_active": true,
     "summary": "Custom emblems, badges, and decal solutions for vehicle enthusiasts. Known for supporting Jeep communities and creating custom logo pieces for clubs, including Midwest Krawlers. Perfect for bulk orders.",
     "locked": true
+  },
+  {
+    "business_id": "the-jeepyard-va",
+    "name": "The Jeepyard",
+    "type": "Salvage Yards and Junkyards (Used Jeep Parts)",
+    "city": "Midlothian",
+    "state": "VA",
+    "address": "3919 Bellson Park Dr, Midlothian, VA 23112",
+    "phone": "(804) 629-4743",
+    "website": "https://www.thejeepyard.com/",
+    "google_maps_link": "https://www.google.com/maps/search/The+Jeep+Yard,+3919+Bellson+Park+Dr,+Midlothian,+VA+23112",
+    "categories": [
+      "salvage",
+      "used-parts",
+      "jeep-friendly"
+    ],
+    "source": "manual",
+    "is_active": true,
+    "locked": true,
+    "summary": "Appointment-only Jeep yard with used parts support."
   }
 ]
