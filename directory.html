@@ -206,6 +206,7 @@
         <select id="live-type" class="filter-select" aria-label="Filter by type">
           <option value="" disabled selected>Business Type</option>
           <option value="all">All types</option>
+          <option value="featured">★ Featured</option>
           <option value="shop-parts-nav">Shop for Parts</option>
           <option value="business-queue-nav">Business Queue</option>
         </select>
@@ -2178,6 +2179,16 @@
   }
 
   function ensureNavOptions() {
+    var hasFeatured = Array.prototype.some.call(typeSel.options, function(opt) {
+      return opt && opt.value === 'featured';
+    });
+    if (!hasFeatured) {
+      var fOpt = document.createElement('option');
+      fOpt.value = 'featured';
+      fOpt.textContent = '★ Featured';
+      if (typeSel.options.length > 2) typeSel.insertBefore(fOpt, typeSel.options[2]);
+      else typeSel.appendChild(fOpt);
+    }
     var hasOption = Array.prototype.some.call(typeSel.options, function(opt) {
       return opt && opt.value === 'shop-parts-nav';
     });
@@ -2185,7 +2196,7 @@
       var opt = document.createElement('option');
       opt.value = 'shop-parts-nav';
       opt.textContent = 'Shop for Parts';
-      if (typeSel.options.length > 2) typeSel.insertBefore(opt, typeSel.options[2]);
+      if (typeSel.options.length > 3) typeSel.insertBefore(opt, typeSel.options[3]);
       else typeSel.appendChild(opt);
     }
     var hasQueueOption = Array.prototype.some.call(typeSel.options, function(opt) {
@@ -2195,7 +2206,7 @@
       var qOpt = document.createElement('option');
       qOpt.value = 'business-queue-nav';
       qOpt.textContent = 'Business Queue';
-      if (typeSel.options.length > 3) typeSel.insertBefore(qOpt, typeSel.options[3]);
+      if (typeSel.options.length > 4) typeSel.insertBefore(qOpt, typeSel.options[4]);
       else typeSel.appendChild(qOpt);
     }
   }
@@ -2217,12 +2228,8 @@
       }
     });
 
-    while (typeSel.options.length > 4) typeSel.remove(4);
+    while (typeSel.options.length > 5) typeSel.remove(5);
     ensureNavOptions();
-    var featuredOpt = document.createElement('option');
-    featuredOpt.value = 'featured';
-    featuredOpt.textContent = '★ Featured';
-    typeSel.appendChild(featuredOpt);
 
     while (stateSel.options.length > 2) stateSel.remove(2);
     Object.keys(states).sort().forEach(function(st) {
