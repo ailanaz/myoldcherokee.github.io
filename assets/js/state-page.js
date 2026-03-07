@@ -227,8 +227,9 @@ function renderDirectoryRunningList(container, items) {
             tagsHtml +
           '</div>' +
           '<div class="biz-actions" style="display:flex;gap:0.45rem;flex-wrap:wrap;justify-content:flex-end;">' +
-            (website ? '<a href="' + esc(website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel + '</a>' : '') +
-            '<a href="' + esc(mapHref) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>' +
+            (website
+              ? '<a href="' + esc(website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel + '</a>'
+              : '<a href="' + esc(mapHref) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>') +
           '</div>' +
         '</div>' +
       '</div>';
