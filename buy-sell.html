@@ -87,12 +87,56 @@
     <div class="clubs-style-field-wrap">
       <select class="filter-select" onchange="filterDropdown('cherokees-grid')" aria-label="Filter listings">
         <option value="all">What are you looking for</option>
-      <option value="xjs">XJs</option>
-      <option value="parts">Parts</option>
+      <option value="wanted">Wanted</option>
+      <option value="xjs">Used Rides</option>
+      <option value="parts">Used Parts</option>
       </select>
     </div>
   </div>
 </div>
+
+<!-- SECTION 0: WANTED -->
+<section class="section" id="wanted" style="border-top:2px solid var(--line);">
+  <div class="container">
+
+    <div class="section-head left">
+      <h2>Wanted</h2>
+    </div>
+
+    <div class="grid g3" id="wanted-grid">
+
+      <!-- Wanted: Door Panels -->
+      <div class="listing-card" data-cat="wanted">
+        <div class="listing-image-wrap">
+          <img src="door-panels-agate.jpg" alt="97-01 XJ Limited door panels in Agate dark gray" loading="lazy" />
+          <span class="listing-state">CA</span>
+        </div>
+        <div class="listing-body">
+          <div class="listing-cats"><span class="lcat lcat-wanted">Wanted</span><span class="lcat lcat-parts">Body &amp; Interior</span></div>
+          <div class="listing-name">Door Panels from 97-01 XJ Limited in Agate (Dark Gray)</div>
+          <div class="listing-loc">📍 CA &nbsp;·&nbsp; 2000 XJ 4-door</div>
+          <div class="listing-price">Seeking</div>
+          <p class="listing-summary">Looking for a pair of front door panels/trims from a late-model Limited - Agate (dark gray) color. Final parts needed to upgrade a Sport to Limited spec. If you can help, please reach out!</p>
+          <div class="listing-actions">
+            <button class="btn btn-red btn-sm" onclick="openSellerContact('brucesmann@gmail.com','Door Panels from 97-01 XJ Limited in Agate (Dark Gray)')">Get in Touch</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit card -->
+      <div class="listing-card-submit">
+        <div style="font-size:2.5rem;">🔍</div>
+        <h3>POST A WANTED AD</h3>
+        <p>Looking for a specific Cherokee, part, or interior piece? Post a wanted listing and let sellers come to you.</p>
+        <p style="font-size:0.82rem;color:var(--text-mid);margin-top:0.4rem;margin-bottom:0;">Listings are live for one month unless canceled or renewed.</p>
+        <a href="#" data-tally-open="7RdJdZ" data-tally-overlay="1" class="btn btn-red">Post Wanted Ad</a>
+      </div>
+
+    </div><!-- end #wanted-grid -->
+
+  </div>
+</section>
+
 
 <!-- SECTION 1: CHEROKEES -->
 <section class="section" id="vehicles">
@@ -100,7 +144,6 @@
 
     <!-- Anchors for sub-category deep links -->
     <div id="buy" style="position:relative;top:0;visibility:hidden;scroll-margin-top:80px;"></div>
-    <div id="wanted" style="position:relative;top:0;visibility:hidden;scroll-margin-top:80px;"></div>
     <div id="project" style="position:relative;top:0;visibility:hidden;scroll-margin-top:80px;"></div>
 
     <div class="section-head left">
@@ -174,24 +217,6 @@
           <p class="listing-summary">Project listings show the vehicle's current state, what's been done, and what still needs work. Great for buyers looking for a build to continue.</p>
           <div class="listing-actions">
             <button class="btn btn-red btn-sm" disabled style="pointer-events:none;opacity:0.45;">Get in Touch</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Wanted: Door Panels -->
-      <div class="listing-card" data-cat="wanted">
-        <div class="listing-image-wrap">
-          <img src="door-panels-agate.jpg" alt="97-01 XJ Limited door panels in Agate dark gray" loading="lazy" />
-          <span class="listing-state">CA</span>
-        </div>
-        <div class="listing-body">
-          <div class="listing-cats"><span class="lcat lcat-wanted">Wanted</span><span class="lcat lcat-parts">Body &amp; Interior</span></div>
-          <div class="listing-name">Door Panels from 97-01 XJ Limited in Agate (Dark Gray)</div>
-          <div class="listing-loc">📍 CA &nbsp;·&nbsp; 2000 XJ 4-door</div>
-          <div class="listing-price">Seeking</div>
-          <p class="listing-summary">Looking for a pair of front door panels/trims from a late-model Limited - Agate (dark gray) color. Final parts needed to upgrade a Sport to Limited spec. If you can help, please reach out!</p>
-          <div class="listing-actions">
-            <button class="btn btn-red btn-sm" onclick="openSellerContact('brucesmann@gmail.com','Door Panels from 97-01 XJ Limited in Agate (Dark Gray)')">Get in Touch</button>
           </div>
         </div>
       </div>
@@ -443,7 +468,14 @@
     var searchVal = ((bar && bar.querySelector('.filter-search-input') || {}).value || '').toLowerCase().trim();
     var catVal = (bar && bar.querySelector('.filter-select')) ? bar.querySelector('.filter-select').value : 'all';
 
-    // Top page switcher: XJS / Parts
+    // Top page switcher: Wanted / XJS / Parts
+    if (gridId === 'cherokees-grid' && catVal === 'wanted') {
+      var wantedSection = document.getElementById('wanted');
+      if (wantedSection && typeof wantedSection.scrollIntoView === 'function') {
+        wantedSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      return;
+    }
     if (gridId === 'cherokees-grid' && catVal === 'parts') {
       var partsSection = document.getElementById('parts');
       if (partsSection && typeof partsSection.scrollIntoView === 'function') {
