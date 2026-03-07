@@ -200,7 +200,7 @@
         <div style="font-size:2.5rem;">📋</div>
         <h3>LIST WITH OLD XJS</h3>
         <p>Post a vehicle, project Cherokee, or wanted listing. Free to submit. Each listing supports photos, pricing, and your contact details.</p>
-        <a href="submit.html" class="btn btn-red">List with Us</a>
+        <a href="#" data-tally-open="7RdJdZ" data-tally-overlay="1" class="btn btn-red">List with Us</a>
       </div>
 
     </div><!-- end #cherokees-grid -->
@@ -213,7 +213,7 @@
       <div>
         <p class="page-cta-bar-title">Have an old Cherokee to sell? List it for free.</p>
       </div>
-      <a href="submit.html" class="btn btn-red" style="flex-shrink:0;">List with Us</a>
+      <a href="#" data-tally-open="7RdJdZ" data-tally-overlay="1" class="btn btn-red" style="flex-shrink:0;">List with Us</a>
     </div>
 
   </div>
@@ -333,7 +333,7 @@
         <div style="font-size:2.5rem;">🔩</div>
         <h3>SELL YOUR PARTS HERE</h3>
         <p>Post a parts listing with photos, pricing, condition details, and fitment info. Free to submit.</p>
-        <a href="submit.html" class="btn btn-red">Submit Parts Listing</a>
+        <a href="#" data-tally-open="7RdJdZ" data-tally-overlay="1" class="btn btn-red">Submit Parts Listing</a>
       </div>
 
     </div><!-- end #parts-grid -->
@@ -344,7 +344,7 @@
         <p class="page-cta-bar-title">Have Cherokee parts to sell?</p>
         <p class="page-cta-bar-sub">Post a parts listing with photos, description, fitment info, and your contact details. Free to submit.</p>
       </div>
-      <a href="submit.html" class="btn btn-red" style="flex-shrink:0;">Submit Parts Listing</a>
+      <a href="#" data-tally-open="7RdJdZ" data-tally-overlay="1" class="btn btn-red" style="flex-shrink:0;">Submit Parts Listing</a>
     </div>
 
   </div>
@@ -414,12 +414,24 @@
   var CONTACT_FORM_ID = 'J928BY'; // single shared Tally form
 
   function openSellerContact(sellerEmail, listingTitle) {
-    // Direct same-tab navigation to avoid browser popups/new-tab blockers.
-    var formUrl =
-      'https://tally.so/r/' + CONTACT_FORM_ID +
-      '?seller_email=' + encodeURIComponent(sellerEmail) +
-      '&listing_title=' + encodeURIComponent(listingTitle);
-    window.location.href = formUrl;
+    // Open as a Tally popup overlay — keeps user on-site.
+    if (window.Tally) {
+      Tally.openPopup(CONTACT_FORM_ID, {
+        layout: 'modal',
+        overlay: true,
+        hiddenFields: {
+          seller_email: sellerEmail,
+          listing_title: listingTitle
+        }
+      });
+    } else {
+      // Fallback: navigate if Tally widget hasn't loaded yet.
+      var formUrl =
+        'https://tally.so/r/' + CONTACT_FORM_ID +
+        '?seller_email=' + encodeURIComponent(sellerEmail) +
+        '&listing_title=' + encodeURIComponent(listingTitle);
+      window.location.href = formUrl;
+    }
   }
   // ────────────────────────────────────────────────────────────────────────────
 
