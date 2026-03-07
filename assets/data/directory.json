@@ -81,5 +81,25 @@
     "is_active": true,
     "locked": true,
     "summary": "Appointment-only Jeep yard with used parts support."
+  },
+  {
+    "business_id": "parts-breakers-co",
+    "name": "Parts Breakers",
+    "type": "Salvage Yards and Junkyards (Used Jeep Parts)",
+    "city": "Grand Junction",
+    "state": "CO",
+    "address": "3061 Highway 50, Grand Junction, CO 81503",
+    "phone": "+1 303 666 9020",
+    "website": "https://partsbreakers.com/",
+    "google_maps_link": "https://www.google.com/maps/search/Parts+Breakers,+3061+Highway+50,+Grand+Junction,+CO+81503",
+    "categories": [
+      "salvage",
+      "used-parts",
+      "jeep-friendly"
+    ],
+    "source": "manual",
+    "is_active": true,
+    "locked": true,
+    "summary": "Rust-free used Jeep parts and accessories with nationwide shipping."
   }
 ]
