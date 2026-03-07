@@ -85,44 +85,24 @@
         <option value="">Select a listing type…</option>
         <option value="sell">Vehicle, Parts, or Wanted Listing</option>
         <option value="business">Repair Shop, Salvage Yard, or Business</option>
-        <option value="club">Submit Your Club</option>
+        <option value="club">Club</option>
       </select>
     </div>
+
+    <!-- Hidden Tally popup triggers — Tally widget attaches click handlers to data-tally-open elements -->
+    <a id="tally-sell"     href="#" data-tally-open="7RdJdZ" data-tally-overlay="1" style="display:none;"></a>
+    <a id="tally-business" href="#" data-tally-open="kdY05M" data-tally-overlay="1" style="display:none;"></a>
+    <a id="tally-club"     href="#" data-tally-open="xXd0Ay" data-tally-overlay="1" style="display:none;"></a>
 
   </div>
 </section>
 
 <script>
-  var FORM_IDS = {
-    sell:     '7RdJdZ',
-    business: 'kdY05M',
-    club:     'xXd0Ay'
-  };
-
-  function openTallyPopup(formId) {
-    if (window.Tally) {
-      Tally.openPopup(formId, { layout: 'modal', overlay: true });
-    } else {
-      var attempts = 0;
-      var interval = setInterval(function () {
-        attempts++;
-        if (window.Tally) {
-          clearInterval(interval);
-          Tally.openPopup(formId, { layout: 'modal', overlay: true });
-        } else if (attempts > 30) {
-          clearInterval(interval);
-          window.location.href = 'https://tally.so/r/' + formId;
-        }
-      }, 100);
-    }
-  }
-
   function showForm(val) {
     if (!val) return;
-    var formId = FORM_IDS[val];
-    if (formId) {
-      openTallyPopup(formId);
-    }
+    var triggers = { sell: 'tally-sell', business: 'tally-business', club: 'tally-club' };
+    var el = document.getElementById(triggers[val]);
+    if (el) el.click();
     document.getElementById('form-picker').value = '';
   }
 </script>
