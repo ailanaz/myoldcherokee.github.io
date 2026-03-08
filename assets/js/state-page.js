@@ -185,7 +185,7 @@ function renderFeaturedSection(root, stateName, featuredItems) {
   }
 }
 
-function renderDirectoryRunningList(container, items) {
+function renderDirectoryRunningList(container, items, ratingsMap) {
   if (!container) return;
   container.innerHTML = '';
 
@@ -232,6 +232,16 @@ function renderDirectoryRunningList(container, items) {
         }).join('') + '</div>'
       : '';
 
+    var ratingData = ratingsMap && ratingsMap[it.business_id];
+    var ratingInner = '';
+    if (ratingData && Number(ratingData.rating_count) > 0) {
+      ratingInner = '<div class="biz-rating-row">' +
+        '<span class="biz-rating-stars">\u2605 ' + Number(ratingData.avg_rating).toFixed(1) + '</span>' +
+        '\u00a0<span class="biz-rating-count">(' + Number(ratingData.rating_count) + ')</span>' +
+        '</div>';
+    }
+    var ratingHtml = '<div class="biz-rating-wrap" data-bid="' + esc(it.business_id || '') + '" style="margin-top:0.3rem;">' + ratingInner + '</div>';
+
     var star = isFeat
       ? '<span class="featured-badge" style="width:1.6rem;height:1.6rem;justify-content:center;font-size:0.9rem;padding:0;border-radius:50%;letter-spacing:0;margin-right:0.35rem;vertical-align:middle;flex-shrink:0;">&#9733;</span>'
       : '';
@@ -253,6 +263,7 @@ function renderDirectoryRunningList(container, items) {
               '<div style="font-size:0.84rem;color:var(--text-mid);">' + esc(cityState) + (cityState ? ' · ' : '') + type + '</div>' +
               address +
               tagsHtml +
+              ratingHtml +
             '</div>' +
           '</div>' +
           '<div class="biz-actions" style="display:flex;gap:0.45rem;flex-wrap:wrap;justify-content:flex-end;">' +
@@ -495,7 +506,26 @@ async function initStatePage() {
     renderFeaturedSection(sectionRoot, stateName, featuredDirectory);
 
     renderSection(bsContainer, 'Buy & Sell', buySellGroups, null);
-    renderDirectoryRunningList(dirContainer, runningDirectory);
+
+    // Fetch star ratings for directory businesses
+    var ratingsMap = {};
+    try {
+      if (window.supabase && window.supabase.createClient && runningDirectory.length) {
+        var ratingDb = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+        var bizIds = runningDirectory.map(function(x) { return x.business_id; }).filter(Boolean);
+        if (bizIds.length) {
+          var ratingRes = await ratingDb
+            .from('business_rating_summary')
+            .select('business_id, avg_rating, rating_count')
+            .in('business_id', bizIds);
+          if (ratingRes.data) {
+            ratingRes.data.forEach(function(r) { ratingsMap[r.business_id] = r; });
+          }
+        }
+      }
+    } catch(e) { /* ratings are non-critical */ }
+
+    renderDirectoryRunningList(dirContainer, runningDirectory, ratingsMap);
 
   } catch (err) {
     if (bsContainer) bsContainer.innerHTML = '<p style="color:var(--text-mid);padding:1rem 0;">Listings could not load. Please refresh the page.</p>';
