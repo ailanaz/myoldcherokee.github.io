@@ -584,7 +584,8 @@ async function initStatePage() {
       return (x.state || '').toUpperCase() === stateCode;
     });
     var activeDirectory = directory.filter(function(x) {
-      return x.is_active === true || String(x.status || '').toLowerCase() === 'active';
+      // Default to active - only exclude when explicitly marked inactive.
+      return x.is_active !== false && String(x.status || '').toLowerCase() !== 'inactive';
     });
     var featuredDirectory = activeDirectory.filter(isFeaturedEntry);
     var runningDirectory = activeDirectory.filter(function(x) { return !isFeaturedEntry(x); });

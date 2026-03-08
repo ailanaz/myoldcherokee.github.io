@@ -38,6 +38,7 @@
     ],
     "summary": "Custom 3D badges, overlays, and emblem work for automotive builds. Jeep-friend brand support and custom project runs.",
     "address": "Bentonville, AR",
+    "is_active": true,
     "locked": true
   },
   {
