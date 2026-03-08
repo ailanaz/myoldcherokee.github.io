@@ -233,13 +233,12 @@ function renderDirectoryRunningList(container, items, ratingsMap) {
       : '';
 
     var ratingData = ratingsMap && ratingsMap[it.business_id];
-    var ratingInner = '';
-    if (ratingData && Number(ratingData.rating_count) > 0) {
-      ratingInner = '<div class="biz-rating-row">' +
-        '<span class="biz-rating-stars">\u2605 ' + Number(ratingData.avg_rating).toFixed(1) + '</span>' +
-        '\u00a0<span class="biz-rating-count">(' + Number(ratingData.rating_count) + ')</span>' +
-        '</div>';
-    }
+    var ratingAvg = (ratingData && ratingData.avg_rating != null) ? Number(ratingData.avg_rating) : 0;
+    var ratingCount = (ratingData && ratingData.rating_count != null) ? Number(ratingData.rating_count) : 0;
+    var ratingInner = '<div class="biz-rating-row">' +
+      '<span class="biz-rating-stars">\u2605 ' + ratingAvg.toFixed(1) + '</span>' +
+      '\u00a0<span class="biz-rating-count">(' + ratingCount + ')</span>' +
+      '</div>';
     var ratingHtml = '<div class="biz-rating-wrap" data-bid="' + esc(it.business_id || '') + '" style="margin-top:0.3rem;">' + ratingInner + '</div>';
 
     var star = isFeat
