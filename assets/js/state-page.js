@@ -466,8 +466,10 @@ async function fetchListingsForState(stateCode) {
   var jsonPromise = fetchJson('../assets/data/buy-sell.json')
     .then(function(all) {
       return (all || []).filter(function(x) {
+        // Static JSON entries default to active - only exclude when explicitly marked inactive.
         return (x.state || '').toUpperCase() === stateCode &&
-          (x.is_active === true || String(x.status || '').toLowerCase() === 'active');
+          x.is_active !== false &&
+          String(x.status || '').toLowerCase() !== 'inactive';
       });
     })
     .catch(function() { return []; });
