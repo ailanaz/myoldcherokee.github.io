@@ -460,36 +460,41 @@ async function fetchApprovedBusinessesForState(stateCode) {
   } catch(e) { return []; }
 }
 
-/* ── Fetch active listings for a state from Supabase ─── */
+/* ── Fetch active listings for a state (Supabase + static JSON merged) ─── */
 async function fetchListingsForState(stateCode) {
+  // Always load static JSON listings so existing cards never disappear.
+  var jsonPromise = fetchJson('../assets/data/buy-sell.json')
+    .then(function(all) {
+      return (all || []).filter(function(x) {
+        return (x.state || '').toUpperCase() === stateCode &&
+          (x.is_active === true || String(x.status || '').toLowerCase() === 'active');
+      });
+    })
+    .catch(function() { return []; });
+
   if (!window.supabase || !window.supabase.createClient) {
-    // Supabase SDK not available - fall back to static JSON
-    var buySellAll = await fetchJson('../assets/data/buy-sell.json');
-    return buySellAll.filter(function(x) {
-      return (x.state || '').toUpperCase() === stateCode &&
-        (x.is_active === true || String(x.status || '').toLowerCase() === 'active');
-    });
+    return jsonPromise;
   }
 
+  // Also fetch from Supabase and merge both sources together.
   var db = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
-  var res = await db
+  var sbPromise = db
     .from('listings')
     .select('id, title, category, state, city, price, summary, image_url, seller_email, created_at')
     .eq('state', stateCode)
     .eq('is_active', true)
-    .order('created_at', { ascending: false });
+    .order('created_at', { ascending: false })
+    .then(function(res) {
+      if (res.error) {
+        console.warn('[state-page] Supabase listings fetch failed', res.error);
+        return [];
+      }
+      return res.data || [];
+    })
+    .catch(function() { return []; });
 
-  if (res.error) {
-    console.warn('[state-page] Supabase listings fetch failed, falling back to JSON', res.error);
-    // Fall back to static JSON
-    var buySellAll = await fetchJson('../assets/data/buy-sell.json');
-    return buySellAll.filter(function(x) {
-      return (x.state || '').toUpperCase() === stateCode &&
-        (x.is_active === true || String(x.status || '').toLowerCase() === 'active');
-    });
-  }
-
-  return res.data || [];
+  var both = await Promise.all([sbPromise, jsonPromise]);
+  return both[0].concat(both[1]);
 }
 
 async function initStatePage() {
