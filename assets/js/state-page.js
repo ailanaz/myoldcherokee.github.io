@@ -430,6 +430,54 @@ function renderSection(container, sectionTitle, groups, orderedKeys) {
   }
 }
 
+/* ── Fetch clubs for a state from JSON ───────────────── */
+async function fetchClubsForState(stateCode) {
+  try {
+    var all = await fetchJson('../assets/data/clubs.json');
+    return (all || []).filter(function(c) {
+      return (c.state || '').toUpperCase() === stateCode;
+    });
+  } catch(e) { return []; }
+}
+
+/* ── Render clubs section ────────────────────────────── */
+function renderClubsSection(container, clubs) {
+  if (!container || !clubs.length) return;
+
+  var heading = document.createElement('div');
+  heading.className = 'state-featured-label';
+  heading.style.marginTop = '2rem';
+  heading.textContent = 'Local Clubs';
+  container.appendChild(heading);
+
+  var wrap = document.createElement('div');
+  wrap.className = 'card';
+  wrap.style.cssText = 'padding:16px;margin-top:16px;border-radius:10px;';
+  container.appendChild(wrap);
+
+  var ul = document.createElement('ul');
+  ul.style.cssText = 'list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.75rem;';
+
+  clubs.forEach(function(c) {
+    var li = document.createElement('li');
+    li.className = 'card';
+    li.style.cssText = 'padding:0.8rem 0.95rem;background:var(--off);border:1px solid var(--line);';
+    var cityState = [c.city, c.state].filter(Boolean).join(', ');
+    li.innerHTML =
+      '<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:0.75rem;">' +
+        '<div>' +
+          '<div style="font-family:\'Oswald\',sans-serif;font-size:1rem;font-weight:700;letter-spacing:0.02em;">' + esc(c.name || '') + '</div>' +
+          (cityState ? '<div style="font-size:0.84rem;color:var(--text-mid);">' + esc(cityState) + '</div>' : '') +
+          (c.info ? '<p style="margin:0.3rem 0 0;font-size:0.88rem;">' + esc(c.info) + '</p>' : '') +
+        '</div>' +
+        (c.link ? '<a href="' + esc(c.link) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" style="flex-shrink:0;">Website</a>' : '') +
+      '</div>';
+    ul.appendChild(li);
+  });
+
+  wrap.appendChild(ul);
+}
+
 /* ── Fetch approved businesses from submissions table ─── */
 async function fetchApprovedBusinessesForState(stateCode) {
   if (!window.supabase || !window.supabase.createClient) return [];
@@ -522,12 +570,14 @@ async function initStatePage() {
     var results = await Promise.all([
       fetchListingsForState(stateCode),
       fetchJson('../assets/data/directory.json'),
-      fetchApprovedBusinessesForState(stateCode)
+      fetchApprovedBusinessesForState(stateCode),
+      fetchClubsForState(stateCode)
     ]);
 
     var activeBuySell = results[0];
     var dirAll = results[1];
     var sbBusinesses = results[2];
+    var stateClubs = results[3];
 
     // Show all directory businesses for the state (free cards may have limited fields).
     var directory = dirAll.filter(function(x) {
@@ -570,6 +620,9 @@ async function initStatePage() {
     } catch(e) { /* ratings are non-critical */ }
 
     renderDirectoryRunningList(dirContainer, runningDirectory, ratingsMap);
+
+    var clubsContainer = document.getElementById('state-clubs');
+    renderClubsSection(clubsContainer, stateClubs);
 
   } catch (err) {
     if (bsContainer) bsContainer.innerHTML = '<p style="color:var(--text-mid);padding:1rem 0;">Listings could not load. Please refresh the page.</p>';

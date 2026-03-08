@@ -104,24 +104,6 @@
 
     <div class="grid g3" id="wanted-grid">
 
-      <!-- Wanted: Door Panels -->
-      <div class="listing-card" data-cat="wanted">
-        <div class="listing-image-wrap">
-          <img src="door-panels-agate.jpg" alt="97-01 XJ Limited door panels in Agate dark gray" loading="lazy" />
-          <span class="listing-state">CA</span>
-        </div>
-        <div class="listing-body">
-          <div class="listing-cats"><span class="lcat lcat-wanted">Wanted</span><span class="lcat lcat-parts">Body &amp; Interior</span></div>
-          <div class="listing-name">Door Panels from 97-01 XJ Limited in Agate (Dark Gray)</div>
-          <div class="listing-loc">📍 CA &nbsp;·&nbsp; 2000 XJ 4-door</div>
-          <div class="listing-price">Seeking</div>
-          <p class="listing-summary">Looking for a pair of front door panels/trims from a late-model Limited - Agate (dark gray) color. Final parts needed to upgrade a Sport to Limited spec. If you can help, please reach out!</p>
-          <div class="listing-actions">
-            <button class="btn btn-red btn-sm" onclick="openSellerContact('brucesmann@gmail.com','Door Panels from 97-01 XJ Limited in Agate (Dark Gray)')">Get in Touch</button>
-          </div>
-        </div>
-      </div>
-
       <!-- Submit card -->
       <div class="listing-card-submit">
         <h3>POST A WANTED AD</h3>
@@ -392,6 +374,56 @@
     return card;
   }
 
+  // ── Static buy-sell.json entries ─────────────────────
+  function insertCard(card, gridId) {
+    var grid = document.getElementById(gridId);
+    var submit = grid && grid.querySelector('.listing-card-submit');
+    if (submit) grid.insertBefore(card, submit);
+  }
+
+  fetch('assets/data/buy-sell.json')
+  .then(function(r) { return r.ok ? r.json() : []; })
+  .then(function(entries) {
+    (entries || []).filter(function(e) {
+      return e.is_active !== false && String(e.status || '').toLowerCase() !== 'inactive';
+    }).forEach(function(e) {
+      var catLow = (e.category || '').toLowerCase();
+      var isWanted = catLow === 'wanted';
+      var isParts = /part/.test(catLow);
+      var isProject = catLow.indexOf('project') !== -1;
+      var gridId = isWanted ? 'wanted-grid' : isParts ? 'parts-grid' : 'cherokees-grid';
+      var dataCat = isWanted ? 'wanted' : isParts ? 'parts' : isProject ? 'project' : 'vehicle';
+      var catClass = isWanted ? 'lcat-wanted' : isParts ? 'lcat-parts' : isProject ? 'lcat-project' : 'lcat-vehicle';
+      var imgSrc = e.image_url || e.image || '';
+      var loc = [e.city, e.state].filter(Boolean).join(', ');
+      var safeEmail = String(e.seller_email || '').replace(/'/g, "\\'");
+      var safeTitle = String(e.title || '').replace(/'/g, "\\'");
+      var card = document.createElement('div');
+      card.className = 'listing-card';
+      card.setAttribute('data-cat', dataCat);
+      card.innerHTML =
+        '<div class="listing-image-wrap' + (imgSrc ? '' : ' listing-no-photo') + '">' +
+          (imgSrc ? '<img src="' + esc(imgSrc) + '" alt="' + esc(e.title || '') + '" loading="lazy" />' : '') +
+          '<span class="listing-state">' + esc(e.state || '-') + '</span>' +
+        '</div>' +
+        '<div class="listing-body">' +
+          '<div class="listing-cats"><span class="lcat ' + catClass + '">' + esc(e.category || 'For Sale') + '</span></div>' +
+          '<div class="listing-name">' + esc(e.title || 'Listing') + '</div>' +
+          (loc ? '<div class="listing-loc">\uD83D\uDCCD ' + esc(loc) + '</div>' : '') +
+          (e.price ? '<div class="listing-price">' + esc(e.price) + '</div>' : '') +
+          (e.summary ? '<p class="listing-summary">' + esc(e.summary) + '</p>' : '') +
+          '<div class="listing-actions">' +
+            (e.seller_email
+              ? '<button class="btn btn-red btn-sm" onclick="openSellerContact(\'' + safeEmail + '\',\'' + safeTitle + '\')">Get in Touch</button>'
+              : '<a href="buy-sell.html" class="btn btn-outline btn-sm">Get Started</a>') +
+          '</div>' +
+        '</div>';
+      insertCard(card, gridId);
+    });
+  })
+  .catch(function() {});
+
+  // ── Supabase live listings ────────────────────────────
   fetch(
     SUPA_URL + '/rest/v1/listings?is_active=eq.true&order=created_at.desc' +
     '&select=id,title,category,state,city,price,summary,image_url,seller_email',
@@ -403,11 +435,10 @@
     listings.forEach(function (l) {
       var card = buildCard(l);
       var catLow = (l.category || '').toLowerCase();
+      var isWanted = catLow === 'wanted';
       var isParts = /part|engine|drivetrain|suspension|body|interior|electrical/.test(catLow);
-      var gridId = isParts ? 'parts-grid' : 'cherokees-grid';
-      var grid = document.getElementById(gridId);
-      var submit = grid && grid.querySelector('.listing-card-submit');
-      if (submit) grid.insertBefore(card, submit);
+      var gridId = isWanted ? 'wanted-grid' : isParts ? 'parts-grid' : 'cherokees-grid';
+      insertCard(card, gridId);
     });
   })
   .catch(function (e) { console.warn('Listings fetch error:', e); });

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Austin Jeep Exclusive",
+    "info": "Central Texas nonprofit Jeep club with monthly off-road outings and member meetups.",
+    "city": "Austin",
+    "state": "TX",
+    "link": "https://austinjeepexclusive.org/"
+  },
+  {
+    "name": "Inland Jeep Freeks",
+    "info": "Southern California off-road Jeep club running trail events and monthly community meetups.",
+    "city": "Inland Empire",
+    "state": "CA",
+    "link": "https://inlandjeepfreeks.org/"
+  },
+  {
+    "name": "Midwest Krawlers",
+    "info": "Kansas City metro off-road club with trail rides, classes, and organized community events.",
+    "city": "Kansas City Metro",
+    "state": "MO",
+    "link": "https://www.midwestkrawlers.com/about-us/"
+  },
+  {
+    "name": "Mile-Hi Jeep Club",
+    "info": "Long-running Colorado Jeep club focused on responsible four-wheeling, events, and trail stewardship.",
+    "city": "Denver",
+    "state": "CO",
+    "link": "https://mhjc.clubexpress.com/"
+  },
+  {
+    "name": "South Florida Jeep Club",
+    "info": "Family-friendly Florida Jeep club organizing wheeling trips, events, and charity involvement.",
+    "city": "Fort Lauderdale",
+    "state": "FL",
+    "link": "https://sfjc.wordpress.com/"
+  }
+]
