@@ -30,7 +30,7 @@
     @media (max-width: 600px) {
       .map-container { display: none; }
       .live-state-list { display: block; }
-      .live-state-list .btn.btn-sm { font-size: 0.9rem !important; }
+      .live-state-list .btn.btn-sm { font-size: 0.82rem !important; padding: 0.35rem 0.25rem !important; }
       .live-state-list ul li:nth-child(odd) > a.btn { background: var(--red) !important; color: #fff !important; border-color: var(--red) !important; }
       .live-state-list ul li:nth-child(even) > a.btn { background: transparent !important; color: var(--red) !important; border-color: var(--red) !important; }
     }
@@ -101,7 +101,7 @@
     <!-- Mobile fallback: full state list -->
     <div class="live-state-list">
       <h3 style="margin-bottom:1rem;font-family:'Oswald',sans-serif;font-size:1.1rem;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;">All State Pages</h3>
-      <ul style="list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;max-width:420px;">
+      <ul style="list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr 1fr;gap:0.5rem;max-width:600px;">
         <li><a href="state/alabama.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Alabama</a></li>
         <li><a href="state/alaska.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Alaska</a></li>
         <li><a href="state/arizona.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Arizona</a></li>
@@ -110,7 +110,6 @@
         <li><a href="state/colorado.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Colorado</a></li>
         <li><a href="state/connecticut.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Connecticut</a></li>
         <li><a href="state/delaware.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Delaware</a></li>
-        <li><a href="state/district-of-columbia.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">DC</a></li>
         <li><a href="state/florida.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Florida</a></li>
         <li><a href="state/georgia.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Georgia</a></li>
         <li><a href="state/hawaii.html" class="btn btn-red btn-sm" style="display:block;text-align:center;">Hawaii</a></li>
@@ -384,12 +383,6 @@
             <rect x="684" y="240" width="74" height="58" rx="4" fill="#6b1228"/>
             <text x="721" y="273" text-anchor="middle" class="state-label" fill="#fff">NC</text>
           </g>
-          <!-- DC col10,row4 -->
-          <g class="state-cell" onclick="handleStateClick('DC','District of Columbia')">
-            <rect x="760" y="240" width="74" height="58" rx="4" fill="#d0d3db"/>
-            <text x="797" y="273" text-anchor="middle" class="state-label" fill="#555">DC</text>
-          </g>
-
           <!-- Row 5 -->
           <!-- TX col4,row5 -->
           <g class="state-cell" onclick="handleStateClick('TX','Texas')">
@@ -498,7 +491,6 @@
     'CA': 'state/california.html',
     'CO': 'state/colorado.html',
     'CT': 'state/connecticut.html',
-    'DC': 'state/district-of-columbia.html',
     'DE': 'state/delaware.html',
     'FL': 'state/florida.html',
     'GA': 'state/georgia.html',
