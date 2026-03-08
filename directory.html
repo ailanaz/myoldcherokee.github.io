@@ -2512,12 +2512,33 @@
   Promise.all([
     fetch('assets/data/directory.json').then(function(res) { if (!res.ok) throw new Error('load failed'); return res.json(); }),
     loadFeaturedIdsFromFeaturedPage(),
-    fetch('assets/data/directory-locked-backup.json').then(function(res) { return res.ok ? res.json() : []; }).catch(function() { return []; })
+    fetch('assets/data/directory-locked-backup.json').then(function(res) { return res.ok ? res.json() : []; }).catch(function() { return []; }),
+    fetch('https://yrwegatjriewuhjyyokm.supabase.co/rest/v1/businesses?approved=eq.true&select=business_name,category,services,state,description,website,phone,city,address', {
+      headers: {
+        'apikey': 'sb_publishable_JuN6TdSeWDJX8DIgqzbHwA_ZHt5hOLS',
+        'Authorization': 'Bearer sb_publishable_JuN6TdSeWDJX8DIgqzbHwA_ZHt5hOLS'
+      }
+    }).then(function(res) { return res.ok ? res.json() : []; }).catch(function() { return []; })
   ])
     .then(function(payload) {
       var rows = payload[0];
       var archiveRows = payload[2];
       allRows = Array.isArray(rows) ? rows : [];
+      var sbRows = (payload[3] || []).map(function(r) {
+        return {
+          name: r.business_name || '',
+          type: r.category || 'Business',
+          categories: r.services ? r.services.split(',').map(function(s) { return s.trim().toLowerCase(); }) : [],
+          state: (r.state || '').toUpperCase(),
+          summary: r.description || '',
+          website: r.website || '',
+          phone: r.phone || '',
+          city: r.city || '',
+          address: r.address || '',
+          business_id: ''
+        };
+      });
+      allRows = allRows.concat(sbRows);
       allRows.sort(function(a, b) {
         return String(a.name || '').localeCompare(String(b.name || ''), 'en', { sensitivity: 'base' });
       });
