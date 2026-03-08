@@ -104,6 +104,27 @@
     "summary": "Rust-free used Jeep parts and accessories with nationwide shipping."
   },
   {
+    "business_id": "lewis-offroad-nh",
+    "name": "Lewis Off Road",
+    "type": "Repair Shops",
+    "city": "Derry",
+    "state": "NH",
+    "address": "172 Rockingham Rd, Derry, NH",
+    "phone": "",
+    "website": "https://www.lewisoffroad.com/",
+    "google_maps_link": "https://www.google.com/maps/search/Lewis+Off+Road,+172+Rockingham+Rd,+Derry,+NH",
+    "categories": [
+      "repair",
+      "offroad",
+      "customization",
+      "restoration"
+    ],
+    "summary": "Full-service off-road restoration and customization shop in Derry, NH.",
+    "source": "manual",
+    "is_active": true,
+    "locked": true
+  },
+  {
     "business_id": "castle-automotive-ca",
     "name": "Castle Automotive",
     "type": "Repair Shops",
