@@ -498,5 +498,78 @@
   }
 </script>
 <script src="tag-colors.js"></script>
+
+<script>
+// ── SUPABASE DYNAMIC LISTINGS ────────────────────────────────────────────────
+(function () {
+  var SUPA_URL = 'https://yrwegatjriewuhjyyokm.supabase.co';
+  var SUPA_KEY = 'sb_publishable_JuN6TdSeWDJX8DlgqzbHwA_ZHt5hOLS';
+
+  function esc(v) {
+    return String(v == null ? '' : v)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function buildCard(l) {
+    var cat = l.category || '';
+    var catLow = cat.toLowerCase();
+    var isParts = /part|engine|drivetrain|suspension|body|interior|electrical/.test(catLow);
+    var catClass = isParts ? 'lcat-parts'
+      : catLow.indexOf('project') !== -1 ? 'lcat-project'
+      : catLow.indexOf('wanted') !== -1 ? 'lcat-wanted'
+      : 'lcat-vehicle';
+    var dataCat = catLow.indexOf('project') !== -1 ? 'project' : isParts ? 'parts' : 'vehicle';
+    var price = l.price ? (String(l.price).charAt(0) === '$' ? l.price : '$' + l.price) : '';
+    var loc = [l.city, l.state].filter(Boolean).join(', ');
+
+    var card = document.createElement('div');
+    card.className = 'listing-card';
+    card.setAttribute('data-cat', dataCat);
+
+    card.innerHTML =
+      '<div class="listing-image-wrap' + (l.image_url ? '' : ' listing-no-photo') + '">' +
+        (l.image_url ? '<img src="' + esc(l.image_url) + '" alt="' + esc(l.title) + '" loading="lazy" />' : '') +
+        '<span class="listing-state">' + esc(l.state || '-') + '</span>' +
+      '</div>' +
+      '<div class="listing-body">' +
+        '<div class="listing-cats"><span class="lcat ' + catClass + '">' + esc(cat || 'For Sale') + '</span></div>' +
+        '<div class="listing-name">' + esc(l.title || 'Listing') + '</div>' +
+        '<div class="listing-loc">\uD83D\uDCCD ' + esc(loc || 'Location TBD') + '</div>' +
+        (price ? '<div class="listing-price">' + esc(price) + '</div>' : '') +
+        '<p class="listing-summary">' + esc(l.summary || '') + '</p>' +
+        '<div class="listing-actions">' +
+          '<a href="listing.html?id=' + esc(l.id) + '" class="btn btn-outline btn-sm">View</a>' +
+          '<button class="btn btn-red btn-sm"' +
+            ' data-email="' + esc(l.seller_email || '') + '"' +
+            ' data-title="' + esc(l.title || '') + '"' +
+            ' onclick="openSellerContact(this.dataset.email,this.dataset.title)">Get in Touch</button>' +
+        '</div>' +
+      '</div>';
+    return card;
+  }
+
+  fetch(
+    SUPA_URL + '/rest/v1/listings?is_active=eq.true&order=created_at.desc' +
+    '&select=id,title,category,state,city,price,summary,image_url,seller_email',
+    { headers: { 'apikey': SUPA_KEY, 'Authorization': 'Bearer ' + SUPA_KEY } }
+  )
+  .then(function (r) { return r.ok ? r.json() : []; })
+  .then(function (listings) {
+    if (!Array.isArray(listings) || !listings.length) return;
+    listings.forEach(function (l) {
+      var card = buildCard(l);
+      var catLow = (l.category || '').toLowerCase();
+      var isParts = /part|engine|drivetrain|suspension|body|interior|electrical/.test(catLow);
+      var gridId = isParts ? 'parts-grid' : 'cherokees-grid';
+      var grid = document.getElementById(gridId);
+      var submit = grid && grid.querySelector('.listing-card-submit');
+      if (submit) grid.insertBefore(card, submit);
+    });
+  })
+  .catch(function (e) { console.warn('Listings fetch error:', e); });
+})();
+// ─────────────────────────────────────────────────────────────────────────────
+</script>
 </body>
 </html>
