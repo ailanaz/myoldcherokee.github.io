@@ -430,6 +430,36 @@ function renderSection(container, sectionTitle, groups, orderedKeys) {
   }
 }
 
+/* ── Fetch approved businesses from submissions table ─── */
+async function fetchApprovedBusinessesForState(stateCode) {
+  if (!window.supabase || !window.supabase.createClient) return [];
+  try {
+    var db = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+    var res = await db
+      .from('businesses')
+      .select('id, business_name, category, services, state, city, address, phone, website, description')
+      .eq('approved', true)
+      .eq('state', stateCode)
+      .order('business_name', { ascending: true });
+    if (res.error || !res.data) return [];
+    return res.data.map(function(r) {
+      return {
+        business_id: r.id || '',
+        name: r.business_name || '',
+        type: r.category || 'Business',
+        categories: r.services ? r.services.split(',').map(function(s) { return s.trim().toLowerCase(); }) : [],
+        state: (r.state || '').toUpperCase(),
+        city: r.city || '',
+        address: r.address || '',
+        phone: r.phone || '',
+        website: r.website || '',
+        summary: r.description || '',
+        is_active: true
+      };
+    });
+  } catch(e) { return []; }
+}
+
 /* ── Fetch active listings for a state from Supabase ─── */
 async function fetchListingsForState(stateCode) {
   if (!window.supabase || !window.supabase.createClient) {
@@ -484,11 +514,13 @@ async function initStatePage() {
   try {
     var results = await Promise.all([
       fetchListingsForState(stateCode),
-      fetchJson('../assets/data/directory.json')
+      fetchJson('../assets/data/directory.json'),
+      fetchApprovedBusinessesForState(stateCode)
     ]);
 
     var activeBuySell = results[0];
     var dirAll = results[1];
+    var sbBusinesses = results[2];
 
     // Show all directory businesses for the state (free cards may have limited fields).
     var directory = dirAll.filter(function(x) {
@@ -499,6 +531,12 @@ async function initStatePage() {
     });
     var featuredDirectory = activeDirectory.filter(isFeaturedEntry);
     var runningDirectory = activeDirectory.filter(function(x) { return !isFeaturedEntry(x); });
+
+    // Merge approved Supabase business submissions into the running directory list.
+    runningDirectory = runningDirectory.concat(sbBusinesses);
+    runningDirectory.sort(function(a, b) {
+      return String(a.name || '').localeCompare(String(b.name || ''), 'en', { sensitivity: 'base' });
+    });
 
     var buySellGroups = groupBy(activeBuySell, 'category');
     var sectionRoot = root.parentElement || document;
