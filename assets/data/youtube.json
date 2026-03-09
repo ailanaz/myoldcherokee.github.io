@@ -1,9 +1,37 @@
 [
   {
+    "name": "DeXJs",
+    "handle": "@DeXJs",
+    "url": "https://www.youtube.com/@DeXJs",
+    "description": "The most XJ-dedicated channel on YouTube. Dex owns over 1,000 Jeep Cherokees and has saved hundreds from the scrapyard. Deep-dive repairs and real-world XJ knowledge.",
+    "tags": ["XJ-specific", "repairs", "builds"]
+  },
+  {
+    "name": "NickInTimeFilms",
+    "handle": "@NickInTimeFilms",
+    "url": "https://www.youtube.com/@NickInTimeFilms",
+    "description": "Every repair and fix documented on a single 1989 Cherokee. One of the most thorough XJ-specific libraries on YouTube.",
+    "tags": ["XJ-specific", "repairs", "maintenance"]
+  },
+  {
     "name": "OutJeeping",
     "handle": "@OutJeeping",
     "url": "https://www.youtube.com/c/OutJeeping",
-    "description": "XJ Cherokee builds, trail runs, and off-road content.",
-    "tags": ["builds", "trail runs", "off-road"]
+    "description": "In-depth XJ Cherokee how-to repair videos and off-road adventures. Step-by-step walkthroughs for the most common XJ fixes.",
+    "tags": ["repairs", "how-to", "off-road"]
+  },
+  {
+    "name": "D&E In The Garage",
+    "handle": "@DEInTheGarage",
+    "url": "https://www.youtube.com/@DEintheGarage",
+    "description": "General Jeep and automotive repair channel with strong XJ and WJ content. Known for clear diagnostics and junkyard finds.",
+    "tags": ["repairs", "diagnostics", "general Jeep"]
+  },
+  {
+    "name": "BleepinJeep",
+    "handle": "@bleepinjeep",
+    "url": "https://www.youtube.com/@bleepinjeep",
+    "description": "Popular off-road and Jeep DIY channel covering builds, repairs, and adventures across multiple platforms. Good for general Jeep knowledge.",
+    "tags": ["builds", "off-road", "general Jeep"]
   }
 ]
