@@ -245,12 +245,16 @@ function renderDirectoryRunningList(container, items, ratingsMap) {
       ? '<span class="featured-badge" style="width:1.6rem;height:1.6rem;justify-content:center;font-size:0.9rem;padding:0;border-radius:50%;letter-spacing:0;margin-right:0.35rem;vertical-align:middle;flex-shrink:0;">&#9733;</span>'
       : '';
 
+    var youtube = (it.youtube || '').trim();
     var buttons = isFeat
       ? (website ? '<a href="' + esc(website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel + '</a>' : '') +
+        (youtube ? '<a href="' + esc(youtube) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">YouTube</a>' : '') +
         '<a href="' + esc(mapHref) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>'
       : (website
           ? '<a href="' + esc(website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel + '</a>'
-          : '<a href="' + esc(mapHref) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>');
+          : (youtube
+              ? '<a href="' + esc(youtube) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">YouTube</a>'
+              : '<a href="' + esc(mapHref) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>'));
 
     li.innerHTML =
       '<div class="biz-body">' +

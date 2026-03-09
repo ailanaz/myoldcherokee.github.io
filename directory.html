@@ -2324,12 +2324,15 @@
     if (isFeat) {
       var links = [];
       if (it.website) links.push('<a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel(it.website) + '</a>');
+      if (it.youtube) links.push('<a href="' + esc(it.youtube) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">YouTube</a>');
       if (map) links.push('<a href="' + esc(map) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>');
       actionsHtml = links.join('');
     } else {
       actionsHtml = it.website
         ? '<a href="' + esc(it.website) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">' + websiteLabel(it.website) + '</a>'
-        : '<a href="' + esc(map) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>';
+        : (it.youtube
+            ? '<a href="' + esc(it.youtube) + '" target="_blank" rel="noopener noreferrer" class="btn btn-red btn-sm">YouTube</a>'
+            : '<a href="' + esc(map) + '" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">Map</a>');
     }
     var typeLabel = cleanTypeLabel(it.type || 'Business');
     var starHtml = isFeat
