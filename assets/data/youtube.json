@@ -1,9 +1,9 @@
 [
   {
-    "name": "Example XJ Channel",
-    "handle": "@examplexj",
-    "url": "https://www.youtube.com/@examplexj",
-    "description": "Placeholder - replace with real channel data.",
-    "tags": ["builds", "maintenance"]
+    "name": "OutJeeping",
+    "handle": "@OutJeeping",
+    "url": "https://www.youtube.com/c/OutJeeping",
+    "description": "XJ Cherokee builds, trail runs, and off-road content.",
+    "tags": ["builds", "trail runs", "off-road"]
   }
 ]
