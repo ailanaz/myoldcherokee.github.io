@@ -562,7 +562,7 @@ img { max-width: 100%; display: block; }
 .featured-carousel-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem; margin-bottom: 1.25rem; }
 .carousel-outer { position: relative; padding: 0 28px; }
 .carousel-track-wrap { overflow: hidden; }
-.carousel-track { display: flex; gap: 1.25rem; transition: transform 0.35s ease; }
+.carousel-track { display: flex; gap: 1.25rem; transition: transform 0.25s ease; }
 .carousel-track .featured-biz-card { flex: 0 0 calc(50% - 0.625rem); }
 .carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: var(--white); border: 1.5px solid var(--line); border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 10; font-size: 1rem; color: var(--text); transition: border-color 0.15s, background 0.15s; box-shadow: var(--shadow-sm); }
 .carousel-btn:hover { border-color: var(--red); background: var(--red-lite); color: var(--red); }
