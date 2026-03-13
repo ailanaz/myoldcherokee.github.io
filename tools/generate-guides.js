@@ -65,7 +65,7 @@ function buildPage(g) {
       <a href="../buy-sell.html">Buy &amp; Sell</a>
       <a href="../directory.html">Directory</a>
       <a href="../guides.html" class="active">Guides</a>
-      <a href="../community.html">Community</a>
+      <a href="../contact.html">Contact</a>
     </nav>
   </div>
 </header>
@@ -144,7 +144,7 @@ function buildPage(g) {
           <li><a href="../buy-sell.html">Buy &amp; Sell</a></li>
           <li><a href="../directory.html">Directory</a></li>
           <li><a href="../guides.html">Guides</a></li>
-          <li><a href="../community.html">Community</a></li>
+          <li><a href="../contact.html">Contact</a></li>
           <li><a href="../about.html">About</a></li>
         </ul>
         <div>

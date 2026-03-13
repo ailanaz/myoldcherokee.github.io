@@ -9,7 +9,7 @@
     { label: "Repair Shops", meta: "service directory", url: "repair-shops.html" },
     { label: "Junk/Salvage Yards", meta: "yards, pull-a-part", url: "junk-salvage.html" },
     { label: "Guides", meta: "DIY and troubleshooting", url: "guides.html" },
-    { label: "Community", meta: "groups and events", url: "community.html" },
+    { label: "Contact", meta: "get in touch", url: "contact.html" },
     { label: "Submit a Listing", meta: "add a listing", url: "submit-listing.html" }
   ];
 
